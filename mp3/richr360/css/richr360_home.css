@@ -1,0 +1,105 @@
+/* Empty. Add your own CSS if you like */
+.swiper-container {width: 100%;height: 100%;}
+.header360 {
+    background: #2b3146;
+}
+.header360 h1 {
+    margin: 0 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.autoheight{width:100%;height:auto;display: block;}
+.r360_list{position: relative;overflow: hidden;}
+.mtop10{margin-top:10px;}
+.r360_list_title{line-height:40px;border-bottom: 1px solid #cbcbcb;overflow: hidden;background-color: #ffffff;}
+.t_san{float: right;width: 10px;height: 16px;margin: 12px 12px 0 0;background-image: url("../images/r_san.png"); background-repeat: no-repeat;background-size: 100% 100%;}
+.r360_list_title > div {float: left;width: 120px;margin-left:15px;}
+.r360_list_title > div em {width: auto;font-size: 1.4em;color: #2d94e1;font-family: Arial, Helvetica, sans-serif;}
+.r360_list_title a {display: block;margin-left:135px;}
+.t_span{float: right;color:#959595;font-size: 1.2em;margin-right:5px;}
+.r360_list_content{position: relative;}
+.r360_list_content li{padding: 10px;background-color: #ffffff;border-bottom: 1px solid #cbcbcb;overflow: hidden;}
+.r360_list_content li:last-child{padding: 10px;background-color: #ffffff;border-bottom: 0;}
+.zuhe_left{float:left;width:28%;border-right: 1px solid #cbcbcb;cursor: pointer;}
+.zuhe_right{float:right;width:20%;text-align:center;}
+.zuhe_center{margin:0 20% 0 31%;cursor: pointer;}
+.zuhe_center h2{font-size:1.4em;color:#000000;margin-top:2px;}
+.zuhe_left h2{font-size:1.8em;font-family: Arial, Helvetica, sans-serif;}
+.zuhe_left p{font-size:0.9em;color:#999999;}
+.zh_btn_lan{background-color: #389ad7;padding:2px 6px;border-radius: 10px;color:#fff;}
+.zh_btn_lv{background-color: #ffcc00;padding:2px 6px;border-radius: 10px;color:#fff;}
+.zh_btn_huang{background-color: #ff9900;padding:2px 6px;border-radius: 10px;color:#fff;}
+.zh_btn_chen{background-color: #ff6600;padding:2px 6px;border-radius: 10px;color:#fff;}
+.zh_btn_hong{background-color: #ff3300;padding:2px 6px;border-radius: 10px;color:#fff;}
+.zh_btn_zi{background-color: #ff0099;padding:2px 6px;border-radius: 10px;color:#fff;}
+.go_buy{
+	position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top:4px;
+    display: block;
+    background: url("../images/goumai.png") 50% 0 no-repeat;
+    background-size: 32px;
+    cursor: pointer;
+    }
+.go_buy span{
+    position: absolute;
+    bottom: -2px;
+    display: block;
+    width: 100%;
+    color:#389ad7;
+    text-align: center;
+}
+.zhishu_list{
+	position: relative;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+.zhishu_list_content li{	
+    width: 33%;
+    border-right: 1px solid #cbcbcb;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+}.zhishu_list_content li:last-child{	
+    width: 32%;
+    border-right: 0;
+    display: inline-block;
+    text-align: center;	
+    padding: 5px 0;
+}
+.zhishu_list_content li h2{	
+    font-size:14px;
+    color:#000000;
+}
+.zhishu_list_content li p{	
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.zhishu_list_content li span{	
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shishu_lv{color:#008000;}
+.shishu_hong{color:#e92d24}
+.labelidhide{display: none;}
+.labelidshow{display: inline-block;}

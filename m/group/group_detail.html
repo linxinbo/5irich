@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>组合基金详情</title>
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+	<!-- No Baidu Siteapp-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="icon" type="image/png" href="../images/icon_logochuang@2x.png">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/app-icon72x72@2x.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="理财易站" />
+	<link rel="apple-touch-icon-precomposed" href="images/app-icon72x72@2x.png">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/app-icon72x72@2x.png">
+	<meta name="msapplication-TileColor" content="#0e90d2">
+	<!-- normalize.css -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/common_zjy.css">
+	<link rel="stylesheet" href="../css/common_new.css">
+	<!--		<link rel="stylesheet" href="css/home.css">-->
+	<link rel="stylesheet" href="../css/common_qifu.css">
+	<link rel="stylesheet" href="../css/home_c.css">
+	<link rel="stylesheet" href="../css/group_detail.css">
+	<link rel="stylesheet" href="../css/incomeChart.css">
+
+</head>
+
+<body>
+	<div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix">
+				<div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+	<header class="header">
+		<!--<a class="back" href="../group/grounp_home.html"><span>返回</span><i></i></a>-->
+		<a id="zhjj_back" class="back1" href="../group/grounp_home.html">＜返回</a>
+		<h1>组合基金详情</h1>
+	</header>
+
+	<div class="group_detail">
+		<div class="group_header">
+			<div class="table_header"><span class="group_name">创金积极组合1号</span><span class="group_ID">（CJ1001）</span></div>
+		</div>
+		<div class="table_data_list">
+			<table class="table_data">
+				<tr>
+					<td class="td_1">单位净值（2015-10-12）</td>
+					<td class="td_2">日涨幅</td>
+					<td class="td_8">成立以来收益</td>
+				</tr>
+				<tr>
+					<td class="td_1"></td>
+					<td class="td_2"></td>
+					<td class="td_8"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="switch_bar">
+		<ul>
+			<li id="trend" class="trend select"><span>收益走势</span></li>
+			<li id="group_pz" class="group_pz"><span>组合配置</span></li>
+			<li id="main_info" class="main_info"><span>基本信息</span></li>
+			<li id="history_zz" class="history_zz"><span>历史净值</span></li>
+		</ul>
+	</div>
+	<div class="trend_show">
+		<div>
+			<ul class="navtab1" data-type="0">
+				<li class="one sele"><span>收益走势</span></li>
+				<li class=""><span>净值走势</span></li>
+			</ul>
+			<div class="kmap_box">
+				<!-- 0124 s -->
+
+				<div id="canvas">
+					<!--				<canvas id="chart_canvas"></canvas>-->
+					<div class="container" id="container" style="width:100%;height:300px;"></div>
+
+				</div>
+				<table class="kmap_date marBottom15" width="96%" border="0">
+					<tr>
+						<td align="center" width="25%"><span data-index="0">一个月</span></td>
+						<td align="center" width="25%"><span data-index="1" >三个月</span></td>
+						<td align="center" width="25%"><span data-index="2" class="sele">六个月</span></td>
+						<td align="center" width="25%"><span data-index="3">一年</span></td>
+					</tr>
+				</table>
+
+				<!-- 0124 e -->
+			</div>
+		</div>
+	</div>
+	<div class="group_pz_show">
+		<div class="pie_main">
+			<div class="pie_left">
+				<canvas class="pie_chart" id="pie-canvas"></canvas>
+			</div>
+			<div class="pie_right">
+				<table>
+					<tr>
+						<td><span class="red"></span></td>
+						<td>富国低碳环保组合</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td><span class="yellow"></span></td>
+						<td>华商优势行业</td>
+						<td>30%</td>
+					</tr>
+					<tr>
+						<td><span class="violet"></span></td>
+						<td>中邮双动力混合</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td><span class="blue"></span></td>
+						<td>新华行业灵活配置混合</td>
+						<td>20%</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="pie_list">
+			<ul>
+				<li>
+					<div><span class="list_title">组合点评</span></div>
+					<p>精选4只爆发力强的牛基，通过基金经理的积极配置，力图给投资者带来超额回报，本基金组合偏向成长股票型。</p>
+				</li>
+				<li>
+					<div><span class="list_title">富国低碳环保混合（100056）</span><span class="list_detail">详情></span></div>
+					<p>2015年年中排名冠军，在股市大跌中回撤相对较小，精选个股和风险控制，看好成长行业。</p>
+				</li>
+				<li>
+					<div><span class="list_title">华商优势行业（000390）</span><span class="list_detail">详情></span></div>
+					<p>本基金以对经济周期、产业周期判断为基础,深入研究不同经济周期下产业周期的变化,精选这些行业和板块中成长性良好的优质股票来构建组合,实现基金资产的持续稳健增长。</p>
+				</li>
+				<li>
+					<div><span class="list_title">中邮双动力混合（000571）</span><span class="list_detail">详情></span></div>
+					<p>本基金股票投资与固定收益投资并重，追求稳定积极的回报，抗跌性强。</p>
+				</li>
+				<li>
+					<div><span class="list_title">新华行业灵活配置混合A（519156）</span><span class="list_detail">详情></span></div>
+					<p>在有效把握市场风格特征与趋势变化的前提下，新华行业轮换灵活采取主动调整行业配置与大类资产配置结构的投资策略，有助于其保持投资组合对市场的良好契合性，实现良好且相对稳健的资本增值。</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_info_show">
+		<div>
+			<table>
+				<tr>
+					<td class="td_3">组合名称</td>
+					<td class="td_4">创金积极型组合1号</td>
+				</tr>
+				<tr>
+					<td class="td_3">基金组合代码</td>
+					<td class="td_4">CJ1001</td>
+				</tr>
+				<tr>
+					<td class="td_3">申购起点</td>
+					<td class="td_4">5000元</td>
+				</tr>
+				<tr>
+					<td class="td_3">购买方式</td>
+					<td class="td_4">一键购买配置基本组合</td>
+				</tr>
+				<tr>
+					<td class="td_3">购买费率</td>
+					<td class="td_4">基金组合0申购费，只收取每支基金的申购费用</td>
+				</tr>
+				<tr class="noline">
+					<td class="td_3">业绩基准</td>
+					<td class="td_4">股票型基金指数</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="history_zz_show">
+		<div class="history_data">
+			<table>
+				<tr>
+					<th>净值日期</th>
+					<th>组合净值</th>
+					<th>涨跌幅</th>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">0.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">-10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+				<tr>
+					<td class="td_5">2015-10-23</td>
+					<td class="td_6">10.0000</td>
+					<td class="td_7">10.00%</td>
+				</tr>
+			</table>
+			<div class="check_more"><a href="javascript:goHistory();"><span>查看更多></span></a></div>
+		</div>
+	</div>
+
+
+
+	<div class="foot_buy">
+		<a class="go-buy"><span>购买</span></a>
+	</div>
+
+
+</body>
+
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/qifu/highcharts.js"></script>
+<script src="../js/qifu/grid.js"></script>
+<script src="../js/Chart/Chart.min.js"></script>
+<!--<script src="../js/qifu/swiper.jquery.min.js"></script>-->
+<script type="text/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/index-change.js"></script>
+<script type="text/javascript" src="../js/qifu/index.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/qifu/home.js"></script>
+<!--<script type="text/javascript" src="js/qifu/login.js"></script>-->
+
+<script type="text/javascript" src="../js/qifu/common_qifu.js"></script>
+<!--<script type="text/javascript" src="js/qifu/login.js"></script>-->
+<script type="text/javascript" src="../js/qifu/buy_group_step1.js"></script>
+<script type="text/javascript" src="../js/qifu/groupPie.js"></script>
+<script type="text/javascript" src="../js/qifu/group_detail.js"></script>
+<script type="text/javascript" src="../js/qifu/groupChart.js"></script>
+<script type="text/javascript">
+console.log($.cookie("sourceId"));
+if($.cookie("sourceId")=="R360"){
+    $("#zhjj_back").attr("href","../richr360/richr360_home.html"); 
+}else{
+    $("#zhjj_back").attr("href","../group/grounp_home.html"); 
+};
+</script>
+
+</html>

@@ -1,0 +1,37 @@
+[{
+  "title":"QDII基金配置",
+  "image": "../images_mp/qifu/qdii-banner.jpg",
+  "url" : "../product/qdii/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+},{
+  "title":"海外配置",
+  "image": "../images_mp/qifu/hw-banner.jpg",
+  "url" : "../product/haiwai/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+},{
+  "title":"富国医疗保健",
+  "image": "../images_mp/qifu/banner_fg.jpg",
+  "url" : "../product/fuguoyiliao/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+},{
+  "title":"易方达黄金ETF",
+  "image": "../images_mp/qifu/banner_yifangdahuangjin.jpg",
+  "url" : "../product/yifangdahuangjin-m/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+},{
+  "title":"华商保本1号",
+  "image": "../images_mp/qifu/banner_huashang.jpg",
+  "url" : "../product/huashang-m/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+},{
+  "title":"汇添富黄金贵金属",
+  "image": "../images_mp/qifu/banner_huitianfuhuangjin@2x.jpg",
+  "url" : "../product/huitianfuhuangjin-m/index.html",
+  "state":"火热进行中",
+  "date":"2016-09-15"
+}]

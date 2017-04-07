@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.wirich.bean.wind.other.ArticleContentBean" table="article_content">
+    	<!-- 主键 -->
+        <id name="objectId" type="java.lang.Integer">
+            <column name="objectId" />
+        </id>
+        <property name="active" type="java.lang.Integer">
+            <column name="active" />
+        </property>
+        <property name="companyId" type="java.lang.Long">
+            <column name="companyId" />
+        </property>
+        <property name="createBy" type="java.lang.Long">
+            <column name="createBy" />
+        </property>
+        <!-- 创建时间 -->
+        <property name="createTime" type="java.sql.Timestamp">
+            <column name="createTime" />
+        </property>
+        <property name="memberid" type="java.lang.Long">
+            <column name="memberid" />
+        </property>
+        <property name="orgnization" type="java.lang.String">
+            <column name="orgnization" />
+        </property>
+        <property name="permissionCode" type="java.lang.String">
+            <column name="permissionCode" />
+        </property>
+        <property name="processId" type="java.lang.String">
+            <column name="processId" />
+        </property>
+        <property name="processing" type="java.lang.Integer">
+            <column name="processing" />
+        </property>
+        <property name="processingUser" type="java.lang.Long">
+            <column name="processingUser" />
+        </property>
+        <property name="tenantId" type="java.lang.Long">
+            <column name="tenantId" />
+        </property>
+        <property name="updateBy" type="java.lang.Long">
+            <column name="updateBy" />
+        </property>
+        <!-- 修改时间 -->
+        <property name="updateTime" type="java.sql.Timestamp">
+            <column name="updateTime"/>
+        </property>
+        <!-- 资讯内容 -->
+        <property name="content" type="java.lang.String">
+            <column name="content" length="65535" />
+        </property>
+        <property name="imagename" type="java.lang.String">
+            <column name="imagename" length="300" />
+        </property>
+        <property name="imageurl" type="java.lang.String">
+            <column name="imageurl" length="100" />
+        </property>
+        <!-- 资讯分组 -->
+        <property name="pxxh" type="java.lang.Integer">
+            <column name="pxxh" />
+        </property>
+        <!-- 资讯题目 -->
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="flag" type="java.lang.String">
+            <column name="flag" length="1">
+                <comment>标识协议是否修改（0标识未修改，1标识修改）</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,326 @@
+/* Reset CSS * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    color: #F2F2F2;
+}
+h1{
+    font-size: 6em;
+}
+p{
+    font-size: 2em;
+}
+.content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Section 1
+ * --------------------------------------- */
+#section0{
+    background-color: #00a0e9;
+}
+#section0 h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+}
+#section0 p{
+    color: #fff;
+    /*opacity: 0.4;*/
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    min-width: 1000px;
+    margin-top: 30px;
+}
+.btn_jisuan{
+    width: 140px;
+    height: 55px;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #D6584D;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+}
+.grad3_left{
+    float: left;
+    width: 80%;
+}
+.grad3_right{
+    float: left;
+    width: 20%;
+}
+.grad3_left_line1{
+    line-height: 25px;
+    overflow: hidden;
+}
+.grad3_left_line1 span{
+    display: inline-block;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    color: #F1C6C3;
+    font-size: 14px;
+}
+.grad3_left_line1 label{
+    display: inline-block;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.grad3{
+    overflow: hidden;
+}
+.grad2{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.grad2_left{
+    float: left;
+    width: 58%;
+    padding: 10px;
+}
+.grad2_left1{
+    float: left;
+    width: 38%;
+    padding: 10px;
+    height: 320px;
+}
+.btn_ceshi{
+    width: 55px;
+    height: 150px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+.btn_ceshi span{
+    font-size: 18px;
+    color: #D6584D;
+    display: inline-block;
+    width: 18px;
+    margin-top: 25px;
+}
+.wenti{
+    overflow: hidden;
+}
+.wenti_left{
+    width: 80%;
+    float: left;
+}
+.wenti_right{
+    width: 20%;
+    float: left;
+}
+.daan{
+    /*overflow: hidden;*/
+}
+.daan1{
+    width: 96%;
+    height: 90px;
+    background-color: rgba(188, 74, 64, 1);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349019607843137);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349019607843137);
+    margin: 20px auto 0 auto;
+}
+.daan1 span{
+    display: block;
+    font-size: 16px;
+    color: #CCCCCC;
+    padding-top: 13px;
+
+}
+.daan1 a{
+    font-size: 36px;
+    color: #FFFFFF;
+    display: block;
+}
+
+.yuqiinput{
+    width: 50px;
+    height: 22px;
+    text-align: center;
+}
+.wenti_title{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.wenti_title label{
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color: #000000;
+    line-height: 26px;
+}
+.wenti_title label i{
+    display: inline-block;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 26px;
+}
+.wenti_title span{
+    display: inline-block;
+    float: left;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 26px;
+    margin-left: 10px;
+}
+/* Section 2
+ * --------------------------------------- */
+#section1{
+    background-color: #d6584d;
+}
+#section1 h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+#section1 p{
+    color: #fff;
+    /*opacity: 0.4;*/
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+
+/* Section 3
+ * --------------------------------------- */
+#section2{
+    background-color: #2C3E50;
+}
+#section2 h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+}
+#section2 p{
+    color: #fff;
+    /*opacity: 0.4;*/
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.fms_header{
+    height: 71px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10000;
+}
+.fms_header .fms_title{
+    width: 1000px;
+    margin: 0 auto;
+    min-width: 1000px;
+}
+.fms_header .fms_title .fms_title_left{
+    float: left;
+    display: block;
+    margin-top: 10px;
+    width: 380px;
+}
+.fms_header .fms_title .fms_title_right{
+    float: right;
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+
+}
+.fms_header .fms_title .fms_title_center{
+    margin-left: 380px;
+    margin-right: 200px;
+    text-align: center;
+    overflow: hidden;
+
+}
+.fms_header .fms_title .fms_title_center a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    width: 140px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.fms_header .fms_title .fms_title_center a.select{
+    display: inline-block;
+    color: #000000;
+    font-size: 18px;
+    width: 140px;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 14px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5px;
+}
+.fms_header .fms_title .fms_title_right a{
+    line-height: 48px;
+    margin: 0 5px;
+    color: #ffffff;
+    font-size: 16px;
+}

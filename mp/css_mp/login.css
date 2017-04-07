@@ -1,0 +1,44 @@
+.login_logo{position: relative;overflow: hidden;padding: 4.00em 2em 2em 2em;text-align: center;}
+.login_logo img{display: block;width: 50%;height: auto;margin: 0 auto;}
+.login_list{background: #ffffff;overflow: hidden;}
+.login_list li{position:relative;height: 4.0em;border-bottom: 1px solid #f0f0f0;padding: 0 1.600em;}
+.login_list li>.username{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.440em;height:1.440em;background: url(../images_mp/login_username.png) no-repeat center center;background-size:1.440em 1.440em;}
+.login_list li>.password{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.440em;height:1.440em;background: url(../images_mp/login_pass.png) no-repeat center center;background-size:1.440em 1.440em;}
+.login_list li>.yanzhengma{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.440em;height:1.440em;background: url(../images_mp/login_yanz.png) no-repeat center center;background-size:1.440em 1.440em;}
+.login_list li> .span{position:absolute;top:10%;right:1.6em;}
+.login_list li> .span1{position:absolute;bottom:5%;right:3em;color: #999999;}
+.login_list li> input.n{width:100%;border:none;color: #000;height:100%;font-size:1.12em;text-align:left;background-color:transparent;padding-left: 2em;}
+.login_list li> input.n_yz{width:50%;border: none;color: #999999;height:100%;font-size:1.12em;text-align:left;background-color:transparent;padding-left: 2em;display: inline-block;}
+.login_list li> input.n_yzc{width:48%;border:none;height:100%;font-size:1.12em;text-align:right;background-color:transparent;padding-left: 1em;display: inline-block;}
+.login_title_g{padding: 0 1.00em;overflow: hidden;}
+.login_title_f{padding: 0 1.00em;overflow: hidden;}
+.login_title_f .jg{float: left;width: 50%;}
+.login_title_f .jg1{line-height: 1.2em;}
+.duiqi input,span{vertical-align: middle;margin: 0px;}
+.posi_bottom{position:relative;width: 90%;margin: 0 auto;margin-top: 2.5em;}
+.posi_bottom h2{text-align: center;height: 2.800em;line-height: 2.800em;background: url(../images_mp/posi_line.png) repeat-x center center;background-size:auto 2.800em;}
+.posi_bottom h2 span{font-size: 1.12em;background-color: #f0f0f0;}
+.weixin_hide{}
+.weixin_hide li{width: 33.3333%;float: left;text-align: center;}
+.weixin_hide li span{text-align: center;}
+.weixin_hide li.qq .icon {background: url(../images_mp/qq.png);background-repeat: no-repeat;background-size: auto 100%;}
+.weixin_hide li.weixin .icon {background: url(../images_mp/weixin.png);background-repeat: no-repeat;background-size: auto 100%;}
+.weixin_hide li.weibo .icon {background: url(../images_mp/weibopng.png);background-repeat: no-repeat;background-size: auto 100%;}
+.weixin_hide li .icon {display: block;width: 4em;height: 4em;margin: 0 auto;}
+.login_yz{height: 2em;width: auto;display: block;}
+.login_list li .x{position:absolute;top:50%;right:1.600em;margin-top:-0.72em;display:inline-block;width:1.440em;height:1.440em;background: url(../images_mp/btn_del@2x.png) center;background-size: 1.440em 1.440em;}
+.errorLi {display: none;margin-left: 3.6em;height: inherit !important;line-height: 4.0em !important;color: red;}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {background-color: rgb(250, 255, 255);background-image: none;color: rgb(0, 0, 0);}
+.save_right{margin: 1em 0;padding: 1em;background: #fff;text-align: center;overflow: hidden;}
+.save_right i {display: block;width: 3em;height: 3em;margin: 0 auto;background: url(../images_mp/all_ico_150106.png) no-repeat center center;background-size:3em 3em;}
+.save_right h2 {color: #000;font-size: 1.12em;line-height: 3em;}
+.account_title_g{padding: 0 1.200em;}
+.tip_txt {padding:0 1.2em;color: #737373;}
+.tip_txt h3 {line-height: 2em;}
+.tip_txt h3>i {float: left;width: 14px;height: 14px;margin: 5px 6px 0 0;background: url(../images_mp/all_ico_150107.png) 0 -100px;background-size: 150px 300px;}
+.tip_txt p {line-height: 1.6em;padding: 3px 0;}
+.p_t_9 { padding: 10px 0; background: #fff; }
+.p_t_9 .fundback{display: block; width: 90%; height: auto; margin: 0 auto;}
+.t { font-size: 1.12em; line-height: 2em; }
+.t span { color: #f84848; }
+.l {line-height: 2em;font-size: 1.12em;color:blue;}

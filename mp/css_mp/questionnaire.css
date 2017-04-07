@@ -1,0 +1,85 @@
+.bodyhome{
+    padding-bottom: 4.400em;
+}
+.header {
+    height: 4em;
+    background: url(../images_mp/fund/background.jpg) repeat-x center; 
+    background-size: auto 4em;
+}
+.header_top{
+    height: 4.000em;
+    position: relative;
+}
+.header_top a{
+	display:inline-block;
+}
+.header_top h2{
+	height:4.000em;
+	line-height:4.000em;
+	text-align:center;
+}
+.header_top h2 span{
+	font-size:1.440em;
+	color:#fff;
+}
+
+.header_top_t{
+	position: absolute;
+    top: 50%;
+    left: 1em;
+    margin-top: -0.8em;
+    height:1.600em;
+	width:0.880em;
+	display:block;
+}
+.header_top a i{
+	background: url(../images_mp/fund/left_icon.png) no-repeat center;
+	background-size:0.880em 1.600em;
+	display:block;
+	height:1.600em;
+	width:0.880em;
+}
+.bgbox1{
+	font-size:14px;
+	background: #fff;
+	padding:1em;
+}
+.ysy_agree dt,dd{
+	display:inline-block;
+}
+.ysy_agree {
+    position: relative;
+    margin: 0 10px 5px;
+}
+.ysy_agree dt {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    line-height: 1.83em;
+}
+.ysy_agree dd {
+    margin-left: 25px;
+    line-height: 22px;
+}
+.ysy_agree dt.def2 {
+    background: url(../images_mp/fund/btn_select@2x.png) no-repeat center center;
+    background-size: 17px 17px;
+}
+.ysy_agree dt.sele2 {
+    background: url(../images_mp/fund/icon_circle@2x.png) no-repeat center center;
+    background-size: 17px 17px;
+}
+.ques_submit {
+    display: block;
+    height: 2.736em;
+    line-height: 2.736em;
+    text-align: center;
+    width: 100%;
+    background: #3C7AE0;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.25em;
+    margin: 1em auto;
+    float: left;
+}

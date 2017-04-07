@@ -1,0 +1,37 @@
+#snow canvas {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.banner1{
+  min-width: 1200px;
+  height:628px;
+  background: url(images/banner1new.png) center center;
+
+}
+.banner2{
+  min-width: 1200px;
+  height:385px;
+  background: url(images/banner2new.png) center center;
+}
+.banner3{
+  min-width: 1200px;
+  height:904px;
+  background: url(images/beijing.png) center center;
+  overflow: hidden;
+}
+.banner3 ul{
+  margin: 260px auto;
+  width:800px;
+  height:480px;
+  list-style-type: none;
+  color:#e0353d;
+  font-size:20px;
+
+}
+.banner3 ul li{
+  line-height:32px;
+}

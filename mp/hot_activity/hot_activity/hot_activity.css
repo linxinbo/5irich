@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+.ty1_header{
+    height: 4.000em;
+    background: url(../../images_mp/sreach_bg.jpg) repeat-x center;
+    background-size: auto 4.000em;
+    position: relative;
+}
+/*电话图片*/
+.header_top_b{
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -1em;
+    height:1.76em;
+    width:1.76em;
+    display:block;
+}
+/*头部的间距*/
+.top_jianjv{
+    border-top: 1px solid #e3e3e3;
+}
+.huodong{
+    padding: 1.400em;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #ffffff;
+}
+.tupian{
+    display: block;/*图片高度是实际的高度*/
+    height: auto;
+    width: 100%;
+}

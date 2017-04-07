@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="images/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="images/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="images/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="style/comm.css?t=20170308">
+    <link rel="stylesheet" href="style/header.css?t=20170308">
+    <link rel="stylesheet" href="style/login.css?t=20170329">
+    <link rel="stylesheet" href="style/travel.css?t=20170308">
+</head>
+<body>
+<div>
+    <!--头部开始-->
+    <header class="header">
+        <div class="header_top">
+            <a class="header_top_t" href="javascript:window.history.go(-1);"><i class="header_back"></i></a>
+            <h2><span>开户</span></h2>
+            <!--<a class="header_top_c">开户</a>-->
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <div class="login_logo">
+            <a href="#"><img src="images/account_bz1.png"></a>
+        </div>
+        <div class="mtopdd">
+            <ul class="login_list1">
+                <li>
+                    <div class="login_list_left"><span>银行卡号</span></div>
+                    <div class="login_list_right"><input type="text" id="bankNo" name="bankNo" class="n" placeholder="请输入您的银行卡号" value=""></div>
+                </li>
+                <li>
+                    <div class="login_list_left"><span>开户银行</span></div>
+                    <div class="login_list_right">
+                        <select class="opaSelect t_s" id="bank_name">
+                        <!--<option value="default">请选择发卡银行</option>-->
+                        <option value="KQ01">快钱-工商银行</option>
+                        <option value="KQ02">快钱-农业银行</option>
+                        <option value="KQ03">快钱-中国银行</option>
+                        <option value="KQ04">快钱-建设银行</option>
+                        <option value="KQ05">快钱-招商银行</option>
+                        <option value="KQ06">快钱-交通银行</option>
+                        <option value="KQ07">快钱-中信银行</option>
+                        <option value="KQ08">快钱-浦发银行</option>
+                        <option value="KQ09">快钱-兴业银行</option>
+                        <option value="KQ10">快钱-广发银行</option>
+                        <option value="KQ11">快钱-平安银行</option>
+                        <option value="KQ12">快钱-华夏银行</option>
+                        <option value="KQ13">快钱-光大银行</option>
+                        <option value="KQ14">快钱-民生银行</option>
+                        <!--<option value="KQ15">快钱-邮储银行</option>-->
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="login_list_left"><span>省份城市</span></div>
+                    <div class="login_list_right">
+                        <select class="t_s1 opaSelect" id="provinces_opaSelect" onchange="linkage_city(this.value);"></select>
+                        <select class="t_s1 opaSelect" id="cities_opaSelect"></select>
+                    </div>
+                </li>
+                <li>
+                    <div class="login_list_left"><span>手机号码</span></div>
+                    <div class="login_list_right"><input type="tel" id="phone" name="cardNo" class="n" size="11" placeholder="请输入预留手机" value=""></div>
+                </li>
+                <li id="code">
+                    <div class="login_list_left"><span>手机验证</span></div>
+                    <div class="login_list_right1">
+                        <a class="smsCode yanz">获取验证码</a>
+                    </div>
+                    <div class="login_list_center"><input type="text" id="valiCode" class="n" name="valiCode" placeholder="请输入验证码" value=""></div>
+                </li>
+
+            </ul>
+        </div>
+        <a id="login_yh" class="btn_next_travel accountsubmit">提交开户</a>
+
+
+        <!--第三方登录-->
+        <!--<div class="posi_bottom">
+            <h2><span>&nbsp;&nbsp;&nbsp;&nbsp;同意协议，使用第三方登录&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+            <ul class="weixin_hide">
+                <li class="weixin"><i class="icon"></i><span>微信登陆</span></li>
+                <li class="qq"><i class="icon"></i><span>腾讯QQ</span></li>
+                <li class="weibo"><i class="icon"></i><span>新浪微博</span></li>
+            </ul>
+        </div>-->
+        <!--第三方登录-->
+    </div>
+    <!--内容结束-->
+
+</div>
+
+
+</body>
+<script src="js/jquery.min.js?t=20170308"></script>
+<script src="js/jquery.cookie.js?t=20170308"></script>
+<script src="js/common.js?t=20170308"></script>
+<script src="js/account_confirm.js?t=20170308"></script>
+</html>

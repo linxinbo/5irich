@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+Body,html{ background:#fff;}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0}
+body,button,input,select,textarea{ font:12px/1.5 "宋体",arial, verdana, sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+li{list-style:none;}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+q:before,q:after{content:""}
+button,input,select,textarea{font-size:100%}
+hr{border:none;height:1px}
+a{text-decoration:none}
+a:hover{text-decoration:none;cursor: pointer;}
+.inblock{ display:inline-block}
+.block{ display:block}
+.clear {clear: both;}
+.fl{ float:left}
+.fr{ float:right}
+
+
+body{
+  background-color: #fff;
+}
+.xf_banner{
+  background: url("../images/banner.png") center top no-repeat ;
+  height: 500px;
+}
+.xf_content{
+  width: 1192px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.xf_title{
+  margin: 20px 0 10px 0;
+}
+.xf_table{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-collapse:collapse;
+  border:none;
+}
+.xf_table thead tr td{
+  border:solid #ccc 1px;
+  background-color: #ffd800;
+  color: #8e1617;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  font-weight:bold;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td{
+  border:solid #ccc 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td:nth-child(2){
+  border:solid #ccc 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #4190ee;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td:nth-child(3){
+  border:solid #ccc 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #e60012;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.btn_xf{
+  background-color: #e60012;
+  width: 90%;
+  display: block;
+  border-radius: 5px;
+  height: 42px;
+  margin: 4px auto;
+  color: #ffffff;
+  text-align: center;
+  line-height: 42px;
+}
+.xf_title1{
+  background: url("../images/xf_title1.png") center top no-repeat ;
+  height: 75px;
+}
+.xf_title2{
+  background: url("../images/xf_title2.png") center top no-repeat ;
+  height: 75px;
+}
+.xf_nr1{
+  background-color: #c8641e;
+  overflow: hidden;
+}
+.xf_nr1 .xftitle1{
+  width: 1192px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+.xf_nr1 .xftitle1 span{
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Microsoft YaHei", "Hei";
+
+}
+.xf_nr1 .xftitle1 img{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.xf_nr2{
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.xf_nr2 .xftitle1{
+  width: 1192px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+.xf_nr2 .xftitle1 span{
+  color: #8e1617;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Microsoft YaHei", "Hei";
+
+}
+.xf_nr2 .xftitle1 img{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.xf_end{
+  background-color: #686868;
+  overflow: hidden;
+}
+.xf_end .xftitle3{
+  width: 1192px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+}
+.xf_end .xftitle3 span{
+  color: #fff;
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Microsoft YaHei", "Hei";
+}

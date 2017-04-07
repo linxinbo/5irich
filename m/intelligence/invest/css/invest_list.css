@@ -1,0 +1,23 @@
+body,html{ margin:0 auto; padding:0px; font-size:62.5%; font-family:'Microsoft Yahei','微软雅黑'; max-width:640px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none;}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+
+.margintop{ display:block; width:87%; padding-top:2%}
+.ulnews{ width:95%; margin:1% auto; background:#fff; padding:2%; font-size:1em;}
+.ulnews li{ border:1px solid #6699cc;cursor:pointer;}
+.ulnews li .imgleft{ float:left; border-right:1px solid #6699cc; width:40%;}
+.ulnews li .divr{ float:left; width:45%; margin-left:5%; padding-top:3.5%;font-size:1em; }
+.ulnews li .divr span{ font-size:2.8em; color:#389ad7;}
+.ulnews li .divr span img{ vertical-align:middle; width:13.5%; display:inline}
+.ulnews li .divr p{ font-size:2.5em; color:#999; width:100%; margin-top:6%; line-height:1.8em}
+
+
+@media (min-width:400px) and (max-width:500px) { 
+	body,html{ font-size:58.5%; }
+}
+@media (max-width:400px) { 
+	body,html{ font-size:53.5%; }
+}

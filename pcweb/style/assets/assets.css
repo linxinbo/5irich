@@ -1,0 +1,759 @@
+.assets{
+    background-color: #ffffff;
+    /*overflow: hidden;*/
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+a{
+    color:#666;
+}
+a:hover{
+    color: #ff9900;
+}
+.assets_content{
+    width: 1200px;
+    margin: 40px auto 20px auto;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 0px 5px #cccccc;
+    -webkit-box-shadow:0px 0px 5px #cccccc;
+}
+.assets_tatol_left{
+    float: left;
+    width: 240px;
+    padding: 20px 30px;
+}
+.assets_tatol_state{
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+.assets_tatol_state a{
+    display: inline-block;
+}
+.assets_tatol_state a.edit{
+    display:inline-block;
+    /*float: left;*/
+    /*text-align:center;*/
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../../images/assets/edit.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_tatol_state a.switch{
+    display:inline-block;
+    /*float: right;*/
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../../images/assets/switch.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_head{
+    margin-bottom: 30px;
+}
+.assets_renzhen{
+    overflow: hidden;
+}
+.assets_renzhen a{
+    display: inline-block;
+    margin-right: 20px;
+}
+.assets_renzhen a:last-child{
+    display: inline-block;
+    margin-right: 10px;
+}
+.assets_renzhen a.authentication{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/Authentication1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.authentication1{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/Authentication.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.phone{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/phone1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.phone1{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/phone.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.email{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/email1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.email1{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/email.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.card{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/card1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_renzhen a.card1{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/assets/card.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_head_me{
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.assets_tatol_right{
+    margin-left: 240px;
+    padding: 40px;
+    background-color: #ff9900;
+    overflow: hidden;
+}
+.tatol_me{
+    float: left;
+    width: 33.333333%;
+    padding-left: 30px;
+}
+.tatol_me:first-child{
+    float: left;
+    width: 33.333333%;
+    padding-left: 0;
+}
+.rightline{
+    border-right: 1px solid #ffffff;
+}
+.tatol_me span{
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    margin-top: 30px;
+}
+.tatol_me h2{
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 33px;
+    margin-top: 40px;
+}
+.trade_list{
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+}
+.trade_list a{
+    display: block;
+    float: right;
+}
+.trade_list_left{
+    float: left;
+}
+.fund_all_search{
+    height: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.fund_all_search .fund_input{
+    float: right;
+    border: 1px solid #d9dce0;
+    font-size: 14px;
+    padding: 9px;
+    width: 352px;
+    color: #999999;
+    outline: none;
+
+}
+.fund_all_search .fund_search_btn{
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    width: 80px;
+    color: #ffffff;
+    background-color:#ff9900;
+    margin-left: -1px;
+    border: none;
+    outline: none;
+}
+.trade_list span{
+    color: #999999;
+    display: block;
+    float: right;
+    font-size: 16px;
+    line-height: 16px;
+}
+.trade_list i{
+    display: block;
+    float: right;
+    margin-left: 10px;
+}
+.trade_list i.more{
+    width: 16px;
+    height: 16px;
+    background-image: url("../../images/assets/more.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.assets_list{
+    margin: 50px auto 0 auto;
+    width: 1200px;
+}
+.assets_list_title{
+    font-size: 24px;
+    margin: 0px;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.assets_switch{
+    height: 70px;
+    border-bottom: 1px solid #e7eaf2;
+}
+.assets_switch a{
+    float: left;
+    display: block;
+    width: 240px;
+    height: 70px;
+    padding-top: 22px;
+    position: relative;
+}
+.assets_switch a span{
+    font-size: 18px;
+    color: #333;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    border-right: solid 1px #e5e5e5;
+}
+.assets_switch a.select{
+    display: block;
+    width: 240px;
+    height: 70px;
+    padding-top: 22px;
+    border-bottom: 2px solid #ff9900;
+}
+.assets_switch a.select span{
+    font-size:18px;
+    color: #ff9900;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+
+}
+.shuzi{
+    position: absolute;
+    top:20px;
+    left: 64%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+.shuzi1{
+    position: absolute;
+    top:20px;
+    left: 70%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ff9900;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+}
+.assets_table{
+    /*margin-top: 50px;*/
+    margin-bottom: 50px;
+}
+.assets_table table{width: 100%;}
+.assets_table table thead tr{
+    border-bottom: 1px solid #d9dce0;
+}
+.assets_table table thead tr th{
+    text-align: center;
+    line-height: 70px;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+.assets_table table thead tr th:first-child{
+    text-align: left;
+    line-height: 36px;
+    font-size: 14px;
+    color: #333;
+    padding-left: 10px;
+}
+.assets_table table tbody tr{
+    border-bottom: 1px solid #edf0f4;
+    color: #666;
+}
+.assets_table table tbody tr:hover{
+    border-bottom: 1px solid #edf0f4;
+    background-color: #f5f8fc;
+}
+.assets_table table tbody tr td{
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+.assets_table table tbody tr td:first-child{
+    text-align: left;
+    line-height: 24px;
+    padding-left: 10px;
+    position: relative;
+}
+.fonthong{
+    color: #ff0000;
+}
+.fontlv{
+    color: #2db996;
+}
+.font12hui9{
+    color: #999999;
+    font-size: 12px;
+}
+.group_buy{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #ff9900;
+    background-color: #ffffff;
+}
+.group_buy:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 14px;
+}
+.cash_buy{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #ff9900;
+    background-color: #ffffff;
+}
+.cash_buy:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+}
+.zuijia_buy{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 14px;
+    line-height: 30px;
+    border: 1px solid #ff9900;
+    background-color: #ffffff;
+}
+.zuijia_buy:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 14px;
+}
+.timeinvest_stop{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #ff9900;
+    background-color: #ffffff;
+}
+.timeinvest_stop:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+}
+.cash_shuhui{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.cash_shuhui:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.shuhui_buy{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.shuhui_buy:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.shuhui_group{
+     display: inline-block;
+     width: 70px;
+     height: 32px;
+     color: #ff9900;
+     font-size: 16px;
+     line-height: 30px;
+     margin-left: 10px;
+ }
+.shuhui_group:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.cash_detail{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.cash_detail:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.group_detail{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.group_detail:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.kill_fund{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.kill_fund:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.regular_buy{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.regular_buy:hover{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    line-height: 30px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    background-color: #ff9900;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.xia{
+    display: block;
+    width: 32px;
+    height: 22px;
+    margin: 0 auto;
+}
+.shang{
+    display: block;
+    width: 32px;
+    height: 22px;
+    margin: 0 auto;
+}
+.none_tishi{
+    display: block;
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    margin-top: 30px;
+}
+.none_tobuy{
+    display: block;
+    font-size: 22px;
+    color: #ff9900;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.none_tobuy:hover{
+    display: block;
+    font-size: 22px;
+    color: #ff9900;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.shuhui_buy_move{
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+    position: relative;
+}
+.shuhui_buy_move:hover{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    color: #ff9900;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.shuhui_buy_move.san_x{
+    padding-right: 10px;
+    background-image: url("../../images/assets/san_x.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.shuhui_buy_move.san_s{
+    padding-right: 10px;
+    background-image: url("../../images/assets/san_s.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.handmore{
+    position: absolute;
+    right: 0px;
+    width: 136px;
+    height: 138px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 0px 5px #cccccc;
+    -webkit-box-shadow:0px 0px 5px #cccccc;
+    z-index: 10000;
+}
+.handmore a{
+    display: block;
+    line-height: 34px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ff9900;
+}
+.handmore a:hover{
+    display: block;
+    line-height: 34px;
+    font-size: 14px;
+    background-color: #ff9900;
+    color: #ffffff;
+}
+.isclose{
+    height: 147px;
+}
+.isclose span{
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+}
+.isclose a{
+    display: block;
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+
+
+/*交易记录*/
+.assets_switch_trade{
+    height: 70px;
+    border-bottom: 1px solid #e7eaf2;
+    background: #FAFAFA;
+}
+.assets_switch_trade a{
+    float: left;
+    display: block;
+    width: 14.285714%;
+    height: 70px;
+    padding-top: 22px;
+    position: relative;
+}
+.assets_switch_trade a span{
+    font-size: 22px;
+    color: #333;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+    font-size:18px;
+    border-right:solid 1px #e5e5e5;
+}
+.assets_switch_trade a.select{
+    display: block;
+    width: 14.285714%;
+    height: 70px;
+    padding-top: 22px;
+    border-bottom: 4px solid #ff9900;
+}
+.assets_switch_trade a.select span{
+    font-size: 18px;
+    color: #ff9900;
+    display: block;
+    text-align: center;
+    line-height: 22px;
+}
+.trade_history_sreach{
+    height: 70px;
+    border-bottom: 1px solid #e7eaf2;
+}
+.trade_history_left{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.trade_history_left a{
+    padding: 7px 30px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 18px;
+    border-radius: 17px;
+    color: #333333;
+}
+.trade_history_left span{
+    padding: 9px 10px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 18px;
+    /*border-radius: 17px;*/
+    color: #333333;
+}
+.trade_history_left input{
+    height: 30px;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    padding-left: 10px;
+}
+.trade_history_left input:hover{
+    border-color: #999;
+}
+.trade_history_left input:focus{
+    border-color: #ff9900;
+}
+.trade_history_left a.select{
+    background-color: #ff9900;
+}
+.trade_history_left a.sreach{
+    border: 1px solid #d2d2d2;
+}
+/*分页*/
+.fund_page{
+    text-align: right;
+}
+.assets_switch{
+    background: #FAFAFA;
+}

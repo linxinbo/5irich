@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-组合基金</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css">
+    <link rel="stylesheet" href="../css_mp/comm.css">
+    <link rel="stylesheet" href="../css_mp/home.css">
+    <link rel="stylesheet" href="../css_mp/assets/assets.css">
+    <link rel="stylesheet" href="../css_mp/feather.css">
+    <link rel="stylesheet" href="../css_mp/fund/details_page.css">
+</head>
+<body class="bodyhome">
+<!--头部开始-->
+<header class="asset_header">
+    <a class="asset_fanhui" href="javascript:history.go(-1);">
+        <i class="asset_fanhui_icon"></i>
+    </a>
+    <div class="head_center fund_name">
+        <a class="head_title_as group_name"></a>
+    </div>
+</header>
+<!--头部结束-->
+<!--内容开始-->
+<div class="viewport">
+    <div class="assets group_detail">
+        <!--<ul class="asset_content">
+            <li>
+                <a class="fontleft rightlien_baise">
+                    <span style="font-size: 1.600em; display:block;" class="td_value_3"></span>
+                    <b style="font-size: 1.120em">日涨跌幅(%)</b>
+                </a>
+            </li>
+            <li>
+                <a class="fontcenter rightlien_baise">
+                    <span style="font-size: 1.600em; display:block;" class="td_value_1"></span>
+                    <b style="font-size: 1.120em">最新净值(元)</b>
+                </a>
+            </li>
+            <li>
+                <a class="fontright">
+                    <span style="font-size: 1.600em; display:block;" class="td_value_2"></span>
+                    <b style="font-size: 1.120em">累计净值(元)</b>
+                </a>
+            </li>
+        </ul>
+
+        <div class="asset_update_time">
+            <button class="asset_btn td_value_5" type="button"></button>
+            <span style="line-height: 1.920em;" class="td_value_0"></span>
+        </div>-->
+    </div>
+    <div class="switch_bar1">
+        <ul>
+            <li id="trend" class="trend select"><span>收益走势</span></li>
+            <li id="group_pz" class="group_pz"><span>组合配置</span></li>
+            <li id="main_info" class="main_info"><span>基本信息</span></li>
+            <li id="history_zz" class="history_zz"><span>历史净值</span></li>
+        </ul>
+    </div>
+
+
+    <!--详情页1 开始-->
+    <div class="trend_show mtopdd">
+    <div class="content_line">
+        <ul class="content_bottom_bar navtab1" data-type="0">
+            <li class="bottomh2 selexx"><span>月收益走势图</span></li>
+            <li class="bottomh2"><span>净值走势图</span></li>
+        </ul>
+        <div id="canvas">
+            <!--				<canvas id="chart_canvas"></canvas>-->
+            <div class="container" id="container" style="width:100%;height:300px;">
+
+            </div>
+
+        </div>
+        <table class="kmap_date marBottom15" border="0">
+            <tr>
+                <td align="center" width="25%"><span data-index="0">一个月</span></td>
+                <td align="center" width="25%"><span data-index="1">三个月</span></td>
+                <td align="center" width="25%"><span data-index="2" class="selexx">六个月</span></td>
+                <td align="center" width="25%"><span data-index="3">一年</span></td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+
+    <div class="group_pz_show mtopdd menddd" style="display: none;">
+        <div class="pie_main">
+            <div class="pie_left">
+                <canvas class="pie_chart" id="pie-canvas"></canvas>
+            </div>
+            <div class="pie_right">
+                <table>
+                    <tr>
+                        <td><span class="red"></span></td>
+                        <td>富国低碳环保组合</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="yellow"></span></td>
+                        <td>华商优势行业</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="violet"></span></td>
+                        <td>中邮双动力混合</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td><span class="blue"></span></td>
+                        <td>新华行业灵活配置混合</td>
+                        <td>20%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="pie_list">
+            <ul>
+                <li>
+                    <div><span class="list_title">组合点评</span></div>
+                    <p>精选4只爆发力强的牛基，通过基金经理的积极配置，力图给投资者带来超额回报，本基金组合偏向成长股票型。</p>
+                </li>
+                <li>
+                    <div><span class="list_title">富国低碳环保混合（100056）</span><span class="list_detail">详情></span></div>
+                    <p>2015年年中排名冠军，在股市大跌中回撤相对较小，精选个股和风险控制，看好成长行业。</p>
+                </li>
+                <li>
+                    <div><span class="list_title">华商优势行业（000390）</span><span class="list_detail">详情></span></div>
+                    <p>本基金以对经济周期、产业周期判断为基础,深入研究不同经济周期下产业周期的变化,精选这些行业和板块中成长性良好的优质股票来构建组合,实现基金资产的持续稳健增长。</p>
+                </li>
+                <li>
+                    <div><span class="list_title">中邮双动力混合（000571）</span><span class="list_detail">详情></span></div>
+                    <p>本基金股票投资与固定收益投资并重，追求稳定积极的回报，抗跌性强。</p>
+                </li>
+                <li>
+                    <div><span class="list_title">新华行业灵活配置混合A（519156）</span><span class="list_detail">详情></span></div>
+                    <p>在有效把握市场风格特征与趋势变化的前提下，新华行业轮换灵活采取主动调整行业配置与大类资产配置结构的投资策略，有助于其保持投资组合对市场的良好契合性，实现良好且相对稳健的资本增值。</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_info_show mtopdd menddd" style="display: none;">
+        <div>
+            <table>
+                <tr>
+                    <td class="td_3">组合名称</td>
+                    <td class="td_4">创金积极型组合1号</td>
+                </tr>
+                <tr>
+                    <td class="td_3">基金组合代码</td>
+                    <td class="td_4">CJ1001</td>
+                </tr>
+                <tr>
+                    <td class="td_3">申购起点</td>
+                    <td class="td_4">5000元</td>
+                </tr>
+                <tr>
+                    <td class="td_3">购买方式</td>
+                    <td class="td_4">一键购买配置基本组合</td>
+                </tr>
+                <tr>
+                    <td class="td_3">购买费率</td>
+                    <td class="td_4">基金组合0申购费，只收取每支基金的申购费用</td>
+                </tr>
+                <tr class="noline">
+                    <td class="td_3">业绩基准</td>
+                    <td class="td_4">股票型基金指数</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main_info_show_gg mtopdd menddd" style="display: none;">
+
+    </div>
+    <div class="history_zz_show mtopdd menddd" style="display: none;">
+        <div class="history_data">
+            <table>
+                <tr>
+                    <th>净值日期</th>
+                    <th>组合净值</th>
+                    <th>涨跌幅</th>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">0.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">-10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+                <tr>
+                    <td class="td_5">2015-10-23</td>
+                    <td class="td_6">10.0000</td>
+                    <td class="td_7">10.00%</td>
+                </tr>
+            </table>
+            <div class="check_more menddd"><a href="javascript:goHistory();" class="btn btn-block btn_lanse"><span>查看更多></span></a></div>
+        </div>
+    </div>
+    <!--详情页1 结束-->
+
+    <!-- 详情页2 结束 -->
+</div>
+<!--尾部开始-->
+<div class="footer">
+    <!--<a href="#" class="footer_div2 buy_fund_mn"><span>模拟购买</span></a>-->
+    <a href="#" class="footer_div3 buy_fund go-buy"><span>立即购买</span></a>
+</div>
+<!--尾部结束-->
+
+</body>
+<script src="../js_mp/jquery.min.js"></script>
+<script src="../js_mp/chart/highcharts.js"></script>
+<script src="../js_mp/chart/grid.js"></script>
+<script src="../js_mp/chart/Chart.min.js"></script>
+<script src="../js_mp/jquery.cookie.js"></script>
+<script src="../js_mp/common_qifu.js"></script>
+<script src="../js_mp/buy/buy_group_step1.js"></script>
+<script src="../js_mp/group/groupPie.js"></script>
+<script src="../js_mp/group/group_detail.js"></script>
+<script src="../js_mp/group/groupChart.js"></script>
+</html>

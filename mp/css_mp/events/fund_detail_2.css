@@ -1,0 +1,72 @@
+body{
+    background: #f7ffff;
+}
+.detail_data{
+    width: 100%;
+    height: auto;
+    background: url("../../images_mp/qifu/bj_medical@2x.png") no-repeat;
+    background-size: 100%;
+    padding-top: 48%;
+    padding-bottom: 2em;
+}
+.detail_data ul{
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 92.5%;
+    border: 6px solid #3b91d1;
+    border-radius: 8px;
+    background: #8fdeff;
+}
+.detail_data ul li{
+    width: 90%;
+    background: #fff;
+    filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+    -moz-opacity:0.8; /*Firefox私有，透明度50%*/
+    opacity:0.8;/*其他，透明度50%*/
+    border-radius: 4px;
+    margin: 0 auto 10px;
+}
+.table_header {
+    height: 2.17em;
+    line-height: 2.17em;
+    border-bottom: 1px dashed #d5d4d7;
+    color: #15319c;
+}
+.fund_code{
+    font-size: 0.83em;
+    margin-left: 12px;
+}
+.fund_name{
+    font-size: 1em;
+    margin-left: 15px;
+}
+.fund_buy{
+    display: block;
+    float: right;
+    width: 5.83em;
+    height: 1.58em;
+    border: 0px;
+    border-radius: 2px;
+    background: #1b75da;
+    color: #fff;
+    margin-top: 3px;
+    margin-right: 12px;
+}
+.reason{
+    padding: 6px 10px 8px 15px;
+}
+.reason span{
+    line-height:100%;
+    font-size: 0.75em;
+}
+.icon_detail{
+    height: 1.92em;
+    line-height: 1.08em;
+    font-size: 1em;
+    margin-left: 80%;
+}
+.icon_detail a{
+    display: block;
+    float: left;
+    color: #1b75da;
+}

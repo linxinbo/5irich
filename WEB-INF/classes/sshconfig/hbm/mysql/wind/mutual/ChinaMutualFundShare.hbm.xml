@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMutualFundShareBean" table="chinamutualfundshare">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  Wind 代码 -->
+		<property name="finfoWindcode" type="java.lang.String">
+			<column name="F_INFO_WINDCODE" />
+		</property>
+		<!--变动日期 -->
+		<property name="changeDate" type="java.lang.String">
+			<column name="CHANGE_DATE" />
+		</property>
+		<!--基金总份额 -->
+		<property name="funitTotal" type="java.math.BigDecimal">
+			<column name="F_UNIT_TOTAL" />
+		</property>
+		<!--流通份额-->
+		<property name="finfoShare" type="java.math.BigDecimal">
+			<column name="F_INFO_SHARE" />
+		</property>
+		</class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.intelligentfinancialmanagement.CjqfwebIFMQuestionsBean" table="cjqfweb_intelligent_financial_management_questions">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id" />
+		</id>
+		<!--问题id-->
+		<property name="questionid" type="java.lang.String">
+			<column name="questionid" />
+		</property>
+		<!--问题所在页号-->
+		<property name="questionLocationPage" type="java.lang.Integer">
+			<column name="question_location_page" />
+		</property>
+		<!--问题所在页序号-->
+		<property name="questionPageOrder" type="java.lang.Integer">
+			<column name="question_page_order" />
+		</property>
+		<!--问题内容-->
+		<property name="questionContest" type="java.lang.String">
+			<column name="question_contest" />
+		</property>
+		<!--答案序号-->
+		<property name="questionAnswerOrder" type="java.lang.Integer">
+			<column name="question_answer_order" />
+		</property>
+		<!--答案内容-->
+		<property name="answerContest" type="java.lang.String">
+			<column name="answer_contest" />
+		</property>
+		<!--问题评分-->
+		<property name="questionScore" type="java.lang.Integer">
+			<column name="question_score" />
+		</property>
+		<!--数据更新时间-->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >	
+       
+   <!-- 组合Action-->
+	<bean id="FundGroupMainWebAction" class="com.wirich.action.cjqf.group.FundGroupMainWebAction" scope="prototype">
+		<property name="fundGroupWebMainService" ref="FundGroupWebMainServiceImpl"></property>
+	</bean>     
+    <!--组合service-->                                   
+	<bean id="FundGroupWebMainServiceImpl" class="com.wirich.service.cjqf.group.impl.FundGroupWebMainServiceImpl">
+		<property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl"></property>
+		<property name="cjqfWebGroupFundOtherInfoDao" ref="CJQFWebGroupFundOtherInfoDaoImpl"></property>
+		<property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl"></property>
+		<property name="cjqfWebGroupFundAnnouncementDao" ref="CJQFWebGroupFundAnnouncementDaoImpl"></property>
+		<property name="cjqfWebGroupFundManagerDao" ref="CJQFWebGroupFundManagerDaoImpl"></property>
+		<property name="cjqfWebGroupFundChartDao" ref="CJQFWebGroupFundChartDaoImpl"></property>
+		<property name="indexeodpricesDao" ref="AIndexeodpricesDaoImpl"></property>
+		<property name="cjqfGFChartDao" ref="CJQFGroupFundChartDaoImpl"></property>
+	</bean>
+	 <bean id="CJQFGroupFundChartDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFGroupFundChartDaoImpl">
+	</bean>
+	<!--组合Dao-->
+	<bean id="CJQFWebGroupFundMainDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<bean id="CJQFWebGroupFundOtherInfoDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundOtherInfoDaoImpl">
+	</bean> 
+	<bean id="CJQFWebFundGroupFundDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebFundGroupFundDaoImpl">
+	</bean>
+	<bean id="CJQFWebGroupFundAnnouncementDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundAnnouncementDaoImpl">
+	</bean> 
+	 <bean id="CJQFWebGroupFundManagerDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundManagerDaoImpl">
+	</bean>
+	 <bean id="CJQFWebGroupFundChartDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundChartDaoImpl">
+	</bean>
+	<bean id="AIndexeodpricesDaoImpl" class="com.wirich.dao.wind.astock.impl.AIndexeodpricesDaoImpl">
+	</bean> 
+</beans>

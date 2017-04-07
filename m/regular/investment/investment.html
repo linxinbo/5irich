@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-touch-fullscreen" content="YES">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>智能组合</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/common_zjy.css">
+    <link rel="stylesheet" href="../../css/common_qifu.css">
+    <link rel="stylesheet" href="../../css/common_new.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="header_c">
+    <div>
+        <i class="logo_c"></i>
+    </div>
+    <div>
+        <div class="login_div clearfix">
+            <a href="../../sigin/sigin.html" class="sigin" style="font-size:12px;">注册</a> <a
+                href="../../user_login.html" class="login" style="font-size:12px;">登录</a>
+        </div>
+        <div class="hello_div clearfix" style="display: none;font-size:12px;">
+            <div class="out">退出</div>
+            <span>hi,</span>
+        </div>
+    </div>
+</div>
+<header class="header">
+    <a class="back1" href="../../home.html">＜返回</a>
+    <h1>智能组合</h1>
+</header>
+<div class="main con1">
+	<div class="title">投资计划</div>
+    <p class="ptop" id="riPlan">    	
+    </p>
+    <span class="spanfont" id="riPlanz"></span>
+    <p class="pbot">
+    *注：预期本息是根据过往表现数学统计测算值，并不代表承诺收益。
+    </p>
+</div>
+<div class="con2">
+	<span id="riPlanpp"></span>
+    <i>历史年化平均收益率</i>
+</div>
+<div class="main con1 con3">
+	<div class="title">配置详情</div>
+    <img src="images/yuan.jpg" class="yuan" />
+    <div class="title2" >
+    	<span>基金名称（代码）</span>
+        <i>配置占比</i>
+        <div class="clear"></div>
+    </div>
+    <div id="jsonTip"></div>   
+</div>
+<div class="main con1 con4">
+	<div class="title">收益走势</div>
+    <div class="zst">
+    <div id="container" style="width:100%;min-width: 300px; height: 300px; margin: 0 auto"></div>
+    </div>
+</div>
+<div class="main con1 con5">
+	<div class="title">专家点评</div>
+    <p id="riPlanzj"></p>
+</div>
+<div class="bot">	
+	<div class="left">
+    	<span id="riPlanm">
+            <i>月</i>            
+        </span>
+        <span id="riPlany">
+            <i>年</i>           
+        </span>
+    </div>
+    <div class="right" onclick="invest_previous(ZN_groupCode,MoneyMonth);">
+    	<a href="#">立即投资</a>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/qifu/common_qifu.js"></script>
+<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../js/qifu/home.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/data.js"></script>
+<script src="js/drilldown.js"></script>
+<script src="js/tubiao.js"></script>
+<script src="js/investment.js"></script>
+<script src="../../js/qifu/invest_group_step1.js"></script>
+</html>

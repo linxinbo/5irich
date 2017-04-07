@@ -1,0 +1,92 @@
+.intell-test {
+    position: fixed;
+    width: 1100px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    margin-left: -550px;
+    margin-top: -300px;
+    background: #fff;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+    z-index: 999999;
+    padding: 24px 15px;
+    text-align: center;
+    display: none;
+}
+.intell-test h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+.intell-test .intell-test-cont {
+    width: 100%;
+    border-bottom: 1px solid #edf0f4;
+    height: 200px;
+}
+.intell-test-cont .test-question {
+    width: 33.33%;
+    float: left;
+    height: 200px;
+    padding: 30px 0 0 50px;
+    text-align: left;
+}
+.intell-test-cont .test-question h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.intell-test-cont .test-question ol li {
+    margin-bottom: 20px;
+    display: block;
+    height: 14px;
+}
+.intell-test-cont .test-question ol li label{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+    float: left;
+    margin-left: 10px;
+}
+.test-answer {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    float: left;
+    cursor: pointer;
+    background: url(../../images/home/test-btn.png) no-repeat center;
+}
+.test-answer.on{
+    background: url(../../images/home/test-button.png) no-repeat center;
+
+}
+.test-radio {
+    opacity: 0;
+    cursor: pointer;
+}
+.test-submit {
+    width: 160px;
+    height: 40px;
+    background: #ff9900;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    margin-top: 20px;
+    outline:none
+}
+.test-submit:active {
+    border: none;
+}
+.intell-test-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url(../../images/home/test-close.png) no-repeat center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-热门活动</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../../images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../../favicon.ico"/>
+    <link rel="stylesheet" href="../../css_mp/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css_mp/comm.css">
+    <link rel="stylesheet" type="text/css" href="../../css_mp/events/common.css" />
+	
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+
+    <script src="../../js_mp/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js_mp/home.js"></script>
+    <script type="text/javascript" src="../../js_mp/common_qifu.js"></script>
+    <script type="text/javascript" src="../../js_mp/buy/buy_funds_all.js"></script>
+    <script type="text/javascript" src="../../js_mp/jquery.cookie.js"></script>
+
+<body>
+<header class="ty1_header">
+    <a class="ty_fanhui" href="javascript:window.history.go(-1);">
+        <i class="ty_fanhui_icon"></i>
+    </a>
+    <div class="head_center">
+        <a class="head_title_as">泓德定增公募基金</a>
+    </div>
+    <a class="ty_home_as" href="../../home.html">
+        <i class="icon_home"></i>
+    </a>
+</header>
+  
+  <div class="hd_view">
+  	<div class="hd_banner">
+  		<img src="images/hongde_01.png"/>
+  	</div>
+    <div class="hd_content hd_title">
+      <img src="images/title_01.png"/>
+    </div>
+    <div class="hd_content">
+      <ul class="hd_jijinul clear">
+        <li class="hd_jijinli hd_marginr">
+          <span>泓德泓业混合001695 </span>
+          <a href="javascript:void(0);" onclick="buyStep1('001695', '泓德弘业混合');">立即购买</a>
+        </li>
+        <li class="hd_jijinli">
+          <span>泓德泓富混合A001357 </span>
+          <a href="javascript:void(0);" onclick="buyStep1('001357', '泓德泓富混合');">立即购买</a>
+        </li>
+        <li class="hd_jijinli hd_marginr hd_margintop">
+          <span>信达澳银慧管家A000681</span>
+          <a href="javascript:void(0);" onclick="buyStep1('000681', '信达澳银慧管家');">立即购买</a>
+        </li>
+        <li class="hd_jijinli hd_margintop">
+          <span>银华活钱宝F000662 </span>
+          <a href="javascript:void(0);" onclick="buyStep1('000662', '银华活钱宝');">立即购买</a>
+        </li>
+        <p class="hd_jijinp1">定增基金</p>
+        <p class="hd_jijinp2">货币基金</p>
+      </ul>
+
+    </div>
+    <div class="hd_content hd_title">
+      <img src="images/title_02.png"/>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_shouyih1">收益来源第一重：当期折价收益</h1>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_shouyisub">在市场下跌或震荡时，可通过融券和股指期货做空的对冲方式锁定折价收益!</h1>
+    </div>
+    <div class="hd_content hd_shouyiimg">
+      <img src="images/hd_shouyi.png"/>
+    </div>
+
+    <div class="hd_content hd_margintop">
+      <h1 class="hd_shouyih1">收益来源第二重：市场波动收益</h1>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_shouyisub">市场上涨时，跟随市场上涨获得收益!</h1>
+    </div>
+    <div class="hd_content hd_shouyiimg">
+      <img src="images/hd_shouyi1.png"/>
+    </div>
+
+    <div class="hd_content hd_margintop">
+      <h1 class="hd_shouyih1">收益来源第三重：个股成长收益</h1>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_shouyisub">通常，定增本身就会导致股价上涨！</h1>
+    </div>
+    <div class="hd_content hd_shouyiimg">
+      <img src="images/hd_shouyi2.png"/>
+    </div>
+
+    <div class="hd_content hd_title">
+      <img src="images/title_03.png"/>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_youshi">1、其他定增基金均是需要在认购期购买，只能在封闭期结束后才能赎回。泓德的定增基金，可以随时申购随时赎回，不再为流动性发愁。<br/>
+        2、定增基金的折价收益率在20%~30%，大比例折价让收益更安全。</h1>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_shouyih1">组合投资让资产更放心</h1>
+    </div>
+    <div class="hd_content">
+      <h1 class="hd_fangxin">定增基金加货币基金，权益资产加流动资产，解决流动性需求降低市场投资风险。市场存在风险，理财易站建议定增基金和货币基金投资比例为6:4。</h1>
+    </div>
+    <div class="hd_content hd_float">
+      <h1 class="hd_youshil">泓德泓富混合A今年以来同类排名第70</h1>
+      <img src="images/hd_table1.png"/>
+    </div>
+    <div class="hd_content hd_float">
+      <h1 class="hd_youshir">泓德泓业混合今年以来同类排名第35</h1>
+      <img src="images/hd_table2.png"/>
+    </div>
+    <!-- <div class="hd_content hd_youshiimg ">
+      <img src="images/hd_table.png"/>
+    </div> -->
+  </div>
+</body>
+</html>

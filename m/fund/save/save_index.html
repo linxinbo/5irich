@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--根据屏幕全局显示-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--允许全屏模式浏览-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="keywords" content="基金">
+    <meta name="description" content="基金">
+    <!--指定的iphone中safari顶端的状态条的样式-->
+    <meta name="format-detection" content="email=no"/>
+    <!--去除Android平台中对邮箱地址的识别-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 隐藏地址栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="" />
+    <!-- 状态条风格 -->
+    <title>增值宝存入</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/common_zjy.css"/>
+
+</head>
+
+<body>
+<header class="header">
+    <a class="back" href="javascript:history.go(-1);"><span>返回</span><i></i></a>
+    <h1>基金存入</h1>
+</header>
+<div>
+    <form name="" action="">
+    <div class="fund_tip_t">预计 <span>2014-10-15</span> 可以享受收益</div>
+    <div>
+        <ul class="normal_list">
+            <li>
+                <i class="d"></i>
+                <div class="banks">
+                    <em>基金简称</em>
+                    <div class="t bank_account">
+                        <div class="my_account">基金简称XXXXXX</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <ul class="normal_list">
+            <li>
+                <i class="d"></i>
+                <div>
+                    <em class="vlineRight">支付来源</em>
+                    <div class="t">
+                        <ul class="save_way save_payChannel clearfix">
+                        	<!-- 02-01 start -->
+                            <li data_c="2" data_name="save" class="select"><i class="radio_a"></i>银行卡</li>
+                            <li data_c="1" data_name="save"><i class="radio_a"></i>增值宝</li>
+                            <li data_c="3" data_name="save"><i class="radio_a"></i>汇款</li>
+                            <!-- 02-01 end -->
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!-- 付款银行卡 -->
+            <li>
+                <i class="d"></i>
+                <i class="m"></i>
+                <div class="banks">
+                    <em>付款银行卡</em>
+                    <div class="t bank_account">
+                        <span>建设银行****1501</span>
+                        <select class="opaSelect">
+                            <option>建设银行****1501</option>
+                            <option>工商银行****1501</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <ul class="normal_list">
+            <li>
+                <i class="d"></i>
+                <div>
+                    <em class="vlineRight">存入方式</em>
+                    <div class="t">
+                        <ul class="save_way deposit_type clearfix">
+                            <li data_c="1" data_name="save" class="select"><i class="radio_a"></i>实时</li>
+                            <li data_c="2" data_name="save"><i class="radio_a"></i>定期</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li data_way="2" class="data_way_2">
+                <i class="d"></i>
+                <i class="m"></i>
+                <div class="banks">
+                    <em>定期周期</em>
+                    <div class="t bank_account month">
+                        <span>一月</span>
+                        <select id="saveCycle" class="opaSelect">
+                            <option data_c="1" value="一月">一月</option>
+                            <option data_c="2" value="一周">一周</option>
+                            <option data_c="3" value="两周">两周</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li data_way="2" class="data_way_2">
+                <i class="d"></i>
+                <i class="m"></i>
+                <div class="banks">
+                    <em>开始存入时间</em>
+                    <div class="t bank_account day">
+                        <span>01</span>
+                        <select id="saveWeek" class="opaSelect">
+                            <option>周一</option>
+                            <option>周二</option>
+                            <option>周三</option>
+                            <option>周四</option>
+                            <option>周五</option>
+                            <!-- <option>周六</option> -->
+                            <!-- <option>周日</option> -->
+                        </select>
+						<select id="saveDay" class="opaSelect">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+		<div class="date_tip">您的开始存入时间将于：<span>2014-02-01</span></div>
+    </div>
+    <div>
+        <ul class="normal_list">
+            <li>
+                <i class="d"></i>
+                <div class="money_num">
+                    <em>存入金额</em>
+                    <span class="n">元</span>
+                    <input type="text" id="moneyNum" name="moneyNum" placeholder="输入金额" value="" />
+                </div>
+            </li>
+            <!-- 0201 start -->
+            <li class="money_balance" style="display:none;">
+            <!-- 0201 end -->
+                <i class="d"></i>
+                <div class="banks">
+                    <em>增值宝余额</em>
+                    <div class="t bank_account">
+                        <div class="my_account redColor1">1000.00元</div>
+                    </div>
+                </div>
+            </li>
+            <li style="display:none;" class="money_transfer">
+                <i class="d"></i>
+                <i class="m"></i>
+                <div class="banks">
+                    <em style="width:135px;">汇款截至时间后到账</em>
+                    <div class="t bank_account">
+                        <span>顺延到下一工作日</span>
+                        <select class="opaSelect">
+                            <option>顺延到下一工作日</option>
+                            <option>放弃交易</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="p_t_9">
+        <a class="button_a" href="save_confirm.html">下一步</a>
+    </div>
+    <div class="tip_txt">
+        <h3><i></i>温馨提示</h3>
+        <p>存入增值宝即申购建信增值宝货币市场基金，最低1分钱起存。</p>
+        <p>若您的银行卡不支持代扣支付模式，请访问理财易站网上交易系统签署代扣协议或新增银行卡支付账户。</p>
+        <p>我们7x24小时受理您的交易申请。每个工作日的交易申请至15：00截止，工作日15：00以后或非工作日提交的交易申请，按照下一工作日处理。</p>
+    </div>
+    </form>
+</div>
+<footer class="footer"></footer>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/fund_all_save.js"></script>
+</html>

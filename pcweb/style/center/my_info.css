@@ -1,0 +1,385 @@
+.my_info_banner{
+    position: relative;
+    min-width: 1200px;
+    height: 200px;
+    background-image: url("../../images/center/my_info_banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.my_info_content{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: none !important;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+.my_info{
+    margin: 40px 0;
+}
+.my_info_left{
+    width: 20%;
+    float: left;
+}
+.my_info_left .my_nav{
+
+}
+.my_info_left .my_nav a{
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #666666;
+    border: 1px solid #d9dce0;
+    line-height: 36px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+.my_info_left .my_nav a.select{
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    background-color: #ff9900;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #ff9900;
+    line-height: 36px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+.my_info_right{
+    margin-left: 20%;
+}
+.my_info_list{
+    border-bottom: 1px solid #edf0f4;
+    line-height: 55px;
+    overflow: hidden;
+}
+.my_info_list a{
+    display: block;
+    float: left;
+    width: 40%;
+    color: #333333;
+    font-size: 16px;
+}
+.my_info_list span{
+    display: block;
+    float: left;
+    width: 40%;
+    font-size: 16px;
+    color: #666666;
+}
+.my_info_list i{
+    display: block;
+    float: right;
+    width: 20%;
+    text-align: right;
+    color: #ff9900;
+    font-style: normal;
+    font-size: 16px;
+}
+.my_card{
+    width: 301px;
+    height: 161px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    display: block;
+}
+.my_card.color1{
+    background-image: url("../../images/center/card1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.my_card.color2{
+    background-image: url("../../images/center/card2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.my_card.color3{
+    background-image: url("../../images/center/card3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.my_card.addcard{
+    background-image: url("../../images/center/addcard.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bankname{
+    line-height: 50px;
+}
+.bankname i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+}
+.bankname i.gs_bank{
+    background-image: url("../../images/center/gs_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.bj_bank{
+    background-image: url("../../images/center/bj_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.gd_bank{
+    background-image: url("../../images/center/gd_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.gf_bank{
+    background-image: url("../../images/center/gf_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.hx_bank{
+    background-image: url("../../images/center/hx_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.jh_bank{
+    background-image: url("../../images/center/jh_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.js_bank{
+    background-image: url("../../images/center/js_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.jt_bank{
+    background-image: url("../../images/center/jt_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.ms_bank{
+    background-image: url("../../images/center/ms_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.nh_bank{
+    background-image: url("../../images/center/nh_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.nj_bank{
+    background-image: url("../../images/center/nj_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.pa_bank{
+    background-image: url("../../images/center/pa_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.pf_bank{
+    background-image: url("../../images/center/pf_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.xy_bank{
+    background-image: url("../../images/center/xy_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.zg_bank{
+    background-image: url("../../images/center/zg_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.zs_bank{
+    background-image: url("../../images/center/zs_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname i.zx_bank{
+    background-image: url("../../images/center/zx_bank.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.bankname a{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 20px;
+    color: #ffffff;
+    vertical-align: top;
+}
+.bankNo{
+    display: block;
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 35px;
+}
+.my_modify{
+    float: left;
+    width: 35%;
+    margin-bottom: 50px;
+}
+.my_modify h2{
+    font-size: 20px;
+    color: #666666;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.my_modify span{
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
+    margin-bottom: 10px;
+    display: block;
+}
+.my_modify a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.risktitle{
+    font-size: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0px;
+    padding-bottom: 15px;
+}
+.riskli{
+    background-color: #f5f5f5;
+    line-height: 44px;
+    height: 44px;
+}
+.riskli a{
+    font-size: 16px;
+    color: #333333;
+    float: left;
+    display: block;
+    width: 22%;
+    padding-left: 10px;
+}
+.riskli span{
+    font-size: 16px;
+    color: #ff9900;
+    display: block;
+    width: 78%;
+    float: left;
+}
+.riskli1{
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+.riskli2{
+    margin: 10px 0;
+    height: 44px;
+}
+.riskli2 a{
+    display: block;
+    width: 250px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ff9900;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+.riskcontent{
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+}
+.riskcontent1{
+    /*border: 1px solid #e0e0e0;*/
+    padding: 20px 0;
+}
+.riskcontent h3{
+    font-size: 20px;
+    color: #333333;
+    padding-bottom: 15px;
+}
+.riskcontent span{
+    font-size: 14px;
+    color: #333333;
+    line-height: 24px;
+}
+.riskli3{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.risktitle1{
+    font-size: 18px;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0px;
+    color: #333333;
+    padding-bottom: 15px;
+}
+.riskmleft5 input{
+    margin-right: 10px;
+}
+.btn-risk{
+    display: block;
+    width: 120px;
+    height: 38px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #ff9900;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+}
+.risktest{
+    margin-bottom: 5px;
+
+}
+.risktest i{
+    display: inline-block;
+    width: 12px;
+    height: 13px;
+    vertical-align: top;
+    background-image: url("../../images/center/radio1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+    margin-right: 10px;
+
+}
+.risktest i.select{
+    background-image: url("../../images/center/radio.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+.risktest span{
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    line-height: 14px;
+    vertical-align: top;
+}

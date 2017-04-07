@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.presentData.CjqfAccumulatedDataBean" table="cjqf_accumulated_data">
+		<!-- 主键Id -->
+		<id name="key" type="java.lang.Integer">
+			<column name="id" />
+		</id>
+		<!--  人数  -->
+		<property name="person" type="java.lang.Integer">
+			<column name="person" />
+		</property>
+		<!-- 单位净值 -->
+		<property name="money" type="java.math.BigDecimal">
+			<column name="money" />
+		</property>
+	</class>
+</hibernate-mapping>

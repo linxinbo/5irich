@@ -1,0 +1,139 @@
+.bodyhome{
+    padding-bottom: 4.400em;
+}
+.header {
+    height: 4.0em;
+}
+.header_top{
+    height: 4.000em;
+    background-color: #ff9900;
+    position: relative;
+}
+.header_top a{
+	display:inline-block;
+}
+.header_top h2{
+	height:4.000em;
+	line-height:4.000em;
+	text-align:center;
+}
+.header_top h2 span{
+	font-size:1.440em;
+	color:#fff;
+}
+.header_top_b{
+	position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -1em;
+    height:1.76em;
+	width:1.76em;
+	display:block;
+}
+.header_top_t{
+	position: absolute;
+    top: 50%;
+    left: 1em;
+    margin-top: -0.8em;
+    height:1.600em;
+	width:0.880em;
+	display:block;
+}
+.header_topi1{
+	background: url(../../images_mp/fund/left_icon.png) no-repeat center;
+	background-size:0.880em 1.600em;
+	display:block;
+	height:1.600em;
+	width:0.880em;
+}
+.header_topi2{
+	font-size: 1.760em;
+    color: #fff;
+}
+.buy_list{
+	/*border:1px solid #cccccc;*/
+	width: 100%;
+	overflow: hidden;
+	margin:1em 0em 0em;
+}
+.details_img{margin:0.720em 1.040em;}
+.buy_list_a{background: #ffffff;}
+.buy_list_a li{overflow:hidden;line-height:3.600em;position: relative;}
+.buy_list_a li .buyem{display:block;font-size:1em;text-align: left;padding-left: 1.3em;color:#999;font-weight: normal;}
+.buy_list_a li em{float:left;display:block;font-size:1.35em;text-align: left;padding-left: 1em;color:#444;font-weight: bold;}
+.buy_list_a li .in{width:83%;float:right;border:none;text-align:left;margin-right:0.5em;background-color: transparent;}
+.buy_list_a li .in1{float:left;border:none;text-align:left;background-color: transparent;font-size: 1.12em;padding-left: 1em;}
+.buy_list_a li .details_sel{float:right;border:none;text-align:right;background-color: transparent;font-size: 1.12em;color:#000;line-height:3.214em;height: 3.214em;}
+.buy_list_a li i{float:right;margin-right:1em;font-size: 1.12em;}
+.l1::-webkit-input-placeholder { 
+	color: #000; 
+}
+.details_xyb{
+	margin:1em;
+}
+.details_tishi{
+	margin:0.720em 1.040em;
+}
+.bank_limit{
+	color: #ff0000;
+	margin-left: 1em;
+}
+.details_tishi h2{
+	color:#eb1e33;
+	margin:1.28em auto 0.72em auto;
+	font-size: 1.12em;
+}
+.details_tishi p{
+	color:#eb1e32;
+	line-height:1.5;
+	text-indent:2em;
+}
+.my_account {
+	padding: 0 1em;
+	text-align: left;
+	overflow: hidden;
+	/*font-size: 1.12em;*/
+	color:#666;
+
+}
+.my_account1 {
+	/*margin-left: 22%;*/
+	text-align: right;
+	overflow: hidden;
+	font-size: 1.12em;
+}
+.my_account span{
+    margin-right:1em;
+	color:#444;
+	font-size: 1.3em;
+}
+.my_account .buyxia{}
+.x {position: absolute; right: 0px;top:50%;margin-top:-9px;width: 18px; height: 18px;background: url(../../images_mp/btn_del@2x.png) center; background-size: 18px 18px; }
+.n {position: absolute; right: 1em;z-index: 10000;}
+.t{overflow: hidden; position: relative;margin-left: 22%;}
+.opaSelect{ position: absolute; right: 0; top: 0;opacity: 0; height: 100%; width:77%;}
+.opaSelect1{ position: absolute; right: 0; top: 0;border:none;outline:none;height: 100%; width:87%;z-index: 1000;color: #000;font-size:1.12em;}
+.opaSelect_time{ position: absolute; right: 0; top: 0;border:none;outline:none;height: 100%; width:77%;z-index: 1000;color: #000;font-size:1.12em;}
+.opaSelect_time option{font-size: 1.3em;}
+.opaSelect option{font-size: 1.3em;}
+
+.m { position: absolute;right: 0px; z-index: 1; width: 1em; height: 1em; top:50%;margin-top: -4px; background: url(../../images_mp/arrofig_arrow.png) no-repeat center center; background-size: 100%; }
+/*.n { float: right; line-height: 40px; margin: 3px 9px 0 3px; color: #1b7ad5; font-size: 1.2em; }*/
+.m1 { position: absolute;right: 12.5px; z-index: 1; width: 1em; height: 1em; top:50%;margin-top: -4px; background: url(../../images_mp/arrofig_arrow.png) no-repeat center center; background-size: 100%; }
+
+/*现金宝新增样式*/
+.login_list{background:#edf0f4;overflow: hidden;}
+.login_list li{position:relative;height: 4.0em;background-color:#fff;padding: 0 1.600em;margin-bottom: 1em;}
+.login_list li>.username{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.8em;height:1.440em;background: url(../../images_mp/login_username.png) no-repeat left center;background-size:1.440em 1.440em;}
+.login_list li>.password{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.8em;height:1.440em;background: url(../../images_mp/login_pass.png) no-repeat left center;background-size:1.440em 1.440em;}
+.login_list li>.jine{position:absolute;top:50%;margin-top:-1.25em;display:inline-block;width:2.5em;height:2.5em;background: url(../../images_mp/my_assets/icon_zhuan@2x.png) no-repeat left center;background-size:2.5em 2.5em;}
+.login_list li>.password1{position:absolute;top:50%;margin-top:-1.25em;display:inline-block;width:2.5em;height:2.5em;background: url(../../images_mp/my_assets/icon_tan@2x.png) no-repeat left center;background-size:2.5em 2.5em;}
+.login_list li>.ka{position:absolute;top:50%;margin-top:-1.25em;display:inline-block;width:2.5em;height:2.5em;background: url(../../images_mp/my_assets/icon_suo@2x.png) no-repeat left center;background-size:2.5em 2.5em;}
+.login_list li>.yanzhengma{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.8em;height:1.440em;background: url(../../images_mp/login_yanz.png) no-repeat left center;background-size:1.440em 1.440em;}
+.login_list li> .span{position:absolute;top:10%;right:1.6em;}
+.login_list li> .span1{position:absolute;bottom:5%;right:1.2em;color: #999999;}
+.login_list li> input.n{width:100%;border:none;color: #000;height:100%;font-size:1.12em;text-align:left;background-color:transparent;padding-left: 1.8em;}
+.login_list li> input.n1{width:100%;border:none;color: #000;height:100%;font-size:1.12em;text-align:left;background-color:transparent;padding-left: 2.5em;}
+.login_list li> input.n_yz{width:50%;border: none;color: #999999;height:100%;font-size:1.12em;text-align:left;background-color:transparent;padding-left: 2.4em;display: inline-block;}
+.login_list li> input.n_yzc{width:48%;border:none;height:100%;font-size:1.12em;text-align:right;background-color:transparent;padding-left: 1em;display: inline-block;color:#ff9900;}
+.login_list li .x{position:absolute;top:50%;right:1.600em;margin-top:-0.72em;display:inline-block;width:1.440em;height:1.440em;background: url(../../images_mp/btn_del@2x.png) center;background-size: 1.440em 1.440em;}

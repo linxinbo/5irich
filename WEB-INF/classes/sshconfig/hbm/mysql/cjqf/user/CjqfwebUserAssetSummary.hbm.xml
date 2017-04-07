@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.szking.r360.UserAssetSummaryDataBean" table="cjqfweb_user_asset_summary">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  用户编号  -->
+		<property name="custno" type="java.lang.Integer">
+			<column name="custno" />
+		</property>
+		<!-- 交易日 -->
+		<property name="tradingdate" type="java.lang.String">
+			<column name="tradingdate" />
+		</property>
+		<!--  公募-总投入  -->
+		<property name="public_costmoney" type="java.lang.Double">
+			<column name="public_costmoney" />
+		</property>
+		<!--  公募-总收益  -->
+		<property name="public_totalfundbalance" type="java.lang.Double">
+			<column name="public_totalfundbalance" />
+		</property>
+		<!--  公募-总市值  -->
+		<property name="public_totalfundmarketvalue" type="java.lang.Double">
+			<column name="public_totalfundmarketvalue" />
+		</property>
+		<!--  公募-日涨幅  -->
+		<property name="public_dayrose" type="java.lang.Double">
+			<column name="public_dayrose" />
+		</property>
+		<!-- 公募-总收益率   -->
+		<property name="public_totalfundprofit" type="java.lang.Double">
+			<column name="public_totalfundprofit" />
+		</property>
+		<!--  短期-总投入  -->
+		<property name="short_costmoney" type="java.lang.Double">
+			<column name="short_costmoney" />
+		</property>
+		<!--  短期-总收益  -->
+		<property name="short_totalfundbalance" type="java.lang.Double">
+			<column name="short_totalfundbalance" />
+		</property>
+		<!--  短期-总市值  -->
+		<property name="short_totalfundmarketvalue" type="java.lang.Double">
+			<column name="short_totalfundmarketvalue" />
+		</property>
+		<!--  短期-日涨幅  -->
+		<property name="short_dayrose" type="java.lang.Double">
+			<column name="short_dayrose" />
+		</property>
+		<!--  短期-总收益率  -->
+		<property name="short_totalfundprofit" type="java.lang.Double">
+			<column name="short_totalfundprofit" />
+		</property>
+		<!--  短期-占比  -->
+		<property name="short_proportion" type="java.lang.Double">
+			<column name="short_proportion" />
+		</property>
+		<!--  公募-占比  -->
+		<property name="public_proportion" type="java.lang.Double">
+			<column name="public_proportion" />
+		</property>
+		<!--  总收益  -->
+		<property name="totalfundbalance" type="java.lang.Double">
+			<column name="totalfundbalance" />
+		</property>
+		<!--  总投入  -->
+		<property name="totalcostmoney" type="java.lang.Double">
+			<column name="totalcostmoney" />
+		</property>
+		<!--  总市值  -->
+		<property name="totalfundmarketvalue" type="java.lang.Double">
+			<column name="totalfundmarketvalue" />
+		</property>
+		<!--  总市值  -->
+		<property name="totaldayrose" type="java.lang.Double">
+			<column name="totaldayrose" />
+		</property>
+		<!--  总收益率  -->
+		<property name="totalfundprofit" type="java.lang.Double">
+			<column name="totalfundprofit" />
+		</property>
+	</class>
+</hibernate-mapping>

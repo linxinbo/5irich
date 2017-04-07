@@ -1,0 +1,20 @@
+.save_right{margin: 1em 0;padding: 1em;background: #fff;text-align: center;overflow: hidden;}
+.save_right i {display: block;width: 3em;height: 3em;margin: 0 auto;background: url(../images/all_ico_150106.png) no-repeat center center;background-size:3em 3em;}
+.save_right h2 {color: #000;font-size: 1.12em;line-height: 3em;}
+
+.save_false{margin: 1em 0;padding: 1em;background: #fff;text-align: center;overflow: hidden;}
+.save_false i {display: block;width: 3em;height: 3em;margin: 0 auto;background: url(../images/all_ico_false.png) no-repeat center center;background-size:3em 3em;}
+.save_false h2 {color: #000;font-size: 1.12em;line-height: 3em;}
+.account_title_g{padding: 0 1.200em;}
+.tip_txt {padding:0 1.2em;color: #737373;}
+.tip_txt h3 {line-height: 2em;}
+.tip_txt h3>i {float: left;width: 14px;height: 14px;margin: 5px 6px 0 0;background: url(../images/all_ico_150107.png) 0 -100px;background-size: 150px 300px;}
+.tip_txt p {line-height: 1.6em;padding: 3px 0;}
+.p_t_9 { padding: 10px 0; background: #fff; }
+.p_t_9 .fundback{display: block; width: 90%; height: auto; margin: 0 auto;}
+.t { font-size: 1.12em; line-height: 2em; }
+.t span { color: #f84848; }
+.l {line-height: 2em;font-size: 1.12em;color:blue;}
+.reg{background:#fff;}
+.fordeal {font-size: 1.24em;text-indent: 2em;margin: 2em 0;line-height: 1.8em;}
+.login_list li>.password{position:absolute;top:50%;margin-top:-0.72em;display:inline-block;width:1.8em;height:1.440em;background: url(../images/login_pass.png) no-repeat right center;background-size:1.440em 1.440em;}

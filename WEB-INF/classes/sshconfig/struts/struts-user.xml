@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="popedom" extends="wirich">
+		<!--用户注册：获取验证码-->
+		<action name="regAucd" class="UserAction" method="regiterAucd">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--用户注册：获取手机验证码-->
+		<action name="telRegAucd" class="UserAction" method="telRegiterAucd">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--找回密码：获取验证码-->
+		<action name="rstAucd" class="UserAction" method="resetAucd">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--找回密码：获取验证码验证(手机操作)-->
+		<action name="telRstAucd" class="UserAction" method="telResetAucd">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--验证码验证-->
+		<action name="checkAucd" class="UserAction" method="checkAuthCode">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--用户手机注册-->
+		<action name="register" class="UserAction" method="memberRegister">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--用户网页注册-->
+		<action name="webRegister" class="UserAction" method="webRegister">
+			<!-- <interceptor-ref name="defaultStack" /> -->
+			<interceptor-ref name="myStack" />
+		</action>
+		<!--用户登录-->
+		<action name="login" class="UserAction" method="login">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--是否存在用户-->
+		<action name="existsUser" class="UserAction" method="existsLoginName">
+		</action>
+		<!--  注销登录-->
+		<action name="logout" class="UserAction" method="logout">
+		</action>
+		<!-- 修改创金密码-->
+		<action name="upRichPwd" class="UserAction" method="resetPassword">
+		</action>
+		<!-- 创金密码找回-->
+		<action name="retRichPwd" class="UserAction" method="retrievePassword">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!-- 开户绑卡鉴权:金证、快钱验证信息返回token-->
+		<action name="bmsgsend" class="UserAction" method="OpenTradeBank">
+		</action>
+		<!-- 开户绑卡鉴权:金证、快钱验证信息返回token-->
+		<action name="bmsgcheck" class="UserAction" method="openAccAndBgCode">
+		</action>
+
+		<!-- 交易密码重置第一步：验证客户信息-->
+		<action name="ckTelTdInfo" class="UserAction" method="checkTelTradeInfo">
+		</action>
+		<!-- 重置密码第二步：获取手机验证码-->
+		<action name="rstTdAuCd" class="UserAction" method="resetTdAuthCode">
+		</action>
+		<!-- 重置密码第三步：验证验证码-->
+		<action name="checkTdAuCd" class="UserAction" method="resetTdCheckAuCd">
+		</action>
+		<!-- 重置密码第四步：修改交易密码(490024)-->
+		<action name="rstTdPwd" class="UserAction" method="resetTradePwd">
+		</action>
+		
+		<!-- 自选基金 -->
+		<action name="addChoice" class="UserChoiceAction" method="addChoice">
+		</action>
+		<action name="getChoice" class="UserChoiceAction" method="getUserChoice">
+		</action>
+		<action name="delChoice" class="UserChoiceAction" method="delChoice">
+		</action>
+		
+		<!-- 智能组合 -->
+		<action name="intellAutoCalculateGruop" class="UserAction" method="intellAutoCalculateGruop">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 智能组合 -->
+		<action name="intellAutoCalculateInvestGruop" class="UserAction" method="intellAutoCalculateInvestGruop">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 智能校验 -->
+		<action name="intellCheck" class="UserAction" method="intellCheck">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 测试类action -->
+		<action name="test_userAsset" class="testAction" method="sentAssetForTel">
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>
+
+
+

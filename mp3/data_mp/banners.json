@@ -1,0 +1,16 @@
+[{
+  "image": "images_mp/qifu/sgt-banner-m.jpg",
+  "url" : "events/sgt/sgt.html"
+},{
+  "image": "images_mp/qifu/gaige.png",
+  "url" : "theme/gaige/index.html"
+},{
+  "image": "images_mp/qifu/hongbao-banner.jpg",
+  "url" : "events/hongbao/index.html"
+},{
+  "image": "images_mp/qifu/qdii-banner2.jpg",
+  "url" : "product/qdii/index.html"
+},{
+  "image": "images_mp/qifu/banner_two@2x.png",
+    "url" : "events/baozhang/index.html"
+}]

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>理财易站-FOF管理系统-预警</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+    <meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css?t=20170308" />
+    <link rel="stylesheet" type="text/css" href="css/index.css?t=20170308" />
+    <link rel="stylesheet" type="text/css" href="css/wave.css?t=20170308" />
+
+
+
+</head>
+<body>
+<header class="fms_header">
+    <div class="fms_title">
+        <div class="fms_title_left"><img src="images/LOGO.png"></div>
+        <div class="fms_title_right"><a id="peizhi" href="index.html">配置管理</a>  <a>|</a>  <a id="wave" href="wave.html">预警</a></div>
+    </div>
+
+</header>
+
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="content">
+            <h1>子投顾预警</h1>
+            <!--<p>一层权重计算</p>-->
+            <div class="container" style="margin-top: 20px;">
+                <div class="fund_list">
+                    <table id="fund_list">
+                        <thead>
+                        <tr>
+                           <th>基金名称</th><th>近一个月收益（%）</th><th>近三个月收益（%）</th><th>成立以来收益（%）</th><th>夏普比率</th><th>最大回撤（%）</th><th>预警状态</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--<tr>
+                            <td>华安逆向策略</td><td>1.872</td><td>1.34%</td><td>3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>
+                        <tr>
+                            <td>华安逆向策略</td><td>1.872</td><td>1.34%</td><td>3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>
+                        <tr>
+                            <td>华安逆向策略</td><td>1.872</td><td class="fonthong">1.34%</td><td class="fonthong">3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>
+                        <tr>
+                            <td>华安逆向策略</td><td>1.872</td><td class="fontlv">-1.34%</td><td>3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>
+                        <tr>
+                            <td>华安逆向策略</td><td>1.872</td><td>1.34%</td><td>3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>
+                        <tr>
+                            <td>华安逆向策略</td><td>1.872</td><td>1.34%</td><td>3.26%</td><td>6.83%</td><td>18.43%</td><td>9.34%</td>
+                        </tr>-->
+                        </tbody>
+                    </table>
+
+
+                </div>
+                <div id="fund_list1" class="fund_list">
+                    <div class="change_list"><span>明汯CTA一号:</span><a>本周的变化幅度为-0.0100219995111，已触及 -0.0001的预警线</a></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="section" id="section1">
+        <div class="slide" id="slide1">
+            <div class="content">
+                <h1>FOF预警</h1>
+                <!--<p>二层权重计算</p>-->
+                <div class="container">
+                    <div id="container2" style="min-width:1000px;height:400px"></div>
+                    <div id="fund_list2" class="fund_list">
+                        <div class="change_list1"><a>FOF当前净值为0.98，触发0.98预警线</a></div>
+
+                    </div>
+                    <div id="fund_list3" class="fund_list">
+                        <div class="change_list1"><a>FOF本周净值变化幅度为-0.16，触发-0.15的预警线</a></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="float_c">
+    <div id="container1" style="min-width:500px;height:300px"></div>
+    <div id="guanbi" class="guanbi"></div>
+</div>
+<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+<script type="text/javascript">
+    fullpage.initialize('#fullpage', {
+        anchors: ['firstPage', 'secondPage'],
+        menu: '#menu',
+        css3:true
+    });
+</script>
+// jQuery
+<script src="js/jquery-1.8.3.min.js?t=20170308"></script>
+// Highcharts
+<script src="js/highcharts.js?t=20170308"></script>
+<script src="js/comm.js?t=20170308"></script>
+<script src="js/wave.js?t=20170308"></script>
+<script src="js/data.js?t=20170308"></script>
+<script src="js/alert_f.js?t=20170308"></script>
+<script src="js/alert_fof.js?t=20170308"></script>
+</body>
+</html>

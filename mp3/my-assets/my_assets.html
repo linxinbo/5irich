@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>理财易站-我的资产</title>
+		<meta name="keywords" content="理财易站关键字">
+		<meta name="description" content="理财易站内容介绍">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--禁止iPhone把数字转化成链接-->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="理财易站" />
+		<link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+		<link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+		<link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+		<link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+		<link rel="stylesheet" href="../css_mp/my_assets/my_assets.css?t=20170308" />
+	</head>
+	<body class="bodyhome">
+		<header class="ma_header clearfix">
+			<a href="../moni/moni.html" class="ma_moni">切换到模拟账户</a>
+			<a href="../trade/new_trade.html" class="ma_trade">交易中心</a>
+			<div class="ma_headCon">
+				<a href="../center/center.html">
+				<img src="../images_mp/my_assets/userhead@2x.png" class="ma_userhead"/>
+				<p class="ma_name">个人中心</p>
+				<p>更新日期：<span class="ma_date">2016-01-01</span></p>
+				</a>
+			</div>
+		</header>
+
+		<section class="ma_conH">
+			<ul class="clearfix">
+				<li id="ma_yetGain"><span>0.00 </span><br />累计收益率</li>
+				<li id="ma_totalVal"><span>0.00</span> <br />总资产</li>
+				<li id="ma_accEarn"><span>0.00 </span><br />累计收益</li>
+			</ul>
+		</section>
+
+		<section class="ma_chart clearfix">
+			<h3 class="ma_conH3">资产分配</h3>
+			<div class="ma_chartBox">
+				<canvas id="chart-canvas"></canvas>
+			</div>
+			<ul class="ma_list">
+				<li><span class="ma_listI"></span>公募基金<span class="ma_listA">0.00元</span></li>
+				<li><span class="ma_listI"></span>短期理财<span class="ma_listB">0.00元</span></li>
+				<li><span class="ma_listI"></span>高端理财<span class="ma_listC">0.00元</span></li>
+			</ul>
+		</section>
+
+		<section class="ma_con mendd">
+			<ul class="clearfix ma_nav">
+				<li><span class="ma_ac ma_query ma_queryA">公募基金</span></li>
+				<li><span class="ma_query ma_queryB">短期理财</span></li>
+			</ul>
+			<div class="ma_noData" style="display: none;">
+				<img src="../images_mp/my_assets/no_data.png" alt="" class="clearfix">
+				<h3>您尚未购买此类产品</h3>
+				<span><a href="../home.html">立即购买</a></span>
+			</div>
+			<div class="ma_noDataAll" style="display: none;">
+				<img src="../images_mp/my_assets/no_data.png" alt="" class="clearfix">
+				<h3>您尚未开户，暂时无法显示资产信息</h3>
+				<span><a href="../account/account.html">立即开户</a></span>
+			</div>
+			<div class="ma_noDataWei" style="display: none;">
+				<img src="../images_mp/my_assets/no_data.png" alt="" class="clearfix">
+				<h3>您尚未开户？</h3>
+				<span><a href="../account/account.html">马上开户</a></span>
+				<a class="ma_wei" href="../bindwx.html">已有理财易站账号？去绑定！</a>
+			</div>
+			<ul class="ma_content">
+				<!--<li class="clearfix">-->
+					<!--<div class="ma_conT clearfix">-->
+						<!--<h4>易方达信用债债券A&nbsp<strong>000032</strong></h4>-->
+						<!--<span>赎回</span>-->
+						<!--<span>追加</span>-->
+					<!--</div>-->
+					<!--<div class="ma_conL">-->
+						<!--<p class="clearfix">最新净值<span>38.56%</span></p>-->
+						<!--<p class="clearfix">成本(元)<span>38.56%</span></p>-->
+						<!--<p class="clearfix">参考市值(元)<span>38.56%</span></p>-->
+					<!--</div>-->
+					<!--<div class="ma_conR">-->
+						<!--<p class="clearfix">持有股份<span>38.56%</span></p>-->
+						<!--<p class="clearfix">累计收益(元)<span>38.56%</span></p>-->
+						<!--<p class="clearfix">累计收益率<span>38.56%</span></p>-->
+					<!--</div>-->
+					<!--<div class="ma_conB">-->
+						<!--<p>申请日期:2016-09-08</p>-->
+					<!--</div>-->
+				<!--</li>-->
+			</ul>
+		</section>
+		<!--底部菜单开始登录以后-->
+		<footer class="footer" style="display:block">
+			<ul class="endmenu">
+				<li>
+					<a href="../intel/index.html">
+						<span class="endmenuclass zhineng"></span>
+						<b><span class="endmenu_title font_huise">智能理财</span></b>
+					</a>
+				</li>
+				<li>
+					<a href="../new_fund/new_fund.html">
+						<span class="endmenuclass youxuan"></span>
+						<b><span class="endmenu_title font_huise">基金优选</span></b>
+					</a>
+				</li>
+				<li>
+					<a href="../hot_activity/private_fund.html">
+						<span class="endmenuclass gaoduan"></span>
+						<b><span class="endmenu_title font_huise">高端理财</span></b>
+					</a>
+				</li>
+				<li>
+					<a href="../my-assets/my_assets.html">
+						<span class="endmenuclass wodezichan1"></span>
+						<b><span class="endmenu_title font_chengse">我的资产</span></b>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<!--底部菜单结束-->
+	</body>
+	<script src="../js_mp/jquery.min.js?t=20170308"></script>
+	<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+	<script src="../js_mp/common_qifu.js?t=20170308"></script>
+	<script src="../js_mp/chart/Chart.min.js?t=20170308"></script>
+	<script src="../js_mp/common_qifu.js?t=20170308"></script>
+	<script src="../js_mp/home.js?t=20170308"></script>
+	<script src="../js_mp/buynew/buynewfundall.js?t=20170308"></script>
+	<script src="../js_mp/my_assets/newback_funds.js?t=20170308"></script>
+	<script src="../js_mp/my_assets/my_assets.js?t=20170308"></script>
+</html>

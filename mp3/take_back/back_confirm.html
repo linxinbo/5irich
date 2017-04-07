@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-基金赎回</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/details/details.css?t=20170308">
+    
+    <link rel="stylesheet" href="../css_mp/feather.css?t=20170308">
+</head>
+<body class="bodyhome">
+<div>
+    <!--头部开始-->
+    <header class="header">
+    	<div class="header_top">
+	        <a class="header_top_t" href="javascript:window.history.go(-1);"><i class="header_topi1"></i></a>
+	        <h2><span>赎回</span></h2>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+		<div class="details_img">
+       		<img src="../images_mp/details/queren1.png" style="display:block;width:100%;height:auto;margin:0 auto;">
+    	</div>
+    	<!--<div class="details_img">-->
+       		<!--<img src="../images_mp/details/queren.png" style="display:block;width:100%;height:3.040em;margin:0 auto;">-->
+    	<!--</div>-->
+    	<form>
+			<div class="buy_list mtopdd"  style="border-bottom:none;">
+				<ul class="buy_list_a">
+					<li>
+					<em>基金名称</em>
+						<div class="t bank_account">
+							<div class="my_account fill_arg1"><span>广发新动力</span></div>
+						</div>
+					</li>
+					<li>
+						<em>持有份额</em>
+						<div class="t bank_account">
+							<div class="my_account fill_arg2">656.9份</div>
+						</div>
+					</li>
+					<li>
+						<em>可用份额</em>
+						<div class="t bank_account">
+							<div  class="my_account fill_arg3">656.9份</div>
+						</div>
+					</li>
+					<li class="backall">
+						<em>赎回份额</em>
+						<span class="n">全部</span>
+						<div class="t bank_account">
+							<input type="tel" id="tradePW" name="tradePW" class="in back_count" size="20" placeholder="最少赎回份额0.01" value="">
+						</div>
+					</li>
+					<li>
+						<em>巨额处理</em>
+						<i class="m"></i>
+						<div class="t bank_account">
+							<div class="my_account" style="margin-right:30px;">
+								<span>取消</span>
+								<select class="opaSelect">
+									<option value="0">取消</option>
+									<option value="1">顺延</option>
+								</select>
+							</div>
+
+						</div>
+					</li>
+					<li style="display:block;">
+						<em>交易密码</em>
+						<div class="t bank_account">
+							<input type="password" id="tradePW" name="tradePW" class="in1 pass_trade" size="20" placeholder="请输入交易密码" value="">
+						</div>
+						<i data_rest="ID_rest" data_r="r" class="x" style="display:none;"></i>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="details_xyb">
+				<a id="drawBtn" href="#" class="btn btn-block btn_lanse btn-lg button_a">下一步</a>
+			</div>
+		</form>
+		<div class="details_tishi">
+			<h2>温馨提示</h2>
+			<p>基金公司需要1个工作日进行确认，确认成功后再交由银行进行处理。</p>
+		</div>
+    </div>
+    <!--内容结束-->
+</div>
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/swiper.min.js?t=20170308"></script>
+<script src="../js_mp/bootstrap.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/take_back/back_fund_step2.js?t=20170308"></script>
+<!-- <script src="js_mp/home/total_fund.js"></script> -->
+</html>

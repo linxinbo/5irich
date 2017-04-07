@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--根据屏幕全局显示-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="基金">
+	<meta name="description" content="基金">
+	<!--指定的iphone中safari顶端的状态条的样式-->
+	<meta name="format-detection" content="email=no" />
+	<!--去除Android平台中对邮箱地址的识别-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 隐藏地址栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="" />
+	<!-- 状态条风格 -->
+	<title>组合定投</title>
+	<!--日历组件依赖css begin-->
+	<link rel="stylesheet" type="text/css" href="../../css/calendar/calendar.css">
+	<link rel="stylesheet" type="text/css" href="../../css/calendar/calendar.default.css">
+	<!--日历组件依赖css end-->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common_zjy.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common_qifu.css" />
+	<link rel="stylesheet" href="../../css/common_new.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<a class="back1" href="javascript:history.go(-1);">＜返回</a>
+		<h1>组合定投确认</h1>
+	</header>
+	<div>
+		<form name="" action="">
+			<div>
+				<ul class="normal_list mtop15">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>组合名称</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account fund_id"><span>待生成。。。</span></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>定投周期</em>
+							<div class="t bank_account">
+								<div id="cycleSelect" class="my_account" style="margin-right:25px;">
+									<span>请选择</span>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>支付卡号</em>
+							<div class="t bank_account">
+								<div id="bank_no" class="my_account bank_no_conf">
+									<span>请选择</span>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="normal_list">
+
+					<li>
+						<i class="d"></i>
+						<div id="drawNO" class="money_num clearfix">
+							<em>定投金额</em>
+							<span class="n">元</span>
+							<div class="t bank_account">
+								<div id="drawMoneyNum" class="my_account conf_num" style="margin-right:0">2</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div style="" id="tradePW_div">
+				<ul class="normal_list mtop15">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<i data_rest="ID_rest" class="x" style="display:none;"></i>
+							<em>交易密码</em>
+							<div class="t bank_account">
+								<input type="password" id="tradePW" name="tradePW" class="n pass_trade" size="20" placeholder="请输入交易密码" value="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="p_t_9">
+				<a id="drawBtn" class="button_a">确认</a>
+			</div>
+			<div class="tip_txt">
+				<h3 style="color:red"><i></i>温馨提示</h3>
+				<p style="color:red">付款后基金公司需要1个工作日进行确认（15:00后转入的资金会顺延1个工作日确认，双休日及国家法定节假日期间，基金公司不进行份额确认），确认后即可享受收益，再过一个工作日即可在我的资产中查询。</p>
+				
+			</div>
+		</form>
+	</div>
+	<footer class="footer"></footer>
+</body>
+
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/qifu/common_qifu.js"></script>
+<script src="../../js/qifu/invest_group_step3.js"></script>
+
+</html>

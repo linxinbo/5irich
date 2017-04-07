@@ -1,0 +1,22 @@
+[{
+  "image": "images_mp/qifu/gf_banner.jpg",
+  "url" : "events/give_fina/give_fina.html"
+},{
+  "image": "images_mp/qifu/qdii-banner2.jpg",
+  "url" : "product/qdii/index.html"
+},{
+  "image": "images_mp/qifu/hongbao-banner.jpg",
+  "url" : "events/hongbao/index.html"
+},{
+  "image": "images_mp/qifu/hw-banner.jpg",
+  "url" : "product/haiwai/index.html"
+},{
+  "image": "images_mp/qifu/banner_huangjinshidai.jpg",
+  "url" : "theme/huangjinshidai-m/index.html"
+},{
+  "image": "images_mp/qifu/banner_xf.jpg",
+  "url" : "theme/xiaofei1.html"
+},{
+  "image": "images_mp/qifu/banner_two@2x.png",
+    "url" : "events/baozhang/index.html"
+}]

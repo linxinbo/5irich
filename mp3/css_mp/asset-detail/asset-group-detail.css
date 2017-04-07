@@ -1,0 +1,179 @@
+.group_total{background: #ff9900;overflow: hidden;}
+.group-adedis{
+    margin-top:1.5em;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+.group-adedis li{
+    float:left;
+    font-size:1.1em;
+    width:33%;
+    height:100%;
+    text-align: center;
+    color:#fff;
+    line-height:1.6em;
+    border-left:1px solid #eb8d00;
+}
+.group-adedis li span{
+    font-size:1.24em;
+
+}
+.csdj_tp{
+    background-color: #fff;
+    border-top: 1px solid #d8dce0;
+    border-bottom: 1px solid #d8dce0;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.csdj_ul{
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding: 0;
+}
+.csdj_ul_x{
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding: 0;
+}
+.csdj_ul li{height: 4.2em;}
+.csdj_ul li a{line-height: 4.0em;display: block;overflow: hidden;}
+.csdj_ul li a span{font-size: 1.4em;float: left;}
+.csdj_ul li a i{font-size: 1.4em;float: right;}
+.csdj_ul li .baifenbi{height: 0.2em;}
+
+
+.zngroup_list{
+    border-bottom: 1px solid #d8dce0;
+    overflow: hidden;
+    padding: 1em;
+}
+.zngroup_list_left{
+    float: left;
+    width: 1.8em;
+    margin-top: .22em;
+}
+.zngroup_list_right{
+    float: right;
+    width: 80px;
+}
+.zngroup_list_right h2{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.zngroup_list_right span{
+    font-size: 1.12em;
+    color: #999999;
+}
+.zngroup_list_center{
+    margin: 0 80px 0 1.8em;
+}
+.zngroup_list_center h2{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.zngroup_list_center span{
+    font-size: 1.0em;
+    color: #999999;
+}
+.zngroup_box{
+    width: 1.12em;
+    height: 1.12em;
+    display: block;
+}
+
+.bgcolor0{background-color: #c252f4;}
+.bgcolor1{background-color: #ee524f;}
+.bgcolor2{background-color: #fdbd07;}
+.bgcolor3{background-color: #29b5eb;}
+.bgcolor4{background-color: #4b66ed;}
+
+.fontb0{color: #444;}
+.fontb1{color: #444;}
+.fontb2{color: #444;}
+.fontb3{color: #444;}
+.fontb4{color: #444;}
+
+.group-shouyi{font-size: 1.4em;color: #444444;padding:0.5em;}
+
+.csdj_ul1{
+    background-color: #fff;
+    border-top: 1px solid #d8dce0;
+    border-bottom: 1px solid #d8dce0;
+    overflow: hidden;
+
+}
+.csdj_ul1 h2{
+    font-size: 1.4em;
+    color: #444;
+    padding:0.5em;
+    border-bottom: 1px solid #d8dce0;
+}
+.csdj_ul1 h2 span{
+    float: right;
+    color: #333333;
+}
+.groupnews{
+    padding: 0 1em;
+    overflow: hidden;
+}
+.groupnews li{
+    padding: 1em 0;
+    border-bottom: 1px solid #d8dce0;
+    overflow: hidden;
+}
+.groupnews li:last-child{
+    padding: 1em 0;
+    overflow: hidden;
+    border-bottom: none;
+}
+.groupnews li span:first-child{
+    float: left;
+    font-size: 1.28em;
+    color: #444;
+}
+.groupnews li span:last-child{
+    float: right;
+    font-size: 1.28em;
+    color: #444;
+}
+
+.adeover{
+    background:#ff9900;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.adeover .overul{
+    width:100%;
+    overflow: hidden;
+}
+.adeover .overul li{
+    float:left;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    font-size:1.6em;
+    text-align: center;
+}
+.adeover .overul .overli1{
+    width:30%;
+}
+.adeover .overul .overli2{
+    width:30%;
+}
+.adeover .overul .overli5{
+    width:100%;
+    color: #ffffff;
+}
+
+.fontRed{
+    color: #ff4b5b;
+}
+.fontGreen{
+    color: #2db996;
+}

@@ -1,0 +1,37 @@
+body,html{ margin:0 auto; padding:0px; font-size:62.5%; font-family:'Microsoft Yahei','微软雅黑'; max-width:750px; background:#fff; padding-top:1%}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal; font-weight:normal;}
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+.main{ width:92%; margin:auto;}
+
+
+
+
+@media (min-width:640px) and (max-width:768px) { 
+	body,html{font-size:62.5%; }
+}
+@media (min-width:480px) and (max-width:640px) { 
+	body,html{ font-size:46%; }
+}
+@media (min-width:400px) and (max-width:480px) { 
+	body,html{ font-size:36%; }
+}
+@media (max-width:400px) { 
+	body,html{ font-size:30%; }
+}
+
+
+.dztz{ font-size:3.6rem; color:#565656; text-align:center; border-bottom:1px solid #dcdcdc; padding:2% 0; background:#f8f8f8; position:relative}
+.back{ position:absolute; left:3%; top:25%; width:11%}
+.yuji{ padding:5% 3%;font-size:2.8rem; }
+.yuji-left{ float:left; color:#1794d1}
+.yuji-right{ float:right; color:#999}
+.gdblue{ width:90%; padding:2%; margin:0 auto; background:#ecf6fb;  font-size:2.4rem;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;}
+.yuji-left2{ color:#8a8a8a}
+.hd{ display:block; width:89%; margin:5% auto}
+
+.input-1{ display:block; background:#1794d1; padding:3% 0; font-size:3.6rem; border:none; width:94%; margin:2% auto;-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px; color:#fff; cursor:pointer}

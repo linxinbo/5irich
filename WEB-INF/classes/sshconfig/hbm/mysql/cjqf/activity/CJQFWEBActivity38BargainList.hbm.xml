@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.activity.CJQFWEBActivity38BargainList" table="cjqfweb_activity_38_bargain_list">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!-- 用户砍价商品表id -->
+		<property name="bargainId" type="java.lang.String">
+			<column name="bargain_id" />
+		</property>
+		<!-- 砍价用户id -->
+		<property name="userId" type="java.lang.String">
+			<column name="user_id" />
+		</property>
+		<!-- 帮砍用户id -->
+		<property name="helperId" type="java.lang.String">
+			<column name="helper_id" />
+		</property>
+		<!-- 砍价用户tel -->
+		<property name="userTel" type="java.lang.String">
+			<column name="user_tel" />
+		</property>
+		<!-- 帮砍用户tel -->
+		<property name="helperTel" type="java.lang.String">
+			<column name="helper_tel" />
+		</property>
+		<!-- 帮砍用户微信昵称 -->
+		<property name="helperWeixinNickname" type="java.lang.String">
+			<column name="helper_weixin_nickname" />
+		</property>
+		<!-- 帮砍用户微信头像url -->
+		<property name="helperWeixinHeadimgurl" type="java.lang.String">
+			<column name="helper_weixin_headimgurl" />
+		</property>
+		<!-- 砍掉金额 -->
+		<property name="cutMoney" type="java.lang.String">
+			<column name="cut_money" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="creatTime" type="java.sql.Timestamp">
+			<column name="create_time" />
+		</property>
+		<!-- 标识位（user/helper） -->
+		<property name="flag" type="java.lang.String">
+			<column name="flag" />
+		</property>
+	</class>
+</hibernate-mapping>

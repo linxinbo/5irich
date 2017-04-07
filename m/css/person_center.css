@@ -1,0 +1,65 @@
+body{
+    background: #e3e3e3;
+}
+.person_center{
+    width: 100%;
+    margin-top: 5px;
+    background: #fff;
+}
+.person_bar{
+    width: 100%;
+}
+.person_hd{
+    padding-top: 15px;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #999999;
+}
+.hd_img{
+    margin: 0px auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border: 1px solid #999999;
+    background: url("../images/@x/caishentouxiang.png") 50% no-repeat;
+    background-size: 40px 40px;
+}
+.person_id{
+    margin-top: 5px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 13px;
+    text-align: center;
+    color: #389ad7;
+}
+.person_list li{
+    height: 45px;
+    padding: 0 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.person_list a{
+	font-size: 15px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    color: #323232;
+    font-weight: bold;
+}
+.icon_img{
+    float: right;
+    color: #389ad7;
+}
+.login_out span{
+    color: #ef3d3e;
+}
+.after_open{
+    background: #fff;
+    cursor: pointer;
+}
+.navbar-nav li.active{
+/*    background: #f0f0f0;*/
+}
+.blank{
+    background: #e3e3e3;
+}

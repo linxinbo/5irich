@@ -1,0 +1,40 @@
+body {
+    background: #fff;
+    color: #555555;
+}
+.questlist ul{
+    width: 88%;
+    margin: 0 6%;
+}
+.fund_ques, .fund_ans{
+    line-height: 2.5em;
+}
+.fund_ques li span{
+    color: #ed1a1a;
+}
+.fund_ans li span{
+    
+}
+.nochoice{
+    width: 1.42em;
+    height: 1.42em;
+    background: url("../images/icon_circle_2.png");
+    cursor: pointer;
+}
+.foot_sub{
+    width: 90%;
+    margin: 0 auto;
+}
+.ques_submit{
+    display: block;
+    height: 2.736em;
+    line-height: 2.736em;
+    text-align: center;
+    width: 100%;
+    background: #1b7ae2;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1.25em;
+    margin: 1em auto;
+}

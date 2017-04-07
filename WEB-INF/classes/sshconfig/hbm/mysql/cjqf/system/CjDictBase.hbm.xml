@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.system.DictBaseBean" table="cj_dictbase">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  字典ID	 -->
+		<property name="dictType" type="java.lang.String">
+			<column name="dict_type" />
+		</property>
+		<!-- 条目key  -->
+		<property name="itemkey" type="java.lang.String">
+			<column name="item_key" />
+		</property>
+		<!--  条目值	  -->
+		<property name="itemValue" type="java.lang.String">
+			<column name="item_value" />
+		</property>
+		<!--  备注 -->
+		<property name="note" type="java.lang.String">
+			<column name="note" />
+		</property>
+	</class>
+</hibernate-mapping>

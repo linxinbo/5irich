@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-基金定投app</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="images/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="images/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="images/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style/comm.css?t=20170308">
+    <link rel="stylesheet" href="style/footer.css?t=20170308">
+    <link rel="stylesheet" href="style/header.css?t=20170308">
+    <link rel="stylesheet" href="style/travel.css?t=20170308">
+    <!--<link rel="stylesheet" href="style/Plug-in/FJL.css?t=20170308">-->
+    <link rel="stylesheet" type="text/css" href="style/Plug-in/FJL.picker.css?t=20170308" />
+</head>
+<body>
+<!--头部开始-->
+<div class="travel">
+<header class="header">
+    <div class="header_top_travel">
+        <a class="header_top_t" href="javascript:window.history.go(-1);"><i class="header_back"></i></a>
+        <h2><span>旅行度假</span></h2>
+        <a class="header_top_b" href="#"><i class="header_share"></i></a>
+    </div>
+</header>
+<!--头部结束-->
+    <div class="travel_from">
+        <div class="travel_head"><img src="images/head.png"></div>
+        <h2 class="travel_dest">马尔代夫豪华7日游</h2>
+        <div class="travel_read"><span>16000</span>元/人</div>
+        <div class="t_f_time">
+            <h2 class="t_f_text">旅行时间</h2>
+            <div><button id='demo2' data-options='{"type":"date","beginYear":2000,"endYear":2086}' class="btn mui-btn mui-btn-block">请选择出游的具体时间</button>
+                <!--<input type="text" class="t_f_input" placeholder="请选择出游的具体时间">--></div>
+        </div>
+        <div class="t_f_time">
+            <h2 class="t_f_text">同行人数</h2>
+            <div class="t_f_munber"><a class="sele" data-id="1">1人</a><a data-id="2">2人</a><a data-id="3">3人</a><a data-id="4">4人</a><a data-id="5">5人</a></div>
+        </div>
+        <a class="btn_next_travel">下一步</a>
+
+
+    </div>
+
+</div>
+</body>
+<script src="js/jquery.min.js?t=20170308"></script>
+<script src="js/jquery.cookie.js?t=20170308"></script>
+<script src="js/common.js?t=20170308"></script>
+<script src="js/Plug-in/FJL.min.js?t=20170308"></script>
+<script src="js/Plug-in/FJL.picker.min.js?t=20170308"></script>
+<script src="js/travel_step_1.js?t=20170308"></script>
+<script>
+    (function($) {
+        $.init();
+        var result = $('#demo2')[0];
+        var btns = $('.btn');
+        btns.each(function(i, btn) {
+            btn.addEventListener('tap', function() {
+                var optionsJson = this.getAttribute('data-options') || '{}';
+                var options = JSON.parse(optionsJson);
+                var id = this.getAttribute('id');
+                /*
+                 * 首次显示时实例化组件
+                 * 示例为了简洁，将 options 放在了按钮的 dom 上
+                 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                 */
+                var picker = new $.DtPicker(options);
+                picker.show(function(rs) {
+                    /*
+                     * rs.value 拼合后的 value
+                     * rs.text 拼合后的 text
+                     * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                     * rs.m 月，用法同年
+                     * rs.d 日，用法同年
+                     * rs.h 时，用法同年
+                     * rs.i 分（minutes 的第二个字母），用法同年
+                     */
+                    result.innerText = rs.text;
+                    /*
+                     * 返回 false 可以阻止选择框的关闭
+                     * return false;
+                     */
+                    /*
+                     * 释放组件资源，释放后将将不能再操作组件
+                     * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                     * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                     * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                     */
+                    picker.dispose();
+                });
+            }, false);
+        });
+    })(mui);
+</script>
+</html>

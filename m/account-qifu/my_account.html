@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>我的资产</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--根据屏幕全局显示-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="基金">
+	<meta name="description" content="基金">
+	<!--指定的iphone中safari顶端的状态条的样式-->
+	<meta name="format-detection" content="email=no" />
+	<!--去除Android平台中对邮箱地址的识别-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 隐藏地址栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="" />
+	<!-- 状态条风格 -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/common_zjy.css">
+	<link rel="stylesheet" href="../css/common_qifu.css">
+	<link rel="stylesheet" href="../css/common_new.css">
+
+	<link rel="stylesheet" href="../css/home.css">
+	<link rel="stylesheet" href="../css/home_c.css">
+	<link rel="stylesheet" href="../css/account.css">
+
+</head>
+
+<body>
+
+	<div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;">
+				<div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+
+	<header class="header">
+		<!--		<a class="back" href="../home.html"><span>返回</span><i></i></a>-->
+		<a class="go_open" href="../account/account_index.html"><span>开户</span></a>
+		<a href="../funds_qifu/fund_search.html" class="icon_search"></a>
+		<h1>我的资产<span style="font-size:0.8rem;" id="account"></span></h1>
+
+	</header>
+	<div class="focus">
+		<div class="user-data">
+			<div class="col">
+				<div class="row row-left">
+					<strong>持仓总资产(元)</strong>
+					<span>0</span>
+				</div>
+
+				<div class="row row-center">
+					<strong>历史总收益(元)</strong>
+					<span>0</span>
+				</div>
+				<div class="row row-right">
+					<strong>历史总收益率</strong>
+					<span>0</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="user_chart">
+			<div style="">
+				<div class="chart_div" style="width:130px;height:130px;">
+					<canvas id="chart-canvas"></canvas>
+				</div>
+
+				<div class="legend">
+					<ul>
+						<li> <span class="legend_all legend_a"></span><span class="legend_text">公募基金&nbsp;&nbsp;&nbsp;</span></li>
+						<li> <span class="legend_all legend_b"></span><span class="legend_text">短期理财&nbsp;&nbsp;&nbsp;</span></li>
+						<li> <span class="legend_all legend_c"></span><span class="legend_text">高端理财&nbsp;&nbsp;&nbsp;</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="focus-bg"><img src="../images/top-home.jpg"></div>
+	</div>
+
+
+	<div class="new_nav" id="wrapper">
+		<div id="scroller">
+			<ul class="clearfix" style="">
+				<li class="gongmu sele" style="">
+					<div>公募基金</div>
+				</li>
+				<li class="short" style="">
+					<div>短期理财</div>
+				</li>
+				<li class="high">
+					<div>高端理财</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="account_data">
+		<ul>
+			<!--
+            <li>
+                <div class="table_header"><span class="account_code">00142</span><span class="account_name">南方大数据300A</span></div>
+                <table class="table_data">
+                    <tr><td class="td_1">最新净值</td><td class="td_2">0.7789</td><td class="td_3">持有股份</td><td class="td_4">888.00</td></tr>
+                    <tr><td class="td_1">成本(元)</td><td class="td_2">1000.00</td><td class="td_3">累计收益(元)</td><td class="td_4">1000.00</td></tr>
+                    <tr><td class="td_1">参考市值(元)</td><td class="td_2">890.00</td><td class="td_3">累计收益率</td><td class="td_4">0.54%</td></tr>
+                </table>
+                <div class="acc_button">
+                    <span class="acc_add">追加</span><span class="acc_back">赎回</span>
+                </div>
+            </li>
+-->
+		</ul>
+	</div>
+
+	<div class="duanli_data">
+		<div class="no_data">
+			<h3>您还没有购买此类产品</h3>
+			<h3><a href="../funds_qifu/fund_short_term.html" style="color:#389ad7;">立即预约</a></h3>
+		</div>
+		<ul>
+			<!--
+            <li>
+                <div class="table_header"><span class="account_code"></span><span class="account_name">创富宝</span></div>
+                <table class="table_data">
+                    <tr><td class="td_1">投资本金</td><td class="td_2">0.7789</td><td class="td_3">预期年化</td><td class="td_4">888.00</td></tr>
+                    <tr><td class="td_1 color_black">本期收益</td><td class="td_2 color_red">1000.00</td><td class="td_3 color_black">预计到期收益</td><td class="td_4 color_red">1000.00</td></tr>
+                </table>
+                <div class="acc_button">
+                    <span class="acc_add">查询</span>
+                    <span class="acc_back">赎回</span>
+                </div>
+            </li>
+-->
+
+		</ul>
+	</div>
+	<div class="no_open">
+		<h3>未开户无法显示信息，请开户后查询</h3>
+		<h3>点击<a href="../account/account_index.html">开户</a></h3>
+	</div>
+
+
+
+	<div class="no_open_after">
+		<h3>暂时没有开通，稍后开通</h3>
+		<h3>谢谢</h3>
+	</div>
+
+	<div class="navbar">
+		<ul class="navbar-nav">
+			<li class="">
+				<a href="../home.html">
+					<span class="icon-home"></span>
+					<span class="navbar-label">首页</span>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="../trade/apply-find.html">
+					<span class="icon-fund"></span>
+					<span class="navbar-label">交易中心</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="my_account.html">
+					<span class="icon-high"></span>
+					<span class="navbar-label">我的财富</span>
+				</a>
+			</li>
+			<li class="">
+				<a href="../person/person_center.html">
+					<span class="icon-more"></span>
+					<span class="navbar-label">个人中心</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<footer class="footer"></footer>
+</body>
+<script type="application/javascript" src="../js/jquery.min.js"></script>
+<script type="application/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="application/javascript" src="../js/Chart/Chart.min.js"></script>
+<!--<script type="application/javascript" src="../js/faq.js"></script>-->
+<script type="application/javascript" src="../js/qifu/common_qifu.js"></script>
+<script type="application/javascript" src="../js/qifu/home.js"></script>
+<script type="application/javascript" src="../js/qifu/chart-new.js"></script>
+<script type="application/javascript" src="../js/qifu/back_funds.js"></script>
+<script type="application/javascript" src="../js/qifu/account.js"></script>
+<script type="application/javascript" src="../js/qifu/buy_funds.js"></script>
+
+
+</html>

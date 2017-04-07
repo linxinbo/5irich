@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,ul,li,h1,h2,h3,h4,h5,p,session{ margin:0px; padding:0px; list-style-type:none; font-family:'microsoft yahei','微软雅黑';}
+body,html{ margin:0 auto; max-width:720px;}
+img{ border:none; max-width:100%}
+.clear{ clear:both;}
+a{text-decoration:none;outline:none; color:#000}
+.bodyhome{
+    padding-bottom: 4.400em;
+}
+
+body,html{
+	background-color:#fff;
+}
+.hb_view{
+	margin: auto 1em;
+	overflow:hidden;
+}
+.hb_title1{
+	font-size: 2.0em;
+	color:#000;
+	line-height: 2.5em;
+}
+.hb_view img{
+	width:100%;
+	display:block;
+}
+.hb_title_img{
+	width:100%;
+	display:block;
+}
+.hb_title_img1{
+	margin-top:2em;
+	width:100%;
+	display:block;
+}
+.yybtn{ bottom: 0; color: #fff; height: 43px; position: fixed; width: 100%;}

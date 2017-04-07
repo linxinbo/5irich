@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>智能组合</title>
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/common_zjy.css">
+	<link rel="stylesheet" href="../../css/common_qifu.css">
+	<link rel="stylesheet" href="../../css/common_new.css">
+	<link rel="stylesheet" href="css/jquery.range.css">
+	<link rel="stylesheet" href="css/css.css">	
+</head>
+<body>
+	<div class="header_c">
+		<div>
+			<i class="logo_c"></i>
+		</div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../../sigin/sigin.html" class="sigin" style="font-size:12px;">注册</a> <a
+					href="../../user_login.html" class="login" style="font-size:12px;">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;font-size:12px;">
+				<div class="out">退出</div>
+				<span>hi,</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<a class="back1" href="../../home.html">＜返回</a>
+		<h1>理财定制</h1>
+	</header>
+	<input id="RiId" type="hidden" name="RiId" value="RiId05">
+    <div class="yuji">
+        <div class="yuji-left">预计投资期限</div>        
+        <div class="clear"></div>
+    </div>
+    <div class="gdblue">
+    	<div class="yuji-left yuji-left2">投资期限（年）</div><div class="yuji-right">0~20年</div><div class="clear"></div>
+        <div class="demo">
+		<input id="touziyx" type="hidden" class="year" value="5" />
+		</div>
+    </div>
+    <div class="yuji"><div class="yuji-left">可承受最大亏损</div><div class="clear"></div></div>
+    <div class="gdblue">
+    	<div class="yuji-left yuji-left2">最大亏损（%）</div><div class="yuji-right">0%~30%</div><div class="clear"></div>
+        <div class="demo">
+		<input id="losszd" type="hidden" class="loss" value="8" />
+	</div>
+    </div>
+    <div class="yuji"><div class="yuji-left">每月可投入金额</div><div class="clear"></div></div>
+    <div class="gdblue">
+    	<div class="yuji-left yuji-left2">每月投资金额（元）</div><div class="yuji-right">0~5万元</div><div class="clear"></div>
+        <div class="demo">
+		<input id="monthge" type="hidden" class="monthmoney" value="5000" />
+	</div>
+    </div>
+    <input id="sub" class="input-1" value="提交" type="submit">
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/qifu/common_qifu.js"></script>
+<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../js/qifu/home.js"></script>
+<script src="js/jquery.range.js"></script>
+<script>
+$(function(){
+	$('.year').jRange({
+		from: 0,
+		to: 20,
+		step: 1,
+		Company:'年',
+      //scale: [0,25,50,75,100],
+		format: '%s',
+		width: 275,
+		showLabels: true,
+		showScale: true
+	});
+	$('.loss').jRange({
+		from: 0,
+		to: 30,
+		step: 1,
+		Company:'%',
+      //scale: [0,25,50,75,100],
+		format: '%s',
+		width: 275,
+		showLabels: true,
+		showScale: true
+	});
+	$('.monthmoney').jRange({
+		from: 100,
+		to: 50000,
+		step: 100,
+		Company:'元',
+      //scale: [0,25,50,75,100],
+		format: '%s',
+		width: 275,
+		showLabels: true,
+		showScale: true
+	});
+});
+</script>
+<script type="text/javascript" src="js/qdask5.js"></script>
+</html>

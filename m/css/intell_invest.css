@@ -1,0 +1,59 @@
+/*-----------启富首页----------------------*/
+.header_c{height: 40px;background: #f7f7f7;padding:0 12px;border-bottom: 1px solid #f0f0f0;}
+.header_c>div{width: 50%;float: left;height: 100%;}
+.header_c>div:first-child{padding-top: 5px;}
+.header_c>div:first-child i{background: url(../images/@x/logo@2x.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+width: 100px;height: 30px;
+	display: block;
+}
+.login_div a{display: block;float: right;margin-left: 10px; width: 45px;height: 20px;line-height:18px;text-align: center;border-radius: 3px;border: 1px solid #389ad7;}
+.login_div a.login{background: #389ad7;color: #fff;}
+.login_div a.sigin{background: #fff;color: #389ad7;}
+.login_div{padding-top: 9px;}
+.hello_div{display: none;color: #389ad7;line-height: 40px;}
+.hello_div span{float: right;}
+
+
+.model_c li{height: 80px; border-bottom: 1px solid #d4d4d4;padding: 0 12px 0 0;background: #fff;}
+.model_c li>a{display: block;}
+.model_c li>a>div{display: inline-block;height: 80px;width: 56px;line-height: 80px;vertical-align: middle;}
+.model_c li>a>span{display: inline-block;font-size: 17px;height: 60px;line-height: 60px; vertical-align: middle;color: #323232;}
+li.jj_a{background: #E4E4E4;}
+li.jj_b{background: #E4E4E4;}
+li.jj_c{background: #E4E4E4;}
+li.jj_d{background: #E4E4E4;}
+li.jj_e{background: #E4E4E4;}
+li.jj_a .icon_h_l{background: url(../images/@2x/tuijian_new.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 30px; height: 40px;margin: 20px auto;
+}
+li.jj_b .icon_h_l{background: url(../images/@2x/zhuti_new.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 30px; height: 40px;margin: 10px auto;
+}
+li.jj_c .icon_h_l{background: url(../images/@2x/duanli.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 30px; height: 38px;margin: 11px auto;
+}
+li.jj_d .icon_h_l{background: url(../images/@2x/zuhe_new.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 35px; height: 30px;margin: 13px auto;
+}
+li.jj_e .icon_h_l{background: url(../images/@2x/gongmu_new.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 30px; height: 32px;margin: 13px auto;
+}
+li.jj_f .icon_h_l{background: url(../images/@2x/private_new.png) 0 0 no-repeat;
+background-size: 100% 100%;display: block; width: 30px; height: 32px;margin: 13px auto;
+}
+
+.hello_div div.out{
+	display: block;
+    float: right;
+    margin-left: 10px;
+	margin-top: 10px;
+    width: 45px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #389ad7;
+	    background: #389ad7;
+    color: #fff;
+}

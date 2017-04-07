@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="AccountBookInformations" extends="wirich">
+		<!--处理公募基金模拟账本开放基金-->
+		<action name="MutualFundOpenInformationsAction" class="MutualFundOpenInformationsAction" method="OutJson">
+		</action> 
+		<!--处理货币基金模拟账本信息-->
+		<action name="MoneyFundOpenInformationsAction" class="MoneyFundOpenInformationsAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本定投信息-->
+		<action name="MutualFundFixedInvestmentInformationsAction" class="MutualFundFixedInvestmentInformationsAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本基金业绩-->
+		<action name="MutualFundAccountBookPerformaceAction" class="MutualFundAccountBookPerformaceAction" method="OutJson">
+		</action> 
+		<!--处理货币基金模拟账本基金业绩-->
+		<action name="MoneyFundAccountBookPerformaceAction" class="MoneyFundAccountBookPerformaceAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本定投业绩-->
+		<action name="MutualFundAccountBookFixedInvestmentPerformaceAction" class="MutualFundAccountBookFixedInvestmentPerformaceAction" method="OutJson">
+		</action> 
+		<!--处理公募基金模拟账本购买信息-->
+		<action name="MutualFundAccountBookPurchaseInfAction" class="MutualFundAccountBookPurchaseInfAction" method="OutJson">
+		</action> 
+		<!--处理货币基金模拟账本购买信息-->
+		<action name="MoneyFundAccountBookPurchaseInfAction" class="MoneyFundAccountBookPurchaseInfAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本定投购买信息-->
+		<action name="MutualFundFixedInvestmentPurchaseInfAction" class="MutualFundFixedInvestmentPurchaseInfAction" method="OutJson">
+		</action>
+		 <!--基金组合按钮-->
+		<action name="GroupFundOpenInformationsAction" class="GroupFundOpenInformationsAction" method="OutJson">
+		</action>
+		<!--组合基金业绩表现-->
+		<action name="GroupFundAccountBookPerformaceAction" class="GroupFundAccountBookPerformaceAction" method="OutJson">
+		</action>
+		<!--组合基金购买信息-->
+		<action name="GroupFundAccountBookPurchaseInfAction" class="GroupFundAccountBookPurchaseInfAction" method="OutJson">
+		</action>
+	</package>
+</struts>

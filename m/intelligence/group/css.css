@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,ul,li,h1,h2,h3,h4,h5,p,session{ margin:0px; padding:0px; list-style-type:none; font-family:'microsoft yahei','微软雅黑';}
+body,html{ margin:0 auto; max-width:640px;background:#ececec; font-size: 62.5%;}
+
+img{ border:none; max-width:100%}
+.clear{ clear:both;}
+a{text-decoration:none;outline:none; color:#000}
+
+.title1{ width:55%; display:block; margin:0% auto; position:relative;}
+.title1 img{ width:100%;padding-top:8%;padding-bottom: 8%;}
+.title1 p{ width:62%; position:absolute; top:32%; left:20%; color: #333333; font-size:3em; line-height:2em; text-align:center}
+.con1{  width:87%; margin:auto; padding-top:5%; padding-bottom:5%}
+.con1 span{ display:block; }
+.con1 span a{ color:#389ad7; font-size:4em; display:block; float:left; margin-top:-1%; margin-left:2%; width:90%}
+.con1 span i{ display:block; width:20px; height:20px; background:#389ad7; float:left;margin-top:-1%; margin-left:2%;}
+.con1 ul{ margin-left:25px; padding-top:3%;}
+.con1 ul li{ color:#333333; font-size:3em; line-height:1.5em; margin-left:2%;}
+.con2{ border-top:none;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.con2 span i{ background:#4d44c8}
+.con2 span a{ color:#4d44c8}
+.con3{ border-top:none;border-bottom:1px solid #ccc;}
+.con3 span i{ background:#c842ad}
+.con3 span a{ color:#c842ad}
+.con4{ border-top:none;border-bottom:1px solid #ccc;}
+.con4 span i{ background:#4d44c8}
+.con4 span a{ color:#4d44c8}
+.zst{ width:87%; margin:auto; padding-top:5%; padding-bottom:4%}
+.zst span{ color:#333333; font-size:4em; display:block; margin-bottom:2%}
+.spantitle{ color:#333333; font-size:4em; display:block; margin:auto; margin-bottom:2%; width:87%} 
+.pbot{ color:#333333; font-size:3em; width:87%; margin:0 auto; line-height:1.6em;}
+.abuy{ display:block; margin:5% auto; width:87%; font-size:4em; color:#fff; text-align:center; padding-top:2%; padding-bottom:2%; background:#1B75DA; border-radius:10px;}
+.asure{ background:#fff; color:#389ad7}
+.span_number{font-size:2.4em;color:red;}
+.span_character{color:#666;font-size:1.2em;}
+.span_unit{font-size:1.3em;color:red;}
+.dcbox{ width:83%; margin:auto; background:#fff; padding:2%; margin-bottom:3%}
+.dcbox1{ margin-top:6%}
+.dcbox span{ display:block; color:#389ad7; font-size:4em;}
+.dcbox ul li{ font-size:3em;}
+.dcbox ul li input{ margin-right:3%}
+@media screen and (min-width:555px) and (max-width: 1080px) {
+ body,html{ font-size: 62.5%;}
+}
+@media screen and (min-width:480px) and (max-width: 554px) {
+ body,html{ font-size: 56%;}
+}
+@media screen and (min-width:400px) and (max-width: 479px) {
+ body,html{ font-size: 50%;}
+}
+@media screen and (min-width:366px) and (max-width: 399px) {
+ body,html{ font-size: 48%;}
+}
+@media screen and (max-width: 365px) {
+ body,html{ font-size: 46%;}
+ .con1 span a{ color:#389ad7; font-size:4em; display:block; float:left; margin-top:-1%; margin-left:2%; width:70%}
+}

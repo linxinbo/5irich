@@ -1,0 +1,142 @@
+body, ul, li, div, input{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    background: #f0eeef;
+    font-family:"Microsoft YaHei";
+    font-size: 12px;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+}
+.header h1{
+    margin: 0 10px 0px 50px;
+}
+.option_data .opt_list{
+    margin-bottom: 15px;
+}
+.option_data .change_1{
+    height: 45px;
+    margin-bottom: 5px;
+}
+.opt_edit{
+    cursor: pointer;
+    float: right;
+}
+.opt_cancel{
+    display: none;
+    cursor: pointer;
+    float: right;
+}
+.opt_header{
+    width: 100%;
+    height: 46px;
+}
+.opt_choose{
+    display: none;
+    height: 46px;
+    width: 12.5%;
+    float: left;
+    cursor: pointer;
+    background: url("../images/qifu/icon_nochoose.png") 50% no-repeat;
+    background-size: 22px 22px;
+}
+.change_sel{
+    background: url("../images/qifu/icon_choose.png") 50% no-repeat;
+    background-size: 22px 22px;
+}
+.table_header{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    line-height: 45px;
+    border-left: 5px solid #1b75da;
+    border-bottom: 1px dashed #d5d4d7;
+    float: left;
+}
+.table_header_add{
+    width: 87.5%;
+}
+.table_header span{
+    margin-left: 12px;
+    float: left;
+}
+.table_header .go-buy{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+.go-buy span{
+    display: inline-block;
+    margin-top: 12px;
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    background: #1b75da;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+.table_data{
+    width: 90%;
+    height: 72px;
+    float: left;
+    background: #fff;
+}
+.opt_detail{
+    width: 10%;
+    height: 72px;
+    float: left;
+    background: url("../images/qifu/icon_opt_detail.png") 50% no-repeat #fff;
+    background-size: 8px 12px;
+}
+.td_1, .td_3{
+    width: 25%;
+    text-align: left;
+    padding-left: 17px;
+}
+.td_2, .td_4{
+    width: 15%;
+    text-align: right;
+    font-weight: bold;
+}
+.foot_del{
+    display: none;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    height: 50px;
+    border-top: 1px solid #cccccc;
+}
+.foot_del .selected{
+    display: inline-block;
+    margin-left: 8px;
+    height: 50px;
+    line-height: 50px;
+    color: #1b75da;
+    font-weight: bold;
+}
+.foot_del .choose_del{
+    display: inline-block;
+    float: right;
+    width: 65px;
+    margin: 11px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background: #cccccc;
+    color: #fff;
+    border-radius: 2px;
+}
+.foot_del .choose_delete{
+    cursor: pointer;
+    background: #ff3b30;
+    color: #fff;
+}

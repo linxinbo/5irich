@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>定期投资</title>
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/common_zjy.css">
+	<link rel="stylesheet" href="../../css/common_qifu.css">
+	<link rel="stylesheet" href="../../css/common_new.css">
+	<link rel="stylesheet" href="css.css">	
+</head>
+<body>
+	<div class="header_c">
+		<div>
+			<i class="logo_c"></i>
+		</div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../../sigin/sigin.html" class="sigin" style="font-size:12px;">注册</a> <a
+					href="../../user_login.html" class="login" style="font-size:12px;">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;font-size:12px;">
+				<div class="out">退出</div>
+				<span>hi,</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<a class="back1" href="../regular.html">＜返回</a>
+		<h1>定期投资</h1>
+	</header>
+	<div class="box" >
+	<input id="RiId" type="hidden" name="RiId" value="">
+	<p id="ask01"></p>
+    <span><input id="ChoiceYear" type="number" name="ChoiceYear" placeholder="5" />年</span>
+    <div class="clear"></div>
+</div>
+<div class="box" >
+	<p id="ask02"></p>
+    <span id="ask05"><input id="MoneyTotal" type="number" name="MoneyTotal" placeholder="88"/></span>
+    <div class="clear"></div>
+</div>
+<div class="box" >
+	<p id="ask03"></p>
+    <span><input id="MoneyNow" type="number" name="MoneyNow" placeholder="8" />万元</span>
+    <div class="clear"></div>
+</div>
+<div class="box">
+	<p id="ask04"></p>
+    <span><input id="MoneyMonth" type="number" name="MoneyMonth" placeholder="8888"/>元</span>
+    <div class="clear"></div>
+</div>
+<div class="title"><span>您能承受的最大亏损是多少？</span></div>
+<div id="lossid" class="ri_box">
+    <label for="lossid1" class="ribtn2" style="margin-right: 2%;">最多亏损5%<input group="shouxufei" type="radio" hidden value="5" name="lossid" id="lossid1" ></label>
+    <label for="lossid2" class="ribtn2" style="margin-right: 2%;">最多亏损15%<input group="shouxufei"  type="radio" hidden value="15" name="lossid" id="lossid2"></label>
+    <label for="lossid3" class="ribtn2" >最多亏损25%<input group="shouxufei"  name="lossid" hidden  type="radio" id="lossid3" value="25"></label>
+</div>
+<div class="ri_box">
+<input id="sub" class="ribtn1" type="submit" disabled>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/qifu/common_qifu.js"></script>
+<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../js/qifu/home.js"></script>
+<script type="text/javascript" src="js/qdask.js"></script>
+</html>

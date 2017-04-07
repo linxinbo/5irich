@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h2,h3,h4,h5{ padding:0; margin:0; font-family:"微软雅黑";text-align:justify;text-justify:inter-ideograph;color:#221815;}
+.huanjing_bannerimg{ background:url(../images/banner.png) no-repeat center; height:500px;width:100%;}
+.huanjing_content{ width:1189px; margin:0 auto;}
+.huanjing_bg{ width:100%; overflow:hidden; background:#f5ffff; padding-bottom:109px;}
+.huanbao_zt p{ background:#fff; border-radius:10px; padding:20px 84px; color:#595757; font-size:18px; line-height:26px; margin-top:16px;}
+.yiliaobx{ background:url(../images/yi_img1.jpg) no-repeat center; width:100%; height:51px; margin-top:40px;}
+.yiliaobxh3{ background:url(../images/yi_img3.jpg) no-repeat center left; color:#e5303e; font-size:24px; padding-left:34px; height:30px; line-height:30px; margin-top:30px;}
+.yiliao_con{background:#fff; border-radius:10px;}
+.yiliao_con p{ padding:20px 29px;}
+.yiliao_txt3{ background:url(../images/yi_img2.jpg) no-repeat center; width:100%; height:49px; margin-top:66px;}
+.guoqi_xq{ width:1190px; margin:0 auto; overflow:hidden; margin-top:46px;}
+.guoqi_content3{ width:380px; float:left; margin-right:21px;}
+.guoqi_content3 h2{ height:37px; line-height:37px; background:#ffffff; color:#003c8d; font-size:18px; font-weight:normal; padding-left:15px; border-bottom:2px #98c8e8 solid; border-right:2px #98c8e8 solid; margin-bottom:3px;}
+.guoqi_cnn3div{ background:url(../images/guoqi_line.jpg) no-repeat bottom; padding-bottom:17px; margin-top:-2px;}
+.guoqi_cnnp{background:#ffffff; padding:12px 15px; border-right:2px #98c8e8 solid; font-size:15px; color:#595757; line-height:22px;}
+.huanjing_xq{ width:788px; margin:0 auto; margin-top:37px;}
+.guoqi_xqbottom{ margin-top:5px;}
+.guoqi_xqbottom a{ display:block;width:187px; height:43px; line-height:43px; font-size:20px; font-weight:bold; text-align:center;}
+.guoqi_btn1{ background:#8de1ff; float:left; color:#353433;}
+.guoqi_btn2{ background:#c1f0ff; float:right; color:#353433;}
+.jg_bannerw{ width:1200px; margin:0 auto; overflow:hidden; padding-top:444px;}
+.jg_bannerw a{ display:block; opacity:0; width:295px; height:55px; margin-left:5px; float:left;}
+#jg_left{ margin-left:127px; width:300px;}
+#jg_left1{ margin-left:97px; width:325px;}

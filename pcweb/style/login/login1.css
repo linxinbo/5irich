@@ -1,0 +1,495 @@
+.loginRegister {
+    position: fixed;
+    width: 800px;
+    height: 626px;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -253px;
+    background: #fff;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+    z-index: 999999;
+}
+.home-layer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .7;
+    z-index: 888888;
+    display: none;
+}
+.login-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../../images/home/close.png) no-repeat center;
+    cursor: pointer;
+}
+.login-head {
+    width: 400px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    background: #ffcb82;
+    display: inline-block;
+    float: left;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+.login-head a {
+    color: #fff;
+}
+.login-head .active {
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    border-bottom: 4px solid #ffcb82;
+    color: #ffcb82;
+    box-sizing: border-box;
+}
+.login-head.act {
+    background: #fff;
+}
+.home-code {
+    display: none;
+    float: left;
+    overflow: hidden;
+    margin-top: 70px;
+    width: 100%;
+    height: 416px;
+}
+.home-weixin-code {
+    display: block;
+    width: 290px;
+    height: 340px;
+    margin: -40px auto;
+    margin-bottom: 20px;
+}
+.home-code p {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+}
+.home-password {
+    float: left;
+    width: 800px;
+    height: 480px;
+    padding: 0 180px;
+    position: relative;
+    box-sizing: border-box;
+}
+.home-password .login-tip {
+    top: 20px;
+    position: absolute;
+}
+.login-phone {
+    margin-top: 70px;
+}
+.login-commit {
+    width: 288px;
+    display: none;
+}
+.login-img {
+    width: 138px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: -5px;
+    border: none;
+    display: none;
+}
+.login-extra {
+    margin-top: 60px;
+    /*40px*/
+}
+.login-extra span {
+    font-size: 18px;
+    color: #999999;
+    margin-right: 6px;
+    margin-bottom: -1px;
+    display: inline-block;
+    cursor: pointer;
+}
+.login-extra .login-rem-pass.act {
+    border: none;
+    background: url(../../images/login/rem-acount.png) no-repeat center;
+}
+.login-extra span:nth-child(1) {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #d4d4d4;
+    user-select:none;
+}
+.login-extra span:nth-child(3) {
+    float: right;
+}
+.login-extra span:nth-child(5) {
+    float: right;
+}
+.login-btn-login {
+    width: 440px;
+}
+
+.login-footer {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background: #ebebeb;
+    color: #ff9900;
+    padding: 20px 24px;
+}
+.login-footer i {
+    float: left;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../../images/login/zheng_icon.png) no-repeat center;
+}
+.login-footer span {
+    display: inline-block;
+    height: 30px;
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.login-footer span:nth-child(2){
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+}
+.login-footer i:nth-child(3){
+    margin-left: 10px;
+}
+/*注册*/
+#registerCont {
+    height: 830px;
+    margin-top: -400px;
+}
+.reg-logo {
+    display: block;
+    width: 276px;
+    height: 106px;
+    background: url(../../images/register/reg-logo.png) no-repeat center;
+    background-size: 100%;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+
+.reg-close {
+    display: block;
+    width: 36px;
+    height: 54px;
+    position: absolute;
+    right: -17px;
+    top: -54px;
+    background: url(../../images/register/reg-close.png) no-repeat center;
+    background-size: 36px 54px;
+    cursor: pointer;
+}
+.login-again {
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.login {
+    color: #ffc572;
+    cursor: pointer;
+}
+.reg-form {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 180px;
+    margin-top: -10px;
+}
+.reg-form .reg-img {
+    width: 280px;
+}
+.reg-form .reg-code {
+    width: 280px;
+}
+.reg-form .reg-image {
+    width: 148px;
+    height: 48px;
+    margin-left: 10px;
+    margin-top: -5px;
+    border: none;
+}
+.reg-form .get-code {
+    display: inline-block;
+    width: 148px;
+    height: 48px;
+    margin-left: 10px;
+    border: 1px solid #ff9702;
+    color: #ff9702;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    background: #fff;
+}
+.reg-form .get-code:focus {
+    outline: none;
+}
+.reg-referee {
+    margin-top: 30px;
+    width: 100%;
+    text-align: left;
+}
+.reg-referee span {
+    float: left;
+}
+.reg-referee span:nth-child(1) {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 16px solid #fff;
+    border-left: 16px solid #ff9805;
+    border-top: 8px solid #fff;
+    border-bottom: 8px solid #fff;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.reg-referee span:nth-child(1).act {
+    border-top: 16px solid #ff9805;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    margin-right: 10px;
+}
+
+.reg-referee span:nth-child(2) {
+    font-size: 14px;
+    color: #ff9805;
+    margin-left: -6px;
+}
+.reg-referee-phone {
+    margin-top: 10px;
+    display: none;
+}
+.login-btn-register {
+    width: 440px;
+}
+/*用户协议*/
+.reg-read {
+    display: inline-block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #969696;
+    margin-top: 37px;
+    cursor: pointer;
+}
+.reg-read.act {
+    border: none;
+    background: url(../../images/login/rem-acount.png) no-repeat center;
+}
+.reg-readed {
+    float: left;
+    font-size: 18px;
+    color: #969696;
+    margin-left: 10px;
+    line-height: 18px;
+    margin-top: 36px;
+}
+.reg-reading {
+    color: #ffa738;
+    cursor: pointer;
+}
+.reg-read-error {
+    color: #ff1f1f;
+    display: none;
+}
+.user-arg {
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -300px;
+    background: #fff;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+    z-index: 9999999;
+    display: none;
+}
+.userArg-head {
+    width: 100%;
+    height: 30px;
+    background: #f3f3f3;
+    margin-top: -20px;
+    padding: 0 10px;
+    position: relative;
+}
+.userArg-head h3 {
+    font-size: 14px;
+    line-height: 30px;
+}
+.userArg-close {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(../../images/register/dialog.png) no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+}
+.userArg-cont {
+    width: 760px;
+    height: 450px;
+    overflow: auto;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.userArg-cont p {
+    text-indent: 2em;
+    line-height: 1.8em;
+    font-size: 14px;
+}
+.userArg-cont h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.userArg-footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.userArg-true {
+    width: 300px;
+    border-radius: 3px;
+}
+/*忘记密码*/
+#forgetCont {
+    width: 800px;
+    height: 520px;
+    padding-top: 30px;
+    text-align: center;
+}
+#forgetCont h3 {
+    font-size: 28px;
+    line-height: 28px;
+}
+.forget-step {
+    width: 402px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+}
+.forget-step .step {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background: #cbcbcb;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.forget-step .step.act {
+    background: #ff9805;
+}
+.forget-step .dot-list {
+    float: left;
+    width: 155px;
+}
+.forget-step .dot-list li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 30px;
+    margin-top: 9px;
+    background: #cbcbcb;
+    border-radius: 50%;
+    float: left;
+}
+.step-write {
+    width: 564px;
+    margin: 0 auto;
+}
+.step-write li {
+    width: 33%;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+}
+.forget-box {
+    width: 440px;
+    margin: 0 auto;
+    padding-top: 32px;
+    text-align: center;
+}
+.forget-btn {
+    /*display: none;*/
+}
+.forget-btn1 {
+    display: none;
+}
+.forget-btn2 {
+    display: none;
+}
+#forgetCont .forget-code {
+    width: 278px;
+    margin-left: -4px;
+}
+.get-forget-code {
+    width: 150px;
+    height: 48px;
+    background: #ff9900;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    border: none;
+    margin-left: 10px;
+}
+.get-forget-code:focus {
+    outline: none;
+}
+#forgetCont .forget-button {
+    height: 50px;
+    width: 440px;
+    margin-top: 36px;
+}
+#forgetCont .forget-button1 {
+    height: 50px;
+    width: 440px;
+    margin-top: 36px;
+}
+
+.forget-back {
+    font-size: 18px;
+    color: #ffb661;
+    cursor: pointer;
+}
+.forget-btn2 span:nth-child(1) {
+    font-size: 34px;
+    color: #ff9e1c;
+    display: block;
+    line-height: 34px;
+    margin-top: 48px;
+}
+.forget-btn2 span:nth-child(2) {
+    font-size: 18px;
+    display: block;
+    margin-top: 20px;
+}
+.forget-button2 {
+    height: 50px;
+    width: 440px;
+    margin-top: 40px;
+}
+.forget-btn2 p {
+    font-size: 18px;
+}

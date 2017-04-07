@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-模拟账本</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/moni/moni.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/feather.css?t=20170308">
+</head>
+<body class="bodyhome">
+<div>
+    <div>
+
+        <header class="ma_header clearfix">
+            <a href="../my-assets/new_assets.html" class="ma_moni">切换到我的资产</a>
+            <a href="moni_jymx.html" class="ma_trade">交易明细</a>
+            <div class="ma_headCon">
+                <a href="../center/center.html">
+                    <img src="../images_mp/my_assets/userhead@2x.png" class="ma_userhead"/>
+                    <p class="ma_name">未知</p>
+                    <p>更新日期：<span class="ma_date">2016-01-01</span></p>
+                </a>
+            </div>
+        </header>
+
+        <section class="ma_conH">
+            <ul class="clearfix">
+                <li id="ma_yetGain"><span>0.00 </span><br />当前市值</li>
+                <li id="ma_totalVal"><span>0.00</span><br />累计收益</li>
+                <li id="ma_accEarn"><span>0.00 </span><br />持仓成本</li>
+            </ul>
+        </section>
+        <!--模拟账本蓝色title部分-->
+        <!--模拟账本内容区域-->
+        <div class="moni_content mtopdd menddd" style="background-color: #ffffff;">
+            <ul class="moni_content_th">
+                <li class="l30"><span>基金类型</span></li>
+                <li class="l30 "><span>总市值(元）</span></li>
+                <li class="l20"><span>总盈亏(元）</span></li>
+                <li class="l20"><span>总盈亏率</span></li>
+            </ul>
+            <a href="moni_ccmx.html">
+            <ul class="moni_content_tr">
+                <li class="l30"><i class="kfs mright5"></i><span>开放式基金</span></li>
+                <li class="l30 font_gray" id="kfs_sz"></li>
+                <li class="l20 font_gray" id="kfs_yk"></li>
+                <li class="l20 font_gray" id="kfs_ykl"></li>
+            </ul>
+            </a>
+            <a href="moni_ccmx1.html">
+            <ul class="moni_content_tr">
+                <li class="l30"><i class="hb mright5"></i><span>货币基金</span></li>
+                <li class="l30 font_gray" id="hb_sz"></li>
+                <li class="l20 font_gray" id="hb_yk"></li>
+                <li class="l20 font_gray" id="hb_ykl"></li>
+            </ul>
+            </a>
+            <a href="moni_ccmx2.html">
+            <ul class="moni_content_tr">
+                <li class="l30"><i class="dt mright5"></i><span>基金定投</span></li>
+                <li class="l30 font_gray" id="dt_sz"></li>
+                <li class="l20 font_gray" id="dt_yk"></li>
+                <li class="l20 font_gray" id="dt_ykl"></li>
+            </ul>
+            </a>
+            <div class="moni_content_c">
+                <div id="container" style="min-width:320px;height:320px"></div>
+            </div>
+        </div>
+        <!--模拟账本内容区域-->
+
+    </div>
+    <!--内容结束-->
+    <!--底部菜单开始登录以后-->
+    <footer class="moni_footer" style="display:block">
+        <ul class="endmonimenu">
+            <li>
+                <a class="bggray rightline" href="moni_tjjy.html">
+                    <i class="endmoni_menuclass tjjy"></i>
+                    <b><span class="endmenu_title font_baise">添加交易</span></b>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--底部菜单结束-->
+</div>
+
+
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/moni/highcharts.js?t=20170308"></script>
+<script src="../js_mp/moni/highcharts_theme.js?t=20170308"></script>
+<script src="../js_mp/home.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/moni/moni.js?t=20170308"></script>
+</html>

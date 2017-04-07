@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--根据屏幕全局显示-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="基金">
+	<meta name="description" content="基金">
+	<!--指定的iphone中safari顶端的状态条的样式-->
+	<meta name="format-detection" content="email=no" />
+	<!--去除Android平台中对邮箱地址的识别-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 隐藏地址栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="" />
+	<!-- 状态条风格 -->
+	<title>开户</title>
+	<link rel="stylesheet" type="text/css" href="../css/common_zjy.css" />
+	<link rel="stylesheet" href="../css/common_new.css">
+	<link rel="stylesheet" type="text/css" href="../css/common_qifu.css" />
+
+</head>
+
+<body>
+    <div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;">
+				<div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+	<header class="header">
+		<!--<a class="back" href="javascript:history.go(-1);"><span>返回</span><i></i></a>-->
+		<a class="back1" href="javascript:history.go(-1);">＜返回</a>
+		<h1>开户</h1>
+	</header>
+	<div>
+		<form name="" action="">
+			<div class="account_nav">
+				<ul class="u1">
+					<li class="l0"></li>
+					<li class="l1 blue_round_nav"></li>
+					<li class="l2 blue_line_nav"></li>
+					<li class="l3 blue_round_nav"></li>
+					<li class="l4 gray_line_nav"></li>
+					<li class="l5 gray_round_nav"></li>
+					<li class="l6"></li>
+				</ul>
+				<ul class="u2">
+					<li class="l1">身份验证</li>
+					<li class="l2">设置银行卡</li>
+					<li class="l3">开户成功</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<i class="m"></i>
+						<div class="banks">
+							<em>选择银行</em>
+							<div class="t bank_account">
+								<span class="bank_name">快钱-工商银行</span>
+								<select class="opaSelect">
+									<option value="KQ01">快钱-工商银行</option>
+									<option value="KQ02">快钱-农业银行</option>
+									<option value="KQ03">快钱-中国银行</option>
+									<option value="KQ04">快钱-建设银行</option>
+									<option value="KQ05">快钱-招行银行</option>
+									<option value="KQ06">快钱-交通银行</option>
+									<option value="KQ07">快钱-中信银行</option>
+									<option value="KQ08">快钱-浦发银行</option>
+									<option value="KQ09">快钱-兴业银行</option>
+									<option value="KQ10">快钱-广发银行</option>
+									<option value="KQ11">快钱-平安银行</option>
+									<option value="KQ12">快钱-华夏银行</option>
+									<option value="KQ13">快钱-光大银行</option>
+									<option value="KQ14">快钱-民生银行</option>
+									<option value="KQ15">快钱-邮储银行</option>
+								</select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="d"></i>
+						<div class="user_login clearfix">
+							<i data_rest="ID_rest" class="x" style="display: none;"></i>
+							<em>银行卡号</em>
+							<div class="t clearfix">
+								<input type="tel" id="bankNo" name="bankNo" class="n" size="20" placeholder="请输入银行卡号" value="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="d"></i>
+						<i class="m"></i>
+						<div class="banks">
+							<em>开户省份</em>
+							<div class="t bank_account">
+								<span class="provinces_name">省份</span>
+								<select class="opaSelect" id="provinces_opaSelect" onchange="linkage_city(this.value);">
+								</select>
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="d"></i>
+						<i class="m"></i>
+						<div class="banks">
+							<em>开户市</em>
+							<div class="t bank_account">
+								<span class="cities_name">市</span>
+								<select class="opaSelect" id="cities_opaSelect">
+								</select>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="user_login clearfix">
+							<i data_rest="ID_rest" class="x" style="display: none;"></i>
+							<em>预留手机</em>
+							<div class="t clearfix">
+								<input type="tel" id="phone" name="cardNo" class="n" size="11" placeholder="请输入预留手机" value="">
+							</div>
+						</div>
+					</li>
+					<li>
+						<i class="d"></i>
+						<div class="clearfix">
+							<em>验证码</em>
+							<div class="t bank_account">
+								<div class="ysy_valiCode">
+									<div class="">
+										<input type="tel" id="valiCode" class="" name="valiCode" placeholder="请输入验证码" />
+									</div>
+									<div class="get_valiCode"><input type="button" id="smsCode" class="smsCode"value="获取验证码"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="p_t_9 mtop15">
+				<a class="button_a" href="javascript:openStep3()">下一步</a>
+			</div>
+		</form>
+	</div>
+
+	<footer class="footer"></footer>
+</body>
+<script src="../js/jquery.min.js"></script>
+
+<script src="../js/qifu/common_qifu.js"></script>
+<script src="../js/account.js"></script>
+<script src="../js/qifu/openStep2.js"></script>
+<script type="text/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/qifu/home.js"></script>
+</html>

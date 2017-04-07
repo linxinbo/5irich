@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站—组合详情</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../common/common.css?t=20170308">
+    <link rel="stylesheet" href="../style/header/header.css?t=20170308">
+    <link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+    <link rel="stylesheet" href="../style/funddetail/fundgroup-detail.css?t=20170308">
+
+</head>
+<body>
+<header class="cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a><span class="select">首页</span></a>
+                <a><span>基金优选</span><i></i></a>
+                <a><span>高端理财</span></a>
+                <a><span>我的资产</span></a>
+            </div>
+            <div class="Sign">
+                <a>注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a>登录</a>
+            </div>
+        </div>
+    </div>
+
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+  <div class="grdeone">
+       <div class="dechart">
+           <ul data-type="0">
+               <li >收益走势图</li>
+               <li >净值走势图</li>
+           </ul>
+           <div id="canvas">
+               <!--				<canvas id="chart_canvas"></canvas>-->
+               <div class="container" id="container" style="width:100%;height:330px;padding-left: 0px;padding-right: 0px;">
+
+               </div>
+               <table class="kmap_date menddd" border="0">
+                   <tr>
+                       <td align="center" width="20%"><span data-index="0">月度</span></td>
+                       <td align="center" width="20%"><span data-index="1">季度</span></td>
+                       <td align="center" width="20%"><span data-index="2" class="selexx">半年</span></td>
+                       <td align="center" width="20%"><span data-index="3">年度</span></td>
+                       <td align="center" width="20%"><span data-index="6">全部</span></td>
+                   </tr>
+               </table>
+           </div>
+       </div>
+      <div class="grdeins">
+          <p class="name" style="color:#666;">创金积极组合1号</p>
+          <p class="level">风险偏好型</p>
+          <ul class="ul1">
+              <li><div>成立以来收益率</div><div class="allshouyi"></div></li>
+              <li><div>日涨跌</div><div class="day"></div></li>
+              <li><div>净值 <span class="update"></span> </div><div class="jingzhi" style="color:#666;"></div></li>
+          </ul>
+          <ul class="ul2">
+              <li>成立日期：<span class="chengli"></span></li>
+              <li>业绩基准：<span class="yeji"></span></li>
+          </ul>
+          <div class="buybox">
+              <input type="text" placeholder="1000.00元起购" class="text">
+              <button class="buy">立即购买</button>
+          </div>
+             <p class="tishi" style="color:#fe3309;font-size:14px;margin-top:20px;margin-left:10px;display: none;">起购金额最低1000元</p>
+      </div>
+  </div>
+<div class="grdetwo">
+  <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+</div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../common/highcharts.js?t=20170308"></script>
+<script src="../js/funddetail/grid.js?t=20170308"></script>
+<script src="../js/funddetail/groupChart.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/funddetail/fundgroup-detail.js?t=20170308"></script>
+</html>

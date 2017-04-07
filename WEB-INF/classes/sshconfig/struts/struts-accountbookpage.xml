@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="AccountBookPage" extends="wirich">
+		<!--处理公募基金模拟账本认申购输入框信息-->
+		<action name="MutualFundAccountBookBuyPageAction" class="MutualFundAccountBookBuyPageAction" method="OutJson">
+		</action> 
+		<!--处理公募基金模拟账本认申购输入框信息-->
+		<action name="MutualBuyWindCodeTOFundNameAction" class="MutualBuyWindCodeTOFundNameAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本定投输入框信息-->
+		<action name="MutualFundAccountBookFixedInvestmentPageAction" class="MutualFundAccountBookFixedInvestmentPageAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本赎回输入框信息-->
+		<action name="MutualFundAccountBookRedemptiontPageAction" class="MutualFundAccountBookRedemptiontPageAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本赎回输入框信息-->
+		<action name="MutualRedemptiontWindCodeTOFundNameAction" class="MutualRedemptiontWindCodeTOFundNameAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本转换输入框信息-->
+		<action name="MutualFundAccountBookConversionPageAction" class="MutualFundAccountBookConversionPageAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本货币基金分红输入框信息-->
+		<action name="MutualFundAccountBookMoneyDividendPageAction" class="MutualFundAccountBookMoneyDividendPageAction" method="OutJson">
+		</action>
+		<!--公募基金模拟账本货币基金分红日期输入验证-->
+		<action name="MutualFundAccountBookMoneyDividendDatePageAction" class="MutualFundAccountBookMoneyDividendDatePageAction" method="OutJson">
+		</action>
+		<!--公募基金模拟账本基金转入基金名称和基金代码输入验证-->
+		<action name="MutualFundNameConversionInPageAction" class="MutualFundNameConversionInPageAction" method="OutJson">
+		</action>
+		<!--公募基金模拟账本基金转入份额验证-->
+		<action name="MutualFundAccountBookInConversionPageAction" class="MutualFundAccountBookInConversionPageAction" method="OutJson">
+		</action>
+		<!--公募基金模拟账本组合基金代码和名称验证-->
+		<action name="MutualGroupCodeNameCheckAction" class="MutualGroupCodeNameCheckAction" method="OutJson">
+		</action>
+		<!-- 组合基金购买金额，份额，时间输入框验证-->
+		<action name="MutualGroupAmountShareCheckAction" class="MutualGroupAmountShareCheckAction" method="OutJson">
+		</action>
+	</package>
+</struts>

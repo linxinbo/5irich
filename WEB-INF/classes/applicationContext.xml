@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+      <context:property-placeholder location="classpath:database.properties" />
+	
+	<!--设置自动注入-->
+	<context:component-scan base-package="com.wirich">
+	</context:component-scan>
+
+	<bean class="com.wirich.common.ApplicationContextUtil"></bean>
+
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<!--maxActive: 最大连接数量-->
+		<property name="maxActive" value="${maxActive}" />
+		<!--initialSize: 初始化连接-->
+		<property name="initialSize" value="${initialSize}" />
+		<!--maxIdle: 最大空闲连接-->
+		<property name="maxIdle" value="${maxIdle}" />
+		<!--minIdle: 最小空闲连接-->
+		<property name="minIdle" value="${minIdle}" />
+
+		<!-- 超过removeAbandonedTimeout时间后，是否进行没用连接（废弃）的回收（默认为false)-->
+		<property name="removeAbandoned" value="${removeAbandoned}" />
+		<!-- 超过时间限制，回收没有用(废弃)的连接（单位秒，默认为 300秒，5分钟）-->
+		<property name="removeAbandonedTimeout" value="${removeAbandonedTimeout}" />
+
+		<!-- 在进行borrowObject进行处理时，对拿到的connection进行validateObject校验-->
+		<property name="testOnBorrow" value="${testOnBorrow}" />
+		<!-- 在进行returnObject对返回的connection进行validateObject校验-->
+		<property name="testOnReturn" value="${testOnReturn}" />
+
+		<!--是否要进行检测连接有效-->
+		<property name="testWhileIdle" value="${testWhileIdle}" />
+		<!--进行检测使用的有效的SQL语句-->
+		<property name="validationQuery" value="${validationQuery}" />
+		<!--每次检查链接的数量，建议设置和maxActive一样大，这样每次可以有效检查所有的链接.(默认为3个)-->
+		<property name="numTestsPerEvictionRun" value="${numTestsPerEvictionRun}" />
+		<!--每隔多少时间检测一次(默认毫秒)，根据mysql：wait_timeout值来设定-->
+		<property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="hibernateProperties">
+			<props>
+				<!-- 指定数据库方言 -->
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<!--关闭hibernate缓存-->
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<!-- 显示Hibernate持久化操作所生成的SQL -->
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<!-- 将SQL脚本进行格式化后再输出 -->
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<!-- 数据库检验方式 -->
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:${hbm.path}*</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="windDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${wind.jdbc.url}" />
+		<property name="username" value="${wind.jdbc.username}" />
+		<property name="password" value="${wind.jdbc.password}" />
+		<!--maxActive: 最大连接数量-->
+		<property name="maxActive" value="${maxActive}" />
+		<!--initialSize: 初始化连接-->
+		<property name="initialSize" value="${initialSize}" />
+		<!--maxIdle: 最大空闲连接-->
+		<property name="maxIdle" value="${maxIdle}" />
+		<!--minIdle: 最小空闲连接-->
+		<property name="minIdle" value="${minIdle}" />
+
+		<!-- 超过removeAbandonedTimeout时间后，是否进行没用连接（废弃）的回收（默认为false)-->
+		<property name="removeAbandoned" value="${removeAbandoned}" />
+		<!-- 超过时间限制，回收没有用(废弃)的连接（单位秒，默认为 300秒，5分钟）-->
+		<property name="removeAbandonedTimeout" value="${removeAbandonedTimeout}" />
+
+		<!-- 在进行borrowObject进行处理时，对拿到的connection进行validateObject校验-->
+		<property name="testOnBorrow" value="${testOnBorrow}" />
+		<!-- 在进行returnObject对返回的connection进行validateObject校验-->
+		<property name="testOnReturn" value="${testOnReturn}" />
+
+		<!--是否要进行检测连接有效-->
+		<property name="testWhileIdle" value="${testWhileIdle}" />
+		<!--进行检测使用的有效的SQL语句-->
+		<property name="validationQuery" value="${validationQuery}" />
+		<!--每次检查链接的数量，建议设置和maxActive一样大，这样每次可以有效检查所有的链接.(默认为3个)-->
+		<property name="numTestsPerEvictionRun" value="${numTestsPerEvictionRun}" />
+		<!--每隔多少时间检测一次(默认毫秒)，根据mysql：wait_timeout值来设定-->
+		<property name="timeBetweenEvictionRunsMillis" value="${timeBetweenEvictionRunsMillis}" />
+	</bean>
+	<bean id="windSessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="windDataSource"></property>
+		<property name="hibernateProperties">
+			<props>
+				<!-- 指定数据库方言 -->
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<!--关闭hibernate缓存-->
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<!-- 显示Hibernate持久化操作所生成的SQL -->
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<!-- 将SQL脚本进行格式化后再输出 -->
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<!-- 数据库检验方式 -->
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+			</props>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:${wind.hbm.path}*</value>
+			</list>
+		</property>
+	</bean>
+
+	<aop:aspectj-autoproxy />
+
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+		<bean id="windTxManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="windSessionFactory" />
+	</bean>
+
+
+	<tx:annotation-driven transaction-manager="txManager" />
+	<tx:annotation-driven transaction-manager="windTxManager" />
+	
+	<!-- 查询客户资产信息  -->
+	<bean id="IUserInfoService" class="com.wirich.service.szking.impl.UserInfoServiceimpl">
+		<property name="FoDao" ref="ChinaMFPerformanceDaoImpl"></property>
+		<property name="NAVDao" ref="ChinaMutFuNAVDaoImpl"></property>
+		<property name="DescriptionDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+		<property name="MarketFIncomeDao" ref="CMoneyMarketFIncomeDaoImpl"></property>
+		<property name="LogService" ref="WindCustomCodeDaoImpl"></property>	
+		<property name="PartyRating" ref="CMFundThirdPartyRatingDaoImpl"></property>
+		<property name="userDao" ref="CjUserDaoImpl"></property>	
+	</bean>
+	<!--中国共同基金业绩表现 Dao-->
+	<bean id="ChinaMFPerformanceDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMFPerformanceDaoImpl">
+	</bean>
+	<!--基金净值 查询 Dao-->
+	<bean id="ChinaMutFuNAVDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutFuNAVDaoImpl">
+	</bean>
+	<!-- 中国共同基金基本资料Dao-->
+	<bean id="ChinaMutualFundDescriptionDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundDescriptionDaoImpl">
+	</bean>
+	<!--中国货币市场基金收益service-->
+	<bean id="CMoneyMarketFIncomeDaoImpl" class="com.wirich.dao.wind.mutual.impl.CMoneyMarketFIncomeDaoImpl">
+	</bean>
+	<!--同步-->
+	<bean id="CjqfWebMutualFundCodeDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfWebMutualFundCodeDaoImpl">
+	</bean>
+	<!--银河评级-->
+	<bean id="CMFundThirdPartyRatingDaoImpl" class="com.wirich.dao.wind.mutual.impl.CMFundThirdPartyRatingDaoImpl">
+	</bean>
+	<!--用户表-->
+	<bean id="CjUserDaoImpl" class="com.wirich.dao.impl.customerinvestment.capitalsettlement.CjUserDaoImpl">
+	</bean>
+	
+	<!-- 从金证借口查询客户资产信息 并存储  -->
+	
+	<bean id="userAssetDao" class="com.wirich.dao.cjqf.org.impl.UserAssetDaoImpl">
+	</bean>
+	<bean id="userAssetSummaryDao" class="com.wirich.dao.cjqf.org.impl.UserAssetSummaryDaoImpl">
+	</bean>
+	<bean id="bankChannelIdDaoImpl" class="com.wirich.dao.cjqf.system.impl.BankChannelIdDaoImpl">
+	</bean>
+	<!--用户短期理财信息表-->
+	<bean id="ShortPeriodInfoDaoImpl" class="com.wirich.dao.cjqf.shortperiod.Impl.ShortPeriodInfoDaoImpl">
+	</bean>
+	<!--用户短期理财信息表-->
+	<bean id="ShortPeriodBusinessDaoImpl" class="com.wirich.dao.cjqf.shortperiod.Impl.ShortPeriodBusinessDaoImpl">
+	</bean>
+	<!--人员Dao-->
+	<bean id="UserDaoImpl" class="com.wirich.dao.cjqf.org.impl.CjUserDaoImpl"></bean>
+	<!--用户组合基金中单支信息的dao-->
+	<bean id="fundGroupBuySingleFundDao1" class="com.wirich.dao.cjqf.group.fundgroup.impl.FundGroupBuySingleFundDaoImpl"></bean>
+	<!--拆分后单支基金dao-->
+	<bean id="userAssetSingleDao1" class="com.wirich.dao.cjqf.org.impl.UserAssetSingleDaoImpl"></bean>
+	<!--用户当天的拆分单支基金dao-->
+	<bean id="UserAssetSingleOneDao" class="com.wirich.dao.cjqf.org.impl.UserAssetSingleOneDaoImpl"></bean>
+	<!--用户当天的拆分单支基金dao-->
+	<bean id="UserAssetOneDao" class="com.wirich.dao.cjqf.org.impl.UserAssetOneDaoImpl"></bean>
+	
+	<bean id="userAssetService" class="com.wirich.service.szking.impl.UserAssetServiceImpl">
+		<property name="fundGroupBuySingleFundDao" ref="fundGroupBuySingleFundDao1"></property>
+		<property name="userAssetSingleDao" ref="userAssetSingleDao1"></property>
+		<property name="UserAssetSingleOneDao" ref="UserAssetSingleOneDao"></property>
+		<property name="UserAssetOneDao" ref="UserAssetOneDao"></property>
+		<property name="userAssetDao" ref="userAssetDao"></property>
+		<property name="userAssetSummaryDao" ref="userAssetSummaryDao"></property>
+		<property name="bankChannelIdDao" ref="bankChannelIdDaoImpl"></property>
+		<property name="shortPeriodInfoDao" ref="ShortPeriodInfoDaoImpl"></property>
+		<property name="shortPeriodBusinessDao" ref="ShortPeriodBusinessDaoImpl"></property>
+		<property name="cjUserDao" ref="UserDaoImpl"></property>
+		
+	</bean>
+	<!-- 定时任务begin -->
+	
+	 <!-- 定时任务的工作Bean -->  
+    <bean id="quartzJob" class="com.wirich.auto.shortTimer.SynchroWindDataTask" />  
+      
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetail1" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="quartzJob" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="cronQuartzClock" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail1" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <!--   0 0 */2 * * ? 每两小时、整点触发 -->  
+            <!--   0 0/2 * * * ? 每两分钟  -->  
+            <!--   0/5 * * * * ? 每五秒钟  -->  
+            <!--   0 15 10 * * ? 每天Y分X点触发  -->  
+            <value>0 15 8 * * ?</value>  
+        </property>  
+    </bean> 
+    <!-- 定时任务end -->
+    
+    <!-- 活动 -->
+     <!-- 定时任务的工作Bean -->  
+    <bean id="markDao" class="com.wirich.dao.cjqf.intelligent.impl.MarkDaoImpl" ></bean>
+    <bean id="queryDao" class="com.wirich.dao.cjqf.intelligent.impl.FundQueryDaoImpl" ></bean>  
+    <bean id="markService" class="com.wirich.service.cjqf.intelligent.impl.MarkServiceImpl" >
+    	<property name="markDao" ref="markDao"></property>
+    </bean>
+    <bean id="fundqueryservice" class="com.wirich.service.cjqf.intelligent.impl.FundQueryServiceImpl" >
+    	<property name="queryDao" ref="queryDao"></property>
+    </bean>
+    <bean id="activityTask" class="com.wirich.auto.ActivityTask" >
+    	<property name="markService" ref="markService"></property>
+    	<property name="fundqueryservice" ref="fundqueryservice"></property>
+    </bean>
+     
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetail6" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="activityTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="activityClock" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail6" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <!--   0 0 */2 * * ? 每两小时、整点触发 -->  
+            <!--   0 0/2 * * * ? 每两分钟  -->  
+            <!--   0/5 * * * * ? 每五秒钟  -->  
+            <!--   0 15 10 * * ? 每天Y分X点触发  -->  
+            <value>0 0 5 * * ?</value>  
+        </property>  
+    </bean>
+    <!-- 活动 -->
+    
+    <!-- 取份额 -->
+    <bean id="buyDao" class="com.wirich.dao.cjqf.group.impl.BuyFundDaoImpl" ></bean>
+    <bean id="PtDao" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundDescriptionDaoImpl" ></bean>
+    <bean id="singletradingDao" class="com.wirich.dao.cjqfwed.single.impl.SingleFundTradingDaoImpl" ></bean>
+    <bean id="groupfundbuy" class="com.wirich.service.cjqf.group.impl.GroupFundBuyServiceImpl" >
+    	<property name="buyDao" ref="buyDao"></property>
+    </bean>
+    <bean id="itransactionqueryservice" class="com.wirich.service.szking.impl.TransactionQueryServiceimpl" >
+    	<property name="PtDao" ref="PtDao"></property>
+    </bean>
+    <bean id="singletradingservice" class="com.wirich.service.cjqfweb.single.impl.SingleFundTradingServiceImpl" >
+    	<property name="singletradingDao" ref="singletradingDao"></property>
+    </bean>
+    <!-- <bean id="getBuyShareTask" class="com.wirich.auto.GetBuyShareTask" >
+    	<property name="groupfundbuy" ref="groupfundbuy"></property>
+    	<property name="itransactionqueryservice" ref="itransactionqueryservice"></property>
+    	<property name="singletrading" ref="singletradingservice"></property>
+    </bean> -->
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性  
+    <bean id="jobDetail7" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="getBuyShareTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>
+    任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置  
+    <bean id="getBuyShareClock" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail7" />  
+        cron表达式  
+        <property name="cronExpression">  
+              0 0 */2 * * ? 每两小时、整点触发  
+              0 0/2 * * * ? 每两分钟   
+              0/5 * * * * ? 每五秒钟   
+              0 15 10 * * ? 每天Y分X点触发   
+            <value>0 0/30 * * * ?</value>  
+           <value>0 0 6 * * ?</value>
+        </property>  
+    </bean> -->
+    <!-- 取份额 -->
+    
+    
+    <!-- 同步交易申请记录 -->
+     <!-- 定时任务的工作Bean -->  
+    <bean id="fundqueryServices" class="com.wirich.service.szking.impl.FundQueryServiceImpl" >
+    </bean>
+    <bean id="SynchronizeDataTask" class="com.wirich.auto.SynchronizeDataTask" >
+    	<property name="singletrading" ref="singletradingservice"></property>
+    	<property name="fundqueryServices" ref="fundqueryServices"></property>
+    </bean>
+     
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetailsyn" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="SynchronizeDataTask" />  
+        <property name="targetMethod">  
+            <value>runTask</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="SynchronizeDateClock" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetailsyn" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <!--   0 0 */2 * * ? 每两小时、整点触发 -->  
+            <!--   0 0/2 * * * ? 每两分钟  -->  
+            <!--   0/5 * * * * ? 每五秒钟  -->  
+            <!--   0 15 10 * * ? 每天Y分X点触发  -->  
+            <value>0 0 15 * * ?</value>  
+        </property>  
+    </bean>
+    <!-- 同步交易申请记录 -->
+    
+    <!-- =========================================================================== -->
+	<!-- 同步交易确认记录 -->
+	<bean id="TransactionQueryServiceimpl" class="com.wirich.service.szking.impl.TransactionQueryServiceimpl">
+		<property name="PtDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+	</bean>
+	<bean id="ConfirmTradeServiceImpl" class="com.wirich.service.szking.api.impl.ConfirmTradeServiceImpl">
+		<property name="buyDao" ref="buyDao"></property>
+		<property name="singletradingDao" ref="singletradingDao"></property>
+		<property name="cmfdDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+	</bean>
+	
+	  <!-- 定时任务的工作Bean -->  
+    <bean id="ConfirmTradeDataTask" class="com.wirich.auto.ConfirmTradeDataTask" >
+    	<property name="itransactionqueryservice" ref="TransactionQueryServiceimpl"></property>
+    	<property name="cfmtService" ref="ConfirmTradeServiceImpl"></property>
+    </bean>
+     
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetailcft" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="ConfirmTradeDataTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="confirmTradeDataTask" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetailcft" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <!--   0 0 */2 * * ? 每两小时、整点触发 -->  
+            <!--   0 0/2 * * * ? 每两分钟  -->  
+            <!--   0/5 * * * * ? 每五秒钟  -->  
+            <!--   0 15 10 * * ? 每天Y分X点触发  -->  
+            <value>0 10 0 * * ?</value>  
+        </property>  
+    </bean>  
+      
+	<!-- 同步交易确认记录End -->    
+    <!-- =========================================================================== -->
+    <!-- 定时任务的工作Bean -->  
+    <bean id="historyTask" class="com.wirich.auto.UserAssetDataTask" >
+    	<property name="userAssetService" ref="userAssetService"></property>
+    </bean>  
+      
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetail2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="historyTask" />  
+        <property name="targetMethod"> 
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="cronQuartzTask" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail2" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <value>0 30 0 * * ?</value>  
+        </property>  
+    </bean>
+    <!-- 交易 申请/确认 定时器任务开始 -->
+    <bean id="getTransactionApplyDataDao" class="com.wirich.dao.cjqf.org.impl.GetTransactionApplyDataDaoImpl" >
+    </bean>
+    <bean id="getTransactionConfirmDataDao" class="com.wirich.dao.cjqf.org.impl.GetTransactionConfirmDataDaoImpl" >
+    </bean> 
+    <bean id="getTransactionDataService" class="com.wirich.service.cjqf.org.impl.GetTransactionDataServiceImpl" >
+    	<property name="userAssetDao" ref="userAssetDao"></property>
+    	<property name="getTransactionApplyDataDao" ref="getTransactionApplyDataDao"></property>
+    	<property name="getTransactionConfirmDataDao" ref="getTransactionConfirmDataDao"></property>
+    </bean>   
+    <!-- 定时任务的工作Bean -->  
+    <bean id="getTransactionDataTask" class="com.wirich.auto.GetWindTradingDataTask" >
+    	<property name="getTransactionDataService" ref="getTransactionDataService"></property>
+    </bean>  
+      
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetail3" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="getTransactionDataTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="getTransactionTask" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail3" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+            <value>0 0 3 * * ?</value>  
+        </property>  
+    </bean>
+    <!-- 交易 申请/确认 定时器任务结束 --> 
+    
+    <!-- 定时推送任务  begin-->
+    <!-- 定时任务的工作Bean -->  
+    <bean id="sentUserAssetDataTask" class="com.wirich.auto.SentUserAssetDataTask" >
+    	<property name="userAssetService" ref="userAssetService"></property>
+    </bean>  
+      
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 -->  
+    <bean id="jobDetail4" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="sentUserAssetDataTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 -->  
+    <bean id="sentUserAssetcronQuartzTask" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail4" />  
+        <!-- cron表达式 -->  
+        <property name="cronExpression">  
+          <value>0 0 12 1,15 * ?</value>  
+           <!--    <value>0 0 1 * * ?</value>  -->
+        </property>  
+    </bean>
+    <!-- 定时推送任务  end--> 
+    
+    <!-- 拆分单支基金  begin-->
+    <!-- 定时任务的工作Bean  
+    <bean id="userAssetSplitTask" class="com.wirich.auto.UserAssetSplitTask" >
+    	<property name="userAssetService" ref="userAssetService"></property>
+    </bean>  --> 
+      
+    <!-- 定义生成工作对象的工厂，并为工厂设定目标对象targetObject属性、目标对象的工作方法targetMethod属性 
+    <bean id="jobDetail5" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+        <property name="targetObject" ref="userAssetSplitTask" />  
+        <property name="targetMethod">  
+            <value>run</value>  
+        </property>  
+        <property name="concurrent" value="true" />  
+    </bean>  -->  
+      
+    <!-- 任务调度计时器，进行定时设置。CronTriggerBean能进行非常精确的定时设置 
+    <bean id="userAssetSplitTaskQuartzTask" class="org.springframework.scheduling.quartz.CronTriggerBean">  
+        <property name="jobDetail" ref="jobDetail5" />  -->  
+        <!-- cron表达式
+        <property name="cronExpression">   -->  
+           <!--  <value>0 0 9 1,15 * ?</value> 
+            <value>0 0 1 * * ?</value>  
+        </property>  
+    </bean> -->
+    <!-- 拆分单支基金   end--> 
+      
+    <!-- 调度任务触发器，启动定时任务-->  
+    <bean autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">  
+        <property name="triggers">  
+            <list>
+            	<!-- <ref bean="SynchronizeDateClock" />  -->
+            	<!--  <ref bean="activityClock" />-->
+                <!-- <ref bean="cronQuartzClock" />  
+                <ref bean="cronQuartzTask" /> 
+                <ref bean="getTransactionTask" />  
+                <ref bean="sentUserAssetcronQuartzTask" /> -->  
+                <!--  <ref bean="userAssetSplitTaskQuartzTask" />  -->
+                <!-- <ref bean="confirmTradeDataTask"/> -->
+            </list>
+        </property>  
+    </bean> 
+    <!-- 定时任务end -->
+    
+    <!--  测试action
+   <bean id="testAction" class="com.wirich.action.TestAction">
+		<property name="userAssetService" ref="userAssetService"></property>
+	</bean> 
+	-->
+</beans>

@@ -1,0 +1,89 @@
+.con{
+    width:60%;
+    height:400px;
+    min-width:1200px;
+    background: #fff;
+    margin:0 auto;
+    overflow: hidden;
+    padding:40px 0 0 15px;
+}
+.con .con1{
+    width:70%;
+    float:left;
+}
+.con .con2{
+    width:30%;
+    float:left;
+}
+.con .con1 .tedian span{
+    padding:3px;
+    background: #ff9900;
+    color:#fff;
+    font-size: 13px;
+}
+.con .con1 .des{
+    list-style-type: none;
+    overflow: hidden;
+    margin-top:30px;
+    width:80%;
+    padding-bottom: 20px;
+    border-bottom:solid 1px #d9dce0 ;
+}
+.con .con1 .des li{
+    width:32%;
+    float:left;
+    line-height: 30px;
+    text-align: center;
+    font-size:15px;
+    color:#808080;
+    border-right:solid 1px #d9dce0;
+}
+.con .con1 .day{
+    overflow: hidden;
+    color:#494949;
+
+}
+.con .con1 .day li{
+    float:left;
+}
+.con .con2 .text{
+    margin-top:20px;
+}
+.con .con2 input{
+    width:240px;
+    height:47px;
+}
+.con .con2 button{
+    width:100px;
+    height:48px;
+    background: #ff9900;
+    color:#fff;
+    border: none;
+    font-size:19px;
+    font-weight: bold;
+}
+.table{
+    width:60%;
+    margin:20px auto;
+    background: #fff;
+    min-width: 1200px;
+    padding-bottom: 50px;
+
+}
+.table table{
+    width:100%;
+    font-size:15px;
+    color:#5d5d5d;
+
+}
+.table table tr{
+    border-bottom:solid 1px #d4d9e1;
+    height:50px;
+}
+.table table tr td:nth-of-type(1){
+    width:20%;
+    text-align: center;
+}
+.table .three tr td{
+    text-align: center;
+}

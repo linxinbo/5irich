@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+Body,html{ background:#fff;}
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,input,button,textarea,hr{margin:0;padding:0}
+body,button,input,select,textarea{ font:12px/1.5 "宋体",arial, verdana, sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+li{list-style:none;}
+fieldset,img{border:0}
+table{border-collapse:collapse;border-spacing:0}
+q:before,q:after{content:""}
+button,input,select,textarea{font-size:100%}
+hr{border:none;height:1px}
+a{text-decoration:none}
+.inblock{ display:inline-block}
+.block{ display:block}
+.clear {clear: both;}
+.fl{ float:left}
+.fr{ float:right}
+
+.jg1_banner{
+  background: url("../images/jgpc_banner.png") center top no-repeat ;
+  height: 500px;
+}
+.jg_content{
+  width: 1000px;
+  margin: 0 auto;
+}
+.jg_content img{
+  width:100%;
+}
+.jg_table{
+  background-color: #ececec;
+}
+.jg_table tr th{
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+}
+.jg_table tr td{
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.jg_tableName{
+  color: #249dd7;
+}
+.jg_tableHuibao{
+  color: #ff8602;
+}
+.jg_tableBuy a{
+  color: #fff;
+  padding: 6px 18px;
+  background-color: #ff8602;
+  border-radius: 5px;
+  font-weight: 400;
+}

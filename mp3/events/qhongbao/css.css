@@ -1,0 +1,16 @@
+.bg{width:100%;position: relative;}
+.bg .bg1{width:100%;}
+.bg .qianren{width:40%;height:auto;position: absolute;left:28.5%;top:50%;}
+.bg .button{width:22%;height:auto;position: absolute;left:41%;bottom:7%;}
+.con{width:100%;background: #fd8000;overflow: hidden;}
+.con .display{color:#fff;font-size:1.8em;text-align: center;overflow: hidden;line-height: 1.7em; margin-top: 1em;}
+.con .display span{display: inline-block;width:4em;height:1.7em;text-align:center;border:solid 1px transparent;border-radius: 0.3em;background: #e72929;margin-bottom: 1em;}
+.con .detail{width:100%;padding: 0 1.1em 3em 1.1em;background: url(images/shape.png) no-repeat center center;background-size: 90% 100%;overflow: hidden;}
+.con .text{width:100%;font-size: 2em;color:#743204;font-weight: bold;text-align: center;margin-top:0.5em;}
+.con .list{font-size: 1.2em;color:#890d0d;padding: 1em 1em;}
+.list li{padding:0.3em 0em 0.5em 1.5em;background: url(images/coin.png) no-repeat left 0.7em;background-size: 1em 1em;line-height: 1.5em;}
+.footer{margin: 0 0.6em;overflow: hidden;}
+.footer p{width:4em;height:5em;}
+.footer .fp1{float: left;}
+.footer .fp2{float: right;}
+.footer img{width:100%;height:100%;}

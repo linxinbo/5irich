@@ -1,0 +1,61 @@
+[{
+  "title":"理财体验金大放送",
+  "image": "../images_mp/qifu/gf_banner.jpg",
+  "url" : "../events/give_fina/give_fina.html",
+  "state":"火热进行中"
+},{
+  "title":"推荐好友送红包",
+  "image": "../images_mp/qifu/taihao-banner.jpg",
+  "url" : "../events/taihao/index.html",
+  "state":"火热进行中"
+},{
+  "title":"推荐好友送红包",
+  "image": "../images_mp/qifu/hongbao-banner.jpg",
+  "url" : "../events/hongbao/index.html",
+  "state":"火热进行中"
+},{
+  "title":"七夕节",
+  "image": "../images_mp/qifu/qr-banner.jpg",
+  "url" : "../events/qixi/index.html",
+  "state":"火热进行中"
+},{
+  "title":"理财月",
+  "image": "../images_mp/qifu/licaiyue_banner.jpg",
+  "url" : "../events/licaiyue/index.html",
+  "state":"火热进行中"
+},{
+  "title":"父亲节",
+  "image": "../images_mp/qifu/fathersDay_banner.jpg",
+  "url" : "../events/fathersDay/fathersDay.html",
+  "state":"火热进行中"
+},{
+  "title":"优胜教育",
+  "image": "../images_mp/qifu/yousheng.jpg",
+  "url" : "../events/yousheng/yousheng.html",
+  "state":"火热进行中"
+},{
+  "title":"六一儿童节",
+  "image": "../images_mp/qifu/liuyi.jpg",
+  "url" : "../events/liuyi/liuyi.html",
+  "state":"活动已结束"
+},{
+  "title":"大盘猜猜猜",
+  "image": "../images_mp/qifu/banner_dapancai@2x.jpg",
+  "url" : "../events/dapancai-m/index.html",
+  "state":"活动已结束"
+},{
+  "title":"三月礼遇",
+  "image": "../images_mp/qifu/banner_38@2x.jpg",
+  "url" : "../events/38-m/index.html",
+  "state":"活动已结束"
+},{
+  "title":"情人节遇上元宵节",
+  "image": "../images_mp/qifu/banner_qingrenjie@2x.jpg",
+  "url" : "../events/qingrenjie-m/index.html",
+  "state":"活动已结束"
+},{
+  "title":"春节理财",
+  "image": "../images_mp/qifu/banner_chunjie@2x.jpg",
+  "url" : "../events/chunjie-m/index.html",
+  "state":"活动已结束"
+}]

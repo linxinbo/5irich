@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h2,h3,h4,h5{ padding:0; margin:0; font-family:"微软雅黑";text-align:justify;text-justify:inter-ideograph;color:#221815;}
+.huanjing_bannerimg{ background:url(../images/banner.jpg) no-repeat center; height:583px;width:100%;min-width: 1200px;}
+.huanjing_content{ width:1106px; margin:0 auto;}
+.huanjing_margin{width:1100px;margin:0 auto;padding-top:414px;overflow:hidden;}
+.huanjing_margin a {display:block;height:58px; float:right; padding-left:37px;}
+.huanjing_bg{ width:100%; overflow:hidden; background:#d6effb; padding-bottom:109px;}
+.huanbao_zt{ background:url(../images/huanbao_ztbg.jpg) no-repeat center; height:282px; width:100%;  font-size:16px;}
+.huanbao_zt p{ width:990px;color:#3c3668; margin:0 auto; padding-top:100px; line-height:30px;}
+.huanjing_h2{ font-size:20px; overflow:hidden; margin-top:29px;}
+.huanjing_h2 span{ float:left; background:#fff218; border-radius:16px; color:#3c3668; padding:6px 23px; box-shadow:0 -2px 3px #b9cfda inset; margin-bottom:20px; padding-bottom:8px;}
+.huanjing_txt1{ text-indent:2em; margin-top:4px; font-size:16px; color:#3c3668; line-height:26px;}
+.huanjing_mubiao{ background:#c5e4f6; margin-top:30px; padding-bottom:17px; }
+.huanjing_mubiao h2{ color:#01519b; font-size:25px; text-align:center; padding-top:20px;}
+.huanjing_mb{ background:url(../images/huanbao_txt2.jpg) no-repeat center; height:288px; margin-top:17px; }
+.huanjing_year{ background:#c5e4f6; padding-top:23px; margin-top:25px; overflow:hidden;}
+.huanjing_yearimg{ width:598px; margin:0 auto;}
+.huanjing_yearimg ul{ background:url(../images/huanbao_year.jpg) repeat-y; width:57px; height:298px; text-align:center; font-size:18px; color:#fff; line-height:60px; float:left; }
+.huanjing_yediv{ width:510px; float:left; padding-left:12px;}
+.huanjing_div1{ background:#e2f2fb; border-radius:16px; line-height:33px; margin-bottom:27px; margin-top:13px; color:#3c3668; font-size:16px; text-align:left; height:33px; padding-left:17px;}
+.huanjing_tuijian{ background:url(../images/huanbao_tuijian.jpg) no-repeat center; height:169px; margin-top:53px;}
+.guoqi_content3{ width:380px; float:left; margin-right:21px;}
+.guoqi_content3 h2{ height:37px; line-height:37px; background:#ffffff; color:#003c8d; font-size:18px; font-weight:normal; padding-left:15px; border-bottom:2px #6ba0cb solid; border-right:2px #6ba0cb solid; margin-bottom:3px;}
+.guoqi_cnn3div{ background:url(../images/guoqi_line.jpg) no-repeat bottom; padding-bottom:17px;}
+.guoqi_cnnp{background:#ffffff; padding:12px 15px; border-right:2px #6ba0cb solid; font-size:15px; color:#595757; line-height:22px;}
+.huanjing_xq{ width:788px; margin:0 auto; margin-top:37px;}
+.guoqi_xqbottom{ margin-top:5px;}
+.guoqi_xqbottom a{ display:block;width:187px; height:43px; line-height:43px; font-size:20px; font-weight:bold; text-align:center;}
+.guoqi_btn1{ background:#01519c; float:left; color:#fff;}
+.guoqi_btn2{ background:#fff218; float:right; color:#595757;}

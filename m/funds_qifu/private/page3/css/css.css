@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,ul,li,h1,h2,h3,h4,h5,p,session{ margin:0px; padding:0px; list-style-type:none; font-family:'microsoft yahei','微软雅黑';}
+body,html{ margin:0 auto; max-width:720px;}
+img{ border:none; max-width:100%}
+.clear{ clear:both;}
+a{text-decoration:none;outline:none; color:#000}
+
+.img100{ width:100%;}
+.img94{ width:94%; display:block; margin:auto}
+.title{ background:#cd1526; font-size:1.2em; width:94%; margin:auto; line-height:2em; text-align:center; color:#fff; font-weight:bold; border-radius:1.1em 0 1.1em 0; margin-top:8%; margin-bottom:3%}
+.tx{ display:block; margin:auto; width:27%;}
+.p15{ font-size:1.2em; line-height:1.5em; width:94%; margin:0 auto; margin-bottom:3%}
+.pcenter{ text-align:center}
+.spanhs{ color:#cc1526; font-size:1.2em;}
+.table94{ width:94%; display:block; margin:auto; background:#389ad7; font-size:1.2em; line-height:1.5em; margin-bottom:5%}
+.table94 td{ background:#fff;}
+.table94 .td1{ width:27%; text-align:center; color:#cd1526; font-weight:bold;}
+.table94 .td2{ width:500px; padding:3%}
+.table94 td span{ color:#389ad7}
+.p15 span{ color:#cc1626}
+.imgxx{ margin-top:6%; margin-bottom:5%}
+.titlenone{ margin-top:0}
+.yybtn{ bottom: 0; color: #fff; height: 43px; position: fixed; width: 100%;}

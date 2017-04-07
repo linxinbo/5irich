@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+
+<!--生成token-->
+	<bean id="TokenGenerateServiceImpl" class="com.wirich.service.user.impl.TokenGenerateServiceImpl">
+	</bean>
+	<!-- 登录-Action -->
+	<bean id="UserAction" class="com.wirich.action.cjqf.org.impl.CjUserActionImpl"
+		scope="prototype">
+		<property name="userService" ref="UserServiceImpl"></property>
+		<property name="fundGroupWebMainService" ref="FundGroupWebMainService1"></property>
+		<property name="tokenGenerateService" ref="TokenGenerateServiceImpl"></property>
+	</bean>
+	
+	<!--组合service -->
+	<bean id="FundGroupWebMainService1" class="com.wirich.service.cjqf.group.impl.FundGroupWebMainServiceImpl">
+		<property name="cjqfWebGroupFundMainDao" ref="cjqfWebGroupFundMainDao1"></property>
+		<property name="cjqfWebGroupFundOtherInfoDao" ref="cjqfWebGroupFundOtherInfoDao1"></property>
+		<property name="cjqfWebFundGroupFundDao" ref="cjqfWebFundGroupFundDao1"></property>
+		<property name="cjqfWebGroupFundAnnouncementDao" ref="cjqfWebGroupFundAnnouncementDao1"></property>
+		<property name="cjqfWebGroupFundManagerDao" ref="cjqfWebGroupFundManagerDao1"></property>
+		<property name="cjqfWebGroupFundChartDao" ref="cjqfWebGroupFundChartDao1"></property>
+		<property name="indexeodpricesDao" ref="indexeodpricesDao1"></property>
+		<property name="cjqfGFChartDao" ref="cjqfGFChartDao1"></property>
+	</bean>
+	
+	<!--人员Dao -->
+	<bean id="cjqfWebGroupFundMainDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundOtherInfoDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundOtherInfoDaoImpl">
+	</bean>
+	<bean id="cjqfWebFundGroupFundDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebFundGroupFundDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundAnnouncementDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundAnnouncementDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundManagerDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundManagerDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundChartDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundChartDaoImpl">
+	</bean>
+	<bean id="indexeodpricesDao1" class="com.wirich.dao.wind.astock.impl.AIndexeodpricesDaoImpl">
+	</bean>
+	<bean id="cjqfGFChartDao1" class=" com.wirich.dao.cjqf.group.impl.CJQFGroupFundChartDaoImpl">
+	</bean>
+
+	<!--人员service -->
+	<bean id="UserServiceImpl" class="com.wirich.service.cjqf.org.impl.CjUserServiceImpl">
+		<property name="userDao" ref="UserDaoImpl"></property>
+	</bean>
+	<!--人员Dao -->
+	<bean id="UserDaoImpl" class="com.wirich.dao.cjqf.org.impl.CjUserDaoImpl">
+	</bean>
+	<!-- 用户自选基金service -->
+	<bean id="UserChoiceServiceImpl"
+		class="com.wirich.service.cjqf.org.impl.CjqfwebUserChoiceServiceImpl">
+		<property name="userChoiceDao" ref="UserChoiceDaoImpl"></property>
+	</bean>
+	<!-- 用户自选基金dao -->
+	<bean id="UserChoiceDaoImpl" class="com.wirich.dao.cjqf.org.impl.CjqfwebUserChoiceDaoImpl">
+	</bean>
+	<!-- 用户自选基金action -->
+	<bean id="UserChoiceAction" class="com.wirich.action.cjqf.org.impl.CjqfwebUserChoiceAction"
+		scope="prototype">
+		<property name="userChoice" ref="UserChoiceServiceImpl"></property>
+	</bean>
+</beans>

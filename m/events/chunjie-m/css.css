@@ -1,0 +1,42 @@
+body,html{ margin:0 auto; padding:0px; font-size:65.2%; font-family:'Microsoft Yahei','微软雅黑'; max-width:640px; background:#ffa44f;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none;}
+a{ text-decoration:none;}
+.clear{ clear:both; height:1px; line-height:1px;}
+
+.banner{ display:block; width:100%}
+.p1{ font-size:3em; color:#0a0204; width:96%; margin:3% auto}
+.con1{ width:96%; margin:5% auto}
+.con1 p{ background:#fff; padding:2%; color:#0a0204; font-size:3em; line-height:1.5em; width:44%; float:left; border:1px solid #fc7f09}
+.con1 p span{ color:#a10404; display:block; margin-bottom:3%}
+.con1 .pright{ float:right; padding-bottom:7%}
+.img{ display:block; margin:3% auto; width:96%}
+.title{ display:block; margin:3% auto; width:100%}
+.spantitle{ width:96%; margin:3% auto; display:block; font-size:3em; color:#0a0204;}
+.divtitle{ background:#ff7d05; color:#fff; font-size:3em; line-height:2em; width:96%; margin:3% auto; margin-bottom:0}
+.divtitle span{ display:block; float:left; width:33.3%; text-align:center}
+.divtitleff{ background:#fff; color:#0a0204; margin:0 auto}
+.divtitleff span{ line-height:3em;}
+.divp{width:92%; margin:3% auto;background:#fff; padding:2%; color:#0a0204; font-size:3em; line-height:1.5em; border:1px solid #fc7f09}
+.divp span{ color:#a10404; display:block; margin-bottom:3%}
+.con2 p{ width:30.6%; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; background:#c10808; color:#fff; float:left; font-size:3em; line-height:1.6em; padding:2%; margin-left:2%}
+.con1_2{ margin-top:3%}
+.divp2{ margin-top:0}
+.divp2 .left{ width:75%; float:left;}
+.divp2 span{ color:#0a0204; margin-bottom:2%}
+.divp2 span i{ color:#c10808;}
+.divp2 img{ float:left; margin-left:5%; width:15%; margin-top:3%}
+
+@media (min-width:580px) and (max-width:640px) { 
+	body,html{ font-size:58.5%; }
+}
+@media (min-width:480px) and (max-width:580px) { 
+	body,html{ font-size:53.5%; }
+}
+@media (min-width:430px) and (max-width:480px) { 
+	body,html{ font-size:50.5%; }
+}
+@media (min-width:350px) and (max-width:430px) { 
+	body,html{ font-size:48.5%; }
+}

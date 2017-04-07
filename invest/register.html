@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="images/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="images/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="images/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="style/comm.css?t=20170308">
+    <link rel="stylesheet" href="style/header.css?t=20170308">
+    <link rel="stylesheet" href="style/login.css?t=20170308">
+    <link rel="stylesheet" href="style/travel.css?t=20170308">
+</head>
+<body>
+<div>
+    <!--头部开始-->
+    <header class="header">
+        <div class="header_top">
+            <a class="header_top_t" href="javascript:window.history.go(-1);"><i class="header_back"></i></a>
+            <!--<h2><span>智能定投</span></h2>-->
+            <a class="header_top_c" href="login.html">登录</a>
+        </div>
+    </header>
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <div class="login_logo">
+            <a href="index.html"><img src="images/login_logo.png"></a>
+        </div>
+        <div class="mtopdd">
+            <ul class="login_list1">
+                <li>
+                    <div class="login_list_left"><span>手机号码</span></div>
+                    <div class="login_list_right"><input type="text" id="oldPW" name="oldPW" placeholder="请输入手机号" class="n" value=""></div>
+                </li>
+                <li class="login-commit">
+                    <div class="login_list_left"><span>图形验证</span></div>
+                    <div class="login_list_right1">
+                        <span class="login_yz"><img src="" alt="" class="reshpic"></span>
+                        <span class="login_yzspan">字母不区分大小写</span>
+                    </div>
+                    <div class="login_list_center"><input type="text" id="valiCode1" name="valiCode1" placeholder="请输入验证码" class="n" value=""></div>
+                </li>
+                <li class="login-commit">
+                    <div class="login_list_left"><span>手机验证</span></div>
+                    <div class="login_list_right1">
+                        <a class="smsCode yanz">获取验证码</a>
+                    </div>
+                    <div class="login_list_center"><input type="text" id="valiCode" name="valiCode" placeholder="请输入验证码" class="n" value=""></div>
+                </li>
+                <li>
+                    <div class="login_list_left"><span>登录密码</span></div>
+                    <div class="login_list_right"><input type="password" id="newPW1" name="newPW1" placeholder="请输入密码" class="n" value=""></div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="login_title_f" style="padding: 1em 1em 0 1em;">
+            <div class="jg1 duiqi">
+                <input type="checkbox" checked="checked" id="jzwo"><span style="color: #999"> 同意《理财易站用户使用协议》</span>
+            </div>
+        </div>
+        <a  id="login_yh" class="btn_next_travel userregister">注册</a>
+
+
+        <!--第三方登录-->
+        <!--<div class="posi_bottom">
+            <h2><span>&nbsp;&nbsp;&nbsp;&nbsp;同意协议，使用第三方登录&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+            <ul class="weixin_hide">
+                <li class="weixin"><i class="icon"></i><span>微信登陆</span></li>
+                <li class="qq"><i class="icon"></i><span>腾讯QQ</span></li>
+                <li class="weibo"><i class="icon"></i><span>新浪微博</span></li>
+            </ul>
+        </div>-->
+        <!--第三方登录-->
+    </div>
+    <!--内容结束-->
+
+</div>
+
+
+</body>
+<script src="js/jquery.min.js?t=20170308"></script>
+<script src="js/jquery.cookie.js?t=20170308"></script>
+<script src="js/common.js?t=20170308"></script>
+<script src="js/sigin.js?t=20170308"></script>
+</html>

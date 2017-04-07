@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.shortperiod.CjqfWebShortTermFundsBean" table="cjqfweb_short_term_funds">
+		<!--基金代码  -->
+		<id name="fundCode" type="java.lang.String">
+			<column name="fund_code" />
+		</id>
+		<!--  产品名称 -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  预期收益  -->
+		<property name="earnings" type="java.lang.String">
+			<column name="earnings" />
+		</property>
+		<!--  投资起点   -->
+		<property name="minBuyAmount" type="java.lang.String">
+			<column name="min_buy_amount" />
+		</property>
+		<!--  投资期限  -->
+		<property name="investmentHorizon" type="java.lang.String">
+			<column name="investment_horizon" />
+		</property>
+		<!-- 本期赎回日	 -->
+		<property name="thisCallDate" type="java.lang.String">
+			<column name="this_call_date" />
+		</property>
+		<!--  下期申购日  -->
+		<property name="theNextPurchase" type="java.lang.String">
+			<column name="the_next_purchase" />
+		</property>
+		<!-- 购买、预约标识  -->
+		<property name="operateType" type="java.lang.String">
+			<column name="operate_type" />
+		</property>
+		<!--   排序	 -->
+		<property name="theSorting" type="java.lang.String">
+			<column name="the_sorting" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

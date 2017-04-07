@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.bdqx.CJQFWebBDQX" table="cjqfweb_bdqx">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id"></column>
+			<generator class="native"></generator>
+		</id>
+		<!-- 基金名称 -->
+		<property name="fundName" type="java.lang.String">
+			<column name="Fund_name"></column>
+		</property>
+		<!--净值日期 -->
+		<property name="navdate" type="java.lang.String">
+			<column name="navdate"></column>
+		</property>
+		<!-- 净值 -->
+		<property name="nav" type="java.lang.String">
+			<column name="nav"></column>
+		</property>
+		<!-- 近一个月收益 -->
+		<property name="monthincome" type="java.lang.String">
+			<column name="monthincome"></column>
+		</property>
+		<!-- 日涨跌 -->
+		<property name="navUd" type="java.lang.String">
+			<column name="nav_ud"></column>
+		</property>
+		<!-- 年化收益 -->
+		<property name="returnYear" type="java.lang.String">
+			<column name="return_year"></column>
+		</property>
+		<!-- 最大回撤 -->
+		<property name="zdhc" type="java.lang.String">
+			<column name="zdhc"></column>
+		</property>
+		<!-- 夏普比率 -->
+		<property name="xpbl" type="java.lang.String">
+			<column name="xpbl"></column>
+		</property>
+		<!-- 基金成立日期 -->
+		<property name="fundCreattime" type="java.lang.String">
+			<column name="fund_creattime"></column>
+		</property>
+		<!--  数据创建时间 -->
+		<property name="creatTime" type="java.util.Date">
+			<column name="creat_time" />
+		</property>
+		<property generated="never" name="tradeDt" type="string">
+            <column name="TRADE_DT" />
+        </property>
+        <property generated="never" name="sDqClose" type="string">
+            <column name="S_DQ_CLOSE" />
+        </property>
+		<!--  数据修改时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

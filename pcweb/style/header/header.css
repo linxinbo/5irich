@@ -1,0 +1,100 @@
+.cheader{
+    height: 60px;
+    background-color: #ffffff;
+}
+.cheader .logo{
+    width: 1200px;
+    margin: 0 auto;
+    /*min-width: 1200px;*/
+    max-width: none !important;
+}
+.cheader .logo .clogo{
+    /*margin-left: 80px;*/
+    width: 286px;
+    height: 48px;
+    margin-top: 6px;
+}
+.cheader .menu{
+    width: 70%;
+    float: left;
+    margin-top: 21px;
+}
+.cheader .menu a{
+    position: relative;
+    display: inline-block;
+}
+.cheader .menu a span{
+    font-size: 18px;
+    color: #333333;
+    padding: 6px 15px;
+}
+.cheader .menu a i{
+    position: absolute;
+    top:50%;
+    right: -1px;
+    margin-top: -4px;
+    display: inline-block;
+    width: 9px;
+    height: 5px;
+    /*background-image: url("../../images/header/sanjiao.png");
+    background-repeat: no-repeat;
+    background-position: center center;*/
+}
+.cheader .menu a span.select{
+    border-bottom: 3px solid #ff9900;
+    font-weight: bold;
+}
+.cheader .Sign{
+    width: 30%;
+    float: left;
+    margin-top: 25px;
+}
+.cheader .Sign a{
+    float: right;
+    font-size: 14px;
+    color: #444444;
+}
+.cheader .login-back{
+    width: 30%;
+    float: left;
+    margin-top: 25px;
+    display: none;
+    line-height: 14px;
+}
+.login-back a{
+    float: right;
+    font-size: 14px;
+    color: #444444;
+}
+.cheader .login-back .user-name {
+    margin-right: 9px;
+}
+.short_f{
+    position: absolute;
+    width: 102px;
+    top:54px;
+    left: 85px;
+    right: 0px;
+    height: 96px;
+    z-index: 77777;
+    box-shadow: 0px 0px 2px #cccccc;
+}
+.short_f a{
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    background-color:#ffffff;
+    font-size: 16px;
+    color: #666666;
+    height: 32px;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.short_f a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color:#ff9900;
+}
+.bline{
+    border-bottom: 1px solid #e5e5e5;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >	
+    
+    <!--智能理财问题-->
+	<bean id="IFMQuestionQueryAction" class="com.wirich.action.intelligentfinancialmanagement.IFMQuestionQueryAction" scope="prototype">
+		<property name="queryService" ref="IFMQuestionQueryServiceImpl"></property>
+	</bean> 
+	<bean id="IFMQuestionQueryServiceImpl" class="com.wirich.service.impl.intelligentfinancialmanagement.IFMQuestionQueryServiceImpl" scope="prototype">
+		<property name="questionsDao" ref="CjqfwebIFMQuestionsdaoImpl"></property>
+	</bean>
+	<bean id="IFMQuestionQueryAcheServiceImpl" class="com.wirich.service.impl.intelligentfinancialmanagement.IFMQuestionQueryAcheServiceImpl" scope="prototype">
+		<property name="questionsDao" ref="CjqfwebIFMQuestionsdaoImpl"></property>
+		<property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl2"></property>
+		<property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl2"></property>
+	</bean>
+	
+	<!--智能理财问题评分-->
+	<bean id="IFMScoreAction" class="com.wirich.action.intelligentfinancialmanagement.IFMScoreAction" scope="prototype">
+		<property name="scoreService" ref="IFMScoreServiceImpl"></property>
+	</bean> 
+	<bean id="IFMScoreServiceImpl" class="com.wirich.service.impl.intelligentfinancialmanagement.IFMScoreServiceImpl" scope="prototype">
+		<property name="scoreDao" ref="CjqfwebIFMScoredaoImpl"></property>
+		<property name="userdao" ref="CjqfwebIFMUserdaoImpl"></property>
+	</bean>
+	<bean id="CjqfwebIFMScoredaoImpl" class="com.wirich.dao.impl.intelligentfinancialmanagement.CjqfwebIFMScoredaoImpl" scope="prototype">
+	</bean>
+	<bean id="CjqfwebIFMUserdaoImpl" class="com.wirich.dao.impl.intelligentfinancialmanagement.CjqfwebIFMUserdaoImpl" scope="prototype">
+	</bean>
+	<bean id="CjqfwebIFMQuestionsdaoImpl" class="com.wirich.dao.impl.intelligentfinancialmanagement.CjqfwebIFMQuestionsdaoImpl" scope="prototype">
+	</bean>
+	<bean id="CJQFWebGroupFundMainDaoImpl2" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<bean id="CJQFWebFundGroupFundDaoImpl2" class="com.wirich.dao.cjqf.group.impl.CJQFWebFundGroupFundDaoImpl">
+	</bean>
+	<!--智能理财方案-->
+	<bean id="IFMSchemeAction" class="com.wirich.action.intelligentfinancialmanagement.IFMSchemeAction" scope="prototype">
+		<property name="schemeService" ref="IFMSchemeServicImpl"></property>
+	</bean> 
+	<bean id="IFMSchemeServicImpl" class="com.wirich.service.impl.intelligentfinancialmanagement.IFMSchemeServicImpl" scope="prototype">
+	</bean>
+	</beans>

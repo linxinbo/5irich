@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+	
+	<!--组合service -->
+	<bean id="FundGroupWebMainService1" class="com.wirich.service.cjqf.group.impl.FundGroupWebMainServiceImpl">
+		<property name="cjqfWebGroupFundMainDao" ref="cjqfWebGroupFundMainDao1"></property>
+		<property name="cjqfWebGroupFundOtherInfoDao" ref="cjqfWebGroupFundOtherInfoDao1"></property>
+		<property name="cjqfWebFundGroupFundDao" ref="cjqfWebFundGroupFundDao1"></property>
+		<property name="cjqfWebGroupFundAnnouncementDao" ref="cjqfWebGroupFundAnnouncementDao1"></property>
+		<property name="cjqfWebGroupFundManagerDao" ref="cjqfWebGroupFundManagerDao1"></property>
+		<property name="cjqfWebGroupFundChartDao" ref="cjqfWebGroupFundChartDao1"></property>
+		<property name="indexeodpricesDao" ref="indexeodpricesDao1"></property>
+		<property name="cjqfGFChartDao" ref="cjqfGFChartDao1"></property>
+	</bean>
+	
+	<!--人员Dao -->
+	<bean id="cjqfWebGroupFundMainDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundOtherInfoDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundOtherInfoDaoImpl">
+	</bean>
+	<bean id="cjqfWebFundGroupFundDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebFundGroupFundDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundAnnouncementDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundAnnouncementDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundManagerDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundManagerDaoImpl">
+	</bean>
+	<bean id="cjqfWebGroupFundChartDao1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundChartDaoImpl">
+	</bean>
+	<bean id="indexeodpricesDao1" class="com.wirich.dao.wind.astock.impl.AIndexeodpricesDaoImpl">
+	</bean>
+	<bean id="cjqfGFChartDao1" class=" com.wirich.dao.cjqf.group.impl.CJQFGroupFundChartDaoImpl">
+	</bean>
+
+	<!--人员service -->
+	<bean id="UserServiceImpl" class="com.wirich.service.cjqf.org.impl.CjUserServiceImpl">
+		<property name="userDao" ref="UserDaoImpl"></property>
+	</bean>
+	<!--人员Dao -->
+	<bean id="UserDaoImpl" class="com.wirich.dao.cjqf.org.impl.CjUserDaoImpl">
+	</bean>
+       
+	<!-- 交易前置 -->
+	<bean id="R360TradingAction" class="com.wirich.action.szking.r360.R360TradingAction"
+		scope="prototype">
+		<property name="R360tr" ref="R360TradingServiceImpl"></property>
+		<property name="userService" ref="UserServiceImpl"></property>
+	</bean>
+	<!--单支基金客户风险承受能力 -->
+	<bean id="R360TransactionOperationAction" class="com.wirich.action.szking.r360.R360TransactionOperationAction"
+		scope="prototype">
+		<property name="tradingService" ref="TradingServiceImpl2"></property>
+		<property name="group" ref="FundGroupWebMainServiceImpl2"></property>
+		<property name="Info" ref="UserInformationQueryServicImpl2"></property>
+	</bean>
+	<!--service -->
+	<bean id="UserInformationQueryServicImpl2" class="com.wirich.service.szking.api.impl.UserInformationQueryServicImpl">
+	</bean>
+	<bean id="R360TradingServiceImpl" class="com.wirich.service.szking.r360.impl.R360TradingServiceImpl">
+	</bean>
+	<bean id="TradingServiceImpl2" class="com.wirich.service.szking.api.impl.TradingServiceImpl">
+	 <property name="BCDao" ref="bankChannelIdDaoImpl2"></property>
+	</bean>
+	<bean id="FundGroupWebMainServiceImpl2" class="com.wirich.service.cjqf.group.impl.FundGroupWebMainServiceImpl">
+	    <property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl2"></property>
+	</bean>
+	<!--组合Dao-->
+	<bean id="CJQFWebGroupFundMainDaoImpl2" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<!--银行网点号Dao-->
+	<bean id="bankChannelIdDaoImpl2" class="com.wirich.dao.cjqf.system.impl.BankChannelIdDaoImpl">
+	</bean>
+	
+	<!-- UserInfor360Action 个人资产查询 开始 -->
+	<bean id="UserInfo360Action" class="com.wirich.action.szking.r360.UserInfor360Action" scope="prototype">
+		<property name="AssetInfor" ref="IUserInfoService"></property>
+		<property name="itransactionqueryservice" ref="TransactionQueryServiceimpl"></property>
+		<property name="userAssetService" ref="userAssetService"></property>
+	</bean>
+	<!-- UserInfor360Action 个人资产查询 结束 --> 
+	
+	<!-- 个人资产查询 存储测试 开始 -->
+	<!-- 从金证借口查询客户资产信息 并存储  -->
+	<!--人员Dao -->
+	<bean id="userAssetDao" class="com.wirich.dao.cjqf.org.impl.UserAssetDaoImpl">
+	</bean>
+	<bean id="userAssetSummaryDao" class="com.wirich.dao.cjqf.org.impl.UserAssetSummaryDaoImpl">
+	</bean>
+	<bean id="userAssetService" class="com.wirich.service.szking.impl.UserAssetServiceImpl">
+		<property name="userAssetDao" ref="userAssetDao"></property>
+		<property name="userAssetSummaryDao" ref="userAssetSummaryDao"></property>
+		<property name="bankChannelIdDao" ref="bankChannelIdDaoImpl"></property>
+		<property name="shortPeriodInfoDao" ref="ShortPeriodInfoDaoImpl"></property>
+		<property name="shortPeriodBusinessDao" ref="ShortPeriodBusinessDaoImpl"></property>
+		<property name="cjUserDao" ref="UserDaoImpl"></property>
+	</bean>
+	<!--
+	<bean id="GetUserAssetAction" class="com.wirich.auto.GetUserAssetAction" scope="prototype">
+		<property name="userAssetService" ref="userAssetService"></property>
+	</bean>
+	--> 
+	<!-- 个人资产查询 存储测试 结束 --> 
+</beans>

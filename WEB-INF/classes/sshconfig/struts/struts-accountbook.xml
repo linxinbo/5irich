@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="AccountBook" extends="wirich">
+		<!--处理公募基金模拟账本认申购输入框信息-->
+		<action name="MutualFundAccountBookBuyAction" class="MutualFundAccountBookBuyAction" method="OutJson">
+		</action> 
+		<!--处理公募基金模拟账本赎回输入框信息-->
+		<action name="MutualFundAccountBookRedemptionAction" class="MutualFundAccountBookRedemptionAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本转换输入框信息-->
+		<action name="MutualFundAccountBookConversionAction" class="MutualFundAccountBookConversionAction" method="OutJson">
+		</action> 
+		<!--处理公募基金模拟账本定投输入框信息-->
+		<action name="MutulFundAccountBookFixedInvestmentAction" class="MutulFundAccountBookFixedInvestmentAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本分红输入框信息-->
+		<action name="MutualFundAccountBookDividendAction" class="MutualFundAccountBookDividendAction" method="OutJson">
+		</action>
+		<!--处理公募基金模拟账本交易明细返回信息-->
+		<action name="MutualFundTransactionDetailsAction" class="MutualFundTransactionDetailsAction" method="OutJson">
+		</action> 
+		<!--处理返回公募基金收益统计-->
+		<action name="MutulAccountBookListAction" class="MutulAccountBookListAction" method="OutJson">
+		</action>
+		 <!--登录-->
+		<action name="MutualFundAccountBookLoginAction" class="MutualFundAccountBookLoginAction" method="login">
+		</action> 
+		 <!--注册-->
+		<action name="MutualFundAccountBookRegisterAction" class="MutualFundAccountBookRegisterAction" method="register">
+		</action>
+		 <!--组合基金购买输入框-->
+		<action name="GroupFundAccountBookBuyAction" class="GroupFundAccountBookBuyAction" method="OutJson">
+		</action> 
+		<!--组合基金明细-->
+		<action name="GroupFundTransactionDetailsAction" class="GroupFundTransactionDetailsAction" method="OutJson">
+		</action> 
+	</package>
+</struts>

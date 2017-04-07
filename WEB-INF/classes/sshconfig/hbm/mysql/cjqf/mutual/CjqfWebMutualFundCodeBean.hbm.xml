@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.mutual.CjqfWebMutualFundCodeBean"
+		table="cjqfweb_mutual_fund_code">
+		<!-- 主键Id -->
+		<id name="fundId" type="java.lang.String">
+			<column name="FUND_ID" />
+			
+		</id>
+
+		<!-- 收费类型  a-前收费，b-后收费	 -->
+		<property name="type" type="java.lang.String">
+			<column name="FREE_TYPE" />
+		</property>
+		<!-- 基金类型	 -->
+		<property name="fundType" type="java.lang.String">
+			<column name="FUND_TYPE" />
+		</property>
+		<!-- 基金风险	 -->
+		<property name="fundRisk" type="java.lang.String">
+			<column name="FUND_RISK" />
+		</property>
+		<!--更新时间  -->
+		<property name="UpdateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>

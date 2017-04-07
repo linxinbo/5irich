@@ -1,0 +1,297 @@
+/*html{
+    height: 100%;
+}*/
+div.yello_color{color: #f6722a !important;}
+div.red_vline{background: #71b6ec !important;}
+div.purple_vline{background: #f1a73e !important;}
+div.yello_vline{background: #de9dd6 !important;}
+div.blue_vline_s{background: #fa6e86 !important;}
+
+
+.normal2_list li.funs_list{padding: 0;display: none;}
+span.collect_i{margin: 0 auto;display: none;}
+span.add_collect{display: inline-block; width: 5em;height: 1.83em;line-height: 1.83em;text-align: center;background: #1b75da;color: #fff;border-radius: 3px;}
+.funds_list_a{border-bottom: 1px solid #ccc;}
+.funds_list_a li:last-child{padding: 0;display:box;display: -webkit-box;}
+
+.funds_list_a li:first-child{border-bottom: none;}
+.funds_list_a li{line-height: 2.75em !important;margin-left: 5%;}
+.normal2_list li.show{display: block;}
+.p_t_20{padding: 20px 0 0;}
+.normal_list .my_account {
+    margin: 0 10px 0 0;
+
+/*    margin: 0 30px 0 0;*/
+    text-align: right;
+    overflow: hidden;
+}
+input#tradePW {
+    width: 100%;
+    text-align: left;
+    float: none;
+    font-size: 1em;
+	border: none;
+}
+.collect_nav li.sele{border-bottom:none;border-top:none;line-height:2.5em; font-size:1.2em;color:#fff;background: #429AFC !important;}
+.collect_nav li.sele>div{width: 80%;margin: 0 auto;border-bottom: 2px solid #fff;}
+
+.collect_nav li {
+    float: left;
+    width: 33%;
+    line-height: 2.5em;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    background: none;
+}
+
+header.home {
+    background: #389ad7;
+    background-size: 100% 42px;
+    overflow: hidden;
+    position: relative;
+}
+header.home .back {
+    float: left;
+    padding: 12px 9px;
+}
+header.home .back i {
+	
+    float: left;
+    width: 10px;
+    height: 19px;
+    background: url(../images/icon_comback@2x.png) 0 0;
+    background-size: 100% 100%;
+}
+header.home h1 i {
+	display: inline-block;
+    background: url(../images/icon_logochuang@2x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    height: 26px;
+    margin: 12px 0 0 10px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 55px;
+}
+
+header.home h1{background: none;height: 100%;margin: 0 50px; text-indent: inherit;}
+header.home h1 span{display: inline-block;color: #fff;font-size: 18px;}
+.header-new>div{width:12.5em;margin: 0 auto;height: 3.75em;}
+
+/*----------图表-----------------*/
+.user_chart{width: 94%;margin: 0 3%;height: 130px;position: absolute;bottom: 20px;}
+.user_chart>div{margin: 0 auto;}
+#chart-canvas{display: inline-block;height: 130px;width: 130px;}
+.chart_div{display: inline-block;vertical-align: middle;}
+.legend{display: inline-block;vertical-align: middle;margin-left: 5px;}
+.legend li>span{vertical-align: middle;}
+.legend_all{display: inline-block;width:20px;height: 10px;margin-right: 5px;}
+.legend_a{background:#ebb563;}
+.legend_b{background:#bb1a2f;}
+.legend_c{background:#ffdf74;}
+
+
+.new_nav li{float:left;width:33%;line-height:40px;color:#000; font-weight:bold;text-align:center;background: #fff;}
+.new_nav li:first-child{ background:none;width: 34%;}
+.new_nav li.sele{border-bottom: none;line-height:38px;color:#000;background: #fff !important;}
+.new_nav li.sele>div{width: 80%;margin: 0 auto;border-bottom: 2px solid #1b75da;}
+
+/*--------------------------轮播图-------------------*/
+.slidesDiv{position: relative;}
+.bj_home{width: 100%;}
+.bj_home img{width: 100%;width: 100%;}
+ .hint_qifu{display: none;width: 100%; height: 20px; position: absolute;top: 3.75em;background: rgba(53,76,132,0.6);color: #fff;z-index: 99;}
+ .hint_qifu i{display: inline-block;width:20px;height: 20px;background: url(../images/qifu/icon_happy@2x.png);background-size: 100% 100%;vertical-align: middle;}
+.hint_qifu span{vertical-align: middle;}
+ .navbar_qifu{background: #354c84;height: 45px;color: #fff;line-height: 45px;}
+ .navbar_qifu li{float: left;width: 50%;height: 45px;}
+ .navbar_qifu li>a{display: block;width: 100%;height: 100%;padding: 6px 0}
+ .navbar_qifu li>a img{display: block;width:50px;height: 32px;margin: 0px auto;}
+ .navbar_qifu i.user_icon{display: inline-block;background: url(../images/user-icon.png) ;background-size: 100% 100%; width:25px;height: 25px;vertical-align: middle;margin: 0 10px;}
+.navbar_qifu span.login{vertical-align: middle;}
+.navbar_qifu a.login{float: right; padding: 0; display: inline-block;width: 60px;height: 25px;line-height: 25px;border-radius: 3px;text-align: center;color: #fff;background:#f3331c; margin-right: 10px;}
+ .navbar_qifu a.sigin{float: right;padding: 0; display: inline-block;width: 60px;height: 25px;line-height: 25px;border-radius: 3px; color: #f3331c;background:#fff; margin-right: 10px;text-align: center;}
+li.t_p_6{padding: 10px 0;}
+
+/*-------滑动轮播广告-------------*/
+.slidesDiv{position: relative;}
+.pagination{position: absolute;bottom: 10px;right: 10px; text-align: right;z-index: 100;}
+.swiper-pagination-bullet{   
+/*
+    width: 5px;
+    height: 5px;
+*/  margin-right: 5px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #767c99;
+    -webkit-opacity:1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity:1;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+/*
+    width: 5px;
+    height: 5px;
+*/
+}
+.navbar_l{display: none;}
+.navbar_no_l{display: block;}
+.model{padding: 10px 20px;}
+.model li{margin-bottom: 15px;}
+
+.model li>a{display: inline-block;width: 45%;height: 85px;}
+.model li>a img{width: 100%;height: 100%;background-size: 100% 100%;}
+.model li>a.href_theme,.model li>a.href_group{float: right;}
+span.add_hide{}
+.collect_icon{display: none;}
+
+/*-------------弹出框----------------------*/
+.alertBoxNew{background: url(../images/bj_black@2x.png) 0 0 ;width: 100%;height: 100%; position: absolute;top: 0;left: 0;z-index: 100001;}
+.alertContent{background: #fff;width:250px;height: 156px;position: fixed; top:45%;border-radius: 5px;left: 11%;}
+.alertText{background: #3c7ae0; border-top-left-radius: 4px;border-top-right-radius: 4px; color: #fff;font-size: 16px;padding: 10px 24px 10px;text-align: center;}
+.alertText2{border-top-left-radius: 4px;border-top-right-radius: 4px; color: #000;font-size: 16px;padding: 8px 24px 8px;text-align: center;}
+.alertText_new{color: #fff;font-size: 1.33em;padding: 28px 24px 10px;padding-right: 0; text-align: center;}
+.alertContent h3{background: #3c7ae0; border-top-left-radius: 4px;border-top-right-radius: 4px;color: #fff;font-size: 16px;padding: 6px 24px 6px;text-align: center;}
+.alertContent .alertInput{padding: 0 15px;height: 2.5em;margin-bottom: 15px;}
+.alertContent .alertInput input{height: 2.5em;width: 100%;font-size: 16px;}
+.alertText span{text-align: center;}
+.subButton{width: 100%; padding: 0 0 13px;position: absolute;bottom: 0;}
+.subButton>a{display: block; width: 95px;margin: 0 auto;height: 33px;font-size: 16px;text-align: center;line-height: 33px;background: #3c7ae0;border-radius: 5px;color: #fff;}
+.subButton>a.cancle{float: left;margin: 0 0 0 25px;}
+.subButton>a.confirm{float: right;margin: 0 25px 0 0;}
+.alertContent .pack{position: relative;width: 100%; height: 100%;}
+
+/*-----------------------等待框-------------------------*/
+		.load_div {
+			background: url(../images/bj_black@2x.png) 0 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+		}
+		.load_content{
+			position: fixed;
+			top: 45%;
+			left: 25%;
+			width: 50%;
+			margin: 0 auto;
+
+		}
+		.load_content .load_text{
+			text-align: center;
+			font-size: 1.67em;
+			margin: 20px auto;
+           color: #fff;
+		}
+		.load_div .loader {
+			margin: 0 auto;
+		}
+		
+		.loader {
+			display: block;
+			width: 4.67em;
+			height: 0.83em;
+			padding: 0px;
+			/* display: none; */
+		}
+		
+		.loader span {
+			vertical-align: middle;
+			border-radius: 100%;
+			display: inline-block;
+			width: 0.83em;
+			height: 0.83em;
+			margin: 0 2px;
+			-webkit-animation: loader 0.8s linear infinite alternate;
+			animation: loader 0.8s linear infinite alternate;
+		}
+		
+		.loader span:nth-child(1) {
+			-webkit-animation-delay: -10s;
+			animation-delay: -1s;
+			background: rgba(245, 103, 115, 0.6);
+		}
+		
+		.loader span:nth-child(2) {
+			-webkit-animation-delay: -0.8s;
+			animation-delay: -0.8s;
+			background: rgba(245, 103, 115, 0.8);
+		}
+		
+		.loader span:nth-child(3) {
+			-webkit-animation-delay: -0.26666s;
+			animation-delay: -0.26666s;
+			background: rgba(245, 103, 115, 1);
+		}
+		
+		.loader span:nth-child(4) {
+			-webkit-animation-delay: -0.8s;
+			animation-delay: -0.8s;
+			background: rgba(245, 103, 115, 0.8);
+		}
+		
+		.loader span:nth-child(5) {
+			-webkit-animation-delay: -10s;
+			animation-delay: -1s;
+			background: rgba(245, 103, 115, 0.4);
+		}
+		
+		@keyframes loader {
+			from {
+				transform: scale(0, 0);
+			}
+			to {
+				transform: scale(1, 1);
+			}
+		}
+		
+		@-webkit-keyframes loader {
+			from {
+				-webkit-transform: scale(0, 0);
+			}
+			to {
+				-webkit-transform: scale(1, 1);
+			}
+		}
+/*---------------我的资产开户按钮---------------------*/
+.go_open{float: right;font-size: 18px;color: #fff;margin-right: 10px;}
+.color_gray{background: #ccc;}
+.no_open{padding: 20px;}
+.no_open h3{text-align: center;font-size: 1.33em;}
+.no_open_after{padding: 20px;display: none;}
+.no_open_after h3{text-align: center;font-size: 16px;}
+li.gongmu{background: #fff!important;}
+.account_data,.duanli_data{display: none;}
+
+/*
+duanli
+*/
+.no_data{padding: 20px;display: none;}
+.no_data h3{text-align: center;font-size: 1.33em;}
+
+
+.fund_id{margin-right: 0!important;}
+/*------------------走势------------------------*/
+.income_qifu{
+	padding: 10px 0;width: 95%;margin: 0 auto;
+}
+.value_qifu{display: none;}
+.income_qifu li,.value_qifu li{display: block;height: 20px;line-height: 20px; margin: 10px auto; text-align: center;background: #7ab8fe;}
+.income_qifu li.active{background: #1b7ae2;}
+.income_qifu li.active .in_percent{color: #00ff3c;}
+.income_qifu .time_text{color: #fff;margin-right: 20px;font-size: 13px;}
+.income_qifu .in_percent{color: #ff0501;font-size: 13px;}
+.navtab1  li.one{width: 50%;}
+.hint_qifu span.login_out {
+float: right;
+}
+input.smsCode{color: #1b75da;background: #fff;width: 100%;}
+input.gray_bj{color: #ccc;background: #fff;width: 100%;}
+
+/*.backall{color: #1b75da;}*/

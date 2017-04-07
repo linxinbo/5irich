@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >	
+	
+	<!-- 公募列表查询Action-->
+	<bean id="MutualFundAction" class="com.wirich.action.cjqf.mutual.MutualFundAction"
+		scope="prototype">
+		<property name="mutualfund" ref="MutualFundServiceimpl"></property>
+		<property name="IMutFuNAV" ref="ChinaMutFuNAVServiceImpl"></property>
+		<property name="FMFPerfor" ref="ChinaMFPerformanceServiceImpl"></property>
+		<property name="FDescrip" ref="ChinaMutualFundDescriptionServiceImpl"></property>
+		<property name="Managers" ref="ChinaMutualFundManagerSerniceImpl"></property>
+		<property name="IssuSer" ref="ChinaMutualFundIssueServiceImpl"></property>
+		<property name="Portfolio" ref="ChinaMutualPortfolioServiceImpl"></property>
+		<property name="otherInfo" ref="CjMutualFundOtherInfoServiceImpl"></property>
+		<property name="marketFIn" ref="CMoneyMarketFIncomeServiceImpl"></property>
+	</bean>
+	<!--Web 公募列表查询Action -->
+	<!-- 公募列表查询Action-->
+	<bean id="WebMutualFundAction" class="com.wirich.action.cjqf.mutual.WebMutualFundAction"
+		scope="prototype">
+		<property name="mutualfund" ref="MutualFundServiceimpl"></property>
+		<property name="IMutFuNAV" ref="ChinaMutFuNAVServiceImpl"></property>
+		<property name="FMFPerfor" ref="ChinaMFPerformanceServiceImpl"></property>
+		<property name="FDescrip" ref="ChinaMutualFundDescriptionServiceImpl"></property>
+		<property name="Managers" ref="ChinaMutualFundManagerSerniceImpl"></property>
+		<property name="IssuSer" ref="ChinaMutualFundIssueServiceImpl"></property>
+		<property name="Portfolio" ref="ChinaMutualPortfolioServiceImpl"></property>
+		<property name="otherInfo" ref="CjMutualFundOtherInfoServiceImpl"></property>
+		<property name="marketFIn" ref="CMoneyMarketFIncomeServiceImpl"></property>
+	</bean>
+	
+	<!--公募列表查询service-->
+	<bean id="MutualFundServiceimpl" class="com.wirich.service.cjqf.mutual.impl.MutualFundServiceimpl">
+		<property name="IMDao" ref="MutualFundDaoimpl"></property>
+		<property name="RecommendDao" ref="CjqfWebMutualFundRecommendDaoImpl"></property>
+		<property name="ManagerBeanDao" ref="CJQFWebMutualFundManagerBeanDaoImpl"></property>
+		<property name="DescriptionDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+		<property name="PerformanceDao" ref="ChinaMFPerformanceDaoImpl"></property>
+		<property name="NAVDao" ref="ChinaMutFuNAVDaoImpl"></property>
+		<property name="OtherInfoDao" ref="CjqfWebMutualFundOtherInfoDaoImpl"></property>
+		<property name="GroupDao" ref="CJQFWebGroupFundMainDaoImpl"></property>
+		<property name="MutualFundDao" ref="CjqfWebMutualFundDaoimpl"></property>
+		<property name="manachDao" ref="MutualFundListManacheChartQueryServiceImpl"></property>
+	</bean>
+	<!--缓存取数据 -->
+	<bean id="MutualFundListManacheChartQueryServiceImpl" class="com.wirich.service.manache.mutual.impl.MutualFundListManacheChartQueryServiceImpl">
+	</bean>
+	<!--公募列表查询Dao-->
+	<bean id="MutualFundDaoimpl" class="com.wirich.dao.cjqf.mutual.impl.MutualFundDaoimpl">
+	</bean>
+	<!--首页排序（推荐）Dao-->
+	<bean id="CjqfWebMutualFundRecommendDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfWebMutualFundRecommendDaoImpl">
+	</bean>
+	<!--基金经理Dao-->
+	<bean id="CJQFWebMutualFundManagerBeanDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CJQFWebMutualFundManagerBeanDaoImpl">
+	</bean>
+	
+	<!-- 沪深300 -->
+	<bean id="AIndexeodpricesDaoImpl" class="com.wirich.dao.wind.astock.impl.AIndexeodpricesDaoImpl">
+	</bean>
+	<!-- 沪深300(自有) -->
+	<bean id="OwnAIndexeodpricesDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.AIndexeodpricesDaoImpl">
+	</bean>
+	<!-- 其他  折后费率 -->
+	<bean id="CjqfWebMutualFundOtherInfoDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfWebMutualFundOtherInfoDaoImpl">
+	</bean>
+
+	
+	<!-- 代销公募基金与区域关系表  配置 ************-->
+	<!--代销公募基金与区域关系表service-->
+	<bean id="CjMutualAreaConnServiceImpl" class="com.wirich.service.cjqf.mutual.impl.CjMutualAreaConnServiceImpl">
+		<property name="ADao" ref="CjMutualAreaConnDaoImpl"></property>
+	</bean>
+	<!--代销公募基金与区域关系表Dao-->
+	<bean id="CjMutualAreaConnDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjMutualAreaConnDaoImpl">
+	</bean>
+	<!-- 基金主表 web-->
+	<bean id="CjqfWebMutualFundDaoimpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfWebMutualFundDaoimpl">
+	</bean>
+	<!-- 代销公募基金区域表  配置 *************-->
+	
+	<!--代销公募基金区域表  配置service-->
+	<bean id="CjMutualFundAreaServiceImpl" class="com.wirich.service.cjqf.mutual.impl.CjMutualFundAreaServiceImpl">
+		<property name="arDao" ref="CjMutualFundAreaDaoImpl"></property>
+	</bean>
+	<!--代销公募基金区域表  配置Dao-->
+	<bean id="CjMutualFundAreaDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjMutualFundAreaDaoImpl">
+	</bean>
+	
+	<!-- 代销公募基金对应基金公司  配置 *************-->
+	
+	<!--代销公募基金对应基金公司  配置service-->
+	<bean id="CjMutualFundCompanyServiceImpl" class="com.wirich.service.cjqf.mutual.impl.CjMutualFundCompanyServiceImpl">
+		<property name="coDao" ref="CjMutualFundCompanyDaoImpl"></property>
+	</bean>
+	<!--代销公募基金对应基金公司  配置Dao-->
+	<bean id="CjMutualFundCompanyDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjMutualFundCompanyDaoImpl">
+	</bean>
+	
+	<!-- 代销公募基金基本信息表  配置 *************-->
+	<!--代销公募基金基本信息表  配置service-->
+	<bean id="CjMutualFundInfoServiceImpl" class="com.wirich.service.cjqf.mutual.impl.CjMutualFundInfoServiceImpl">
+		<property name="inDao" ref="CjMutualFundInfoDaoImpl"></property>
+	</bean>
+	<!--代销公募基金基本信息表  配置Dao-->
+	<bean id="CjMutualFundInfoDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjMutualFundInfoDaoImpl">
+	</bean>
+	
+	<!-- 代销公募基金其他信息表  配置 *************-->
+	<!--代销公募基金其他信息表  配置service-->
+	<bean id="CjMutualFundOtherInfoServiceImpl" class="com.wirich.service.cjqf.mutual.impl.CjMutualFundOtherInfoServiceImpl">
+		<property name="ohDao" ref="CjMutualFundOtherInfoDaoImpl"></property>
+	</bean>
+	<!--代销公募基金其他信息表Dao-->
+	<bean id="CjMutualFundOtherInfoDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjMutualFundOtherInfoDaoImpl">
+	</bean>
+	<!--组合主表Dao-->
+	<bean id="CJQFWebGroupFundMainDaoImpl" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+
+	<!--############################wind  配置###############################################  -->
+	
+	<!-- 基金净值 查询action-->
+	<bean id="ChinaMutFuNAVAction" class="com.wirich.action.wind.ChinaMutFuNAVAction"
+		scope="prototype">
+		<property name="ISer" ref="ChinaMutFuNAVServiceImpl"></property>
+	</bean>
+	
+	<!--基金净值 查询 service-->
+	<bean id="ChinaMutFuNAVServiceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMutFuNAVServiceImpl">
+		<property name="IDao" ref="ChinaMutFuNAVDaoImpl"></property>
+		<property name="pricesDao" ref="OwnAIndexeodpricesDaoImpl"></property>
+	</bean>
+	<!--基金净值 查询 Dao-->
+	<bean id="ChinaMutFuNAVDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutFuNAVDaoImpl">
+	</bean>
+	
+	
+	<!-- ***************中国共同基金业绩表现ChinaMFPerformanceServiceImpl******************-->
+	<!--中国共同基金业绩表现 service-->
+	<bean id="ChinaMFPerformanceServiceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMFPerformanceServiceImpl">
+		<property name="foDao" ref="ChinaMFPerformanceDaoImpl"></property>
+	</bean>
+	<!--中国共同基金业绩表现 Dao-->
+	<bean id="ChinaMFPerformanceDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMFPerformanceDaoImpl">
+	</bean>
+	
+	<!-- ***************中国共同基金基本资料ChinaMFPerformanceServiceImpl******************-->
+	<!--中国共同基金基本资料 service-->
+	<bean id="ChinaMutualFundDescriptionServiceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMutualFundDescriptionServiceImpl">
+		<property name="ptDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+	</bean>
+	<!--中国共同基金基本资料 Dao-->
+	<bean id="ChinaMutualFundDescriptionDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundDescriptionDaoImpl">
+	</bean>
+	
+	<!-- ***************中国共同基金发行ChinaMFPerformanceServiceImpl******************-->
+	<!--中国共同基金发行 service-->
+	<bean id="ChinaMutualFundIssueServiceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMutualFundIssueServiceImpl">
+		<property name="isDao" ref="ChinaMutualFundIssueDaoImpl"></property>
+	</bean>
+	<!--中国共同基金发行 Dao-->
+	<bean id="ChinaMutualFundIssueDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundIssueDaoImpl">
+	</bean>
+	
+	<!-- ***************中国共同基金基金经理ChinaMFPerformanceServiceImpl******************-->
+	<!--中国共同基金基金经理service-->
+	<bean id="ChinaMutualFundManagerSerniceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMutualFundManagerSerniceImpl">
+		<property name="maDao" ref="ChinaMutualFundManagerDaoImpl"></property>
+		<property name="NAVDao" ref="ChinaMutFuNAVDaoImpl"></property>
+	</bean>
+	<!--中国共同基金基金经理 Dao-->
+	<bean id="ChinaMutualFundManagerDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundManagerDaoImpl">
+	</bean>
+	
+
+	<!-- ***************中国共同基金投资组合资产配置******************-->
+	<!--中国共同基金投资组合资产配置service-->
+	<bean id="ChinaMutualPortfolioServiceImpl" class="com.wirich.service.wind.mutual.impl.ChinaMutualPortfolioServiceImpl">
+		<property name="poDao" ref="ChinaMutualPortfolioDaoImpl"></property>
+		<property name="StockPorDao" ref="ChinaMutualFundStockPortfolioDaoImpl"></property>
+		<property name="IndPortDao" ref="ChinaMutualFundIndPortfolioDaoImpl"></property>
+		<property name="BondPort" ref="ChinaMutualFundBondPortfolioImpl"></property>
+		<property name="PartyRating" ref="CMFundThirdPartyRatingDaoImpl"></property>
+		<property name="CustomCode" ref="WindCustomCodeDaoImpl"></property>
+		<property name="FeeBeanDao" ref="CjqfwebMutualFundFeeBeanDaoImpl"></property>
+		<property name="ShareDao" ref="ChinaMutualFundShareDaoImpl"></property>
+		<property name="SqlDao" ref="ChinaMFDividendSqlDaoImpls"></property>
+		
+		</bean>
+		
+	<!--中国共同基金基金经理service  -->
+	<bean id="ChinaMFDividendSqlDaoImpls" class="com.wirich.dao.wind.mutual.impl.accountbook.ChinaMFDividendSqlDaoImpl">
+	</bean>
+	<!--中国共同基金基金经理service  -->
+	<bean id="ChinaMutualFundShareDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundShareDaoImpl">
+	</bean>
+	<!--中国共同基金基金经理service  -->
+	<bean id="ChinaMutualPortfolioDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualPortfolioDaoImpl">
+	</bean>
+	<!--公募基金费率 -->
+	<bean id="CjqfwebMutualFundFeeBeanDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfwebMutualFundFeeBeanDaoImpl">
+	</bean>
+	<!--中国共同基金投资组合持股配置-->
+	<bean id="ChinaMutualFundStockPortfolioDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundStockPortfolioDaoImpl">
+	</bean>
+	<!--中国共同基金投资组合行业配置-->
+	<bean id="ChinaMutualFundIndPortfolioDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundIndPortfolioDaoImpl">
+	</bean>
+	<!--中国共同基金投资组合持券明细-->
+	<bean id="ChinaMutualFundBondPortfolioImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundBondPortfolioImpl">
+	</bean>
+	<!--银河评级-->
+	<bean id="CMFundThirdPartyRatingDaoImpl" class="com.wirich.dao.wind.mutual.impl.CMFundThirdPartyRatingDaoImpl">
+	</bean>
+	<!--Wind兼容代码-WindCustomCode	证券中文简称-->
+	<bean id="WindCustomCodeDaoImpl" class="com.wirich.dao.wind.mutual.impl.WindCustomCodeDaoImpl">
+	</bean>
+	<!-- ***************中国开放式基金费率表******************-->
+	<!--中国开放式基金费率表service-->
+	<bean id="CmfsubredfeeServiceImpl" class="com.wirich.service.wind.mutual.impl.CmfsubredfeeServiceImpl">
+		<property name="feDao" ref="CmfsubredfeeBeanDaoImpl"></property>
+	</bean>
+	<!--中国开放式基金费率表service-->
+	<bean id="CmfsubredfeeBeanDaoImpl" class="com.wirich.dao.wind.mutual.impl.CmfsubredfeeBeanDaoImpl">
+	</bean>
+	
+	<!-- ***************中国货币市场基金收益******************-->
+	<!--中国货币市场基金收益service-->
+	<bean id="CMoneyMarketFIncomeServiceImpl" class="com.wirich.service.wind.mutual.impl.CMoneyMarketFIncomeServiceImpl">
+		<property name="marketF" ref="ICMoneyMarketFIncomeDao"></property>
+	</bean>
+	<!--中国货币市场基金收益service-->
+	<bean id="ICMoneyMarketFIncomeDao" class="com.wirich.dao.wind.mutual.impl.CMoneyMarketFIncomeDaoImpl">
+	</bean>
+</beans>

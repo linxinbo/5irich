@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.CmfsubredfeeBean" table="cmfsubredfee">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  证券id -->
+		<property name="SINFOWINDCODE" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!--公告日期 -->
+		<property name="ANNDATE" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		<!-- 费率类型代码  -->
+		<property name="FEETYPECODE" type="java.lang.String">
+			<column name="FEETYPECODE" />
+		</property>
+		<!-- 收费类型  -->
+		<property name="CHARGEWAY" type="java.lang.String">
+			<column name="CHARGEWAY" />
+		</property>
+		<!--  金额下限   -->
+		<property name="AMOUNTDOWNLIMIT" type="java.lang.String">
+			<column name="AMOUNTDOWNLIMIT" />
+		</property>
+		<!--  金额上限 -->
+		<property name="AMOUNTUPLIMIT" type="java.math.BigDecimal">
+			<column name="AMOUNTUPLIMIT" />
+		</property>
+		<!-- 持有年限下限   -->
+		<property name="HOLDINGPERIODDOWNLIMIT" type="java.math.BigDecimal">
+			<column name="HOLDINGPERIOD_DOWNLIMIT" />
+		</property>
+		<!--   持有年限上限 -->
+		<property name="HOLDINGPERIODUPLIMIT" type="java.math.BigDecimal">
+			<column name="HOLDINGPERIOD_UPLIMIT" />
+		</property>
+		<!-- 费率	 -->
+		<property name="FEERATIO" type="java.math.BigDecimal">
+			<column name="FEERATIO" />
+		</property>
+		<!--是否上限费率  -->
+		<property name="ISUPLIMITFEE" type="java.math.BigDecimal">
+			<column name="ISUPLIMITFEE" />
+		</property>
+		<!--变动日期  -->
+		<property name="CHANGEDT" type="java.lang.String">
+			<column name="CHANGE_DT" />
+		</property>
+		<!-- 费率补充说明	 -->
+		<property name="SUPPLEMENTARY" type="java.lang.String">
+			<column name="SUPPLEMENTARY" />
+		</property>
+		<!--场所	  -->
+		<property name="TRADINGPLACE" type="java.lang.String">
+			<column name="TRADINGPLACE" />
+		</property>
+		<!-- 场所代码 -->
+		<property name="TRADINGPLACECODE" type="java.lang.String">
+			<column name="TRADINGPLACECODE" />
+		</property>
+		<!-- 持有期限单位   -->
+		<property name="HOLDINGPERIODUNIT" type="java.math.BigDecimal">
+			<column name="HOLDINGPERIODUNIT" />
+		</property>
+	</class>
+</hibernate-mapping>

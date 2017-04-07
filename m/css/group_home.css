@@ -1,0 +1,82 @@
+body, ul, li, div, input, span{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    font-family:"Microsoft YaHei";
+    font-size: 12px;
+}
+.group_list{
+    padding: 0 15px;
+    width: 100%;
+    height: 117px;
+    border-bottom: 1px solid #dcdddc;
+    background: #fff;
+}
+.group_header{
+    width: 100%;
+    height: 36px;
+}
+/*.group_header, .table_data_list{
+    padding: 0 12px;
+}*/
+.table_header{
+    width: 100%;
+    float: left;
+}
+.table_header span{
+    float: left;
+}
+.table_header .group_name{
+    color: #389ad7;
+    font-size: 15px;
+    height: 51px;
+    line-height: 51px;
+}
+.group_list .go-buy{
+    position: relative;
+    float: left;
+    width: 28%;
+    height: 70px;
+    margin-top: 26px;
+    border-left: 1px solid #dadbda;
+    background: url("../images/icon_buy_bg.png") 50% 0 no-repeat;
+    background-size: 48px;
+    cursor: pointer;
+}
+.go-buy span{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: #292929;
+    text-align: center;
+}
+.table_data_list{
+    /*height: 58px;*/
+    float: left;
+    width: 72%;
+    cursor: pointer;
+}
+.table_data{
+    width: 100%;
+    /*height: 58px;*/
+}
+.table_data tr:nth-child(1){
+    color: #9e9e9e;
+    vertical-align: bottom;
+    font-size: 13px;
+}
+.table_data tr:nth-child(2){
+    color: #202020;
+    font-size: 19px;
+}
+.td_1, .td_2{
+    width: 50%;
+}
+.td_1, .td_2{
+    text-align: left;
+}
+

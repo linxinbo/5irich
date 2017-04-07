@@ -1,0 +1,16 @@
+[{
+  "title": "领先中国CTA2号",
+  "image": "images/advance/cta.png",
+  "url" : "advance/CTA/CTA.html",
+  "state" : 0
+},{
+  "title": "元盛7号",
+  "image": "images/advance/yuansheng7.png",
+  "url" : "advance/ysseven/ysseven.html",
+  "state" : 1
+},{
+  "title": "元盛8号",
+  "image": "images/advance/yuansheng8.png",
+  "url" : "advance/yseight/yseight.html",
+  "state" : 0
+}]

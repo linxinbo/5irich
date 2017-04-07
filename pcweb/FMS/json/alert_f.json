@@ -1,0 +1,2 @@
+{"retcode":"0000","data1":[{"fname":"多利2号","ftype":"债券" ,"fwarning":"0", "freturn_year":"0.5", "freturn_month":"0.5", "freturn_season":"0.5", "freturn":"0.5", "fmaxdown":"0.5","fsharpe":"2.15"}],
+  "data2":[{"fname":"多利2号","sub_change":"-0.05" ,"alert_change":"-0.03", "change_flag":"1" }],"retmsg":""}

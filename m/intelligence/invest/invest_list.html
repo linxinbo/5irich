@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>智能定投场景选择</title>
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/common_zjy.css">
+	<link rel="stylesheet" href="../../css/common_qifu.css">
+	<link rel="stylesheet" href="../../css/common_new.css">
+	<link rel="stylesheet" type="text/css" href="css/invest_list.css">
+</head>
+
+<body>
+	<div class="header_c">
+		<div>
+			<i class="logo_c"></i>
+		</div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../../sigin/sigin.html" class="sigin" style="font-size:12px;">注册</a> <a
+					href="../../user_login.html" class="login" style="font-size:12px;">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;font-size:12px;">
+				<div class="out">退出</div>
+				<span>hi,</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<a class="back1" href="../../home.html">＜返回</a>
+		<h1>智能定投</h1>
+	</header>
+	<ul class="ulnews">
+		<li onclick="goto_question('house');">
+	    	<img src="img_list/img1.png" class="imgleft" />
+	        <div class="divr">
+	        	<span><img src="img_list/icon_01.jpg" />购买住房</span>
+	            <p>
+	            	追求高收益的大额固定投资计划
+	            </p>
+	        </div>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<ul class="ulnews">
+	    <li onclick="goto_question('marry');">
+	    	<img src="img_list/img2.png" class="imgleft" />
+	        <div class="divr">
+	        	<span><img src="img_list/icon_02.jpg" />结婚生子</span>
+	            <p>
+	            	追求高收益的大额固定投资计划
+	            </p>
+	        </div>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<ul class="ulnews">
+	    <li onclick="goto_question('education');">
+	    	<img src="img_list/img3.png" class="imgleft" />
+	        <div class="divr">
+	        	<span><img src="img_list/icon_03.jpg" />子女教育</span>
+	            <p>
+	            	追求高收益的大额固定投资计划
+	            </p>
+	        </div>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<ul class="ulnews">
+	    <li onclick="goto_question('old');">
+	    	<img src="img_list/img4.png" class="imgleft" />
+	        <div class="divr">
+	        	<span><img src="img_list/icon_04.jpg" />颐养天年</span>
+	            <p>
+	            	追求高收益的大额固定投资计划
+	            </p>
+	        </div>
+	        <div class="clear"></div>
+	    </li>
+	</ul>
+	<script src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/qifu/common_qifu.js"></script>
+	<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../js/qifu/home.js"></script>
+	<script>
+		//跳转到相应的详情页面
+		function goto_question(type){
+			window.location.href="invest_question.html?type="+type;
+		}
+	</script>
+</body>
+</html>

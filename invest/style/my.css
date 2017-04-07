@@ -1,0 +1,100 @@
+.topbox{
+    background: #ffa014;
+    position:relative;
+    overflow: hidden;
+}
+.topbox .mytouxiang{
+    width:0.3em;
+    height:1.3em;
+    position:absolute;
+    top:2.8em;
+    left:1.4em;
+}
+.topbox .mytouxiang1{
+    width:4em;
+    height:3.8em;
+    position: absolute;
+    top:1.8em;
+    left:1.7em;
+}
+.topbox .name{
+    text-align: center;
+    margin-top:1.5em;
+    font-size: 2em;
+    color:#fff;
+   padding-bottom: 1em;
+}
+.topbox ul{
+    overflow: hidden;
+    padding-bottom: 1.5em;
+}
+.topbox ul li{
+    float:left;
+    width:50%;
+}
+.topbox ul li:nth-of-type(1){
+    border-right:solid 1px #ffbd5b;
+}
+.topbox .biaoti{
+    text-align: center;
+    font-size: 0.9em;
+    color:#fff;
+}
+.topbox .jine{
+    text-align: center;
+    font-size: 1.8em;
+    color:#fff;
+    padding:0.5em 0;
+}
+.jihua{
+    background: #fff;
+    overflow: hidden;
+    padding: 1.5em 1em;
+    margin-top:1em;
+}
+.jihua span{
+    font-size: 1.8em;
+    float:left;
+}
+.jihua img{
+    float:right;
+    width:0.72em;
+    height:1.5em;
+    display: block;
+}
+.dangqian{
+    background: #fff;
+    margin-top:1em;
+}
+.dangqian .list{
+    padding:1em ;
+    border-bottom:solid 1px #d8dce0;
+}
+.dangqian .list li{
+    overflow: hidden;
+}
+.dangqian .list .lista{
+    float:left;
+    font-size:1.6em;
+}
+.dangqian .list .listb{
+    float:right;
+    font-size:1.6em;
+   color:#ff9600;
+}
+.dangqian .list li:nth-of-type(1){
+    padding:0.7em 0 0;
+}
+.dangqian .list li:nth-of-type(2){
+    padding:0.7em 0;
+    color:#787c82;
+}
+.dangqian .list .listc{
+    float:left;
+    font-size: 1.3em;
+}
+.dangqian .list .listd{
+    float:right;
+    font-size: 1.3em;
+}
+

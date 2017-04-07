@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.group.CJQFWebGroupFundManagerBean" table="cjqfweb_group_fund_manager">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="ID" />
+		</id>
+		<!--  基金主表ID	(默认为Wind代码”.“前部分) -->
+		<property name="fdId" type="java.lang.String">
+			<column name="FD_GROUP_CODE" />
+		</property>
+		<!--  公告日期(YYYYMMDD)  -->
+		<property name="annDate" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		<!--  姓名  -->
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<!--  性别(0：女 （默认）1：男)  -->
+		<property name="sex" type="java.lang.String">
+			<column name="SEX" />
+		</property>
+		<!--  出身年份(YYYY)  -->
+		<property name="birthday" type="java.lang.String">
+			<column name="BIRTHDAY" />
+		</property>
+		<!--  学历 -->
+		<property name="education" type="java.lang.String">
+			<column name="EDUCATION" />
+		</property>
+		<!--  国籍 -->
+		<property name="nationality" type="java.lang.String">
+			<column name="NATIONALITY" />
+		</property>
+		<!--  任职日期(YYYYMMDD)  -->
+		<property name="officeDate" type="java.lang.String">
+			<column name="OFFICE_DATE" />
+		</property>
+		<!--  离职日期(YYYYMMDD) -->
+		<property name="leaveDate" type="java.lang.String">
+			<column name="LEAVE_DATE" />
+		</property>
+		<!--  简介-->
+		<property name="summary" type="java.lang.String">
+			<column name="SUMMARY" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="UPDATE_TIME" />
+		</property>
+		<!-- 基金经理ID -->
+		<property name="fundManagerId" type="java.lang.String">
+			<column name="FUNDMANAGERID" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+.clear{ clear:both; height:1px; line-height:1px;}
+
+.banner{ display:block; width:100%}
+.p1{ color:#0a0204; width:96%; margin:3% auto;line-height: 1.5;}
+.con1{ width:96%; margin:5% auto}
+.con1 p{ background:#fff; padding:2%; color:#0a0204;line-height:1.5em; width:48%; float:left; border:1px solid #fc7f09}
+.con1 p span{ color:#a10404; display:block; margin-bottom:3%}
+.con1 .pright{ float:right; padding-bottom:7%}
+.img{ display:block; margin:3% auto; width:96%}
+.title{ display:block; margin:3% auto; width:100%}
+.spantitle{ width:96%; margin:3% auto; display:block;color:#0a0204;}
+.divtitle{ background:#ff7d05; color:#fff;line-height:2em; width:96%; margin:3% auto; margin-bottom:0}
+.divtitle span{ display:block; float:left; width:33.3%; text-align:center}
+.divtitleff{ background:#fff; color:#0a0204; margin:0 auto}
+.divtitleff span{ line-height:3em;}
+.divp{width:96%; margin:3% auto;background:#fff; padding:2%; color:#0a0204;  line-height:1.5em; border:1px solid #fc7f09}
+.divp span{ color:#a10404; display:block; margin-bottom:3%}
+.con2 p{ width:30.6%; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; background:#c10808; color:#fff; float:left; line-height:1.6em; padding:2%; margin-left:2%}
+.con1_2{ margin-top:3%}
+.divp2{ margin-top:0}
+.divp2 .left{ width:75%; float:left;}
+.divp2 span{ color:#0a0204; margin-bottom:2%}
+.divp2 span i{ color:#c10808;}
+.divp2 img{ float:left; margin-left:5%; width:15%; margin-top:3%}

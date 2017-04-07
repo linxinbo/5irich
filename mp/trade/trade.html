@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-交易中心</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css">
+    <link rel="stylesheet" href="../css_mp/comm.css">
+    <link rel="stylesheet" href="../css_mp/home.css">
+    <link rel="stylesheet" href="../css_mp/moni/moni.css">
+    <link rel="stylesheet" href="../css_mp/trade/trade.css">
+    <link rel="stylesheet" href="../css_mp/feather.css">
+</head>
+<body class="bodyhome">
+<div>
+
+    <!--头部开始-->
+    <header class="ty1_header jy_header">
+        <a class="jy_fanhui" id="trade_name" href="../center/center.html">
+          	 <span></span>
+        </a>
+        
+        <a class="ty_sreach_as">
+            <i class="icon-search"></i>
+        </a>
+    </header>
+
+
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <!--交易中心蓝色title部分-->
+        <div class="moni_title_jy jy_title">
+            <div class="moni_title_big jy__title_big">
+                <h1 id="costmoney">0.00</h1>
+                <h3>账户总资产（元）</h3>
+            </div>
+            <div class="moni_title_sm jy_title_sm menddd">
+                <ul>
+                    <li>
+                        <a class="moni_right_line jy_right_line">
+                            <span class="jy_mtop" id="income">0.00</span>
+                            <h2>累计收益(元）</h2>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            <span class="jy_mtop" id="incomePercent">0.00</span>
+                            <h2>累计收益率(%）</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid mian_menu jy_mian_menu">
+            <ul class="row jy_ul">
+                <li class="col-xs-6 col-sm-6 textcenter">
+                    <div>
+                        <a href="../fund/recommend.html">
+                            <span class="licaiclass tuijian jy_buy"></span>
+                            <b><span class="menu_title">购买</span></b>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-xs-6 col-sm-6 textcenter">
+                    <div>
+                        <a href="../assets/assets.html">
+                            <span class="licaiclass zhineng jy_redemption"></span>
+                            <b><span class="menu_title">赎回</span></b>
+                        </a>
+                    </div>
+                </li>
+                <!--<li class="col-xs-4 col-sm-4 textcenter">
+                    <div>
+                        <a>
+                            <span class="licaiclass dingqi jy_fix"></span>
+                            <b><span class="menu_title">定投</span></b>
+                        </a>
+                    </div></li>-->
+
+            </ul>
+        </div>
+        <!--交易中心蓝色title部分-->
+        <!--内容区域-->
+        <div class="moni_content mtopdd" style="background-color: #ffffff;">
+            <ul class="moni_content_th" id="class_qiehuan">
+                <li class="l25 change_apply liactive"><span>申请查询</span></li>
+                <li class="l25 change_halfway"><span>在途查询</span></li>
+                <li class="l25 change_confirm"><span>确认查询</span></li>
+                <li class="l25 change_revoke"><span>撤单管理</span></li>
+            </ul>
+            <ul class="moni_content_th">
+                <li class="l50">
+                    <select class="s" id="trade_class">
+                        <option selected="selected">交易类型</option>
+                        <option value="1">全部</option>
+                        <option value="2">认购</option>
+                        <option value="3">申购</option>
+                        <option value="4">赎回</option>
+                        <option value="5">转换</option>
+                    </select>
+                </li>
+                <li class="l50">
+                    <select class="s" id="trade_time">
+                        <option selected="selected">交易时间</option>
+                        <option value="1">1个月</option>
+                        <option value="2">3个月</option>
+                        <option value="3">6个月</option>
+                        <option value="4">1年</option>
+                        <option value="5">3年</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div id="trade_list">
+            <!--载入数据-->
+
+        </div>
+        <!--<ul class="jijinlist_table jy_table">
+            <li class="bottomline">
+                <h2 class="jijinlist_table_t">
+                    <em>创金积极组合1号</em>
+                    <i>（590008.OF）</i>
+                </h2>
+                <a href="#" class="jy_riqi">
+                    <span class="t_span">申请日期：20160511</span>
+                </a>
+            </li>
+            <div class="jijinlist_table_content jy_table_content">
+                <ul class="jj_store3">
+                    <li >
+                        <a class="rightline">
+                            <span class="datitle font_heise">支付成功</span>
+                            <b class="xiaotitle font_huise mtopd">支付状态</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rightline">
+                            <span class="datitle font_hongse ">1000万</span>
+                            <b class="xiaotitle font_huise mtopd">申请金额</b>
+                        </a>
+                    </li>
+                    <li class="col-xs-4 col-sm-4 textcenter">
+                        <a>
+                            <button class="btn_home1 jy_btn_lanse">成功</button>
+                            <span class="xxiaotitle font_huise jy_span_mtop">处理状态</span>
+                            <b class="xxiaotitle font_huise">时间：10:00</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>-->
+        
+
+        
+        <!--内容区域-->
+    </div>
+    <!--内容结束-->
+    
+    
+    <!--底部菜单开始登录以后-->
+    <footer class="footer" style="display:block">
+        <ul class="endmenu">
+            <li>
+                <a href="../home.html">
+                    <span class="endmenuclass home"></span>
+                    <b><span class="endmenu_title">首页</span></b>
+                </a>
+            </li>
+            <li>
+                <a href="../trade/trade.html">
+                    <span class="endmenuclass jiaoyi1"></span>
+                    <b><span class="endmenu_title font_lanse">交易</span></b>
+                </a>
+            </li>
+            <li>
+                <a href="../assets/assets.html">
+                    <span class="endmenuclass zichan"></span>
+                    <b><span class="endmenu_title">资产</span></b>
+                </a>
+            </li>
+            <li>
+                <a href="../center/center.html">
+                    <span class="endmenuclass wode"></span>
+                    <b><span class="endmenu_title">我的</span></b>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!--底部菜单结束-->
+
+
+    <!--底部菜单开始登录之前-->
+    <footer class="footer1" style="display:none">
+        <ul class="endmenu1">
+            <li class="lghome rightline">
+                <a href="../home.html">
+                    <span class="endmenuclass1 home1"></span>
+                    <b><span class="endmenu_title1 font_lanse">首页</span></b>
+                </a>
+            </li>
+            <li class="lgsigin">
+                <a href="../sigin/sigin.html">
+                    <span class="lgsigintitle font_lanse">注册</span>
+                </a>
+            </li>
+            <li class="lglogin">
+                <a href="../login.html">
+                    <span class="lglogintitle">登录</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+    
+    
+</div>
+
+
+</body>
+<script src="../js_mp/jquery.min.js"></script>
+<script src="../js_mp/bootstrap.min.js"></script>
+<script src="../js_mp/jquery.cookie.js"></script>
+<script src="../js_mp/common_qifu.js"></script>
+<script src="../js_mp/home.js"></script>
+<script src="../js_mp/trade/faq.js"></script>
+<script src="../js_mp/trade/trade.js"></script>
+</html>

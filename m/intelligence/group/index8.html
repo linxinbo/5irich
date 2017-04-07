@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+	<meta name="apple-touch-fullscreen" content="YES">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>智能组合</title>
+	<link rel="stylesheet" href="../../css/normalize.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/common_zjy.css">
+	<link rel="stylesheet" href="../../css/common_qifu.css">
+	<link rel="stylesheet" href="../../css/common_new.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+	<div class="header_c">
+		<div>
+			<i class="logo_c"></i>
+		</div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../../sigin/sigin.html" class="sigin" style="font-size:12px;">注册</a> <a
+					href="../../user_login.html" class="login" style="font-size:12px;">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;font-size:12px;">
+				<div class="out">退出</div>
+				<span>hi,</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<a class="back1" href="javascript:void(0);" onclick="goto_back();">＜返回</a>
+		<h1>智能组合配置</h1>
+	</header>
+	<div style="background:#FFCC66;border-bottom:1px solid #ccc;">
+		<div class="title1 title1bg" >
+		    <img src="images/title8.png" class="title1" />
+		  <p> <span class="span_number" style="" id="money_span">1000</span><span class="span_unit">元</span><br /><span class="span_character">投资总金额</span>  
+		  
+		  <br /><span class="span_character">近一年收益率：</span><br /><span class="span_number">58.37</span><span class="span_unit">%</span></p>
+		</div>
+	</div>
+	<div class="con1">
+		<span><i></i><a href="../../fund/fund_detail.html?fundid=161115.SZ&fundname=易方达岁丰&type=债券型">易方达岁丰(161115) 债券型 40% </a><div class="clear"></div></span>
+	</div>
+	<div class="con1 con2">
+		<span><i></i><a href="../../fund/fund_detail.html?fundid=000390.OF&fundname=华商优势行业&type=混合型">华商优势行业(000390) 混合型 30%</a><div class="clear"></div></span>
+	</div>
+	<div class="con1 con3">
+		<span><i></i><a href="../../fund/fund_detail.html?fundid=519156.OF&fundname=新华行业轮换&type=混合型">新华行业轮换(519156) 混合型 30%</a><div class="clear"></div></span>
+	</div>
+	<div class="zst">
+		<span>组合近一年收益率变化图</span>
+	    <Img src="images/trend_08.png" />
+	</div>
+	<span class="spantitle">专家评语</span>
+	<p class="pbot">
+	您能承受较高风险的投资，针对您的情况配置如下：40%的一级债券基金、30%的灵活配置基金以及30%的能获取较好收益的混合基金。最大回测风险为19%，预期收益为25%-31%。虽然所选基金在风控方面很出色，任要谨慎选择，长期投资才是财富增值的王道。
+	</p>
+	<a class="abuy" onclick="intelligence_buy();">
+		购买
+	</a>
+	<script src="../../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/qifu/common_qifu.js"></script>
+	<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../js/qifu/home.js"></script>
+	<script type="text/javascript" src="../../js/qifu/intell_group_step1.js"></script>
+</body>
+</html>

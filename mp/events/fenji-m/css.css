@@ -1,0 +1,90 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; max-width:640px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+
+
+.banner{ width:100%;}
+.con1{ background:#ebbb31; padding-top:3%; padding-bottom:5%}
+.con1 .cond{ width:97%; margin:auto; border-radius:10px; background:#fff; padding-top:3%; padding-bottom:3%}
+.con1 .cond p{ width:93%; color:#735544; font-size:2.4rem; text-indent:2rem; line-height:3.6rem; margin:0 auto}
+.img1{ display:block; margin:auto; margin-top:2.5%}
+.p1{ color:#221815; font-size:2.4rem; padding-top:2%; padding-bottom:1%; width:98%; margin:0 auto}
+.p2{ color:#221815; font-size:2rem; padding-bottom:1%; width:98%; margin:0 auto}
+.title2{ margin-top:4%; margin-bottom:4%}
+.img5{ width:91.5%; display:block; margin:auto}
+.con2 .co2left{ float:left; width:49.5%; float:left; padding-top:5%}
+.con2 .co2left span{ display:block; width:80%; margin:auto; font-size:2.8rem; color:#4f99e3;}
+.con2 .co2left p{ display:block; width:80%; margin:0 auto; font-size:2.2rem; margin-top:2%}
+.rborder{ background:#e5e5e5; width:1px; float:left; padding-top:16%; padding-bottom:16%}
+.con3{ background:#dcebf9; border-radius:5px; padding:2.5%; width:92%; margin:auto; font-size:2.4rem;margin-top:6%}
+.con4{ background:#edf9ff; font-size:2.4rem; padding:2.5%; width:91%; margin:auto; border:1px solid #4f99e3; margin-top:6%}
+.con5{ width:90%; margin:auto; border-radius:5px; background:#edf9ff; margin-top:5%}
+.con5 span{ font-size:3.2rem; color:#4f99e3; text-align:center; display:block; padding-top:3%}
+.con5 p{ width:94%; margin:0 auto; padding:3%; font-size:2.4rem;}
+.con6{ margin-top:5%}
+.con6 .con{float:left; width:30%; border-radius:5px;background:#edf9ff; padding-bottom:3%; margin-left:5%}
+.con6 .con p{font-size:2.2rem; padding:8%; }
+.con6 img{ float:left; width:25%; margin-left:2.5%}
+.con6 .con span{ display:block; width:90%; text-align:center; font-size:3.2rem; color:#4f99e3; padding-top:3%;}
+.con6 .conr{ margin-left:2.5%;}
+.img5{ margin-top:6%; margin-bottom:6%}
+.con7{ background:#fbf1d6; width:97%; margin:auto; border:1px solid #f3d683; border-radius:10px; margin-top:3%; padding-top:2%; padding-bottom:2%}
+.con7 p{ font-size:2.4rem; padding:3%; width:93%; line-height:1.6em;}
+.con7 .p2{ padding-top:0%}
+.img6{ margin-top:5%; margin-bottom:5%}
+.con8{ background:#f1e7fd; border:1px solid #c9afe9;}
+.con8 span{ display:block; font-size:3.2rem; color:#7f42cb; width:93%; margin:auto; padding-top:2%; font-weight:bold}
+.con8 p{ padding-top:2%; padding-bottom:2%;}
+.img7{ margin-top:3%; margin-bottom:3%;}
+.imgbot{ display:block; margin:auto; margin-top:6%; margin-bottom:0}
+.con9{ background:#ffece5; border:1px solid #f8865b}
+.con9 span{ color:#f95d22}
+.img10{ margin-top:6%; margin-bottom:3%}
+.img11{ display:block; margin:auto;  width:100%; margin-top:8%; padding-bottom:10%; border-bottom:35px solid #ebbb31}
+
+
+
+
+
+
+@media (min-width:640px) and (max-width:750px) { 
+	html{ font-size:62.5%; }	
+}
+@media (min-width:580px) and (max-width:640px) { 
+	html{ font-size:55.5%; }	
+}
+@media (min-width:480px) and (max-width:580px) { 
+	html{ font-size:50.5%; }
+}
+@media (min-width:430px) and (max-width:480px) { 
+	html{ font-size:48.5%; }
+}
+@media (min-width:350px) and (max-width:430px) { 
+	html{ font-size:45.5%; }
+}
+@media (min-width:300px) and (max-width:350px) { 
+	html{ font-size:40.5%; }
+}
+
+.header,.footer{background:#389ad7;}
+.header{height:45px;line-height:45px;}
+.header .back{float:left;padding:12px 9px;}
+.header .back span{display:none;}
+.header .back i{float:left;width:20px;height:20px;background:url(../../images/all_ico_150106.png) 0 0;background-size:150px 300px;}
+.header .add{float:right;padding:12px 9px;}
+.header .add span{display:none;}
+.header .add i{float:right;width:20px;height:20px;background:url(../../images/icon_add@2x.png);background-size:100% 100%;}
+.header .searchIcon{float:left;padding:12px 9px;}
+.header .searchIcon i{float:left;width:20px;height:20px;background:url(../../images/icon_search@2x.png) 0 0;background-size:100% 100%;}
+.header h1{margin:0 50px;text-align:center;color:#fff;font-size:18px;}
+.header .collectIcon{position:absolute;top:0;right:10px;height:45px;}
+.header .collectIcon dt{position: absolute;width: 20px;height: 100%;}
+.header .collectIcon .wjx1{background: url(../../images/icon_star@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon .wjx2{background: url(../../images/icon_favorate_white@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon dd{margin-left:25px;line-height:45px;color:#fff;}

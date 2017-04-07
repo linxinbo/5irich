@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,ul,li,h1,h2,h3,h4,h5,p,session{ margin:0px; padding:0px; list-style-type:none; font-family:'microsoft yahei','微软雅黑';}
+body,html{ margin:0 auto; max-width:720px;}
+img{ border:none; max-width:100%}
+.clear{ clear:both;}
+a{text-decoration:none;outline:none; color:#000}
+
+.img100{ width:100%;}
+.img94{ width:94%; display:block; margin:auto}
+.bgbox{ background:url(../images/bg.jpg) repeat;}
+.bgbox1{ padding-top:5%}
+.img1left{ float:left; width:23.5%; margin-left:3%; margin-right:3%}
+.con1right{ float:left; width:67%; font-size:1.2em; line-height:1.5em}
+.con1right img{ width:auto; display:block;}
+.con1right span{ display:block; padding-top:1.5%; padding-bottom:1.5%; border-bottom:1px solid #fad293; margin-bottom:1.5%}
+.jbbox{ float:left; width:52%; margin:5% 1% 0 3%; }
+.xxbox{ float:left; width:41%; margin:5% 3% 0 0; }
+.con2box p{background:#f8d8a7; padding:15px; font-size:1.2em; line-height:1.5em; text-align:center; margin-top:1%}
+.title2{ display:block; margin:auto; padding-top:8%; padding-bottom:5%}
+.title3{ display:block; margin:auto; padding-top:5%; padding-bottom:3%}
+.img5{ margin-top:5%}
+.yybtn{ bottom: 0; color: #fff; height: 43px; position: fixed; width: 100%;}

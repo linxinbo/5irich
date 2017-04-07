@@ -1,0 +1,82 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; max-width:640px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+
+.yfd_body{width:95%;margin:0 2.5%}
+.banner{position:relative; width:100%; overflow:hidden; margin-bottom:1em;}
+.main{width: 100%;margin: 0 auto 10px auto;background-color: #ffffff}
+.yfd_yaodian{width: 100%;border:0.1em solid #993333;border-radius: 10px;margin: 1em auto}
+.yfd_yaodianETF{width:100%;margin: 0 auto}
+.yfd_yaodianimg img{margin: 0.5em auto}
+.yfd_yaodianETF h3{width:100%;font-size:1.6em;text-align: center;background-color: #fffdeb;margin: -0.1em auto -0.1em -0.05em;line-height: 2em;border:0.1em solid #993333;border-radius: 10px;color: #993333;}
+.yfd_yaodianETFlianjie{width:100%;}
+.yfd_yaodianETFlianjie h3{width:100%;font-size:1.6em;text-align: center;background-color: #fffdeb;margin: -0.1em auto -0.1em -0.05em;line-height: 2em;border:0.1em solid #993333;border-radius: 10px;color: #993333;}
+.yfd_yaodian ul li{width:90%;list-style-type: disc;margin: 0.3em 0.5em 0 2em;font-size: 1.2em;line-height: 1.4em}
+.yfd_kandian h3{width:100%;font-size:1.6em;text-align: left;margin: 0.5em auto 0 0.3em;line-height: 2em;color: #993333;}
+.yfd_kandian ul li{width:90%;list-style-type: disc;margin: 0.3em 0.5em 0 2em;font-size: 1.2em;line-height: 1.4em}
+.yfd_kandianimg img{margin: 0.5em auto}
+.yfd_shijian{width:100%;margin-top: 0.5em}
+.yfd_shijian table{margin-bottom:0.5em}
+.yfd_shijian table tr:nth-child(even){background-color: #cccccc}
+.yfd_shijian table tr td{text-align: center;line-height: 2em}
+.yfd_shijian table{width:100%}
+.yfd_huangjinzoushi{width:100%;margin: 0.5em 0.3em}
+.yfd_huangjinzoushi img{width:100%}
+
+.yfd_feilvimg img{margin: 0.5em auto}
+.yfd_jibenxinxi{width:100%}
+.yfd_jibenxinxi table{width:100%;background-color:#993333}
+.yfd_jibenxinxi table tr td{text-align: center;line-height: 2em;background-color:#ffffff}
+.yfd_jibenxinxi h3{font-size:1.6em;margin: 0.5em auto;line-height: 1.5em;color: #993333}
+.yfd_jibenxinxinav{color: #fbab52;width:25%}
+.yfd_jibenxinxi table tr .yfd_jibenxinxicontent{text-align: left;padding-left:0.5em;padding-right:0.2em}
+.yfd_jijinhuilv{width:100%;margin: 0.5em auto}
+.yfd_jijinhuilv table{width:100%;background-color:#993333}
+.yfd_jijinhuilv table tr td{text-align: center;line-height: 2em;background-color:#ffffff;}
+.yfd_jijinhuilv h3{font-size:1.6em;text-align: left;margin: 0.5em auto 0 0.3em;line-height: 2em;color: #993333;}
+.yfd_buy{width:100%;margin-bottom:1em}
+
+
+
+
+@media (min-width:640px) and (max-width:750px) { 
+	html{ font-size:62.5%; }	
+}
+@media (min-width:580px) and (max-width:640px) { 
+	html{ font-size:55.5%; }	
+}
+@media (min-width:480px) and (max-width:580px) { 
+	html{ font-size:50.5%; }
+}
+@media (min-width:430px) and (max-width:480px) { 
+	html{ font-size:48.5%; }
+}
+@media (min-width:350px) and (max-width:430px) { 
+	html{ font-size:45.5%; }
+}
+@media (min-width:300px) and (max-width:350px) { 
+	html{ font-size:40.5%; }
+}
+
+.header,.footer{background:#389ad7;}
+.header{height:45px;line-height:45px;}
+.header .back{float:left;padding:12px 9px;}
+.header .back span{display:none;}
+.header .back i{float:left;width:20px;height:20px;background:url(../../images/all_ico_150106.png) 0 0;background-size:150px 300px;}
+.header .add{float:right;padding:12px 9px;}
+.header .add span{display:none;}
+.header .add i{float:right;width:20px;height:20px;background:url(../../images/icon_add@2x.png);background-size:100% 100%;}
+.header .searchIcon{float:left;padding:12px 9px;}
+.header .searchIcon i{float:left;width:20px;height:20px;background:url(../../images/icon_search@2x.png) 0 0;background-size:100% 100%;}
+.header h1{margin:0 50px;text-align:center;color:#fff;font-size:18px;}
+.header .collectIcon{position:absolute;top:0;right:10px;height:45px;}
+.header .collectIcon dt{position: absolute;width: 20px;height: 100%;}
+.header .collectIcon .wjx1{background: url(../../images/icon_star@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon .wjx2{background: url(../../images/icon_favorate_white@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon dd{margin-left:25px;line-height:45px;color:#fff;}

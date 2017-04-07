@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.privated.CjqfWebPrivateFundAppointmentBean" table="cjqfweb_private_fund_appointment">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id" />
+		</id>
+		<!-- 姓名  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--邮箱-->
+		<property name="mail" type="java.lang.String">
+			<column name="mail" />
+		</property>
+		<!--电话 -->
+		<property name="tel" type="java.lang.String">
+			<column name="tel" />
+		</property>
+		<!--预约内容-->
+		<property name="context" type="java.lang.String">
+			<column name="context" />
+		</property>
+		<!--时间 -->
+		<property name="time" type="java.lang.String">
+			<column name="time" />
+		</property>
+		<!--是否处理-->
+		<property name="flatmark" type="java.lang.String">
+			<column name="flatmark" />
+		</property>
+	</class>
+</hibernate-mapping>

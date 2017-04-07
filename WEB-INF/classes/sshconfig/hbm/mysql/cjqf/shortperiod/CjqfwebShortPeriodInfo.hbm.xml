@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.shortperiod.CjqfwebShortperiodInfoBean" table="cjqfweb_shortPeriod_info" 
+	dynamic-insert="true" dynamic-update="true" >
+		<!--基金代码  -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+		</id>
+		<!--  资产ID -->
+		<property name="productId" type="java.lang.Integer">
+			<column name="product_id" />
+		</property>
+		<!--  资产名称 -->
+		<property name="productName" type="java.lang.String">
+			<column name="product_name" />
+		</property>
+		<!--  当前市值（元）  -->
+		<property name="curMarketValue" type="java.math.BigDecimal">
+			<column name="cur_marketValue" />
+		</property>
+		<!--  投资本金 (元)  -->
+		<property name="investMoney" type="java.math.BigDecimal">
+			<column name="invest_money" />
+		</property>
+		<!--  本期收益  -->
+		<property name="currentPeriodIncome" type="java.math.BigDecimal">
+			<column name="currentPeriod_income" />
+		</property>
+		<!-- 预期年化	 -->
+		<property name="expectAnnualised" type="java.lang.Double">
+			<column name="expect_annualised" />
+		</property>
+		<!--  本期起息日  -->
+		<property name="curPeriodCarInteDay" type="java.lang.String">
+			<column name="curPeriod_carInteDay" />
+		</property>
+		<!-- 本期到期日  -->
+		<property name="curPeriodEndDay" type="java.lang.String">
+			<column name="curPeriod_endDay" />
+		</property>
+		<!--   预计到期收益（元）	 -->
+		<property name="forecastEndIncome" type="java.math.BigDecimal">
+			<column name="forecast_endIncome" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.lang.String">
+			<column name="create_time" />
+		</property>
+		<!--  更新时间	 -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+		<!--  用户ID -->
+		<property name="userId" type="java.lang.String">
+			<column name="userId" />
+		</property>
+		<!--  资金状态 -->
+		<property name="money_status" type="java.lang.Integer">
+			<column name="money_status" />
+		</property>
+		
+		<!-- 本次赎回金额 -->
+		<property name="redemption_money" type="java.math.BigDecimal" >
+			<column name="redemption_money" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-注册开户</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css">
+    <link rel="stylesheet" href="../css_mp/comm.css">
+    <link rel="stylesheet" href="../css_mp/home.css">
+    <link rel="stylesheet" href="../css_mp/account/account.css">
+    <link rel="stylesheet" href="../css_mp/feather.css">
+</head>
+<body>
+<div>
+
+
+    <!--头部开始-->
+    <header class="ty_header">
+        <a class="ty_fanhui" href="javascript:window.history.go(-1);">
+            <i class="ty_fanhui_icon"></i>
+        </a>
+        <div class="head_center">
+            <a class="head_title_as">开户</a>
+        </div>
+        <!--<a class="ty_sreach_as">
+            <i class="ty-search"></i>
+        </a>-->
+    </header>
+
+
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <div class="account_nav mtopdd">
+            <ul class="u1">
+                <li class="l0"></li>
+                <li class="l1 blue_round_nav"></li>
+                <li class="l2 blue_line_nav"></li>
+                <li class="l3 blue_round_nav"></li>
+                <li class="l4 gray_line_nav"></li>
+                <li class="l5 gray_round_nav"></li>
+                <li class="l6"></li>
+            </ul>
+            <ul class="u2">
+                <li><span>身份验证</span></li>
+                <li><span>设置银行卡</span></li>
+                <li><span>开户成功</span></li>
+            </ul>
+        </div>
+        <div class="account_title">
+            <h2><span>请添加您的首张银行卡</span></h2>
+            <a><span>请填写与您银行身份信息一致的银行储蓄卡</span></a>
+        </div>
+        <div class="mtopdd">
+            <ul class="account_list">
+                <li>
+                    <i class="khh"></i>
+                    <select class="opaSelect s2">
+                        <option value="KQ01">快钱-工商银行</option>
+                        <option value="KQ02">快钱-农业银行</option>
+                        <option value="KQ03">快钱-中国银行</option>
+                        <option value="KQ04">快钱-建设银行</option>
+                        <option value="KQ05">快钱-招商银行</option>
+                        <option value="KQ06">快钱-交通银行</option>
+                        <option value="KQ07">快钱-中信银行</option>
+                        <option value="KQ08">快钱-浦发银行</option>
+                        <option value="KQ09">快钱-兴业银行</option>
+                        <option value="KQ10">快钱-广发银行</option>
+                        <option value="KQ11">快钱-平安银行</option>
+                        <option value="KQ12">快钱-华夏银行</option>
+                        <option value="KQ13">快钱-光大银行</option>
+                        <option value="KQ14">快钱-民生银行</option>
+                        <!--<option value="KQ15">快钱-邮储银行</option>-->
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <i class="kh"></i>
+                    <input type="tel" id="bankNo" name="bankNo" class="n" placeholder="请输入银行卡号" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li>
+                    <i class="khd"></i>
+                    <select class="s opaSelect" id="provinces_opaSelect" onchange="linkage_city(this.value);"></select>
+                    <select class="s1 opaSelect" id="cities_opaSelect"></select>
+                </li>
+            </ul>
+        </div>
+        <div class="account_title_e"><i class="icon-lock"></i><span> 请您放心，我们会安全妥善保存您的信息</span></div>
+        <div>
+            <ul class="account_list">
+                <li class="clearfix">
+                    <i class="phone"></i>
+                    <input type="tel" id="phone" name="cardNo" class="n" size="11" placeholder="请输入预留手机" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li id="code">
+                    <i class="yzm"></i>
+                    <input type="tel" id="valiCode" class="n_yz" name="valiCode" placeholder="请输入验证码" />
+                    <input type="button" id="smsCode" class="n_yzc smsCode" value="获取验证码">
+                </li>
+            </ul>
+        </div>
+        <div class="account_title_g mtopd menddd">
+            <a type="button" class="btn btn-block btn_lanse btn-lg" href="javascript:openStep3()">下一步</a>
+        </div>
+    </div>
+
+    <!--内容结束-->
+
+</div>
+
+
+</body>
+<script src="../js_mp/jquery.min.js"></script>
+<script src="../js_mp/swiper.min.js"></script>
+<script src="../js_mp/bootstrap.min.js"></script>
+<script src="../js_mp/jquery.cookie.js"></script>
+<script src="../js_mp/common_qifu.js"></script>
+<script src="../js_mp/account/account.js"></script>
+<script src="../js_mp/account/account_confirm.js"></script>
+</html>

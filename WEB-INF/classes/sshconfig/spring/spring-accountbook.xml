@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >	
+    
+    <!--组合基金明细-->
+	<bean id="GroupFundTransactionDetailsAction" class="com.wirich.action.accountbook.mutual.GroupFundTransactionDetailsAction" scope="prototype">
+		<property name="groupService" ref="GroupFundTransactionDetailsAccountBookServiceImpl"></property>
+	</bean> 
+    <!--组合基金购买信息按钮-->
+	<bean id="GroupFundAccountBookPurchaseInfAction" class="com.wirich.action.accountbook.mutual.GroupFundAccountBookPurchaseInfAction" scope="prototype">
+		<property name="groupService" ref="GroupFundAccountBookPurchaseInfServiceImpl"></property>
+	</bean> 
+    <!--组合基金业绩表现按钮-->
+	<bean id="GroupFundAccountBookPerformaceAction" class="com.wirich.action.accountbook.mutual.GroupFundAccountBookPerformaceAction" scope="prototype">
+		<property name="groupService" ref="GroupFundAccountBookPerformaceServiceImpl"></property>
+	</bean> 
+    <!--基金组合按钮-->
+	<bean id="GroupFundOpenInformationsAction" class="com.wirich.action.accountbook.mutual.GroupFundOpenInformationsAction" scope="prototype">
+		<property name="groupService" ref="GroupFundOpenInformationsServiceImpl"></property>
+	</bean> 
+     <!--处理组合基金代码和名称输入框信息-->
+	<bean id="GroupFundAccountBookBuyAction" class="com.wirich.action.accountbook.mutual.GroupFundAccountBookBuyAction" scope="prototype">
+		<property name="groupService" ref="GroupFundAccountBookBuyServiceImpl"></property>
+	</bean>  
+	
+    <!--处理组合基金代码和名称输入框信息-->
+	<bean id="MutualGroupAmountShareCheckAction" class="com.wirich.action.accountbook.page.mutual.MutualGroupAmountShareCheckAction" scope="prototype">
+		<property name="groupService" ref="MutualGroupAmountShareServiceImpl"></property>
+	</bean>   
+     <!--处理组合基金代码和名称输入框信息-->
+	<bean id="MutualGroupCodeNameCheckAction" class="com.wirich.action.accountbook.page.mutual.MutualGroupCodeNameCheckAction" scope="prototype">
+		<property name="groupService" ref="MutualGroupCodeNameCheckServiceImpl"></property>
+	</bean>   
+     <!--处理公募基金模拟账本认申购输入框信息-->
+	<bean id="MutualFundAccountBookBuyAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookBuyAction" scope="prototype">
+		<property name="bookService" ref="MutulFundAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本赎回输入框信息-->
+	<bean id="MutualFundAccountBookRedemptionAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookRedemptionAction" scope="prototype">
+		<property name="bookService" ref="MutualFundRedemptionAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本转换输入框信息-->
+	<bean id="MutualFundAccountBookConversionAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookConversionAction" scope="prototype">
+		<property name="bookService" ref="MutualFundConversionAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本定投输入框信息-->
+	<bean id="MutulFundAccountBookFixedInvestmentAction" class="com.wirich.action.accountbook.mutual.MutulFundAccountBookFixedInvestmentAction" scope="prototype">
+		<property name="bookService" ref="MutualFundFixedInvestmentAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本分红输入框信息-->
+	<bean id="MutualFundAccountBookDividendAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookDividendAction" scope="prototype">
+		<property name="bookService" ref="MutualFundDividendAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理返回公募基金展示信息-->
+	<bean id="MutulAccountBookListAction" class="com.wirich.action.accountbook.mutual.MutulAccountBookListAction" scope="prototype">
+		<property name="bookService" ref="MutualFundListAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本交易明细返回信息-->
+	<bean id="MutualFundTransactionDetailsAction" class="com.wirich.action.accountbook.mutual.MutualFundTransactionDetailsAction" scope="prototype">
+		<property name="bookService" ref="MutualFundTransactionDetailsAccountBookServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本认申购页面返回数据action层-->
+	<bean id="MutualFundAccountBookBuyPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookBuyPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundBuyAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本认申购页面返回数据action层-->
+	<bean id="MutualBuyWindCodeTOFundNameAction" class="com.wirich.action.accountbook.page.mutual.MutualBuyWindCodeTOFundNameAction" scope="prototype">
+		<property name="bookService" ref="MutualWindCodeTOFundNameServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本定投页面返回数据action层-->
+	<bean id="MutualFundAccountBookFixedInvestmentPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookFixedInvestmentPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundFixedInvestmentAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本赎回页面返回数据action层-->
+	<bean id="MutualFundAccountBookRedemptiontPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookRedemptiontPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundRedemptiontAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本赎回页面返回数据action层-->
+	<bean id="MutualRedemptiontWindCodeTOFundNameAction" class="com.wirich.action.accountbook.page.mutual.MutualRedemptiontWindCodeTOFundNameAction" scope="prototype">
+		<property name="bookService" ref="MutualRedemptiontWindCodeTOFundNameServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本转换页面返回数据action层-->
+	<bean id="MutualFundAccountBookConversionPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookConversionPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundConversionAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本货币基金分红页面返回数据action层-->
+	<bean id="MutualFundAccountBookMoneyDividendPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookMoneyDividendPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundMoneyDividendAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本开放基金-->
+	<bean id="MutualFundOpenInformationsAction" class="com.wirich.action.accountbook.mutual.MutualFundOpenInformationsAction">
+		<property name="bookService" ref="MutualFundOpenInformationServiceImpl"></property>
+	</bean>
+	<!--处理货币基金模拟账本信息-->
+	<bean id="MoneyFundOpenInformationsAction" class="com.wirich.action.accountbook.mutual.MoneyFundOpenInformationsAction">
+		<property name="bookService" ref="MoneyFundOpenInformationServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本定投信息-->
+	<bean id="MutualFundFixedInvestmentInformationsAction" class="com.wirich.action.accountbook.mutual.MutualFundFixedInvestmentInformationsAction">
+		<property name="bookService" ref="MutualFundFixedInvestmentInformationServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本基金业绩信息-->
+	<bean id="MutualFundAccountBookPerformaceAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookPerformaceAction">
+		<property name="bookService" ref="MutualFundPerformaceServiceImpl"></property>
+	</bean>
+	<!--处理货币基金模拟账本基金业绩信息-->
+	<bean id="MoneyFundAccountBookPerformaceAction" class="com.wirich.action.accountbook.mutual.MoneyFundAccountBookPerformaceAction">
+		<property name="bookService" ref="MoneyFundPerformaceServiceImpl"></property>
+	</bean>
+	<!--处理公募定投基金模拟账本基金业绩信息-->
+	<bean id="MutualFundAccountBookFixedInvestmentPerformaceAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookFixedInvestmentPerformaceAction">
+		<property name="bookService" ref="MutualFundFixedInvestmentPerformaceServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本购买信息-->
+	<bean id="MutualFundAccountBookPurchaseInfAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookPurchaseInfAction">
+		<property name="bookService" ref="MutualFundAccountBookPurchaseInfServiceImpl"></property>
+	</bean>
+	<!--处理货币基金模拟账本购买信息-->
+	<bean id="MoneyFundAccountBookPurchaseInfAction" class="com.wirich.action.accountbook.mutual.MoneyFundAccountBookPurchaseInfAction">
+		<property name="bookService" ref="MoneyFundAccountBookPurchaseInfServiceImpl"></property>
+	</bean>
+	<!--处理公募基金模拟账本定投购买信息-->
+	<bean id="MutualFundFixedInvestmentPurchaseInfAction" class="com.wirich.action.accountbook.mutual.MutualFundFixedInvestmentPurchaseInfAction">
+		<property name="bookService" ref="MutualFundFixedInvestmentPurchaseInfServiceImpl"></property>
+	</bean>
+	<!--货币基金分红日期输入验证-->
+	<bean id="MutualFundAccountBookMoneyDividendDatePageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookMoneyDividendDatePageAction">
+		 <property name="bookService" ref="MoneyFundDividendDateAccountBookPageServiceImpl"></property>
+	</bean>
+	<!--基金转入基金名称和基金代码验证-->
+	<bean id="MutualFundNameConversionInPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundNameConversionInPageAction">
+		 <property name="bookService" ref="MutualFundNameConversionInPageServiceImpl"></property>
+	</bean>
+	<!--登录-->
+	<bean id="MutualFundAccountBookLoginAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookLoginAction" scope="prototype">
+		<property name="bookService" ref="MutualFundLoginAccountBookServiceImpl"></property>
+	</bean>
+	<!--注册-->
+	<bean id="MutualFundAccountBookRegisterAction" class="com.wirich.action.accountbook.mutual.MutualFundAccountBookLoginAction" scope="prototype">
+		<property name="bookService" ref="MutualFundLoginAccountBookServiceImpl"></property>
+	</bean>
+	<!--修改认申购页输入框默认值-->
+	<bean id="MutualFundBuyDefaultValueAction" class="com.wirich.action.accountbook.mutual.defaultvalue.MutualFundBuyDefaultValueAction" scope="prototype">
+		<property name="bookService" ref="MutualFundBuyDefaultValueServiceImpl"></property>
+	</bean>
+	<!--修改认赎回页输入框默认值-->
+	<bean id="MutualFundRedemptiontDefaultValueAction" class="com.wirich.action.accountbook.mutual.defaultvalue.MutualFundRedemptiontDefaultValueAction" scope="prototype">
+		<property name="bookService" ref="MutualFundRedemptiontDefaultValueServiceImpl"></property>
+	</bean>
+	<!--修改组合基金页输入框默认值-->
+	<bean id="GroupFundAccountBookDefaultValueAction" class="com.wirich.action.accountbook.mutual.defaultvalue.GroupFundAccountBookDefaultValueAction" scope="prototype">
+		<property name="bookDefaultValueService" ref="GroupFundAccountBookDefaultValueServiceImpl"></property>
+	</bean>
+	<!--修改认申购-->
+	<bean id="MutualFundBuyModifyAction" class="com.wirich.action.accountbook.mutual.modify.MutualFundBuyModifyAction" scope="prototype">
+		<property name="bookService" ref="MutualFundBuyModifyServiceImpl"></property>	
+	</bean>
+	<!--修改认赎回-->
+	<bean id="MutualFundRedemptiontModifyAction" class="com.wirich.action.accountbook.mutual.modify.MutualFundRedemptiontModifyAction" scope="prototype">
+		<property name="bookService" ref="MutualFundRedemptiontModifyServiceImpl"></property>	
+	</bean>
+	<!--修改组合基金-->
+	<bean id="GroupFundAccountBookModifyAction" class="com.wirich.action.accountbook.mutual.modify.GroupFundAccountBookModifyAction" scope="prototype">
+		<property name="groupFundAccountBookModifyService" ref="GroupFundAccountBookModifyServiceImpl"></property>	
+	</bean>
+	<!--删除认申购-->
+	<bean id="MutualFundBuyDeleteAction" class="com.wirich.action.accountbook.mutual.delete.MutualFundBuyDeleteAction">
+		<property name="bookService" ref="MutualFundBuyDeleteServiceImpl"></property>	
+	</bean>
+	<!--删除赎回-->
+	<bean id="MutualFundRedemptiontDeleteAction" class="com.wirich.action.accountbook.mutual.delete.MutualFundRedemptiontDeleteAction">
+		<property name="bookService" ref="MutualFundRedemptiontDeleteServiceImpl"></property>	
+	</bean>
+	<!--删除定投-->
+	<bean id="MutualFundFixedInvestmentDeleteAction" class="com.wirich.action.accountbook.mutual.delete.MutualFundFixedInvestmentDeleteAction">
+		<property name="bookService" ref="MutualFundFixedInvestmentDeleteServiceImpl"></property>	
+	</bean>
+	<!--删除转换-->
+	<bean id="MutualFundConversionDeleteAction" class="com.wirich.action.accountbook.mutual.delete.MutualFundConversionDeleteAction">
+		<property name="bookService" ref="MutualFundConversionDeleteServiceImpl"></property>	
+	</bean>
+	<!--删除货币基金分红-->
+	<bean id="MutualFundDividendDeleteAction" class="com.wirich.action.accountbook.mutual.delete.MutualFundDividendDeleteAction">
+		<property name="bookService" ref="MutualFundDividendDeleteServiceImpl"></property>	
+	</bean>
+	<!-- 组合基金删除 -->
+	<bean id="GroupFundAccountBookDeleteAction" class="com.wirich.action.accountbook.mutual.delete.GroupFundAccountBookDeleteAction" scope="prototype">
+		<property name="bookDeleteService" ref="GroupFundAccountBookDeleteServiceImpl"></property>
+	</bean>  
+	<!--公募基金模拟账本基金转入份额验证-->
+	<bean id="MutualFundAccountBookInConversionPageAction" class="com.wirich.action.accountbook.page.mutual.MutualFundAccountBookInConversionPageAction" scope="prototype">
+		<property name="bookService" ref="MutualFundInConversionAccountBookPageServiceImpl"></property>
+	</bean>
+	<bean id="GroupFundTransactionDetailsAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.GroupFundTransactionDetailsAccountBookServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="GroupFundAccountBookPurchaseInfServiceImpl" class="com.wirich.service.impl.accountbook.GroupFundAccountBookPurchaseInfServiceImpl">
+         <property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl1"></property>
+	</bean>
+	<bean id="GroupFundAccountBookPerformaceServiceImpl" class="com.wirich.service.impl.accountbook.GroupFundAccountBookPerformaceServiceImpl">
+         <property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl1"></property>
+         <property name="chinaMFPerformanceSqlDao" ref="ChinaMFPerformanceSqlDaoImpl1"></property>
+	</bean>
+	<bean id="GroupFundOpenInformationsServiceImpl" class="com.wirich.service.impl.accountbook.GroupFundOpenInformationsServiceImpl">
+         <property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl1"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+         <property name="moneyMarketFIncomeSqlDao" ref="CMoneyMarketFIncomeSqlDaoImpl1"></property>
+	</bean>
+	<bean id="GroupFundAccountBookBuyServiceImpl" class="com.wirich.service.impl.accountbook.GroupFundAccountBookBuyServiceImpl">
+         <property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl1"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+
+	<bean id="MutualGroupAmountShareServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualGroupAmountShareServiceImpl">
+         <property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl1"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+         <property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl1"></property>
+	</bean>
+	<bean id="MutualGroupCodeNameCheckServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualGroupCodeNameCheckServiceImpl">
+         <property name="cjqfWebGroupFundMainDao" ref="CJQFWebGroupFundMainDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundInConversionAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundInConversionAccountBookPageServiceImpl">
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundDividendDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.MutualFundDividendDeleteServiceImpl">
+         <property name="dividendMockAccountBookDao" ref="CjqfwebMutualDividendMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundConversionDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.MutualFundConversionDeleteServiceImpl">
+         <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundFixedInvestmentDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.MutualFundFixedInvestmentDeleteServiceImpl">
+         <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundRedemptiontDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.MutualFundRedemptiontDeleteServiceImpl">
+         <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundBuyDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.MutualFundBuyDeleteServiceImpl">
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="GroupFundAccountBookDeleteServiceImpl" class="com.wirich.service.impl.accountbook.delete.GroupFundAccountBookDeleteServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundRedemptiontModifyServiceImpl" class="com.wirich.service.impl.accountbook.modify.MutualFundRedemptiontModifyServiceImpl">
+         <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+          <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+          <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="GroupFundAccountBookModifyServiceImpl" class="com.wirich.service.impl.accountbook.modify.GroupFundAccountBookModifyServiceImpl">
+         <property name="cjqfWebFundGroupFundDao" ref="CJQFWebFundGroupFundDaoImpl1"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundBuyModifyServiceImpl" class="com.wirich.service.impl.accountbook.modify.MutualFundBuyModifyServiceImpl">
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+          <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+          <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundRedemptiontDefaultValueServiceImpl" class="com.wirich.service.impl.accountbook.defaultvalue.MutualFundRedemptiontDefaultValueServiceImpl">
+         <property name="mockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundBuyDefaultValueServiceImpl" class="com.wirich.service.impl.accountbook.defaultvalue.MutualFundBuyDefaultValueServiceImpl">
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="GroupFundAccountBookDefaultValueServiceImpl" class="com.wirich.service.impl.accountbook.defaultvalue.GroupFundAccountBookDefaultValueServiceImpl">
+         <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundNameConversionInPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundNameConversionInPageServiceImpl">
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundLoginAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundLoginAccountBookServiceImpl">
+        <property name="loginAccountBookDao" ref="CjqfwebMutualLoginMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MoneyFundDividendDateAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MoneyFundDividendDateAccountBookPageServiceImpl">
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundOpenInformationServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundOpenInformationServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+          <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+          <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+         <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundFixedInvestmentPurchaseInfServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundFixedInvestmentPurchaseInfServiceImpl">
+          <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+          <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MoneyFundAccountBookPurchaseInfServiceImpl" class="com.wirich.service.impl.accountbook.MoneyFundAccountBookPurchaseInfServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+          <property name="moneyMarketFIncomeSqlDao" ref="CMoneyMarketFIncomeSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundAccountBookPurchaseInfServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundAccountBookPurchaseInfServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+         <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+          <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundFixedInvestmentPerformaceServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundFixedInvestmentPerformaceServiceImpl">
+         <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+         <property name="chinaMFPerformanceSqlDao" ref="ChinaMFPerformanceSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MoneyFundPerformaceServiceImpl" class="com.wirich.service.impl.accountbook.MoneyFundPerformaceServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+         <property name="chinaMFPerformanceSqlDao" ref="ChinaMFPerformanceSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundPerformaceServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundPerformaceServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+         <property name="chinaMFPerformanceSqlDao" ref="ChinaMFPerformanceSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundFixedInvestmentInformationServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundFixedInvestmentInformationServiceImpl">
+         <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+         <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+         <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+         <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MoneyFundOpenInformationServiceImpl" class="com.wirich.service.impl.accountbook.MoneyFundOpenInformationServiceImpl">
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+         <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundMoneyDividendAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundMoneyDividendAccountBookPageServiceImpl">
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundConversionAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundConversionAccountBookPageServiceImpl">
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+        <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+        <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualRedemptiontWindCodeTOFundNameServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualRedemptiontWindCodeTOFundNameServiceImpl">
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundRedemptiontAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundRedemptiontAccountBookPageServiceImpl">
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+        <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+        <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualWindCodeTOFundNameServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualWindCodeTOFundNameServiceImpl">
+	</bean>
+	<bean id="MutualFundFixedInvestmentAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundFixedInvestmentAccountBookPageServiceImpl">
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundBuyAccountBookPageServiceImpl" class="com.wirich.service.impl.accountbook.page.MutualFundBuyAccountBookPageServiceImpl">
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundTransactionDetailsAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundTransactionDetailsAccountBookServiceImpl">
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+        <property name="dividendMockAccountBookDao" ref="CjqfwebMutualDividendMockAccountBookDaoImpl"></property>
+        <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+        <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+        <property name="chinaMFDividendDao" ref="ChinaMFDividendDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundListAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundListAccountBookServiceImpl">
+        <property name="chinaMFPerformanceSqlDao" ref="ChinaMFPerformanceSqlDaoImpl1"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="buyMockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="conversionMockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+        <property name="dividendMockAccountBookDao" ref="CjqfwebMutualDividendMockAccountBookDaoImpl"></property>
+        <property name="fixedInvestmentAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+        <property name="redemptionMockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+        <property name="chinaMFDividendDao" ref="ChinaMFDividendDaoImpl1"></property>
+        <property name="fundSplitDao" ref="CMFundSplitSqlDaoImpl1"></property>
+         <property name="moneyMarketFIncomeSqlDao" ref="CMoneyMarketFIncomeSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundDividendAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundDividendAccountBookServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualDividendMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundFixedInvestmentAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundFixedInvestmentAccountBookServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="mockAccountBookBuyDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+	</bean>
+	<bean id="MutualFundConversionAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundConversionAccountBookServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualConversionMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+         <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutulFundAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundBuyAccountBookServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualBuyMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="MutualFundRedemptionAccountBookServiceImpl" class="com.wirich.service.impl.accountbook.MutualFundRedemptionAccountBookServiceImpl">
+        <property name="mockAccountBookDao" ref="CjqfwebMutualRedemptionMockAccountBookDaoImpl"></property>
+        <property name="chinaMutualFundDescriptionDao" ref="ChinaMutualFundDescriptionSqlDaoImpl1"></property>
+        <property name="chinaMutualFundNAVSqlDao" ref="ChinaMutualFundNAVSqlDaoImpl1"></property>
+	</bean>
+	<bean id="ChinaMutualFundNAVSqlDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.ChinaMutualFundNAVSqlDaoImpl">
+	</bean>
+	<bean id="ChinaMutualFundDescriptionSqlDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.ChinaMutualFundDescriptionSqlDaoImpl">
+	</bean>
+	<bean id="ChinaMFPerformanceSqlDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.ChinaMFPerformanceSqlDaoImpl">
+	</bean>	
+     <bean id="CjqfwebMutualBuyMockAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualBuyMockAccountBookDaoImpl">
+	</bean>
+	<bean id="CjqfwebMutualRedemptionMockAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualRedemptionMockAccountBookDaoImpl">
+	</bean>
+	<bean id="CjqfwebMutualConversionMockAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualConversionMockAccountBookDaoImpl">
+	</bean>
+	<bean id="CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualFundFixedInvestmentAccountBookDaoImpl">
+	</bean>	
+	<bean id="CjqfwebMutualDividendMockAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualDividendMockAccountBookDaoImpl">
+	</bean>	
+	<bean id="ChinaMFDividendDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.ChinaMFDividendSqlDaoImpl">
+	</bean>	
+	<bean id="CMFundSplitSqlDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.CMFundSplitSqlDaoImpl">
+	</bean>	
+	<bean id="CMoneyMarketFIncomeSqlDaoImpl1" class="com.wirich.dao.wind.mutual.impl.accountbook.CMoneyMarketFIncomeSqlDaoImpl">
+	</bean>
+	<bean id="CjqfwebMutualLoginMockAccountBookDaoImpl" class="com.wirich.dao.impl.accountbook.CjqfwebMutualLoginMockAccountBookDaoImpl">
+	</bean>
+	<bean id="CJQFWebGroupFundMainDaoImpl1" class="com.wirich.dao.cjqf.group.impl.CJQFWebGroupFundMainDaoImpl">
+	</bean>
+	<bean id="CJQFWebFundGroupFundDaoImpl1" class="com.wirich.dao.cjqf.group.impl.CJQFWebFundGroupFundDaoImpl">
+	</bean>
+</beans>

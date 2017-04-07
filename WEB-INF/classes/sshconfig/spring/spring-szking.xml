@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+       <!-- 定时器 -->
+	
+       
+	<!-- 风险等级测评 -->
+	<bean id="RiskAsstAction" class="com.wirich.action.szking.RiskAsstAction"
+		scope="prototype">
+		<property name="riskAsstService" ref="RiskAsstServiceImpl"></property>
+	</bean>
+	<!-- 风险等级测评 -->
+	<bean id="RiskAsstServiceImpl" class="com.wirich.service.szking.impl.RiskAsstService">
+	</bean>
+	<!-- 查询客户资产信息  -->
+	<bean id="UserInfor" class="com.wirich.action.szking.UserInforAction"
+		scope="prototype">
+		<property name="AssetInfor" ref="IUserInfoService"></property>
+		<property name="fServer" ref="FundQueryServiceImpl"></property>
+		<property name="fundGroupWebMainService" ref="FundGroupWebMainServiceImpl"></property>
+		<property name="aubscribeAction" ref="FundQueryServiceImpl"></property>
+		<property name="singleService" ref="singletradingimpl"></property>
+	</bean>
+	
+	<!-- 组合购买 -->
+	<bean id="BuyGroupFund" class="com.wirich.action.szking.GroupFundAction"
+		scope="prototype">
+		<property name="aubscribeAction" ref="FundQueryServiceImpl"></property>
+		<property name="singleFundQueryService" ref="SingleFundQueryServiceImpl"></property>
+		<property name="queryFundDao" ref="SingleFundQueryDaoImpl"></property>
+		<property name="buyFundService" ref="BuyFundServiceImpl"></property>
+		<property name="buyDao" ref="IBuyFundDao"></property>
+		<property name="AssetInfor" ref="IUserInfoService"></property>
+		<property name="itransactionqueryservice" ref="TransactionQueryServiceimpl"></property>
+	</bean>
+	<!--用户当天的拆分单支基金dao-->
+	<bean id="UserAssetSingleOneDao" class="com.wirich.dao.cjqf.org.impl.UserAssetSingleOneDaoImpl"></bean>
+	<!-- 查询客户资产信息  -->
+	<bean id="IUserInfoService" class="com.wirich.service.szking.impl.UserInfoServiceimpl">
+		<property name="FoDao" ref="ChinaMFPerformanceDaoImpl"></property>
+		<property name="NAVDao" ref="ChinaMutFuNAVDaoImpl"></property>
+		<property name="DescriptionDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+		<property name="MarketFIncomeDao" ref="CMoneyMarketFIncomeDaoImpl"></property>
+		<property name="LogService" ref="CjqfWebMutualFundCodeDaoImpl"></property>
+		<property name="shortPeriodInfoDao" ref="ShortPeriodInfoDaoImpl"></property>
+		<property name="shortPeriodBusinessDao" ref="ShortPeriodBusinessDaoImpl"></property>
+		<property name="bankChannelIdDao" ref="bankChannelIdDaoImpl"></property>
+		<property name="userDao" ref="UserDaoImpl"></property><!-- spring-webuser.xml -->
+		<property name="userAssetSummaryDao" ref="userAssetSummaryDao"></property><!-- spring-360trading.xml -->
+		<property name="userAssetDao" ref="userAssetDao"></property><!-- spring-360trading.xml -->
+		<property name="fundGroupBuyDao" ref="fundGroupBuyDao"></property><!-- spring-fundGroup.xml -->
+		<property name="fundGroupBuySingleFundDao" ref="fundGroupBuySingleFundDao"></property><!-- spring-fundGroup.xml -->
+		<property name="userAssetSingleDao" ref="userAssetSingleDao"></property><!-- spring-fundGroup.xml -->
+		<property name="userAssetSingleOneDao" ref="UserAssetSingleOneDao"></property><!-- spring-fundGroup.xml -->
+	</bean>
+	<!-- 手机交易接口 (520013，520027，520026，520004，52006)-->
+	<bean id="transactionQueryAction" class="com.wirich.action.szking.TransactionQueryAction"
+		scope="prototype">
+		<property name="itransactionqueryservice" ref="TransactionQueryServiceimpl"></property>
+		<property name="AssetInfor" ref="IUserInfoService"></property>
+		<property name="aubscribeAction" ref="FundQueryServiceImpl"></property>
+	</bean>
+	<!-- 手机交易接口 (520013，520027，520026，520004，52006)-->
+	<bean id="TransactionQueryServiceimpl"
+		class="com.wirich.service.szking.impl.TransactionQueryServiceimpl">
+		<property name="ptDao" ref="ChinaMutualFundDescriptionDaoImpl"></property>
+	</bean>
+
+
+	<!-- 手机基金查询接口-->
+	<bean id="FundQueryAction" class="com.wirich.action.szking.FundQueryAction"
+		scope="prototype">
+		<property name="aubscribeAction" ref="FundQueryServiceImpl"></property>
+		<property name="singletrading" ref="singletradingimpl"></property>
+	</bean>
+	<!-- 手机基金查询接口 -->
+	<bean id="FundQueryServiceImpl" class="com.wirich.service.szking.impl.FundQueryServiceImpl">
+	</bean>
+	<bean id="singletradingimpl" class="com.wirich.service.cjqfweb.single.impl.SingleFundTradingServiceImpl">
+		<property name="singletradingDao" ref="singletradingDaoimpl"></property>
+	</bean>
+	<bean id="singletradingDaoimpl" class="com.wirich.dao.cjqfwed.single.impl.SingleFundTradingDaoImpl">
+	</bean>
+	<!-- 单支基金的查询接口 -->
+	<bean id="SingleFundQueryServiceImpl" class="com.wirich.service.szking.impl.SingleFundQueryServiceImpl">
+	</bean>
+	<bean id="SingleFundQueryDaoImpl" class="com.wirich.dao.cjqf.group.impl.SingleFundQueryDaoImpl">
+	</bean>
+	<bean id="BuyFundServiceImpl" class="com.wirich.service.szking.impl.BuyFundServiceImpl">
+	</bean>
+	<bean id="IBuyFundDao" class="com.wirich.dao.cjqf.group.impl.BuyFundDaoImpl">
+	</bean>
+	
+	<!--中国共同基金业绩表现 Dao-->
+	<bean id="ChinaMFPerformanceDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMFPerformanceDaoImpl">
+	</bean>
+	<!--基金净值 查询 Dao-->
+	<bean id="ChinaMutFuNAVDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutFuNAVDaoImpl">
+	</bean>
+	<!-- 中国共同基金基本资料Dao-->
+	<bean id="ChinaMutualFundDescriptionDaoImpl" class="com.wirich.dao.wind.mutual.impl.ChinaMutualFundDescriptionDaoImpl">
+	</bean>
+	<!--中国货币市场基金收益service-->
+	<bean id="CMoneyMarketFIncomeDaoImpl" class="com.wirich.dao.wind.mutual.impl.CMoneyMarketFIncomeDaoImpl">
+	</bean>
+	<!--同步-->
+	<bean id="CjqfWebMutualFundCodeDaoImpl" class="com.wirich.dao.cjqf.mutual.impl.CjqfWebMutualFundCodeDaoImpl">
+	</bean>
+	<!--用户短期理财信息表-->
+	<bean id="ShortPeriodInfoDaoImpl" class="com.wirich.dao.cjqf.shortperiod.Impl.ShortPeriodInfoDaoImpl">
+	</bean>
+	<!--用户短期理财信息表-->
+	<bean id="ShortPeriodBusinessDaoImpl" class="com.wirich.dao.cjqf.shortperiod.Impl.ShortPeriodBusinessDaoImpl">
+	</bean>
+	<bean id="bankChannelIdDaoImpl" class="com.wirich.dao.cjqf.system.impl.BankChannelIdDaoImpl">
+	</bean>
+</beans>

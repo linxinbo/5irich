@@ -1,0 +1,13 @@
+[{
+  "image": "images/home-banner/shengang-banner.jpg",
+  "url" : "event/shengang/index.html"
+},{
+  "image": "images/home-banner/pcgaige.png",
+  "url" : "fund/theme/gaige/index.html"
+},{
+  "image": "images/home-banner/youqi.png",
+  "url" : "fund/theme/youqi/index.html"
+},{
+  "image": "images/home-banner/home_img3.png",
+  "url" : "event/qdii/index.html"
+}]

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.single.CJQFWebSingleFundTradeInfoBean" table="cjqfweb_single_trade_info">
+		<!--  客户号	 -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<property name="appsheetserialno" type="java.lang.String">
+			<column name="appsheetserialno" />
+		</property>
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<property name="transactiondata" type="java.lang.String">
+			<column name="transactiondata" />
+		</property>
+		<property name="fundcode" type="java.lang.String">
+			<column name="fundcode" />
+		</property>
+		<property name="fundname" type="java.lang.String">
+			<column name="fundname" />
+		</property>
+		<property name="businesscode" type="java.lang.String">
+			<column name="businesscode" />
+		</property>
+		<property name="applicationvol" type="java.lang.String">
+			<column name="applicationvol" />
+		</property>
+		<property name="applicationamount" type="java.lang.String">
+			<column name="applicationamount" />
+		</property>
+		<property name="confirmedvol" type="java.lang.String">
+			<column name="confirmedvol" />
+		</property>
+		<property name="confirmedamount" type="java.lang.String">
+			<column name="confirmedamount" />
+		</property>
+		<property name="charge" type="java.lang.String">
+			<column name="charge" />
+		</property>
+		<property name="nav" type="java.lang.String">
+			<column name="nav" />
+		</property>
+		<property name="paycenterid" type="java.lang.String">
+			<column name="paycenterid" />
+		</property>
+		<property name="channelid" type="java.lang.String">
+			<column name="channelid" />
+		</property>
+		<property name="moneyin" type="java.lang.String">
+			<column name="moneyin" />
+		</property>
+		<property name="moneyout" type="java.lang.String">
+			<column name="moneyout" />
+		</property>
+		<property name="bankname" type="java.lang.String">
+			<column name="bankname" />
+		</property>
+		<property name="routeflag" type="java.lang.String">
+			<column name="routeflag" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="status" />
+		</property>
+		<property name="taserialno" type="java.lang.String">
+			<column name="taserialno" />
+		</property>
+		<property name="tano" type="java.lang.String">
+			<column name="tano" />
+		</property>
+		<property name="transactioncfmdate" type="java.lang.String">
+			<column name="transactioncfmdate" />
+		</property>
+		<property name="sharetype" type="java.lang.String">
+			<column name="sharetype" />
+		</property>
+		<property name="distributorcode" type="java.lang.String">
+			<column name="distributorcode" />
+		</property>
+		<property name="cfmvolotargetfund" type="java.lang.String">
+			<column name="cfmvolotargetfund" />
+		</property>
+		<property name="defdividendmethod" type="java.lang.String">
+			<column name="defdividendmethod" />
+		</property>
+		<property name="targetfundcode" type="java.lang.String">
+			<column name="targetfundcode" />
+		</property>
+		<property name="targetfundname" type="java.lang.String">
+			<column name="targetfundname" />
+		</property>
+		<property name="taaccountid" type="java.lang.String">
+			<column name="taaccountid" />
+		</property>
+		<property name="originapplicationvol" type="java.lang.String">
+			<column name="originapplicationvol" />
+		</property>
+		<property name="transactionaccountid" type="java.lang.String">
+			<column name="transactionaccountid" />
+		</property>
+		<property name="acceptmethod" type="java.lang.String">
+			<column name="acceptmethod" />
+		</property>
+		<property name="businesskind" type="java.lang.String">
+			<column name="businesskind" />
+		</property>
+		<property name="busitype" type="java.lang.String">
+			<column name="busitype" />
+		</property>
+		<property name="targettaaccountid" type="java.lang.String">
+			<column name="targettaaccountid" />
+		</property>
+		<property name="targettransactionaccountid" type="java.lang.String">
+			<column name="targettransactionaccountid" />
+		</property>
+		<property name="targetdistributorcode" type="java.lang.String">
+			<column name="targetdistributorcode" />
+		</property>
+		<property name="targetbranchcode" type="java.lang.String">
+			<column name="targetbranchcode" />
+		</property>
+		<property name="targetcustno" type="java.lang.String">
+			<column name="targetcustno" />
+		</property>
+		<property name="registrationdate" type="java.lang.String">
+			<column name="registrationdate" />
+		</property>
+		<property name="dividendperunit" type="java.lang.String">
+			<column name="dividendperunit" />
+		</property>
+		<property name="basisforcalculatingdividend" type="java.lang.String">
+			<column name="basisforcalculatingdividend" />
+		</property>
+		<property name="depositcard" type="java.lang.String">
+			<column name="depositcard" />
+		</property>
+		<property name="depositacct" type="java.lang.String">
+			<column name="depositacct" />
+		</property>
+		<property name="fastredeemflag" type="java.lang.String">
+			<column name="fastredeemflag" />
+		</property>
+		<!--  创建时间  -->
+		<property name="create_time" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+	</class>
+</hibernate-mapping>

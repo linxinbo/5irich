@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.intelligentfinancialmanagement.CjqfwebIFMUserBean" table="cjqfweb_intelligent_financial_management_user">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id" />
+		</id>
+		<!--用户id-->
+		<property name="userid" type="java.lang.String">
+			<column name="userid" />
+		</property>
+		<!--Ip地址-->
+		<property name="ip" type="java.lang.String">
+			<column name="ip" />
+		</property>
+		<!--客户所在区域-->
+		<property name="district" type="java.lang.String">
+			<column name="district" />
+		</property>
+		<!--客户所在区域评分-->
+		<property name="districtScore" type="java.lang.Integer">
+			<column name="district_score" />
+		</property>
+		<!--客户端所用的操作系统-->
+		<property name="operatingSystemsUsed" type="java.lang.Integer">
+			<column name="operating_systems_used" />
+		</property>
+		<!--客户端所用的操作系统评分-->
+		<property name="operatingSystemsScore" type="java.lang.Integer">
+			<column name="operating_systems_score" />
+		</property>
+		<!--客户端所用的浏览器-->
+		<property name="browser" type="java.lang.Integer">
+			<column name="browser" />
+		</property>
+		<!--客户端所用的浏览器评分-->
+		<property name="browserScore" type="java.lang.Integer">
+			<column name="browser_score" />
+		</property>
+		<!--客户端所用的浏览器版本号-->
+		<property name="browserVersion" type="java.lang.String">
+			<column name="browser_version" />
+		</property>
+		<!--客户端所用的浏览器版本号评分-->
+		<property name="browserVersionScore" type="java.lang.Integer">
+			<column name="browser_versio_score" />
+		</property>
+		<!--连接时间-->
+		<property name="connectionTime" type="java.lang.String">
+			<column name="connection_time" />
+		</property>
+		<!--连接时间评分-->
+		<property name="connectionTimeScore" type="java.lang.Integer">
+			<column name="connection_time_score" />
+		</property>
+		<!--所访问的页面-->
+		<property name="weburl" type="java.lang.String">
+			<column name="weburl" />
+		</property>
+		<!--所访问的页面评分-->
+		<property name="weburlScore" type="java.lang.Integer">
+			<column name="weburl_score" />
+		</property>
+		<!--停留时间-->
+		<property name="durationOfLess" type="java.lang.String">
+			<column name="duration_of_less" />
+		</property>
+		<!--停留时间评分-->
+		<property name="durationOfLessScore" type="java.lang.Integer">
+			<column name="duration_of_less_score" />
+		</property>
+		<!--跳转下个页面的url-->
+		<property name="nextWebUrl" type="java.lang.String">
+			<column name="next_weburl" />
+		</property>
+		<!--跳转下个页面的url评分-->
+		<property name="nextWebUrlScore" type="java.lang.Integer">
+			<column name="next_weburl_score" />
+		</property>
+		<!--是否跳到模拟账本-->
+		<property name="toAccountBook" type="java.lang.Integer">
+			<column name="to_account_book" />
+		</property>
+		<!--是否跳到模拟账本评分-->
+		<property name="toAccountBookScore" type="java.lang.Integer">
+			<column name="to_account_book_scor" />
+		</property>
+		<!--是否购买基金-->
+		<property name="toBuy" type="java.lang.Integer">
+			<column name="to_buy" />
+		</property>
+		<!--是否购买基金评分-->
+		<property name="toBuyScore" type="java.lang.Integer">
+			<column name="to_buy_score" />
+		</property>
+		<!--是否购买定投-->
+		<property name="toFixedInvestment" type="java.lang.Integer">
+			<column name="to_fixedInvestment" />
+		</property>
+		<!--是否购买定投评分-->
+		<property name="toFixedInvestmentScore" type="java.lang.Integer">
+			<column name="to_fixedInvestment_score" />
+		</property>
+		<!--是否用了搜索-->
+		<property name="toSearcher" type="java.lang.Integer">
+			<column name="to_searcher" />
+		</property>
+		<!--是否用了搜索评分-->
+		<property name="toSearcherScore" type="java.lang.Integer">
+			<column name="to_searcher_scor" />
+		</property>
+		<!--搜索的基金代码-->
+		<property name="toSearchFund" type="java.lang.String">
+			<column name="to_search_fund" />
+		</property>
+		<!--搜索的基金代码评分-->
+		<property name="toSearchFundScore" type="java.lang.Integer">
+			<column name="to_search_fund_score" />
+		</property>
+		<!--是否用了计算器-->
+		<property name="toCalculator" type="java.lang.Integer">
+			<column name="to_calculator" />
+		</property>
+		<!--是否用了计算器评分-->
+		<property name="toCalculatorScore" type="java.lang.Integer">
+			<column name="to_calculator_score" />
+		</property>
+		<!--数据更新时间-->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+		</class>
+</hibernate-mapping>

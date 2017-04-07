@@ -1,0 +1,64 @@
+body,html{ margin:0 auto; padding:0px; font-size:65.2%; font-family:'Microsoft Yahei','微软雅黑'; max-width:750px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+
+
+.banner{ width:100%}
+.banner img{width:100%}
+.title{ width:95%; display:block; margin:3% auto; margin-bottom:0;}
+.spant{ font-size:3em; color:#363535; font-weight:bold;display:block; width:95%; margin:2% auto; }
+.pcon{width:95%; margin:auto; color:#363535; font-size:2.6em; line-height:1.5em;}
+.img{width:95%; margin:auto; display:block; margin-top:2%;}
+.pcon2{ margin-top:2%}
+.title-t{ margin:3% 2.5% 2%; width:38%}
+.py{ border:1px solid #ac6612; border-radius:5px; font-size:2.6em; color:#ac6612; padding:2%; width:91%; margin:auto; margin-top:2%}
+.conimg-p{ width:95%; margin:auto; margin-top:3%}
+.conimg-p img{ width:12%; float:left; margin-right:3%; margin-top:1%}
+.conimg-p p{ width:85%; float:left; color:#363535; font-size:2.6em; line-height:1.5em;}
+.d9d9d{ color:#999}
+.ptitle{ font-size:2.8em; color:#363535; width:95%; margin:2% auto; font-weight:bold;}
+.p363535{ color:#363535; border:1px solid #f5d2a7}
+.tabletitle{ background:#ac6612; font-size:3em; font-weight:bold; color:#fff; text-align:center; width:95%; margin:auto; height:2em; border-radius:2em; line-height:2em; margin-top:5%}
+table{ width:95%; margin:2% auto; background:#ce9d4b; color:#363535}
+table td{ background:#fff; font-size:2.6em; line-height:1.8em; padding-left:3%}
+table .td1{ background:#e3bd64; color:#fff; width:25%; text-align:center;}
+table .td2{ background:#f3d99b;}
+table td table{ width:100%}
+table td table td{ font-size:1em;}
+@media (min-width:580px) and (max-width:640px) { 
+	body,html{ font-size:65.2%; }	
+}
+@media (min-width:480px) and (max-width:580px) { 
+	body,html{ font-size:63.5%; }
+	.title{ padding-top:0.8%}
+}
+@media (min-width:430px) and (max-width:480px) { 
+	body,html{ font-size:60.5%; }
+	.title{ padding-top:0.6%}
+}
+@media (min-width:350px) and (max-width:430px) { 
+	body,html{ font-size:55.5%; }
+	.title{ padding-top:0.5%}
+}
+
+.header,.footer{background:#389ad7;}
+.header{height:45px;line-height:45px;}
+.header .back{float:left;padding:12px 9px;}
+.header .back span{display:none;}
+.header .back i{float:left;width:20px;height:20px;background:url(../../images/all_ico_150106.png) 0 0;background-size:150px 300px;}
+.header .add{float:right;padding:12px 9px;}
+.header .add span{display:none;}
+.header .add i{float:right;width:20px;height:20px;background:url(../../images/icon_add@2x.png);background-size:100% 100%;}
+.header .searchIcon{float:left;padding:12px 9px;}
+.header .searchIcon i{float:left;width:20px;height:20px;background:url(../../images/icon_search@2x.png) 0 0;background-size:100% 100%;}
+.header h1{margin:0 50px;text-align:center;color:#fff;font-size:18px;}
+.header .collectIcon{position:absolute;top:0;right:10px;height:45px;}
+.header .collectIcon dt{position: absolute;width: 20px;height: 100%;}
+.header .collectIcon .wjx1{background: url(../../images/icon_star@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon .wjx2{background: url(../../images/icon_favorate_white@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon dd{margin-left:25px;line-height:45px;color:#fff;}

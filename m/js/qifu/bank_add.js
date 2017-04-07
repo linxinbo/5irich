@@ -1,0 +1,287 @@
+var transactionaccountid;
+var moneyaccount;
+var branchcode;
+var addbanks = {};
+$(function () {
+	$("#smsCode").unbind("click").click(function () {
+		var phone = $("#phone").val();
+		var that = $(this);
+		var str1 = /^1[3-8]{1}\d{9}$/;
+		var cardId = $("#cardNo").val();
+		var name = $.cookie("username");
+		var bankname = $("#bank span").html();
+		var chanilid;
+		if (bankname == "选择银行") {
+			showAlert("请选择存入银行");
+			return false;
+		} else {
+			chanilid = $(".bank_sel").val();
+		}
+
+		var banknum = $("#bank_num").val();
+		if (!checkBanknum(banknum)) {
+			showAlert("银行卡号错误");
+			return false;
+		}
+
+		if (phone == "") {
+			showAlert("手机不能为空！");
+			return false;
+		}
+
+		if (!str1.test(phone)) {
+			showAlert("手机号格式错误！"); //"手机号格式错误！"
+			return false;
+		}
+		var wait = 60;
+
+		function time(o) {
+//			var that = o;
+			if (wait == 0) {
+				//                $("#smsCode").removeClass("gray_bj");
+				o.attr("class", "smsCode");
+				o.val("获取验证码");
+				o.removeAttr("disabled");
+				wait = 60;
+			} else {
+				//                $("#smsCode").addClass("gray_bj");
+				
+				var  flag=setInterval(function(){
+					//do
+					//
+					o.attr("class", "gray_bj");
+					o.attr("disabled", true);
+					o.val("(" + wait + ")重新获取");
+					wait--;
+					if(wait==0){
+						clearInterval(flag);
+						showAlert("如果您未能正常收入短信,请拨打客服电话400-6262-818联系我们");
+						time(that);
+					}					
+				},1000);		
+		   }
+		}
+		hideloading();
+		showLoading();
+		$.ajax({
+			type: "post",
+			url: mainUrl + "bmsgsend",
+			data: {
+				"bgsend.mobiletelno": phone,
+				"bgsend.certificateno": cardId,
+				"bgsend.depositacctname": name,
+				"bgsend.certificatetype":0,
+				"bgsend.depositacct": banknum,
+				"bgsend.channelid": chanilid
+			},
+			dataType: "JSON",
+			success: function (data) {
+				hideloading();
+				if (data.retcode == 0000) {
+					time(that);
+					addbanks.flag = true;
+					addbanks.token = data.data.token;
+					$("#code").attr("data-flag", 0);
+					$(".bank_form li:eq(4)").show();
+				} else if (data.retcode == 1010) {
+					addbanks.flag = true;
+					addbanks.token = "";
+					$("#code").attr("data-flag", 1);
+
+					$(".bank_form li:eq(4)").show();
+					showAlert("您已在快钱签约，请直接点击下一步进行绑卡！");
+				} else {
+					setErrorMsg(data.retcode, data.retmsg);
+				}
+			},
+			error: function (data) {
+				hideloading();
+				alert("请稍后重试！");
+			}
+		})
+	})
+	infoDelete();
+
+});
+
+$("#next span").unbind("click").click(function () {
+	if(!addbanks.flag){
+		return false;
+	}else{
+		$(this).css("color","#389ad7");
+	}
+	var phone = $("#phone").val();
+	var str1 = /^1[3-8]{1}\d{9}$/;
+	var cardId = $("#cardNo").val();
+	var name = $.cookie("username");
+	var bankname = $("#bank span").html();
+	var chanilid;
+	if (bankname == "选择银行") {
+		showAlert("请选择存入银行");
+		return false;
+	} else {
+		chanilid = $(".bank_sel").val();
+	}
+
+	var banknum = $("#bank_num").val();
+	if (!checkBanknum(banknum)) {
+		showAlert("银行卡号错误");
+		return false;
+	}
+
+	if (phone == "") {
+		showAlert("手机不能为空！");
+		return false;
+	}
+
+	if (!str1.test(phone)) {
+		showAlert("手机号格式错误！"); //"手机号格式错误！"
+		return false;
+	}
+    var smsflag = $("#code").val();
+	var smsflag = $("#code").attr("data-flag");
+	var pwvalue = $("#pw").val();
+	if (pwvalue == "" || pwvalue.length < 6) {
+		showAlert("密码为6-16位字母！");
+		return false;
+	}
+	if (smsflag == 1) {
+		hideloading();
+		showLoading();
+		$.ajax({
+			type: "post",
+			url: mainUrl + "addCardList",
+			data: {
+				"addCardBean.mobileno": phone,
+				"addCardBean.certificateno": cardId,
+				"addCardBean.depositacctname": name,
+				"addCardBean.depositname": name,
+				"addCardBean.depositacct": banknum,
+				"addCardBean.channelid": chanilid,
+				"addCardBean.tpasswd": pwvalue
+			},
+			dataType: "JSON",
+			success: function (data) {
+				hideloading();
+				if (data.retcode == 0000) {
+					window.location.href = "bank_right.html";
+
+				} else {
+					setErrorMsg(data.retcode, data.retmsg);
+				}
+			},
+			error: function (data) {
+				hideloading();
+				alert("请稍后重试！");
+			}
+		})
+	} else {
+		var smscode = $("#code").val();
+		if (smscode == "" || smscode == null||smscode.length!=6) {
+			showAlert("验证码为6位数字！");
+			return false;
+		} else {
+			hideloading();
+			showLoading();
+			$.ajax({
+				type: "post",
+				url: mainUrl + "addCardList",
+				data: {
+					"addCardBean.mobileno": phone,
+					"addCardBean.certificateno": cardId,
+					"addCardBean.depositacctname": name,
+					"addCardBean.depositname": name,
+					"addCardBean.depositacct": banknum,
+					"addCardBean.channelid": chanilid,
+					"addCardBean.tpasswd": pwvalue,
+					"addCardBean.verificationCode": smscode,
+					"addCardBean.token": addbanks.token
+				},
+				dataType: "JSON",
+				success: function (data) {
+					hideloading();
+					if (data.retcode == 0000) {
+						window.location.href = "bank_right.html";
+
+					}else if(data.retcode=="91-409999999"){
+						$("#code").attr("data-flag", 1);
+						showAlert("交易密码错误！");
+					} else {
+						setErrorMsg(data.retcode, data.retmsg);
+					}
+				},
+				error: function (data) {
+					hideloading();
+					alert("请稍后重试！");
+				}
+			})
+		}
+	}
+});
+
+
+function infoDelete() {
+	$("#bank_num").focus(function () {
+		$(this).siblings("[data_rest='ID_rest']").show();
+	});
+	$("#bank_num").blur(function () {
+		var bank_num = $(this).val();
+		if (bank_num == "") {
+			$(this).siblings("[data_rest='ID_rest']").hide();
+		}
+	});
+	$("#cardNo").focus(function () {
+		$(this).siblings("[data_rest='ID_rest']").show();
+	});
+	$("#cardNo").blur(function () {
+		var cardNo = $(this).val();
+		if (cardNo == "") {
+			$(this).siblings("[data_rest='ID_rest']").hide();
+		}
+	});
+	$("#phone").focus(function () {
+		$(this).siblings("[data_rest='ID_rest']").show();
+	});
+	$("#phone").blur(function () {
+		var phone = $(this).val();
+		if (phone == "") {
+			$(this).siblings("[data_rest='ID_rest']").hide();
+		}
+	});
+	$("#pw").focus(function () {
+		$(this).siblings("[data_rest='ID_rest']").show();
+	});
+	$("#pw").blur(function () {
+		var pw = $(this).val();
+		if (pw == "") {
+			$(this).siblings("[data_rest='ID_rest']").hide();
+		}
+	});
+	$("[data_rest='ID_rest']").click(function () {
+		$(this).siblings("input").val("");
+		$(this).hide();
+	});
+}
+
+function checkBanknum(val) {
+	if (val == "" || val == null) {
+		return false;
+	}
+	val = val.replace(/\s/g, '');
+		//	value = trim(value);
+	return /^[0-9]{6,30}$/.test(val);
+}
+
+/*function bankAdd(){
+    var cardNo = $("#cardNo").val();
+    //判断身份证号
+	if (cardNo == "" || cardNo == null) {
+		showAlert("身份证号不能为空");
+		return false;
+	} else {
+		if (!checkIdNum(cardNo)) {
+			showAlert("身份格式错误")
+			return false;
+		};
+	}
+}*/

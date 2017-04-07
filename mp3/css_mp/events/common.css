@@ -1,0 +1,63 @@
+.ty1_header{
+    height: 4.000em;
+    background-color: #ff9900;
+    position: relative;
+}
+.ty_fanhui{
+    display: block;
+    width: 1.200em;
+    height: 1.360em;
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    margin-top: -0.68em;
+}
+.ty_fanhui_icon{
+    display: block;
+    width: 1.200em;
+    height: 1.360em;
+    background: url(../../images_mp/as_fanhui.png) no-repeat center;
+    background-size: 1.200em 1.360em;
+}
+.head_center{
+    height: 4.000em;
+    line-height: 4.000em;
+    text-align: center;
+}
+.head_center .head_title{
+    font-size: 1.4em;
+    color: #349ef2;
+}
+.head_center .head_title_as{
+    font-size: 1.6em;
+    color: #ffffff;
+}
+.head_center .head_title_as1{
+    font-size: 2.6rem;
+    color: #ffffff;
+}
+.header_top_b{
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -1em;
+    height:1.76em;
+    width:1.76em;
+    display:block;
+}
+.icon_home{
+    display: block;
+    width: 1.760em;
+    height: 1.760em;
+    background: url(../../images_mp/home.png) no-repeat center;
+    background-size: 1.760em 1.760em;
+}
+.ty_home_as {
+    display: block;
+    width: 1.760em;
+    height: 1.760em;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -0.88em;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-热门活动</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../../images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../../favicon.ico"/>
+    <link rel="stylesheet" href="../../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" type="text/css" href="../../css_mp/events/common.css?t=20170308" />
+    <link rel="stylesheet" type="text/css"  href="css.css?t=20170308">
+</head>
+<body>
+<header class="ty1_header">
+    <a class="ty_fanhui" href="javascript:window.history.go(-1);">
+        <i class="ty_fanhui_icon"></i>
+    </a>
+    <div class="head_center">
+        <a class="head_title_as">七夕节</a>
+    </div>
+    <a class="ty_home_as" href="../../home.html">
+        <i class="icon_home"></i>
+    </a>
+</header>
+<div style="max-width: 750px;overflow: hidden;margin: 0 auto;">
+    <div class="qixi_banner"><img src="images/qixi_banner.png"></div>
+    <div class="qixi_m_top1">
+        <div class="wenzi1">
+            <img src="images/m_wenzi1.png">
+            <a class="anniu1" href="../../sigin/sigin.html"><img src="images/m_anniu1.png"></a>
+        </div>
+
+
+    </div>
+    <div class="qixi_m_top2">
+        <div class="wenzi1">
+            <img src="images/m_wenzi2.png">
+            <a class="anniu2" href="javascript:void(0);" onclick="buyStep1('110050', '易方达月月利A');"><img src="images/m_anniu2.png"></a>
+        </div>
+
+    </div>
+    <div class="qixi_m_end">
+        <div class="bridge-left" style="margin-right: 30px;"><img src="images/boy.png" alt="" class="pngFix"></div>
+        <div class="bridge-right" style="margin-left: 30px;"><img src="images/girl.png" alt="" class="pngFix"></div>
+        <!--<div class="kiss-gif" style="display: none;width: 60px;"><img src="images/kiss.gif"></div>-->
+        <div class="wenzi3">
+            活动说明：<br>
+            1.step1针对活动期间在网站开户的用户，开户成功即可领到搭桥红包。<br>
+            2.step2针对活动期间在网站首次申购基金100元以上，老客户申购基金500元以上，交易成功即可领到亲亲红包。（多次交易只能获得一次亲亲红包）<br>
+            3.红包在活动结束后10个工作日内统一发放至用户银行卡中。<br>
+            4.活动解释权归理财易站所有。
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+<script src="../../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../../js_mp/common_qifu.js?t=20170308"></script>
+<script type="text/javascript" src="../../js_mp/jquery.cookie.js?t=20170308"></script>
+<script type="text/javascript" src="../../js_mp/buy/buy_funds_all.js?t=20170308"></script>
+<script>
+    $(function() {
+        $(".anniu1").mouseover(function () {
+            $(".bridge-left").animate({ "margin-right": "-1px" }, 1000);
+            $(".bridge-right").animate({ "margin-left": "-1px" }, 1000);
+
+
+        });
+        $(".anniu1").mouseout(function () {
+            $(".bridge-left").animate({ "margin-right": "30px" }, 1000);
+            $(".bridge-right").animate({ "margin-left": "30px" }, 1000);
+
+
+        });
+        $(".anniu2").mouseover(function () {
+            $(".bridge-left").animate({ "margin-right": "-1px" }, 1000);
+            $(".bridge-right").animate({ "margin-left": "-1px" }, 1000,function(){$(".kiss-gif").show();});
+        });
+        $(".anniu2").mouseout(function () {
+            $(".kiss-gif").hide();
+            $(".bridge-left").animate({ "margin-right": "30px" }, 1000);
+            $(".bridge-right").animate({ "margin-left": "30px" }, 1000);
+        });
+    })
+</script>
+</html>

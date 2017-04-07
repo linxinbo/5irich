@@ -1,0 +1,255 @@
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+a,a:hover,a:visited,a:link,a:active{text-decoration: none;text-outline: none;}
+a {cursor: pointer;}
+input,input:active {outline: none;border: none;}
+/*清除浮动*/
+.clearfix:after {clear: both;content:"";display: block;}
+.clearfix {zoom: 1;}
+body{font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;}
+
+/*按钮*/
+/*98*44*/
+.home-button {
+    display: inline-block;
+    width: 98px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    line-height: 44px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+.home-button1 {
+    display: inline-block;
+    width: 175px;
+    height: 50px;
+    border-radius: 8px;
+    background: #ffa926;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    box-shadow: 0 6px 6px #ffe2b3;
+}
+.home-button2 {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border-radius: 13px;
+    background: #ffa926;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 36px;
+    margin-right: 110px;
+    box-shadow: 0 6px 6px #ffe2b3;
+}
+/*标题*/
+.home-h3 {
+    font-size: 32px;
+    padding-top: 100px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 1200px;
+}
+.home-h3:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #ff9900;
+    box-shadow: 0 4px 4px #ffedcf;
+    margin: 15px auto;
+}
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 9;
+    display: none;
+}
+/*登录注册表单*/
+.login-txt {
+    width: 438px;
+    height: 50px;
+    border: 1px solid #d9dce0;
+    font-size: 18px;
+    color: #999999;
+    padding-left: 20px;
+    line-height: 48px;
+    margin-top: 36px;
+    outline:none;
+}
+.login-txt:hover {
+    border-color: #999;
+}
+.login-txt:focus {
+    border-color: #ff9805;
+}
+.login-error {
+    font-size: 14px;
+    color: #ff1f1f;
+    line-height: 36px;
+    position: absolute;
+    display: none;
+}
+.login-error:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/login/error.png) no-repeat center;
+    margin-right: 8px;
+    margin-bottom: -3px;
+}
+.login-btn {
+    height:50px;
+    background: #ff9805;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    margin: 20px 0;
+}
+.login-btn1 {
+    height:50px;
+    background-color: #cccccc;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+    outline: none;
+    margin: 20px 0;
+}
+.login-btn:hover {
+    background: #f09100;
+}
+.login-tip {
+    font-size: 12px;
+    color: #ff1f1f;
+    width: 438px;
+    height: 28px;
+    border: 1px solid #ff9805;
+    text-align: center;
+    line-height: 28px;
+    background: #ffcb82;
+    display: none;
+}
+/*-------------弹出框----------------------*/
+.alertBoxNew_wave{background: url(../images/advance/bj_black@2x.png) 0 0 ;width: 100%;height: 100%; position: absolute;top: 0;left: 0;z-index: 9999999;}
+.alertContent{background: #fff;width:420px;height:280px;position: fixed; top:45%;left: 11%;border:5px solid #bfbfbf;}
+.alertText{color: #666666;font-size: 16px;padding: 24px 24px 10px;text-align: center;font-weight: bold;}
+.alertText2{border-top-left-radius: 4px;border-top-right-radius: 4px; color: #666666;font-size: 16px;padding: 24px 24px 8px;text-align: center;}
+.alertText_new{color: #fff;font-size: 1.33em;padding: 28px 24px 10px;padding-right: 0; text-align: center;}
+.alertTitle{color: #ff9900;background-color:#ffffff;text-align:center;font-size: 24px;height: 60px;line-height: 60px;border-bottom: 1px solid #cccccc;margin: 0px;}
+.alertContent h3{background: #2b9af4; border-top-left-radius: 4px;border-top-right-radius: 4px;color: #fff;font-size: 16px;padding: 10px 24px 10px;text-align: center;}
+.alertContent .alertInput{padding: 0 15px;height: 2.5em;margin-bottom: 15px;}
+.alertContent .alertInput input{height: 2.5em;width: 100%;font-size: 16px;}
+.alertText span{text-align: center;}
+.subButton{width: 100%; padding: 0 0 13px;position: absolute;bottom: 20px;}
+.subButton>a{display: block; width: 95px;margin: 0 auto;height: 33px;font-size: 16px;text-align: center;line-height: 33px;background: #ff9900;color: #fff;}
+.subButton>a.cancle{float: left;margin: 0 0 0 50px;}
+.subButton>a.confirm{float: right;margin: 0 50px 0 0;}
+.alertContent .pack{position: relative;width: 100%; height: 100%;}
+
+/*aside*/
+.home-side ul {
+    width: 50px;
+    position: fixed;
+    right: 18px;
+    top: 301px;
+    z-index: 2147483647;
+}
+.home-side ul li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: #ff9900;
+}
+.home-img-write {
+    position: absolute;
+    right: 70px;
+    top: 55px;
+    display: none;
+}
+.home-img-code {
+    position: absolute;
+    right: 70px;
+    top: -130px;
+    display: none;
+}
+.home-side ul li div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .5s all ease;
+    height: 96px;
+}
+.home-side ul li div.active {
+    top: -48px;
+}
+.home-side ul li:nth-child(1) .home-side-icon {
+    background: url(../images/home/icon_code_normal.png) no-repeat center;
+}
+.home-side ul li:nth-child(2) .home-side-icon {
+    background: url(../images/home/icon_servicecall_normal.png) no-repeat center;
+}
+.home-side ul li:nth-child(3) .home-side-icon {
+    background: url(../images/home/icon_onlineservice_normal.png) no-repeat center;
+}
+.home-side ul li:nth-child(4) .home-side-icon {
+    background: url(../images/home/icon_backtotop_normal.png) no-repeat center;
+}
+.home-side-icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+.home-side-write {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-top: -5px;
+    line-height: 14px;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+#home-backtop {
+    transition: 1s all ease;
+    opacity: 0;
+}
+#home-backtop.active {
+    opacity: 1;
+}
+#BDBridgeFixedWrap{
+    position: absolute;
+    left: -22px;
+}
+#newBridge .icon-right-center{
+    right: 40px;
+}

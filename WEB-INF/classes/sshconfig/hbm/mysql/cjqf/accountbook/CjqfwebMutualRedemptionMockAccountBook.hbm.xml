@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.accountbook.cjqfweb.CjqfwebMutualRedemptionMockAccountBookBean" table="cjqfweb_mutual_redemption_mockaccountbook" >
+        <id name="id" type="int">
+            <column name="ID"/>
+        </id>
+        <property name="userId" type="string">
+            <column name="userid" />
+        </property>
+        <property name="fundName" type="string">
+            <column name="fundname" />
+        </property>
+        <property name="fundCode" type="string">
+            <column name="fundcode" />
+        </property>
+        <property name="redemptionDate" type="string">
+            <column name="redemptiondate" />
+        </property>
+        <property name="redemptionShare" type="java.math.BigDecimal">
+            <column name="redemptionshare" />
+        </property>      
+         <property name="redemptionFreeRatio" type="java.math.BigDecimal">
+            <column name="redemptionfreeratio" />
+            </property>
+        <property name="fNavUnit" type="java.math.BigDecimal">
+            <column name="fnavunit" />
+        </property>
+         <property name="redemptionFreeratioType" type="int">
+            <column name="redemptionfreeratiotype" />
+        </property>
+        <property name="redemptionAmount" type="java.math.BigDecimal">
+            <column name="redemptionamount" />
+        </property>
+        <property name="updateTime" type="string">
+            <column name="updatetime" />
+        </property>
+         </class>
+</hibernate-mapping>

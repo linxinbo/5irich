@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>理财易站-定投基金</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+</head>
+<link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+<link rel="stylesheet" href="../common/common.css?t=20170308">
+<link rel="stylesheet" href="../style/header/header.css?t=20170308">
+<link rel="stylesheet" href="../style/login/login.css?t=20170308">
+<link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+<link rel="stylesheet" href="../style/Plug-in/paginator.css?t=20170308">
+<link rel="stylesheet" href="../style/trade/purchase.css?t=20170308">
+<body>
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span>首页</span></a>
+                <a id="short_f"><span>基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="../fund/fundrecomm.html">精选基金</a>
+                    <a href="../fund/fund_theme.html">主题基金</a>
+                    <a href="../fund/fund_all.html">所有基金</a>
+                    <!--<a href="../fund/chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="purchase clearfix">
+    <div class="purchase_content clearfix">
+        <h2 class="purchase_title"><span>定投</span><a class="investfundname">易方达资源行业混合(110025)</a></h2>
+        <div class="purchase_list">
+
+            <div class="purchase_list_li ">
+                <div class="purchase_list_left">每期定投：</div>
+                <div class="purchase_list_right"><input type="text" class="purchase_input investinput border amount"><a class="amount">元</a><i class="edit" style="display: none;"></i><span class="explain charge">（定投费率以实际买入确认费率为准）</span></div>
+            </div>
+            <div class="purchase_list_li amount_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error amount_error1">最低申购金额为2000元</span></div>
+            </div>
+
+            <div class="purchase_list_li m_t_44">
+                <div class="purchase_list_left">选择银行卡：</div>
+                <div class="purchase_list_right"><select type="select" class="select investinput bank_no" style="width: 300px;">
+                    <!--<option>123</option>-->
+                    <option>选择银行</option>
+                </select><span class="explain" style="display: none;">（该卡本次最多支付<em>50,000.00</em>元）</span></div>
+            </div>
+            <div class="purchase_list_li bank_no_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error bank_no_error1">最低申购金额为2000元</span></div>
+            </div>
+
+            <div class="purchase_list_li m_t_44">
+                <div class="purchase_list_left">定投周期：</div>
+                <div class="purchase_list_right"><select type="select" class="select investinput cycle" onchange="linkage_day(this.value);" style="width: 300px;">
+                    <!--<option>123</option>-->
+                    <option>请选择定投周期</option>
+                    <option value="0">每月</option>
+                    <option value="1">每周</option>
+                    <option value="2">每双周</option>
+                </select></div>
+            </div>
+            <div class="purchase_list_li cycle_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error cycle_error1">最低申购金额为2000元</span></div>
+            </div>
+
+
+
+            <div class="purchase_list_li m_t_44">
+                <div class="purchase_list_left">定投日期：</div>
+                <div class="purchase_list_right"><select type="select" class="select investinput investday" style="width: 300px;">
+                    <!--<option>123</option>-->
+                    <option>请选择定投日</option>
+                </select></div>
+            </div>
+            <div class="purchase_list_li investday_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error investday_error1">最低申购金额为2000元</span></div>
+            </div>
+
+
+
+
+            <div class="purchase_list_li m_t_44">
+                <div class="purchase_list_left">交易密码：</div>
+                <div class="purchase_list_right">
+                    <input type="text" name="password" onfocus="this.type='password'" class="purchase_input investinput pw" placeholder="请输入交易密码">
+                    <!--<span class="explain">（该卡本次最多支付<em>50,000.00</em>元）</span>--></div>
+            </div>
+            <div class="purchase_list_li password_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error password_error1">最低申购金额为2000元</span></div>
+            </div>
+
+            <div class="purchase_list_li1 m_t_44 risk" style="display: none">
+                <div class="purchase_list_left1">风险提示：</div>
+                <div class="purchase_list_right1">
+                    <input type="checkbox" class="purchase_checkbox investinput yes" checked id="buyinput">
+                    <span class="explain">我确认购买超出风险偏好的产品 <a href="../center/my_risk1.html">重新测评</a></span></div>
+            </div>
+
+            <div class="purchase_list_li yes_error" style="display: none;">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right"><span class="error yes_error1">最低申购金额为2000元</span></div>
+            </div>
+
+            <div class="purchase_list_li m_t_44">
+                <div class="purchase_list_left">&nbsp;</div>
+                <div class="purchase_list_right">
+                    <a class="purchase_submit timeinvestfund">确认提交</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="../assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/home/home.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/trade/timeinvest.js?t=20170308"></script>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="group" extends="wirich">
+		<!--组合基金列表-->
+		<action name="queryGroupList" class="FundGroupMainAction" method="queryGroupList">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--某只组合基金详情页-->
+		<action name="queryGfundDetial" class="FundGroupMainAction" method="queryGfundDetial">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--某只组合基金详情页图表-->
+		<action name="queryGroupReat" class="FundGroupMainAction" method="queryGroupReat">
+		<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>

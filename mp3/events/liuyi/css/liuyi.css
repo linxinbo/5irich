@@ -1,0 +1,200 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; background:#fff;max-width: 750px;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+h2,h4,ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{clear:both; height:0px;line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right;}
+.banner{width:100%; display:block;height:auto;}
+.360header{ width: 100%; background-color:#FF613C; overflow: hidden; }
+.fenge{
+    width: 100%;
+}
+.active{
+    color: white;
+    margin:0 4%;
+    background: url("../images/fenge.png") no-repeat top center;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.active_p{
+    font-size: 1.2em;
+    display: block;
+    margin-left: 9%;
+    margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active_h4{
+    font-size: 1.6em;
+    display: block;
+    margin-top: 3%;
+    margin-left: 9%;
+    line-height:2.4em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.song{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.song_l{
+    width: 40%;
+    background: url("../images/kuohao_1.png") no-repeat top left;
+    /*background-size: 10% auto;*/
+    float: left;
+    text-align: center;
+     
+}
+.song_l span{
+    margin-left: 30%;
+    font-size: 1.2em;
+    /* line-height: 40px; */
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    width:70%;
+}
+.song_c{
+     margin-left:40%;
+     margin-right:40%;
+     text-align: center;
+}
+.song_c img{
+     width:40px;
+     height:40px;
+     text-align: center;
+     margin: 0 auto;
+}
+.song_r{
+    width: 40%;
+    float: right;
+    background: url("../images/kuohao_2.png") no-repeat bottom right;
+    text-align: center;
+}
+.song_r span{
+    margin-right: 20%;
+    display:inline-block;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    /* line-height: 40px; */
+}
+.active_line{
+    line-height: 1.6em;
+}
+.footer{
+    background-color: #fdecd2;
+    width:100%;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.foot_flex{
+	display:flex;
+}
+.zhuce{
+    width:49%;
+    display: inline-block;
+    border-right: 1px solid #9f9794;
+    flex:1;
+}
+.zhuce .zhuce_img1{
+    padding:0 20px;
+}
+.zhuce .zhuce_img1 img{
+    width: 100%;
+    height: auto;
+}
+.zhuce p{
+    padding:0 10px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+.zhucebtn{
+    width:49%;
+    display: inline-block;
+    text-align: center;
+    flex:1;
+}
+.zhuce_btn{
+    margin:0 auto;
+    text-align: center;
+    padding: 6px 12px;
+    background-color: #da3932;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+.qizhi{
+    text-align: center;
+    height: 30px;
+    vertical-align:middle;
+    margin: 10px;
+}
+.qizhi *{
+    vertical-align:middle;
+}
+.qizhi_img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.qizhi_img img{
+    width: 100%;
+    height: auto;
+}
+.qizhi span{
+    line-height: 30px;
+    display: inline-block;
+    color: #d4372e;
+    font-size: 1.6em;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.jigou_list{
+    margin: 10px 10px;
+    position: relative;
+}
+.jigou_list li{
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.jigou_list li:nth-child(odd){
+    border-right: 1px solid #9f9794;
+}
+.jigou_list li i{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    float: left;
+}
+.jigou_list li div{
+   margin-left: 45px;
+}
+.jigou_list li div h2{
+    color: #d4372e;
+    font-size: 1.4em;
+    font-weight:bold;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+}
+.jigou_list li div span{
+    color: #32292c;
+    font-size: 1.2em;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+
+
+

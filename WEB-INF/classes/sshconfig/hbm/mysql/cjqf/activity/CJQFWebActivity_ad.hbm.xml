@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.activity.CJQFWebActivity_adbean" table="cjqfweb_activity_additional">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		<!-- 用户id -->
+		<property name="user_id" type="java.lang.String">
+			<column name="user_id" />
+		</property>
+		<!-- 客户号 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!-- 用户手机号 -->
+		<property name="tel" type="java.lang.String">
+			<column name="tel" />
+		</property>
+		<!-- 用户姓名 -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="create_time" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="update_time" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+		<!-- 是否有效 -->
+		<property name="sfyx" type="java.lang.String">
+			<column name="sfyx" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,84 @@
+.bg{
+    background: #e02326;
+    padding:0 0.8em 3em;
+}
+.des{
+    background: #fff;
+    font-size: 1.4em;
+    color:#333;
+    line-height: 1.4em;
+    padding:1.6em 0.88em 1em ;
+}
+.tuijian{
+    padding-top:1.44em;
+}
+.tuijian img{
+    width:13.2em;
+    height:4em;
+    margin: 0 auto 1.44em;
+
+}
+.tuijian ul li{
+    width:100%;
+    height:9em;
+    background: url(images/card1.png) no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.tuijian ul li div{
+    float:left;
+}
+.tuijian ul li .ulcon1{
+    width:74%;
+    height:8em;
+    padding:2em 1.6em 1.6em 2em;
+}
+.tuijian ul li .ulcon2{
+    width:26%;
+    height:8em;
+}
+.tuijian ul li .ulcon1 p{
+    float:left;
+    line-height:2em ;
+}
+.tuijian ul li .ulcon1 p:nth-of-type(1){
+    width:65%;
+}
+.tuijian ul li .ulcon1 p:nth-of-type(2){
+    width:35%;
+}
+.tuijian ul li .ulcon2{
+    padding:1.8em;
+}
+.tuijian ul li .ulcon2 a{
+    color:#fff;
+    font-size:1.7em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.fangxiang img{
+    width:13.2em;
+    height:4em;
+    margin: 0 auto 1.44em;
+}
+.fangxiang h3{
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+.fangxiang ul li p:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.fangxiang ul li p:nth-of-type(2){
+    font-size:1.2em;
+    color:#5c5c5c;
+}
+.fangxiang ul li{
+    padding-left:2.2em;
+    margin-bottom:0.5em;
+}
+.fangxiang ul li p{
+    line-height: 1.5em;
+}

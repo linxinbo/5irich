@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.mutual.CjMutualFundOtherInfoBean" table="cj_mutual_fund_other_info">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金主表ID -->
+		<property name="fundId" type="java.lang.String">
+			<column name="fund_code" />
+		</property>
+		<!--  投资目标 -->
+		<property name="investTarget" type="java.lang.String">
+			<column name="wind_code" />
+		</property>
+		<!--  投资范围 -->
+		<property name="investScope" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  投资策略 -->
+		<property name="investTactics" type="java.lang.String">
+			<column name="full_name" />
+		</property>
+		<!--  收益分配原则  -->
+		<property name="profitDistribution" type="java.lang.String">
+			<column name="setup_date" />
+		</property>
+		<!--  风险收益特征-->
+		<property name="riskProfitCharact" type="java.lang.String">
+			<column name="company_id" />
+		</property>
+		<!--  投资理念  -->
+		<property name="investIdea" type="java.lang.String">
+			<column name="fund_type" />
+		</property>
+		<!--  投研团队概况  -->
+		<property name="researchTeamDesc" type="java.lang.String">
+			<column name="custodian_bank" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!-- 更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="r360trading_api" extends="wirich">
+	   <!--购买 前置 -->
+		<action name="Finfor" class="R360TradingAction" method="fundInformation">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--单支基金客户风险承受能力 -->
+		<action name="R360BuyPreAction" class="R360TransactionOperationAction" method="r360BuyPre">
+		</action>
+		<!--单支基金购买 -->
+		<action name="R360BuyPaymentAction" class="R360TransactionOperationAction" method="r360BuyPayment">
+		</action>
+		<!--组合购买前置 -->
+		<action name="R360GroupBuyPreAction" class="R360TransactionOperationAction" method="r360GroupBuyPre">
+		</action>
+		<!--组合购买 -->
+		<action name="R360GroupBuyAction" class="R360TransactionOperationAction" method="r360GroupBuy">
+		</action>
+		<!-- 赎回前置 -->
+		<action name="R360RedemptionPreAction" class="R360TransactionOperationAction" method="r360RedemptionPre">
+		</action>
+		<!--单支基金赎回验证 -->
+		<action name="R360SingleOptionPreAction" class="R360TransactionOperationAction" method="r360SingleOptionPre">
+		</action>
+		<!--基金赎回 -->
+		<action name="R360RedemptionsAction" class="R360TransactionOperationAction" method="r360Redemptions">
+		</action>
+		<!--风险等级测试(tranType=430111) -->
+		<action name="R360RiskLevelTestAction" class="R360TransactionOperationAction" method="r360RiskLevelTest">
+		</action>
+		<!--风险等级测试题目查询(tranType=430110) -->
+		<action name="R360RiskLevelTestQueryAction" class="R360TransactionOperationAction" method="r360RiskLevelTestQuery">
+		</action>
+		
+		<!-- 开户绑卡鉴权:金证、快钱验证信息返回token-->
+		<action name="bmsgsend360" class="R360TradingAction" method="Open360TradeBank">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 开户绑卡鉴权:金证、快钱验证信息返回token-->
+		<action name="bmsgcheck360" class="R360TradingAction" method="open360AccAndBgCode">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- UserInfor360Action 个人资产查询 -->
+		<action name="userAsset360" class="UserInfo360Action" method="asset">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 交易申请接口 -->
+		<action name="tradingList360" class="UserInfo360Action" method="tradeAskList">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 交易确认接口 -->
+		<action name="historyTrading360" class="UserInfo360Action" method="historyTrading">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 从金证借口查询客户资产信息 并存储接口 -->
+		<!-- <action name="getUserAssetAction" class="GetUserAssetAction" method="asset">
+			<interceptor-ref name="defaultStack" />
+		</action>-->
+	</package>
+</struts>
+
+
+

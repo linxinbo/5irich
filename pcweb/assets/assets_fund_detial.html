@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>理财易站-持有基金</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+</head>
+<link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+<link rel="stylesheet" href="../common/common.css?t=20170308">
+<link rel="stylesheet" href="../style/header/header.css?t=20170308">
+<link rel="stylesheet" href="../style/login/login.css?t=20170308">
+<link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+<link rel="stylesheet" href="../style/Plug-in/paginator.css?t=20170308">
+<link rel="stylesheet" href="../style/assets/assets_fund_detial.css?t=20170308">
+<body>
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span>首页</span></a>
+                <a id="short_f"><span>基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="../fund/fundrecomm.html">精选基金</a>
+                    <a href="../fund/fund_theme.html">主题基金</a>
+                    <a href="../fund/fund_all.html">所有基金</a>
+                    <!--<a href="../fund/chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="assets_fund_detial">
+    <div class="positiondetails">
+        <h2 class="assets_fund_title">持仓详情</h2>
+        <div class="position_fund_title"><a>易方达天天A</a><span>000009</span></div>
+        <div class="position_fund_content clearfix">
+            <div class="p_f_c_left">
+                <ul>
+                    <li class="adetotal"><span>累计收益（元）</span><a class="rightline">0.00</a><span class="addincomerate">累计收益率：0.00%</span></li>
+                    <li class="adecurr"><span>当前市值（元）</span><a class="rightline">0.00</a><span class="costmoney">买入金额：0.00元  </span></li>
+                    <li class="newnav"><span>最新净值（元）</span><a>0.0000</a><span class="availablevol">持有份额：0.00份</span></li>
+                </ul>
+
+            </div>
+            <div class="p_f_c_right">
+                <a class="fund_buy">追加</a><a class="fund_regular">定投</a><a class="fund_redeem">赎回</a><a class="fund_convert">转换</a><a class="fund_modify">修改分红方式</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="positionlist">
+        <h2 class="positionlist_title" id="positionlist"><a data-id="1" class="select">每日收益</a><a data-id="2">交易记录</a></h2>
+        <div class="trade_record clearfix" id="trade_record" style="display: none;">
+            <table>
+                <thead>
+                <tr>
+                    <th>交易日期</th><th>基金名称</th><th>交易金额/份额</th><th>交易类型</th><th>交易状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>
+                    <td>2016-11-18  17:40:23</td><td>易方达信用债债券</td><td>1,069.00份</td><td>赎回</td><td>申请中</td>
+                </tr>
+                <tr>
+                    <td>2016-11-18  17:40:23</td><td>易方达信用债债券</td><td>1,069.00份</td><td>赎回</td><td>申请中</td>
+                </tr>-->
+                <!--js加载内容的模板-->
+                </tbody>
+            </table>
+            <div class="fund_page clearfix" >
+                <div id="sample_2_paginate">
+                    <!--加载分页-->
+                </div>
+
+            </div>
+        </div>
+        <div class="trade_record clearfix" id="dayincome">
+            <table>
+                <thead>
+                <tr>
+                    <th>净值日期</th><th>单位净值</th><th>累计净值</th><th>日收益(元)</th><th>收益率</th>
+                </tr>
+                </thead>
+                <tbody>
+               <!-- <tr>
+                    <td>2016-11-18</td><td>1.3560</td><td>1.3560</td><td class="fonthong">+0.0240</td><td class="fontlv">1.20%</td>
+                </tr>
+                <tr>
+                    <td>2016-11-18</td><td>1.3560</td><td>1.3560</td><td class="fonthong">+0.0240</td><td class="fontlv">1.20%</td>
+                </tr>
+                <tr>
+                    <td>2016-11-18</td><td>1.3560</td><td>1.3560</td><td class="fonthong">+0.0240</td><td class="fontlv">1.20%</td>
+                </tr>
+                <tr>
+                    <td>2016-11-18</td><td>1.3560</td><td>1.3560</td><td class="fonthong">+0.0240</td><td class="fontlv">1.20%</td>
+                </tr>-->
+                <!--js加载内容的模板-->
+                </tbody>
+            </table>
+            <div class="fund_page clearfix" >
+                <div id="sample_1_paginate">
+                    <!--加载分页-->
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/home/home.js?t=20170308"></script>
+<script src="../js/Plug-in/bootstrap-paginator.js?t=20170308"></script>
+<script src="../js/trade/buynewfundall.js?t=20170308"></script>
+<script src="../js/trade/redeemfundall.js?t=20170308"></script>
+<script src="../js/trade/timeinvestall.js?t=20170308"></script>
+<script src="../js/trade/convertall.js?t=20170308"></script>
+<script src="../js/trade/bonusall.js?t=20170308"></script>
+<script src="../js/trade/timeinvest_topall.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/assets/assets_fund_detial.js?t=20170308"></script>
+</html>

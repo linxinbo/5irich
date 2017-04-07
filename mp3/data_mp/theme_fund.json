@@ -1,0 +1,46 @@
+[{
+  "title":"油气主题",
+  "image": "../images_mp/qifu/youqituijian.png",
+  "url" : "../theme/youqi/index.html",
+  "state":"火热进行中"
+},{
+  "title":"货币主题",
+  "image": "../images_mp/qifu/money1.png",
+  "url" : "../theme/money/index.html",
+  "state":"火热进行中"
+},{
+    "title":"国企改革",
+    "image": "../images_mp/qifu/gqmobile.jpg",
+    "url" : "../theme/gaige/index.html",
+    "state":"火热进行中"
+},{
+  "title":"黄金时代",
+  "image": "../images_mp/qifu/banner_huangjinshidai@2x.jpg",
+  "url" : "../theme/huangjinshidai-m/index.html",
+  "state":"火热进行中"
+},{
+  "title":"军工主题",
+  "image": "../images_mp/qifu/jungong_banner.jpg",
+  "url" : "../theme/fund_detail_4.html",
+  "state":"火热进行中"
+},{
+  "title":"消费主题",
+  "image": "../images_mp/qifu/banner_xf_m.png",
+  "url" : "../theme/xiaofei1.html",
+  "state":"火热进行中"
+},{
+  "title":"医疗保健",
+  "image": "../images_mp/qifu/jijin_3.png",
+  "url" : "../theme/fund_detail_2.html",
+  "state":"火热进行中"
+},{
+  "title":"ETF基金",
+  "image": "../images_mp/qifu/banner_etfjijin.jpg",
+  "url" : "../theme/etfjijin/index.html",
+  "state":"火热进行中"
+},{
+  "title":"环保主题",
+  "image": "../images_mp/qifu/jijin_2.png",
+  "url" : "../theme/fund_detail_1.html",
+  "state":"火热进行中"
+}]

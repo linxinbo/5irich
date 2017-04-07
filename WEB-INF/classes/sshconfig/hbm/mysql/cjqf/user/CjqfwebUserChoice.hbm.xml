@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.wirich.bean.cjqf.person.CjqfwebUserChoiceBean" table="cjqfweb_user_choice">
+        <id name="objectid" type="java.lang.Long">
+            <column name="objectid" />
+            <generator class="increment" />
+        </id>
+        <property name="fundCode" type="java.lang.String">
+            <column name="fund_code" length="15" not-null="true">
+                <comment>基金代码</comment>
+            </column>
+        </property>
+        <property name="fundShortName" type="java.lang.String">
+            <column name="fund_short_name" length="20" not-null="true">
+                <comment>基金简称</comment>
+            </column>
+        </property>
+        <property name="addTime" type="java.sql.Timestamp">
+            <column name="add_time" length="19">
+                <comment>加入时间</comment>
+            </column>
+        </property>
+        <property name="netValue" type="java.lang.Double">
+            <column name="net_value" precision="5" not-null="true">
+                <comment>净值</comment>
+            </column>
+        </property>
+        <property name="infoid" type="java.lang.String">
+            <column name="infoid">
+                <comment>会员id</comment>
+            </column>
+        </property>
+        <property name="updatetime" type="java.sql.Timestamp">
+            <column name="updatetime" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

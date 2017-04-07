@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="AccountBookModify" extends="wirich">
+		<!--修改认申购-->
+		<action name="MutualFundBuyModifyAction" class="MutualFundBuyModifyAction" method="modifyValue">
+		</action> 
+		<!--修改赎回-->
+		<action name="MutualFundRedemptiontModifyAction" class="MutualFundRedemptiontModifyAction" method="modifyValue">
+		</action> 
+		<!--修改组合基金-->
+		<action name="GroupFundAccountBookModifyAction" class="GroupFundAccountBookModifyAction" method="updateGroupFundAccountBookInfo">
+		</action> 
+	</package>
+</struts>

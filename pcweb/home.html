@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-国内最简单快捷的智能理财平台</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <meta name="360-site-verification" content="432bf2b7c919f297282588e3dbc54490" />
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="style/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="common/common.css?t=20170308">
+    <link rel="stylesheet" href="style/header/header.css?t=20170308">
+    <link rel="stylesheet" href="style/footer/footer.css?t=20170308">
+    <link rel="stylesheet" href="style/login/login.css?t=20170308">
+    <link rel="stylesheet" href="style/home/home.css?t=20170308">
+    <link rel="stylesheet" href="style/home/intell-test.css?t=20170308">
+</head>
+<body>
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/home-banner/home_img1.jpg)">
+            <a class="carousel-lay home-intell-detail"></a>
+            <div class="home-intell">
+                <ul>
+                    <li>立即开始</li>
+                    <li>立即开始</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--<nav class="home-nav clearfix">-->
+    <!--<span class="home-logo"></span>-->
+    <!--<ul class="home-navbar clearfix">-->
+        <!--<li class="home-nav-item active"><a href="#">首页</a></li>-->
+        <!--<li class="home-nav-item"><a href="#">基金优选</a></li>-->
+        <!--<li class="home-nav-item"><a href="#">高端理财</a></li>-->
+        <!--<li class="home-nav-item"><a href="#">我的资产</a></li>-->
+    <!--</ul>-->
+    <!--<div class="home-reg">-->
+        <!--<span class="home-button home-login">登录</span>-->
+        <!--<span class="home-button home-register">注册</span>-->
+    <!--</div>-->
+<!--</nav>-->
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="home.html"><span class="select">首页</span></a>
+                <a id="short_f"><span>基金优选</span></a>
+                <a href="fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="fund/fundrecomm.html">精选基金</a>
+                    <a href="fund/fund_theme.html">主题基金</a>
+                    <a href="fund/fund_all.html">所有基金</a>
+                    <!--<a href="fund/chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+<div class="brand-image">
+    <ul>
+        <li>
+            <img src="images/home/icon1.png" alt="error">
+            <span>网上理财  操作省心</span>
+        </li>
+        <li>
+            <img src="images/home/icon2.png" alt="error">
+            <span>收益增倍  赚钱舒心</span>
+        </li>
+        <li>
+            <img src="images/home/icon3.png" alt="error">
+            <span>账户安全  使用放心</span>
+        </li>
+        <li>
+            <span class="home-money">累计管理资金 <strong></strong> 亿元 </span>
+            <span class="home-person">累计注册用户 <strong></strong> 万人</span>
+        </li>
+    </ul>
+</div>
+<div class="intelligent-configuration">
+    <h3 class="home-h3">智能投顾</h3>
+    <ul class="home-chart clearfix">
+        <li class="home-chart1">
+            <span class="home-chart1-num">13.00% ~ 15.00%</span>
+            <h4 style="font-size: 16px;margin: 20px auto;display: block;color: #999999;margin-bottom: 0;">明星组合预期年化收益</h4>
+            <div id="home-chart1-pie"></div>
+        </li>
+        <li class="home-chart2 intell-funddetail">
+            <span class="home-chart-head" id="groupname">明星组合推荐</span>
+            <ul>
+            </ul>
+        </li>
+        <li class="home-chart3">
+            <span class="home-chart-head">未来收益概率</span>
+            <div id="home-chart1-line"></div>
+        </li>
+    </ul>
+    <div class="home-risk">
+        <span style="font-size: 20px;">当前风险等级:<strong style="color: #ff9a00;font-weight: normal;margin: 0 6px 0 10px;" class="home-rank">1</strong>级</span>
+        <div class="home-bar">
+            <span class="home-risk-bar"></span>
+            <!-- -12~731-->
+            <span class="home-risk-btn"></span>
+            <!--<span style="position: absolute;left: 2px;top: 20px;font-size: 12px;">1</span>-->
+            <!--<span style="position: absolute;right: 2px;top: 20px;font-size: 12px;">10</span>-->
+            <img src="images/home/home-risk-tip.png" alt="error" class="home-risk-tip">
+        </div>
+        <span class="home-risk-test home-intell-test">我要测评 ></span>
+        <span class="home-button1 intell-detail">立即购买</span>
+    </div>
+</div>
+<div class="intell-test">
+    <h3>投资风险测评</h3>
+    <span class="intell-test-close"></span>
+    <ul class="intell-test-cont clearfix">
+        <li class="test-question">
+            <h4>1.您的年龄是？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="A" class="test-radio" checked="checked"></span>
+                    <label>小于32岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="B" class="test-radio"></span>
+                    <label>32~42岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="C" class="test-radio"></span>
+                    <label>42~54岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="D" class="test-radio"></span>
+                    <label>55岁以上</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>2.您预期投资额占年收入比例？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="A" class="test-radio" checked="checked"></span>
+                    <label>小于20%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="B" class="test-radio"></span>
+                    <label>20~50%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="C" class="test-radio"></span>
+                    <label>50~80%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="D" class="test-radio"></span>
+                    <label>80%以上</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>3.您预期投资期限是多久？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="A" class="test-radio" checked="checked"></span>
+                    <label>少于1年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="B" class="test-radio"></span>
+                    <label>1~2年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="C" class="test-radio"></span>
+                    <label>2~3年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="D" class="test-radio"></span>
+                    <label>3年以上</label>
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <ul class="intell-test-cont">
+        <li class="test-question">
+            <h4>4.您更倾向于哪种投资？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="A" class="test-radio" checked="checked"></span>
+                    <label>预期收益6%，最大损失0</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="B" class="test-radio"></span>
+                    <label>预期收益10%，最大损失3%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="C" class="test-radio"></span>
+                    <label>预期收益20%，最大损失8%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="D" class="test-radio"></span>
+                    <label>预期收益30%，最大损失14%</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>5.您投资理财的目的是？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="A" class="test-radio" checked="checked"></span>
+                    <label>未来教育医疗等的花销</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="B" class="test-radio"></span>
+                    <label>空闲资金管理</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="C" class="test-radio"></span>
+                    <label>增加可消费资金</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="D" class="test-radio"></span>
+                    <label>长期财富管理</label>
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <input type="button" value="立即提交" class="test-submit">
+</div>
+<div class="dipper">
+    <h3 class="home-h3">北斗七星</h3>
+    <div class="dipper-line clearfix">
+        <ul class="clearfix">
+            <li class="dipper-date" data-index="0">月度</li>
+            <li class="dipper-date" data-index="1">季度</li>
+            <li class="dipper-date" data-index="2">半年</li>
+            <li class="dipper-date" data-index="3">年度</li>
+            <li class="dipper-date active" data-index="6">全部</li>
+            <li class="dipper-line-title">策略涨幅<span class="dipper-increase"></span></li>
+            <li class="dipper-line-title">沪深300<span class="dipper-hs300"></span></li>
+        </ul>
+        <div id="dipper-chart-line"></div>
+        <div class="dipper-cont">
+            <h3>北斗七星 - 趋势型轮动策略</h3>
+            <h4>平均年化收益：<span id="celuo" style="font-size: 40px;color: #ff9900;"></span></h4>
+            <p>斗转星移，瞬息万变。本策略紧跟市场趋势，转换灵活，在积极把握主要行情的同时能够很好的适应震 荡市及熊市行情，以实现最大化收益。</p>
+            <span class="home-button1" onclick="window.location.href = mainUrl+'home/dipper.html';">立即购买</span>
+        </div>
+    </div>
+</div>
+<!--<div class="automatic-investment">-->
+    <!--<h3 class="home-h3">场景定投</h3>-->
+    <!--<ul class="automatic-investment-cont clearfix">-->
+        <!--<li class="clearfix">-->
+            <!--<div class="automatic-investment-img">-->
+                <!--<img src="images/home/home-back1.png" alt="error">-->
+                <!--<strong>15.00% ~ 18.00%</strong>-->
+                <!--<span>预期年化收益率</span>-->
+            <!--</div>-->
+            <!--<h5>梦想金起航</h5>-->
+            <!--<span class="automatic-investment-details">详情 ></span>-->
+            <!--<span class="automatic-investment-money">起投金额：<strong style="color: #ff9900;">380</strong>元</span>-->
+            <!--<strong style="font-size: 16px;color: #666;display: inline-block;float: left;font-weight: normal;">产品介绍：</strong>-->
+            <!--<p class="automatic-investment-product">专为年轻人打造的高收益梦想理财计划，适合短期内追求高收益的用户。</p>-->
+            <!--<span class="home-button2">开启定投</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+            <!--<div class="automatic-investment-img">-->
+                <!--<img src="images/home/home-back2.png" alt="error">-->
+                <!--<strong>12.00% ~ 13.00%</strong>-->
+                <!--<span>预期年化收益率</span>-->
+            <!--</div>-->
+            <!--<h5>梦想金起航</h5>-->
+            <!--<span class="automatic-investment-details">详情 ></span>-->
+            <!--<span class="automatic-investment-money">起投金额：<strong style="color: #ff9900;">380</strong>元</span>-->
+            <!--<strong style="font-size: 16px;color: #666;display: inline-block;float: left;font-weight: normal;">产品介绍：</strong>-->
+            <!--<p class="automatic-investment-product">高瞻远瞩，充盈的教育金库为孩子的梦想插上翅膀。</p>-->
+            <!--<span class="home-button2">开启定投</span>-->
+        <!--</li>-->
+        <!--<li class="clearfix">-->
+            <!--<div class="automatic-investment-img">-->
+                <!--<img src="images/home/home-back3.png" alt="error">-->
+                <!--<strong>11.00% ~ 13.00%</strong>-->
+                <!--<span>预期年化收益率</span>-->
+            <!--</div>-->
+            <!--<h5>梦想金起航</h5>-->
+            <!--<span class="automatic-investment-details">详情 ></span>-->
+            <!--<span class="automatic-investment-money">起投金额：<strong style="color: #ff9900;">100</strong>元</span>-->
+            <!--<strong style="font-size: 16px;color: #666;display: inline-block;float: left;font-weight: normal;">产品介绍：</strong>-->
+            <!--<p class="automatic-investment-product">未雨绸缪，老有所依，安全无忧，为退休后享受天伦之乐提前布局。</p>-->
+            <!--<span class="home-button2">开启定投</span>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+<!--<div class="create-wealth">
+    <h3 class="home-h3">创富宝</h3>
+    <ul class="clearfix">
+        <li class="product product0">
+        <h1>月月富</h1>
+        <p><span class="biaoqian">复利滚存</span><span class="biaoqian">一次性还本息</span></p>
+        <p class="obj">历史年化收益率</p>
+        <p class="data">4.50<span class="baifenbi">%</span> </p>
+        <p class="qitou">起投金额：<span>20万</span> 投资期限：<span>31天</span></p>
+        <button>立即预约</button>
+    </li>
+        <li class="product product0">
+            <h1>月月富</h1>
+            <p><span class="biaoqian">复利滚存</span><span class="biaoqian">一次性还本息</span></p>
+            <p class="obj">历史年化收益率</p>
+            <p class="data">4.50<span class="baifenbi">%</span> </p>
+            <p class="qitou">起投金额：<span>20万</span> 投资期限：<span>31天</span></p>
+            <button>立即预约</button>
+        </li>
+
+    </ul>
+</div>-->
+<div class="customer-evaluation clearfix">
+    <h3 class="home-h3">客户评价</h3>
+    <ul class="customer-evaluation-img clearfix">
+        <li>
+            <img src="images/home/person11.png" alt="error">
+            <div class="customer-evaluation-layer">
+                <div style="height: 100%;padding-top: 0;box-sizing: border-box;">
+                    <!--<h4 style="font-size: 24px;font-weight: bold;color: #fff;">我推荐理财易站</h4>-->
+                    <p style="font-size: 14px;color: #fff;margin-top: 10px;">理财易站 推荐产品收益好<br />公司短期理财好选择<br />投资顾问服务到位</p>
+                </div>
+            </div>
+            <div class="layer"></div>
+        </li>
+        <li>
+            <img src="images/home/person22.png" alt="error">
+            <div class="customer-evaluation-layer">
+                <div  style="height: 100%;padding-top: 0;box-sizing: border-box;">
+                    <!--<h4 style="font-size: 24px;font-weight: bold;color: #fff;">我推荐理财易站</h4>-->
+                    <p style="font-size: 14px;color: #fff;margin-top: 10px;">理财易站 资金安全有保障 <br />推荐基金收益高<br /> 省心、安全、放心</p>
+                </div>
+            </div>
+            <div class="layer"></div>
+        </li>
+        <li>
+            <img src="images/home/person33.png" alt="error">
+            <div class="customer-evaluation-layer">
+                <div  style="height: 100%;padding-top: 0;box-sizing: border-box;">
+                    <!--<h4 style="font-size: 24px;font-weight: bold;color: #fff;">我推荐理财易站</h4>-->
+                    <p style="font-size: 14px;color: #fff;margin-top: 10px;">理财易站<br />让理财更容易<br />让资产更有收益</p>
+                </div>
+            </div>
+            <div class="layer"></div>
+        </li>
+        <li>
+            <img src="images/home/person44.png" alt="error">
+            <div class="customer-evaluation-layer">
+                <div  style="height: 100%;padding-top: 0;box-sizing: border-box;">
+                    <!--<h4 style="font-size: 24px;font-weight: bold;color: #fff;">我推荐理财易站</h4>-->
+                    <p style="font-size: 14px;color: #fff;margin-top: 10px;">为企业现金管理和个人财富增值<br />量身定制的理财网站<br />专业、值得信赖</p>
+                </div>
+            </div>
+            <div class="layer"></div>
+        </li>
+    </ul>
+    <ul class="customer-evaluation-img1 clearfix">
+        <li>
+            <div style="padding-top: 17px;">
+                <h5 style="font-size: 18px;color: #333333;margin-bottom: 0;margin-top:0;text-align: center;">缪品章</h5>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">富春通信公司（股票代码300299）</p>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">董事长</p>
+            </div>
+        </li>
+        <li>
+            <div style="padding-top: 17px;">
+                <h5 style="font-size: 18px;color: #333333;margin-bottom: 0;margin-top:0;text-align: center;">杨振宇</h5>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">荣获“中国室内设计卓越成就奖”</p>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">中国中轻国际工程有限公司 室内设计师</p>
+            </div>
+        </li>
+        <li>
+
+            <div style="padding-top: 17px;">
+                <h5 style="font-size: 18px;color: #333333;margin-bottom:0;margin-top:0;text-align: center;">黄辉</h5>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">人人公司（股票代码：RENN）</p>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">董事Board Director及前CFO首席财务官</p>
+            </div>
+
+        </li>
+        <li>
+            <div style="padding-top: 17px;">
+                <h5 style="font-size: 18px;color: #333333;margin-bottom:0;margin-top:0;text-align: center;">王辉</h5>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">大唐辉煌影业投资公司</p>
+                <p style="font-size: 14px;color: #666666;margin-top: 10px;text-align: center;">董事长</p>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="home-news">
+    <h3 class="home-h3">新闻资讯</h3>
+    <ul class="automatic-investment-cont clearfix">
+        <li class="clearfix">
+            <div class="automatic-investment-img">
+                <img src="images/home/home-back4.png" alt="error">
+            </div>
+            <h5>投资观点</h5>
+            <span class="automatic-investment-details" data-news="1">更多 ></span>
+            <div class="home-news-cont home-news-point">
+                <!--<p data-id=""></p>-->
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="automatic-investment-img">
+                <img src="images/home/home-back5.png" alt="error">
+            </div>
+            <h5>最新资讯</h5>
+            <span class="automatic-investment-details" data-news="2">更多 ></span>
+            <div class="home-news-cont home-news-new">
+                <!--<p data-id=""></p>-->
+            </div>
+        </li>
+        <li class="clearfix">
+            <div class="automatic-investment-img">
+                <img src="images/home/home-back6.png" alt="error">
+            </div>
+            <h5>媒体报道</h5>
+            <span class="automatic-investment-details" data-news="3">更多 ></span>
+            <div class="home-news-cont home-news-media">
+                <!--<p data-id=""></p>-->
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="home-interval"></div>
+<div class="home-partner">
+    <h3 class="home-h3">合作伙伴</h3>
+    <img src="images/home/home-partner.png" alt="error" style="margin: 45px auto;display: block;width: 1200px;">
+</div>
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="aboutus/about.html#1">公司介绍</a>
+                        <a href="aboutus/about.html#1">产品与服务</a>
+                        <a href="aboutus/about.html#3">资质荣誉</a>
+                        <a href="aboutus/about.html#4">核心团队</a>
+                        <a href="aboutus/about.html#5">合作伙伴</a>
+                        <a href="aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="anquan/anquan.html#1">交易安全</a>
+                        <a href="anquan/anquan.html#2">信息安全</a>
+                        <a href="anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+<script src="js/jquery.js?t=20170308"></script>
+<script src="js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="js/Plug-in/bootstrap.min.js?t=20170308"></script>
+<script src="common/common.js?t=20170308"></script>
+<script src="js/Plug-in/highcharts.js?t=20170308"></script>
+<script src="js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="js/home/carousel.js?t=20170308"></script>
+<!--<script src="js/Plug-in/exporting.js"></script>-->
+<script src="js/home/intell.js?t=20170308"></script>
+<script src="js/home/createWealth.js?t=20170308"></script>
+<script src="js/home/dipper.js?t=20170308"></script>
+<script src="js/home/new.js?t=20170308"></script>
+<script src="js/home/side.js?t=20170308"></script>
+</html>

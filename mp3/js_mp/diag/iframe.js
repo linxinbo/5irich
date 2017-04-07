@@ -1,0 +1,5 @@
+/**
+ * Created by CJQF on 2016/10/13.
+ */
+!function(){function p(a){return decodeURIComponent(a)}function h(a){return encodeURIComponent(a)}function y(){j(1)}var g=document.getElementById("qqfn-xdh"),k={ifrm:"http://finance.qq.com/xdh/xdh-iframe-1.htm",auto:"yes"},w=g&&g.src.match(/#(.+)$/);if(w=w&&w[1]&&w[1].split("&")){for(var q=0;q<w.length;q++){var v=w[q].split("=");k[p(v[0])]=p(v[1])}}if(!window.postMessage){var b=k.ifrm+(k.ifrm.indexOf("#")<0?"#":"&"),l=document.createElement("iframe");l.style.display="none",document.body.appendChild(l)}var z={},x=window.QQFinance_SetOpt=function(d){var c=[],f=!1;for(var a in d){d[a]!=z[a]&&(z[a]=d[a],f=!0),c.push(h(a)+"="+h(d[a]))}f&&(l?l.src=b+c.join("&"):parent.postMessage(c.join("&"),"*"))},j=window.QQFinance_SetHeight=function(c){if(c){k.auto="no"}else{var d=document.body,a=document.documentElement;c=Math.max(a.scrollHeight,d.offsetHeight,a.offsetHeight,d.clientHeight)}x({h:c})};window.addEventListener?window.addEventListener("unload",y,!1):window.attachEvent("onunload",y),setInterval(function(){"yes"==k.auto&&j()},100)}();
+/*  |xGv00|b242e9d667645228fe8bbe03716cb984 */

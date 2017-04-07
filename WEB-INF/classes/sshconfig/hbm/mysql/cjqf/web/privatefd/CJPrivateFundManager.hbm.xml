@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.privated.CjqfWebPrivatedFundManagerBean" table="cjqfweb_private_fund_manager">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="ID" />
+		</id>
+		<!--  基金代码   -->
+		<property name="fInfoWindcode" type="java.lang.String">
+			<column name="FUND_ID" />
+		</property>
+		<!--  公告日期  -->
+		<property name="annDate" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		<!--  姓名  -->
+		<property name="fInfoFundmanager" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<!--  性别  -->
+		<property name="fInfoManagerGender" type="java.lang.String">
+			<column name="SEX" />
+		</property>
+		<!--  出身年份  -->
+		<property name="fInfoManagerBirthyear" type="java.lang.String">
+			<column name="BIRTH_YEAR" />
+		</property>
+		<!--  学历-->
+		<property name="fInfoManagerEducation" type="java.lang.String">
+			<column name="EDUCATION" />
+		</property>
+		<!-- 国籍  -->
+		<property name="fInfoManagerNationality" type="java.lang.String">
+			<column name="NATIONALITY" />
+		</property>
+		<!--  任职日期  -->
+		<property name="fInfoMangaerStartdate" type="java.lang.String">
+			<column name="OFFICE_DATE" />
+		</property>
+		<!--  离职日期 -->
+		<property name="fInfoMangaerLeavedate" type="java.lang.String">
+			<column name="LEAVE_DATE" />
+		</property>
+		<!--   简介  -->
+		<property name="fInfoManagerResume" type="java.lang.String">
+			<column name="SUMMARY" />
+		</property>
+		<!--经理id  -->
+		<property name="fInfoFundmanagerId" type="java.lang.String">
+			<column name="MANAGER_ID" />
+		</property>
+		<!--任期回报率 -->
+		<property name="gracet" type="java.lang.String">
+			<column name="GRACET" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="UPDATE_TIME" />
+		</property>
+	</class>
+</hibernate-mapping>

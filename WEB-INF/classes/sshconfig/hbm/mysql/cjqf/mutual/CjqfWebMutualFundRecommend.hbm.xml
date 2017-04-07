@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.mutual.CjqfWebMutualFundRecommendBean" table="cjqfweb_mutual_fund_recommend">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		<!-- Wind代码 -->
+		<property name="fundId" type="java.lang.String">
+			<column name="fund_id" />
+		</property>
+		<!-- 基金名称 -->
+		<property name="fundName" type="java.lang.String">
+			<column name="fund_name" />
+		</property>
+		<!-- 是否首页显示 -->
+		<property name="showFlat" type="java.lang.Integer">
+			<column name="show_flat" />
+		</property>
+		<!-- 首页推荐排序 -->
+		<property name="showOrder" type="java.lang.Integer">
+			<column name="show_order" />
+		</property>
+		<!--  推荐理由-->
+		<property name="recommendReason" type="java.lang.String">
+			<column name="recommend_reason" />
+		</property>
+		<!-- 类型 -->
+		<property name="type" type="java.lang.String">
+			<column name="fund_type" />
+		</property>
+		<!-- 分组 -->
+		<property name="fundGroup" type="java.lang.Integer">
+			<column name="fund_group" />
+		</property>
+		<!-- 安全系数 -->
+		<property name="fundStdev" type="java.lang.Integer">
+			<column name="fund_stdev" />
+		</property>
+		<!-- 收益系数 -->
+		<property name="fundRet" type="java.lang.Integer">
+			<column name="fund_ret" />
+		</property>
+		<!--  基金经理ID-->
+		<property name="fundManagerId" type="java.lang.String">
+			<column name="fund_managerid" />
+		</property>
+		<!--  基金经理-->
+		<property name="fundManager" type="java.lang.String">
+			<column name="fund_manager" />
+		</property>
+		<!--  适合人群-->
+		<property name="fundPersional" type="java.lang.String">
+			<column name="fund_persional" />
+		</property>
+		<!-- 推荐排序 -->
+		<property name="recommendOrder" type="java.lang.Integer">
+			<column name="recommend_order" />
+		</property>
+		<!-- 更新时间 
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>-->
+		<!-- 更新时间 -->
+		<property name="theDefaultDisplay" type="java.lang.String">
+			<column name="the_default_display" />
+		</property>
+		<!-- 精品基金类型 -->
+		<property name="fundTypeGoods" type="java.lang.String">
+			<column name="fund_type_goods" />
+		</property>
+	</class>
+</hibernate-mapping>

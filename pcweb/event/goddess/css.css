@@ -1,0 +1,29 @@
+.goddess_banner{width:100%;min-width: 1200px;height: 591px;margin:0 auto;background: url(images/goddess_pc.jpg) no-repeat center center;position: relative;overflow: hidden;}
+.goddess_content{width:100%;min-width: 1200px;background: url(images/goddess_bg.jpg) repeat-y top center;background-size:100% auto;position: relative;overflow: hidden; }
+.goddess_lanmu{width: 1200px;margin: 0 auto;overflow: hidden;}
+.goddess_title img{display: block;width: 100%;height: auto;}
+.goddess_bg{background: url(images/god_bg.png) repeat-y top center;position: relative;overflow: hidden;padding: 20px 40px;}
+.goddess_bg span{font-size: 20px;line-height: 38px;color: #333333;}
+.gray{
+    width: 1200px;
+    margin:40px auto 0 auto;
+    background: rgba(0,0,0,0.5);
+    /*border:solid 1px rgba(96,96,96,0.5);*/
+    border-radius:0.6em;
+    color:#fff;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+}
+.tiaofu{width:100%;min-width: 1200px;height: 361px;margin:0 auto;background: url(images/tiaofu.png) no-repeat center center;position: relative;overflow: hidden;}
+.product{width: 1200px;margin: 0 auto;overflow: hidden;}
+.kk_bg{background: url(images/kk_bg.png) repeat-y top center;position: relative;overflow: hidden;padding: 0px 40px;}
+.pro{float: left;width: 50%;padding-right: 40px;padding-bottom: 40px;position: relative;}
+.pro img{float: left;width: 252px;margin-left: 10px;}
+.des{margin-left: 275px;}
+.des h2{font-size: 30px;line-height: 38px;color: #333;font-weight: bold;}
+.des a{font-size: 22px;line-height: 38px;color: #333;}
+.des a span{color: #ef5374;}
+.rightline{border-right: 2px dashed #fad8c0;}
+.bottomline{border-bottom: 2px dashed #fad8c0;}

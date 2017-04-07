@@ -1,0 +1,4 @@
+.fuguo_header{overflow: hidden;position: relative;}
+.fuguo_header img{display: block;width: 100%;height: auto;}
+.fuguo_btn{padding: 0 1em;overflow: hidden;position: relative;background-color: #fff;}
+.btnfuguo{background-color: #28a7e1;padding: 1em;display: block;font-size: 1.12em;color: #fff;border-radius: 8px;text-align: center;}

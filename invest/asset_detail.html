@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-资产详情</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="images/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="images/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="images/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="style/header.css?t=20170308">
+
+    <link rel="stylesheet" href="style/comm.css?t=20170308">
+    <link rel="stylesheet" href="style/asset_detail.css?t=20170308">
+</head>
+<body>
+<div class="adeheader">
+    <div class="adeobj">
+        <a class="header_top_t" href="javascript:window.location.href='my.html';"><i class="header_back"></i></a>
+    </div>
+    <div class="adeobj">
+        <div class="adeword"></div>
+        <!--<i>详情</i>-->
+    </div>
+    <ul class="adedis">
+        <li class="adeyester">
+            <span>0.00</span>
+            <br>
+            日收益 <i></i>
+        </li>
+        <li class="adecurr">
+            <span>0.00</span>
+            <br>
+            当前持仓
+        </li>
+        <li class="adetotal">
+            <span>0.00</span>
+            <br>
+            累计收益
+        </li>
+    </ul>
+</div>
+<div class="chiyou">
+    <p class="chiyouword">持有情况</p>
+    <ul class="ademeg" style="margin-bottom: 1em;">
+        <li id="chiyouli1">
+            <div class="ademegdivl">
+                <span class="adespl">最新净值</span>
+                <span  class="adespr">0.00</span>
+            </div>
+            <div class="ademegdivr">
+                <span class="adespl">持有份额</span>
+                <span class="adespr">0.00</span>
+            </div>
+        </li>
+        <li id="chiyouli2">
+            <div class="ademegdivl">
+                <span class="adespl">成本(元)</span>
+                <span  class="adespr">0.00</span>
+            </div>
+            <div class="ademegdivr">
+                <span class="adespl">累计收益(元)</span>
+                <span  class="adespr">0.00</span>
+            </div>
+        </li>
+        <li id="chiyouli3">
+            <div class="ademegdivl">
+                <span class="adespl">参考市值(元)</span>
+                <span  class="adespr">0.00</span>
+            </div>
+            <div class="ademegdivr">
+                <span class="adespl">累计收益率</span>
+                <span  class="adespr">0.00</span>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="adechange" style="margin-bottom: 5em;">
+    <ul class="adechnav">
+        <li id="btn1"><span style="border-bottom:solid 2px #ff9900;color:#ff9900">交易记录</span></li>
+        <li id="btn2"><span>每日收益</span></li>
+    </ul>
+    <div class="adejilu">
+        <!--<div class="adejilubox">-->
+        <!--<p class="jiludate">-->
+        <!--<span style="font-size:1em;">2016.09.20</span>-->
+        <!--<br>-->
+        <!--&lt;!&ndash;<span style="font-size:0.9em;color:#999;">17:40:23</span>&ndash;&gt;-->
+        <!--</p>-->
+        <!--<ul class="jilumeg">-->
+        <!--<li>易方达信用债债券</li>-->
+        <!--<li>8000.00<span style="font-size:0.7em;color:#666;">元</span></li>-->
+        <!--<li class="jiluli">-->
+        <!--<div class="leixing">交易类型：<span>申购</span></div>-->
+        <!--<div class="zhuangtai">交易状态：<span>成功</span></div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--<ul class="meiri">-->
+        <!--<li><p class="mrpl">20160917</p><p class="mrpr color1">+120.00</p></li>-->
+        <!--<li><p class="mrpl">20160917</p><p class="mrpr color2">-120.00</p></li>-->
+        <!--</ul>-->
+    </div>
+
+</div>
+
+<div class="adeover" >
+    <ul class="overul">
+        <!--<li class="overli1" style="border-right:1px solid  #edf0f4;">定投</li>-->
+        <li class="overli2" style="border-right:1px solid  #edf0f4;">赎回</li>
+        <!--<li class="overli3" style="color:#ff9900;">追加购买</li>-->
+    </ul>
+</div>
+
+</body>
+<script src="js/jquery.min.js?t=20170308"></script>
+<script src="js/jquery.cookie.js?t=20170308"></script>
+<script src="js/common.js?t=20170308"></script>
+<!--<script src="../js_mp/fund/buy_funds.js"></script>-->
+<script src="js/newback_funds.js?t=20170308"></script>
+<script src="js/asset_detail.js?t=20170308"></script>
+</html>

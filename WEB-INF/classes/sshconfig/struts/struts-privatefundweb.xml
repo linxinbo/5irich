@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="privatefundweb" extends="wirich">
+		<!--私募基金列表-->
+		<action name="PrivateFundListWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateList">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+		<!--私募基金详情页-->
+		<action name="PrivateFundDetailWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateDetial">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--私募基金档案-->
+		<action name="PrivateFundArchivesWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateArchives">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+		<!--私募基金经理-->
+		<action name="PrivateFundeManagerWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateManager">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+		<!--私募基金管理人-->
+		<action name="PrivateFundeAdminWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateAdmin">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+		<!--私募基金历史净值-->
+		<action name="PrivateFundeHistoryNVWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateHistoryNV">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--私募基金历史净值-->
+		<action name="PrivateFundeChartWebAction" class="PrivateFundListWebAction" method="WebQueryPrivateChart">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+	</package>
+</struts>

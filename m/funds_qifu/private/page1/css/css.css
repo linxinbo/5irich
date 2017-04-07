@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,ul,li,h1,h2,h3,h4,h5,p,session{ margin:0px; padding:0px; list-style-type:none; font-family:'microsoft yahei','微软雅黑';}
+body,html{ margin:0 auto; max-width:720px;}
+img{ border:none; max-width:100%}
+.clear{ clear:both;}
+a{text-decoration:none;outline:none; color:#000}
+
+.img100{ width:100%;}
+.img94{ width:94%; display:block; margin:auto}
+.img1{ margin-top:6%; margin-bottom:4%;}
+.title1{ margin-bottom:6%;}
+.img3{ margin-top:6%; margin-bottom:7%;}
+.span1{ font-size:1.2em; display:block; padding-top:4%; padding-bottom:2%; padding-left:2%; color:#003b8c}
+.xxt{ display:block; width:96%; padding:2%; background:#e8e8e8}
+.title4{ padding-top:8%;}
+.title5{ margin-bottom:3%}
+h1{ display:block; margin:0 auto; margin-top:5%; color:#003b8c; text-align:center; padding-bottom:2%; font-size:1.5em}
+.divcon2 img{ float:left; width:22%; margin:3%; margin-top:5%}
+.divcon2 .rightcon{ float:left; width:69%; font-size:1.2em; line-height:1.5em; color:#003b8c; margin-top:5%;}
+.divcon2 .rightcon .pbg{ background:#e8e8e8; padding:2%;}
+.divcon2 .rightcon p{ margin-top:2%}
+.divcon2 .rightcon .mnone{ margin-top:0;}
+.divcon3{  width:92%; margin:2% auto;font-size:1.2em; line-height:1.5em;color:#003b8c; padding:2%}
+.divcon3 .conleft{ float:left; width:34%; font-weight:bold;line-height:1.5em; padding-left:1% }
+.divcon3 .conright{ float:left; width:65%;}
+.divcon3bg{ background:#e8e8e8; }
+.pbot{ font-size:1.2em; color:#595757; line-height:1.5em; width:94%; margin:3% auto;}
+.pbot span{ color:#c7000b}
+.yybtn{ bottom: 0; color: #fff; height: 43px; position: fixed; width: 100%;}

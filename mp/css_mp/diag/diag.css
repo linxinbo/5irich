@@ -1,0 +1,56 @@
+.diag{position: relative;}
+.diag_title{padding:1em;}
+.diag_title span{font-size: 1.28em;color: #999999;}
+.diag_form{}
+.diag_form ul{position: relative;width: 100%;background-color: #ffffff;padding: 0 1em;}
+.diag_form ul li{position: relative;overflow: hidden;padding: 1.2em 0;}
+.diag_form ul li span{font-size: 1.28em;}
+.diag_form ul li input{font-size: 1.28em;margin-left: 0.5em;background-color: transparent;border: 0;width: 70%;}
+.diag_pd{padding: 1em;}
+.diag_btn{background-color: #fff;color: #ff9900;font-size: 1.4em;border-radius: 8px;padding: 8px 12px;}
+.bottom_line{border-bottom: 1px solid #cccccc;}
+.diag_delete{position: absolute;width: 1.5em;height: 1.5em;top:50%;margin-top: -0.75em;right: 1em;}
+.diag_form1{}
+.diag_form1 ul{position: relative;width: 100%;background-color: #ffffff;padding: 0 1em;}
+.diag_form1 ul li{position: relative;overflow: hidden;padding: 1.2em 0;}
+.diag_title1{}
+.diag_title1 i{color: #666666;margin-left: 5px;}
+.diag_title1 span{font-size: 1.4em;color: #333333;}
+.diag_title2{display:block;font-size: 1.28em;color: #999999;margin-top: 0.5em;}
+.diag_btn1{background-color: #ff9900;color: #ffffff;font-size: 1.4em;border-radius: 8px;padding: 8px 12px;}
+.diag_btn2{background-color: #ffffff;color: #ff9900;font-size: 1.4em;border-radius: 8px;padding: 8px 12px;}
+
+
+.diag_result{position: relative;margin-top: 1em;background-color: #ffffff;}
+.diag_title3{padding:1em;text-align: center;}
+.diag_title3 span{font-size: 1.8em;color: #333333;}
+.diag_pd1{display:block;padding: 1em;font-size:1.12em;line-height: 1.8em;color: #999999;}
+.grade{position: relative;}
+.diag_grade1{margin: 0 auto;width: 50%;height: auto;}
+.diag_grade2{margin: 0 auto;width: 90%;height: auto;}
+.diag_grade1_span{display: block;width:100%;text-align:center;font-size: 4em;color: #00cccc;top:30%;position: absolute;}
+.diag_grade1_span1{font-size:1.28em;color: #3C7AE0;}
+.diag_grade1_span2{font-size:1.28em;color: #3C7AE0;}
+.diag_grade1_span3{font-size:1.28em;color: #3C7AE0;}
+
+.diag_title_bg{position: relative;overflow: hidden;background: url(../../images_mp/diag/diag_title_bg.png) no-repeat center;
+    background-size: 100% auto;}
+.header_top_b {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -0.56em;
+    font-size: 1.12em;
+    display: block;
+    color: #fff;
+}
+.header_top_c{
+    display: block;
+    padding: 0 1em 1em 1em;
+    background: url(../../images_mp/diag/diag_title_bg.png) no-repeat center -4em;
+    background-size: 100% auto;
+    line-height: 1.6em;
+}
+.header_top_c span{
+    color: #fff;
+}
