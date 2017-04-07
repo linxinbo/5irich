@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="outjson" extends="wirich">		
+		<!-- 输出公募基金列表json -->
+		<action name="MutualFundListManacheAction" class="MutualFundListManacheAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基金列表json-简单差 -->
+		<action name="MutualFundListManacheEasyAction" class="MutualFundListManacheAction" method="OutJsonEasy">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基金列表查询json -->
+		<action name="MutualFundListManacheQueryAction" class="MutualFundListManacheQueryAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基金列表模糊查询json -->
+		<action name="MutualFundListManacheFuzzyQueryAction" class="MutualFundListManacheFuzzyQueryAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基金详情页json -->
+		<action name="MutualFundDetailManacheAction" class="MutualFundDetailManacheAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基金净值，增长率json -->
+		<action name="MutualFundNAVManacheAction" class="MutualFundNAVManacheAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 输出公募基图表json -->
+		<action name="MutualFundChartManacheAction" class="MutualFundChartManacheAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		</package>
+</struts>

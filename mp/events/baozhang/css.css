@@ -1,0 +1,17 @@
+body{font-family: 'Microsoft Yahei', '微软雅黑';}
+.bz_header{height: 4.000em;background-color: #fff;background-size: auto 4.000em;position: relative;}
+.bz_fanhui_icon{display: block;width: 1.200em;height: 1.360em;background: url(../../images_mp/as_fanhui1.png) no-repeat center;background-size: 1.200em 1.360em;}
+.head_title_bz{font-size: 1.4em;color: #000000;}
+.bz_banner{position: relative;overflow: hidden;}
+.bz_banner img{display: block;width: 100%;height: auto;}
+.bz_content{background: url(images/bz_bg.jpg) repeat-y;background-size:100% auto;overflow: hidden;padding: 0 2em;}
+.bz_01{margin-top: 10px;}
+.bz_01tu{width: 44px;height: 44px;margin: 0 auto;}
+.bz_endtu{width: 60%;height: auto;margin: 0 auto;}
+.bz_font{font-size: 18px;color: #349ef2;text-align: center;padding: 10px 0;font-weight: bold;}
+.bz_font1{font-size: 14px;color: #349ef2;text-align: center;line-height: 24px;text-align: center;display: block;}
+.bz_tu{display: block;width: 80%;height: auto;margin: 10px auto;}
+.bz_tu1{display: block;width: 50%;height: auto;margin: 10px auto;}
+.bz_font2{font-size: 16px;color: #349ef2;text-align: left;padding: 10px 0;}
+.bz_end{position: relative;overflow: hidden;}
+.bz_end img{display: block;width: 100%;height: auto;}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.mutual.CjqfWebMutualFundMainBean" table="cjqfweb_mutual_fund_main">
+		<!-- 主键Id -->
+		<id name="fundFode" type="java.lang.String">
+			<column name="fund_code" />
+			<generator class="increment" />
+		</id>
+		
+	
+		<!-- 基金简称  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  基金全称 -->
+		<property name="fullName" type="java.lang.String">
+			<column name="full_name" />
+		</property>
+		<!--  成立日期  -->
+		<property name="setupDate" type="java.lang.String">
+			<column name="setup_date" />
+		</property>
+		<!-- 基金公司(管理人)  -->
+		<property name="company" type="java.lang.String">
+			<column name="company" />
+		</property>
+		<!--   基金类型 -->
+		<property name="fundTYype" type="java.lang.String">
+			<column name="fund_type" />
+		</property>
+		<!-- 托管银行  -->
+		<property name="custodianBank" type="java.lang.String">
+			<column name="custodian_bank" />
+		</property>
+		<!-- 单笔赎回份额下限(份)  -->
+		<property name="minReturnAmount" type="java.math.BigDecimal">
+			<column name="min_return_amount" />
+		</property>
+		<!-- 每次最低申购金额(万元)  -->
+		<property name="minBuyAmount" type="java.math.BigDecimal">
+			<column name="min_buy_amount" />
+		</property>
+		<!-- 基金总份额  -->
+		<property name="fundUnitTotal" type="java.math.BigDecimal">
+			<column name="fund_unit_total" />
+		</property>
+		<!-- 资产净值(元)  -->
+		<property name="netasset" type="java.math.BigDecimal">
+			<column name="netasset" />
+		</property>
+		<!--  管理费 -->
+		<property name="managementfeeratio" type="java.math.BigDecimal">
+			<column name="managementfeeratio" />
+		</property>
+		<!-- 托管费率  -->
+		<property name="custfeeratio" type="java.math.BigDecimal">
+			<column name="custfeeratio" />
+		</property>
+		<!--  销售费率(%) -->
+		<property name="primeRates" type="java.math.BigDecimal">
+			<column name="prime_rates" />
+		</property>
+		<!--  星级 -->
+		<property name="starlevel" type="java.math.BigDecimal">
+			<column name="starlevel" />
+		</property>
+		<!-- 评级机构  -->
+		<property name="ratingGagency" type="java.lang.String">
+			<column name="rating_gagency" />
+		</property>
+		<!--  评级日期（月份） -->
+		<property name="rptdate" type="java.lang.String">
+			<column name="rptdate" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createDate" type="java.lang.String">
+			<column name="create_time" />
+		</property>
+		<!-- 更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+	
+	</class>
+</hibernate-mapping>

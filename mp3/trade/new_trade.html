@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-交易中心</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/new_trade/new_trade.css?t=20170308">
+</head>
+<body>
+    <div>
+        <!--头部开始-->
+        <header class="nt_head">
+            <ul class="clearfix">                
+                <li><span class="nt_query nt_queryC nt_ac">确认查询</span></li>
+                <li><span class="nt_query nt_queryB">在途查询</span></li>                
+                <li><span class="nt_query nt_queryD">撤单管理</span></li>
+                <li><span class="nt_query nt_queryA">申请查询</span></li>
+            </ul>
+        </header>
+        <div class="nt_nav">
+            <ul class="clearfix">
+                <li>
+                        <span class="nt_navCon nt_class nt_navup">交易类型</span>
+                        <div style="display: none;" id="nt_class" class="nt_navCont">
+                            <ul class="clearfix">
+                                <li class="nt_sure nt_sureA">全部</li>
+                                <li class="nt_sureB">认购</li>
+                                <li class="nt_sureC">申购</li>
+                                <li class="nt_sureD">赎回</li>
+                                <li class="nt_sureE">转换</li>
+                            </ul>
+                        </div>
+                </li>
+                <li>
+                    <span class="nt_navCon nt_time nt_navup">交易时间</span>
+                    <div style="display: none;" id="nt_time" class="nt_navCont">
+                        <ul class="clearfix">
+                            <li class="nt_sure nt_sure1">1个月</li>
+                            <li class="nt_sure2">3个月</li>
+                            <li class="nt_sure3">6个月</li>
+                            <li class="nt_sure4">1年</li>
+                            <li class="nt_sure5">3年</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--头部结束-->
+        <!--内容开始-->
+        <div class="nt_content">
+            <div class="nt_noData" style="display: none;">
+                <img src="../images_mp/my_assets/no_data.png" alt="">
+                <h3>您暂时没有<span class="nt_nodataTip">默认</span>记录 <br /><span class="nt_nodataTip1">请您指定时间，交易类型进行查询</span></h3>
+            </div>
+            <ul class="nt_conSet">
+                <!--<li>-->
+                    <!--<div class="nt_conT clearfix">-->
+                        <!--<h3>易方达信用债债券A&nbsp<span>000032</span></h3>-->
+                        <!--<p>申请日期：<span>2016-09-05</span></p>-->
+                    <!--</div>-->
+                    <!--<div class="nt_conB">-->
+                        <!--<ul class="clearfix">-->
+                            <!--<li class="nt_applyC"><span>1,000</span><br />申请份额</li>-->
+                            <!--<li class="nt_applyM"><span>1,000,000,000.00</span><br />申请金额</li>-->
+                            <!--<li class="nt_applyS"><span>成功</span><br />处理状态</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/bootstrap.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/home.js?t=20170308"></script>
+<script src="../js_mp/new_trade/new_trade.js?t=20170308"></script>
+</html>

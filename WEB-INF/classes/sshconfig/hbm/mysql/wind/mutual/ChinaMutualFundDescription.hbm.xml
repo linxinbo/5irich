@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMutualFundDescriptionBean" table="ChinaMutualFundDescription">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  Wind 代码 -->
+		<property name="fInfoWindcode" type="java.lang.String">
+			<column name="F_INFO_WINDCODE" />
+		</property>
+		<!--拼音名称 -->
+		<property name="fInfoPinYin" type="java.lang.String">
+			<column name="F_INFO_PINYIN" />
+		</property>
+		<!--  前端代码  -->
+		<property name="fInfoFrontCode" type="java.lang.String">
+			<column name="F_INFO_FRONT_CODE" />
+		</property>
+		<!--  后端代码 -->
+		<property name="fInfoBackendCode" type="java.lang.String">
+			<column name="F_INFO_BACKEND_CODE" />
+		</property>
+		<!--  名称	  -->
+		<property name="fInfoFullname" type="java.lang.String">
+			<column name="F_INFO_FULLNAME" />
+		</property>
+		<!--  简称	  -->
+		<property name="fInfoName" type="java.lang.String">
+			<column name="F_INFO_NAME" />
+		</property>
+		<!--  管理人	 -->
+		<property name="fInfoCorpFundmanagementcomp" type="java.lang.String">
+			<column name="F_INFO_CORP_FUNDMANAGEMENTCOMP" />
+		</property>
+		<!--  托管人	  -->
+		<property name="fInfoCustodianbank" type="java.lang.String">
+			<column name="F_INFO_CUSTODIANBANK" />
+		</property>
+		<!--  投资类型  -->
+		<property name="fInfoFirstinvesttype" type="java.lang.String">
+			<column name="F_INFO_FIRSTINVESTTYPE" />
+		</property>
+		<!--  成立日期 -->
+		<property name="fInfoSetupdate" type="java.lang.String">
+			<column name="F_INFO_SETUPDATE" />
+		</property>
+		<!--  到期日期-->
+		<property name="fInfoMaturitydate" type="java.lang.String">
+			<column name="F_INFO_MATURITYDATE" />
+		</property>
+		<!--  发行份额	单位:亿份 -->
+		<property name="fIssueTotalunit" type="java.math.BigDecimal">
+			<column name="F_ISSUE_TOTALUNIT" />
+		</property>
+		<!-- 管理费 -->
+		<property name="fInfoManagementfeeratio" type="java.math.BigDecimal">
+			<column name="F_INFO_MANAGEMENTFEERATIO" />
+		</property>
+		<!-- 托管费-->
+		<property name="fInfoCustodianfeeratio" type="java.math.BigDecimal">
+			<column name="F_INFO_CUSTODIANFEERATIO" />
+		</property>
+		<!-- 货币代码 -->
+		<property name="crnyCode" type="java.lang.String">
+			<column name="CRNY_CODE" />
+		</property>
+		
+		
+		
+		
+		<!-- 存续期  -->
+		<property name="fInfoPtmyear" type="java.math.BigDecimal">
+			<column name="F_INFO_PTMYEAR" />
+		</property>
+		<!-- 推广起始日期 -->
+		<property name="fIssueOefStartdateinst" type="java.lang.String">
+			<column name="F_ISSUE_OEF_STARTDATEINST" />
+		</property>
+		<!-- 推广截止日期  -->
+		<property name="fIssueOefDnddateinst" type="java.lang.String">
+			<column name="F_ISSUE_OEF_DNDDATEINST" />
+		</property>
+		<!-- 面值	   -->
+		<property name="fInfoParvalue" type="java.math.BigDecimal">
+			<column name="F_INFO_PARVALUE" />
+		</property>
+		<!--  信托类别  -->
+		<property name="fInfoTrusttype" type="java.lang.String">
+			<column name="F_INFO_TRUSTTYPE" />
+		</property>
+		<!--受托人  -->
+		<property name="fInfoTrustee" type="java.lang.String">
+			<column name="F_INFO_TRUSTEE" />
+		</property>
+		<!-- 上市日期/申购首日   -->
+		<property name="fPchredmPchstartdate" type="java.lang.String">
+			<column name="F_PCHREDM_PCHSTARTDATE" />
+		</property>
+		<!--  日常赎回起始日  -->
+		<property name="fInfoRedmstartdate" type="java.lang.String">
+			<column name="F_INFO_REDMSTARTDATE" />
+		</property>
+		<!-- 起点金额	  -->
+		<property name="fInfoMinbuyamount" type="java.math.BigDecimal">
+			<column name="F_INFO_MINBUYAMOUNT" />
+		</property>
+		<!--预期收益率	  -->
+		<property name="fInfoExpectedrateofreturn" type="java.math.BigDecimal">
+			<column name="F_INFO_EXPECTEDRATEOFRETURN" />
+		</property>
+		<!--  发行地		 -->
+		<property name="fInfoIssuingplace" type="java.lang.String">
+			<column name="F_INFO_ISSUINGPLACE" />
+		</property>
+		<!-- 业绩比较基准 -->
+		<property name="fInfoBenchmark" type="java.lang.String">
+			<column name="F_INFO_BENCHMARK" />
+		</property>
+		<!-- 存续状态 -->
+		<property name="fInfoStatus" type="java.math.BigDecimal">
+			<column name="F_INFO_STATUS" />
+		</property>
+		<!-- 限定类型-->
+		<property name="fInfoRestrictedornot" type="java.lang.String">
+			<column name="F_INFO_RESTRICTEDORNOT" />
+		</property>
+		<!-- 是否结构化产品-->
+		<property name="fInfoStructuredornot" type="java.math.BigDecimal">
+			<column name="F_INFO_STRUCTUREDORNOT" />
+		</property>
+		<!--交易所	SSE:上交所SZSE:深交所 -->
+		<property name="fInfoExchmarket" type="java.lang.String">
+			<column name="F_INFO_EXCHMARKET" />
+		</property>
+		<!-- 投资风格-->
+		<property name="fInfoFirstinveststyle" type="java.lang.String">
+			<column name="F_INFO_FIRSTINVESTSTYLE" />
+		</property>
+		<!-- 发行日期-->
+		<property name="fInfoIssuedate" type="java.lang.String">
+			<column name="F_INFO_ISSUEDATE" />
+		</property>
+		<!-- 是否为初 始基金 	-->
+		<property name="fInfoIsInitial" type="java.lang.String">
+			<column name="F_INFO_TYPE" />
+		</property>
+		<!-- 投资范围 	-->
+		<property name="fInfoInvestscope" type="java.lang.String">
+			<column name="F_INFO_INVESTSCOPE" />
+		</property>
+		<!--  投资目标	-->
+		<property name="fInfoInvestobject" type="java.lang.String">
+			<column name="F_INFO_INVESTOBJECT" />
+		</property>
+		<!-- 投资理念	-->
+		<property name="fInfoInvestconception" type="java.lang.String">
+			<column name="F_INFO_INVESTCONCEPTION" />
+		</property>
+		<!-- 决策的依据 	-->
+		<property name="fInfoDecisionBasis" type="java.lang.String">
+			<column name="F_INFO_DECISION_BASIS" />
+		</property>
+	</class>
+</hibernate-mapping>

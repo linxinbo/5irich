@@ -1,0 +1,68 @@
+.bk-con{
+    padding:0 0.7em;
+    background: #fff;
+    overflow: hidden;
+}
+.bk-con .bk-conone{
+    background: #fffce9;
+
+    margin-top:1.5em;
+}
+.bk-con .bk-conone .jiaoyin1{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/onebg.png) no-repeat center center;
+    background-size:95%;
+}
+.bk-con .bk-conone .jyword{
+    width:85%;
+    padding-left:0.5em;
+    line-height: 2em;
+    float:left;
+    margin-top:1.3em;
+}
+.bk-con .bk-conone .btn{
+    float:left;
+    width:15%;
+
+}
+.bk-con .bk-conone .jiaoyin2{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/twobg.png) no-repeat center center;
+    background-size:95%;
+}
+.bk-con .bk-conone .jiaoyin3{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/threebg.png) no-repeat center center;
+    background-size:95%;
+}
+.bk-con .bk-contwo{
+    background: #fffce9;
+    margin-top:1.5em;
+}
+.bk-con .bk-conthree{
+    background: #fffce9;
+    margin-top:1.5em;
+}
+.bk-con .bk-conthree .conthree-midd{
+    background: #ffeccb;
+    margin:0 auto;
+    width:70%;
+    overflow: hidden;
+    margin-top:0.5em;
+    margin-bottom: 0.8em;
+}
+/*.bk-con .bk-conthree .conthree-midd ul{*/
+    /*width:100%;*/
+
+    /*padding-bottom: 0.8em;*/
+/*}*/
+/*.bk-con .bk-conthree .conthree-midd ul li{*/
+    /*text-align: center;*/
+    /*line-height: 1.5em;*/
+/*}*/

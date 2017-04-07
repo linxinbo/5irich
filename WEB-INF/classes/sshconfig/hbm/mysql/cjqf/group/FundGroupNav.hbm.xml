@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.group.FundGroupNavBean" table="cj_fund_group_nav">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金组合ID	 -->
+		<property name="groupId" type="java.lang.String">
+			<column name="group_id" />
+		</property>
+		<!--  交易日期(YYYYMMDD)	  -->
+		<property name="tradeDate" type="java.lang.String">
+			<column name="trade_date" />
+		</property>
+		<!--  单位净值  -->
+		<property name="unitValue" type="java.math.BigDecimal">
+			<column name="unit_value" />
+		</property>
+		<!--  累计净值  -->
+		<property name="accuValue" type="java.math.BigDecimal">
+			<column name="accu_value" />
+		</property>
+		<!--  复权因子	  -->
+		<property name="adjFactor" type="java.math.BigDecimal">
+			<column name="adj_factor" />
+		</property>
+		<!--  创建人	  -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--  创建时间-->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+.des{
+    font-size:1.5em;
+    color:#114882;
+    line-height: 1.5em;
+    background: #fff;
+    padding:0.8em 0.8em;
+}
+.tuijian{
+    background: #fff;
+    padding:0.8em 0.8em;
+}
+
+.tuijian ul li{
+    /*width:28em;*/
+    height:8em;
+    background: url(images/bg.png) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0.7em;
+    overflow: hidden;
+
+}
+.tuijian ul li div{
+    float:left;
+    padding:1em;
+}
+.tuijian ul li div:nth-of-type(1){
+    width:78%;
+    height:8em;
+}
+.tuijian ul li div:nth-of-type(2){
+    width:22%;
+    text-align: center;
+    padding:1.5em;
+}
+.tuijian ul li div:nth-of-type(2) a{
+    display: inline-block;
+
+    text-align: center;
+    font-size:1.8em ;
+    color:#b48205;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.tuijian ul li div:nth-of-type(1) p:nth-of-type(1){
+   color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.tuijian ul li div:nth-of-type(1) p:nth-of-type(2){
+    font-size:1.3em;
+    color:#13559b;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+.mubiao{
+    background: #fff;
+    padding:0.8em;
+}
+.yingx{
+    background: #fff;
+    padding:1em 0.8em;
+}

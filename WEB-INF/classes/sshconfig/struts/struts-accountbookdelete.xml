@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="AccountBookDelete" extends="wirich">
+		<!--认申购删除-->
+		<action name="MutualFundBuyDeleteAction" class="MutualFundBuyDeleteAction" method="deleteValue">
+		</action> 
+		<!--赎回删除-->
+		<action name="MutualFundRedemptiontDeleteAction" class="MutualFundRedemptiontDeleteAction" method="deleteValue">
+		</action>
+		<!--删除定投-->
+		<action name="MutualFundFixedInvestmentDeleteAction" class="MutualFundFixedInvestmentDeleteAction" method="deleteValue">
+		</action> 
+		<!--删除转换-->
+		<action name="MutualFundConversionDeleteAction" class="MutualFundConversionDeleteAction" method="deleteValue">
+		</action>
+		<!--删除货币基金分红-->
+		<action name="MutualFundDividendDeleteAction" class="MutualFundDividendDeleteAction" method="deleteValue">
+		</action> 
+		<!--删除组合基金-->
+		<action name="GroupFundAccountBookDeleteAction" class="GroupFundAccountBookDeleteAction" method="deleteValues">
+		</action> 
+	</package>
+</struts>

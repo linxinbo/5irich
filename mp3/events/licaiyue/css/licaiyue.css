@@ -1,0 +1,45 @@
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+body{background-color: #d52b2c;}
+.licaiyue_banner{width:100%;margin: 0 auto;text-align: center;margin-top: 0;}
+.fqj_banner{width:100%;}
+/*.banner img{width:100%;height: auto;}*/
+.lcy_view{ background-color: #d52b2c;width:100%;}
+.lcy_content1{ width: 95%; background-color: #8c171c; margin: 0 auto; margin-bottom:20px;overflow: hidden;border-radius: 5px;padding-top: 3%;position: relative;}
+.lcy_remenfund{ float: left; margin: 3em 1em 0 1.2em;}
+.lcy_tuijianfund{ float: left;     margin: 10em 1em 0 1.5em;}
+.lcy_img{ width: 2em;}
+.lcy_content1_1{ overflow: hidden; margin-left: 6%;margin-bottom: 3%;}
+.lcy_box_floatr{ float: left;margin-left: 0.5%;}
+.lcy_box{background-color: #c30d23; overflow: hidden;border-radius: 5px;padding: 3px;}
+.lcy_box.l1{width: 92%;float: left;margin-bottom: 10px;}
+.lcy_30{ width: 92%; margin-bottom:10px;}
+.lcy_box2_r{width: 92%;display: inline-block;float: left;margin-bottom: 3%;}
+.lcy_box2_l{width: 92%;display: inline-block;float: left;margin-bottom: 3%;}
+.lcy_box3{width: 92%;display: inline-block;margin-bottom:3%; }
+.lcy_content1_div1{ overflow: hidden;padding: 5px;}
+.lcy_content1_div1 span{ float: left; color: #fff;font-size: 1.4em;}
+.lcy_content1_div1 a{ float: right; color: #fff; font-size: 1em;}
+.lcy_content1_div1 b{ float: right; color: #fff; font-size: 1em;vertical-align: middle;}
+.lcy_content1_div2{ background-color: #fff;overflow: hidden;padding: 5px; border-radius: 0 0 5px 5px;}
+.lcy_div40{width: 40%;}
+.lcy_div20{width: 20%;}
+.lcy_content1_div2l{ float: left; overflow: hidden;text-align: center;padding: 10px 0;}
+.lcy_content1_div2l p{ color: #c30d23;}
+.lcy_content1_div2l em{ font-size: 2em;}
+.lcy_content1_div2l b{ font-size: 2em;}
+.lcy_content1_div2l span{ color: #666666;  font-size: 0.8em;}
+.lcy_content1_div2c{ float: left;overflow: hidden;text-align: center;padding: 10px 0;}
+.lcy_content1_div2c p{ font-size: 2em;color: #90592a;}
+.lcy_content1_div2c span{ font-size: 0.8em;padding: 0 5px;}
+
+
+.lcy_content1_buy{ float: right;overflow: hidden;text-align: center;}
+.lcy_content1_buy a{ background-color: #c30d23;color: #fff;padding: 9px;display: inline-block;border-radius: 5px;line-height:20px;}
+
+.lcy_foot_img{ width: 95%;margin: 0 auto;margin-bottom:20px;}
+.lcy_foot_img img{ width: 100%;}
+.lcy_foot_img1{ width: 100%;margin: 0 auto;padding-bottom:20px;}
+.lcy_foot_img1 img{ width: 100%;}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="bdqx" extends="wirich">
+		<!-- 查询北斗七星最新信息-->
+		<action name="queryNewDes" class="BdqxAction" method="queryNewDes">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<!-- 根据起始日期查询北斗七星收益情况 -->
+		<action name="queryBdqxChart" class="BdqxAction" method="queryBdqxChart">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<!--北斗七星持仓记录-->
+		<action name="queryCcbl" class="BdqxAction" method="queryCcbl">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		
+	</package>
+</struts>
+
+
+

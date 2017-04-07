@@ -1,0 +1,90 @@
+.account_data ul li{
+    margin: 5px 0;
+    background: #fff;
+}
+.duanli_data ul li{
+    margin: 5px 0;
+    background: #fff;
+}
+.table_header{
+    border-left: 5px solid #1b75da; 
+    border-bottom: 1px dashed #d5d4d7;
+    color: #191919;
+}
+.account_code{
+    height: 3em;
+    line-height: 3em;
+    font-size: 10px;
+    margin-left: 12px;
+}
+.account_name{
+    height: 3em;
+    line-height: 3em;
+    font-size: 12px;
+    margin-left: 16px;
+    font-weight: bold;
+}
+.table_data{
+    width: 100%;
+    border-bottom: 1px dashed #d5d4d7;
+}
+.table_data tr{
+    height: 2em;
+}
+.table_data tr td{
+    width: 25%;    
+}
+.td_1, .td_3{
+    font-size: 0.92em;
+    color: #808080;
+    text-align: left;
+    padding-left: 10px;
+}
+.td_2, .td_4{
+    font-size: 0.83em;
+    color: #303030;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.acc_button{
+    width: 100%;
+    height: 3.33em;
+    padding-top: 7px;
+}
+.acc_button span{
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #1b75da;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.duanli_data .acc_button span{
+    display: block;
+    width: 100%;
+/*    float: left;*/
+    text-align: center;
+    color: #1b75da;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.acc_add{
+    border-right: 1px solid #e3e3e3;
+}
+.duanli_data tr:nth-child(2){
+	height: 3em;
+/*	font-size: 1.5em;*/
+}
+.color_red{color: red;font-size: 1.5em;}
+.color_black{color: black;font-size: 1em;}
+.icon_search{
+    float: right;    
+    height: 45px;
+    width: 45px;
+    background: url("../images/@x/icon_search_whiter.png") 50% no-repeat;
+    display: block;
+}

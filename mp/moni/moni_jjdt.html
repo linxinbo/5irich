@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-模拟账本-基金定投</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../js_mp/plug-in/bootstrap.min.css">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css">
+    <link rel="stylesheet" href="../css_mp/comm.css">
+    <link rel="stylesheet" href="../css_mp/home.css">
+    <link rel="stylesheet" href="../css_mp/moni/moni.css">
+    <link rel="stylesheet" href="../css_mp/feather.css">
+</head>
+<body>
+<div>
+
+    <!--头部开始-->
+    <header class="ty1_header">
+        <a class="ty_fanhui" href="javascript:history.go(-1);">
+            <i class="ty_fanhui_icon"></i>
+        </a>
+        <div class="head_center">
+            <a class="head_title_as">基金定投</a>
+        </div>
+        <a class="ty_home_as" href="../home.html">
+            <i class="icon_home"></i>
+        </a>
+    </header>
+
+
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <!--模拟账本蓝色title部分-->
+        <div class="">
+            <ul class="rsg_list">
+                <li id="fundZm_content">
+                    <i class="fundname"></i>
+                    <span>基金名称</span>
+                    <input type="text" id="fundZm" name="keywords" class="n pass_trade" autocomplete="off" size="20" placeholder="输入基金首字母缩写">
+                </li>
+                <li>
+                    <i class="fundcode"></i>
+                    <span>基金代码</span>
+                    <input type="text" id="fundCode" name="keywords" disabled="disabled"  class="n pass_trade" autocomplete="off" size="20" placeholder="基金代码">
+                </li>
+                <li>
+                    <i class="rsgriqi"></i>
+                    <span>交易日期</span>
+                    <h3>
+                        <span class="pass_span1">一笔</span>
+                        <select id="fixedInvestmentCycleType" name="fixedInvestmentCycleType" class="pass_select1">
+                            <option value="0" selected>月</option>
+                            <option value="1">周</option>
+                            <option value="2">日</option>
+                        </select>
+                        <input type="text" id="fixedInvestmentCycle" name="fixedInvestmentCycle" class="pass_input1" placeholder="1" value="1" />
+                        <span class="pass_span">每</span>
+                    </h3>
+                </li>
+                <li id="kkr">
+                    <i class="rsgriqi"></i>
+                    <span>扣款日</span>
+                    <h3>
+                        <select id="deductMoneyDay" name="deductMoneyDay" class="pass_select">
+                            <!-- <option id="kkr1" selected value="0">请选择</option> -->
+                        </select>
+                    </h3>
+                </li>
+                <li>
+                    <i class="rsgriqi"></i>
+                    <span>定投开始日期</span>
+                    <input type="text" id="indate" onfocus="blur();" name="indate"  class="n pass_trade datainp" size="20" value="" placeholder="输入日期" >
+                </li>
+                <li>
+                    <i class="rsgriqi"></i>
+                    <span>定投结束日期</span>
+                    <input type="text" id="indate1" onfocus="blur();" name="indate"  class="n pass_trade datainp" size="20" value="" placeholder="输入日期" >
+                </li>
+                <li>
+                    <i class="jine"></i>
+                    <span>定投金额</span>
+                    <input id="amountFixedInvestment" type="text" name="amountFixedInvestment" class="n pass_trade" size="20" placeholder="0.00元">
+                </li>
+                <li>
+                    <i class="fenge"></i>
+                    <span>认/申购方式</span>
+                    <h2>
+                        <input type="radio" id="buyPattern" name="buyPattern" class="pass_trader" value="0" checked> 前端
+                    </h2>
+                </li>
+                <li>
+                    <i class="fenge"></i>
+                    <span>认/申购费率:</span>
+                    <h3>
+                        <span id="feilv" class="pass_span">%</span>
+                        <input type="text" id="baifenbideid" name="freeRatio" class="pass_input" placeholder="0.00" value="0.6" />
+                        <select id="freeRatioType" name="freeRatioType" class="pass_select">
+                            <option value="0" selected>百分比</option>
+                            <option value="1">固定值</option>
+                        </select>
+
+
+                    </h3>
+                </li>
+                <li>
+                    <i class="fenge"></i>
+                    <span>分红方式</span>
+                    <h2>
+                        <input type="radio" class="pass_trader" name="fenhong" value="0" checked> 现金分红
+                        <input type="radio" class="pass_trader" name="fenhong" value="1" > 红利再投
+                    </h2>
+                </li>
+            </ul>
+        </div>
+        <!--模拟账本蓝色title部分-->
+        <div class="rsg_btn mtopd menddd">
+            <button id="dtBtn" type="button" class="btn btn-block btn_lanse btn-lg">确定</button>
+            <button type="reset" id="rsgReset"  class="btn btn-block btn_lanse btn-lg">重置</button>
+        </div>
+    </div>
+    <!--内容结束-->
+    <!--底部菜单开始登录以后-->
+    <!--底部菜单结束-->
+</div>
+</body>
+<script src="../js_mp/jquery.min.js"></script>
+<script src="../js_mp/bootstrap.min.js"></script>
+<script src="../js_mp/jquery.cookie.js"></script>
+<script src="../js_mp/common_qifu.js"></script>
+<script src="../js_mp/plug-in/mockjax.js"></script>
+<script src="../js_mp/plug-in/bootstrap-typeahead.js"></script>
+<script src="../js_mp/plug-in/dateformat.js"></script>
+<script src="../js_mp/plug-in/demo.js"></script>
+<script src="../js_mp/moni/moni_jjdt.js"></script>
+<script src="../js_mp/plug-in/jedate.js"></script>
+<script type="text/javascript">
+    jeDate({
+        dateCell:"#indate",//isinitVal:true,
+        format:"YYYY-MM-DD",
+        isTime:false, //isClear:false,
+        minDate:"2000-01-01 00:00:00"
+    });
+    jeDate({
+        dateCell:"#indate1",//isinitVal:true,
+        format:"YYYY-MM-DD",
+        isTime:false, //isClear:false,
+        minDate:"2000-01-01 00:00:00"
+    });
+</script>
+</html>

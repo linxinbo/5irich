@@ -1,0 +1,15 @@
+body,html{ margin:0 auto; padding:0px; font-size:65.2%; font-family:'Microsoft Yahei','å¾®è½¯é›…é»‘'; max-width:640px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','å¾®è½¯é›…é»‘'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none;}
+a{ text-decoration:none;}
+.clear{ clear:both; height:1px; line-height:1px;}
+
+
+.ullist{ padding-top:5%}
+.ullist li{ width:89%; margin:3% auto; padding-left:3%; color:#389ad7; background:#ececec; border-radius:4px;padding-top:3%;padding-bottom:3%;}
+.ullist li span{ display:block; float:left; width:62%; font-size:16px;}
+.ullist li input{font-family:"·½ÕýºÚÌå¼ò"; float:left; width:23%; color:#003366; display:block;  border:none; background:#ececec; font-size:18px;text-align:right}
+.ullist li i{ width:auto; float:right; margin-right:3%;font-size:16px;}
+.pfont{ font-size:2.3em; text-align:center; color:#f09122; line-height:2em; margin-bottom:2%}
+.queren{ display:block; width:89%; margin:auto; color:#f7f7f7; background:#1B75DA; font-size:2.5em;border-radius:4px; text-align:center; line-height:2.5em;}

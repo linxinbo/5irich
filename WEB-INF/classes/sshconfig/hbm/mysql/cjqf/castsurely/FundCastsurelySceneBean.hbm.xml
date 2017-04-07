@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.castsurely.FundCastsurelySceneBean" table="cjqfweb_fund_castsurely_scene">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+			<!--  用户id  -->
+		<property name="user_id" type="java.lang.String">
+			<column name="user_id" />
+		</property>
+		<property name="scene_no" type="java.lang.String">
+			<column name="scene_no" />	
+		</property>
+		<property name="scene_name" type="java.lang.String">
+			<column name="scene_name" />	
+		</property>
+		<property name="scene_money" type="java.lang.String">
+			<column name="scene_money" />	
+		</property>
+		<property name="scene_scheme" type="java.lang.String">
+			<column name="scene_scheme" />	
+		</property>
+		<property name="debit_account" type="java.lang.String">
+			<column name="debit_account" />	
+		</property>
+		<property name="fundcode" type="java.lang.String">
+			<column name="fundcode" />	
+		</property>
+		<property name="fundname" type="java.lang.String">
+			<column name="fundname" />	
+		</property>
+		<property name="buyplanno" type="java.lang.String">
+			<column name="buyplanno" />	
+		</property>
+		<property name="appsheetserialno" type="java.lang.String">
+			<column name="appsheetserialno" />	
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.sql.Timestamp">
+			<column name="create_time" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.sql.Timestamp">
+			<column name="update_time" />
+		</property>
+		<!--  标识位  -->
+		<property name="sfyx" type="java.lang.String">
+			<column name="sfyx" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

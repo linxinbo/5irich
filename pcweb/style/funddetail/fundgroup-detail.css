@@ -1,0 +1,132 @@
+.grdeone{
+    width:70%;
+    min-width:1200px;
+    margin:0 auto;
+    background: #fff;
+    height:500px;
+    overflow: hidden;
+    border:solid 1px #000;
+}
+.grdeone .dechart{
+    width:60%;
+    float:left;
+}
+.grdeone .dechart ul{
+    color:#666;
+    font-size:20px;
+    overflow: hidden;
+    padding:15px 5px 15px;
+}
+.grdeone .dechart ul li{
+    float:left;
+    border-right:solid 1px #d9dce0;
+    padding:0 10px;
+    cursor: pointer;
+}
+.grdeone .dechart ul li:nth-of-type(2){
+    border:none;
+}
+.grdeone .dechart .kmap_date {
+    width: 80%;
+    margin:30px auto 0;
+}
+.grdeone .dechart .kmap_date span{
+    display: block;
+    width: 90%;
+    color: #666;
+    height: 28px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.grdeone .dechart .kmap_date span.selexx{
+    border: 1px solid #ff9900;
+    color: #ff9900;
+    border-radius: 15px;
+}
+.grdeone .grdeins{
+    margin-top:30px;
+    width:35%;
+    margin-left:30px;
+    float:left;
+}
+.grdeone .grdeins .name{
+    font-size:24px;
+    font-weight:bold;
+    margin-top:40px;
+}
+.grdeone .grdeins .level{
+    width:80px;
+    padding:3px;
+    text-align: center;
+    color:#fff;
+    font-size:13px;
+    background: #ff9900;
+}
+.grdeone .grdeins .ul1{
+    overflow: hidden;
+    margin-top:40px;
+}
+.grdeone .grdeins .ul1 li{
+    list-style-type: none;
+    float:left;
+    width:30%;
+    text-align: center;
+}
+.grdeone .grdeins .ul1 li div:nth-of-type(1){
+    color:#666;
+    margin-bottom:20px;
+
+}
+.grdeone .grdeins .ul1 li div:nth-of-type(2){
+    font-size:27px;
+    font-weight:bold;
+}
+.grdeone .grdeins .ul2{
+    overflow: hidden;
+}
+.grdeone .grdeins .ul2 li{
+    width:50%;
+    color:#666;
+    float:left;
+    padding-left:16px;
+}
+.grdeone .grdeins .buybox{
+    overflow: hidden;
+    margin-top:40px;
+}
+.grdeone .grdeins .buybox input{
+    width:60%;
+    height:50px;
+    border:solid 1px #d3d3d3;
+    font-size:14px;
+    margin-left:10px;
+    float:left;
+}
+.grdeone .grdeins .buybox button{
+    width:20%;
+    height:50px;
+    color:#fff;
+    border:none;
+    background: #ff9900;
+    float:left;
+    font-size:20px;
+    border-radius: 10%;
+}
+.fontred{
+    color:#fe3309;
+}
+.fontgreen{
+    color:#08b42d;
+}
+.grdetwo{
+    width:70%;
+    min-width:1200px;
+    margin:40px auto;
+    background: #fff;
+    overflow: hidden;
+
+    border:solid 1px #000;
+}

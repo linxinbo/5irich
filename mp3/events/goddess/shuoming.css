@@ -1,0 +1,50 @@
+body{
+    background: url(images/bg.png) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 4em;
+}
+.con{
+    padding:1.5em 1.5em;
+    background: #fff;
+    border:solid 1px #fad8c0;
+    margin:auto auto;
+    text-align: center;
+
+}
+.con img{
+    display: block;
+    width: 66%;
+    height: auto;
+    margin: 0 auto;
+}
+.con ul{
+  text-align: left;
+    font-size:1.2em;
+}
+.con ul li{
+    line-height: 1.5em;
+    margin-bottom:1.3em;
+}
+.bobtn{
+    overflow: hidden;
+    width:100%;
+    background: #e12864;
+    padding:1.2em 0;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+.bobtn li{
+    width:33%;
+    float:left;
+    color:#fff;
+    text-align: center;
+    font-size: 1.2em;
+    border-right:solid 1px #fff;
+}
+.bobtn li a{
+    color:#fff;
+}
+.bobtn li:nth-of-type(3){
+    border:none;
+}

@@ -1,0 +1,362 @@
+.assets_fund_detial{
+    position: relative;
+    background-color: #f5f8fc;
+    overflow: hidden;
+    font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+.positiondetails{
+    width: 1200px;
+    margin: 20px  auto 0 auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.positionlist{
+    width: 1200px;
+    margin: 20px  auto 20px auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.assets_fund_title{
+    padding-left: 15px;
+    font-size: 24px;
+    color: #333333;
+    line-height: 30px;
+    background-image: url("../../images/assets/rectangle.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.position_fund_title{
+    margin: 0 70px;
+}
+.position_fund_title a{
+    font-size: 24px;
+    color: #333333;
+    line-height: 30px;
+    /*font-weight: bold;*/
+}
+.position_fund_title span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 20px;
+}
+.position_fund_content{
+    margin: 35px 70px;
+}
+.p_f_c_left{
+    float: left;
+    width: 76%;
+}
+.p_f_c_left ul{
+    margin: 0px;
+    padding: 0px;
+}
+.p_f_c_left ul li:nth-child(1){
+    float: left;
+    width: 25%;
+}
+.p_f_c_left ul li:nth-child(2){
+    margin-left: 40px;
+    float: left;
+    width: 36%;
+}
+.p_f_c_left ul li:nth-child(3){
+    margin-left: 40px;
+    float: left;
+    width: 25%;
+}
+.p_f_c_left ul li span{
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+    display: block;
+}
+.p_f_c_left ul li a{
+    font-size: 36px;
+    color: #333333;
+    line-height: 60px;
+    display: block;
+    /*font-weight: bold;*/
+}
+.p_f_c_left ul li a.fonthong{
+    color: #fe3309;
+}
+.p_f_c_left ul li a.fontlv{
+    color: #08b42d;
+}
+.p_f_c_left ul li a.rightline{
+    border-right: 2px solid #e8e8e8;
+}
+.p_f_c_right{
+    float: left;
+    width: 24%;
+}
+.p_f_c_right a{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.fund_buy{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #ffaa27;
+    border: 1px solid #ffaa27;
+}
+.fund_regular{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #d9dce0;
+}
+.fund_redeem{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #d9dce0;
+}
+.fund_convert{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #d9dce0;
+}
+.fund_modify{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #d9dce0;
+}
+.positionlist_title{
+    height: 41px;
+    border-bottom: 1px solid #d9dce0;
+    margin: 0 15px;
+}
+.positionlist_title a{
+    line-height: 40px;
+    font-size: 16px;
+    corlor:#666666;
+    padding: 0 25px;
+    display: inline-block;
+    background-color: #edf0f4;
+    vertical-align: top;
+}
+.positionlist_title a.select{
+    line-height: 40px;
+    font-size: 16px;
+    corlor:#666666;
+    padding: 0 25px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-top: 1px solid #d9dce0;
+    border-left: 1px solid #d9dce0;
+    border-right: 1px solid #d9dce0;
+    margin-bottom: -1px;
+}
+.trade_record{
+    margin: 40px 15px;
+}
+.trade_record table{width: 100%;}
+.trade_record table thead tr{
+    background-color: #f5f8fc;
+}
+.trade_record table thead tr th{
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666666;
+}
+.trade_record table tbody tr{
+    border-bottom: 1px solid #edf0f4;
+}
+.trade_record table tbody tr:hover{
+    border-bottom: 1px solid #edf0f4;
+    background-color: #f5f8fc;
+}
+.trade_record table tbody tr td{
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #333333;
+}
+.trade_record table tbody tr td.fonthong{
+    color: #fe3309;
+}
+.trade_record table tbody tr td.fontlv{
+    color: #08b42d;
+}
+.investment{
+    margin: 40px 15px;
+}
+.investment_left{
+    width: 200px;
+    float: left;
+}
+.investment_right{
+    margin-left: 200px;
+}
+.investment_right table{width: 100%;}
+.investment_right table thead tr{
+    background-color: #f5f8fc;
+}
+.investment_right table thead tr th{
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666666;
+}
+.investment_right table thead tr th:first-child{
+    text-align: left;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 30px;
+}
+.investment_right table tbody tr{
+    border-bottom: 1px solid #edf0f4;
+}
+.investment_right table tbody tr:hover{
+    border-bottom: 1px solid #edf0f4;
+    background-color: #f5f8fc;
+}
+.investment_right table tbody tr td{
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #333333;
+}
+.investment_right table tbody tr td:first-child{
+    text-align: left;
+    line-height: 28px;
+    font-size: 14px;
+    padding: 10px 0 10px 30px;
+    color: #333333;
+}
+.investment_right table tbody tr td.fonthong{
+    color: #fe3309;
+}
+.investment_right table tbody tr td.fontlv{
+    color: #2db996;
+}
+.position{
+    margin: 40px 15px;
+}
+.position1{
+    border-left:1px solid #d9dce0;
+
+}
+.position_left{
+    width: 200px;
+    float: left;
+    padding-left: 15px;
+    position: relative;
+}
+.position_left a{
+    font-size: 16px;
+    color: #666666;
+    display: block;
+}
+.position_left span{
+    font-size: 12px;
+    color: #999999;
+    display: block;
+
+}
+.position_right{
+    position: relative;
+    margin-left: 200px;
+    border: 1px solid #d9dce0;
+    padding: 10px 20px;
+    background-image: url("../../images/assets/jiantou.png");
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    margin-bottom: 10px;
+}
+.position_r_left{
+    position: relative;
+    float: left;
+    width: 40%;
+}
+.position_r_center{
+    position: relative;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 100%;
+}
+.position_r_center img{
+    display: block;
+    width: 34px;
+    height: 8px;
+}
+.position_r_right{
+    position: relative;
+    float: right;
+    width: 40%;
+}
+.position_r_l_title{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    line-height: 16px;
+}
+.position_r_l_title a{
+    font-size: 16px;
+    color: #666666;
+
+}
+.position_r_l_title span{
+    font-size: 14px;
+    color: #999999;
+    padding-left: 10px;
+}
+.yuan{
+    position: absolute;
+    display: block;
+    height: 7px;
+    width: 7px;
+    top:0px;
+    left:-4px;
+}
+.font12hui9{
+    color: #999999;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.fund_page{
+    text-align: right;
+}
+.cash_shuhui{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #d9dce0;
+}
+.cash_buy{
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #ffaa27;
+    border: 1px solid #ffaa27;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.intelligent.CjUserInformationBean" table="cj_user_information">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!-- 客户号 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!-- 年龄 -->
+		<property name="age" type="java.lang.String">
+			<column name="age" />
+		</property>
+		<!-- 性别 -->
+		<property name="sex" type="java.lang.Character">
+			<column name="sex" />
+		</property>
+		<!-- 评级 -->
+		<property name="level" type="java.lang.String">
+			<column name="level" />
+		</property>
+		<property name="pricedate" type="java.lang.String">
+			<column name="pricedate" />
+		</property>
+		<property name="buyshare" type="java.lang.Double">
+			<column name="buyshare" />
+		</property>
+		
+		<!-- 活动标识 -->
+		<property name="activity_status" type="java.lang.String">
+			<column name="activity_status" />
+		</property>
+		<property name="activity_nowvalue" type="java.lang.Double">
+			<column name="activity_nowvalue" />
+		</property>
+		<property name="activity_todayincome" type="java.lang.Double">
+			<column name="activity_todayincome" />
+		</property>
+		<property name="activity_totalincome" type="java.lang.Double">
+			<column name="activity_totalincome" />
+		</property>
+		<property name="join_time" type="java.sql.Timestamp">
+			<column name="join_time" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="create_time" type="java.sql.Timestamp">
+			<column name="create_time" />
+		</property>
+		<!-- 更改时间 -->
+		<property name="update_time" type="java.sql.Timestamp">
+			<column name="update_time"></column>
+		</property>
+		<!-- 私募基金问卷标识 -->
+		<property name="private_fund_status" type="java.lang.String">
+			<column name="private_fund_status"></column>
+		</property>
+		
+		<!-- 用户表id -->
+		<property name="user_id" type="java.lang.String">
+			<column name="user_id"></column>
+		</property>
+	</class>
+</hibernate-mapping>

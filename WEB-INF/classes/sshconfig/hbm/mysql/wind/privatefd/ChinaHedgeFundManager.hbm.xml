@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.privated.ChinaHedgeFundManagerBean" table="chinahedgefundmanager">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--   Wind 代码	 -->
+		<property name="fInfoWindcode" type="java.lang.String">
+			<column name="F_INFO_WINDCODE" />
+		</property>
+		<!-- 公告日期   -->
+		<property name="annDate" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		<!--  姓名	  -->
+		<property name="fInfoFundmanager" type="java.lang.String">
+			<column name="F_INFO_FUNDMANAGER" />
+		</property>
+		<!--  性别  -->
+		<property name="fInfoManagerGender" type="java.lang.String">
+			<column name="F_INFO_MANAGER_GENDER" />
+		</property>
+		<!--  出身年份	  -->
+		<property name="fInfoManagerBirthyear" type="java.lang.String">
+			<column name="F_INFO_MANAGER_BIRTHYEAR" />
+		</property>
+		<!-- 学历   -->
+		<property name="fInfoManagerEducation" type="java.lang.String">
+			<column name="F_INFO_MANAGER_EDUCATION" />
+		</property>
+		<!--  国籍  -->
+		<property name="fInfoManagerNationality" type="java.lang.String">
+			<column name="F_INFO_MANAGER_NATIONALITY" />
+		</property>
+		<!--  任职日期  -->
+		<property name="fInfoMangaerStartdate" type="java.lang.String">
+			<column name="F_INFO_MANAGER_STARTDATE" />
+		</property>
+		<!--  离职日期	  -->
+		<property name="fInfoMangaerLeavedate" type="java.lang.String">
+			<column name="F_INFO_MANAGER_LEAVEDATE" />
+		</property>
+		<!-- 所属派系   -->
+		<property name="fInfoMangaerType" type="java.math.BigDecimal">
+			<column name="F_INFO_MANAGER_TYPE" />
+		</property>
+		<!--  基金经理 ID	  -->
+		<property name="fInfoMangaerId" type="java.lang.String">
+			<column name="F_INFO_MANAGER_ID" />
+		</property>
+		
+		</class>
+</hibernate-mapping>

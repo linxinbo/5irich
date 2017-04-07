@@ -1,0 +1,204 @@
+
+.banner{
+    min-width:1200px;
+    height:400px;
+    background: url(images/banner.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.gaikuang{
+    margin-top:50px;
+}
+.gaikuang p,.manager p{
+
+    height:88px;
+    background: url(images/shape.png) no-repeat center center;
+    font-size:35px;
+    color:#2a68c1;
+    font-weight: bold;
+    margin:0 auto;
+    text-align: center;
+    line-height: 88px;
+    margin-bottom:40px;
+}
+.gaikuang .table{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    box-shadow: 0 0 3px 3px #ebecef;
+    background:url(images/tele.png) no-repeat 95% 90%;
+}
+.gaikuang .table table{
+    width:100%;
+}
+
+.gaikuang .table table tr:nth-of-type(1) td{
+    color:#707070;
+    padding:18px 55px;
+    text-align: center;
+}
+.gaikuang .table table tr:nth-of-type(2){
+    background: #f5f9fd;
+}
+.gaikuang .table table tr:nth-of-type(2) td{
+    padding:30px 60px;
+    text-align: center;
+    color:#484949;
+}
+.gaikuang .table .liyou{
+    text-align:left ;
+    padding:20px 20px 0 20px;
+    font-size: 18px;
+    color:#333;
+}
+.gaikuang .table button{
+    width:180px;
+    height:50px;
+    background: #ff9900;
+    color:#fff;
+    font-size:16px;
+    border:none;
+    font-weight: bold;
+    margin-top:47px;
+    margin-bottom:25px;
+    font-size:19px;
+}
+.manager{
+    text-align: center;
+    margin-top:50px;
+}
+.manager .intro{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.manager .con{
+
+    margin:0 auto;
+    font-size:19px;
+    color:#333;
+    background:#e1eeff;
+    padding:50px 20px 30px 20px;
+    line-height:40px;
+    border:solid 2px #aed1fe;
+    border-radius: 10px;
+
+}
+.manager .intro .name{
+    width:440px;
+    height:60px;
+    border:solid 2px #aed1fe;
+    color:#2a68c1;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 60px;
+    position: absolute;
+    left:30%;
+    top:-15%;
+    background: #fff;
+}
+.manager .liangdian{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    position: relative;
+}
+.manager .liangdian .name{
+    width:330px;
+    height:60px;
+    border:solid 2px #fe7e01;
+    color:#fe7e01;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 60px;
+    position: absolute;
+    left:35%;
+    top:-4%;
+    background: #fff;
+}
+.manager .liangdian .con{
+    background: #fef5ec;
+    border:solid 2px #fe7e03;
+    border-radius: 10px;
+}
+.manager .liangdian .con .con1{
+    overflow: hidden;
+}
+.manager .liangdian .con .con1 img{
+    float:left;
+}
+.cdp{
+    margin-top:50px;
+    text-align: center;
+
+}
+.cdp p{
+    height:88px;
+    background: url(images/shape2.png) no-repeat center center;
+    font-size:35px;
+    color:#2a68c1;
+    font-weight: bold;
+    margin:0 auto;
+    text-align: center;
+    line-height: 88px;
+    margin-bottom:40px;
+}
+.cdp .gray{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    background: #e0e0e0;
+    padding:26px 20px;
+    font-size:19px;
+    color:#333;
+    border:solid 2px #c0c0c0;
+    border-radius: 10px;
+    line-height: 40px;
+}
+.cdp .con{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    font-size:19px;
+    color:#333;
+    background:#e1eeff;
+    padding:50px 20px 30px 20px;
+    line-height:40px;
+    border:solid 2px #aed1fe;
+    border-radius: 10px;
+    position: relative;
+}
+.cdp .con .name{
+    width:440px;
+    height:60px;
+    border:solid 2px #aed1fe;
+    color:#2a68c1;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 60px;
+    position: absolute;
+    left:30%;
+    top:-4%;
+    background: #fff;
+}
+.cdp .tu{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    padding:50px 20px 30px 20px;
+    border:solid 2px #ff3366;
+    border-radius: 10px;
+    position: relative;
+}
+.cdp .tu .name1{
+    width:440px;
+    border:solid 2px #ff3366;
+    color:#ff3366;
+    font-weight: bold;
+    font-size: 27px;
+    position: absolute;
+    left:30%;
+    top:-4%;
+    background: #fff;
+}

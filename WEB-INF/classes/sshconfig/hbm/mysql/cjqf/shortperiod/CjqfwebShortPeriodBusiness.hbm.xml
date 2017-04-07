@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.shortperiod.CjqfwebShortperiodBusinessBean" table="cjqfweb_shortperiod_business" 
+	dynamic-insert="true" dynamic-update="true" >
+		<!--基金代码  -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+		</id>
+		<!--  持仓表ID -->
+		<property name="info_id" type="java.lang.Integer">
+			<column name="info_id" />
+		</property>
+		<!--  产品ID -->
+		<property name="product_id" type="java.lang.Integer">
+			<column name="product_id" />
+		</property>
+		<!--  资产名称 -->
+		<property name="productName" type="java.lang.String">
+			<column name="product_name" />
+		</property>
+		<!--  交易金额（元）  -->
+		<property name="oper_money" type="java.math.BigDecimal">
+			<column name="oper_money" />
+		</property>
+		<!--  交易类型  -->
+		<property name="oper_type" type="java.lang.Integer">
+			<column name="oper_type" />
+		</property>
+		<!-- 预期年化	 -->
+		<property name="expectAnnualised" type="java.lang.Double">
+			<column name="expect_annualised" />
+		</property>
+		<!--  交易日期  -->
+		<property name="oper_date" type="java.lang.String">
+			<column name="oper_date" />
+		</property>
+		<!--  本期起息日  -->
+		<property name="curPeriodCarInteDay" type="java.lang.String">
+			<column name="curPeriod_carInteDay" />
+		</property>
+		<!-- 本期到期日  -->
+		<property name="curPeriodEndDay" type="java.lang.String">
+			<column name="curPeriod_endDay" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.lang.String">
+			<column name="create_time" />
+		</property>
+		<!--  更新时间	 -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+		<!--  用户ID -->
+		<property name="userId" type="java.lang.String">
+			<column name="userId" />
+		</property>
+		<!--  处理标识：0、未处理，1、已处理 -->
+		<property name="business_code" type="java.lang.Integer">
+			<column name="business_code" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

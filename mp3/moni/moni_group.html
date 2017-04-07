@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-模拟账本-认申购</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../js_mp/plug-in/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/moni/moni.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/feather.css?t=20170308">
+</head>
+<body>
+<div>
+
+    <!--头部开始-->
+    <header class="ty1_header">
+        <a class="ty_fanhui" href="javascript:history.go(-1);">
+            <i class="ty_fanhui_icon"></i>
+        </a>
+        <div class="head_center">
+            <a class="head_title_as">组合购买</a>
+        </div>
+        <a class="ty_home_as" href="../home.html">
+            <i class="icon_home"></i>
+        </a>
+    </header>
+
+
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <!--模拟账本蓝色title部分-->
+        <div class="">
+            <ul class="rsg_list">
+                <li id="fundZm_content">
+                    <!--<i class="fundname"></i>-->
+                    <span>组合代码</span>
+                    <input type="text" id="groupName" name="keywords" class="n pass_trade" autocomplete="off" size="20" placeholder="输入组合基金名称/代码">
+                </li>
+                <li>
+                    <!--<i class="fundcode"></i>-->
+                    <span>组合名称</span>
+                    <input type="text" id="groupCode" name="keywords" disabled="disabled" class="n pass_trade" autocomplete="off" size="20" placeholder="基金代码">
+                </li>
+                <li>
+                    <!--<i class="rsgriqi"></i>-->
+                    <span>购买时间</span>
+                    <input type="text" onfocus="blur();" id="indate" name="indate"  class="n pass_trade datainp" size="20" value="" placeholder="输入日期" >
+                </li>
+                <li>
+                    <!--<i class="jine"></i>-->
+                    <span>购买金额</span>
+                    <input type="text" id="groupamountBuy" name="amountBuy" class="n pass_trade" size="20" placeholder="0.00元" value="">
+                </li>
+                <li>
+                    <!--<i class="fenge"></i>-->
+                    <span>购买份数</span>
+                    <input type="text" id="groupbuyShare" disabled="disabled" name="buyShare" class="n pass_trade" size="20" placeholder="0.00份">
+                </li>
+            </ul>
+        </div>
+        <!--模拟账本蓝色title部分-->
+        <div class="rsg_btn mtopd menddd">
+            <button id="rsgBtn" type="button" class="btn btn-block btn_lanse btn-lg">确定</button>
+            <button type="reset" id="rsgReset"  class="btn btn-block btn_lanse btn-lg">重置</button>
+        </div>
+    </div>
+    <!--内容结束-->
+    <!--底部菜单开始登录以后-->
+    <!--底部菜单结束-->
+</div>
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/bootstrap.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/plug-in/mockjax.js?t=20170308"></script>
+<script src="../js_mp/plug-in/bootstrap-typeahead.js?t=20170308"></script>
+<script src="../js_mp/plug-in/dateformat.js?t=20170308"></script>
+<script src="../js_mp/plug-in/demo1.js?t=20170308"></script>
+<script src="../js_mp/moni/moni_group.js?t=20170308"></script>
+<script src="../js_mp/plug-in/jedate.js?t=20170308"></script>
+<script type="text/javascript">
+    jeDate({
+        dateCell:"#indate",//isinitVal:true,
+        format:"YYYY-MM-DD",
+        isTime:false, //isClear:false,
+        minDate:"2000-01-01 00:00:00"
+    });
+</script>
+</html>

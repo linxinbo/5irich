@@ -1,0 +1,76 @@
+.banner{
+  overflow: hidden;
+}
+.banner img{
+    display: block;
+    width:100%;
+    height:auto;
+}
+.con {
+    width:100%;
+    background: #d50204;
+
+}
+.con .neirong{
+    width:100%;
+    background: url(images/KUANG.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding:1.25em 1.87em;
+    text-align: center;
+}
+.con .neirong h3{
+    font-size: 1.8em;
+    color:#fff4b9;
+    font-weight: bold;
+}
+.con .neirong ul{
+    text-align: left;
+    font-size:1.2em;
+    color:#fff;
+}
+.con .neirong ul li{
+    line-height: 1.5em;
+}
+.fudai{
+    width:100%;
+    background:url(images/bg.png) no-repeat center center;
+    background-size:100% 100%;
+
+    text-align: center;
+}
+.fudai h3{
+    font-size: 1.8em;
+    color:#fff4b9;
+    font-weight: bold;
+    padding:0.96em 0;
+}
+.fudai ul{
+    overflow: hidden;
+
+    text-align: center;
+    padding:0.625em 0.9em;
+}
+.fudai ul li{
+
+    width:49%;
+    box-shadow:0 4px 4px #820000 ;
+
+}
+
+.fudai .zone1 li:nth-of-type(1){
+    float:left;
+
+}
+.fudai .zone1 li:nth-of-type(2){
+    float:right;
+
+}
+
+.fudai .zone2 li:nth-of-type(1){
+    float:left;
+
+}
+.fudai .zone2 li:nth-of-type(2){
+    float:right;
+
+}

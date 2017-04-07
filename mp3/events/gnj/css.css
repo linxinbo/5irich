@@ -1,0 +1,37 @@
+.gnj_banner{position: relative;overflow: hidden;}
+.gnj_banner img{display: block;width: 100%;height: auto;}
+.gnj_content1{background-color: #ebaf28;overflow: hidden;}
+.gnj_content3{background-color: #f1d42f;overflow: hidden;}
+.gnj_content2{background:url(images/line.png) repeat-x;height: 5px;}
+.gnj_kuan1{width: 94%;margin: 0 auto;background-color: #faf9f3;position:relative;margin-top: 50px;margin-bottom: 50px;}
+.gnj_kuan1 h4{width:88%;line-height: 2em;font-size: 1.14em;color: #333333;text-align: center;margin-bottom: 0px;margin-top: 0px;margin: 0 auto;}
+.gnj_kuan1 h2{width:88%;line-height: 3em;font-size: 1.8em;color: #333333;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;margin: 0 auto;}
+.gnj_kuan1 h2 a{color: #333333;text-decoration: none;}
+.gnj_kuan1 h2 a:hover{color: #333333;text-decoration: none;}
+.gnj_kuan1 h2 span{line-height: 3em;font-size: 0.7em;color: #666666;text-align: center;}
+.gnj_kuan1 h3{width:80%;line-height: 3em;font-size: 1.8em;color: #333333;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;margin: 0 auto;}
+.gnj_kuan1 h1{width:80%;line-height: 70px;font-size: 3.5em;color: #c80143;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;margin: 0 auto;}
+.btn_gm{position:relative;width:80%;height:60px;line-height: 3em;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;margin: 0 auto;}
+.btn_gm a{position: absolute;top:35px;display: block;width: 240px;height: 48px;left: 50%;margin-left: -120px;}
+.btn_bg{width: 90%;height: 65px;background:url(images/bg.png) bottom right no-repeat;margin: 0 auto;margin-bottom: 5px;}
+.title_xin{position: absolute;width: 58px;height: 50px;top:-20px;left: -15px;}
+.gnj_kuan1 h5{width:80%;height: 70px;line-height: 70px;font-size: 32px;color: #c80143;text-align: left;margin-top: 0px;margin-bottom: 0px;margin: 0 auto;}
+.grid2{width:90%;margin: 0 auto;overflow: hidden;}
+.grid2 .left{float:left;width:100%;}
+.grid2 .left span{line-height: 2.4em;font-size: 1.44em;color: #333333;display: block;}
+.grid2 .right{float:left;width:100%;}
+.grid3{width:90%;margin: 0 auto;overflow: hidden;}
+.grid3 .left{float:left;width:100%;}
+.grid3 .left h6{height: 50px;line-height: 50px;text-align: left;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;}
+.grid3 .left h6 img{height: 50px;width: auto;display: block;}
+.grid3 .left span{line-height: 2.4em;font-size: 1.44em;color: #333333;display: block;}
+.grid3 .right{float:left;width:100%;}
+.grid3 .right h6{height: 50px;line-height: 50px;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;}
+.grid3 .right h6 img{height: 50px;width: auto;display: block;}
+.grid3 .right span{line-height: 2.4em;font-size: 1.44em;color: #333333;display: block;}
+.grid3 .center{float:left;width:100%;}
+.grid3 .center h6{height: 50px;line-height: 50px;text-align: center;margin-top: 0px;margin-bottom: 0px;border-bottom: 1px solid #fff0c1;}
+.grid3 .center h6 img{height: 50px;width: auto;display: block;}
+.grid3 .center span{line-height: 2.4em;font-size: 1.44em;color: #333333;display: block;}
+.grid1{width:90%;margin: 0 auto;overflow: hidden;}
+.grid1 span{line-height: 2.4em;font-size: 1.44em;color: #333333;display: block;border-bottom: 1px solid #fff0c1;}

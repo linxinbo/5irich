@@ -1,0 +1,140 @@
+.asset_btn{
+    height: 1.920em;
+    overflow: hidden;
+    padding: 0 1.120em;
+    text-align: left;
+    float: left;
+    font-size: 1.12em ;
+    background-color: #99ccff;
+    border: 0;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+.jianju{
+    border-top: #cfcfcf 0.080em solid;
+    border-bottom: solid 0.080em #cfcfcf;
+    height: 0.800em;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+.fuwu{
+    height:3.120em;
+    line-height:3.120em;
+}
+.content1{
+    background-color: #f8f8f8;
+    padding:0 1.040em;
+    border-bottom:0.08em #dadada solid;
+}
+.contentlist{
+    border-bottom:0.08em #dadada solid;
+}
+.content_bottom_bar{
+    overflow:hidden;
+}
+.bottomh2{
+    width:50%;
+    float:left;
+    font-size:1.280em;
+    line-height:2.4em;
+    height:2.4em;
+    text-align:center;
+    color:#349ff3;
+    background-color: #f8f8f8;
+}
+.h2_white{
+    background-color:#fff;
+    color:#000000;
+}
+.contentlist h2{
+    font-size:1.280em;
+    line-height:2em;
+    color: #888888;
+}
+.contentlist p{
+    font-size:1.120em;
+    line-height:1.520em;
+    margin-bottom:0.480em;
+    text-indent:1.92em;
+    color:#a7a7a7;
+}
+.footer{
+    overflow:hidden;
+    display:flex;
+    position: fixed;
+    border-top: 1px solid #cecece;
+    z-index: 9;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+}
+.footer_div2{
+    height:4.4em;
+    line-height:4.4em;
+    background-color: #ffffff;
+    text-align:center;
+    flex:1;
+}
+.footer_div3{
+    height:4.4em;
+    line-height:4.4em;
+    background-color:#32a0f0;
+    text-align:center;
+    flex:1;
+}
+.footer_a{
+    color:#ffffff;
+    display:block;
+    font-size:1.44em;
+}
+.bottomh3{
+    width:25%;
+    float:left;
+    font-size:1.280em;
+    line-height:2.4em;
+    height:2.4em;
+    text-align:center;
+    color:#666666;
+    background-color: #f8f8f8;
+}
+.h3_white{
+    background-color:#ffffff;
+    color:#32a0f0;
+    border-bottom: 0.160em solid #32a0f0;
+}
+
+.contentlist th{
+    font-size:1.120em;
+    line-height:1.520em;
+    margin-bottom:0.480em;
+    text-indent:1.92em;
+    color:#a7a7a7;
+    text-align: center
+}
+.contentlist tr td{
+    font-size:1.120em;
+    line-height:1.520em;
+    margin-bottom:0.480em;
+    text-indent:1.92em;
+    color:#a7a7a7;
+    text-align: center
+}
+.yzdf{
+    font-size:1.120em;
+    line-height:1.520em;
+    margin-bottom:0.480em;
+    text-indent:1.92em;
+    color:#a7a7a7;
+}
+.xqy_sx{
+    width: 100%;
+    height:auto;
+    display: block;
+}
+.content1_fj{
+    background-color: #f8f8f8;
+    border: 0;
+}
+.xqy_tp_jj{
+   padding: 1em;
+}

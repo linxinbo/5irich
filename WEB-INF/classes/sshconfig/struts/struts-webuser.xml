@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="loginweb" extends="wirich">
+	
+		<!--生成token-->
+		<action name="TokenGenerateAction" class="tokenGenerateAction" method="TokenGenerate">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--获取验证码-->
+		<action name="IdentCodeGenerateAction" class="com.wirich.action.cjqf.IdentCodeGenerateAction" >
+		<result type="stream">     
+                   <param name="contentType">image/JPEG</param>     
+                   <param name="inputName">inputStream</param>     
+              </result>       
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--登录-->
+		<action name="LoginWebAction" class="loginWebAction" method="WebLogin">
+		<!--<interceptor-ref name="defaultStack" />
+		--><interceptor-ref name="myStack" />
+		</action>
+		
+		<!-- 微信老用户绑定 -->
+		<action name="bindingInfoAction" class="loginWebAction" method="bindingInfo" >
+			<!-- <interceptor-ref name="defaultStack" /> -->
+		</action>
+	</package>
+	
+	<package name="loginWebChat" extends="wirichJsp">
+		<action name="webChatLoginBefore" class="loginWebAction" method="webChatLoginBefore">
+			<!-- 首页 -->
+			<result name="success_1" type="redirect">/mp/home.html</result>
+			<!-- 我的资产 -->
+			<result name="success_2" type="redirect">/mp/my-assets/new_assets.html</result>
+			<!-- 精选基金 
+			<result name="success_3" type="redirect">/mp/fund/recommend.html</result>-->
+			<!-- 短期理财 
+			<result name="success_4" type="redirect">/mp/fund/short-term.html#5</result>-->
+			<!-- 注册/开户 -->
+			<result name="success_5" type="redirect">/mp/sigin/sigin.html</result>
+			<!-- 组合基金 
+			<result name="success_6" type="redirect">/mp/group/group.html</result>-->
+			<!-- 智能组合 -->
+			<result name="success_7" type="redirect">/mp/intel/index.html</result>
+			<!-- 主题基金 -->
+			<result name="success_8" type="redirect">/mp/hot_activity/theme_fund.html</result>
+			<!-- 热销基金 -->
+			<result name="success_9" type="redirect">/mp/hot_activity/hot_fund.html</result>
+			<!-- 私募基金 -->
+			<result name="success_10" type="redirect">/mp/hot_activity/private_fund.html</result>
+			<!-- 体验金活动 -->
+			<result name="success_11" type="redirect">/mp/events/give_fina/give_fina.html</result>
+			<!-- 微信ID绑定（登录）页面 -->
+			<result name="webChatLogin" type="redirect">/mp/login.html?openId=${openId}</result>
+		</action>
+		<!-- 微信公众号登录 -->	
+		<action name="WeChatPublicNumberLogin" class="loginWebAction" method="WeChatPublicNumberLogin">
+			<!-- 首页 -->
+			<result name="success_1" type="redirect">/home.html</result>
+		</action>	
+	</package>
+</struts>

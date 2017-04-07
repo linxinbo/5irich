@@ -1,0 +1,214 @@
+body{font-family: 'Microsoft Yahei', '微软雅黑';}
+.mn_banner{position: relative;overflow: hidden;}
+.mn_banner img{display: block;width: 100%;height: auto;}
+.mn_content{
+    background-color: #ce020e;
+    overflow: hidden;
+    padding: 2em;
+}
+.mn_content1{
+    background-color: #feca5d;
+    overflow: hidden;
+    padding: 1em;
+}
+.mn_content2{
+    overflow: hidden;
+}
+.title_img{
+    display: block;
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+.mn_store2{
+    position: relative;
+    overflow: hidden;
+    margin-top: 1em;
+
+}
+.mn_store2 .mn_left{
+    float: left;
+    width: 40px;
+
+
+}
+.mn_store2 .mn_right{
+    margin-left: 50px;
+}
+.mn_store2 .mn_right h2{
+    font-size: 1.8em;
+    color: #feca5d;
+}
+.mn_store2 .mn_right span{
+    font-size: 1.12em;
+    color: #fff;
+    margin-top: 1em;
+    display: block;
+    line-height: 1.5;
+}
+.mn_btn{
+    display: block;
+    background-color: #feca5d;
+    border-radius: 5px;
+    padding: 12px 0;
+    color: #ce020e;
+    font-size: 1.8em;
+    text-align: center;
+}
+.mn_end{
+    position: relative;
+    overflow: hidden;
+}
+.mn_end span{
+    font-size: 1.12em;
+    color: #ce020e;
+    margin-top: 1em;
+    display: block;
+    line-height: 1.5;
+}
+.mn_end img{
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 1em auto 0 auto;
+}
+.moni_after{
+    position: relative;
+    overflow: hidden;
+    margin-top: 1em;
+}
+.moni_after_title{
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.jj_store3 li{
+    width: 33.333%;
+    height: auto;
+    float: left;
+    oveftlow: hidden;
+    padding: 1.000em 0;
+    text-align: center;
+}
+.jj_store3 li a{
+    display: block;
+}
+.jj_store3 li a span,b{
+    display: block;
+    color: #fff;
+}
+.jj_store3{
+    position: relative;
+    overflow: hidden;
+}
+.rightline{
+    border-right: 1px solid #cccccc;
+}
+.datitle{
+    font-size: 2.000em;
+}
+.xiaotitle{
+    font-size: 1.040em;
+}
+.mtop{
+    margin-top: 0.400em;
+}
+.mtopd{
+    margin-top: 0.800em;
+}
+.mtopdd{
+    margin-top: 1em;
+}
+.menddd{
+    margin-bottom: 1em;
+}
+.mendd{
+    margin-bottom: 0.800em;
+}
+.csdj_tp{
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding: 1em;
+}
+.csdj_ul{
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding: 0;
+}
+.zngroup_list{
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding: 1em;
+}
+.zngroup_list_left{
+    float: left;
+    width: 20px;
+}
+.zngroup_list_right{
+    float: right;
+    width: 100px;
+}
+.zngroup_list_right h2{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.zngroup_list_right span{
+    font-size: 1.12em;
+    color: #999999;
+}
+.zngroup_list_center{
+    margin: 0 100px 0 20px;
+}
+.zngroup_list_center h2{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.zngroup_list_center span{
+    font-size: 1.12em;
+    color: #999999;
+}
+.zngroup_box{
+    width: 1.12em;
+    height: 1.12em;
+    display: block;
+}
+.zn_btn_left{float:left;width:50%;border: 1px solid #ff9900;height: 4.0em;display: block;text-align: center;line-height: 4.0em;background-color: #fff;}
+.zn_btn_left span{font-size: 1.44em;color: #ff9900;}
+.zn_btn_right{float:right;width:50%;background-color: #ff9900;height: 4.0em;display: block;color: #ffffff;text-align: center;line-height: 4.0em;}
+.zn_btn_right span{font-size: 1.44em;color: #ffffff;}
+
+
+.bgcolor0{background-color: #c23531;}
+.bgcolor1{background-color: #2f4554;}
+.bgcolor2{background-color: #61a0a8;}
+.bgcolor3{background-color: #d48265;}
+.bgcolor4{background-color: #91c7ae;}
+
+.fontb0{color: #c23531;}
+.fontb1{color: #2f4554;}
+.fontb2{color: #61a0a8;}
+.fontb3{color: #d48265;}
+.fontb4{color: #91c7ae;}
+
+.csdj_ul1{
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden;
+    padding:1em;
+}
+.csdj_ul1 h2{
+    font-size: 1.4em;
+    color: #ff9900;
+    margin-bottom: 0.5em;
+}
+.csdj_ul1 span{
+    font-size: 1.12em;
+    color: #333333;
+    line-height:1.5;
+}

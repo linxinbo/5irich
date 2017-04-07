@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="Activities" extends="wirich">
+		<action name="getAmount" class="ActivityAction" method="getAmount">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<action name="judgeJoin" class="ActivityAction" method="judgeJoin">
+		</action>
+		<action name="luckDrawActivity" class="ActivityAction" method="luckDrawActivity">
+		</action>
+		<!-- 保存用户参加问卷调查信息 -->
+		<action name="questionnaireStatus" class="ActivityAction" method="questionnaireStatus"></action>
+		<!-- 查询用户是否参加问卷调查 -->
+		<action name="queryQuestionnaireStatus" class="ActivityAction" method="queryQuestionnaireStatus"></action>
+		
+		<!-- 查询用户是否参加过活动 -->
+		<action name="queryUserActivity" class="ActivityAction" method="queryUserActivity">
+		</action>
+		<!-- 用户参加过抽奖-->
+		<action name="raffle" class="ActivityAction" method="raffle">
+		</action>
+		<!-- 用户使用过抽奖-->
+		<action name="raffleUse" class="ActivityAction" method="raffleUse">
+		</action>
+		<!-- 查询用户抽奖情况-->
+		<action name="raffleUseResult" class="ActivityAction" method="raffleUseResult">
+		</action>
+		
+		<!-- 38活动奖品查询列表-->
+		<action name="queryPrizeList" class="cjqfwebActivityAction" method="queryPrizeList">
+		</action>
+		<!-- 38节用户已砍奖品list-->
+		<action name="alreadyBargainList" class="cjqfwebActivityAction" method="alreadyBargainList">
+		</action>
+		<!-- 38节 判断帮砍用户是否能再次-->
+		<action name="alreadyHelpBargainList" class="cjqfwebActivityAction" method="alreadyHelpBargainList">
+		</action>
+		<!-- 38节猛砍一刀接口-->
+		<action name="bargainFirst" class="cjqfwebActivityAction" method="bargainFirst">
+		</action>
+		<!-- 38节帮砍一刀接口-->
+		<action name="bargainHelp" class="cjqfwebActivityAction" method="bargainHelp">
+		</action>
+		<!-- 38节 砍价榜单-->
+		<action name="bargainList" class="cjqfwebActivityAction" method="bargainList">
+		</action>
+		<!-- 38节 砍价榜单-->
+		<action name="bargainHelpPrize" class="cjqfwebActivityAction" method="bargainHelpPrize">
+		</action>
+		
+	</package>
+</struts>
+
+
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.shortperiod.ShortFundMainBean" table="cj_short_fund_main">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金代码(默认为Wind代码.前部分)	 -->
+		<property name="fundCode" type="java.lang.String">
+			<column name="fund_code" />
+		</property>
+		<!--  Wind代码(公募都有对应wind代码,私募部分有,短期没有)  -->
+		<property name="windCode" type="java.lang.String">
+			<column name="wind_code" />
+		</property>
+		<!--  基金简称  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  基金全称  -->
+		<property name="fullName" type="java.lang.String">
+			<column name="full_name" />
+		</property>
+		<!-- 成立日期(YYYYMMDD)	 -->
+		<property name="setupDate" type="java.lang.String">
+			<column name="setup_date" />
+		</property>
+		<!-- 发行机构  -->
+		<property name="companyId" type="java.lang.String">
+			<column name="company_id" />
+		</property>
+		<!-- 基金类型(0：其他1：股票型2：债券型3：混合型4：货币市场型5：保本型6：QDII7：固定收益)  -->
+		<property name="fundType" type="java.lang.Integer">
+			<column name="fund_type" />
+		</property>
+		<!--  托管银行(参照数字字典)  -->
+		<property name="custodianBank" type="java.lang.Integer">
+			<column name="custodian_bank" />
+		</property>
+		<!--  投资起点  -->
+		<property name="minBuyAmount" type="java.math.BigDecimal">
+			<column name="min_buy_amount" />
+		</property>
+		<!--  优选理由  -->
+		<property name="priorityDesc" type="java.lang.String">
+			<column name="priority_desc" />
+		</property>
+		<!--  期限(天)  -->
+		<property name="IntervalDay" type="java.lang.Integer">
+			<column name="Interval_day" />
+		</property>
+		<!--  创建人	  -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--  创建时间  -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  更新人  -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="article" extends="wirich">
+		<!-- 获取分组资讯列表 -->
+		<action name="groupArt" class="ArticleContentAction" method="getArticleByGroup">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--获取资讯内容 -->
+		<action name="getArt" class="ArticleContentAction" method="getArticleContentOld">
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+	<package name="articleContent" extends="wirichJsp">
+		<!--获取资讯内容 -->
+		<default-interceptor-ref name="defaultStack" />
+		<action name="getArtContent" class="ArticleContentAction" method="getArticleContent">
+			<result name="success">/article/article.jsp</result>
+		</action>
+	</package>
+</struts>

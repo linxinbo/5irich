@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="szking" extends="wirich">
+		<!-- 风险等级测评-->
+		<action name="rskAssQustList" class="RiskAsstAction" method="rskAssQustList">
+		</action>
+	 	<!-- 风险等级测试结果 430111-->
+		<action name="risktest" class="RiskAsstAction" method="RiskTest">
+		</action>
+		<!-- 查询客户资产信息-->
+		<action name="userInof" class="UserInfor" method="assetInformation">
+		</action>
+		<!-- 查询客户资产信息-->
+		<action name="userAsset" class="UserInfor" method="asset">
+		</action>
+		<!-- 查询客户短期资产信息-->
+		<action name="shortPeriod" class="UserInfor" method="shortPeriod">
+		</action>
+		<!-- 查询客户短期资产已经完成交易的信息-->
+		<action name="shortPeriodEnd" class="UserInfor" method="shortPeriodEnd">
+		</action>
+		<!-- 查询客户短期资产已经完成交易的信息-->
+		<action name="shortPeriodBusiness" class="UserInfor" method="shortPeriodBusiness">
+		</action>
+
+		<!-- 手机客户信息查询 520101-->
+		<action name="custoInof" class="UserInfor" method="custoInfo">
+		</action>
+		<!-- 手机已购买基金信息查询 (520013)-->
+		<action name="SbscribingFundsAction" class="transactionQueryAction" method="sBFundsQustList">
+		</action>
+	     <!-- 查询历史交易确认 (520027)-->
+		<action name="ChTransactionHistoryAction" class="transactionQueryAction" method="cTHQustList">
+		</action>
+	    <!-- 交易历史申请接口 (520026)-->
+		<action name="TradeDetailAction" class="transactionQueryAction" method="tradeDetailList">
+		</action>
+		<!-- 验证基金赎回 Action-->
+		<action name="checkRedemption" class="transactionQueryAction" method="checkRedemption">
+		</action>
+	    <!-- 基金赎回 (520004)Action-->
+		<action name="RedemptionAction" class="transactionQueryAction" method="iredemptionList">
+		</action>
+	      <!-- 手机基金撤单520006firstBuy-->
+		<action name="CancellationAction" class="transactionQueryAction" method="cancellationList">
+		</action>
+		<!-- 430406户首次购买的判断firstBuy-->
+		<action name="firstbuy" class="transactionQueryAction" method="firstBuy">
+		</action>
+		<!-- 查询组合与相关基金信息   组合 -->
+		<action name="firstBuyGroup" class="transactionQueryAction" method="firstBuyGroup">
+		</action>
+		 <!-- 520011-手机购买信息查询-->
+		<action name="buyinfo" class="UserInfor" method="buyInfo">
+		</action>
+  		<!-- 认/申购 -->
+		<action name="buyFundList" class="FundQueryAction" method="buyFundList">
+		</action>
+		
+		<!-- 交易申请接口 -->
+		<action name="tradingList" class="transactionQueryAction" method="tradeAskList">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 交易申请（在途）接口 -->
+		<action name="tradingOnthewayList" class="transactionQueryAction" method="onthewayAskList">
+		</action>
+		<!-- 交易确认接口 -->
+		<action name="historyTrading" class="transactionQueryAction" method="historyTrading">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 可以通过手机交易的支付渠道查询   520103 -->
+		<action name="bankList" class="FundQueryAction" method="mobilePaymentList">
+		</action>
+		
+		<!-- 查询组合与相关基金信息   430350 -->
+		<action name="fundPortfolioList" class="FundQueryAction" method="fundPortfolioList">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 查询可以撤单的交易-520205 -->
+		<action name="cancellationList" class="FundQueryAction" method="cancellationList">
+		</action>
+		
+		<!-- 查询认、申购、赎回费用—430319  -->
+		<action name="purchaseList" class="FundQueryAction" method="purchaseList">
+		</action>
+		
+		<!-- 查询用户银行卡（带鉴权接口标志）— 490023 -->
+		<action name="accountList" class="FundQueryAction" method="accountList">
+		</action>
+		
+		<!-- 增卡第一步 银行卡鉴权 -->
+		<action name="AuthenticateBank" class="FundQueryAction" method="AuthenticateBank">
+		</action>
+		<!-- 查询用户可鉴权的网点号 -->
+		<action name="unAuthenticateChannelId" class="FundQueryAction" method="unAuthenticateChannelId">
+		</action>
+		
+		<!-- 查询基金列表—500228 -->
+		<action name="fundList" class="FundQueryAction" method="fundList">
+		</action>
+		<!-- 组合申购490004 组合申购开通-->
+		<action name="portipe" class="UserInfor" method="portfolipened">
+		</action>
+		<!-- 组合申购2 -->
+		<action name="buyGroupFund" class="BuyGroupFund" method="buyGroupFund">
+		</action>
+		<!-- 查询客户银行卡与交易账号的关系 - 520109(包含未鉴权) -->
+		<action name="authenticatedBankQuery" class="FundQueryAction" method="relationList">
+		</action>
+		<!-- 查询单客户已鉴权银行卡- 430332(不包含未鉴权) -->
+		<action name="relationList" class="FundQueryAction" method="authenticatedBankQuery">
+		</action>
+		
+		<!-- 增卡—bgAddCard -->
+		<action name="addCardList" class="FundQueryAction" method="addCardList">
+		</action>
+		
+		<!-- 查询基金信息-520010 -->
+		<action name="fdinfoList" class="FundQueryAction" method="fdinfoList">
+		</action>
+		
+		<!-- 430306—查询基金列表-->
+		<action name="querylistfund" class="UserInfor" method="QueryListFund">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 430307—查询基金信息-->
+		<action name="fundInformationquery" class="UserInfor" method="FundInformationQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 520228 -->
+		<action name="ceshi" class="transactionQueryAction" method="ceshi">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 缓存查询-->
+		<action name="fandlist" class="UserInfor" method="fandlist">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 查询组合购买最低额-->
+		<action name="portfolipenedQuery" class="UserInfor" method="portfolipenedQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 修改交易密码webservice 520001-->
+		<action name="modifyBusinessPW" class="FundQueryAction" method="modifyBusinessPW">
+		</action>
+		
+		<!-- 交易历史查询webservice 520026-->
+		<action name="businessTradingList" class="FundQueryAction" method="tradingList">
+		</action>
+		
+		<!-- 更新短期理财的数据-->
+		<action name="timerInsertShortPeriod" class="UserInfor" method="timerInsertShortPeriod">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!-- 用户总资产信息&单支资产信息-->
+		<action name="asset_summary" class="UserInfor" method="asset_summary">
+		</action>
+		<!-- 用户资产信息&单支资产信息_在途资产（申购/认购、赎回）-->
+		<action name="GetAsset_fundInTransit" class="UserInfor" method="GetAsset_fundInTransit">
+		</action>
+		<!-- 用户组合基金列表-->
+		<action name="groupFundListQuery" class="UserInfor" method="groupFundListQuery">
+		</action>
+		<!-- 用户组合基金——单支基金列表-->
+		<action name="groupFund_singleListQuery" class="UserInfor" method="groupFund_singleListQuery">
+		</action>
+		<!-- 用户单只基金详细信息-->
+		<action name="singleFundDetailQuery" class="UserInfor" method="singleFundDetailQuery">
+		</action>
+		<!-- 用户单只基金详细信息——每日收益-->
+		<action name="singleFundDailyIncomeQuery" class="UserInfor" method="singleFundDailyIncomeQuery">
+		</action>
+		
+		<!-- 查询历史交易信息 —— 单只基金-->
+		<action name="singleTradeInfoQuery" class="UserInfor" method="singleTradeInfoQuery">
+		</action>
+		
+		<!-- 查询组合 —— 在途信息-->
+		<action name="GetAsset_groupFundInTransit" class="UserInfor" method="GetAsset_groupFundInTransit">
+		</action>
+		<!-- 根据交易发生时间、结束时间、交易类型查询用户的交易信息 -->
+		<action name="singleTradeInfoAllQuery" class="UserInfor" method="singleTradeInfoAllQuery">
+		</action>
+		<!-- 根据组合id查询组合交易信息 -->
+		<action name="queryGroupFundBuyInfo" class="UserInfor" method="queryGroupFundBuyInfo">
+		</action>
+		<!-- 根据groupid查询组合单只表计算日收益 -->
+		<action name="queryGroupFundDayProfit" class="UserInfor" method="queryGroupFundDayProfit">
+		</action>
+		
+		<!-- 基金定投 -->
+		<action name="saveScene" class="UserInfor" method="saveScene">
+		</action>
+		<action name="queryScene" class="UserInfor" method="queryScene">
+		</action>
+		<action name="endScene" class="UserInfor" method="endScene">
+		</action>
+		<action name="asset_castsurely" class="UserInfor" method="asset_castsurely">
+		</action>
+	</package>
+</struts>
+
+
+

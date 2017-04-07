@@ -1,0 +1,107 @@
+html,body{
+
+    overflow-x: hidden;
+}
+.fundrecommbanner{
+    min-width: 1200px;
+    height: 200px;
+    background: url("../../images/fundrecomm/fundrecomm.png") no-repeat center center;
+}
+.fundrecommcon ul{
+   list-style: none;
+    width:100%;
+    overflow: hidden;
+    border-bottom: solid 1px #d9dce0;
+    font-size:14px;
+    margin-bottom:0;
+}
+.frtuijian{
+    font-size:14px;
+}
+.fundrecommcon ul li{
+    float:left;
+    text-align: center;
+
+}
+
+.fundrecommcon{
+   margin: 0 auto;
+    width:1200px;
+    min-width:1200px;
+   padding-bottom:146px;
+}
+
+.fundrecommcon .frhunhe{
+    margin-top:5%;
+}
+.fundrecommcon .frzhaiquan{
+    margin-top:5%;
+}
+.fundrecommcon .frhuobi{
+    margin-top:5%;
+}
+.fundrecommcon .frqd{
+    margin-top:5%;
+}
+.fundrecommcon .frgp{
+    margin-top:5%;
+}
+.fundrecommcon .frbiaoti{
+    font-size:24px;
+    font-weight: bold;
+    line-height: 64px;
+    border-bottom:solid 1px #edf0f4;
+    margin-bottom: 0;
+}
+.fundrecommcon ul li:nth-of-type(1){
+    width:21%;
+    text-align: left;
+    padding-left: 20px;
+}
+.fundrecommcon ul li:nth-of-type(2){
+    width:12%;
+}
+.fundrecommcon ul li:nth-of-type(3){
+    width:12%;
+}
+.fundrecommcon ul li:nth-of-type(4){
+    width:12%;
+}
+.fundrecommcon ul li:nth-of-type(5){
+    width:34%;
+}
+.fundrecommcon ul li:nth-of-type(6){
+    width:9%;
+}
+.fundrecommcon .frtuijian li{
+    height:70px;
+}
+.fundrecommcon .frtuijian li a{
+    display: inline-block;
+    height:100%;
+    vertical-align: middle;
+}
+.fundrecommcon .frtuijian li i{
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fundrecommcon .frtuijian li span{
+    color:#a9a9a9;
+    font-size:14px;
+}
+/*.fundrecommcon .frtuijian li:nth-of-type(3){*/
+
+    /*color:#ff9900;*/
+
+/*}*/
+
+.fundrecommcon .frtuijian li:nth-of-type(6){
+    color:#ff9900;
+}
+.red{
+    color:#ff9900;
+}
+.green{
+    color:#2db996;
+}

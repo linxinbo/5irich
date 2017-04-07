@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>理财易站-交易记录</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+</head>
+<link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+<link rel="stylesheet" href="../common/common.css?t=20170308">
+<link rel="stylesheet" href="../style/header/header.css?t=20170308">
+<link rel="stylesheet" href="../style/login/login.css?t=20170308">
+<link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+<link rel="stylesheet" href="../style/Plug-in/paginator.css?t=20170308">
+<link rel="stylesheet" href="../style/assets/assets.css?t=20170308">
+<link rel="stylesheet" href="../js/assets/jedate.css?t=20170308">
+<body>
+<header class="cheader bline" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span>首页</span></a>
+                <a id="short_f"><span>基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="../fund/fundrecomm.html">精选基金</a>
+                    <a href="../fund/fund_theme.html">主题基金</a>
+                    <a href="../fund/fund_all.html">所有基金</a>
+                    <!--<a href="../fund/chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="assets clearfix">
+
+    <!--交易记录列表-->
+    <div class="assets_list clearfix">
+        <h2 class="assets_list_title">交易记录</h2>
+        <div class="assets_switch_trade" id="trade_type">
+            <a data-code="22" class="select"><span>申购</span></a>
+            <a data-code="20"><span>认购</span></a>
+            <a data-code="24"><span>赎回</span></a>
+            <a data-code="36"><span>转换</span></a>
+            <a data-code="39"><span>定投</span></a>
+            <a data-code="43"><span>分红</span></a>
+            <a data-code="29"><span>修改分红方式</span></a>
+        </div>
+        <div class="trade_history_sreach">
+            <div class="trade_history_left" id="trade_time" style="text-align: left;">
+                <a class="select" data-id="0">全部</a>
+                <a data-id="1">近一个月</a>
+                <a data-id="3">近三个月</a>
+                <a data-id="6">近六个月</a>
+            </div>
+            <div class="trade_history_left">
+                <span>日期：</span>
+                <input type="text" id="startDate" placeholder="选择起始日期"> - <input type="text" id="endDate" placeholder="选择结束日期">
+                <a class="sreach" id="trade_sreach" onmouseover="this.style.background='#ff9900';this.style.color='#fff'" onmouseout="this.style.background='#fff';this.style.color='#333'">查询</a>
+
+            </div>
+
+
+        </div>
+        <div class="assets_table" id="trade_history">
+            <table>
+                <thead>
+                <tr>
+                    <th>基金名称/代码</th><th>交易时间</th><th>交易金额/份额</th><th>手续费（元）</th><th>支付方式（尾号）</th><th>业务名称</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+
+                    <td>华安逆向策略<br><span class="font12hui9">040035</span></td>
+                    <td>150,000.00</td>
+                    <td>150,000.00</td>
+                    <td class="fonthong">1000.00</td>
+                    <td class="fontlv">50.00<br><span class="font12hui9">2016-12-09</span></td>
+                    <td><a class="zuijia_buy">追加</a> <a class="shuhui_buy">赎回</a><a class="shuhui_buy">详情</a></td>
+
+                </tr>
+
+                <tr>
+                    <td>华安逆向策略<br><span class="font12hui9">040035</span></td><td>150,000.00</td><td>150,000.00</td><td class="fonthong">1000.00</td><td class="fontlv">50.00<br><span class="font12hui9">2016-12-09</span></td><td><a class="zuijia_buy">追加</a> <a class="shuhui_buy">赎回</a><a class="shuhui_buy">详情</a></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><img src="../images/assets/xia.png" class="xia"></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><span class="none_tishi">您还没有交易记录</span><a class="none_tobuy" href="../fund/fund_all.html">立即购买</a></td>
+                </tr>
+                <!--js加载内容的模板-->
+                </tbody>
+            </table>
+            <div class="fund_page clearfix" >
+                <div id="sample_2_paginate">
+                    <!--<ul class="pagination">
+
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">…</a></li>
+                        <li><a href="#">88</a></li>
+                        <li><a href="#">下一页</a></li>
+                    </ul>-->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/home/home.js?t=20170308"></script>
+<!--分页-->
+<script src="../js/Plug-in/bootstrap-paginator.js?t=20170308"></script>
+<!--分页-->
+<script src="../js/assets/date.js?t=20170308"></script>
+<script src="../js/assets/jedate.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/assets/trade_history.js?t=20170308"></script>
+</html>

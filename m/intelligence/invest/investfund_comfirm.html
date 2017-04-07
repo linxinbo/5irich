@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--根据屏幕全局显示-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="基金">
+	<meta name="description" content="基金">
+	<!--指定的iphone中safari顶端的状态条的样式-->
+	<meta name="format-detection" content="email=no" />
+	<!--去除Android平台中对邮箱地址的识别-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 隐藏地址栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="" />
+	<!-- 状态条风格 -->
+	<title>定投</title>
+	<!--日历组件依赖css begin-->
+	<link rel="stylesheet" type="text/css" href="../../css/calendar/calendar.css">
+	<link rel="stylesheet" type="text/css" href="../../css/calendar/calendar.default.css">
+	<!--日历组件依赖css end-->
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common_zjy.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common_qifu.css" />
+	<link rel="stylesheet" href="../../css/common_new.css">
+	<style>
+        #drawMoneyNum{
+            width: 154px;
+            height: 45px;
+            font-size: 1.2em;
+            text-align: right;
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;">
+				<div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+	<header class="header">
+		<a class="back1" href="javascript:history.go(-1);">＜返回</a>
+		<h1>定投确认</h1>
+	</header>
+	<div>
+		<form name="" action="">
+
+			<div>
+				<ul class="normal_list mtop15">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>基金名称</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account fund_id"><span>待生成</span></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>收款方式</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account">
+									<span>前收费</span>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>扣款周期类型</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account investperiods_no_conf">
+									<span>请选择</span>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>扣款周期</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account investcyclevalue_no_conf">
+									<span>请选择</span>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<ul class="normal_list">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<em>支付卡号</em>
+							<div class="t bank_account">
+								<div id="myAccount" class="my_account bank_no_conf">
+									<span>请选择</span>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div>
+				<ul class="normal_list">
+
+					<li>
+						<i class="d"></i>
+						<div id="drawNO" class="money_num clearfix">
+							<em>定投金额</em>
+							<span class="n">元</span>
+							<div id="myAccount" class="my_account conf_num" style="margin-right:0;font-size: 1.2em">1000</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+			
+			<div style="">
+				<ul class="normal_list mtop15">
+					<li>
+						<i class="d"></i>
+						<div class="banks">
+							<i data_rest="ID_rest" class="x" style="display:none;"></i>
+							<em>交易密码</em>
+							<div class="t bank_account">
+								<input type="password" id="tradePW" name="tradePW" class="n pass_trade" size="20" placeholder="请输入交易密码" value="">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<div class="p_t_9">
+				<a id="drawBtn" class="button_a" href="#">确认定投</a>
+			</div>
+			
+			<!-- <div class="tip_txt">
+				<h3><i></i>温馨提示</h3>
+				<p>1. 我们将 24 小时受理您的交易申请。</p>
+			
+				<p>2. 开放日15：00以后或非开放日提交的交易申请，系统视为下一基金开放日提交。由于网速等原因，从您提交委托到我司系统受理可能出现一定的延迟，请以后台系统处理该交易的时间为准。</p>
+			
+				<p>3. 基金交易遵循“未知价法”，即：交易时不知道准确的交易价格，而是按该工作日收市后计算并公布的基金净值计算成交量。“最新基金净值”是上一个工作日的基金净值，仅能作为您的投资参考，而非交易价格。</p>
+			</div> -->
+			
+		</form>
+	</div>
+	<footer class="footer"></footer>
+</body>
+
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/qifu/common_qifu.js"></script>
+<script src="../../js/qifu/invest_fund_step3.js"></script>
+<script type="text/javascript" src="../../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../../js/qifu/home.js"></script>
+</html>

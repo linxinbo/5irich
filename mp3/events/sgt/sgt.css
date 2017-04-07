@@ -1,0 +1,55 @@
+/*.bk-con{*/
+    /*padding:0 0.7em;*/
+    /*background: red;*/
+    /*overflow: hidden;*/
+/*}*/
+ .bk-conone{
+     padding:0 0.7em;
+    background: #fff;
+     overflow: hidden;
+
+}
+ .bk-conone .jiaoyin1{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/bg1.png) no-repeat center center;
+    background-size:100%;
+}
+ .bk-conone .jyword{
+    width:85%;
+    padding-left:0.5em;
+    line-height: 2em;
+    float:left;
+    margin-top:1.3em;
+}
+ .bk-conone .btn{
+    float:left;
+    width:15%;
+
+}
+ .bk-conone .jiaoyin2{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/bg2.png) no-repeat center center;
+    background-size:100%;
+}
+ .bk-conone .jiaoyin3{
+    padding:0 0.8em;
+    margin-top:0.5em;
+    overflow: hidden;
+    background: url(images/bg3.png) no-repeat center center;
+    background-size:100%;
+}
+ .tishi{
+     width:90%;
+     height:40%;
+     background: #fff;
+     position: absolute;
+     top:90%;
+     left:50%;
+     margin:0 0 0 -45%;
+     box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+     padding-bottom:1em;
+ }

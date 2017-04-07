@@ -1,0 +1,30 @@
+.fund_img{
+    width: 100%;
+}
+.fund_img ul{
+    background: #fff;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+.fund_img ul li img{
+    width: 100%;
+}
+.fund_img ul li:nth-child(1){
+    padding-left: 11px;
+    height: 2.62em;
+    line-height: 2.62em;
+    font-size: 1.08em;
+    font-weight: bold;
+    color: #222222;
+}
+
+.private_img{
+    width: 100%;
+}
+.private_img ul{
+    background: #fff;
+    padding-top: 1px;
+}
+.private_img ul li img{
+    width: 100%;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="user_api" extends="wirich">
+		<!-- 风险等级测试(tranType=430111)进行风险等级评测 -->
+		<action name="riskltest" class="UserInformationQueryAction"
+			method="riskLevelTest">
+		</action>
+		<!-- 风险等级测试题目查询(tranType=430110)进行风险等级评测题目的查询 -->
+		<action name="risklquery" class="UserInformationQueryAction"
+			method="riskLevelTestQueryBean">
+		</action>
+		<!--查询基金列表(trantype=430306) -->
+		<action name="fundlist" class="UserInformationQueryAction"
+			method="fundList">
+		</action>
+		<!--用户信息查询 -->
+		<action name="userInfo" class="UserInformationQueryAction"
+			method="userInfo">
+		</action>
+
+		<!--查询基金状态与基金转换状态 -->
+		<action name="transformation" class="UserInformationQueryAction"
+			method="stateATransformation">
+		</action>
+	</package>
+</struts>
+
+
+

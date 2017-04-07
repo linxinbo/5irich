@@ -1,0 +1,148 @@
+.llyq_store3{
+    height: 4em;
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+
+}
+.llyq_store3_ul{
+    overflow: hidden;
+    position: relative;
+}
+.llyq_store3_ul li{
+    width: 33.333333%;
+    padding: 1em 0;
+    float: left;
+}
+.llyq_store3_ul li a{
+    display: block;
+    line-height: 2em;
+    overflow: hidden;
+}
+.llyq_store3_ul li a i{
+    display: block;
+    width: 35%;
+    height: 2em;
+    float: left;
+
+}
+.llyq_store3_ul li a span{
+    display: block;
+    float: right;
+    width: 65%;
+    font-size: 1.4em;
+
+}
+.llyq_store3_ul li a i.an1{
+    background: url(../../images_mp/an1.png) no-repeat center;
+    background-size: auto 2em;
+}
+.llyq_store3_ul li a i.an2{
+    background: url(../../images_mp/an2.png) no-repeat center;
+    background-size: auto 2em;
+}
+.llyq_store3_ul li a i.an21{
+    background: url(../../llyq1/images/llyq_zn.png) no-repeat center;
+    background-size: auto 2em;
+}
+.llyq_store3_ul li a i.an3{
+    background: url(../../images_mp/an3.png) no-repeat center;
+    background-size: auto 2em;
+}
+.xinrenhui{
+    width: 92%;
+    margin: 1em auto 0 auto;
+}
+.xinrenhui_content{
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    padding: 0 1em;
+}
+.llyq_sy{
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    padding-top: 0.7em;
+    color: #e21313;
+}
+.llyq_sy_as{
+    position: absolute;
+    width: 75px;
+    display: block;
+    overflow: hidden;
+    top: 5px;
+    left: 50%;
+    margin-left: -37.5px;
+}
+.llyq_syl{
+    display: block;
+    font-size: 1.12em;
+    color: #999999;
+    text-align: center;
+}
+.llyq_store2{
+    position: relative;
+    overflow: hidden;
+    margin: 1em 0;
+}
+.llyq_store2 li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.llyq_store2 li a{
+    display: block;
+    color: #000;
+    font-size: 1.8em;
+}
+.llyq_store2 li span{
+    display: block;
+    font-size: 1.12em;
+    color: #999;
+}
+.llyq_end{
+    padding: 1em;
+    text-align: center;
+    color: #ff7330;
+}
+.llyq_end .an{
+    float: left;
+    background: url(../../images_mp/an.png) no-repeat center;
+    background-size: auto 1em;
+    height: 1em;
+    width: 1em;
+    display: block;
+}
+
+.llyq_store21{
+    position: relative;
+    overflow: hidden;
+    margin: 2em 0;
+}
+.llyq_store21 li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.llyq_store21 li a{
+    display: block;
+    color: #000;
+    font-size: 1.8em;
+}
+.llyq_store21 li span{
+    display: block;
+    font-size: 1.12em;
+    color: #999;
+}
+.anquan{
+    position:absolute;
+    top:5px;
+    left: 10px;
+    display: block;
+    width: 48px;
+    height: 60px;
+}

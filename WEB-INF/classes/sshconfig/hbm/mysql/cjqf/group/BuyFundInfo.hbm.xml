@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.group.CJQFWebBuyFundInfoBean" table="cjqfweb_single_fundtrade_info">
+		<!--  客户号	 -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		<!--  客户号	 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!--  TA代码	 -->
+		<property name="tano" type="java.lang.String">
+			<column name="tano" />
+		</property>
+		<!--  基金代码	  -->
+		<property name="fundcode" type="java.lang.String">
+			<column name="fundcode" />
+		</property>
+		<!--  组合代码  -->
+		<property name="combinationcode" type="java.lang.String">
+			<column name="combinationcode" />
+		</property>
+		<!-- 组合方式	 -->
+		<property name="comtype" type="java.lang.String">
+			<column name="comtype" />
+		</property>
+		<!--  账号  -->
+		<property name="moneyaccount" type="java.lang.String">
+			<column name="moneyaccount" />
+		</property>
+		<!--  购买金额 -->
+		<property name="applicationamount" type="java.lang.String">
+			<column name="applicationamount" />
+		</property>
+		<!--  购买成功的标志	 -->
+		<property name="status" type="java.lang.String">
+			<column name="status" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createtime" type="java.sql.Timestamp">
+			<column name="createtime" />
+		</property>
+		<!--  基金名称	 -->
+		<property name="fundname" type="java.lang.String">
+			<column name="fundname" />
+		</property>
+	</class>
+</hibernate-mapping>

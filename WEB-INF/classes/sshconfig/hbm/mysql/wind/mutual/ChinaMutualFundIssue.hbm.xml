@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMutualFundIssueBean" table="ChinaMutualFundDescription">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!-- Wind 代码 -->
+		<property name="sInfoWindcode" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!--  基金中文名称  -->
+		<property name="fInfoChinesename" type="java.lang.String">
+			<column name="F_INFO_CHINESENAME" />
+		</property>
+		<!-- 基金英文名称  -->
+		<property name="fInfoEnglishname" type="java.lang.String">
+			<column name="F_INFO_ENGLISHNAME" />
+		</property>
+		<!--  基金中文简称  -->
+		<property name="fInfoShortname" type="java.lang.String">
+			<column name="F_INFO_SHORTNAME" />
+		</property>
+		<!-- 基金管理人	  -->
+		<property name="fInfoMgrcomp" type="java.lang.String">
+			<column name="F_INFO_MGRCOMP" />
+		</property>
+		<!-- 基金托管人  -->
+		<property name="fInfoCustodianbank" type="java.lang.String">
+			<column name="F_INFO_CUSTODIANBANK" />
+		</property>
+		<!-- 基金类型	1 契约型封闭式2 契约型开放式   -->
+		<property name="fInfoType" type="java.math.BigDecimal">
+			<column name="F_INFO_TYPE" />
+		</property>
+		<!-- 基金投资类型	1 股票型2 债券型3 混合型4 货币市场型5 保本型   -->
+		<property name="fInfoInvestype" type="java.math.BigDecimal">
+			<column name="F_INFO_INVESTYPE" />
+		</property>
+		<!--  发行日期 -->
+		<property name="fIssueDate" type="java.lang.String">
+			<column name="F_ISSUE_DATE" />
+		</property>
+		<!--设立募集期(月)	  -->
+		<property name="fIssueColperiod" type="java.lang.String">
+			<column name="F_ISSUE_COLPERIOD" />
+		</property>
+		<!--  设立募集目标(亿份)	 -->
+		<property name="fIssueMaxcolshare" type="java.math.BigDecimal">
+			<column name="F_ISSUE_MAXCOLSHARE" />
+		</property>
+		<!-- 净认购份额 - 成 立 条 件(亿份) -->
+		<property name="fIssueNetpchshare" type="java.math.BigDecimal">
+			<column name="F_ISSUE_NETPCHSHARE" />
+		</property>
+		<!--认购户数-成立条件 -->
+		<property name="fIssueNetpchnum" type="java.math.BigDecimal">
+			<column name="F_ISSUE_NETPCHNUM" />
+		</property>
+		<!-- 基金面值 -->
+		<property name="fInfoParvalue" type="java.math.BigDecimal">
+			<column name="F_INFO_PARVALUE" />
+		</property>
+		<!-- 存续期(年)	 -->
+		<property name="fInfoPtmyear" type="java.math.BigDecimal">
+			<column name="F_INFO_PTMYEAR" />
+		</property>
+		<!--管理费率(%)  -->
+		<property name="fInfoManafeeratio" type="java.math.BigDecimal">
+			<column name="F_INFO_MANAFEERATIO" />
+		</property>
+		<!-- 托管费率(%) -->
+		<property name="fInfoCustfeeratio" type="java.math.BigDecimal">
+			<column name="F_INFO_CUSTFEERATIO" />
+		</property>
+		<!-- 销售费率(%) -->
+		<property name="fInfoSalefeeratio" type="java.math.BigDecimal">
+			<column name="F_INFO_SALEFEERATIO" />
+		</property>
+		<!-- 基金成立日期 -->
+		<property name="fInfoSetupdate" type="java.lang.String">
+			<column name="F_INFO_SETUPDATE" />
+		</property>
+		<!--基金到期日期	  -->
+		<property name="fInfoMaturitydate" type="java.lang.String">
+			<column name="F_INFO_MATURITYDATE" />
+		</property>
+		<!-- 发行数量(亿份) -->
+		<property name="fIssueShares" type="java.math.BigDecimal">
+			<column name="F_ISSUE_SHARES" />
+		</property>
+		<!-- 总有效申购户数 -->
+		<property name="sFellowDistor" type="java.lang.String">
+			<column name="S_FELLOW_DISTOR" />
+		</property>
+		<!--上市日期 -->
+		<property name="fInfoListdate" type="java.lang.String">
+			<column name="F_INFO_LISTDATE" />
+		</property>
+		<!-- 申购起始日期 -->
+		<property name="fPchStartdate" type="java.lang.String">
+			<column name="F_PCH_STARTDATE" />
+		</property>
+		<!-- 赎回起始日期 -->
+		<property name="fRedmStartdate" type="java.lang.String">
+			<column name="F_REDM_STARTDATE" />
+		</property>
+		<!-- 投资者认购起始日期	-->
+		<property name="fIssueStartdateind" type="java.lang.String">
+			<column name="F_ISSUE_STARTDATEIND" />
+		</property>
+		<!--投资者认购终止日期  -->
+		<property name="fIssueEnddateind" type="java.lang.String">
+			<column name="F_ISSUE_ENDDATEIND" />
+		</property>
+		<!-- 认购下限(万元) -->
+		<property name="fIssueMinamtind" type="java.math.BigDecimal">
+			<column name="F_ISSUE_MINAMTIND" />
+		</property>
+		<!-- 认购上限(万元) -->
+		<property name="fIssueMaxamtind" type="java.math.BigDecimal">
+			<column name="F_ISSUE_MAXAMTIND" />
+		</property>
+		<!--每次最低申购金额 ( 万元) -->
+		<property name="fPchredmPchminamt" type="java.math.BigDecimal">
+			<column name="F_PCHREDM_PCHMINAMT" />
+		</property>
+		<!-- 单笔赎回份额下限(份) -->
+		<property name="fPchredmRedmminamt" type="java.math.BigDecimal">
+			<column name="F_PCHREDM_REDMMINAMT" />
+		</property>
+		<!-- 巨额赎回认定比例(%) -->
+		<property name="fPchredmHugeredmpro" type="java.math.BigDecimal">
+			<column name="F_PCHREDM_HUGEREDMPRO" />
+		</property>
+		<!-- 货币代码 -->
+		<property name="crncyCode" type="java.lang.String">
+			<column name="CRNCY_CODE" />
+		</property>
+	</class>
+</hibernate-mapping>

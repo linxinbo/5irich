@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="aIndexPrices" extends="wirich">
+		<!-- 单一指数查询接口 -->
+		<action name="getSingleIndexAction" class="aIndexEODPricesAction" method="GetSingleIndex">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 全部指数查询接口 -->
+		<action name="getAllIndexAction" class="aIndexEODPricesAction" method="GetAllIndex">
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>
+
+
+

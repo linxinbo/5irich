@@ -1,0 +1,75 @@
+body{
+    background: url(images/bg.png) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 4em;
+}
+.middle{
+    width:90%;
+    padding:1.5em 1.5em 2.5em;
+    background: #fff;
+    border:solid 1px #fad8c0;
+    margin:4em auto;
+    text-align: center;
+}
+.middle img{
+    display: block;
+    width: 66%;
+    height: auto;
+    margin: 0 auto;
+}
+.middle p:nth-of-type(1){
+    margin-top:2em;
+}
+.middle p{
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    color:#333;
+}
+.middle button{
+    width:95%;
+    height:3em;
+    border-radius: 0.6em;
+}
+.middle button:nth-of-type(1){
+    background: #fcdbde;
+    color:#ef5374;
+    font-weight: 700;
+    margin-top: 2em;
+}
+.middle button:nth-of-type(2){
+    background: #ef5374;
+    color:#fff;
+    font-weight: 700;
+    margin-top: 2em;
+
+}
+.middle button:nth-of-type(3){
+    background: #ef5374;
+    color:#fff;
+    font-weight: 700;
+    margin-top: 2em;
+
+}
+.bobtn{
+    overflow: hidden;
+    width:100%;
+    background: #e12864;
+    padding:1.2em 0;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+.bobtn li{
+    width:33%;
+    float:left;
+    color:#fff;
+    text-align: center;
+    font-size: 1.2em;
+    border-right:solid 1px #fff;
+}
+.bobtn li a{
+    color:#fff;
+}
+.bobtn li:nth-of-type(3){
+    border:none;
+}

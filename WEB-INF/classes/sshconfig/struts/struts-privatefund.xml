@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="privatefunds" extends="wirich">
+		<!--私募基金列表分页-->
+		<action name="PrivateFundListAction" class="PrivateFundQueryAction" method="privateListPage">
+		<interceptor-ref name="defaultStack" />
+		</action> 
+		<!--私募基金列表 
+		<action name="PrivateFundListAction" class="PrivateFundQueryAction" method="privateList">
+		<interceptor-ref name="defaultStack" />
+		</action> -->
+	   <!--私募基金详情-->
+		<action name="PrivateFundDetailAction" class="PrivateFundDetaiQueryAction" method="privDetails">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--私募基金图表-->
+		<action name="privateFundChartAction" class="PrivateFundChartQueryAction" method="privateChart">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		 <!--管理人 -->
+		<action name="administrator" class="PrivateFundDetaiQueryAction" method="administrator">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		 <!--列表······-->
+		<action name="privatefundlist" class="PrivateFundDetaiQueryAction" method="listprinate">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		 <!--web 基金详情数据-->
+		<action name="privatesingle" class="PrivateFundDetaiQueryAction" method="privatesingle">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		 <!--私募基金表现 -->
+		<action name="performance" class="PrivateFundDetaiQueryAction" method="performance">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		 <!--私募基金表现 -->
+		<action name="performance1" class="PrivateFundDetaiQueryAction" method="performance1">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--任期回报web wind -->
+		<action name="fundmanage" class="PrivateFundDetaiQueryAction" method="fundmanage">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--私募基本信息 web -->
+		<action name="informationPrivate" class="PrivateFundDetaiQueryAction" method="informationPrivate">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		 <!--私募基金经理 -->
+		<action name="FundManagerQuery" class="PrivateFundDetaiQueryAction" method="managerquery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--单条基金净值 -->
+		<action name="webprivnav" class="PrivateFundChartQueryAction" method="singlenav">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--列表 Wbe 新
+		<action name="privatefundlist" class="PrivateFundQueryAction" method="privatefundlist">
+		<interceptor-ref name="defaultStack" />
+		</action>-->
+	</package>
+</struts>

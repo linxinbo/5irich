@@ -1,0 +1,282 @@
+.purchase_list{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+.addcard_title{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.addcard_title span{
+    display: block;
+    width: 22%;
+    float: left;
+}
+.addcard_title a{
+    display: block;
+    width: 78%;
+    float: left;
+    color: #ff9900;
+    padding-left: 10px;
+}
+.error{
+    font-size: 16px;
+    color: #ff0000;
+}
+.code_input{
+    float: left;
+    font-size: 16px;
+    color: #999999;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #dde0e4;
+    margin-left: 10px;
+    width: 140px;
+    line-height: normal;
+}
+.code_input1{
+    float: left;
+    font-size: 16px;
+    color: #999999;
+    padding: 10px;
+    outline: none;
+    margin-left: 10px;
+    width: 140px;
+    line-height: normal;
+}
+.code_input:hover{
+    border-color: #999;
+}
+.code_input:focus{
+    border-color: #ff9900;
+}
+.code_btn{
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    color: #ff9900;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ff9900;
+    margin-left: 20px;
+    width: 140px;
+    line-height: normal;
+    text-align: center;
+}
+.code_btn1{
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    color: #999999;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #999999;
+    margin-left: 20px;
+    width: 140px;
+    line-height: normal;
+    text-align: center;
+}
+.banklist{
+    position: relative;
+    font-size: 16px;
+    color: #5b9afc;
+}
+.banklist_c{
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: 280px;
+    border: 1px solid #ffa51e;
+    border-radius: 5px;
+    background-color: #fffcef;
+    padding: 9px 0;
+}
+.banklist_c ul{
+    margin: 0;
+}
+.banklist_c ul li{
+    width: 33.333333%;
+    float: left;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.banklist_c ul li i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    vertical-align: top;
+}
+.banklist_c ul li span{
+    display: inline-block;
+    vertical-align: top;
+    color: #ff9900;
+    font-size: 12px;
+    margin-left: 0;
+}
+.gs_bank{
+    background-image: url("../../images/trade/gs.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.gd_bank{
+    background-image: url("../../images/trade/gd.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.gf_bank{
+    background-image: url("../../images/trade/gf.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.hx_bank{
+    background-image: url("../../images/trade/hx.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.js_bank{
+    background-image: url("../../images/trade/js.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.jt_bank{
+     background-image: url("../../images/trade/jt.png");
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: 20px 20px;
+ }
+.ms_bank{
+    background-image: url("../../images/trade/ms.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.ny_bank{
+    background-image: url("../../images/trade/ny.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.pa_bank{
+    background-image: url("../../images/trade/pa.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.pf_bank{
+    background-image: url("../../images/trade/pf.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.yy_bank{
+    background-image: url("../../images/trade/yy.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.yz_bank{
+    background-image: url("../../images/trade/yz.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.zg_bank{
+    background-image: url("../../images/trade/zg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.zs_bank{
+    background-image: url("../../images/trade/zs.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.zx_bank{
+    background-image: url("../../images/trade/zx.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 20px;
+}
+.jiao{
+    position: absolute;
+    top:35px;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background-image: url("../../images/trade/jiao.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px 10px;
+}
+/*开户协议*/
+.user-arg {
+    width: 800px;
+    height: 600px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -300px;
+    background: #fff;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+    z-index: 99999999;
+    display: none;
+}
+.userArg-head {
+    width: 100%;
+    height: 30px;
+    background: #f3f3f3;
+    margin-top: -20px;
+    padding: 0 10px;
+    position: relative;
+}
+.userArg-head h3 {
+    font-size: 14px;
+    line-height: 30px;
+}
+.userArg-close {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    background: url(../../images/register/dialog.png) no-repeat center;
+    background-size: 100%;
+    cursor: pointer;
+}
+.userArg-cont {
+    width: 760px;
+    height: 450px;
+    overflow: auto;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.userArg-cont p {
+    text-indent: 2em;
+    line-height: 1.8em;
+    font-size: 14px;
+}
+.userArg-cont h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.userArg-footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.userArg-true {
+    width: 300px;
+    border-radius: 3px;
+}
+

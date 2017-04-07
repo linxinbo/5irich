@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-用户登录</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" href="css_mp/bootstrap.min.css">
+    <link rel="stylesheet" href="css_mp/swiper.min.css">
+    <link rel="stylesheet" href="css_mp/comm.css">
+    <link rel="stylesheet" href="css_mp/home.css">
+    <link rel="stylesheet" href="css_mp/login.css">
+    <link rel="stylesheet" href="css_mp/feather.css">
+</head>
+<body>
+<div>
+
+
+    <!--头部开始-->
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <div class="login_logo">
+            <a href="home.html"><img src="images_mp/login_user.png"></a>
+        </div>
+        <div class="mtopdd">
+            <ul class="login_list">
+                <li>
+                    <i class="username"></i>
+                    <input type="text" id="cardNo" name="cardNo" placeholder="输入手机/账号/邮箱" class="n" value="">
+                    <input type="hidden" id="openId" name="openId" class="n" placeholder="手机号码或者邮箱" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li class="errorLi">请输入您的号码</li>
+                <li>
+                    <i class="password"></i>
+                    <input type="password" id="tradePW" name="tradePW" placeholder="密码" class="n" value="">
+                    <i data_rest="PW_rest" class="x" style="display: none;"></i>
+                </li>
+                <li>
+                    <i class="yanzhengma"></i>
+                    <input type="text" id="valiCode" name="valiCode" placeholder="输入验证码" class="n" value="">
+                    <span class="span"><img src="" alt="" class="reshpic login_yz"></span>
+                    <span class="span1">不区分大小写</span>
+                </li>
+            </ul>
+        </div>
+        <div class="login_title_g mtopd menddd">
+            <a  id="login_yh" class="btn btn-block btn_lanse btn-lg">登录</a>
+            <a  class="btn btn-block btn_hongse btn-lg" href="sigin/sigin.html">注册</a>
+        </div>
+        <div class="login_title_f mtopd">
+            <div class="jg duiqi">
+                <input type="checkbox" id="jzwo"><span> 记住我</span>
+            </div>
+            <div class="jg" style="text-align: right;padding-top:0.04em"><a href="sigin/forget_step1.html">忘记密码？</a></div>
+
+        </div>
+
+        <!--第三方登录-->
+        <!--<div class="posi_bottom">
+            <h2><span>&nbsp;&nbsp;&nbsp;&nbsp;同意协议，使用第三方登录&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
+            <ul class="weixin_hide">
+                <li class="weixin"><i class="icon"></i><span>微信登陆</span></li>
+                <li class="qq"><i class="icon"></i><span>腾讯QQ</span></li>
+                <li class="weibo"><i class="icon"></i><span>新浪微博</span></li>
+            </ul>
+        </div>-->
+        <!--第三方登录-->
+    </div>
+    <!--内容结束-->
+
+</div>
+
+
+</body>
+<script src="js_mp/jquery.min.js"></script>
+<script src="js_mp/swiper.min.js"></script>
+<script src="js_mp/bootstrap.min.js"></script>
+<script src="js_mp/jquery.cookie.js"></script>
+<script src="js_mp/common_qifu.js"></script>
+<script src="js_mp/user_login.js"></script>
+<script src="js_mp/login/login_user.js"></script>
+<script type="text/javascript">
+    $(".reshpic").on("click", function() {
+        $(this).attr("src", mainUrl+"IdentCodeGenerateAction?a="+Math.random());
+        $("#valiCode").val("");
+
+    });
+    var webChart=getArgs();
+    var openId=webChart.openId;
+    $("#openId").val(openId);
+    if(openId!=null&&openId!=""&&openId!='undefined'){
+        $(".button_b").attr('href','sigin/sigin.html?openId='+openId);
+    }
+</script>
+</html>

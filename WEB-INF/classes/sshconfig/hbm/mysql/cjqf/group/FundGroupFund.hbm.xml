@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.group.FundGroupFundBean" table="cj_fund_group_fund">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金组合ID	 -->
+		<property name="groupId" type="java.lang.String">
+			<column name="group_id" />
+		</property>
+		<!--  基金主键ID	 -->
+		<property name="fundId" type="java.lang.String">
+			<column name="fund_id" />
+		</property>
+		<!--  基金类型(0：公募基金 ( 默认)1：私募基金2：短期理财)  -->
+		<property name="fundType" type="int">
+			<column name="fund_type" />
+		</property>
+		<!--  基金占比(基金在基金组合中占有多少比例，比如：0.2000表示占用20%一个组合所以基金比例相加=1)  -->
+		<property name="fdProportional" type="java.math.BigDecimal">
+			<column name="fd_proportional" />
+		</property>
+		<!--  基金说明  -->
+		<property name="fdInfo" type="java.lang.String">
+			<column name="fd_info" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  更新人  -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

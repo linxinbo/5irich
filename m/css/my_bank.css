@@ -1,0 +1,59 @@
+.header{
+    position: relative;
+}
+.bankadd{
+}
+.bankadd i{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon_tianjiayinhangka@2x.png) 0 0;
+    background-size: 100% 100%;
+}
+.bank_list{
+    margin-top: 15px;
+}
+.bank_list ul li{
+    background: #fff;
+    margin-bottom: 10px;
+}
+.bank_list ul li div{
+    height: 37px;
+    width: 92%;
+    margin: 0 auto;
+}
+.bank_head{
+    border-bottom: 1px solid #e3e3e3;
+}
+.bank_head span, .bank_num span{
+    height: 36px;
+    line-height: 36px;
+    font-size: 17px;
+    color: #323232;
+}
+.bank_num{
+    text-align: right;
+}
+.bank_del{
+    cursor: pointer;
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: url("../images/icon_shanchuyinhangka@2x.png") no-repeat;
+    background-size: 100%;
+    display: none;
+}
+.zanwu{
+    display: none;
+    margin-top: 50px;
+}
+.zanwu span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #808080;
+}

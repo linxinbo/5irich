@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.privated.CjqfWebPrivateFundOtherInfomationBean" table="cjqfweb_private_fund_other_info">
+		<!-- Wind代码 -->
+		<id name="fundId" type="java.lang.String">
+			<column name="fund_id" />
+		</id>
+		<!-- 投资目标	  -->
+		<property name="investTarget" type="java.lang.String">
+			<column name="invest_target" />
+		</property>
+		<!--  投资范围  -->
+		<property name="investTactics" type="java.lang.String">
+			<column name="invest_tactics" />
+		</property>
+		<!-- 	收益分配原则  -->
+		<property name="profitDistribution" type="java.lang.String">
+			<column name="profit_distribution" />
+		</property>
+		<!-- 业绩比较基准  -->
+		<property name="benchmark" type="java.lang.String">
+			<column name="benchmark" />
+		</property>
+		<!-- 风险收益特征  -->
+		<property name="riskProfitCharact" type="java.lang.String">
+			<column name="risk_profit_charact" />
+		</property>
+		<!-- 投资理念  -->
+		<property name="investIdea" type="java.lang.String">
+			<column name="invest_idea" />
+		</property>
+		<!--  投研团队概况	 -->
+		<property name="researchTeamDesc" type="java.lang.String">
+			<column name="research_team_desc" />
+		</property>
+		<!-- 是否代售  -->
+		<property name="commissionflat" type="java.lang.Integer">
+			<column name="commissionflat" />
+		</property>
+		<!--  购买标志		 -->
+		<property name="buyfiat" type="java.lang.Integer">
+			<column name="buyfiat" />
+		</property>
+		<!-- 支持定投	  -->
+		<property name="fundCast" type="java.lang.Integer">
+			<column name="fund_cast" />
+		</property>
+		<!--  	风险系数	 -->
+		<property name="riskCoefficient" type="java.lang.Integer">
+			<column name="risk_coefficient" />
+		</property>
+		<!-- 	收益系数  -->
+		<property name="rateOfReturn" type="java.lang.Integer">
+			<column name="rate_of_return" />
+		</property>
+		<!--  	主题标签	 -->
+		<property name="hashtag" type="java.lang.Integer">
+			<column name="hashtag" />
+		</property>
+		<!-- 优选理由	  -->
+		<property name="priorityDesc" type="java.lang.String">
+			<column name="priority_desc" />
+		</property>
+		<!--  	认购费率(%)	 -->
+		<property name="firstRate" type="java.lang.String">
+			<column name="first_rate" />
+		</property>
+		<!-- 赎回费率(%)	  -->
+		<property name="returnRate" type="java.lang.String">
+			<column name="return_rate" />
+		</property>
+		<!--  	申购折扣费率(%)	 -->
+		<property name="fdBuyDiscount" type="java.lang.String">
+			<column name="fd_buy_discount" />
+		</property>
+		<!-- 	赎回折扣费率(%)  -->
+		<property name="fdReturnDiscount" type="java.lang.String">
+			<column name="fd_return_discount" />
+		</property>
+		<!--  	退出费用	 -->
+		<property name="fInfoReturnratio" type="java.lang.String">
+			<column name="f_info_returnratio" />
+		</property>
+		<!--  开放日期	 -->
+		<property name="openDate" type="java.lang.String">
+			<column name="open_date" />
+		</property>
+		<!-- 开放方式	  -->
+		<property name="fInfoBuytype" type="java.lang.String">
+			<column name="f_info_buytype" />
+		</property>
+		
+		<!--  公司概况	 -->
+		<property name="companyProfile" type="java.lang.String">
+			<column name="company_profile" />
+		</property>
+		<!-- 	业务范围  -->
+		<property name="scopeOfBusiness" type="java.lang.String">
+			<column name="scope_of_business" />
+		</property>
+		<!-- 公司荣誉 	 -->
+		<property name="honorOfCompany" type="java.lang.String">
+			<column name="honor_of_company" />
+		</property>
+		<!-- 风险控制	  -->
+		<property name="riskManagement" type="java.lang.String">
+			<column name="risk_management" />
+		</property>
+		<!--  投研团队人员	 -->
+		<property name="investmentResearchTeam" type="java.lang.String">
+			<column name="investment_research_team" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.lang.String">
+			<column name="create_time" />
+		</property>
+		<!-- 更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+			</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,93 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; max-width:750px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+.main{ width:93%; margin:auto}
+.gm span a,a:hover{ color:#fff}
+
+.ban{ position:relative;}
+.ban img{ width:100%;}
+.ban a{ display:block;padding-top:1.5%; padding-bottom:1.5%; position:absolute; right:50%; }
+.ban .a1{ width:25%; top:70%; margin-right:-27%}
+.ban .a2{ width:30%; top:82%; margin-right:-29%}
+.title{ width:100%; text-align:center; color:#fff; font-size:3rem; background:#c87517; border-radius:6px; padding-top:1.2%; padding-bottom:1.5%; letter-spacing:1px; line-height:3rem; }
+.ptop{ background:#ffedd9; border:1px solid #c87517;margin-top:2.5%; border-radius:8px;}
+.ptop p{ font-size:2rem; width:94%; margin:0.8% auto; line-height:1.8em;}
+.ptop p span{ color:#e32f18;}
+
+.timg{ width:93%; margin:3% auto; display:block; margin-bottom:2%}
+.con1 span{ display:block; width:22%; float:left; font-size:2.5rem; color:#fff; background:#c87517; text-align:center; padding-top:1%; padding-bottom:1%; border-radius:10px; margin-top:1%}
+.con1 p{ width:75%; float:right; font-size:2rem; color:#c87517; line-height:1.8em; margin-bottom:2%}
+.con1 img{ width:100%; }
+.con2 span{ display:inline-block;font-size:2.5rem; color:#fff; background:#c87517; text-align:center; padding:1% 2%; border-radius:10px; margin-top:3%; margin-bottom:2%;}
+.con2 table{ background:#c87517; width:100%; text-align:center;}
+.con2 table td{ background:#fff; color:#a46f08; font-size:2rem; padding-top:2%; padding-bottom:2%}
+.con2 table .tr1{ font-size:3rem; font-weight:bold; color:#c87517}
+.con2 table .td1{ width:65%}
+.con3 img{ width:100%; margin-top:2%}
+
+.table1{ background:#fff; width:93%; margin:3% auto}
+.table1 td{ text-align:center; font-size:2rem; padding-top:1.5%; padding-bottom:1.5%; width:33.3%}
+.table1 .tr1 td{ background:#f6ebbe}
+.table1 .tr2 td{ background:#ebeef5}
+.table1 .tr3 td{ background:#fcf9f4}
+.gm span{ display:block;font-size:3rem; color:#fff; background:#c87517; text-align:center; padding:1% 2%; border-radius:10px; margin-top:3%; margin-bottom:2%;}
+.conleft{ width:20%; float:left;}
+.conleft span{display:block; width:100%; font-size:2.5rem; color:#fff; background:#c87517; text-align:center; padding-top:1%; padding-bottom:1%; border-radius:10px; margin-top:1%}
+.conleft img{ width:100%; display:block; margin:20% auto; margin-bottom:10%}
+.conleft i{ display:block; font-size:3rem; text-align:center; line-height:3rem; margin:3%;}
+.conleft b{ display:block; font-size:2rem; color:#c87517; text-align:center; font-weight:normal}
+.conright{ float:right; width:78%}
+.conright img{ width:100%; vertical-align:bottom; }
+.divtitle{ text-align:center; border-radius:10px; font-size:3rem; color:#c87517; padding-top:1%; padding-bottom:1%; background:#f6ebbe; width:93%; margin:2% auto; margin-bottom:0}
+
+.table2{ background:#fff; width:93%; margin:1% auto}
+.table2 td{ background:#fdf8e5; text-align:center; padding-top:2%; padding-bottom:2%; font-size:2rem; color:#a46f08}
+.table2 .tr td{ background:#ffedd9; font-size:3rem; color:#c87517;}
+.table2 .td1{ width:65%}
+.titlebot{display:inline-block;  font-size:2.5rem; color:#fff; background:#c87517; text-align:center; padding-top:1%; padding-bottom:1%; border-radius:10px; margin-top:1%; padding-left:2%; padding-right:2%}
+.tablebot{ width:93%; margin:1% auto; margin-bottom:2%; background:#fff;}
+.tablebot td{ padding-top:2%; background:#fdf8e5;padding-bottom:2%; text-align:center; font-size:2rem; color:#a46f08}
+.tablebot .tr td{ background:#ffedd9; color:#c87517;}
+.tablebot .td1{ width:55%}
+
+@media (min-width:640px) and (max-width:750px) { 
+	html{ font-size:62.5%; }	
+}
+@media (min-width:580px) and (max-width:640px) { 
+	html{ font-size:55.5%; }	
+}
+@media (min-width:480px) and (max-width:580px) { 
+	html{ font-size:50.5%; }
+}
+@media (min-width:430px) and (max-width:480px) { 
+	html{ font-size:48.5%; }
+}
+@media (min-width:350px) and (max-width:430px) { 
+	html{ font-size:45.5%; }
+}
+@media (min-width:300px) and (max-width:350px) { 
+	html{ font-size:40.5%; }
+}
+
+.header,.footer{background:#389ad7;}
+.header{height:45px;line-height:45px;}
+.header .back{float:left;padding:12px 9px;}
+.header .back span{display:none;}
+.header .back i{float:left;width:20px;height:20px;background:url(../../images/all_ico_150106.png) 0 0;background-size:150px 300px;}
+.header .add{float:right;padding:12px 9px;}
+.header .add span{display:none;}
+.header .add i{float:right;width:20px;height:20px;background:url(../../images/icon_add@2x.png);background-size:100% 100%;}
+.header .searchIcon{float:left;padding:12px 9px;}
+.header .searchIcon i{float:left;width:20px;height:20px;background:url(../../images/icon_search@2x.png) 0 0;background-size:100% 100%;}
+.header h1{margin:0 50px;text-align:center;color:#fff;font-size:18px;}
+.header .collectIcon{position:absolute;top:0;right:10px;height:45px;}
+.header .collectIcon dt{position: absolute;width: 20px;height: 100%;}
+.header .collectIcon .wjx1{background: url(../../images/icon_star@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon .wjx2{background: url(../../images/icon_favorate_white@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon dd{margin-left:25px;line-height:45px;color:#fff;}

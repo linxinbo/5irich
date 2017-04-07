@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>Wirich2.0</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		classpath:/applicationContext.xml,
+		classpath:/sshconfig/spring/*.xml,
+		classpath:/sshconfig/spring/r360/*.xml,
+		classpath:/sshconfig/spring/api/*.xml
+		</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>CharactorFilter</filter-name>
+		<filter-class>com.wirich.common.ActionFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharactorFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>cjqfFilter</filter-name>
+		<filter-class>com.wirich.common.WirichFilter</filter-class>
+	</filter>
+	<!--<filter-mapping>
+		<filter-name>cjqfFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>cjqfFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>cjqfFilter</filter-name>
+		<url-pattern>*.htm</url-pattern>
+	</filter-mapping>
+
+	-->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.wirich.common.StartBeforeListener</listener-class>
+	</listener>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.html</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500.html</location>
+	</error-page>
+	<listener>
+		<listener-class>com.wirich.common.OnlineUserListener</listener-class>
+	</listener>
+	<!-- UDP协议  --> 
+	<servlet>
+		<servlet-name>InitTimerServlet</servlet-name>
+		<servlet-class>com.wirich.auto.InitTimerServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+<servlet>
+		<servlet-name>InitTimerServlet2</servlet-name>
+		<servlet-class>com.wirich.auto.InitTimerServlet2</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+</web-app>

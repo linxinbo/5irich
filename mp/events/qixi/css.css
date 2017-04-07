@@ -1,0 +1,40 @@
+.qixi_banner{position: relative;overflow: hidden;}
+.qixi_banner img{display: block;width: 100%;height: auto;}
+.qixi_m_top1{overflow:hidden;background: url(images/qixi_m_top1.png) no-repeat center;position: relative;}
+.qixi_m_top2{overflow:hidden;background: url(images/qixi_m_top2.png) no-repeat center;position: relative;}
+.qixi_m_end{overflow:hidden;background: url(images/qixi_m_end.png) no-repeat center top;position: relative;}
+.qixi_m_end .bridge-left {
+    position: absolute;
+    top: 20px;
+    right: 50%;
+    margin-right: 30px;
+    z-index: 1;
+}
+.qixi_m_end .bridge-right {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: 30px;
+    z-index: 1;
+}
+.kiss-gif {
+    position: absolute;
+    left: 50%;
+    top: 16px;
+    margin-left: -28px;
+    z-index: 100;
+}
+.wenzi1{padding:0 2em;}
+.wenzi1 img{display: block;width: 100%;height: auto;}
+.anniu1{display: block;margin: 1em 0;}
+.anniu1 img{display: block;width: 50%;height: auto;margin: 0 auto;}
+
+.anniu2{display: block;margin: 1em 0;}
+.anniu2 img{display: block;width: 50%;height: auto;margin: 0 auto;}
+.wenzi3{
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+    padding:0 2em;
+    margin-top: 110px;
+}

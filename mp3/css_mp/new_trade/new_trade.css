@@ -1,0 +1,196 @@
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+.clearfix:after {content: "";display: block;clear: both;}
+.clearfix {zoom: 1;}
+/*header*/
+.nt_head {width:100%;}
+.nt_head ul {width: 100%;background: #fff;}
+.nt_head ul li {
+    width: 25%;
+    float: left;
+    font-size: 1.24em;
+    line-height: 2.91em;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nt_head ul li span {
+    display: block;
+    height: 100%;
+    font-weight: bold;
+}
+.nt_head ul li .nt_ac {
+    border-bottom: 2px solid #ff9900;
+}
+
+/*导航*/
+.nt_nav {
+    width: 100%;
+    margin-top: 1px;
+    border-bottom: 1px solid #d8dce0;
+}
+.nt_nav ul{
+    width: 100%;
+    position: relative;
+}
+
+.nt_nav ul li {
+    width: 49.8%;
+    text-align: center;
+    float: left;
+    background: #fff;
+    font-size: 1em;
+}
+.nt_nav ul li:nth-child(2){
+    margin-left: 0.4%;
+}
+.nt_nav .nt_navCon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.12em;
+    line-height: 3.0em;
+}
+.nt_nav .nt_navup {
+    color: #666666;
+}
+.nt_nav .nt_navdown {
+    color: #ff9900;
+}
+.nt_nav .nt_navup:after{
+    display: inline-block;
+    content: "";
+    width: .62em;
+    height: .44em;
+    background-image: url(../../images_mp/trade/nt_traup.png);
+    background-size: 100% 100%;
+    margin-left: .6em;
+    margin-bottom: .1em;
+}
+.nt_nav .nt_navdown:after{
+    display: inline-block;
+    content: "";
+    width: .62em;
+    height: .44em;
+    background-image: url(../../images_mp/trade/nt_tradown.png);
+    background-size: 100% 100%;
+    margin-left: .6em;
+    margin-bottom: .1em;
+}
+.nt_nav .nt_navCont{
+    position: absolute;
+    top: 3.5em;
+    left: 0;
+    width: 100%;
+    padding-left: 1em;
+    background: #fff;
+    z-index: 99;
+    overflow: hidden;
+    border-bottom: 1px solid #d8dce0;
+}
+.nt_nav .nt_navCont ul li {
+    border-bottom: 1px solid #d8dce0;
+    width: 100%;
+    line-height: 3.06em;
+    color: #999;
+    text-align: left;
+}
+.nt_nav .nt_navCont ul li:last-child {
+    border-bottom: none;
+}
+.nt_nav .nt_navCont .nt_sure {
+    color: #ff9900;
+}
+.nt_nav .nt_navCont .nt_sure:after{
+    display: inline-block;
+    content: "";
+    width: 1.24em;
+    height: .8em;
+    background-image: url(../../images_mp/trade/nt_sure.png);
+    background-size: 100% 100%;
+    float: right;
+    margin-top: 1.33em;
+    margin-right: 1em;
+}
+/*.nt_nav .nt_navCon i {*/
+    /*display: inline-block;*/
+    /*width: .62em;*/
+    /*height: .44em;*/
+    /*background-image: url(../../images_mp/trade/nt_traup.png);*/
+    /*background-size: 100% 100%;*/
+    /*margin-left: .6em;*/
+    /*margin-top: 2em;*/
+/*}*/
+/*当前持仓*/
+.nt_content {
+    width: 100%;
+}
+.nt_content ul li {
+    background: #fff;
+    margin-top: .9em;
+    padding: 0 1.06em;
+}
+.nt_content .nt_conT {
+    width: 100%;
+    border-bottom: 1px solid #d8dce0;
+    position: relative;
+}
+.nt_content .nt_conT h3 {
+    width: 100%;
+    font-size: 1.24em;
+    line-height: 2.8em;
+}
+.nt_content .nt_conT h3 span{
+    font-size: .9em;
+    color: #8f8f8f;
+}
+.nt_content .nt_conT p {
+    height: 1.1em;
+    font-size: 1.1em;
+    color: #8f8f8f;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -.55em;
+}
+.nt_content .nt_conB {
+    width: 100%;
+}
+#trade_cd {
+	color:#ff9900;
+}
+.nt_conB ul li {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+    color: #adadad;
+    margin-bottom: 1em;
+}
+.nt_conB ul li span {
+    font-size: 1.24em;
+    color: #444444;
+}
+.nt_conB ul li:nth-child(2) {
+    float: left;
+    width: 40%;
+}
+.nt_noData {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10em 0 27em 0;
+}
+
+.nt_noData img {
+    width: 15em;
+    height: 15em;
+    margin: 0 auto;
+}
+.nt_noData h3 {
+	margin-top: .5em;
+    font-size: 1.28em;
+    line-height: 2em;
+    color: #ff9900;
+}

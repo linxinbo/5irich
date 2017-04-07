@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.shortperiod.ShortFundInfoBean" table="cj_short_fund_info">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金主表ID	(默认为Wind代码”.“前部分)	 -->
+		<property name="fdId" type="java.lang.String">
+			<column name="fd_id" />
+		</property>
+		<!--  已经购买人数  -->
+		<property name="buyCount" type="java.lang.Long">
+			<column name="buy_count" />
+		</property>
+		<!--  预期收益率	  -->
+		<property name="expectProfit" type="java.math.BigDecimal">
+			<column name="expect_profit" />
+		</property>
+		<!--  预期收益类型(0：无收益1：近一年收益) -->
+		<property name="expectProfitType" type="java.lang.Integer">
+			<column name="expect_profit_type" />
+		</property>
+		<!-- 下一次开放日期	 -->
+		<property name="nextBuyDate" type="java.lang.String">
+			<column name="next_buy_date" />
+		</property>
+		<!-- 基金状态(0：未开始出售1：开始出售2：停止出售)  -->
+		<property name="fdState" type="java.lang.Integer">
+			<column name="fd_state" />
+		</property>
+		<!-- 操作类型(0：无1：购买2：预约)  -->
+		<property name="operateType" type="java.lang.Integer">
+			<column name="operate_type" />
+		</property>
+		<!--  创建人	  -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--  创建时间  -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  更新人  -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

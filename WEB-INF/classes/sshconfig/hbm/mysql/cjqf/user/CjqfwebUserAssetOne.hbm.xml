@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.szking.r360.UserAssetOneDataBean" table="cjqfweb_user_asset_one">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  用户编号  -->
+		<property name="custno" type="java.lang.Integer">
+			<column name="custno" />
+		</property>
+		<!--  成本  -->
+		<property name="costmoney" type="java.lang.String">
+			<column name="costmoney" />
+		</property>
+		<!--  基金当前净值  -->
+		<property name="nav" type="java.lang.String">
+			<column name="nav" />
+		</property>
+		<!--  最新净值日期  -->
+		<property name="navdate" type="java.lang.String">
+			<column name="navdate" />
+		</property>
+		<!--    -->
+		<property name="totalfundvolbalance" type="java.lang.String">
+			<column name="totalfundvolbalance" />
+		</property>
+		<!--    -->
+		<property name="fundvol" type="java.lang.String">
+			<column name="fundvol" />
+		</property>
+		<!--  基金当前市值  -->
+		<property name="fundmarketvalue" type="java.lang.String">
+			<column name="fundmarketvalue" />
+		</property>
+		<!--  基金持有份额  -->
+		<property name="fundvolbalance" type="java.lang.String">
+			<column name="fundvolbalance" />
+		</property>
+		<!--  基金可用份额  -->
+		<property name="availablevol" type="java.lang.String">
+			<column name="availablevol" />
+		</property>
+		<!--  冻结份额  -->
+		<property name="fundfrozenbalance" type="java.lang.String">
+			<column name="fundfrozenbalance" />
+		</property>
+		<!--  基金代码  -->
+		<property name="fundcode" type="java.lang.String">
+			<column name="fundcode" />
+		</property>
+		<!--  基金简称  -->
+		<property name="fundname" type="java.lang.String">
+			<column name="fundname" />
+		</property>
+		<!--  Ta编号  -->
+		<property name="tano" type="java.lang.String">
+			<column name="tano" />
+		</property>
+		<!--  投资账户ID  -->
+		<property name="transactionaccountid" type="java.lang.String">
+			<column name="transactionaccountid" />
+		</property>
+		<!--  银行渠道ID  -->
+		<property name="channelid" type="java.lang.String">
+			<column name="channelid" />
+		</property>
+		<!--  银行渠道名称  -->
+		<property name="channelname" type="java.lang.String">
+			<column name="channelname" />
+		</property>
+		<!--  基金收益  -->
+		<property name="floatprofit" type="java.lang.String">
+			<column name="floatprofit" />
+		</property>
+		<!--  基金收益率  -->
+		<property name="addincomerate" type="java.lang.String">
+			<column name="addincomerate" />
+		</property>
+		<!--  日涨幅  -->
+		<property name="fundmarketvalue_ud" type="java.lang.String">
+			<column name="fundmarketvalue_ud" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-资产详情</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/assets/assets.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/asset-detail/asset-group-detail.css?t=20170308">
+</head>
+<body class="bodyhome">
+<header class="asset_header">
+    <a class="asset_fanhui" id="z_back" href="javascript:window.history.go(-1);">
+        <i class="asset_fanhui_icon"></i>
+    </a>
+    <div class="head_center">
+        <a class="head_title_as">组合详情</a>
+    </div>
+    <!--<a class="ty_sreach_as">
+        <span class="icon-search"></span>
+    </a>-->
+</header>
+<div class="group_total">
+    <ul class="group-adedis">
+        <li class="adeyester">
+            <span>0.00</span>
+            <br>
+            日收益(<i></i>)
+        </li>
+        <li class="adecurr">
+            <span>0.00</span>
+            <br>
+            当前持仓
+        </li>
+        <li class="adetotal">
+            <span>0.00</span>
+            <br>
+            累计收益(元)
+        </li>
+    </ul>
+</div>
+<div class="csdj_tp">
+    <div id="chart-panel" style="height: 320px;"></div>
+</div>
+
+<div class="group_pz_show">
+
+    <!-- <div class="csdj_title">
+         <span>根据您的个性化选择，我们为您提供的配置如下：</span>
+     </div>-->
+
+    <div class="csdj_ul mtopd mendd">
+
+        <div class="zngroup_list">
+            <div class="zngroup_list_left">
+                <i class="zngroup_box bgcolor0"></i>
+            </div>
+            <div class="zngroup_list_right">
+                <h2 style="color: #ee524f">866.0</h2>
+                <span>昨日收益</span>
+            </div>
+            <div class="zngroup_list_center">
+                <h2 class="fontb0">业易方达信用债债券A(000032)</h2>
+                <span>累计收益：2856.00元 持仓金额：75888.00元</span>
+            </div>
+        </div>
+
+
+        <!--<div class="skillbar clearfix " data-percent="25%">
+            <div class="skillbar-title"><span>华泰柏瑞消费成长</span></div>
+            <div class="skillbar-bar" style="background: #e77cff;"></div>
+            <div class="skill-bar-percent">25%</div>
+        </div> &lt;!&ndash; End Skill Bar &ndash;&gt;
+
+        <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title"><span>易方达稳健收益A</span></div>
+            <div class="skillbar-bar" style="background: #fdd181;"></div>
+            <div class="skill-bar-percent">50%</div>
+        </div> &lt;!&ndash; End Skill Bar &ndash;&gt;
+
+        <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title"><span>银华信用四季红</span></div>
+            <div class="skillbar-bar" style="background: #ff8381;"></div>
+            <div class="skill-bar-percent">40%</div>
+        </div> &lt;!&ndash; End Skill Bar &ndash;&gt;
+
+        <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title"><span>汇添富黄金及贵金属</span></div>
+            <div class="skillbar-bar" style="background: #ffbf81;"></div>
+            <div class="skill-bar-percent">75%</div>
+        </div>-->
+
+    </div>
+
+
+    <div class="csdj_ul_x mtopd mendd">
+
+        <h2 class="group-shouyi">收益走势图</h2>
+        <div id="canvas">
+            <!--				<canvas id="chart_canvas"></canvas>-->
+            <div class="container" id="container" style="width:100%;height:300px;padding-right: 0px;padding-left: 0px;">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="csdj_ul1 mendd">
+        <h2>调仓记录<span>></span></h2>
+        <div class="groupnews">
+
+        </div>
+
+    </div>
+
+
+    <div class="adeover">
+        <ul class="overul">
+            <li class="overli5" id="group_back" style="border-right:1px solid  #edf0f4;">一键赎回</li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<!--环形图-->
+<script src="../js_mp/echart/echarts.common.min.js?t=20170308"></script>
+<script src="../js_mp/echart/macarons.js?t=20170308"></script>
+<script src="../js_mp/echart/group_pie.js?t=20170308"></script>
+<!--环形图-->
+<!--组合收益走势图-->
+<script src="../js_mp/chart/highcharts.js?t=20170308"></script>
+<script src="../js_mp/chart/grid.js?t=20170308"></script>
+<script src="../js_mp/chart/Chart.min.js?t=20170308"></script>
+<script src="../js_mp/group/groupPie.js?t=20170308"></script>
+<script src="../js_mp/group/groupChart.js?t=20170308"></script>
+<!--组合收益走势图-->
+<script src="../js_mp/my_assets/back_funds.js?t=20170308"></script>
+<script src="../js_mp/asset-detail/asset-group-detail.js?t=20170308"></script>
+</html>

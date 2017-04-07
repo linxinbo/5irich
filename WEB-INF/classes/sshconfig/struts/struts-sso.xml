@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="sso" extends="wirich">
+		<!--sso单点登录-->
+		
+		<!--获取当前SessionId-->
+		<action name="getSessionId" class="SSOManager" method="getSessionId">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--金证回调接口时的验证方法-->
+		<action name="checkToken" class="SSOManager" method="checkToken">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--获取相应的webUserBean信息-->
+		<action name="getLoginUserInfoForRequest" class="SSOManager" method="getLoginUserInfoForRequest">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--金证回调接口时的Session超时同步方法-->
+		<action name="ssoSyncSessionId" class="SSOManager" method="syncSessionId">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--金证回调接口时的退出方法-->
+		<action name="ssoLogout" class="SSOManager" method="logout">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		
+		<!--金证回调接口时的验证方法-->
+		<action name="ssoLogout1" class="SSOManager" method="logout1">
+		<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>
+
+
+

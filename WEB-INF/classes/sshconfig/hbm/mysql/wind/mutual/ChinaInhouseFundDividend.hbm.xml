@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.wind.mutual.ChinaInhouseFundDividendBean" table="chinainhousefunddividend" >
+        <id name="objectId" type="string">
+            <column name="OBJECT_ID"/>
+        </id>
+        <property name="sInfoWindcode" type="string">
+            <column name="S_INFO_WINDCODE" />
+        </property>
+        <property name="eqyRecordDt" type="string">
+            <column name="EQY_RECORD_DT" />
+        </property>
+        <property name="exDt" type="string">
+            <column name="EX_DT" />
+        </property>
+        <property name="ftenspdiv" type="java.math.BigDecimal">
+            <column name="F_TEN_SP_DIV" />
+        </property>
+        <property name="dvdPayoutDt" type="string">
+            <column name="DVD_PAYOUT_DT" />
+        </property>
+        <property name="fInfoSplitInc" type="string">
+            <column name="F_INFO_SPLITINC" />
+        </property>
+        <property name="fInfoSplitDate" type="string">
+            <column name="F_INFO_SPLITDATE" />
+        </property>
+         </class>
+</hibernate-mapping>

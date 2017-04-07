@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.privated.CJPrivateFundInfoBean" table="cj_private_fund_info">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金主表ID   -->
+		<property name="fdid" type="java.lang.String">
+			<column name="fd_id" />
+		</property>
+		<!--  已经购买人数  -->
+		<property name="buycount" type="java.math.BigInteger">
+			<column name="buy_count" />
+		</property>
+		<!--  申购费率(%）  -->
+		<property name="rate" type="java.math.BigDecimal">
+			<column name="rate" />
+		</property>
+		<!--  认购费率(%)  -->
+		<property name="firstrate" type="java.math.BigDecimal">
+			<column name="first_rate" />
+		</property>
+		<!--  折扣费率(%）  -->
+		<property name="discountrate" type="java.math.BigDecimal">
+			<column name="discount_rate" />
+		</property>
+		<!--  创建人  -->
+		<property name="createperson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--   创建时间  -->
+		<property name="createtime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		
+		<!--   更新人  -->
+		<property name="updateperson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updatetime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+		</class>
+</hibernate-mapping>

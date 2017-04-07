@@ -1,0 +1,88 @@
+.bank_main{
+    margin-top: 15px;
+}
+#bank{
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    background: #fff;
+    color: #323232;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#bank span{
+    display: block;
+    margin-left: 12px;
+    height: 44px;
+    line-height: 44px;
+    background: url("../images/@x/icon_xuanzeyinhangkaxialajiantou.png") 96% 50% no-repeat;
+}
+.bank_sel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    padding-left: 12px;
+}
+.bank_form{
+    background: #fff;
+}
+.bank_form li{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.bank_form input{
+    display: block;
+    float: left;
+	font-size: 16px;
+    width: 90%;
+    height: 43px;
+    line-height: 43px;
+}
+#bank_num, #cardNo, #phone, #code,#pw{
+    text-indent: 12px;
+}
+#code{
+    display: block;
+    width: 72%;
+    float: left;
+}
+input.gray_bj{
+	    color: #ccc!important;
+    background: #fff!important;
+}
+#smsCode{
+    display: block;
+    width: 28%;
+    float: left;
+    background: #389ad7;
+    color: #fff;
+    font-size: 14px;
+}
+.next{
+    display: block;
+    height: 44px;
+    width: 92%;
+    margin: 40px auto 0;
+    background: #999;
+    border-radius: 2px;
+}
+.next span{
+    display: block;
+    line-height: 44px;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}s
+.x{
+    float: right;
+    width: 10%;
+    height: 44px;
+    background: url(../images/btn_del@2x.png) no-repeat center;
+    background-size: 18px 18px;
+}

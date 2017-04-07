@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+body,html{ background:#fff; margin:0; padding:0; font-family:'microsoft yahei','微软雅黑'; overflow-x:hidden;}
+p,ul{ margin:0; padding:0; list-style-type:none;}
+i{ font-style:normal;}
+img{ border:none;}
+a{ text-decoration:none;}
+.clear{ clear:both;}
+.main{ width:1193px; margin:auto}
+.fl{ float:left;}
+.fr{ float:right;}
+.absolute{ position:absolute;}
+.relative{ position:relative;}
+
+.banner{position:relative; overflow: hidden;height: 436px;margin: 0 auto;background:url(images/qdii-banner.jpg) center no-repeat;}
+.qdii_banner_end{position:relative; overflow: hidden;height: 200px;margin: 0 auto;background:url(images/ru-bannerend.jpg) center no-repeat;}
+.banner_title{width: 1200px;margin: 0 auto;padding: 1.5em 4em;}
+
+.banner_title span{font-size: 20px;line-height: 38px;color: #ffffff;}
+.qdii_content{width: 1200px;margin: 0 auto;overflow: hidden;}
+.qdii_content1{background-color:#e9f7ff;overflow: hidden;}
+.qdii_title1{color: #3399ff;font-size: 30px;text-align: center;}
+.qdii_title2{width: 1200px;margin: 0 auto;color: #666666;font-size: 24px;text-align: center;position: relative;line-height: 42px;margin-bottom: 10px;}
+.qdii_title2 .qdii_btn{background-color: #e60012;width: 250px;display: block;border-radius: 5px;height: 42px;margin: 4px auto;color: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  position: absolute;right: 0px;top:50%;margin-top: -21px;text-decoration: none;}
+.xf_table{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  border-collapse:collapse;
+  border:none;
+}
+.xf_table thead tr td{
+  border:solid #ccc 1px;
+  background-color: #3399ff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  font-weight:bold;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td{
+  border:solid #e7e6e6 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td:nth-child(2){
+  border:solid #e7e6e6 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #4190ee;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.xf_table tbody tr td:nth-child(3){
+  border:solid #e7e6e6 1px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  color: #e60012;
+  font-family: "Microsoft YaHei", "Hei";
+}
+.btn_xf{
+  border: 1px solid #e60012;
+  width: 90%;
+  display: block;
+  border-radius: 5px;
+  height: 42px;
+  margin: 4px auto;
+  color: #e60012;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+}
+.btn_xf:hover{
+  background-color: #e60012;
+  width: 90%;
+  display: block;
+  border-radius: 5px;
+  height: 42px;
+  margin: 4px auto;
+  color: #ffffff;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+}
+.qdii_zs{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+.qdii_zs img{
+  display: block;
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+.qdii_title3{width: 1200px;margin: 0 auto;height: 60px;line-height: 60px;background:url(images/qdii_title_bg.png) center no-repeat;text-align: center;}
+.qdii_title3 span{color: #3399ff;font-size: 30px;text-align: center;}
+.qdii_content3{margin-top: 20px;text-align: center;}
+.qdii_content3 span{margin-top: 20px;font-size: 20px;color: #333333;line-height: 36px;}
+.qdii_content4{margin-top: 20px;overflow: hidden;}
+
+.qdii_content4 a{display: block;float: left;}
+.qdii_content4 a img{display: block;width: 134px;height: 164px;}
+.qdii_content4 span{display: block;margin-left: 180px;font-size: 20px;line-height: 40px;}

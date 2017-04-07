@@ -1,0 +1,127 @@
+.banner{
+    min-width:1200px;
+    position: relative;
+    height:700px;
+    background-image: url("../../images/chuangfu/banner.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.banner .display{
+    width:1200px;
+    height:500px;
+    margin-left: -600px;
+    position: absolute;
+    top:30%;
+    left:50%;
+
+
+}
+.banner .display  ul{
+    list-style-type: none;
+    width:500px;
+    min-width: 500px;
+    margin:0 auto;
+    overflow: hidden;
+    color:#fff;
+}
+ .display ul li{
+   float:left;
+     margin:0 4%;
+     width:25%;
+     height:40px;
+     text-align: center;
+     font-size:19px;
+     font-weight:bold;
+     border:solid 2px #fff;
+     border-radius: 20px;
+     padding:5px 0;
+     cursor: pointer;
+}
+.banner .display .con{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    /*display: -webkit-box;*/
+    /*display:-moz-box;*/
+    padding:10px 0;
+}
+.banner .display .con .product{
+    width:20%;
+    height:360px;
+    box-shadow:0px 0px 5px #cccccc;
+    float:left;
+    margin:30px 2.3% 0;
+    background: #fff;
+    text-align: center;
+}
+.banner .display .con .product h1{
+    cursor: pointer;
+}
+.banner .display .con .product .biaoqian{
+    font-size:12px;
+    color:#ff9900;
+    padding:5px;
+    border:solid 1px #ff9900;
+    margin-left: 10px;
+}
+.banner .display .con .product .obj{
+    font-size:15px;
+    color:#b6b6b6;
+    margin-top:20px;
+}
+.banner .display .con .product .data{
+    font-size:49px;
+    font-weight:bold;
+    color:#ff9900;
+}
+.banner .display .con .product .data .baifenbi{
+    font-size:25px;
+}
+.banner .display .con .product .qitou{
+    font-size:12px;
+    color:#808080;
+}
+.banner .display .con .product button{
+    width:60%;
+    height:49px;
+    background: #ff9900;
+    color:#fff;
+    border:none;
+    font-size:21px;
+    margin-top:10px;
+}
+.qianshu_active{
+    color:#ff9900;
+    background: #fff;
+}
+.liucheng{
+    min-width:1200px;
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.liucheng p{
+    display: inline-block;
+    margin:0;
+    width:39px;
+    height:6px;
+    background: #ff9900;
+}
+.problem{
+    width:100%;
+    padding-bottom:77px;
+}
+.problem .one{
+    width:1200px;
+    min-width: 1200px;
+    margin:0 auto;
+
+}
+.problem .two{
+    width:1200px;
+    min-width: 1200px;
+    margin:40px auto 0;
+}

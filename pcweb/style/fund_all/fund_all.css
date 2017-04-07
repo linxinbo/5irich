@@ -1,0 +1,138 @@
+.fund_all_banner{
+    position: relative;
+    min-width: 1200px;
+    height: 200px;
+    background-image: url("../../images/fund_all/fund_all_banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.fund_all_content{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: none !important;
+}
+.fund_all_search{
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.fund_all_search .fund_input{
+    float: right;
+    border: 1px solid #d9dce0;
+    font-size: 14px;
+    padding: 9px;
+    width: 262px;
+    color: #999999;
+    outline: none;
+
+}
+.fund_all_search .fund_search_btn{
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+    width: 80px;
+    color: #ffffff;
+    background-color:#ff9900;
+    margin-left: -1px;
+    border: none;
+    outline: none;
+}
+.fund_class{
+    background-color: #f5f8fc;
+    overflow: hidden;
+}
+.fund_class .class_th1{margin: 15px;line-height: 30px}
+.fund_class .class_th1 .class_th1_title{
+    text-align: center;
+}
+.fund_class .class_th1 a{padding:3px 6px;margin-bottom: 8px;line-height: 30px;color: #000000;}
+/*.fund_class .class_th1 a:first-child{padding:3px 6px;background-color: #ff9900;color: #fff;}*/
+.fund_class .class_th1 a.select{padding:3px 6px;background-color: #ff9900;color: #fff;}
+.font14hui{font-size: 14px;color: #666666;}
+.b{font-weight: bold;}
+
+.fund_list{
+    margin-top: 50px;
+}
+.fund_list table{width: 100%;}
+.fund_list table thead tr{
+    border-bottom: 1px solid #d9dce0;
+    height:70px;
+    line-height: 70px;
+    background: #F9F9F9;
+
+}
+.fund_list table thead tr th{
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+.fund_list table thead tr th:first-child{
+    text-align: left;
+    line-height: 36px;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 10px;
+}
+.fund_list table tbody tr{
+    border-bottom: 1px solid #edf0f4;
+}
+.fund_list table tbody tr:hover{
+    border-bottom: 1px solid #edf0f4;
+    background-color: #f5f8fc;
+}
+.fund_list table tbody tr td{
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.fund_list table tbody tr td:first-child{
+    text-align: left;
+    line-height: 24px;
+    padding-left: 10px;
+}
+.fonthong{
+    color: #ff0000;
+}
+.fontlv{
+    color: #2db996;
+}
+.font12hui9{
+    color: #999999;
+    font-size: 12px;
+}
+.fund_buy{
+    display: inline-block;
+    /*width: 80px;*/
+    /*height: 30px;*/
+    /*padding:5px;*/
+    padding:0 3px;
+    color: #ff9900;
+    font-size: 14px;
+    line-height: 28px;
+}
+.fund_buy:hover{
+    display: inline-block;
+    /*width: 80px;*/
+    /*height: 30px;*/
+    /*padding:5px;*/
+    padding:0 3px;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #ff9900;
+    font-size: 14px;
+    /*border-radius: 3px;*/
+}
+
+.fund_page{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.pagination a{
+    color: #ff9900;
+}

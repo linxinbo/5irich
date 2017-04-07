@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站—智能组合</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../common/common.css?t=20170308">
+    <link rel="stylesheet" href="../style/home/home.css?t=20170308">
+    <link rel="stylesheet" href="../style/header/header.css?t=20170308">
+    <link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+    <link rel="stylesheet" href="../style/login/login.css?t=20170308">
+    <link rel="stylesheet" href="../style/intell/intell.css?t=20170308">
+    <link rel="stylesheet" href="../style/home/intell-test.css?t=20170308">
+</head>
+<body>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+<div class="intell-head">
+    <header class="cheader" id="home-cheader">
+        <div class="logo clearfix">
+            <div class="col-xs-6">
+                <img src="../images/intell/LOGO.png" class="clogo">
+            </div>
+            <div class="col-xs-6">
+                <div class="menu">
+                    <a href="../home.html"><span class="select">首页</span></a>
+                    <a id="short_f"><span>基金优选</span><i></i></a>
+                    <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                    <a id="assets"><span>我的资产</span></a>
+                    <div class="short_f" style="display:none">
+                        <a href="../fund/fundrecomm.html">精选基金</a>
+                        <a href="../fund/fund_theme.html">主题基金</a>
+                        <a href="../fund/fund_all.html">所有基金</a>
+                        <!--<a href="../fund/chuangfu.html">短期理财</a>-->
+                    </div>
+                </div>
+                <div class="Sign">
+                    <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+                </div>
+                <div class="login-back">
+                    <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="home-side">
+        <ul>
+
+            <li>
+                <div>
+                    <span class="home-side-icon"></span>
+                    <span class="home-side-write home-side-code">手机<br />金融</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="home-side-icon"></span>
+                    <span class="home-side-write home-side-phone">业务<br />咨询</span>
+                </div>
+            </li>
+            <li>
+                <div class="home-side-server">
+                    <span class="home-side-icon"></span>
+                    <span class="home-side-write">在线<br />客服</span>
+                </div>
+            </li>
+            <li class="home-backtop" id="home-backtop">
+                <div>
+                    <span class="home-side-icon"></span>
+                    <span class="home-side-write">返回<br />顶部</span>
+                </div>
+            </li>
+            <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+            <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+        </ul>
+    </aside>
+    <div class="container">
+        <h3>智能投顾</h3>
+        <p>风险分散化，长期收益更稳定</p>
+        <ul>
+            <li class="clearfix"><span></span><h4>风险分散化</h4></li>
+            <li class="clearfix"><span></span><h4>投资多元化</h4></li>
+            <li class="clearfix"><span></span><h4>操作简便化</h4></li>
+        </ul>
+    </div>
+
+</div>
+<div class="intell-skill">
+    <h3>专业的技术手段</h3>
+    <div class="container">
+        <div class="intell-skill-list">
+            <h4>基金筛选</h4>
+            <ul>
+                <li></li>
+                <li class="act"></li>
+                <li></li>
+            </ul>
+            <ol>
+                <li class="act">SVM算法-因子间非线性关系</li>
+                <li>基金经理的历史业绩、风格进行量化建模</li>
+                <li>定性方式对筛选结果进行复查</li>
+            </ol>
+        </div>
+        <div class="intell-skill-list">
+            <h4>量化模型</h4>
+            <ul>
+                <li></li>
+                <li class="act"></li>
+                <li></li>
+            </ul>
+            <ol>
+                <li class="act"><h4>Risk Parity模型</h4><p>全球最大的对冲公司桥水基金使用的大类资产配置模型</p></li>
+                <li><h4>MVO组合构建框架</h4><p>诺贝尔奖获得者提出的现代投资组合管理的基石</p></li>
+                <li><h4>Black-Litterman模型</h4><p>高盛公司进行资产配置的主要工具</p></li>
+            </ol>
+        </div>
+        <div class="intell-skill-list">
+            <h4>风险预警</h4>
+            <ul>
+                <li></li>
+                <li class="act"></li>
+                <li></li>
+            </ul>
+            <ol>
+                <li class="act">组合净值预警</li>
+                <li>基金波动预警</li>
+                <li>市场风险预警</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="intell-chart ">
+    <ul class="home-chart clearfix" style="margin: 80px auto 0 auto;">
+        <li class="home-chart1" style="margin-left: 250px;">
+            <span class="home-chart1-num">13.00% ~ 15.00%</span>
+            <h4 style="font-size: 18px;margin-top: 20px;display: block;color: #fff;margin-bottom: 0;text-align: center;">历史年化收益</h4>
+            <div id="home-chart1-pie"></div>
+        </li>
+        <li class="home-chart2 intell-funddetail">
+            <span class="home-chart-head">明星组合推荐</span>
+            <ul>
+            </ul>
+        </li>
+    </ul>
+    <div class="home-risk" style="padding:0 70px">
+        <span style="font-size: 20px;color: #fff;">当前风险等级:<strong style="color: #ff9a00;font-weight: normal;margin: 0 6px 0 10px;" class="home-rank">1</strong>级</span>
+        <div class="home-bar">
+            <span class="home-risk-bar"></span>
+            <!-- -12~731-->
+            <span class="home-risk-btn"></span>
+            <!--<span style="position: absolute;left: 2px;top: 20px;font-size: 12px;">1</span>-->
+            <!--<span style="position: absolute;right: 2px;top: 20px;font-size: 12px;">10</span>-->
+            <!--<img src="../images/home/home-risk-tip.png" alt="error" class="home-risk-tip">-->
+        </div>
+        <span class="home-risk-test home-intell-test">我要测评 ></span>
+        <span class="home-button1 intell-detail">立即购买</span>
+    </div>
+</div>
+<div class="intell-footer">
+    <h3>快捷的操作流程</h3>
+    <ul class="clearfix">
+        <li>
+            <i></i>
+            <h4>用户评测</h4>
+            <p>通过评测，绘制用户画像</p>
+        </li>
+        <li>
+            <i></i>
+            <h4>组合推荐</h4>
+            <p>智能推荐适合用户的组合</p>
+        </li>
+        <li>
+            <i></i>
+            <h4>一键购买</h4>
+            <p>方便快捷的购买方式</p>
+        </li>
+    </ul>
+</div>
+<div class="intell-test">
+    <h3>投资风险测评</h3>
+    <span class="intell-test-close"></span>
+    <ul class="intell-test-cont clearfix">
+        <li class="test-question">
+            <h4>1.您的年龄是？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="A" class="test-radio" checked="checked"></span>
+                    <label>小于32岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="B" class="test-radio"></span>
+                    <label>32~42岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="C" class="test-radio"></span>
+                    <label>42~54岁</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer1" value="D" class="test-radio"></span>
+                    <label>55岁以上</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>2.您预期投资额占年收入比例？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="A" class="test-radio" checked="checked"></span>
+                    <label>小于20%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="B" class="test-radio"></span>
+                    <label>20~50%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="C" class="test-radio"></span>
+                    <label>50~80%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer2" value="D" class="test-radio"></span>
+                    <label>80%以上</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>3.您预期投资期限是多久？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="A" class="test-radio" checked="checked"></span>
+                    <label>少于1年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="B" class="test-radio"></span>
+                    <label>1~2年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="C" class="test-radio"></span>
+                    <label>2~3年</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer3" value="D" class="test-radio"></span>
+                    <label>3年以上</label>
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <ul class="intell-test-cont">
+        <li class="test-question">
+            <h4>4.您更倾向于哪种投资？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="A" class="test-radio" checked="checked"></span>
+                    <label>预期收益6%，最大损失0</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="B" class="test-radio"></span>
+                    <label>预期收益10%，最大损失3%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="C" class="test-radio"></span>
+                    <label>预期收益20%，最大损失8%</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer4" value="D" class="test-radio"></span>
+                    <label>预期收益30%，最大损失14%</label>
+                </li>
+            </ol>
+        </li>
+        <li class="test-question">
+            <h4>5.您投资理财的目的是？</h4>
+            <ol>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="A" class="test-radio" checked="checked"></span>
+                    <label>未来教育医疗等的花销</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="B" class="test-radio"></span>
+                    <label>空闲资金管理</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="C" class="test-radio"></span>
+                    <label>增加可消费资金</label>
+                </li>
+                <li class="clearfix">
+                    <span class="test-answer"><input type="radio" name="test-answer5" value="D" class="test-radio"></span>
+                    <label>长期财富管理</label>
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <input type="button" value="立即提交" class="test-submit">
+</div>
+<div class="home-layer"></div>
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="../assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/Plug-in/highcharts.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/intell/intell.js?t=20170308"></script>
+</html>

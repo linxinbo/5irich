@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<!--根据屏幕全局显示-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--允许全屏模式浏览-->
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="基金">
+<meta name="description" content="基金">
+<!--指定的iphone中safari顶端的状态条的样式-->
+<meta name="format-detection" content="email=no" />
+<!--去除Android平台中对邮箱地址的识别-->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 隐藏地址栏 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" />
+<link rel="stylesheet" type="text/css" href="../css/common_zjy.css" />
+<link rel="stylesheet" type="text/css" href="../css/common_qifu.css" />
+<link rel="stylesheet" href="../css/common_new.css">
+<link rel="stylesheet"
+	href="simulation_of_books_css/simulation_of_books.css" />
+<link rel="stylesheet" href="simulation_of_books_css/newzb.css" />
+<title>模拟账本-认/申购开放式基金、货币基金</title>
+</head>
+<body>
+	<div class="header_c">
+		<div>
+			<i class="logo_c"></i>
+		</div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a> <a
+					href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;">
+				<div class="out">退出</div>
+				<span>hi,</span>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<!--<a class="back" href="javascript:history.go(-1);"><span>返回</span><i></i></a>-->
+		<a class="back1" href="javascript:history.go(-1);">＜返回</a> 
+		<!-- <a class="back_r" href="k_books_trade.html">添加</a> -->
+		<h1>持仓明细</h1>
+	</header>
+	<div>
+	<div class="dq_marketz" style="border-top: 1px solid #247fb7;">
+                     <span class="dq_bai m_top10">开放式基金</span>
+                     <h4 class="dq_hon m_top10">&nbsp;</h4>
+                     <span class="dq_bai m_top10">当前市值：</span>
+			         <h4 id="kfs_sz" class="dq_bai m_top10">元</h4>
+			         <span class="dq_bai m_top10">累计收益：</span>
+			         <h4 class="dq_lv m_top10" id="kfs_yk">&nbsp;</h4>
+			         <a class="btn_tjjy1" href="k_books_trade.html">添加交易</a>
+			         <!-- <hr style="width:90%;height:1px;border:none;border-top:1px solid #fcfff8;"> -->			       				    
+			    </div>   
+			</div>
+    <div class="investment_f">
+	<div class="investment_title">
+		<div class="on" id="kfsjj">开放式基金</div>
+		<div id="yeji">业绩表现</div>
+		<div id="buyif">购买信息</div>
+	</div>
+	</div>
+	
+	<!-- 开放式基金 -->
+	<div class="investment_con" id="jj_tab1">
+		<div class="investment_con_list" id="jsonTip">
+		   <div class="jjxx_content">
+			<div class="jjxx_content_head">
+				<span>基金名称(000000)</span> <i class="t_san"></i>
+			</div>
+			<div class="jjxx_content_c">
+				<ul>
+					<li><span>净值</span><span>8.88</span>
+					</li>
+					<li><span>本金</span><span>8.888</span>
+					</li>
+					<li><span>市值</span><span>8,888.88</span>
+					</li>
+					<li><span>盈亏</span><span>88.88%</span>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+        <!-- 开放式基金 -->
+        <!-- 业绩表现 -->
+		<div class="investment_con_list" id="jsonTip1">
+		  <div class="jjxx_content">
+			<div class="jjxx_content_head">
+				<span>基金名称(000000)</span> <i class="t_san"></i>
+			</div>
+			<div class="jjxx_content_c">
+				<ul>
+					<li><span>净值</span><span>8.88</span>
+					</li>
+					<li><span>本金</span><span>8.888</span>
+					</li>
+					<li><span>市值</span><span>8,888.88</span>
+					</li>
+					<li><span>盈亏</span><span>88.88%</span>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+        <!-- 业绩表现 -->
+        <!-- 购买信息 -->
+		<div class="investment_con_list" id="jsonTip2">
+		  <div class="jjxx_content">
+			<div class="jjxx_content_head">
+				<span>基金名称(000000)</span> <i class="t_san"></i>
+			</div>
+			<div class="jjxx_content_c">
+				<ul>
+					<li><span>净值</span><span>8.88</span>
+					</li>
+					<li><span>本金</span><span>8.888</span>
+					</li>
+					<li><span>市值</span><span>8,888.88</span>
+					</li>
+					<li><span>盈亏</span><span>88.88%</span>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<!-- 购买信息 -->
+	</div>
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/qifu/common_qifu.js"></script>
+<script type="text/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/qifu/home.js"></script>
+<script type="text/javascript" src="simulation_of_books_js/k_of_books_kfsjj.js"></script>
+</html>

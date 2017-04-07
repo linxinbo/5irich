@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.mutual.CjqfWebMutualFundChartBean" table="cjqfweb_mutual_fund_chart">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		<!-- Wind代码 -->
+		<property name="fundId" type="java.lang.String">
+			<column name="fund_id" />
+		</property>
+		
+		<!-- 单位净值 -->
+		<property name="fundNavUnit" type="java.math.BigDecimal">
+			<column name="fund_nav_unit" />
+		</property>
+		<!-- 累计净值 -->
+		<property name="fundNavAccumulated" type="java.math.BigDecimal">
+			<column name="fund_nav_accumulated" />
+		</property>
+		<!--净值日期  -->
+		<property name="priceDate" type="java.lang.String">
+			<column name="price_date" />
+		</property>
+		<!-- 收盘价 -->
+		<property name="dqClose" type="java.math.BigDecimal">
+			<column name="dq_close" />
+		</property>
+		<!-- 交易日期 -->
+		<property name="tradeDt" type="java.lang.String">
+			<column name="trade_dt" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateDime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

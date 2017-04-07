@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+
+	<!--生成token的service-->
+	<bean id="tokenGenerateAction" class="com.wirich.action.cjqf.TokenGenerateAction" scope="prototype">
+		<property name="tokenGenerateService" ref="TokenGenerateServiceImpl"></property>
+	</bean>
+	<!--生成token-->
+	<bean id="TokenGenerateServiceImpl" class="com.wirich.service.user.impl.TokenGenerateServiceImpl">
+	</bean>
+	<!--网站登录-->
+	<bean id="loginWebAction" class="com.wirich.action.cjqf.LoginWebAction" scope="prototype">
+		<property name="tokenGenerateService" ref="TokenGenerateServiceImpl"></property>
+		<property name="userService" ref="UserServiceImpl"></property>
+		<property name="riskAsstService" ref="RiskAsstService"></property>
+		<property name="AssetInfor" ref="IUserInfoService"></property>
+	</bean>
+	<!--登录bean-->
+	
+	<bean id="UserServiceImpl" class="com.wirich.service.cjqf.org.impl.CjUserServiceImpl">
+		<property name="userDao" ref="UserDaoImpl"></property>
+	</bean>
+	
+	<!--风险评估service  -->
+	<bean id="RiskAsstService" class="com.wirich.service.szking.impl.RiskAsstService">
+	</bean>
+	<!--人员Dao-->
+	<bean id="UserDaoImpl" class="com.wirich.dao.cjqf.org.impl.CjUserDaoImpl">
+	</bean>
+
+</beans>

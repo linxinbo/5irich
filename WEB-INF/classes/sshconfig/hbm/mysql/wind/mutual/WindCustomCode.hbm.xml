@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.WindCustomCodeBean" table="windcustomcode">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+			<generator class="increment" />
+		</id>
+		<!-- Wind代码  -->
+		<property name="sInfoWindcode" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!--证券类型 -->
+		<property name="sInfoSecuritiesTypes" type="java.lang.String">
+			<column name="S_INFO_SECURITIESTYPES" />
+		</property>
+		<!-- 类型名称-->
+		<property name="sInfoSecTypeName" type="java.lang.String">
+			<column name="S_INFO_SECTYPENAME" />
+		</property>
+		<!-- 证券中文简称-->
+		<property name="sInfoName" type="java.lang.String">
+			<column name="S_INFO_NAME" />
+		</property>
+		<!-- 存续状态 Status NUMBER(9,0) 有效(L):101001000,发行(N):101003000,摘牌(D):101002000 -->
+		<property name="securityStatus" type="java.lang.Integer">
+			<column name="SECURITY_STATUS" />
+		</property>
+		
+		
+		<!-- 证券ID-->
+		<property name="sInfoAsharecode" type="java.lang.String">
+			<column name="S_INFO_ASHARECODE" />
+		</property>
+		<!-- 公司ID-->
+		<property name="sInfoCompcode" type="java.lang.String">
+			<column name="S_INFO_COMPCODE" />
+		</property>
+		<!-- 国别-->
+		<property name="sInfoCountryname" type="java.lang.String">
+			<column name="S_INFO_COUNTRYNAME" />
+		</property>
+		<!-- 国别编号-->
+		<property name="sInfoCountrycode" type="java.lang.String">
+			<column name="S_INFO_COUNTRYCODE" />
+		</property>
+		<!-- 交易所-->
+		<property name="sInfoExchmarketname" type="java.lang.String">
+			<column name="S_INFO_EXCHMARKETNAME" />
+		</property>
+		<!-- 交易所编号-->
+		<property name="sInfoExchmarket" type="java.lang.String">
+			<column name="S_INFO_EXCHMARKET" />
+		</property>
+		<!-- 币种-->
+		<property name="crncyName" type="java.lang.String">
+			<column name="CRNCY_NAME" />
+		</property>
+		<!-- 币种编号-->
+		<property name="crncyCode" type="java.lang.String">
+			<column name="CRNCY_CODE" />
+		</property>
+		<!-- ISIN代码-->
+		<property name="sInfoIsincode" type="java.lang.String">
+			<column name="S_INFO_ISINCODE" />
+		</property>
+		<!-- 交易代码-->
+		<property name="sInfoCode" type="java.lang.String">
+			<column name="S_INFO_CODE" />
+		</property>
+		<!-- 交易-->
+		<property name="exchmarket" type="java.lang.String">
+			<column name="EXCHMARKET" />
+		</property>
+		<!-- 组织机构代码-->
+		<property name="sInfoOrgCode" type="java.lang.String">
+			<column name="S_INFO_ORG_CODE" />
+		</property>
+		<!-- 分类代码-->
+		<property name="sInfoTypecode" type="java.math.BigDecimal">
+			<column name="S_INFO_TYPECODE" />
+		</property>
+	</class>
+</hibernate-mapping>

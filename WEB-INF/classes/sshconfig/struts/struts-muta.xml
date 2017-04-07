@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="mutandpriv" extends="wirich">
+		<!-- 公募基金列表-->
+		<action name="mutuallist" class="MutualFundAction" method="mutualList">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 净值查询-->
+		<action name="chinaAV" class="ChinaMutFuNAVAction" method="listFields">
+		</action>
+		<!-- 近一年收益率-->
+		<action name="year" class="MutualFundAction" method="allYear">
+		</action>
+		<!--
+			详情 块1 <action name="fund" class="MutualFundAction"
+			method="fundDetails"> <interceptor-ref name="defaultStack" />
+			</action>
+		-->
+		<!-- 基金经理-->
+		<action name="manger" class="MutualFundAction" method="manger">
+		</action>
+		<!-- 近期表现-->
+		<action name="biaxin" class="MutualFundAction" method="biaxin">
+		</action>
+		<!-- 基金状况-->
+		<action name="fundSitu" class="MutualFundAction" method="fundSituation">
+		</action>
+		<!-- 基金状况-->
+		<action name="fixed" class="MutualFundAction" method="fixed">
+		</action>
+		<!-- 货币基金-->
+		<action name="monetaryFund" class="MutualFundAction" method="monetaryFund">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 基金走势图-->
+		<action name="fundnav" class="MutualFundAction" method="fundNAV">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 沪深300-->
+		<action name="theYield" class="MutualFundAction" method="theYield">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 测试WEB cation-->
+		<action name="webtheYields" class="WebMutualFundAction" method="theYields">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- web基金状况-->
+		<action name="webfixed" class="WebMutualFundAction" method="mutualFundDescription">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 中国共同基金投资组合—资产配置-->
+		<action name="webpercentage" class="WebMutualFundAction"
+			method="percentage">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--所有经理数据  任期回报 -->
+		<action name="allFundManager" class="WebMutualFundAction"
+			method="allFundManager">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--基金净值 日涨幅 -->
+		<action name="Funav" class="WebMutualFundAction" method="Funav">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!--持券明细 -->
+		<action name="chiquandetail" class="WebMutualFundAction"
+			method="chiquandetail">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--重仓股 -->
+		<action name="holding" class="WebMutualFundAction" method="holdingtheConfiguration">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--行业配置 -->
+		<action name="industry" class="WebMutualFundAction" method="industryconfiguration">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--按照时间 查询 基金净值 -->
+		<action name="fundnavall" class="WebMutualFundAction" method="fundnavall">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--按照时间 查询 基金净值 -->
+		<action name="fundnavall_money" class="WebMutualFundAction" method="fundnavall_money">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!-- 固定业绩 -->
+		<action name="fixedsa" class="WebMutualFundAction" method="fixedsa">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- monetaryFundall  货币基金         	万份收率 -->
+		<action name="monetaryFundall" class="WebMutualFundAction"
+			method="monetaryFundall">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- Wind兼容代码-WindCustomCode 证券中文简称 查询单条 -->
+		<action name="Portfoliopd" class="WebMutualFundAction" method="Portfoliopd">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 推荐   -首页 - 详情 -->
+		<action name="recommended" class="WebMutualFundAction" method="recommendedList">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<action name="recommendedWeixin" class="WebMutualFundAction" method="recommendedListWeixin">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 精品推荐 -->
+		<action name="productsA" class="WebMutualFundAction" method="Products">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 基金详情 @web-->
+		<action name="fundRead" class="WebMutualFundAction" method="liatmutal">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!-- 人数 与 交易金额-->
+		<action name="numberregistered" class="WebMutualFundAction"
+			method="numberregistered">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!-- 公募基金费率-->
+		<action name="mutualfee" class="WebMutualFundAction" method="mutualfee">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!--单位净值  累计净值  时间  视图 -->
+		<action name="navst" class="WebMutualFundAction" method="navst">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		
+		
+		<!--测试 fundManger-->
+		<action name="fundManger" class="MutualFundAction" method="fundManger">
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--测试ChinaMFDividendQuery -->
+		<action name="dividend" class="MutualFundAction" method="ChinaMFDividendQuery">
+			<interceptor-ref name="defaultStack" />
+		</action>
+
+		<!--测试 -->
+		<action name="testshsb" class="WebMutualFundAction" method="testshsb">
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>
+
+
+

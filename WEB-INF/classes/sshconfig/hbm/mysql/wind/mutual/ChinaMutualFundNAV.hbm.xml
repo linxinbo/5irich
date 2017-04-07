@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMutualFundNAVBean" table="chinamutualfundnav">
+		<!-- 主键Id -->
+		<id name="objectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--   Wind 代码 -->
+		<property name="fInfoWindcode" type="java.lang.String">
+			<column name="F_INFO_WINDCODE" />
+		</property>
+		<!-- 公告日期  -->
+		<property name="annDate" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		<!-- 截止日期  -->
+		<property name="priceDate" type="java.lang.String">
+			<column name="PRICE_DATE" />
+		</property>
+		<!--  单位净值  -->
+		<property name="fNavUnit" type="java.math.BigDecimal">
+			<column name="F_NAV_UNIT" />
+		</property>
+		<!--  累计净值 -->
+		<property name="fNavAccumulated" type="java.math.BigDecimal">
+			<column name="F_NAV_ACCUMULATED" />
+		</property>
+		<!-- 累计分红  -->
+		<property name="fNavDivaccumulated" type="java.math.BigDecimal">
+			<column name="F_NAV_DIVACCUMULATED" />
+		</property>
+		<!--  复权因子  -->
+		<property name="fNavAdjfactor" type="java.math.BigDecimal">
+			<column name="F_NAV_ADJFACTOR" />
+		</property>
+		<!--  货币代码  -->
+		<property name="crncyCode" type="java.lang.String">
+			<column name="CRNCY_CODE" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+.theme_content{
+    position: relative;
+    background-color: #f5f8fc;
+    overflow: hidden;
+}
+.theme_content_in{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: none !important;
+    padding-bottom: 20px;
+}
+.theme{
+    position: relative;
+    border: 1px solid #d9dce0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+}
+.theme h2{
+    font-size: 18px;
+    color: #333333;
+    margin: 0px;
+}
+.theme a{
+    display: block;
+    margin-top: 10px;
+}
+.theme a img{
+    display: block;
+    width: 980px;
+    height: 270px;
+}
+.hot_theme{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width: 47px;
+    height: 48px;
+}

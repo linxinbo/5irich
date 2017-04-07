@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.group.CJQFWebGroupFundChartBean" table="cjqfweb_group_fund_chart">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		<!--基金组合ID-->
+		<property name="groupId" type="java.lang.String">
+			<column name="fd_group_code" />
+		</property>
+		<!--组合名称-->
+		<property name="fdGroupName" type="java.lang.String">
+			<column name="fd_group_name" />
+		</property>
+		<!-- 净值日期-->
+		<property name="priceDate" type="java.lang.String">
+			<column name="price_date" />
+		</property>
+		<!--  单位净值  -->
+		<property name="unitValue" type="java.math.BigDecimal">
+			<column name="fd_group_unit_value" />
+		</property>
+		<!-- 沪深300交易日期-->
+		<property name="tradeDt" type="java.lang.String">
+			<column name="trade_dt" />
+		</property>
+		<!--  单位净值  -->
+		<property name="sDqClose" type="java.math.BigDecimal">
+			<column name="sdqclose" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

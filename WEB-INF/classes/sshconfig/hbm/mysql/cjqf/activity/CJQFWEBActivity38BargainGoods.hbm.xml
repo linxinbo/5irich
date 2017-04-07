@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.activity.CJQFWEBActivity38BargainGoods" table="cjqfweb_activity_38_bargain_goods">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!-- 用户id -->
+		<property name="userId" type="java.lang.String">
+			<column name="user_id" />
+		</property>
+		<!-- 用户手机号 -->
+		<property name="userTel" type="java.lang.String">
+			<column name="user_tel" />
+		</property>
+		<!-- 奖品id -->
+		<property name="prizeId" type="java.lang.Integer">
+			<column name="prize_id" />
+		</property>
+		<!-- 奖品现价 -->
+		<property name="prizePrice" type="java.lang.String">
+			<column name="prize_price" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.sql.Timestamp">
+			<column name="create_time" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.sql.Timestamp">
+			<column name="update_time" />
+		</property>
+		<!-- 是否已购买0未1已购买-->
+		<property name="sfyx" type="java.lang.String">
+			<column name="sfyx" />
+		</property>
+	</class>
+</hibernate-mapping>

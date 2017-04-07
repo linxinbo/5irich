@@ -1,0 +1,125 @@
+﻿@charset "utf-8";
+@import url("./base.css");
+.contourdiv{
+	padding-bottom: 32767px;margin-bottom: -32767px;
+}
+.securityleft{
+	width: 233px;
+	background: #F9F9F9;
+	min-height: 1000px;
+}
+.securityright{
+	background: #FFFFFF;
+	width: 758px;
+	min-height: 1000px;
+}
+.securityul{
+	margin-bottom:150px;
+}
+.securityul .securityulli{
+}
+.securityul .securityulli .menu{
+	background: #FFFFFF;
+	border-bottom: 1px solid #C8D2DC;
+}
+.securityul .securityulli .menu a{
+	font-size: 16px;
+	color: #525252;
+	display: block;
+	height: 43px;
+	line-height: 43px;
+	border-right: 5px solid #FFFFFF;
+}
+.securityul .securityulli .menu a:hover{
+	border-right: 5px solid #2F92E8;
+	color: #2F92E8;
+}
+.securityul .securityulli a.currt{
+	border-right: 5px solid #2F92E8 !important;
+	color: #2F92E8 !important;
+}
+.securityul .securityulli .menulist li{
+	border-bottom: 1px solid #C8D2DC;
+}
+.securityul .securityulli .menulist li a{
+	height: 33px;
+	line-height: 33px;
+	font-size: 14px;
+	color: #8D8C8C;
+    display: block;
+    background: #F2F2F2;
+}
+.securityul .securityulli .menulist li a:hover{
+	color: #2F92E8;
+}
+.secottitle{
+	height: 36px;
+	line-height: 36px;
+	background: #FAFAFA;
+	border-bottom: 1px solid #C8D2DC;
+	padding-left: 25px;
+	color: #939393;
+        text-align:center;
+        line-height: 24px;
+}
+.secotcontent{
+	width: 710px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom:150px;
+}
+
+/*列表页*/
+.securitycenterlist{
+	background: #FFFFFF;
+	min-height: 1000px;
+}
+.secottitlecenterlis{
+	height: 36px;
+	line-height: 36px;
+	background: #FAFAFA;
+	border-bottom: 1px solid #C8D2DC;
+	padding-left: 25px;
+	color: #939393;
+}
+.secotcontentcenterlis{
+	width: 776px;
+	margin: 0px auto;
+	margin-top: 20px;
+	margin-bottom:150px;
+}
+.secotcontentcenterlis .secorlisttitle{
+	border-bottom: 2px solid #DCDCDC;
+	height: 55px;
+	line-height: 55px;
+	color: #1D77CD;
+	font-size: 18px;
+}
+.secotcontentcenterlis .secorlisttitle {
+	/* background: #2584DF; */
+	display:inline-block;
+	width: 13px;
+	height: 19px;
+	vertical-align: middle;
+	margin-right: 16px;
+	
+}
+.selitlelogo{
+	/* background: #2584DF; */
+	display:inline-block;
+	width: 80px;
+	height: 19px;
+	vertical-align: middle;
+	margin-right: 16px;
+}
+.secotcontentcenterlis .seconlists{
+
+}
+.secotcontentcenterlis .seconlists li{
+	height: 35px;
+	line-height: 35px;
+}
+.secotcontentcenterlis .seconlists .ddt{
+	color: #419DEC;
+	font-size: 16px;
+}

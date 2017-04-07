@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.accountbook.cjqfweb.CjqfwebMutualFixedInvestmentMockAccountBookBean" table="cjqfweb_mutual_fixedInvestment_mockaccountbook" >
+        <id name="id" type="int">
+            <column name="ID"/>
+        </id>
+        <property name="userId" type="string">
+            <column name="userid" />
+        </property>
+        <property name="fundName" type="string">
+            <column name="fundname" />
+        </property>
+        <property name="fundCode" type="string">
+            <column name="fundcode" />
+        </property>
+        <property name="fixedInvestmentCycle" type="int">
+            <column name="fixedinvestmentcycle" />
+        </property>
+        <property name="fixedInvestmentCycleType" type="int">
+            <column name="fixedinvestmentcycletype" />
+        </property>
+         <property name="startDate" type="string">
+            <column name="startdate" />
+        </property>
+         <property name="endDate" type="string">
+            <column name="enddate" />
+        </property>
+        <property name="deductMoneyDay" type="int">
+            <column name="deductmoneyday" />
+        </property>
+        <property name="amountFixedInvestment" type="java.math.BigDecimal">
+            <column name="amountfixedinvestment" />
+        </property>
+        <property name="buyPattern" type="int">
+            <column name="buypattern" />
+        </property>
+        <property name="freeRatio" type="java.math.BigDecimal">
+            <column name="freeratio" />
+        </property>
+        <property name="freeRatioType" type="int">
+            <column name="freeratiotype" />
+        </property>
+        <property name="dividendsPattern" type="int">
+            <column name="dividendspattern" />
+        </property>
+        <property name="updateTime" type="string">
+            <column name="updatetime" />
+        </property>
+         </class>
+</hibernate-mapping>

@@ -1,0 +1,250 @@
+.intell-head {
+    width: 100%;
+    height: 720px;
+    background: url(../../images/intell/intell-head.jpg) no-repeat center;
+    background-size: 1920px 720px;
+}
+.intell-head .cheader {
+    background: rgba(0,0,0,0);
+}
+.intell-head .cheader .logo .menu i {
+    /*background-image: url("../../images/intell/jiantou.png");
+    background-repeat: no-repeat;
+    background-position: center center;*/
+}
+.login-back a {
+    color: #fff;
+}
+.intell-head .cheader .logo a span {
+    color: #fff;
+}
+.short_f a{
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    background-color:#ffffff;
+    font-size: 16px;
+    color: #666666;
+    height: 32px;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.cheader .Sign a{
+    float: right;
+    font-size: 14px;
+    color: #fff;
+}
+.intell-head .container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.intell-head .container h3 {
+    font-size: 34px;
+    line-height: 34px;
+    color: #fff;
+    margin-top: 155px;
+}
+.intell-head .container p {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+.intell-head .container ul {
+    margin-top: 85px;
+}
+.intell-head .container ul li {
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    width: 430px;
+    height: 100px;
+    padding: 15px 0;
+    padding-left: 80px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 100px;
+}
+.intell-head .container ul li h4 {
+    display: inline-block;
+    color: #fff;
+    font-size: 28px;
+    height: 70px;
+    float: right;
+    margin: 0;
+    line-height: 70px;
+    margin-right: 12px;
+}
+.intell-head .container ul li span {
+    float: left;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background: url(../../images/intell/risk.png) no-repeat center;
+    background-size: 100%;
+}
+.intell-head .container ul li:nth-child(2) span {
+    background: url(../../images/intell/invest.png) no-repeat center;
+    background-size: 100%;
+}
+.intell-head .container ul li:nth-child(3) span {
+    background: url(../../images/intell/opreating.png) no-repeat center;
+    background-size: 100%;
+}
+.intell-skill {
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    text-align: center;
+    padding:70px 0 100px 0 ;
+}
+.intell-skill h3 {
+    font-size: 34px;
+    /*margin-top: 120px;*/
+}
+.intell-skill .container {
+    width: 1200px;
+    margin: 80px auto;
+}
+.intell-skill .container .intell-skill-list {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.intell-skill .container .intell-skill-list h4 {
+    font-size: 24px;
+
+}
+.intell-skill .container .intell-skill-list ul {
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    margin: 20px auto;
+}
+.intell-skill .container .intell-skill-list ul li {
+    width: 50px;
+    height: 120px;
+    float: left;
+    transition: .3s all ease;
+}
+.intell-skill .container .intell-skill-list ul li.act {
+    height: 150px;
+}
+.intell-skill-list ul li:nth-child(1) {
+    background: #73adfd;
+}
+.intell-skill-list ul li:nth-child(2) {
+    background: #4b96ff;
+}
+.intell-skill-list ul li:nth-child(3) {
+    background: #1e7afb;
+}
+.intell-skill .container .intell-skill-list ol {
+    width: 300px;
+    margin: 60px auto;
+}
+.intell-skill .container .intell-skill-list ol li {
+    display: none;
+    font-size: 18px;
+    line-height: 18px;
+    color: #999999;
+}
+.intell-skill .container .intell-skill-list ol li h4 {
+    font-size: 18px;
+    color: #999999;
+    font-weight: normal;
+}
+.intell-skill .container .intell-skill-list ol li p {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 14px;
+}
+.intell-skill .container .intell-skill-list ol li.act{
+    display: block;
+}
+.intell-chart {
+    width: 100%;
+    height: 720px;
+    background: url(../../images/intell/intell-chart.jpg) no-repeat center;
+    background-size: 1920px 720px;
+    padding-top: 100px;
+    text-align:center;
+    min-width: 1200px;
+}
+.intell-footer {
+    text-align: center;
+    background: #fff;
+    height: 600px;
+    padding:70px 0 100px 0;
+}
+.intell-footer h3 {
+    font-size: 34px;
+
+}
+.intell-footer ul {
+    width: 1200px;
+    margin: 88px auto;
+}
+.intell-footer ul li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.intell-footer ul li i {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background: url(../../images/intell/test.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.intell-footer ul li h4 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.intell-footer ul li p {
+    font-size: 18px;
+    color: #999;
+}
+.intell-footer ul li:nth-child(2) i{
+    background: url(../../images/intell/recommend.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.intell-footer ul li:nth-child(3) i {
+    background: url(../../images/intell/bug.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.intell-chart .home-chart {
+    /*padding: 0 200px;*/
+    overflow: hidden;
+}
+.intell-chart .home-chart span {
+    color: #fff;
+}
+.intell-chart .home-chart li h4 {
+    color: #fff;
+}
+.intell-chart .home-chart2 ul li p {
+    color: #fff;
+}
+.intell-chart .home-button1 {
+    margin-right: 390px;
+    margin-top:50px;
+    width: 300px;
+    height: 45px;
+    background: rgba(0,0,0,0);
+    box-shadow: 0 0 0 #000;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 42px;
+    font-size: 24px;
+}
+.intell-chart .home-button1:hover {
+    background: rgba(256,256,256,.2);
+}
+.intell-chart .home-risk-test {
+    margin-left: 70px;
+}
+

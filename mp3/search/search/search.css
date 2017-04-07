@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+/*最外层的元素块  渐变色的图片背景*/
+.header {
+    height:4.800em;
+    background-color: #ff9900;
+    overflow: hidden;
+    padding: 1em;
+}
+/*透明色的元素快*/
+.sreach_title{
+    background: #ffa44f;
+    float: left;
+    width: 85%;
+    height: 2.8em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+/*取消按钮的上一层*/
+.sreachbtn{
+    float: left;
+    width: 15%;
+    display: block;/*改变成块元素*/
+    height:  2.800em;
+    line-height: 2.800em;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+/*搜索图标外层 给图标居中用的*/
+.icon-cx{
+    display: inline-block;
+    width: 2.800em;
+    height: 2.8em;
+    text-align: center;
+    line-height: 2.8em;
+    color: #ffffff;
+    margin-left: 0.5em;
+}
+/*搜索图标的大小*/
+.fontsize{
+    font-size: 1.6em;
+}
+/*取消按钮的字体大小*/
+.btn_qx_size{
+    font-size: 1.3em;
+}
+/*输入框背景透明*/
+.sreach_input{
+    background-color: transparent;
+    border: medium none;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    height: 100%;
+    color: #fff;
+    vertical-align: middle;
+}
+.sreach_input::-webkit-input-placeholder {color:#fff;}
+/*内容模块*/
+.sreach_body_conent{
+    margin-left: 1.12em;
+    margin-right: 1.12em;
+    overflow: hidden;/*设置溢出 当没有实际高度时候 要加这个属性*/
+}
+/*搜索内容标题*/
+.sreach_body_title{
+    margin-top:1.0em;
+    margin-bottom: 1.0em;
+    overflow: hidden;
+}
+.sreach_jgwz{
+    font-size: 1.12em;
+    color: #333;
+    padding: 0 1em;
+}
+/*按钮开始*/
+.sreach_btn_line{
+    padding-bottom: 1.0em;
+    overflow: hidden;
+}
+.sreach_btn_left{
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.sreach_btn_left a{
+    display: block;
+    height:3.040em;
+    border:1px #e1e1e1 solid;
+    line-height: 3.040em;
+    text-align: center;
+    background-color: #ffffff;
+}
+/*按钮结束*/
+/*当没有实际高度时候用这个class*/
+.no_height{
+    overflow: hidden;
+}
+/*h1字体大小*/
+.h1_font{
+    float: left;
+   font-size:  1.440em;
+}
+/*清空搜索历史*/
+.empty{
+    float: right;
+    margin-bottom: 0;
+    line-height: 1.440em;
+    color:#9f9f9f;
+}
+/*搜素的下间距*/
+.jj{
+    padding-bottom: 1.440em;
+}
+/*搜索历史记录*/
+.div_ls{
+    height: 4.0em;
+    line-height:4.0em;
+    border-bottom:1px solid #9f9f9f;
+}
+.span_ls{
+    color: #333333;
+    padding-left: 10px;
+}
+.sreach_xx{
+    cursor: pointer;
+}

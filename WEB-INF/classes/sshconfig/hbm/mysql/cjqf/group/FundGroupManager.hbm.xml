@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.group.FundGroupManagerBean" table="cj_fund_group_manager">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金主表ID	(默认为Wind代码”.“前部分) -->
+		<property name="fdId" type="java.lang.String">
+			<column name="fd_id" />
+		</property>
+		<!--  公告日期(YYYYMMDD)  -->
+		<property name="annDate" type="java.lang.String">
+			<column name="ann——date" />
+		</property>
+		<!--  姓名  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  性别(0：女 （默认）1：男)  -->
+		<property name="sex" type="int">
+			<column name="sex" />
+		</property>
+		<!--  出身年份(YYYY)  -->
+		<property name="birthYear" type="java.lang.String">
+			<column name="birth_year" />
+		</property>
+		<!--  学历('0：其他（默认）1：专科2：本科3：硕士4：博士',) -->
+		<property name="education" type="int">
+			<column name="education" />
+		</property>
+		<!--  国籍(0：其他 1：中国（默认）2：中国香港3：中国台湾4：澳大利亚5：法国6：加拿大7：美国8：新加坡9：新西兰10：英国)  -->
+		<property name="nationality" type="int">
+			<column name="nationality" />
+		</property>
+		<!--  任职日期(YYYYMMDD)  -->
+		<property name="officeDate" type="java.lang.String">
+			<column name="office_date" />
+		</property>
+		<!--  离职日期(YYYYMMDD) -->
+		<property name="leaveDate" type="java.lang.String">
+			<column name="leave——date" />
+		</property>
+		<!--  简介-->
+		<property name="summary" type="java.lang.String">
+			<column name="summary" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!-- 更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

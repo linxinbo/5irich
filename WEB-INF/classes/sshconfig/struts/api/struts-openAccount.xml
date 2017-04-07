@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="openAccount_api" extends="wirich">
+
+		<!--快钱请求 -->
+		<action name="addcard" class="OpenAccountAction" method="addcade">
+		</action>
+		<!-- 鉴权接收 增卡-->
+		<action name="addmssend" class="OpenAccountAction" method="addMSSend">
+		</action>
+		<!-- 短信接收开户-->
+		<action name="opencheck" class="OpenAccountAction" method="openAccountMSSend">
+		</action>
+		<!-- 查询支持网上交易开户的支付渠道/支付网点-->
+		<action name="paysite" class="OpenAccountAction" method="paySite">
+		</action>
+		<!-- 取客户状态-->
+		<action name="custnostatus" class="OpenAccountAction" method="customerStatus">
+		</action>
+		<!-- 返回用户所绑定的银行卡信息-->
+		<action name="bankinfo" class="OpenAccountAction"
+			method="returnsTheBankCardInformationThatTheUserIsBoundTo">
+		</action>
+
+		<!-- 返回用户所绑定的银行卡信息-->
+		<action name="deletecardapi" class="OpenAccountAction"
+			method="deleteUserSpecifiedBankCard">
+		</action>
+	</package>
+</struts>
+
+
+

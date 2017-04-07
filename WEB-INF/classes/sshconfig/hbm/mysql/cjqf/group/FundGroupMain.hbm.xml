@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.group.FundGroupMainBean" table="cj_fund_group_main">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金组合代码(唯一) -->
+		<property name="fdGroupCode" type="java.lang.String">
+			<column name="fd_group_code" />
+		</property>
+		<!--  基金组合名称  -->
+		<property name="fdGroupName" type="java.lang.String">
+			<column name="fd_group_name" />
+		</property>
+		<!--  优选理由  -->
+		<property name="fdGroupPriorityDesc" type="java.lang.String">
+			<column name="fd_group_priority_desc" />
+		</property>
+		<!--  投资起点  -->
+		<property name="fdGroupMin" type="java.math.BigDecimal">
+			<column name="fd_group_min" />
+		</property>
+		<!--  组合基金说明  -->
+		<property name="fdGroupDesc" type="java.lang.String">
+			<column name="fd_group_desc" />
+		</property>
+		<!--  业绩基准 -->
+		<property name="fdGroupBenchmark" type="java.lang.String">
+			<column name="fd_group_benchmark" />
+		</property>
+		<!--  期望收益率  -->
+		<property name="fdGroupExpect" type="java.math.BigDecimal">
+			<column name="fd_group_expect" />
+		</property>
+		<!--  风险等级(5个等级，1~5：等级越高风险越大，默认1)  -->
+		<property name="fdGroupRisk" type="int">
+			<column name="fd_group_risk" />
+		</property>
+		<!--  收益等级(5个等级 1~5：等级越高收益越大，默认1) -->
+		<property name="fdGroupPorfit" type="int">
+			<column name="fd_group_porfit" />
+		</property>
+		<!--  交易提示 -->
+		<property name="fdGroupPrompt" type="java.lang.String">
+			<column name="fd_group_prompt" />
+		</property>
+		<!-- 组合类型(0：组合(默认)1：FOF) -->
+		<property name="fdGroupType" type="int">
+			<column name="fd_group_type" />
+		</property>
+		<!-- 基金状态0：未开始出售 (默认)1：开始出售2：停止出售 -->
+		<property name="fdState" type="int">
+			<column name="fd_state" />
+		</property>
+		<!-- 操作类型0：无 （默认）1：购买2：预约 -->
+		<property name="operateType" type="int">
+			<column name="operate_type" />
+		</property>
+		<!--  创建人	 -->
+		<property name="createPerson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!-- 更新人 -->
+		<property name="updatePerson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>理财易站-FOF管理系统-投顾</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css?t=20170308" />
+	<link rel="stylesheet" type="text/css" href="css/index.css?t=20170308" />
+
+
+</head>
+<body>
+<header class="fms_header">
+	<div class="fms_title">
+		<div class="fms_title_left"><img src="images/LOGO.png"></div>
+		<div class="fms_title_right"><a id="peizhi" href="index.html">配置管理</a>  <a>|</a>  <a id="wave" href="wave.html">预警</a></div>
+		<div class="fms_title_center"><a class="select" data-name="创金FOF1号">创金FOF1号</a><a data-name="中银-创金FOF">中银-创金FOF</a></div>
+	</div>
+
+</header>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<div class="content">
+			<h1>Risk Parity</h1>
+			<p>一层权重计算</p>
+			<div class="container">
+				<div id="container" style="min-width:1000px;height:400px"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1">
+			<div class="content">
+				<h1>当前净值调整风险敞口</h1>
+				<p>二层权重计算</p>
+				<div class="container">
+					<div id="container1" style="min-width:1000px;height:400px"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="content">
+			<h1>股债预期调整</h1>
+			<p>三层权重计算</p>
+			<div class="container">
+				<div class="grad3">
+					<div class="grad3_left">
+						<div class="grad3_left_line1 Stock_predict"><span>你认为未来股市的预期是</span>
+							<label><input name="Stock_predict" type="radio" value="1" /> 非常悲观 </label>
+							<label><input name="Stock_predict" type="radio" value="2" /> 不太看好 </label>
+							<label><input name="Stock_predict" type="radio" value="3" /> 中性 </label>
+							<label><input name="Stock_predict" type="radio" value="4" /> 比较好 </label>
+							<label><input name="Stock_predict" type="radio" checked value="5" /> 非常好 </label>
+						</div>
+						<div class="grad3_left_line1 Debt_predict"><span>你认为未来债市的预期是</span>
+							<label><input name="Debt_predict" type="radio" value="1" /> 非常悲观 </label>
+							<label><input name="Debt_predict" type="radio" value="2" /> 不太看好 </label>
+							<label><input name="Debt_predict" type="radio" value="3" /> 中性 </label>
+							<label><input name="Debt_predict" type="radio" value="4" /> 比较好 </label>
+							<label><input name="Debt_predict" type="radio" checked value="5" /> 非常好 </label>
+						</div>
+					</div>
+					<div class="grad3_right">
+						<a class="btn_jisuan" id="btn_jisuan">计算</a>
+					</div>
+
+				</div>
+				<div class="grad2">
+					<div class="grad2_left">
+					<div id="container2" style="min-width:580px;height:320px"></div>
+					<table id="datatable" style="display: none;">
+						<thead>
+						<tr>
+							<th></th>
+							<th>调整前</th>
+							<th>调整后</th>
+						</tr>
+						</thead>
+						<tbody>
+						<!--js加载数据-->
+						</tbody>
+					</table>
+					</div>
+					<div class="grad2_left1">
+						<div class="wenti">
+							<div class="wenti_left">
+								<div class="wenti_title"><label><input type="text" class="yuqiinput" id="Stock"> <i>%</i></label><span>预期未来三个月的股市涨跌幅</span></div>
+								<div class="wenti_title"><label><input type="text" class="yuqiinput" id="debt"> <i>%</i></label><span>预期未来三个月的债市涨跌幅</span></div>
+								<div class="wenti_title"><label><input type="text" class="yuqiinput" id="Basis"> <i>%</i></label><span>预期未来三个月的基差扩大/缩小幅度</span></div>
+							</div>
+							<div class="wenti_right">
+								<a class="btn_ceshi" id="btn-ceshi"><span>压力测试</span></a>
+							</div>
+
+						</div>
+						<div class="daan">
+							<div class="daan1">
+								<span>预计三个月后的FOF净值</span>
+								<a></a>
+							</div>
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="js/javascript.fullPage.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+		anchors: ['firstPage', 'secondPage','lastPage'],
+		menu: '#menu',
+		css3:true
+	});
+</script>
+// jQuery
+<script src="js/jquery-1.8.3.min.js?t=20170308"></script>
+// Highcharts
+<script src="js/highcharts.js?t=20170308"></script>
+<script src="js/comm.js?t=20170308"></script>
+<script src="js/data.js?t=20170308"></script>
+<script src="js/riskparity.js?t=20170308"></script>
+<script src="js/drilldown.js?t=20170308"></script>
+<script src="js/cel_weight.js?t=20170308"></script>
+<script src="js/cel_weight1.js?t=20170308"></script>
+<script src="js/index.js?t=20170308"></script>
+</body>
+</html>

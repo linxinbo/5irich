@@ -1,0 +1,59 @@
+body, ul, li, div, input, span{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    font-family:"Microsoft YaHei";
+    font-size: 12px;
+}
+
+.history_zz_show{
+    width: 100%;
+    padding: 0 12px;
+}
+.history_data table{
+    width: 100%;
+    margin: 10px auto;
+}
+.history_data td, .history_data th{
+    width: 33%;
+    line-height: 18px;
+    text-align: center;
+}
+.history_data th{
+    color: #323232;
+    font-size: 12px;
+}
+.history_data td{
+    font-size: 10px;
+}
+
+#page{
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+    position: fixed;
+    bottom: 0;
+    border-bottom: 1px solid #a7a6ab;
+    z-index: 10;
+}
+#page li{
+    width: 25%;
+    float: left
+}
+#page li a{
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+    height: 30px;
+    border: 1px solid #389ad7;
+    border-radius: 4px;
+    color: #389ad7;
+    text-align: center;
+}
+#page a span{
+    width: 100%;
+    line-height: 28px;
+    display: inline-block;
+}

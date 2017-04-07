@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.group.fundgroup.FundGroupBuyBean" table="cjqfweb_group_fund_buy">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金组合ID  -->
+		<property name="group_id" type="java.lang.String">
+			<column name="group_id" />
+		</property>
+		<!--    -->
+		<property name="zhlb" type="java.lang.String">
+			<column name="zhlb" />
+		</property>
+		<!--  基金组合名称  -->
+		<property name="group_name" type="java.lang.String">
+			<column name="group_name" />
+		</property>
+		<!--  用户id  -->
+		<property name="userid" type="java.lang.String">
+			<column name="userid" />
+		</property>
+		<!--  用户金证代码号  -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!--  购买组合总花费  -->
+		<property name="costmoney" type="java.lang.String">
+			<column name="costmoney" />
+		</property>
+		<!--  市值 -->
+		<property name="marketvalue" type="java.lang.String">
+			<column name="marketvalue" />
+		</property>
+		<!--  收益  -->
+		<property name="profit" type="java.lang.String">
+			<column name="profit" />
+		</property>
+		<!--  收益率  -->
+		<property name="profitrate" type="java.lang.String">
+			<column name="profitrate" />
+		</property>
+		<!--  日收益 -->
+		<property name="marketvalue_rose" type="java.lang.String">
+			<column name="marketvalue_rose" />
+		</property>
+		<!--  创建时间 -->
+		<property name="createTime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  修改时间 -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+		<!--  是否有效 0无效，1有效  -->
+		<property name="sfyx" type="java.lang.String">
+			<column name="sfyx" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

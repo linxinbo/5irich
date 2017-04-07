@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站—基金详情</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../common/common.css?t=20170308">
+    <link rel="stylesheet" href="../style/header/header.css?t=20170308">
+    <link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+    <link rel="stylesheet" href="../style/login/login.css?t=20170308">
+    <link rel="stylesheet" href="../style/funddetail/funddetail.css?t=20170308">
+    <link rel="stylesheet" href="../style/Plug-in/laydate.css?t=20170308">
+    <link rel="stylesheet" href="../style/Plug-in/laydate1.css?t=20170308">
+</head>
+<body>
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span >首页</span></a>
+                <a id="short_f"><span class="select">基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="fundrecomm.html">精选基金</a>
+                    <a href="fund_theme.html">主题基金</a>
+                    <a href="fund_all.html">所有基金</a>
+                    <!--<a href="chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+   <div class="deone">
+       <div class="dechart">
+           <ul data-type="0">
+               <li >收益走势图</li>
+               <li >净值走势图</li>
+           </ul>
+           <div id="canvas">
+               <!--				<canvas id="chart_canvas"></canvas>-->
+               <div class="container" id="container" style="width:100%;height:330px;padding-left: 0px;padding-right: 0px;">
+
+               </div>
+               <table class="kmap_date menddd" border="0">
+                   <tr>
+                       <td align="center" width="20%"><span data-index="0">月度</span></td>
+                       <td align="center" width="20%"><span data-index="1">季度</span></td>
+                       <td align="center" width="20%"><span data-index="2" class="selexx">半年</span></td>
+                       <td align="center" width="20%"><span data-index="3">年度</span></td>
+                       <td align="center" width="20%"><span data-index="6">全部</span></td>
+                   </tr>
+               </table>
+           </div>
+       </div>
+       <div class="deintro">
+           <ul class="fdetail">
+               <li></li>
+               <li></li>
+               <li> </li>
+               <li> </li>
+               <li> </li>
+               <li></li>
+               <li></li>
+           </ul>
+           <div class="buybox">
+               <div class="detext">
+                   <input type="text" class="money"><button class="fdgoumai">立即购买</button>
+               </div>
+               <button class="dingtou">定投</button>
+               <p style="margin-top:5px;" class="feil"></p>
+            </div>
+       </div>
+
+       </div>
+
+       <div class="detwo clearfix">
+           <div class="debtn">
+               <ul>
+                   <li class="yeji select">基金业绩</li>
+                   <li class="zuhe">投资组合</li>
+                   <li class="dangan">基金档案</li>
+                   <li class="feilvbtn">交易费率</li>
+               </ul>
+           </div>
+
+           <div class="detwocon clearfix">
+               <div class="one clearfix"></div>
+               <div class="two clearfix"></div>
+               <div class="three clearfix"></div>
+               <div class="four clearfix"></div>
+               <!--<div class="paiming">-->
+                   <!--<p>业绩排名</p>-->
+                   <!--<table>-->
+                       <!--<tr style="border:none;">-->
+                           <!--<td>——</td>-->
+                           <!--<td>今年以来</td>-->
+                           <!--<td>近1月</td>-->
+                           <!--<td>近3月</td>-->
+                           <!--<td>近6月</td>-->
+                           <!--<td>近1年</td>-->
+                           <!--<td>近3年</td>-->
+                           <!--<td>成立以来</td>-->
+                       <!--</tr>-->
+                       <!--<tr>-->
+                           <!--<td>本产品</td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                       <!--</tr>-->
+                       <!--<tr>-->
+                           <!--<td>沪深300</td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                       <!--</tr>-->
+                       <!--<tr>-->
+                           <!--<td>同类平均</td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                       <!--</tr>-->
+                       <!--<tr>-->
+                           <!--<td>同类排名</td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                           <!--<td></td>-->
+                       <!--</tr>-->
+                       <!--<tr>-->
+                           <!--<td>四分位排名</td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                           <!--<td><span></span><span></span><span></span><span></span><i>良好</i></td>-->
+                       <!--</tr>-->
+                   <!--</table>-->
+               <!--</div>-->
+               <!--<div class="gaikuang">-->
+                   <!--<p>基本概况</p>-->
+                     <!--<table>-->
+                         <!--<tr>-->
+                             <!--<td>基金简称</td>-->
+                             <!--<td>富国天益价值</td>-->
+                             <!--<td>最新份额</td>-->
+                             <!--<td>23.98亿份</td>-->
+                             <!--<td>最低申购额度</td>-->
+                             <!--<td>0元</td>-->
+                         <!--</tr>-->
+                         <!--<tr>-->
+                             <!--<td>基金代码</td>-->
+                             <!--<td>100020</td>-->
+                             <!--<td>最新规模</td>-->
+                             <!--<td>23.98亿元</td>-->
+                             <!--<td>最小赎回份额</td>-->
+                             <!--<td>10份</td>-->
+                         <!--</tr>-->
+                         <!--<tr>-->
+                             <!--<td>基金全称</td>-->
+                             <!--<td>富国天益价值混合型证券投资基金</td>-->
+                             <!--<td>投资类型</td>-->
+                             <!--<td>价值型</td>-->
+                             <!--<td>基金管理费</td>-->
+                             <!--<td>1.50%</td>-->
+                         <!--</tr>-->
+                         <!--<tr>-->
+                             <!--<td>基金类型</td>-->
+                             <!--<td>混合型</td>-->
+                             <!--<td>基金经理</td>-->
+                             <!--<td>李晓明</td>-->
+                             <!--<td>基金托管人</td>-->
+                             <!--<td>交通银行</td>-->
+                         <!--</tr>-->
+                         <!--<tr>-->
+                             <!--<td>成立日期</td>-->
+                             <!--<td>2004-06-15</td>-->
+                             <!--<td>基金管理人</td>-->
+                             <!--<td>富国基金</td>-->
+                             <!--<td>基金托管费</td>-->
+                             <!--<td>0.25%</td>-->
+                         <!--</tr>-->
+                     <!--</table>-->
+                   <!--<p>基金经理</p>-->
+                   <!--<div class="photo">-->
+                       <!--<img src="../images/manager/00004.png" alt="" >-->
+                       <!--<div class="manades">-->
+                          <!--<div class="maname">刘天明&nbsp;&nbsp;<span>博士</span></div>-->
+                          <!--<div>看电视机顶盒三分地方发的是离开房间的个梵蒂冈刚发的是广泛覆盖了当上了个梵蒂冈梵蒂冈</div>-->
+                       <!--</div>-->
+                   <!--</div>-->
+               <!--</div>-->
+           <!--</div>-->
+           <!--<div class="feilv">-->
+               <!--<p>前端认购费率</p>-->
+               <!--<table>-->
+                   <!--<tr>-->
+                       <!--<td>认购金额（元）</td>-->
+                       <!--<td>原认购费率（%）</td>-->
+                       <!--<td>理财易站折扣费率（%）</td>-->
+                   <!--</tr>-->
+                   <!--<tr>-->
+                       <!--<td>M<100万</td>-->
+                       <!--<td>1.2</td>-->
+                       <!--<td>1.2</td>-->
+                   <!--</tr>-->
+                   <!--<tr>-->
+                       <!--<td>100万<=M<500万</td>-->
+                       <!--<td>1.2</td>-->
+                       <!--<td>1.2</td>-->
+                   <!--</tr>-->
+               <!--</table>-->
+           <!--</div>-->
+               <!--<div class="pie">-->
+
+               <!--</div>-->
+       </div>
+   </div>
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="../assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../common/highcharts.js?t=20170308"></script>
+<script src="../js/funddetail/grid.js?t=20170308"></script>
+<script src="../js/funddetail/incomeChart.js?t=20170308"></script>
+<script src="../js/Plug-in/laydate.dev.js?t=20170308"></script>
+<script src="../js/trade/buynewfundall.js?t=20170308"></script>
+<script src="../js/trade/timeinvestall.js?t=20170308"></script>
+<script src="../js/funddetail/funddetail.js?t=20170308"></script>
+</html>

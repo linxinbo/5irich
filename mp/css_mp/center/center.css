@@ -1,0 +1,73 @@
+.cc_header{height: 4.000em;background: url(../../images_mp/cc_title.png) repeat-x center; background-size: auto 4.000em; }
+.cc_head_center{ height: 4.000em; line-height: 4.000em; text-align: center; }
+.cc_head_center a{ font-size: 1.4em; color: #ffffff; }
+.cc_user{ height: 13.680em; background: url(../../images_mp/head_center.png) no-repeat center; background-size: 100% auto;position: relative; }
+.cc_gg{ height: 2.480em; background: url(../../images_mp/cc_ggbg.png) no-repeat center;}
+.cc_gg .gg_icon{ float: left; display: inline-block; width: 0.880em; height: 1.360em; background: url(../../images_mp/cc_ggicon.png) no-repeat center; background-size: 0.880em 1.360em; margin-top:0.56em; margin-left: 1.200em; }
+.cc_gg h2{ float: left; display: inline-block; height: 2.480em; line-height: 2.480em; text-align: left; }
+.cc_gg h2 a{ font-size: 1em; color: #ffffff;line-height: 2.480em;margin-left: 5px;margin-top: 0.15em;display: block;}
+.cc_close{ float: right; display: inline-block; margin-right: 1.200em; margin-top: 0.240em; font-size: 1.520em; color: #ffffff; }
+.cc_user .user_head{ position: absolute; top: 50%; left: 50%; width: 5.600em; height: 5.600em; margin: -1.8em 0 0 -2.8em; }
+.cc_user .user_head .user_headimg{ display: block; width: 5.600em; height: 5.600em; border-radius: 2.8em; border: 3px solid #ffffff; }
+.user_name{ height: 3.360em; background: url(../../images_mp/user_namebg.png) no-repeat center; background-size: 33.120em 3.360em; }
+.user_name a{ display: block; height: 3.360em; line-height: 3.360em; text-align: center; color: #333333; }
+.user_center_m{ overflow: hidden; background: #ffffff; }
+.store4{ width: 100%; height: auto; overflow: hidden; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede; }
+.store4 li{ width: 25%; height: auto; float: left; oveftlow: hidden; }
+.store4 li a{ display: block; text-align: center; padding: 1.760em 0; }
+.store4 li a .user_menuicon{ display: block; width: 2.800em; height: 2.800em; margin: 0 auto; }
+.store4 li a .user_menuicon.yuyue { background: url(../../images_mp/user_yy.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a .user_menuicon.moni { background: url(../../images_mp/user_mn.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a .user_menuicon.mmgx { background: url(../../images_mp/user_mmxg.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a .user_menuicon.dlgx { background: url(../../images_mp/user_dlxg.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a .user_menuicon.yhgl { background: url(../../images_mp/user_yhgl.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a .user_menuicon.tcdl { background: url(../../images_mp/user_tcdl.png) no-repeat center; background-size: 2.800em 2.800em; }
+.store4 li a b{ color: #575757; display: block; height: 2em; line-height: 2em; text-align: center; margin-top: 0.400em; }
+.menu_title{ font-size:1.120em; }
+.left_menu{ position: fixed; left: 0px; top:0px; width: 6.400em; background: rgba(255,255,255,0.9); height: 100%; z-index: 99; box-shadow: 0px 0px 8px #333333; }
+.left_menu_ul{ width: 100%; height: auto; float: left; }
+.left_menu_ul li{ width: 100%; border-bottom: 1px solid #dedede; overflow: hidden; }
+.left_menu_ul li a{ display: block; text-align: center; padding: 1.00em 0; }
+.left_menu_ul li a .left_menu_logo{ width: 4.000em; height: 4.000em; display: block; margin: 0 auto; }
+.left_menu_ul li a .left_menuicon{ display: block; width: 2.240em; height: 2.240em; margin: 0 auto; }
+.left_menu_ul li a .left_menuicon.lf_gywm{ background: url(../../images_mp/left_gywm.png) no-repeat center; background-size: 2.240em 2.240em; }
+.left_menu_ul li a .left_menuicon.lf_yqpy{ background: url(../../images_mp/left_yqpy.png) no-repeat center; background-size: 2.240em 2.240em; }
+.left_menu_ul li a .left_menuicon.lf_sz{ background: url(../../images_mp/left_sz.png) no-repeat center; background-size: 2.240em 2.240em; }
+.left_menu_ul li a .left_menuicon.lf_tcdl{ background: url(../../images_mp/left_tcdl.png) no-repeat center; background-size: 2.240em 2.240em; }
+.left_menu_ul li a b{ color: #575757; display: block; height: 2em; line-height: 2em; text-align: center; margin-top: 0.400em; }
+.bankkabg{background: url(../../images_mp/my_bankbg.png) repeat-y center; background-size: 100% auto;}
+.my_bankka{overflow: hidden;margin-top: 1em;}
+.my_bankka ul li.lan{position:relative;height:9.120em;background: url(../../images_mp/bankbg.png) no-repeat center; background-size: 100% auto;}
+.my_bankka ul li.huang{position:relative;height:9.120em;background: url(../../images_mp/bankbg1.png) no-repeat center; background-size: 100% auto;}
+.my_bankka ul li .my_bankend{position: absolute;bottom:0;left: 0;right: 0;height: 1.920em;background: url(../../images_mp/my_bankline.png) no-repeat center; background-size: 100% auto;}
+.my_bankka ul li .my_banktitle{padding: 2.2em 0 0 3em;}
+.my_bankka ul li .my_banktitle i{float:left;display: inline-block;width: 4.640em;height: 4.640em;}
+
+.my_bankka ul li .my_banktitle i.zg_bank{background: url(../../images_mp/zg_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*中国*/
+.my_bankka ul li .my_banktitle i.gs_bank{background: url(../../images_mp/gs_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*工商*/
+.my_bankka ul li .my_banktitle i.zs_bank{background: url(../../images_mp/zs_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*招商*/
+.my_bankka ul li .my_banktitle i.jh_bank{background: url(../../images_mp/jh_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*建行*/
+.my_bankka ul li .my_banktitle i.ny_bank{background: url(../../images_mp/nh_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*农行*/
+.my_bankka ul li .my_banktitle i.jt_bank{background: url(../../images_mp/jt_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*交通*/
+.my_bankka ul li .my_banktitle i.pf_bank{background: url(../../images_mp/pf_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*浦发*/
+.my_bankka ul li .my_banktitle i.bj_bank{background: url(../../images_mp/bj_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*北京*/
+.my_bankka ul li .my_banktitle i.ms_bank{background: url(../../images_mp/ms_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*民生*/
+.my_bankka ul li .my_banktitle i.gd_bank{background: url(../../images_mp/gd_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*光大*/
+.my_bankka ul li .my_banktitle i.hx_bank{background: url(../../images_mp/hx_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*华夏*/
+.my_bankka ul li .my_banktitle i.zx_bank{background: url(../../images_mp/zx_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*中信*/
+.my_bankka ul li .my_banktitle i.xy_bank{background: url(../../images_mp/xy_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*兴业*/
+.my_bankka ul li .my_banktitle i.pa_bank{background: url(../../images_mp/pa_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*平安*/
+.my_bankka ul li .my_banktitle i.gf_bank{background: url(../../images_mp/gf_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*广发*/
+.my_bankka ul li .my_banktitle i.js_bank{background: url(../../images_mp/js_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*江苏*/
+.my_bankka ul li .my_banktitle i.nj_bank{background: url(../../images_mp/nj_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*南京*/
+.my_bankka ul li .my_banktitle i.yz_bank{background: url(../../images_mp/yz_bank.png) no-repeat center; background-size: 4.640em 4.640em;}/*邮政*/
+
+.my_bankka ul li .my_banktitle span{float:left;margin-left:0.5em;display: inline-block;font-size: 1.440em;line-height: 1.5;}
+.order_head {height: 3.52em;border-bottom: 1px solid #d7d7d7;background-color: #ffffff;line-height: 3.52em;padding: 0 1em;position: relative;}
+.t_xia{position: absolute;top:50%;width:1.5em;height:0.8em;margin-top: -0.4em;right: 1em;background: url(../../images_mp/t_xia.png) no-repeat center; background-size: 100% auto;}
+.order_head span{font-size: 1.40em;color: #000000;}
+.order_data{padding: 0 1em;position: relative;overflow: hidden;background-color: #ffffff;}
+.order_data li{width:50%;float:left;height: 3.52em;border-bottom: 1px solid #d7d7d7;line-height: 3.52em;padding: 0 1em;}
+.order_data li:nth-child(even){width:50%;float:left;height: 3.52em;border-bottom: 1px solid #d7d7d7;line-height: 3.52em;padding: 0 1em;text-align: right;}
+.order_data li span{font-size: 1.12em;color: #666666;}
+.dispose{background: url("../../images_mp/icon_chuli.png") right no-repeat;background-size: 34px 34px;}

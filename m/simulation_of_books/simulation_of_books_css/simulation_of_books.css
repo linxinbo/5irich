@@ -1,0 +1,82 @@
+@CHARSET "UTF-8";
+html input[disabled]{cursor:default;background-color: #e3e3e3;}
+.tradePW {width: 100%;float: none;font-size: 1em;border: none;padding-right:20px;text-align:right}
+.button_a{display:block;border: none;width:96%;height:2.78em;line-height:2.78em;margin:0 auto;background:#1b75da;text-align:center;color:#fff;font-size:1.2em;border-radius:5px;}
+.button_cg{display:block;border: none;width:96%;height:2.78em;line-height:2.78em;margin:0 auto;background:#397e30;text-align:center;color:#fff;font-size:1.2em;border-radius:5px;}
+.pass_trade{width: 100%;float: none;font-size: 0.9em;border: none;padding-right:20px;text-align:right}
+.pass_trader{float: none;width:20px;height:20px;}
+.pass_trade_s{float: right;width:75px;height:45px;font-size: 1em;border: none;padding-right:5px;text-align:left;line-height:45px;}
+.pass_trade_i{float: right;width:75px;height:40px;font-size: 1em;border: none;padding-right:5px;text-align:right;line-height:45px;}
+.normal_list .money_num span{float:right;line-height:45px;color:#000000;font-size:1.0em;font-family: Arial, Helvetica, sans-serif;}
+.pass_trade_s1{float: right;height:45px;font-size: 0.9em;border: none;text-align:right;line-height:45px;}
+.pass_trade_s2{float: right;width:50px;height:45px;font-size: 1em;border: none;padding-right:5px;text-align:center;line-height:45px;}
+.pass_trade_i2{float: right;width:50px;height:40px;font-size: 1em;border: none;padding-right:5px;text-align:center;line-height:40px;}
+.normal_list .money_num input[type=text],.normal_list .money_num input[type=tel],.normal_list .money_num input[type=number],.normal_list .money_num input[type=password]{float:right;height:45px;line-height:45px;font-size:1.2em;border:0;text-align:center;}
+.pass_trade_s3{float: right;height:45px;font-size: 0.9em;border: none;padding-right:20px;text-align:left;line-height:45px;}
+.class_market_list{margin:10px;padding:10px;background:#ffffff;border-radius:10px;overflow: hidden;}
+.class_market_list li > .class_market_left{float:left;text-align:left;}
+.class_market_left span{text-align: center;font-size:1.2em;font-family: Arial, Helvetica, sans-serif;}
+.class_market_left h4{text-align: left;font-size:1.6em;font-family: Arial, Helvetica, sans-serif;}
+.class_market_list li > .class_market_right{float:right;text-align:right;}
+.class_market_right span{text-align: right;font-size:1.0em;font-family: Arial, Helvetica, sans-serif;}
+.class_market_right h4{text-align: right;font-size:1.0em;font-family: Arial, Helvetica, sans-serif;}
+.class_market_right h5{text-align: right;font-size:1.0em;font-family: Arial, Helvetica, sans-serif;}
+.jjxx_head{margin:10px 10px 0 10px;overflow: hidden;}
+.jjxx_head li{float:left;width:33%;display: inline-block;line-height:42px;border-top-left-radius:10px;border-top-right-radius:10px;text-align:center;}
+.xzl{background:#ffffff;border-bottom: 2px solid #3897d7;color:#3897d7;}
+.xzl a{font-size:1.2em;color:#3897d7;font-family: Arial, Helvetica, sans-serif;}
+.xzm{border-top: 1px solid #cbcbcb;border-bottom: 1px solid #cbcbcb;border-right: 1px solid #cbcbcb;color:#666666;}
+.xzm a{font-size:1.2em;color:#666666;font-family: Arial, Helvetica, sans-serif;}
+.jjxx_content{background:#ffffff;border-radius:5px;overflow: hidden;}
+.jjxx_content_head{line-height:42px;height:42px;border-bottom:1px solid #dddddd;}
+.jjxx_content_head span{float: left;height:42px;font-family: Arial, Helvetica, sans-serif;color:#389ad7;font-size:1.2em;margin-left:10px;max-width: 220px;overflow: hidden;display: inline-block;}
+.jjxx_content_head .t_san{float: right;
+    width: 10px;
+    height: 18px;
+    margin: 12px 15px 0 0 ;
+    background-image: url("../k_books_images/sanjiao@2x.png");
+    background-repeat: no-repeat;
+    background-size:100% 100%;}
+.jjxx_content_head .t_edit{float: right;
+    width: 47px;
+    height: 22px;
+    margin: 12px 5px 0 0 ;
+    display: block;
+    background-color: #397e30;
+    text-align:center;
+    line-height:22px;
+    color:#ffffff;
+    border-radius: 5px;
+    font-size:12px;
+    }
+.jjxx_content_head .t_delete{float: right;
+    width: 47px;
+    height: 22px;
+    margin: 12px 5px 0 0 ;
+    display: block;
+    background-color: #e00500;
+    text-align:center;
+    line-height:22px;
+    color:#ffffff;
+    border-radius: 5px;
+    font-size:12px;
+    }
+.jjxx_content_c{padding:5px;overflow: hidden;}
+.jjxx_content_c li{display: inline-block;width:49%;line-height:32px;}
+.jjxx_content_c li span:first-child{float:left;margin-left:10px;color:#343434;font-family: Arial, Helvetica, sans-serif;}
+.jjxx_content_c li span:last-child{float:right;margin-right:10px;color:#389ad7;font-family: Arial, Helvetica, sans-serif;}
+.normal_list .my_account {
+    margin: 0 10px 0 0;
+    font-size:0.9em;
+
+/*    margin: 0 30px 0 0;*/
+    text-align: right;
+    overflow: hidden;
+}
+.class_market_zc{overflow: hidden;height:32px;}
+.class_market_zc i{float:left;width:16px;height:12px;margin-left:20px;margin-top:10px;}
+.class_market_zc h4{display: block;line-height:32px;float:right;width:115px;margin-right:20px;text-align: right;font-size:1.2em;font-family: Arial, Helvetica, sans-serif;}
+.class_market_zc span{display: block;line-height:32px;margin-left:45px;margin-right:135px;text-align: left;font-size:1.2em;font-family: Arial, Helvetica, sans-serif;}
+.zc_ys{background-color: #058DC7;}
+.zc_ys1{background-color: #DDDF00;}
+.zc_ys2{background-color: #ED561B;}

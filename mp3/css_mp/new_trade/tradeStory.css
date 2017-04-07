@@ -1,0 +1,170 @@
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+.clearfix:after {content: "";display: block;clear: both;}
+.clearfix {zoom: 1;}
+/*header*/
+.nt_head ul {background: #fff;height: 3.56em;margin-bottom: 1px;}
+.nt_head ul li {
+    width: 22.5%;
+    float: left;
+    font-size: 1.24em;
+    height: 100%;
+    line-height: 3.1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nt_head ul li:last-child{
+    width: 10%;
+}
+.nt_head ul .nt_ac {
+    border-bottom: 2px solid #ff9900;
+    color: #FF9900;
+}
+.nt_head ul .nt_queryE {
+    background-image: url(../../images_mp/trade/timeicon.png);
+    background-size: 1.06em 1.15em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*导航*/
+.nt_nav {
+    margin-top: 1px;
+    border-bottom: 1px solid #d8dce0;
+    display: none;
+}
+.nt_nav ul {
+    position: relative;
+}
+.nt_nav ul li {
+    width: 49.8%;
+    text-align: center;
+    float: left;
+    background: #fff;
+    font-size: 1em;
+    position: relative;
+}
+.nt_nav ul li:nth-child(2){
+    margin-left: 0.4%;
+}
+.inDate {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.nt_nav .nt_navCon {
+    display: block;
+    font-size: 1.12em;
+    line-height: 3.0em;
+}
+.nt_nav .nt_navup {
+    color: #666666;
+}
+.nt_nav .nt_navdown {
+    color: #ff9900;
+}
+.nt_nav .nt_navup:after{
+    display: inline-block;
+    content: "";
+    width: .62em;
+    height: .44em;
+    background-image: url(../../images_mp/trade/nt_traup.png);
+    background-size: 100% 100%;
+    margin-left: .6em;
+    margin-bottom: .1em;
+}
+.nt_nav .nt_navdown:after{
+    display: inline-block;
+    content: "";
+    width: .62em;
+    height: .44em;
+    background-image: url(../../images_mp/trade/nt_tradown.png);
+    background-size: 100% 100%;
+    margin-left: .6em;
+    margin-bottom: .1em;
+}
+
+/*当前持仓*/
+.nt_content {
+    background: #fff;
+}
+.nt_box {
+    margin-top: 1.06em;
+}
+.nt_cont {
+    margin: 0 1.06em;
+    padding: 1.78em 0;
+    border-bottom: 1px solid #d8dce0;
+}
+.nt_cont:last-child {
+    border: none;
+}
+.nt_cont span{
+    display: inline-block;
+}
+.ma_contL {
+    width: 100%;
+}
+.ma_contR {
+    width: 100%;
+}
+.ma_contL .ma_contL0 {
+    margin-bottom: .9em;
+    float: left;
+}
+.ma_contL .ma_contL1 {
+    font-size: 1.42em;
+    margin-right: 5px;
+}
+.ma_contL .ma_contL2 {
+    font-size: 1.06em;
+    color: #adadad;
+}
+.ma_contL .ma_valueAdd {
+    font-size: 1.6em;
+    margin-bottom: .4em;
+    float: right;
+}
+.ma_contR .ma_contL3 {
+    font-size: 1.06em;
+    float: left;
+    color: #adadad;
+}
+.ma_contR .ma_contL4 {
+    font-size: 1.06em;
+    float: left;
+    color: #adadad;
+    margin-left: 1.06em;
+}
+.ma_contL .ma_valueAdd .ma_fontM {
+    font-size: 0.6625em;
+}
+
+.ma_contR .ma_contRb {
+    font-size: 1.06em;
+    float: right;
+    color: #adadad;
+}
+.nt_noData {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10em 0 27em 0;
+}
+
+.nt_noData img {
+    width: 15em;
+    height: 15em;
+    margin: 0 auto;
+}
+.nt_noData h3 {
+    margin-top: 1em;
+    font-size: 1.28em;
+    line-height: 2em;
+    color: #ff9900;
+}

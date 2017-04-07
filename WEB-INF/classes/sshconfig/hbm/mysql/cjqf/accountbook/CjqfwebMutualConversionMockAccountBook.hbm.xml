@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.accountbook.cjqfweb.CjqfwebMutualConversionMockAccountBookBean" table="cjqfweb_mutual_conversion_mockaccountbook" >
+        <id name="id" type="int">
+            <column name="ID"/>
+        </id>
+        <property name="userId" type="string">
+            <column name="userid" />
+        </property>
+        <property name="fundName" type="string">
+            <column name="fundname" />
+        </property>
+        <property name="fundCode" type="string">
+            <column name="fundcode" />
+        </property>
+        <property name="conversionDate" type="string">
+            <column name="conversiondate" />
+        </property>
+        <property name="conversionShare" type="java.math.BigDecimal">
+            <column name="conversionshare" />
+        </property>      
+         <property name="conversionFreeRatio" type="java.math.BigDecimal">
+            <column name="conversionfreeratio" />
+        </property>
+        <property name="conversionAmount" type="java.math.BigDecimal">
+            <column name="conversionamount" />
+        </property>
+        <property name="fNavUnit" type="java.math.BigDecimal">
+            <column name="fnavunit" />
+        </property>
+        <property name="conversionType" type="int">
+            <column name="conversiontype" />
+        </property>
+         <property name="conversionFreeRatioType" type="int">
+            <column name="conversionfreeratiotype" />
+        </property>
+        <property name="conversionDividendspPattern" type="int">
+            <column name="conversiondividendsppattern" />
+        </property>
+        <property name="updateTime" type="string">
+            <column name="updatetime" />
+        </property>
+         </class>
+</hibernate-mapping>

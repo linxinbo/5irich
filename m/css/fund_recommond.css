@@ -1,0 +1,51 @@
+.funds_list_a{
+    padding: 0 15px;
+}
+.funds_list_a li{
+    margin: 0;
+}
+.funds_list_a li:nth-child(1){
+    line-height: 40px !important;
+}
+.go-buy, .go-add,.go-add1{
+    display: block;
+    width: 100%;
+    padding-top: 36px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.go-buy{
+    background: url("../images/icon_go_buy2_bg.png") 50% 0 no-repeat;
+    background-size: 37px;
+    color: #389ad7;
+}
+.go-add{
+    background: url("../images/icon_shoucang_bg.png") 50% 0 no-repeat;
+    background-size: 37px;
+    color: #f5a320;
+}
+.go-add1{
+    background: url("../images/moni_icon.png") 50% 0 no-repeat;
+    background-size: 37px;
+    color: #f5a320;
+}
+span.add_collect1 {
+    display: block;
+    text-align: center;
+}
+.fundname{
+    color: #389ad7;
+    font-size: 15px;
+}
+.oneyear{
+    color:#a0a0a0;
+    font-size: 13px;
+}
+.shouyi{
+    color: #d61020;
+    font-size: 24px;
+}
+/*1202*/
+.normal2_list li:first-child{ display:box;display: -webkit-box;line-height: 60px;}
+.normal2_list li .fund_name{-webkit-box-flex: 1;margin-left: 8px;padding-left: 36px;font-size:1.3em;}
+.i_arrow_r{margin-top: 7px;}

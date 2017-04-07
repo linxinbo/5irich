@@ -1,0 +1,292 @@
+body,
+ul,
+li,
+div,
+input,
+span {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body {
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+}
+.gongmu_data {
+	margin-top: 5px;
+}
+.gongmu_data .gm_list {
+	/*	margin-top: 15px;*/
+}
+.gm_type {
+	background: #429afc;
+	height: 40px;
+}
+.gm_type li {
+	float: left;
+	width: 60px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.gm_type li span {
+	display: inline-block;
+	color: #fff;
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	/*border-right: 1px solid #fff;*/
+	margin: 14px 0;
+}
+.gm_sel {
+	background: #fff;
+	/*border-bottom: 2px solid #1b75da;*/
+}
+.gm_type .gm_sel span {
+	color: #272727;
+}
+.gm_header {
+	width: 100%;
+	height: 36px;
+}
+.table_header {
+	width: 100%;
+	height: 36px;
+	background: #f5f5f5;
+	line-height: 36px;
+	border-left: 5px solid #1b75da;
+	/*	border-bottom: 1px dashed #d5d4d7;*/
+	float: left;
+}
+#gm_select {
+    float: left;
+    height: 40px;
+}
+#gm_select div {
+    float: left;
+    margin-left: 2px;
+    height: 40px;
+}
+#gm_select div select {
+    width: 100%;
+    height: 100%;
+}
+.search_type {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: 30px !important;
+    line-height: 30px !important;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+@media screen and (min-width:320px) and (max-width:375px) {
+	.table_header .deal_name {
+		width: auto;
+		text-overflow: ellipsis;
+		font-size: 12px;
+		color: #389ad7;
+	}
+	.go-buy span,
+	.go-add span {
+		display: inline-block;
+		margin-top: 7px;
+		width: 50px;
+		height: 22px;
+		line-height: 22px;
+		background: #1b75da;
+		color: #fff;
+		border-radius: 2px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.table_data {
+	width: 90%;
+	height: 72px;
+	float: left;
+	background: #fff;
+	font-size: 12px;
+}
+	.table_header .go-buy {
+		margin-right: 0px;
+	}
+	.table_header .go-add {
+		margin-right: 5px;
+	}
+	.table_header span {
+		margin-left: 2px;
+		float: left;
+	}
+}
+.table_header_add {
+	width: 87.5%;
+}
+
+/*
+.table_header span {
+	margin-left: 8px;
+	float: left;
+}
+*/
+
+.collect {
+	background: url("../images/qifu/icon_collect.png")
+}
+.nocollect {
+	background: url("../images/qifu/icon_nocollect.png")
+}
+.table_header .go-buy,
+.table_header .go-add {
+	display: inline-block;
+	float: right;
+}
+
+/*
+.table_header .go-buy {
+	margin-right: 10px;
+}
+*/
+
+.table_header .go-add {
+	margin-right: 10px;
+}
+@media screen and (min-width:375px) and (max-width:414px) {
+	.go-buy span,
+	.go-add span {
+		display: inline-block;
+		margin-top: 7px;
+		width: 60px;
+		height: 22px;
+		line-height: 22px;
+		background: #1b75da;
+		color: #fff;
+		border-radius: 2px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.table_data {
+		width: 90%;
+		height: 72px;
+		float: left;
+		background: #fff;
+		font-size: 1.2em;
+	}
+	.table_header .deal_name {
+		width: auto;
+		text-overflow: ellipsis;
+		font-size: 15px;
+		color: #389ad7;
+	}
+	.table_header .go-buy {
+		margin-right: 0px;
+	}
+	.table_header .go-add {
+		margin-right: 5px;
+	}
+	.table_header span {
+		margin-left: 2px;
+		float: left;
+	}
+}
+@media screen and (min-width:414px) {
+	.go-buy span,
+	.go-add span {
+		display: inline-block;
+		margin-top: 7px;
+		width: 60px;
+		height: 22px;
+		line-height: 22px;
+		background: #1b75da;
+		color: #fff;
+		border-radius: 2px;
+		text-align: center;
+		margin-left: 0;
+	}
+	.table_data {
+		width: 90%;
+		height: 72px;
+		float: left;
+		background: #fff;
+		font-size: 1.3em;
+	}
+	.table_header .deal_name {
+		width: auto;
+		text-overflow: ellipsis;
+		font-size: 16px;
+		color: #389ad7;
+	}
+	.table_header .go-buy {
+		margin-right: 5px;
+	}
+	.table_header .go-add {
+		margin-right: 10px;
+	}
+	.table_header span {
+		margin-left: 7px;
+		float: left;
+	}
+}
+.go-add span {
+	background: #fabf13;
+}
+.table_data_list {
+	height: 72px;
+	width: 100%;
+	cursor: pointer;
+}
+.gm_detail {
+	width: 10%;
+	height: 72px;
+	float: left;
+	background: url("../images/qifu/icon_opt_detail.png") 50% no-repeat #fff;
+	background-size: 8px 12px;
+}
+.td_1,
+.td_3 {
+	width: 25%;
+	text-align: left;
+	padding-left: 17px;
+	font-size:14px;
+}
+.td_2 {
+	width: 15%;
+	text-align: right;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	font-size:14px;
+}
+.td_4 {
+	width: 15%;
+	text-align: right;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+	font-size:14px;
+}
+.over_flow {
+	margin-top: 5px;
+	overflow: scroll;
+}
+.search_prompt {
+	display: none;
+	background: none;
+	margin-top: 30px;
+	text-align: center;
+}
+.search_prompt span {
+	color: #999999;
+	font-size: 15px;
+}
+.icon_search {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	height: 45px;
+	width: 45px;
+	background: url("../images/@x/icon_search_whiter.png") 50% no-repeat;
+	display: block;
+}

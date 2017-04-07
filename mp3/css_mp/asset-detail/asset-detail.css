@@ -1,0 +1,369 @@
+.adeheader{
+    background: #ff9900;
+}
+.adeobj{
+    position: relative;
+    padding-top: 1.17em;
+    padding-bottom: 1.17em;
+    color:#fff;
+    overflow: hidden;
+    text-align: center;
+}
+.adeobj .adeword{
+    display: inline-block;
+    font-size: 1.42em;
+}
+.adeobj i{
+    display: block;
+    width:3.4em;
+    text-align:center;
+    font-size:1.24em;
+    background: url(../../images_mp/asset-detail/rightarrow.png) no-repeat  right center;
+    position: absolute;
+    right:0.8em;
+    top:33%;
+
+}
+.adedis{
+    margin-top:1.73em;
+    padding-top:0.69em;
+    padding-bottom:0.69em;
+    overflow: hidden;
+}
+.adedis li{
+    float:left;
+    font-size:1.1em;
+    width:33%;
+    height:100%;
+    text-align: center;
+    color:#fff;
+    line-height:1.6em;
+    border-left:1px solid #eb8d00;
+}
+.adedis li span{
+    font-size:1.24em;
+
+}
+.chiyou{
+    padding-left:1.13em;
+    padding-right:1.13em;
+    margin-top:1em;
+    background:#fff;
+    overflow: hidden;
+}
+.chiyou p{
+    font-size:1.42em;
+    font-weight: bold;
+    padding-top:0.86em;
+    padding-bottom:0.86em;
+}
+.chiyou .ademeg li{
+    overflow: hidden;
+   padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.chiyou .ademeg li div{
+    float:left;
+    font-size:1.06em;
+}
+.ademegdivl{
+   width:50%;
+    padding-right:0.5em;
+}
+.ademegdivl .adespl{
+    color:#8c8c8c;
+}
+.ademegdivl .adespr{
+    float:right;
+}
+.ademegdivr{
+    width:50%;
+    padding-left:0.5em;
+}
+.ademegdivr .adespl{
+    color:#8c8c8c;
+}
+.ademegdivr .adespr{
+    float:right;
+}
+.adechange{
+    margin-top:1em;
+    background:#fff;
+}
+
+.adechange .adechnav{
+    width:100%;
+    border-bottom:1px solid #edf0f4;
+    overflow: hidden;
+}
+.adechange .adechnav li{
+    width:50%;
+    line-height:3em;
+    text-align: center;
+    float:left;
+    font-size:1.4em;
+    color:#666;
+    font-size:1.24em;
+}
+.adechange .adechnav li span{
+    display:block;
+    height:100%;
+}
+.adechange .adejilu{
+    padding-left:1.04em;
+    padding-right:1.04em;
+    overflow: hidden;
+}
+.adechange .jiludate{
+    width:25%;
+    text-align: left;
+    float: left;
+    line-height:1.5em;
+}
+.adechange .adejilubox{
+    margin-top:0.8em;
+    padding-bottom:0.8em;
+    overflow: hidden;
+}
+.adechange .jilumeg{
+    width:75%;
+    float:left;
+    border:1px solid #edf0f4;
+}
+.adechange .jilumeg li{
+    padding-left:1em;
+    padding-right:1em;
+    font-size:1.24em;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    color:#444;
+}
+.jilumeg .jiluli{
+    background:#edf0f4;
+    overflow: hidden;
+
+}
+.jilumeg .jiluli .leixing{
+    width:45%;
+    float:left;
+    color:#666;
+    font-size:0.8em;
+}
+.jilumeg .jiluli .zhuangtai{
+    width:55%;
+    float:right;
+    text-align:right;
+    color:#666;
+    font-size:0.8em;
+}
+.adejilu .meiri{
+    width:100%;
+}
+.adejilu .meiri li{
+    padding-top:1.5em;
+    padding-bottom:1.5em;
+    overflow: hidden;
+    border-bottom:solid 1px #edf0f4;
+    font-size: 1.24em;
+}
+.adejilu .meiri li .mrpl{
+    width:50%;
+    float:left;
+    text-align: left;
+
+}
+
+ .color1{
+    color:#ff1e32;
+     width:50%;
+     float:left;
+     text-align: right;
+}
+ .color2{
+    color:#2db896;
+     width:50%;
+     float:left;
+     text-align: right;
+}
+.adeover{
+    background:#fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.adeover .overul{
+    width:100%;
+    border-top:solid 1px  #edf0f4;
+    overflow: hidden;
+}
+.adeover .overul li{
+    float:left;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    font-size:1.6em;
+    text-align: center;
+}
+.adeover .overul1{
+    width:100%;
+    overflow: hidden;
+}
+.adeover .overul1 li{
+    float:left;
+    padding-top:0.6em;
+    padding-bottom:0.6em;
+    font-size:1.6em;
+    text-align: center;
+    background-color: #ff9900;
+    color: #fff;
+}
+.adeover .overul1 .overli2{
+    width:50%;
+}
+.adeover .overul1 .overli3{
+    width:50%;
+}
+/*.adeover .overul .overli1{*/
+    /*width:30%;*/
+/*}*/
+.adeover .overul .overli2{
+    width:50%;
+}
+.adeover .overul .overli3{
+    width:50%;
+}
+/*现金宝*/
+.tdata_bg{
+    background-color: #ffffff;
+}
+.adedis5{
+    padding-top:1em;
+    padding-bottom:1em;
+    overflow: hidden;
+}
+.adedis5 li{
+    float:left;
+    font-size:1.1em;
+    width:33%;
+    height:100%;
+    text-align: center;
+    color:#333;
+    line-height:1.6em;
+}
+.right_line{
+    border-right:1px solid #e5e5e5;
+}
+.adedis5 li h3{
+    font-size: 1.12em;
+    color: #666666;
+    margin: 0px;
+}
+.adedis5 li span{
+    font-size: 1.28em;
+    display: block;
+    margin-top: 10px;
+}
+.ma_valueAdd {
+    font-size: 1.4em;
+    color: #ff4b5b;
+}
+.ma_valueRmv {
+    font-size: 1.4em;
+    color: #2db996;
+}
+.adechange .adechnav1{
+    width:100%;
+    border-bottom:1px solid #edf0f4;
+    overflow: hidden;
+}
+.adechange .adechnav1 li{
+    width:100%;
+    line-height:3em;
+    text-align: left;
+    float:left;
+    color:#666;
+    font-size:1.24em;
+}
+.adechange .adechnav1 li span{
+    margin-left: 1em;
+}
+.adeobj5{
+    position: relative;
+    padding-top: 1.17em;
+    padding-bottom: 1.17em;
+    color:#fff;
+    overflow: hidden;
+    text-align: center;
+}
+.adeobj5 .adeword{
+    display: inline-block;
+    font-size: 1.42em;
+}
+.adeobj5 i{
+    display: block;
+    padding-right: 0.8em;
+    text-align:center;
+    font-size:1.12em;
+    background: url(../../images_mp/asset-detail/rightarrow.png) no-repeat  right center;
+    position: absolute;
+    right:0.8em;
+    top:33%;
+
+}
+.traderisk{
+    padding: 1em;
+}
+.traderisk h2{
+    font-size: 1.12em;
+    color: #000000;
+    line-height: 2.4em;
+}
+.traderisk span{
+    font-size: 1.12em;
+    color: #000000;
+    line-height: 2.4em;
+    text-indent: 2em;
+    display: block;
+}
+.adedis6{
+    padding-top:1em;
+    padding-bottom:1em;
+    overflow: hidden;
+}
+.adedis6 li{
+    float:left;
+    font-size:1.1em;
+    width:50%;
+    height:100%;
+    text-align: center;
+    color:#333;
+    line-height:1.6em;
+}
+.adedis6 li h3{
+    font-size: 1.12em;
+    color: #666666;
+    margin: 0px;
+}
+.adedis6 li span{
+    font-size: 1.28em;
+    display: block;
+    margin-top: 10px;
+}
+.adedis7{
+    overflow: hidden;
+}
+.adedis7 li{
+    float:left;
+    font-size:1.1em;
+    width:50%;
+    height:100%;
+    text-align: center;
+    color:#999999;
+    line-height:1.6em;
+}
+.adedis7 li span{
+    font-size: 1.12em;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,50 @@
+.k_banner{position: relative;}
+.k_banner img{width:100%;display: block;height: auto;}
+.k_content{position: relative;overflow: hidden;background: url(images/k_bg.jpg) repeat-y top center;background-size:100% auto ;padding: 1em;}
+.end_btn{position: fixed;height: 4.0em;bottom: 0px;left: 0px;right: 0px;}
+.btn_left{display: block;float: left;width: 67%;text-align: center;color: #ff9900;background-color: #fff;line-height: 4.0em;}
+.btn_right{display: block;float: left;width: 33%;text-align: center;color: #fff;font-size:1.4em;background-color: #ef5374;line-height: 2.86em;}
+.k_prod{width: 60%;margin: 0 auto;}
+.k_title1{margin: 1em 0;text-align: center;font-size: 1.28em;color: #000;line-height: 1.5;}
+.k_title2{margin: 1em 0;text-align: center;font-size: 1.12em;color: #000;line-height: 1.5;}
+.k_title2 span{color: #ef5374;}
+.k_roll{position: relative;width: 90%;margin: 4em auto 3em auto;}
+.k_roll img{width: 100%;display: block;height: auto;}
+.k_roll .k_img1{width:100%;display: block;height: 100%;background-color:#ef5374;position: absolute;top:0;left: 0;border-radius: 10px;}
+.k_btn{position: relative;width: 90%;overflow: hidden;margin: 0 auto;}
+.k_btn a{display: block;line-height:3.125em;border-radius: 5px;background-color: #ef5374;text-align: center;font-size: 1.28em;color: #fff;}
+.k_btn_h{background-color: #cccccc;}
+.k_bang{position: relative;overflow: hidden;}
+.k_bang_top img{display: block;width: 100%;height: auto;}
+.k_bang_con{overflow: hidden;background: url(images/k_bg.png) repeat-y top center;background-size:100% auto;}
+.k_bang_c{position: relative;width: 90%;margin: 0 auto;overflow: hidden;border-bottom: 1px solid #afacad;}
+.k_bang_c:last-child{position: relative;width: 90%;margin: 0 auto;overflow: hidden;border-bottom: none;}
+.k_bang_c_left{float: left;width: 80px;}
+.k_bang_c_left img{display: block;width: 50px;height: 50px;border-radius: 30%;margin: 15px auto;}
+.k_bang_c_right{float: right;width: 80px;font-size: 1.28em;text-align: right;color: #fff;line-height: 80px;}
+.k_bang_c_center{margin-left: 80px;margin-right: 80px;}
+.k_bang_c_center h2{margin-top: 15px;font-size: 1.28em;color: #fff;margin-bottom: 15px;}
+.k_bang_c_center span{color: #fff;}
+.yuan{position: absolute;width: 2em;height: 2em;top:50%;left: 0;margin-top: -1em;margin-left: -0.5em;}
+.k_roll_sm{position: absolute;width: 8em;height: 2.8em;top:-3.5em;left: 0;background: url(images/k_jia.png) repeat-y top center;background-size: 100% auto;text-align: center;}
+.k_roll_sm a{color: #333333;line-height: 2.6em;}
+.k_roll_sm a span{color: #ef5374;line-height: 2.6em;}
+.k_jiaq{position: absolute;width: 40%;height: 2em;bottom:-2.5em;left: 0;text-align: left;}
+.k_jiaq a{color: #333333;line-height: 2em;}
+.k_jiaq a span{color: #ef5374;line-height: 2em;}
+.k_jiah{position: absolute;width: 40%;height: 2em;bottom:-2.5em;right: 0;text-align: right;}
+.k_jiah a{color: #333333;line-height: 2em;}
+.k_jiah a span{color: #ef5374;line-height: 2em;}
+
+
+.alertBoxNew{background: url(../../images_mp/bj_black@2x.png) 0 0 ;width: 100%;height: 100%; position: absolute;top: 0;left: 0;z-index: 100001;}
+.alertContent1{background: #fff;width:80%;height:180px;position: fixed; top:50%;border:2px solid #ff0000;border-radius:10px;left: 50%;margin-left: -40%;margin-top: -90px;}
+.alertimg{margin: 10px auto;display: block;width: 328px;height: 47px;}
+.alertContent1 span{padding: 10px;display: block;}
+.alertTitle{color: #ff9900;background-color:#ffffff;border-radius:10px;text-align:center;font-size: 24px;height: 60px;line-height: 60px;border-bottom: 1px solid #cccccc;margin: 0px;}
+.btn_login{display: block;padding: 12px;}
+
+
+.alertBoxNew1{background: url(../../images_mp/bj_black@2x.png) 0 0 ;width: 100%;height: 100%; position: absolute;top: 0;left: 0;z-index: 100001;}
+.alertContent11{width:100%;height:180px;position: fixed; top:0;left:0;}
+.alertContent11 img{width:100%;height: auto;display: block;}

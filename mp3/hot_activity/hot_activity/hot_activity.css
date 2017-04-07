@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+.ty1_header{
+    height: 4.000em;
+    background-color: #ff9900;
+    position: relative;
+}
+/*电话图片*/
+.header_top_b{
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -1em;
+    height:1.76em;
+    width:1.76em;
+    display:block;
+}
+/*头部的间距*/
+.top_jianjv{
+    padding: 1em;
+    overflow: hidden;
+}
+.huodong{
+    padding: 0.800em;
+    border: 1px solid #ccd2d8;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+.huodong h2{
+    font-size: 1.4em;
+    color: #333333;
+}
+.huodong span{
+    font-size: 1.12em;
+    color: #999999;
+    display: block;
+    padding: 0.4em 0;
+}
+.tupian{
+    display: block;/*图片高度是实际的高度*/
+    height: auto;
+    width: 100%;
+}
+.hot{
+    position: absolute;
+    display: block;
+    top:0px;
+    right: 0px;
+    width: 4em;
+    height: 4em;
+    background: url(../../images_mp/hot_activity/hot.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.over{
+    position: absolute;
+    display: block;
+    top:0px;
+    right: 0px;
+    width: 4em;
+    height: 4em;
+    background: url(../../images_mp/hot_activity/over.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.clearfix {
+    zoom: 1;
+}
+.private-lay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.private-tip {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 6em;
+    z-index: 10;
+    background: #fff;
+}
+.private-tip-head {
+    display: inline-block;
+    width: 100%;
+    /*height: 6em;*/
+    padding:3em 0;
+    background: url(../../images_mp/hot_activity/private-tip-head.png) no-repeat center;
+    background-size: 100% 6em;
+}
+.private-tip article {
+    padding: 0 1.5em;
+    font-size: 1.06em;
+}
+.private-tip article p {
+    text-indent: 2em;
+    margin-bottom: .3em;
+    line-height: 1.2em;
+}
+.private-tip-bottom {
+    background: #fff9e9;
+    height: 5em;
+    line-height: 5em;
+    text-align: center;
+    margin-top: 1em;
+}
+.private-tip-btn {
+    display: inline-block;
+    width: 8em;
+    height: 2em;
+    font-size: 1.24em;
+    text-align: center;
+    line-height: 2em;
+    background: #ff9900;
+    border-radius: 3px;
+    margin-right: 2em;
+    margin-left: 2em;
+    color: #fff;
+}

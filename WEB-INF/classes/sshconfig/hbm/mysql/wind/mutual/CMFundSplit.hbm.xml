@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.wind.mutual.CMFundSplitBean" table="cmfundsplit" >
+        <id name="objectId" type="string">
+            <column name="OBJECT_ID"/>
+        </id>
+        <property name="sInfoWindcode" type="string">
+            <column name="S_INFO_WINDCODE" />
+        </property>
+        <property name="fInfoSplitType" type="string">
+            <column name="F_INFO_SPLITTYPE" />
+        </property>
+        <property name="fInfoSplitannDate" type="string">
+            <column name="F_INFO_SPLITANNDATE" />
+        </property>
+        <property name="fInfoSplitannoecDate" type="string">
+            <column name="F_INFO_SPLITANNOECDATE" />
+        </property>
+        <property name="fInfoSharetransDate" type="string">
+            <column name="F_INFO_SHARETRANSDATE" />
+        </property>
+        <property name="fInfoSharekinDate" type="string">
+            <column name="F_INFO_SHAREKINDATE" />
+        </property>
+        <property name="fInfoSplitInc" type="java.math.BigDecimal">
+            <column name="F_INFO_SPLITINC" />
+        </property>
+        <property name="fInfoSplitDt" type="string">
+            <column name="F_INFO_SPLIT_DT" />
+        </property>
+       
+        <property name="concosinc" type="java.math.BigDecimal">
+            <column name="CONCOSINC" />
+        </property>
+        <property name="conrelinc" type="java.math.BigDecimal">
+            <column name="CONRELINC" />
+        </property>
+         </class>
+</hibernate-mapping>

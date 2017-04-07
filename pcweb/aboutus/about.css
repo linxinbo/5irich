@@ -1,0 +1,102 @@
+.banner{
+    height:200px;
+    background: url(images/banner.png) no-repeat center center;
+    min-width:1200px;
+}
+.menu1{
+    position: fixed;
+    top:480px;
+    left:100px;
+    color:#666;
+}
+.menu1 ul li{
+    cursor:pointer;
+    width:120px;
+    height:40px;
+    border:solid 1px #dadde1;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color:#000000;
+    margin:20px 0;
+    background:#fff;
+}
+
+.jianjie,.fuwu,.team,.huoban,.tact{
+    width:1200px;
+    margin:0 auto;
+    padding-bottom: 60px;
+    min-width:1200px;
+}
+.jianjie p,.fuwu p{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom:34px;
+    line-height:32px;
+}
+.zizhi{
+    width:1200px;
+    margin:0 auto;
+    padding-bottom: 60px;
+    min-width:1200px;
+
+}
+.zizhi .box{
+    margin:0 auto;
+}
+.zizhi .box div{
+    width:30%;
+    float:left;
+    text-align: center;
+}
+.zizhi img{
+    width:340px;
+    height:240px;
+}
+.zizhi table tr{
+    height:50px;
+    border-bottom:solid 1px #edf0f4;
+}
+.team .li{
+    overflow: hidden;
+}
+.team .box2{
+    margin:0 auto;
+}
+.team .box2 div{
+    width:30%;
+    float: left;
+    font-size: 16px;
+    line-height: 32px;
+
+}
+.team .box2 div p{
+    text-align: left;
+}
+
+.home-h3{
+    margin-bottom:60px;
+}
+.imgbox{
+    width:700px;
+   padding:40px 0;
+
+    text-align: center;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-left:-350px;
+    margin-top:-250px;
+    background: rgba(153,153,153,0.6);
+    border:solid 1px rgba(153,153,153,0.6);
+    border-radius: 20px;
+    display: none;
+}
+.imgbox .close{
+    width: 30px;
+    height:30px;
+    position: absolute;
+    top:15px;
+    right:15px;
+}
+

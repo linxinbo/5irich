@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.privated.ChinaInHouseFundDescriptionBean" table="ChinaInHouseFundDescription">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  Wind 代码  -->
+		<property name="windcode" type="java.lang.String">
+			<column name="f_info_windcode" />
+		</property>
+		<!--  名称 -->
+		<property name="fullname" type="java.lang.String">
+			<column name="f_info_fullname" />
+		</property>
+		<!--  简称  -->
+		<property name="name" type="java.lang.String">
+			<column name="f_info_name" />
+		</property>
+		<!--  管理人  -->
+		<property name="corpfundmanagementcomp" type="java.lang.String">
+			<column name="f_info_corp_fundmanagementcomp" />
+		</property>
+		<!--  托管人  -->
+		<property name="custodianbank" type="java.lang.String">
+			<column name="f_info_custodianbank" />
+		</property>
+		<!--  投资类型  -->
+		<property name="firstinvesttype" type="java.lang.String">
+			<column name="f_info_firstinvesttype" />
+		</property>
+		<!--  成立日期  -->
+		<property name="setupdate" type="java.lang.String">
+			<column name="f_info_setupdate" />
+		</property>
+		<!--  到期日期  -->
+		<property name="maturitydate" type="java.lang.String">
+			<column name="f_info_maturitydate" />
+		</property>
+		<!--  发行份额  -->
+		<property name="totalunit" type="java.math.BigDecimal">
+			<column name="f_issue_totalunit" />
+		</property>
+		<!--  管理费  -->
+		<property name="managementfeeratio" type="java.math.BigDecimal">
+			<column name="f_info_managementfeeratio" />
+		</property>
+		<!--  托管费  -->
+		<property name="custodianfeeratio" type="java.math.BigDecimal">
+			<column name="f_info_custodianfeeratio" />
+		</property>
+		<!--  货币代码  -->
+		<property name="crncycode" type="java.lang.String">
+			<column name="crny_code" />
+		</property>
+		<!--  存续期  -->
+		<property name="ptmyear" type="java.math.BigDecimal">
+			<column name="f_info_ptmyear" />
+		</property>
+		<!--  推广起始日期  -->
+		<property name="startdateinst" type="java.lang.String">
+			<column name="f_issue_oef_startdateinst" />
+		</property>
+		<!--  推广截止日期  -->
+		<property name="dnddateinst" type="java.lang.String">
+			<column name="f_issue_oef_dnddateinst" />
+		</property>
+		<!--  面值  -->
+		<property name="parvalue" type="java.math.BigDecimal">
+			<column name="f_info_parvalue" />
+		</property>
+		<!--  信托类别  -->
+		<property name="trusttype" type="java.lang.String">
+			<column name="f_info_trusttype" />
+		</property>
+		<!--  受托人 -->
+		<property name="trustee" type="java.lang.String">
+			<column name="f_info_trustee" />
+		</property>
+		<!--  上市日期/申购首日  -->
+		<property name="pchstartdate" type="java.lang.String">
+			<column name="f_pchredm_pchstartdate" />
+		</property>
+		<!--  日常赎回起始日  -->
+		<property name="redmstartdate" type="java.lang.String">
+			<column name="f_info_redmstartdate" />
+		</property>
+		<!--  起点金额  -->
+		<property name="minbuyamount" type="java.math.BigDecimal">
+			<column name="f_info_minbuyamount" />
+		</property>
+		<!--  预期收益率  -->
+		<property name="expectedrateofreturn" type="java.math.BigDecimal">
+			<column name="f_info_expectedrateofreturn" />
+		</property>
+		<!--  发行地 -->
+		<property name="issuingplace" type="java.lang.String">
+			<column name="f_info_issuingplace" />
+		</property>
+		<!--  业绩比较基准  -->
+		<property name="benchmark" type="java.lang.String">
+			<column name="f_info_benchmark" />
+		</property>
+		<!--  存续状态  -->
+		<property name="status" type="java.math.BigDecimal">
+			<column name="f_info_status" />
+		</property>
+		<!--  限定类型  -->
+		<property name="restrictedornot" type="java.lang.String">
+			<column name="f_info_restrictedornot" />
+		</property>
+		<!--  是否结构化产品  -->
+		<property name="structuredornot" type="java.math.BigDecimal">
+			<column name="f_info_structuredornot" />
+		</property>
+		</class>
+</hibernate-mapping>

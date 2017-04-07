@@ -1,0 +1,218 @@
+[{
+  "id" : 1,
+  "name" : "快钱-工商银行",
+  "keyname" : "KQ01",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万，单日限额5万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"gs.png",
+  "singlelimit":50000,
+  "onedaylimit":50000
+},{
+  "id" : 2,
+  "name" : "快钱-农业银行",
+  "keyname" : "KQ02",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额20万，单日限额50万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"ny.png",
+  "singlelimit":200000,
+  "onedaylimit":500000
+},{
+  "id" : 3,
+  "name" : "快钱-中国银行",
+  "keyname" : "KQ03",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万，单日限额10万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"china.png",
+  "singlelimit":50000,
+  "onedaylimit":100000
+},{
+  "id" : 4,
+  "name" : "快钱-建设银行",
+  "keyname" : "KQ04",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万，单日限额10万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"jh.png",
+  "singlelimit":50000,
+  "onedaylimit":100000
+},{
+  "id" : 5,
+  "name" : "快钱-招商银行",
+  "keyname" : "KQ05",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万，单日限额20万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"zs.png",
+  "singlelimit":50000,
+  "onedaylimit":200000
+},{
+  "id" : 6,
+  "name" : "快钱-交通银行",
+  "keyname" : "KQ06",
+  "description":"1、申购4折起，定投4折起<br/>2、需开通银联在线支付<br/>3、单笔限额2万，单日限额2万<br/>4、需验证银行预留手机号<br/>5、资金同卡进出，保障安全",
+  "picture":"jt.png",
+  "singlelimit":20000,
+  "onedaylimit":20000
+},{
+  "id" : 7,
+  "name" : "快钱-中信银行",
+  "keyname" : "KQ07",
+  "description":"1、申购4折起，定投4折起<br/>2、需开通银联在线支付<br/>3、单笔限额1万，单日限额1万<br/>4、需验证银行预留手机号<br/>5、资金同卡进出，保障安全",
+  "picture":"zx.png",
+  "singlelimit":10000,
+  "onedaylimit":10000
+},{
+  "id" : 8,
+  "name" : "快钱-浦发银行",
+  "keyname" : "KQ08",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万(不含5万)，单日限额5万(不含5万)<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"pf.png",
+  "singlelimit":50000,
+  "onedaylimit":50000
+},{
+  "id" : 9,
+  "name" : "快钱-兴业银行",
+  "keyname" : "KQ09",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额5万，单日限额5万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"xy.png",
+  "singlelimit":50000,
+  "onedaylimit":50000
+
+},{
+  "id" : 10,
+  "name" : "快钱-广发银行",
+  "keyname" : "KQ10",
+  "description":"1、申购4折起，定投4折起<br/>2、无需开通网银，需支付0.01元<br/>3、单笔限额50万，单日限额500万<br/>4、需验证银行预留手机号<br/>5、资金同卡进出，保障安全",
+  "picture":"gf.png",
+  "singlelimit":500000,
+  "onedaylimit":5000000
+},{
+  "id" : 11,
+  "name" : "快钱-平安银行",
+  "keyname" : "KQ11",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额30万，单日限额500万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"pa.png",
+  "singlelimit":500000,
+  "onedaylimit":5000000
+},{
+  "id" : 12,
+  "name" : "快钱-华夏银行",
+  "keyname" : "KQ12",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额50万，单日限额500万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"hx.png",
+  "singlelimit":500000,
+  "onedaylimit":5000000
+},{
+  "id" : 13,
+  "name" : "快钱-光大银行",
+  "keyname" : "KQ13",
+  "description":"1、申购4折起，定投4折起<br/>2、需开通网上支付功能<br/>3、单笔限额10万，单日限额500万<br/>4、需验证银行预留手机号<br/>5、资金同卡进出，保障安全",
+  "picture":"gd.png",
+  "singlelimit":100000,
+  "onedaylimit":5000000
+},{
+  "id" : 14,
+  "name" : "快钱-民生银行",
+  "keyname" : "KQ14",
+  "description":"1、申购4折起，定投4折起<br/>2、单笔限额100万，单日限额100万<br/>3、需验证银行预留手机号<br/>4、资金同卡进出，保障安全",
+  "picture":"ms.png",
+  "singlelimit":1000000,
+  "onedaylimit":1000000
+},{
+  "id" : 9001,
+  "name" : "通联-光大银行",
+  "keyname" : "9001",
+  "description":"",
+  "picture":"gd.png",
+  "singlelimit":500000,
+  "onedaylimit":500000
+},{
+  "id" : 9002,
+  "name" : "通联-平安银行",
+  "keyname" : "9002",
+  "description":"",
+  "picture":"pa.png",
+  "singlelimit":500000,
+  "onedaylimit":1500000
+},{
+  "id" : 9003,
+  "name" : "通联-浦发银行",
+  "keyname" : "9003",
+  "description":"",
+  "picture":"pf.png",
+  "singlelimit":5000,
+  "onedaylimit":5000
+},{
+  "id" : 9004,
+  "name" : "通联-工商银行",
+  "keyname" : "9004",
+  "description":"",
+  "picture":"gs.png",
+  "singlelimit":500000,
+  "onedaylimit":1100000
+},{
+  "id" : 9005,
+  "name" : "通联-农业银行",
+  "keyname" : "9005",
+  "description":"",
+  "picture":"ny.png",
+  "singlelimit":500000,
+  "onedaylimit":2000000
+},{
+  "id" : 9006,
+  "name" : "通联-建设银行",
+  "keyname" : "9006",
+  "description":"",
+  "picture":"jh.png",
+  "singlelimit":500000,
+  "onedaylimit":500000
+},{
+  "id" : 9009,
+  "name" : "通联-交通银行",
+  "keyname" : "9009",
+  "description":"",
+  "picture":"jt.png",
+  "singlelimit":500000,
+  "onedaylimit":500000
+},{
+  "id" : 9010,
+  "name" : "通联-民生银行",
+  "keyname" : "9010",
+  "description":"",
+  "picture":"ms.png",
+  "singlelimit":500000,
+  "onedaylimit":2000000
+},{
+  "id" : 9011,
+  "name" : "通联-中国银行",
+  "keyname" : "9011",
+  "description":"",
+  "picture":"china.png",
+  "singlelimit":500000,
+  "onedaylimit":2000000
+},{
+  "id" : 9016,
+  "name" : "通联-广发银行",
+  "keyname" : "9016",
+  "description":"",
+  "picture":"gf.png",
+  "singlelimit":500000,
+  "onedaylimit":2000000
+},{
+  "id" : 9017,
+  "name" : "通联-中信银行",
+  "keyname" : "9017",
+  "description":"",
+  "picture":"zx.png",
+  "singlelimit":10000,
+  "onedaylimit":20000
+},{
+  "id" : 9019,
+  "name" : "通联-兴业银行",
+  "keyname" : "9019",
+  "description":"",
+  "picture":"xy.png",
+  "singlelimit":500000,
+  "onedaylimit":2000000
+},{
+  "id" : 9021,
+  "name" : "通联-招商银行",
+  "keyname" : "9021",
+  "description":"",
+  "picture":"zs.png",
+  "singlelimit":50000,
+  "onedaylimit":400000
+}]

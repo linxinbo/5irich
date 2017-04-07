@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="groupfundsweb" extends="wirich">
+		<!--组合基金列表分页-->
+		<action name="WebQueryGroupListAction" class="FundGroupMainWebAction" method="WebQueryGroupList">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		 <!--组合基金组合详情页-->
+		<action name="WebQueryGroupDetialAction" class="FundGroupMainWebAction" method="WebQueryGroupDetial">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--组合基金收益走势图-->
+		<action name="WebQueryGroupChartAction" class="FundGroupMainWebAction" method="WebQueryGroupChart">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--组合基金占比-->
+		<action name="WebProportionalQueryAction" class="FundGroupMainWebAction" method="WebProportionalQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--组合基金经理简介-->
+		<action name="WebManagerQueryAction" class="FundGroupMainWebAction" method="WebManagerQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--组合基金公告-->
+		<action name="WebAnnouncementQueryAction" class="FundGroupMainWebAction" method="WebAnnouncementQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--历史净值-->
+		<action name="WebHistoryNavQueryAction" class="FundGroupMainWebAction" method="WebHistoryNavQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--评分等级-->
+		<action name="WebLevelQueryAction" class="FundGroupMainWebAction" method="webLevelQuery">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--未来收益概率-->
+		<action name="queryGroupFundSharpe" class="FundGroupMainWebAction" method="queryGroupFundSharpe">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!--月收益和日涨幅-->
+		<action name="queryMonthProfit" class="FundGroupMainWebAction" method="queryMonthProfit">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		</package>
+</struts>

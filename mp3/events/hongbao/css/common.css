@@ -1,0 +1,60 @@
+@charset "utf-8";
+* {margin: 0;padding: 0;list-style: none;font-family: "寰蒋闆呴粦";}
+a {text-decoration : none;cursor: pointer;}
+img {border: none;}
+.clearfix:after {content: "";clear: both;display: block;}
+.clearfix {zoom: 1;}
+.fl {float: left;}
+.fr {float: right;}
+
+.tuijian {width: 100%;height: auto;margin: 0 auto;background-size: cover;background-color: #ffe4c6;text-align: center;}
+/*header*/
+.hb_banner {width: 100%;}
+
+.content {width: 100%;height: 100%;text-align: center;}
+.con_tip {width: 1.32rem;height: .25rem;text-align: left;line-height: .25rem;font-size: .14rem;color: #fff;padding-left: .05rem;background-size: 1.32rem .25rem;}
+.con_tip1 {background-image: url(../img/tuijian_tjtip1.png);}
+.con_tip2 {background-image: url(../img/tuijian_tjtip.png);}
+
+.con1_1 {width: 100%;font-size: .15rem;text-align: center;}
+.con1_1 .con_start {width: 1.7rem;height: .43rem;line-height: .43rem;text-align: center;cursor: pointer;}
+.con1_1 .con_start a {text-decoration: none;font-size: .18rem;}
+.con1_1 .con_tj {background-image: url(../img/tuijian_tj1.png);background-size: 1.7rem .43rem;margin-left: .12rem;margin-right: .1rem;}
+.con1_1 .con_tj a {color: #fff;}
+.con1_1 .con_reg { background-image: url(../img/tuijian_reg1.png);background-size: 1.7rem .43rem;margin-right: .12rem;}
+.con1_1 .con_reg a {color:#fff;}
+.con1_1 #tuijian_txt {color: #F83030;font-size: .18rem;border-bottom: .02rem solid #F83030;text-decoration: none;}
+
+.con1_2 {width: 3.63rem;height: 1.7rem;margin-top: .15rem;padding-left: .12rem;}
+.con1_2 .con_cir{width: 1.1rem;height: 1.1rem;border-radius: 50%;border: .02rem solid #fff;margin-top: .12rem;}
+.con1_2 .con_cir .con_cirCon {width: 1rem;height: 1rem;border-radius: 50%;background: #fff;margin: .03rem auto;text-align: center;}
+.con1_2 .con_cirBig {width: 1.25rem;height: 1.25rem;margin-top: .05rem;margin-left: .03rem;margin-right: .03rem;}
+.con1_2 .con_cir .con_cirConBig {width: 1.15rem;height: 1.15rem;margin: .03rem auto;}
+.con_cirCon span {width: 1rem;height: .38rem;font-size: .18rem;font-weight: 600;text-align: center;line-height: .38rem;color: #bc5506;border-bottom: .02rem solid #ffe4c6;display: block;}
+.con1_2 .con_cir .con_cirConBig span {width: 1.14rem;height: .45rem;line-height: .5rem;}
+.con_cirCon p {font-size: .12rem;color: #bc5506;line-height: .18rem;margin: .04rem auto;}
+.con_cirCon p strong {font-size: .14rem;}
+
+.layer {width: 100%;height: 100%;background: #000;z-index: 11;opacity: .6;position: absolute;left: auto;top: 0;display: none;}
+.lay_main {width: 100%;height: 100%;z-index: 16;position: absolute;left: auto;top: 0;text-align: center;color: #fff;font-family: "寰蒋闆呴粦";display: none;}
+.lay_main .lay_article {width: 3.55rem;height: 6.27rem;padding: 0 .1rem;}
+
+.lay_article .lay_artHeader {text-align: center;margin-top: .4rem;}
+.lay_article h2 {font-size: .18rem;line-height: .38rem;} 
+.lay_article .lay_line {width: 3.55rem;height: .01rem;background: #fff;}
+
+.lay_article .lay_artCon {text-align: left;margin-top: .16rem;width: 3.55rem;padding: 0 .1rem;}
+.lay_artCon h3 {font-size: .16rem;line-height: .26rem;font-weight: 500;margin-top: .2rem;}
+.lay_artCon p {font-size: .12rem;text-indent: .22rem;line-height: .2rem;}
+
+.lay_artCon .lay_bottom p {font-size: .12rem;text-indent: 0;margin-top: .2rem;line-height: .2rem;}
+.lay_close {display: block;width: .34rem;height: .34rem;background-image:url(../img/lay_close.png) ;background-size: 100% 100%;margin-left: 1.56rem;margin-top: .2rem;}
+
+.con_copyTip {width: 3.5rem;height: 1.7rem;background: #ffffff;z-index: 20;border-radius: .05rem;position: absolute;left: auto;top: 2.35rem;margin-left: .12rem;display: none;}
+.con_copyTip #copy_text {width: 2.8rem;height: .25rem;border-radius: .02rem;border: .01rem solid #fe903a;}
+.con_copyTip p {width: 1.3rem;height: .45rem;float: left;font-size: .17rem;line-height: .25rem;color: #fe7409;}
+.con_copyTip p:nth-child(1) {margin-left: .2rem;margin-top: .45rem;}
+.con_copyTip p:nth-child(2) {width: .6rem;height: .7rem;font-size: .34rem;margin-top: .55rem;}
+.con_copyTip p:nth-child(3) {width: 1.1rem;height: .7rem;margin-top: .3rem;}
+.tipLayer {width: 100%;height: 100%;background: #000;z-index: 11;opacity: .6;position: absolute;left: auto;top: 0;display: none;}
+.con_copyTip .lay_tipClose {position: absolute;left: 1.58rem;top: 1.95rem;display: block;width: .34rem;height: .34rem;background-image:url(../img/lay_close.png) ;background-size: 100% 100%;}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站—北斗七星</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../common/common.css?t=20170308">
+    <link rel="stylesheet" href="../style/login/login.css?t=20170308">
+    <link rel="stylesheet" href="../style/header/header.css?t=20170308">
+    <link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+    <link rel="stylesheet" href="../style/dipper/dipper.css?t=20170308">
+</head>
+<body>
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span class="select">首页</span></a>
+                <a id="short_f"><span>基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span>高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="../fund/fundrecomm.html">精选基金</a>
+                    <a href="../fund/fund_theme.html">主题基金</a>
+                    <a href="../fund/fund_all.html">所有基金</a>
+                    <!--<a href="../fund/chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="dipper-box">
+    <div class="detail-box clearfix">
+        <div class="detail-chart">
+            <h3>收益走势图</h3>
+            <ul class="detail-title">
+                <li class="dipper-line-title">策略涨幅<span class="dipper-increase">56.50%</span></li>
+                <li class="dipper-line-title">沪深300<span class="dipper-hs300">12.50%</span></li>
+            </ul>
+            <div class="detail-linechart" id="detail-linechart">
+            </div>
+            <table class="detail-date menddd" border="0">
+                <tr>
+                    <td align="center" width="20%"><span data-index="0">月度</span></td>
+                    <td align="center" width="20%"><span data-index="1">季度</span></td>
+                    <td align="center" width="20%"><span data-index="2">半年</span></td>
+                    <td align="center" width="20%"><span data-index="3">年度</span></td>
+                    <td align="center" width="20%"><span data-index="6" class="act">全部</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="detail-data">
+            <h2>北斗七星</h2>
+            <ul class="detail-abstract clearfix">
+                <li>灵活配置</li>
+                <li>指数派</li>
+                <li>高收益</li>
+                <li>高风险</li>
+            </ul>
+            <ul class="detail-data-data1 clearfix">
+                <!--<li><span class="detail-data-data1name">近一月涨幅</span><strong class="detail-month-increase font-red">67.68%</strong></li>-->
+                <!--<li><span class="detail-data-data1name">日涨幅</span><strong class="detail-day-increase font-red">67.68%</strong></li>-->
+                <!--<li><span class="detail-data-data1name">单位净值<span class="detail-data-update">(11-04)</span></span><strong class="detail-data-value">1.78</strong></li>-->
+            </ul>
+            <ul class="detail-data-data2 clearfix">
+                <!--<li>-->
+                    <!--<div>成立日期：<span class="detail-data-create">2014-10-12</span></div>-->
+                    <!--<div>最大回撤：<span class="detail-data-retreat">8.63%</span></div>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<div>历史年化收益：<span class="detail-data-gainyear">56.50%</span></div>-->
+                    <!--<div>夏普比率：<span class="detail-data-xiapu">28.11</span></div>-->
+                <!--</li>-->
+            </ul>
+            <div class="detail-data-bug">
+                <input type="text" id="money" placeholder="1000.00元起购">
+                <input class="dipper-buy" value="立即购买" type="button" data-id="BDQX001" data-name="北斗七星">
+            </div>
+            <p class="tishi" style="color:#fe3309;font-size:14px;margin-top:20px;margin-left:10px;display: none;">起购金额最低1000元</p>
+        </div>
+    </div>
+    <div class="dipper-cont">
+        <ul class="dipper-cont-name">
+            <li class="dipper-list-name dipper-list-description act">策略说明</li>
+            <li class="dipper-list-name dipper-list-ratio">组合配比</li>
+            <li class="dipper-list-name">交易须知</li>
+        </ul>
+        <div class="dipper-description dipper-content">
+            <h5>组合目标</h5>
+            <p>通过趋势跟踪，获取市场上走势更强的标的，从而在牛市中获取收益，在熊市和震荡市中减少损失。</p>
+            <h5>投资策略</h5>
+            <p>通过年线将市场分为三种形态：牛市、熊市和震荡市，每种市场风格下运用不同的买入卖出方法来选择标的。</p>
+            <h5>投资标的</h5>
+            <p>天弘中证高端装备制造、天弘中证电子、天弘中证计算机、天弘中证银行、天弘中证证券保险、天弘中证休闲娱乐、天弘中证大宗商品。</p>
+            <h5>策略介绍</h5>
+            <p>所有标的在年线上，选择涨幅最大的标的进行持有；<br />
+                一部分标的在年线上，一部分标的在年线下，则将年线上的标的按照一定逻辑买入一揽子持有，并在一定条件上加入仓位控制。如果某个标的被淘汰，则未来五日内不能被重新持有；<br />
+                所有标的都在年线下，按照一定逻辑买入一揽子持有。如果某个标的被淘汰，则未来五日内不能被重新持有。</p>
+            <h5>模型冷静期</h5>
+            <p>年线作为市场明显的分水岭，当某个标的下穿年线，且连续两个交易日收盘价都站稳年线以下，市场可能会存在持续下跌的风险，此时策略设置了5个交易日的冷静期，一旦条件满足则全部转
+                为货币，且持有5个交易日，其后再重新开始判断。</p>
+            <h5>操作方式</h5>
+            <p>每个交易日收盘后判断当前应持有的标的，并于下一个交易日提交交易申请。</p>
+        </div>
+        <div class="dipper-ratio dipper-content">
+        <h5>配置比例</h5>
+        <div class="dipper-proportion clearfix">
+            <div class="dipper-proportion-chart" id="dipper-proportion-chart"></div>
+            <ul>
+                <!--<div><span>股基 90%</span><span>货基 10%</span></div>-->
+                <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+                <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+                <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+                <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+                <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+                <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+                <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+            </ul>
+        </div>
+        <h5>持仓记录</h5>
+        <table class="dipper-record">
+            <!--<tr>-->
+            <!--<td class="dipper-line"><strong></strong><span></span></td>-->
+            <!--<td class="dipper-date">2016-12-09<span>14:50:20</span></td>-->
+            <!--<td>-->
+            <!--<ul class="dipper-record-ratio">-->
+            <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+            <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+            <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+            <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+            <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+            <!--<li><p>天弘中证高端装备制造</p>40.00%</li>-->
+            <!--<li><p>天弘大宗商品指数C</p>40.00%</li>-->
+            <!--</ul>-->
+            <!--</td>-->
+            <!--</tr>-->
+        </table>
+    </div>
+        <ul class="dipper-know dipper-content">
+            <li>
+                <h4>申购费率</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>基金种类</td>
+                        <td>交易费率</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>股票型基金</td>
+                        <td>0.00%</td>
+                    </tr>
+                    <tr>
+                        <td>货币型基金</td>
+                        <td>0.00%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h4>赎回费率</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>基金种类</td>
+                        <td>持有天数</td>
+                        <td>交易费率</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="dipper-stock">
+                        <td>股票型基金</td>
+                        <td>
+                            <ul class="clearfix">
+                                <li>X < 7</li>
+                                <li>0.125%</li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>X ≥ 7</li>
+                                <li>0.00%</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>货币型基金</td>
+                        <td>任意天数</td>
+                        <td>0.00%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h4>转换费率</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>转换类型</td>
+                        <td>持有天数</td>
+                        <td>交易费率</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="dipper-stock">
+                        <td>股基转货基、股基转股基</td>
+                        <td>
+                            <ul class="clearfix">
+                                <li>X < 7</li>
+                                <li>0.125%</li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>X ≥ 7</li>
+                                <li>0.00%</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>货基转其他</td>
+                        <td>任意天数</td>
+                        <td>0.00%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="dipper-stock1">
+                <h4>基金运作费</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <td>基金种类</td>
+                        <td>管理费</td>
+                        <td>托管费</td>
+                        <td>销售服务费</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>股票型基金</td>
+                        <td>0.50%</td>
+                        <td>0.10%</td>
+                        <td>0.25%</td>
+                    </tr>
+                    <tr>
+                        <td>货币基金</td>
+                        <td>0.33%</td>
+                        <td>0.10%</td>
+                        <td>0.25%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <h4>费用说明</h4>
+                <h5>1. 申购计算：  净申购金额=申购金额/(1+申购费率)</h5>
+                <p>申购费用=申购金额-净申购金额</p>
+                <p>申购份额=净申购金额/T日基金份额净值 </p>
+                <h5>2. 赎回计算：  赎回总额=赎回数量×T日基金份额净值</h5>
+                <p>赎回费用=赎回总额×赎回费率</p>
+                <p>赎回金额=赎回总额-赎回费用</p>
+                <h5>3. 策略转换可能会产生转换费用，具体请参照策略协议；</h5>
+                <h5>4. 运作费用说明：基金管理费、托管费、销售服务费从基金资产中每日计提，每个工作日公告的基金净值已扣除相应费用，无需投资者另行支付；</h5>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="../assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/Plug-in/highcharts.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/trade/buygroupall.js?t=20170308"></script>
+<script src="../js/dipper/dipper.js?t=20170308"></script>
+</html>

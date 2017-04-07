@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.activity.CJQFWebActivity" table="cjqfweb_activity">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!-- 用户id -->
+		<property name="user_id" type="java.lang.String">
+			<column name="user_id" />
+		</property>
+		<!-- 客户号 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!-- 活动id -->
+		<property name="activity_id" type="java.lang.String">
+			<column name="activity_id" />
+		</property>
+		<!-- 奖品等级 -->
+		<property name="prize_level" type="java.lang.String">
+			<column name="prize_level" />
+		</property>
+		<!-- 活动体验金额 -->
+		<property name="activity_bonus" type="java.lang.String">
+			<column name="activity_bonus" />
+		</property>
+		<!-- 活动基金份额 -->
+		<property name="activity_fundshare" type="java.lang.String">
+			<column name="activity_fundshare" />
+		</property>
+		<!-- 活动收益 -->
+		<property name="activity_totalincome" type="java.lang.String">
+			<column name="activity_totalincome" />
+		</property>
+		<!-- 奖金使用状态  0未使用 1已使用-->
+		<property name="state" type="java.lang.String">
+			<column name="state" />
+		</property>
+		<!-- 活动开始时间 -->
+		<property name="start_time" type="java.lang.String">
+			<column name="start_time" />
+		</property>
+		<!-- 活动结束时间 -->
+		<property name="end_time" type="java.lang.String">
+			<column name="end_time" />
+		</property>
+		<!-- 活动持续时间 -->
+		<property name="activity_duration" type="java.lang.String">
+			<column name="activity_duration" />
+		</property>
+		<!-- 创建时间 -->
+		<property name="create_time" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!-- 更新时间 -->
+		<property name="update_time" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

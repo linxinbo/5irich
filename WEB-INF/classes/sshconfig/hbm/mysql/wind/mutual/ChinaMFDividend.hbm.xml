@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.wirich.bean.wind.mutual.ChinaMFDividendBean" table="chinamfdividend" >
+        <id name="objectId" type="string">
+            <column name="OBJECT_ID"/>
+        </id>
+        <property name="sInfoWindcode" type="string">
+            <column name="S_INFO_WINDCODE" />
+        </property>
+        <property name="febchDt" type="string">
+            <column name="F_E_BCH_DT" />
+        </property>
+        <property name="fdivProgress" type="string">
+            <column name="F_DIV_PROGRESS" />
+        </property>
+        <property name="cashDvdPershTax" type="java.math.BigDecimal">
+            <column name="CASH_DVD_PER_SH_TAX" />
+        </property>
+        <property name="crncyCode" type="string">
+            <column name="CRNCY_CODE" />
+        </property>
+        <property name="eqyRecordDt" type="string">
+            <column name="EQY_RECORD_DT" />
+        </property>
+        <property name="exdt" type="string">
+            <column name="EX_DT" />
+        </property>
+        <property name="payDt" type="string">
+            <column name="PAY_DT" />
+        </property>
+        <property name="fdivPayDate" type="string">
+            <column name="F_DIV_PAYDATE" />
+        </property>
+        <property name="fdivImpdate" type="string">
+            <column name="F_DIV_IMPDATE" />
+        </property>
+        <property name="fshbchy" type="string">
+            <column name="F_SH_BCH_Y" />
+        </property>
+        <property name="fbchUnit" type="java.math.BigDecimal">
+            <column name="F_BCH_UNIT" />
+        </property>
+        <property name="feapr" type="java.math.BigDecimal">
+            <column name="F_E_APR" />
+        </property>
+        <property name="fexdivdt" type="string">
+            <column name="F_EX_DIV_DT" />
+        </property>
+        <property name="feaprAmount" type="java.math.BigDecimal">
+            <column name="F_E_APR_AMOUNT" />
+        </property>
+        <property name="freinvbchdt" type="string">
+            <column name="F_REINV_BCH_DT" />
+        </property>
+         <property name="freinvtoacdt" type="string">
+            <column name="F_REINV_TOAC_DT" />
+        </property>
+         <property name="freinvRedeemDt" type="string">
+            <column name="F_REINV_REDEEM_DT" />
+        </property>
+        <property name="annDate" type="string">
+            <column name="ANN_DATE" />
+        </property>
+        <property name="fDivObject" type="string">
+            <column name="F_DIV_OBJECT" />
+        </property>
+        <property name="fDiviPayDt" type="string">
+            <column name="F_DIV_IPAYDT" />
+        </property>
+         </class>
+</hibernate-mapping>

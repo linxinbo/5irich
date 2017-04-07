@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="Recommend" extends="wirich">		
+		<!--首页推荐 -->
+		<action name="FundMamacheRecommendAction" class="FundMamacheRecommendAction" method="OutJson">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 精品推荐(缓存) -->
+		<action name="products" class="FundMamacheRecommendAction" method="recommendedGoods">
+		<interceptor-ref name="defaultStack" />
+		</action>
+		</package>
+</struts>

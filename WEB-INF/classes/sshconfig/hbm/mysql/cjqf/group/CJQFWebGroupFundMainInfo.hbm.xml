@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.group.CJQFWebGroupFundMainInfoBean" table="cjqfweb_group_fund_maininfo">
+		<!-- 主键(交易单编号) -->
+		<id name="id" type="java.lang.Integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		<property name="appsheetserialno" type="java.lang.String">
+			<column name="appsheetserialno" />
+		</property>
+		<!--  客户号	 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno" />
+		</property>
+		<!--  基金代码	  -->
+		<property name="fundcode" type="java.lang.String">
+			<column name="fundcode" />
+		</property>
+		<!--  组合代码  -->
+		<property name="combinationcode" type="java.lang.String">
+			<column name="combinationcode" />
+		</property>
+		<!-- 组合方式	 -->
+		<property name="comtype" type="java.lang.String">
+			<column name="comtype" />
+		</property>
+		<!--  交易发生日期  -->
+		<property name="transactiondate" type="java.lang.String">
+			<column name="transactiondate" />
+		</property>
+		<!--  购买结算日期 -->
+		<property name="liqdate" type="java.lang.String">
+			<column name="liqdate" />
+		</property>
+		<!--  账号  -->
+		<property name="moneyaccount" type="java.lang.String">
+			<column name="moneyaccount" />
+		</property>
+		<!--  购买份额 -->
+		<property name="applicationvol" type="java.math.BigDecimal">
+			<column name="applicationvol" />
+		</property>
+		<!--  基金名称	 -->
+		<property name="fundname" type="java.lang.String">
+			<column name="fundname" />
+		</property>
+		<!-- 购买金额 -->
+		<property name="applicationamount" type="java.lang.String">
+			<column name="applicationamount" />
+		</property>
+		<property name="businesscode" type="java.lang.String">
+			<column name="businesscode" />
+		</property>
+		<property name="confirmedvol" type="java.lang.String">
+			<column name="confirmedvol" />
+		</property>
+		<property name="confirmedamount" type="java.lang.String">
+			<column name="confirmedamount" />
+		</property>
+		<property name="charge" type="java.lang.String">
+			<column name="charge" />
+		</property>
+		<property name="nav" type="java.lang.String">
+			<column name="nav" />
+		</property>
+		<property name="paycenterid" type="java.lang.String">
+			<column name="paycenterid" />
+		</property>
+		<property name="channelid" type="java.lang.String">
+			<column name="channelid" />
+		</property>
+		<property name="moneyin" type="java.lang.String">
+			<column name="moneyin" />
+		</property>
+		<property name="moneyout" type="java.lang.String">
+			<column name="moneyout" />
+		</property>
+		<property name="bankname" type="java.lang.String">
+			<column name="bankname" />
+		</property>
+		<property name="routeflag" type="java.lang.String">
+			<column name="routeflag" />
+		</property>
+		<property name="status" type="java.lang.String">
+			<column name="status" />
+		</property>
+	</class>
+</hibernate-mapping>

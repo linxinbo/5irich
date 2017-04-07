@@ -1,0 +1,159 @@
+.switch{
+    background: #fff;
+    margin-bottom: 1em;
+}
+.switch_bar{
+    height: 3.92em;
+    border-bottom: 1px solid #e0e0e0;
+}
+.switch_bar li{
+    height: 3.42em;
+    line-height: 3.41em;
+    width: 50%;
+    float: left;
+    font-size: 1.08em;
+    text-align: center;
+    cursor: pointer;
+}
+.selected{
+    border-bottom: 3px solid #1570d6;
+    color: #1570d6;
+}
+.rate_data{
+    display: none;
+}
+.rate_data table tr{
+    border-bottom: 1px solid #e0e0e0;
+}
+.fund_pro_data li{
+    padding: 1em 0.42em;
+    overflow: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+.fund_pro_data li span{
+    padding: 0 1.7em;
+    display: block;
+    line-height: 1.75em;
+    color: #3a3939;
+    background-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+.fund_pro_data li span:nth-child(1){
+    height: 1.5em;
+    font-weight: bold;
+    font-size:14px;
+}
+.span_1{
+    background: url(../images/qifu/icon__standard@2x.png) no-repeat;
+}
+.span_2{
+    background: url(../images/qifu/icon_aim@2x.png) no-repeat;
+}
+.span_3{
+    background: url(../images/qifu/icon_global@2x.png) no-repeat;
+}
+.span_4{
+    background: url(../images/qifu/icon_idea@2x.png) no-repeat;
+}
+.span_5{
+    background: url(../images/qifu/icon_gist@2x.png) no-repeat;
+}
+.rate_data li{
+    border-bottom: 1px solid #e0e0e0;
+    background: url(../images/qifu/icon_bj@2x.png) 0 100% no-repeat;
+    background-size: 8.92em;
+    border: 5px solid #f0eeef;
+}
+.data_head{
+    font-weight: bold;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin-left: 3.125%;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.rate_data table{
+    width: 93.75%;
+    margin: 0.58em auto;
+}
+.rate_data table td{
+    height: 1.875em;
+}
+.rengou, .shengou, .shuhui{
+    font-size: 0.92em;
+    text-align: center;
+}
+/*.rengou td:nth-child(1), .rengou td:nth-child(2){
+    border-right: 1px solid #e0e0e0;
+}*/
+.rengou tr:nth-child(2){
+    font-weight: bold;
+}
+/*.shengou td:nth-child(1), .shengou td:nth-child(2){
+    border-right: 1px solid #e0e0e0;
+}*/
+.shengou tr:nth-child(2){
+    font-weight: bold;
+}
+/*.shuhui td:nth-child(1), .shuhui td:nth-child(2){
+    border-right: 1px solid #e0e0e0;
+}*/
+/*.shuhui td:nth-child(1), .shuhui td:nth-child(2){
+    border-right: 1px solid #e0e0e0;
+}
+.shuhui tr:nth-child(1), .shuhui tr:nth-child(2){
+    border-bottom: 1px solid #e0e0e0;
+}*/
+.shuhui tr:nth-child(2), .shuhui tr:nth-child(3){
+    font-weight: bold;
+}
+.qita tr{
+    text-align: left;
+}
+.qita td:nth-child(1){
+    width: 30%;
+}
+.buy_sub{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    background: #fff;
+}
+/* 修改苹果手机显示按钮问题 */
+.buy_fun{
+	margin:0 10px;
+}
+.buy_fund{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+    width: 68.0%;
+    height: 2.5em;
+    background: #1b75da;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 auto;
+    -webkit-appearance:none;
+    -webkit-border-radius:5px;
+    margin-right:2%;
+}
+.buy_fund_mn{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+    width: 30.0%;
+    height: 2.5em;
+    background: #DE5145;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 auto;
+    -webkit-appearance:none;
+    -webkit-border-radius:5px;
+}
+.zanwuxinxi{
+    color: #c6c6c6;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+}

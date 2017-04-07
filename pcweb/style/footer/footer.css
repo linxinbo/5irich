@@ -1,0 +1,136 @@
+.footer{
+    border-top:1px solid #edeff0;
+    background-color: #ffffff;
+}
+.footer .Company{
+    width: 1120px;
+    margin: 20px auto 10px auto;
+    max-width: none !important;
+}
+.footer .Company ul li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footer .Company ul li a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    cursor: default;
+
+}
+.footer .Company ul li a img{
+    height: 95px;
+    width: auto;
+}
+.footer .Company ul li a.line{
+    border-right: 1px solid #f1f1f1;
+}
+.footer .Company ul li span{
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    line-height: 40px;
+}
+.footer .Contactus{
+    background-color: #272723;
+    overflow: hidden
+}
+.footer .Contactus .jieshao{
+    width: 1200px;
+    margin: 40px auto 10px auto;
+    max-width: none !important;
+}
+.footer .Contactus .jieshao ul li a{
+    display: block;
+    font-size: 14px;
+    color: #ebebeb;
+    line-height: 28px;
+}
+.footer .Contactus .jieshao ul li a:first-child{
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 36px;
+    font-weight: bold;
+}
+.beian{
+    width: 1200px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #d2d2d2;
+    text-align: center;
+    margin-top: 40px;
+    margin: 40px auto 10px auto;
+}
+.footer .contact{
+    float: right;
+    width: 280px;
+}
+.footer .wxh{
+    float: left;
+}
+.footer .wxh .wxh_text{
+    font-size: 12px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+.footer .weixin{
+    float: left;
+    width: 110px;
+}
+.footer .weixin a{
+    display: block;
+    text-align: center;
+}
+.footer .weixin span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 22px;
+}
+.footer .weixin span:last-child{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #d2d2d2;
+    line-height: 22px;
+}
+.footer .contact .phone{
+    width: 100%;
+    overflow: hidden;
+}
+.footer .contact .phone i{
+    float: left;
+    width: 31px;
+    height: 30px;
+    background-image: url("../../images/footer/dianhua.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.footer .contact .phone span{
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #d2d2d2;
+}
+.footer .contact .haoma{
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 45px;
+    color: #ffffff;
+}
+.footer .contact .kefu{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #d2d2d2;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+}

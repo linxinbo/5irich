@@ -1,0 +1,103 @@
+html,body,ul,li{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.groupcon{
+    margin: 0 auto;
+    width:62%;
+    min-width:1200px;
+    padding-bottom:160px;
+}
+.groupcon .groupcon1,.groupcon .groupcon2,.groupcon .groupcon3{
+    margin-top:8%;
+    overflow: hidden;
+}
+.groupcon .grbiaoti{
+    font-size:30px;
+    font-weight: bold;
+    line-height: 64px;
+    border-bottom:solid 1px #edf0f4;
+}
+.groupcon  .jinqu1{
+    margin-top:38px;
+    margin-right:3%;
+    width:30%;
+    float:left;
+    text-align: center;
+    border:solid 1px #edf0f4;
+}
+
+.groupcon .jinqu1 li:nth-of-type(1){
+    width:100%;
+    position: relative;
+}
+.groupcon .jinqu1 img{
+    width:100%;
+    height:100%;
+    transform:scale(1);
+    -ms-transform:scale(1);
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    transition:all 1s;
+    -webkit-transition:all 1s ;
+    -ms-transition:all 1s ;
+    -moz-transition:all 1s ;
+    -o-transition:all 1s ;
+}
+.groupcon .jinqu1 span{
+    font-size:30px;
+    height:50%;
+    color:#fff;
+    font-weight: bold;
+    position: absolute;
+    top:30%;
+    bottom:0;
+    left:0;
+    right:0;
+    display:inline;
+}
+.groupcon .jinqu1 .mb{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.groupcon .jinquli1{
+    margin-top:20px;
+    font-size:28px;
+    color:#ff9900;
+    font-weight: bold;
+    line-height: 62px;
+
+}
+.groupcon .jinquli2{
+    font-size:15px;
+    color:#b6b6b6;
+    line-height:30px;
+}
+.groupcon .jinquli3{
+    font-size:15px;
+    color:#8c8c8c;
+    line-height: 30px;
+}
+.groupcon .jinqu1 i{
+    font-style: normal;
+    color:#ff9900;
+}
+.groupcon .jinquli4{
+    line-height: 84px;
+}
+.groupcon .jinquli4 .btn{
+    width:182px;
+    height:42px;
+    color:#fff;
+    background: #ff9900;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+
+}

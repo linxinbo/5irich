@@ -1,0 +1,113 @@
+.bigbg{
+    background: #fff9e9;
+    padding:4em 1.5em;
+}
+.box{
+    overflow: hidden;
+}
+.text{
+    width:18%;
+    height:10%;
+    float:left;
+
+}
+
+.miantext{
+    font-size: 1.5em;
+    color:#ff6f3e;
+    font-weight: bold;
+    float:left;
+    margin-top:0.5em;
+    margin-left:5px;
+}
+.contone{
+    width:100%;
+    height:32em;
+    margin-top:1em;
+    background: url(images/one.png) no-repeat center center;
+    background-size:100% 100%;
+    text-align: center;
+    padding-top:10em;
+    position: relative;
+}
+.button{
+    position: absolute;
+    top:40%;
+    left:30%;
+    width:40%;
+    height:10%;
+}
+.contone .word{
+    font-size: 1.06em;
+}
+.two{
+    margin-top:2em;
+}
+.conttwo{
+    width:100%;
+    height:32em;
+    margin-top:1em;
+    background: url(images/twobg.png) no-repeat center center;
+    background-size:100% 100%;
+    text-align: center;
+    padding-top:4em;
+    position: relative;
+}
+.conttwo .button1{
+    width:40%;
+    height:10%;
+    position: absolute;
+    top:30%;
+    left:30%;
+}
+.conttwo .word{
+    font-size: 1.06em;
+    line-height: 1.5em;
+}
+.huodong{
+    background: #fdac5b;
+    padding:2em;
+    text-align: center;
+}
+.huodong .active{
+    background: url(images/huod.png) no-repeat center center;
+    background-size: 70% 90%;
+    text-align: center;
+    color:#fff;
+    font-size:2em;
+    padding:.8em 0;
+}
+.huodong .actone{
+    background: #ffe7c0;
+    padding: 1.5em;
+    color:#d0332e;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top:1em;
+}
+.acttwo{
+    background: #fff;
+    padding: 1.5em;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+.red{
+    color:#d0332e;
+}
+.rule{
+    background: #fff9e9;
+    padding:1.5em 2em;
+}
+.rule .sub{
+    font-size:1.5em;
+    font-weight: bold;
+    color:#d0332e;
+    line-height: 1.5em;
+}
+.rule .des{
+    font-size:1.2em;
+    color:#d0332e;
+    line-height: 1.3em;
+}

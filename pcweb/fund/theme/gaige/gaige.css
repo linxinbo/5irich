@@ -1,0 +1,74 @@
+
+.banner{
+    height:480px;
+    background: url(images/banner.png) no-repeat center center;
+}
+.bg{
+    background: #e02326;
+    padding-bottom: 60px;
+}
+.con{
+    width:1200px;
+    margin:0 auto;
+}
+.des{
+    width:100%;
+    background: url(images/xia.png) no-repeat center bottom;
+    padding:36px 42px 40px;
+    font-size:20px;
+    color:#333;
+    line-height: 40px;
+}
+.tuijian .tuijianul{
+    overflow: hidden;
+}
+.tuijian a{
+    color:#fff;
+}
+.tuijian .tuijianul li{
+    float: left;
+    width:570px;
+    height:160px;
+    background: url(images/card1.png) no-repeat center center;
+    overflow: hidden;
+}
+.tuijian .tuijianul li div{
+    float:left;
+    height:140px;
+}
+.tuijian .tuijianul .ulcon1{
+    width:77%;
+    padding:40px;
+    overflow: hidden;
+}
+.tuijian .tuijianul .ulcon2{
+    width:23%;
+    padding:30px 40px;
+    font-size:24px;
+    color:#fff;
+}
+.fangxiang h3{
+    text-align: center;
+    font-size:28px;
+    padding:40px 0;
+    font-weight:bold;
+}
+.fangxiang div{
+    background: #fff;
+    padding:0 40px 40px;
+}
+.fangxiang div ul li{
+    padding-left:50px;
+}
+.fangxiang div ul li p:nth-of-type(1){
+    font-size: 22px;
+    font-weight:bold;
+    color:#333;
+}
+.fangxiang div ul li p:nth-of-type(2){
+    font-size:18px;
+    color:#494949;
+}
+.mailuo{
+    text-align: center;
+}

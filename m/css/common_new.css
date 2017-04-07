@@ -1,0 +1,116 @@
+/*所有标签样式默认*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary,time, mark, audio, video, input  { margin: 0;font-family: Arial, Helvetica, sans-serif;padding: 0;border: none;outline: 0;font-size: 100%;text-decoration: none;}
+body {font-family: "Microsoft YaHei";}
+ol, ul, li{list-style: none;}
+
+/*伪元素改变number类型input框的默认样式实例页面*/
+/*input.input_num::-webkit-textfield-decoration-container {
+    background-color: #fff;	
+}
+input.input_num::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+}
+input.input_num::-webkit-outer-spin-button {
+     -webkit-appearance: none;	 有无看不出差别 
+}*/
+
+
+/*头样式*/
+.header_c {
+    height: 40px;
+    background: #f7f7f7;
+    padding: 0 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.header_c>div {
+    width: 60%;
+    float: left;
+}
+.header_c>div:first-child {
+    padding-top: 5px;
+    width: 40%;
+}
+.header_c>div:first-child i {
+    background: url(../images/@x/logo@2x.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 30px;
+    display: block;
+}
+.login_div {
+    padding-top: 9px;
+}
+.login_div a.sigin {
+    background: #fff;
+    color: #389ad7;
+}
+.login_div a.login {
+    background: #389ad7;
+    color: #fff;
+}
+.login_div a {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    width: 45px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #389ad7;
+}
+.hello_div {
+    display: none;
+    color: #389ad7;
+    line-height: 40px;
+}
+.clearfix {
+    zoom: 1;
+}
+.hello_div div.out {
+    display: block;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 45px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #389ad7;
+    background: #389ad7;
+    color: #fff;
+}
+.hello_div span {
+    float: right;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+/*返回*/
+.back1{
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+/**适配样式**/
+
+@media screen and (max-width: 479px) {
+    /*320*/
+    body{font-size: 12px;}
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    /*480*/
+    body{font-size: 16px;}
+}
+@media screen and (min-width: 640px) {
+    body{font-size: 20px;}
+}

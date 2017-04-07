@@ -1,0 +1,14 @@
+.shuoming{
+    padding:1.5em 0 1.5em 1em;
+}
+ul{
+    background: #fff;
+}
+li{
+    overflow: hidden;
+    padding:2em 0.5em 2em 4em;
+    border-bottom: solid 1px #c7c7c7;
+    margin:0 0.2em;
+
+}
+

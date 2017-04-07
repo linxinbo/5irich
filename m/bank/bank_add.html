@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>新增银行卡</title>
+	<!-- Set render engine for 360 browser -->
+	<meta name="renderer" content="webkit">
+	<!-- No Baidu Siteapp-->
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="icon" type="image/png" href="images/icon_logochuang@2x.png">
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="images/app-icon72x72@2x.png">
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="理财易站" />
+	<link rel="apple-touch-icon-precomposed" href="images/app-icon72x72@2x.png">
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="images/app-icon72x72@2x.png">
+	<meta name="msapplication-TileColor" content="#0e90d2">
+	<!-- normalize.css -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/common_zjy.css">
+	<link rel="stylesheet" href="../css/common_new.css">
+	<!--		<link rel="stylesheet" href="css/home.css">-->
+	<link rel="stylesheet" href="../css/common_qifu.css">
+	<link rel="stylesheet" href="../css/home_c.css">
+	<link rel="stylesheet" href="../css/bank_add.css">
+
+</head>
+
+<body>
+	<!--
+	<header class="home">
+				<a class="back" href="javascript:window.history.go(-1);"><i></i></a>
+		<h1 class="header-new">
+		<div><i></i><span>理财易站</span></div>
+		</h1>
+	</header>
+-->
+	<div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix"><div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+    <header class="header">
+		<!--<a class="back" href="../person/person_center.html"><span>返回</span><i></i></a>-->
+		<a class="back1" href="../person/person_center.html">＜返回</a>
+		<h1>新增银行卡</h1>
+	</header>
+	<div class="bank_main">
+	    <div id="bank">
+            <span>选择银行</span>
+	        <select class="bank_sel bank_no">
+                <option>选择银行</option>
+<!--					<option data_a="KQ01A00000507" data_b="492" data_c="315" value="KQ01">快钱-工商银行****6151</option>--></select>
+	    </div>
+	    <div class="bank_form">
+	        <ul>
+                <li><i data_rest="ID_rest" class="x" style="display: none;"></i><input type="tel" id="bank_num" class="" name="bank_num" placeholder="请输入银行卡号" value=""></li>
+                <li><i data_rest="ID_rest" class="x" style="display: none;"></i><input type="tel" id="cardNo" class="" name="ID_card" placeholder="请输入身份证号" value="" disabled="true" style="background:#fff;"></li>
+                <li><i data_rest="ID_rest" class="x" style="display: none;"></i><input type="tel" id="phone" class="" name="phone" placeholder="请输入手机号" value=""></li>
+                <li><i data_rest="ID_rest" class="x" style="display: none;"></i><input type="text" id="code" class="" name="code" placeholder="请输入验证码" value=""><input type="button" id="smsCode" class="smsCode" value="获取验证码"></li>
+                                <li style="display: none;"><i data_rest="ID_rest" class="x" style="display: none;"></i><input type="password" id="pw" class="" name="pw" placeholder="请输入交易密码" value=""></li>
+	        </ul>
+	    </div>
+	</div>
+	<div><a id="next" class="next"><span>下一步</span></a></div>
+</body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/qifu/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/index-change.js"></script>
+<script type="text/javascript" src="../js/qifu/index.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../js/qifu/home.js"></script>
+<script type="text/javascript" src="../js/qifu/common_qifu.js"></script>
+<script type="text/javascript" src="../js/qifu/bank_add.js"></script>
+<script type="text/javascript" src="../js/qifu/addBank.js"></script>
+
+</html>

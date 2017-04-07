@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqfweb.bdqx.CJQFWebBDQXSyzs" table="cjqfweb_bdqx_syzs">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id"></column>
+			<generator class="native"></generator>
+		</id>
+		<!-- 基金名称 -->
+		<property name="fundName" type="java.lang.String">
+			<column name="Fund_name"></column>
+		</property>
+		<!-- 日收益日期 -->
+		<property name="profitDate" type="java.lang.String">
+			<column name="profit_date"></column>
+		</property>
+		<!-- 日收益 -->
+		<property name="profit" type="java.lang.String">
+			<column name="profit"></column>
+		</property>
+		<!--  数据创建时间 -->
+		<property name="creatTime" type="java.util.Date">
+			<column name="creat_time" />
+		</property>
+		<!--  数据修改时间  -->
+		<property name="updateTime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.astock.AIndexeodpricesBean"
+		table="AIndexEODPrices">
+		<!-- 主键Id -->
+		<id name="objectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  Wind 代码 -->
+		<property name="sInfoWindcode" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!--   交易日期 -->
+		<property name="tradeDt" type="java.lang.String">
+			<column name="TRADE_DT" />
+		</property>
+		<!--  货币代码 -->
+		<property name="crncyCode" type="java.lang.String">
+			<column name="CRNCY_CODE" />
+		</property>
+		<!--  昨收盘价(点) -->
+		<property name="sDqPreclose" type="java.math.BigDecimal">
+			<column name="S_DQ_PRECLOSE" />
+		</property>
+		<!--    开盘价(点)-->
+		<property name="sDqOpen" type="java.math.BigDecimal">
+			<column name="S_DQ_OPEN" />
+		</property>
+		<!--    最高价(点)-->
+		<property name="sDqHigh" type="java.math.BigDecimal">
+			<column name="S_DQ_HIGH" />
+		</property>
+
+		<!--  最低价(点) -->
+		<property name="sDqLow" type="java.math.BigDecimal">
+			<column name="S_DQ_LOW" />
+		</property>
+		<!--  收盘价(点) -->
+		<property name="sDqClose" type="java.math.BigDecimal">
+			<column name="S_DQ_CLOSE" />
+		</property>
+		<!--  涨跌(点)  -->
+		<property name="sDqChange" type="java.math.BigDecimal">
+			<column name="S_DQ_CHANGE" />
+		</property>
+		<!--  涨跌幅(%)-->
+		<property name="sDqPctchange" type="java.math.BigDecimal">
+			<column name="S_DQ_PCTCHANGE" />
+		</property>
+		<!-- 成交量(手) -->
+		<property name="sDqVolume" type="java.math.BigDecimal">
+			<column name="S_DQ_VOLUME" />
+		</property>
+		<!--  成交金额(千元)	 -->
+		<property name="sDqAmount" type="java.math.BigDecimal">
+			<column name="S_DQ_AMOUNT" />
+		</property>
+		<!--  -->
+		<property name="opDate" type="java.lang.String">
+			<column name="OPDATE" />
+		</property>
+		<!-- -->
+		<property name="opMode" type="java.lang.String">
+			<column name="OPMODE" />
+		</property>
+	</class>
+</hibernate-mapping>

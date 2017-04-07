@@ -1,0 +1,67 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; max-width:640px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+
+
+.banner{ display:block; width:100%;}
+.title1{ background:#cd141c; font-size:4rem; padding-top:1.5%; padding-bottom:1.5%; padding-left:5%; color:#fff; margin-top:5%; font-weight:bold;}
+.title2{ color:#c29300; font-size:2.4rem; margin-top:3%; margin-left:1%; font-weight:bold;}
+.pcon{ font-size:2.4rem; color:#333; line-height:1.6em; width:98%; margin:1% auto; }
+.tcenter{ text-align:center; margin-top:4%;}
+.span1{ font-size:2rem; color:#333; margin-top:1.5%; display:block;}
+.img100{ width:100%; margin-top:3.5%; margin-bottom:3%}
+.pcont{ margin-top:3%;}
+.pconb{ margin-bottom:3%;}
+.jl{ padding-bottom:5%}
+.jl img{ width:21%; margin-left:1%; margin-top:5%; float:left;}
+.jl p{ width:75%; margin-left:2%; font-size:2.4rem; color:#333; line-height:1.6em; float:left; margin-top:4%}
+
+table{ width:96%; margin:3% auto; font-size:2.2rem;}
+.name{border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;border-collapse:collapse;width: 18%;background: #cd141c;text-align: center;color: #FFFFFF;font-weight: bold;line-height: 1.6em; font-size:2.4rem; font-weight:bold;}
+.content{padding:2% 5%;border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc;line-height: 1.5em;}
+.rgf{border-top: 1px solid #dcdcdc;border-left: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc;text-align: center;}
+.moeny{text-align: center;border-top: 1px solid #dcdcdc;border-right: 1px solid #dcdcdc;line-height: 1.6em;}
+
+
+
+@media (min-width:640px) and (max-width:750px) { 
+	html{ font-size:62.5%; }	
+}
+@media (min-width:580px) and (max-width:640px) { 
+	html{ font-size:55.5%; }	
+}
+@media (min-width:480px) and (max-width:580px) { 
+	html{ font-size:50.5%; }
+}
+@media (min-width:430px) and (max-width:480px) { 
+	html{ font-size:48.5%; }
+}
+@media (min-width:350px) and (max-width:430px) { 
+	html{ font-size:45.5%; }
+}
+@media (min-width:300px) and (max-width:350px) { 
+	html{ font-size:40.5%; }
+}
+
+.header,.footer{background:#389ad7;}
+.header{height:45px;line-height:45px;}
+.header .back{float:left;padding:12px 9px;}
+.header .back span{display:none;}
+.header .back i{float:left;width:20px;height:20px;background:url(../../images/all_ico_150106.png) 0 0;background-size:150px 300px;}
+.header .add{float:right;padding:12px 9px;}
+.header .add span{display:none;}
+.header .add i{float:right;width:20px;height:20px;background:url(../../images/icon_add@2x.png);background-size:100% 100%;}
+.header .searchIcon{float:left;padding:12px 9px;}
+.header .searchIcon i{float:left;width:20px;height:20px;background:url(../../images/icon_search@2x.png) 0 0;background-size:100% 100%;}
+.header h1{margin:0 50px;text-align:center;color:#fff;font-size:18px;}
+.header .collectIcon{position:absolute;top:0;right:10px;height:45px;}
+.header .collectIcon dt{position: absolute;width: 20px;height: 100%;}
+.header .collectIcon .wjx1{background: url(../../images/icon_star@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon .wjx2{background: url(../../images/icon_favorate_white@2x.png) no-repeat center center;background-size: 20px 20px;}
+.header .collectIcon dd{margin-left:25px;line-height:45px;color:#fff;}

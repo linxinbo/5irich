@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-注册开户</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/account/account.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/feather.css?t=20170308">
+</head>
+<body>
+<div>
+
+
+    <!--头部开始-->
+    <header class="ty_header">
+        <a class="ty_fanhui" href="javascript:window.history.go(-1);">
+            <i class="ty_fanhui_icon"></i>
+        </a>
+        <div class="head_center">
+            <a class="head_title_as">开户</a>
+        </div>
+        <a class="ty_sreach_as"  href="../home.html">
+             <i></i>
+        </a>
+    </header>
+
+
+    <!--头部结束-->
+    <!--内容开始-->
+    <div class="viewport">
+        <div class="account_nav mtopdd">
+            <!--<ul class="u1">-->
+                <!--<li class="l0"></li>-->
+                <!--<li class="l1 blue_round_nav"></li>-->
+                <!--<li class="l2 gray_line_nav"></li>-->
+                <!--<li class="l3 gray_round_nav"></li>-->
+                <!--<li class="l4 gray_line_nav"></li>-->
+                <!--<li class="l5 gray_round_nav"></li>-->
+                <!--<li class="l6"></li>-->
+            <!--</ul>-->
+            <div class="account_prog"></div>
+            <ul class="u2">
+                <li style="text-align:center;"><span >身份验证</span></li>
+                <li><span>设置银行卡</span></li>
+                <li style="text-align: center;"><span>开户成功</span></li>
+            </ul>
+        </div>
+        <div class="account_title">
+            <!--<h2><span>创金启富欢迎您</span></h2>-->
+            <a><span>为保证您的账户资金安全，我们需要对您的身份进行实名认证,我们会安全妥善地保存您的个人信息，敬请放心</span></a>
+        </div>
+        <div class="mtopdd">
+            <ul class="account_list">
+                <li class="clearfix">
+                    <i class="user"></i>
+                    <input type="text" id="name" name="name" class="n" placeholder="请输入您的真实姓名" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li class="clearfix">
+                    <i class="userid"></i>
+                    <input type="text" id="cardNo" name="cardNo" class="n" placeholder="请输入您的身份证号码" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li class="clearfix">
+                    <i class="email"></i>
+                    <input type="text" id="email" name="cardNo" class="n" placeholder="请输入您的电子邮箱" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="account_title_e"><i class="icon-lock"></i><span> 请您放心，我们会安全妥善保存您的信息</span></div>-->
+        <div>
+            <ul class="account_list">
+                <li class="clearfix">
+                    <i class="pass"></i>
+                    <input type="password" id="password1" name="password1" class="n" placeholder="请输入您的交易密码" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+                <li id="pdmm" class="clearfix" style="height: 32px;padding-left: 3em;display: none;">
+                    <div id="mmdj"><span></span></div>
+                </li>
+                <li class="clearfix">
+                    <i class="chong"></i>
+                    <input type="password" id="password2" name="password2" class="n" placeholder="请再一次输入交易密码" value="">
+                    <i data_rest="ID_rest" class="x" style="display: none;"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="account_title_f mtopdd"><i class="def"></i><span> 我已阅读并同意<a href="protocol.html" class="linkys">《开户协议》</a><a href="risk_cue.html" class="linkys">《风险提示》</a><a href="proxy.html" class="linkys">《银行自动转账授权书》</a></span></div>
+        <div class="account_title_g mtopd menddd">
+            <a type="button" class="btn btn-block btn_lanse btn-lg" href="javascript:openStep1()">下一步</a>
+        </div>
+    </div>
+
+    <!--内容结束-->
+
+</div>
+
+
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/swiper.min.js?t=20170308"></script>
+<script src="../js_mp/bootstrap.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/account/account.js?t=20170308"></script>
+</html>

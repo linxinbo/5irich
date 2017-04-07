@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>理财易站-诊断中心</title>
+    <meta name="keywords" content="理财易站关键字">
+    <meta name="description" content="理财易站内容介绍">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!--禁止iPhone把数字转化成链接-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="理财易站" />
+    <link rel="icon" type="image/png" href="../images_mp/icon_logochuang@2x.png">
+    <link rel="icon" sizes="192x192" href="../images_mp/app_icon_1.png">
+    <link rel="apple-touch-icon-precomposed" href="../images_mp/app_icon.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../images_mp/app_icon_wp1.jpg">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="shortcut icon" href="../favicon.ico"/>
+
+    <link rel="stylesheet" href="../css_mp/diag/bootstrap.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/swiper.min.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/comm.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/home.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/feather.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/diag/zn.css?t=20170308">
+    <link rel="stylesheet" href="../css_mp/diag/diag.css?t=20170308">
+</head>
+<body class="znbodyhome">
+<div class="wenti1_top11">
+    <span>智能投顾-诊断中心</span>
+</div>
+<!--<div class="header_top_c"><span>您的风险评测结果为 <i id="diag_dj"></i> 级。我们将继续对您的资产进行诊断，帮您在合理规避风险的同时为您提供专业优化建议。</span></div>-->
+
+<div class="diag">
+    <h2 class="diag_title"><span>请输入您持有的基金信息(支持多只基金)</span></h2>
+    <div class="diag_form">
+        <ul>
+            <li class="bottom_line">
+                <span>基金名称</span>
+                <input type="text" placeholder="请输入基金名称/代码/首字母" class="diag_fundN" id="fundZm">
+            </li>
+            <li>
+                <span>持仓金额</span>
+                <input type="number" placeholder="请输入当前持仓金额" class="diag_fundV">
+            </li>
+        </ul>
+        <div class="diag_pd"><a class="btn btn-block diag_btn">添加</a></div>
+    </div>
+</div>
+
+<div class="diag">
+    <h2 class="diag_title"><span>您当前持有的基金</span></h2>
+    <div class="diag_form1">
+        <ul id="group_fund">
+            <!--<li class="bottom_line">
+                <h2 class="diag_title1"><span>易方达信用债债券A</span><i>000032</i></h2>
+                <span class="diag_title2">持仓金额：75888.00元</span>
+                <img src="../images_mp/diag/delete.png" class="diag_delete">
+            </li>
+            <li>
+                <h2 class="diag_title1"><span>易方达信用债债券A</span><i>000032</i></h2>
+                <span class="diag_title2">持仓金额：75888.00元</span>
+                <img src="../images_mp/diag/delete.png" class="diag_delete">
+            </li>-->
+        </ul>
+        <div class="diag_pd" href="diag_result.html"><a class="btn btn-block diag_btn1">下一步</a></div>
+    </div>
+</div>
+
+</body>
+<script src="../js_mp/jquery.min.js?t=20170308"></script>
+<script src="../js_mp/jquery.cookie.js?t=20170308"></script>
+<script src="../js_mp/common_qifu.js?t=20170308"></script>
+<script src="../js_mp/diag/mockjax.js?t=20170308"></script>
+<script src="../js_mp/diag/bootstrap-typeahead.js?t=20170308"></script>
+<script src="../js_mp/diag/diag.js?t=20170308"></script>
+<script src="../js_mp/diag/demo.js?t=20170308"></script>
+</html>

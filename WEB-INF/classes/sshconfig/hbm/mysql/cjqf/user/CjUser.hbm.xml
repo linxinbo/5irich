@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.person.CjUserBean" table="cj_user">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  邮箱  -->
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<!--  电话  -->
+		<property name="tel" type="java.lang.String">
+			<column name="tel" />
+		</property>
+		<!--  唯一标示  -->
+		<property name="unk" type="java.lang.String">
+			<column name="unk" />
+		</property>
+		<!--  密码  -->
+		<property name="pwd" type="java.lang.String">
+			<column name="pwd" />
+		</property>
+		<!--  密码错误次数  -->
+		<property name="pwdErrorCount" type="java.lang.Integer">
+			<column name="pwd_error_count" />
+		</property>
+		<!--  真实姓名  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  是否开户 0：未开户；1：开户  -->
+		<property name="isopen" type="java.lang.Integer">
+			<column name="is_open" />
+		</property>
+		<!--  证件类型  -->
+		<property name="sntype" type="java.lang.String">
+			<column name="sn_type" />
+		</property>
+		<!--  证件号  -->
+		<property name="sn" type="java.lang.String">
+			<column name="sn" />
+		</property>
+		<!--  客户号  -->
+		<property name="custno" type="java.lang.Long">
+			<column name="custno" />
+		</property>
+		<!--  客户状态  -->
+		<property name="status" type="java.lang.Integer">
+			<column name="status" />
+		</property>
+		<!--  最后登录日期  -->
+		<property name="lastlogin" type="java.util.Date">
+			<column name="last_login_time" />
+		</property>
+		<!--  创建时间  -->
+		<property name="createtime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updatetime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+		<!--  交易发送电话  -->
+		<property name="sendTel" type="java.lang.String">
+			<column name="send_tel" />
+		</property>
+		<!--  服务号绑定的微信ID  -->
+		<property name="weixinId" type="java.lang.String">
+			<column name="weixin_id" />
+		</property>
+		<!--  绑定的微信昵称   -->
+		<property name="weixinNickName" type="java.lang.String">
+			<column name="weixin_nickname" />
+		</property>
+		<!--   绑定的微信头像  -->
+		<property name="weixinHeadImgUrl" type="java.lang.String">
+			<column name="weixin_headimgurl" />
+		</property>
+		<!--   绑定用户唯一标识  -->
+		<property name="weixinUnionid" type="java.lang.String">
+			<column name="weixin_unionid" />
+		</property>
+		<!--  推荐人ID（姓名）  -->
+		<property name="refereeId" type="java.lang.String">
+			<column name="referee_id" />
+		</property>
+		<!--  开户时间  -->
+		<property name="opentime" type="java.util.Date">
+			<column name="open_time" />
+		</property>
+		<!--  开户时间  -->
+		<property name="recommended_person" type="java.lang.String">
+			<column name="recommended_person" />
+		</property>
+		<!--  默认0 大于3时处理  -->
+		<property name="error_lognum" type="java.lang.Integer">
+			<column name="error_lognum" />
+		</property>
+	</class>
+</hibernate-mapping>

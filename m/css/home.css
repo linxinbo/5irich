@@ -1,0 +1,299 @@
+/* header */
+html, body {
+	background: #F0EFF4;
+}
+header.home {
+	background: url(../images/header-home.png) 0 0 repeat-x;
+	background-size: 100% 45px;
+	overflow: hidden;
+	position: relative;
+}
+header.home h1 {
+	background: url(../images/h1-home.png) 0 0 no-repeat;
+	background-size: 105px 26px;
+	height: 26px;
+	margin: 12px 0 0 10px;
+	overflow: hidden;
+	text-indent: -999em;
+	width:105px;
+}
+header a.user {
+	color: #fff;
+	font-size:13px;
+	height: 35px;
+	line-height: 35px;
+	position: absolute;
+	right: 10px;
+	top:10px;
+	z-index: 1;
+}
+header a.user .icon {
+	background: url(../images/user-icon.png) 0 0 no-repeat;
+	background-size: 24px 24px;
+	display: inline-block;
+	height: 24px;
+	margin: -2px 3px 0 0;
+	vertical-align: middle;
+	width:24px;
+}
+header .h_m{display:-webkit-box;}
+header .h_left{display:block;-webkit-box-flex:2;background:url(../images/icon_arrow@2x.png) no-repeat center center; background-size:20px 20px;}
+header .h_title{color:#fff;-webkit-box-flex:5; text-align:center; font-size:1.8rem;}
+header .h_right{-webkit-box-flex:2;}
+
+.focus {
+	color: #fff;	
+	height: 245px;
+	position: relative;
+}
+.focus-bg img {
+	height:245px;
+	width:100%;
+}
+.focus .ad {
+	font-size: 2rem;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+}
+.focus .adtext {
+	position: absolute;
+}
+.adtext-left {
+	left: 50%;
+	margin-left: -140px;
+}
+.adtext-right {
+	margin: -20px -130px 0 0;
+	right: 50%;
+}
+.focus .ad strong {
+	color:#fffc00;
+	font-size:7rem;
+	font-weight: normal;
+}
+.focus .ad em {
+	font-size: 3rem;
+	font-style: normal;
+}
+.focus .increase-treasure {
+	top: 20px;
+	position: absolute;
+	width:100%;
+}
+.focus .increase-title {
+	font-size:2rem;
+	margin:0 10px;
+	position: relative;
+}
+.focus .increase-title a {
+	bottom: 0;
+	color: #fffc00;
+	font-size:1.5rem;
+	line-height: 2.2;
+	position: absolute;
+	right: 0;
+}
+.focus .increase-figure {
+	font-size: 3.5rem;
+	line-height: 1.8;
+	text-align: center;
+}
+.user-data {
+	background: rgba(0,0,0,0.25);
+	color: #fff;
+	font-size:1.2rem;
+	padding:10px;
+	position: absolute;
+	bottom: 0;
+	text-align: center;	
+	width:100%;
+}
+.user-data .col {
+	height: 45px;
+	display: block;
+}
+.user-data .col:first-child {
+	margin-bottom: 11px;
+}
+.user-data .col:only-child {
+	margin-bottom: 0;
+}
+.user-data .col .row {
+	position: relative;
+	float: left;
+	width:50%;
+}
+.user-data .col .row-left {
+	margin-right:0;
+}
+.user-data .col .row-left:after {
+	background: #fff;
+	right:0px;
+	content: " ";
+	position: absolute;
+	height: 100%;
+	top:0;
+	width:1px;
+}
+.user-data .col:nth-child(2) .row-left:before {
+	background: #fff;
+	content: " ";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: -6px;
+	width: 95%;
+}
+.user-data .col:nth-child(2) .row-right:before {
+	background: #fff;
+	content: " ";
+	height: 1px;
+	right: 0;
+	position: absolute;
+	top: -6px;
+	width: 95%;
+}
+.user-data .col .row-right {
+	margin-left:0;
+}
+.user-data .col .row strong, .user-data .col .row span {
+	display: block;
+}
+.user-data .col .row span {
+	/*font-size:1.6rem;*/
+}
+.homebutton-area {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 50px;
+	margin:20px 0 120px;
+	padding:10px;
+}
+.short {
+	-webkit-box-flex: 3;
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding-right: 5px;
+}
+.long {
+	-webkit-box-flex: 5;
+	-webkit-flex: 5;
+	-ms-flex: 5;
+	flex: 5;
+	padding-left: 5px;
+}
+.homebutton-area a {
+	border-radius: 4px;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+}
+.homebutton-area .short a {
+	background: #fff;
+	color: #1b75da;
+}
+.homebutton-area .long a {
+	background: #1b75da;
+	color: #fff;
+}
+.ad-bottom {
+	background: #f6f3ee url(../images/ad-bottom.jpg) 0 0 no-repeat;
+	background-size: 140px 100%;
+	bottom:51px;
+	color: #975128;
+	font-size:12px;
+	height: 58px;
+	line-height: 58px;
+	position: fixed;
+	text-indent: 80px;
+	width:100%;
+}
+.ad-bottom a {
+	color: #4683ff;
+	font-size:10px;
+	left: 0;
+	padding: 0 10px;
+	position: absolute;
+	text-align: right;
+	text-indent: 0;
+	width:100%;
+}
+.hint {
+	background: #fefded;
+	bottom:51px;
+	color:#4a4a4a;
+	font-size:12px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	position: fixed;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width:100%;
+}
+.hint .icon {
+	float:left;
+	background: url(../images/hint-icon.png) center center no-repeat;
+	background-size: 16px 16px;
+	display: inline-block;
+	height: 30px;
+	margin: 0px 3px 0 0;	
+	vertical-align: middle;
+	width:30px;
+}
+
+@media only screen and (min-width:480px) {
+	.focus .ad {
+		top: 80px;
+	}
+	.focus .increase-figure {
+		margin-top:30px;
+	}
+	.focus,.focus-bg img{
+		height:350px;		
+	}
+	.user-data .col .row strong, .user-data .col .row span {
+		font-size:1.8rem;
+		line-height:30px;
+	}
+	.homebutton-area{
+		margin-top:50px;		
+	}
+	.user-data .col {
+		height: 60px;
+		display: block;
+	}
+}
+
+/*--------------------------起富项目----------------------------*/
+.user-data .col .row {
+	position: relative;
+	float: left;
+	width:33%;
+}
+
+.user-data .col .row-center:after {
+	background: #fff;
+	right:0px;
+	content: " ";
+	position: absolute;
+	height: 100%;
+	top:0;
+	width:1px;
+}
+
+.user-data {
+	background: none;
+	color: #fff;
+	font-size:1.2em;
+	padding:10px;
+	position: absolute;
+	top: 30px;
+	text-align: center;	
+	width:100%;
+	height:65px;
+}

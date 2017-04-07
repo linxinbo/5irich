@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.tactics.TransferPositionsDaoBean" table="cjqfweb_bdqx_omitted_user">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id"></column>
+		</id>
+		<!--  用户名 -->
+		<property name="userName" type="java.lang.String">
+			<column name="username"></column>
+		</property>
+		<!-- 用户id -->
+		<property name="userId" type="java.lang.String">
+			<column name="userid"></column>
+		</property>
+		<!-- 用户电话 -->
+		<property name="tel" type="java.lang.String">
+			<column name="tel"></column>
+		</property>
+		<!-- 用户邮箱 -->
+		<property name="email" type="java.lang.String">
+			<column name="email"></column>
+		</property>
+		<!-- 策略名称 -->
+		<property name="tacticsName" type="java.lang.String">
+			<column name="tactics_name"></column>
+		</property>
+		<!-- 策略代码 -->
+		<property name="tacticsCode" type="java.lang.String">
+			<column name="tactics_code"></column>
+		</property>
+		<!-- 拥有的基金代码 -->
+		<property name="fundCode" type="java.lang.String">
+			<column name="fundcode"></column>
+		</property>
+		<!--拥有的基金名称 -->
+		<property name="fundName" type="java.lang.String">
+			<column name="fundname"></column>
+		</property>
+		<!--基金份额 -->
+		<property name="fundShare" type="java.lang.String">
+			<column name="fundshare"></column>
+		</property>
+		<!--拥有的基金类型 -->
+		<property name="fundType" type="java.lang.String">
+			<column name="fundtype"></column>
+		</property>
+		<!--转换的基金代码 -->
+		<property name="transformFundCode" type="java.lang.String">
+			<column name="transform_fundcode"></column>
+		</property>
+		<!--转换的基金名称 -->
+		<property name="transformFundName" type="java.lang.String">
+			<column name="transform_fundname"></column>
+		</property>
+		<!--转换的基金类型 -->
+		<property name="transformFundType" type="java.lang.String">
+			<column name="transform_fundtype"></column>
+		</property>
+		<!--客户号 -->
+		<property name="custno" type="java.lang.String">
+			<column name="custno"></column>
+		</property>
+		<!--交易账户 -->
+		<property name="transactionAccountId" type="java.lang.String">
+			<column name="transactionaccountid"></column>
+		</property>
+		<!--转换份额 百分比-->
+		<property name="transferShare" type="java.lang.String">
+			<column name="transfer_share"></column>
+		</property>
+		<!--转换时间 -->
+		<property name="transferTime" type="java.lang.String">
+			<column name="transfer_time"></column>
+		</property>
+		<!--转换时间 -->
+		<property name="transferPositionsTime" type="java.lang.String">
+			<column name="transfer_positions_time"></column>
+		</property>
+		<!--交易密码 -->
+		<property name="tpasswd" type="java.lang.String">
+			<column name="tpasswd"></column>
+		</property>
+		<!--异常处理 -->
+		<property name="exceptionHandling" type="java.lang.String">
+			<column name="exception_handling"></column>
+		</property>
+		<!--转换是否成功 -->
+		<property name="flat" type="int">
+			<column name="flat"></column>
+		</property>
+		<!--  数据创建时间 -->
+		<property name="creatTime" type="java.lang.String">
+			<column name="creat_time" />
+		</property>
+		<!--  数据修改时间  -->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

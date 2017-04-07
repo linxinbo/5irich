@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>理财易站-主题基金</title>
+    <meta name="keywords" content="基金,基金理财,基金公司,个人理财,家庭理财,基金推荐,基金排名,精品基金,工薪阶层理财,理财方案,网上理财,第三方理财"/>
+    <meta name="description" content="理财易站为用户精选各大基金公司的基金产品,为您提供个人理财、家庭理财、工薪阶层理财等理财方案,打造简单快捷的智能第三方投资理财平台！"/>
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+</head>
+<link rel="stylesheet" href="../style/bootstrap.min.css?t=20170308">
+<link rel="stylesheet" href="../common/common.css?t=20170308">
+<link rel="stylesheet" href="../style/header/header.css?t=20170308">
+<link rel="stylesheet" href="../style/footer/footer.css?t=20170308">
+<link rel="stylesheet" href="../style/login/login.css?t=20170308">
+<link rel="stylesheet" href="../style/fund/fund_theme.css?t=20170308">
+<link rel="stylesheet" href="../style/fund/fund_advance.css?t=20170308">
+<body>
+<header class="cheader" id="home-cheader">
+    <div class="logo clearfix">
+        <div class="col-xs-6">
+            <img src="../images/header/LOGO.png" class="clogo">
+        </div>
+        <div class="col-xs-6">
+            <div class="menu">
+                <a href="../home.html"><span>首页</span></a>
+                <a id="short_f"><span>基金优选</span><i></i></a>
+                <a href="../fund/fund_advance.html"><span  class="select">高端理财</span></a>
+                <a id="assets"><span>我的资产</span></a>
+                <div class="short_f" style="display:none">
+                    <a href="fundrecomm.html">精选基金</a>
+                    <a href="fund_theme.html">主题基金</a>
+                    <a href="fund_all.html">所有基金</a>
+                    <!--<a href="chuangfu.html">短期理财</a>-->
+                </div>
+            </div>
+            <div class="Sign">
+                <a id="register">注册</a> <a style="font-weight: bold;padding: 0 5px;"> · </a> <a id="login">登录</a>
+            </div>
+            <div class="login-back">
+                <a id="login-back">退出</a><a style="font-weight: bold;padding: 0 5px;"></a> <a class="user-name"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<aside class="home-side">
+    <ul>
+
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-code">手机<br />金融</span>
+            </div>
+        </li>
+        <li>
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write home-side-phone">业务<br />咨询</span>
+            </div>
+        </li>
+        <li>
+            <div class="home-side-server">
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">在线<br />客服</span>
+            </div>
+        </li>
+        <li class="home-backtop" id="home-backtop">
+            <div>
+                <span class="home-side-icon"></span>
+                <span class="home-side-write">返回<br />顶部</span>
+            </div>
+        </li>
+        <img src="../images/home/home-side-code.png" alt="error" class="home-img-code">
+        <img src="../images/home/home-side-write.png" alt="error" class="home-img-write">
+    </ul>
+</aside>
+<div class="theme_content clearfix">
+<div class="dcwj_content">
+    <h4>私募基金投资者风险承受力调查问卷</h4>
+    <p>
+        <b>风险提示：</b>私募基金投资需承担各类风险，本金可能遭受损失。同时，私募基金投资还要考虑市场风险、信用风险、流动性风险、操作风险等各类投资风险。您在基金认购过程中应当注意核对自己的风险识别和风险承受能力，选择与自己风险识别能力和风险承受能力相匹配的私募基金。</p>
+    <p><b>尊敬的投资者：</b><br>
+        您好！为了给您提供更优质的服务，请您花费几分钟的时间，如实填写以下调查问卷，本表可在您选择合适的私募基金前，协助评估您的风险承受能力、理财方式及投资目标。衷心感谢您的支持与信任。</p>
+    <form class="form-horizontal">
+        <div><input name="radioPerson" type="radio" checked="true" value="金融资产不低于300 万元（金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等）">金融资产不低于300
+            万元（金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等）</div>
+        <div><input name="radioPerson" type="radio" value="最近三年个人年均收入不低于50 万元">最近三年个人年均收入不低于50 万元</div>
+        <div><input name="radioPerson" type="radio" value="投资于所管理私募基金的私募基金管理人的从业人员">投资于所管理私募基金的私募基金管理人的从业人员</div>
+        <h5 class="fubiaoti">测试题目（所有题目均为单选）</h5>
+        <p class="jj_wz"><b>温馨提示：</b>私募基金属于中高风险类产品，仅适合风险承受力较高的投资者购买，如果测评结果显示，贵司的风险承受力较低，我司将不予推介私募基金。</p>
+        <div id="divpeson" class="wj_wt" style="display: block;">
+            <input id="hidpercount" type="hidden" value="15">
+            <p>1.	您的年龄介于</p>
+            <input  type="hidden" value="3">
+            <div class="c_a1">
+                <ul id="QHId1">
+                    <li><input name="radio0_1"  type="radio" value="5" checked="true">A.31-40岁（5分）</li>
+                    <li><input name="radio0_1" type="radio" value="4" >B.18-30岁（4分）</li>
+                    <li><input name="radio0_1" type="radio" value="3" >C.41-50岁（3分）</li>
+                    <li><input name="radio0_1" type="radio" value="2" >D.51-60岁 （2分）</li>
+                    <li><input name="radio0_1" type="radio" value="1" >E.超过60岁 （1分）</li>
+                </ul></div>
+            <div class="c"></div>
+            <p>2.	您的学历</p>
+            <div style="display:none">2015 cialis coupon <a href="http://blog.suntekusa.com/page/Free-Printable-Cialis-Coupons">cialis discount coupons</a> drug coupon card</div>
+            <p></p>
+            <input  type="hidden" value="4">
+            <div class="c_a1">
+                <ul id="QHId2">
+                    <li><input name="radio0_2" type="radio" value="5" checked="true">A.硕士及以上（5分）</li>
+                    <li><input name="radio0_2" type="radio" value="4" >B.本科（4分）</li>
+                    <li><input name="radio0_2" type="radio" value="3" >C.大专（3分）</li>
+                    <li><input name="radio0_2" type="radio" value="2" >D.高中及中专（2分）</li>
+                    <li><input name="radio0_2" type="radio" value="1" >E.初中及以下（1分）</li>
+                </ul></div> <div class="c"></div>
+            <p>3.	您的职业为</p>
+            <input  type="hidden" value="5">
+            <div class="c_a1">
+                <ul id="QHId3">
+                    <li><input name="radio0_3" type="radio" value="5" checked="true">A.金融行业一般从业人员（5分）</li>
+                    <li><input name="radio0_3" type="radio" value="4" >B.一般企事业单位员工（4分）</li>
+                    <li><input name="radio0_3" type="radio" value="3" >C.专业技术人员（3分）</li>
+                    <li><input name="radio0_3" type="radio" value="2" >D.无固定职业（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>4.	您目前的个人及家庭财务状况属于以下哪一种：</p>
+            <input  type="hidden" value="6">
+            <div class="c_a1">
+                <ul id="QHId4">
+                    <li><input name="radio0_4" type="radio" value="5" checked="true">A.比较富裕且有相当的投资（5分）</li>
+                    <li><input name="radio0_4" type="radio" value="4" >B.有较为丰厚的积蓄并有一定的投资（4分）</li>
+                    <li><input name="radio0_4" type="radio" value="3" >C.有一定积蓄（3分）</li>
+                    <li><input name="radio0_4" type="radio" value="2" >D.收入和支出相抵（2分）</li>
+                    <li><input name="radio0_4" type="radio" value="1" >E.有较大数额未到期负债（1分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>5.	您的家庭可支配年收入为（折合人民币）：</p>
+            <input  type="hidden" value="7">
+            <div class="c_a1">
+                <ul id="QHId5">
+                    <li><input name="radio0_5" type="radio" value="5" checked="true">A.1000万元以上（5分）</li>
+                    <li><input name="radio0_5" type="radio" value="4" >B.500—1000万元（4分）</li>
+                    <li><input name="radio0_5" type="radio" value="3" >C.100—500万元（3分）</li>
+                    <li><input name="radio0_5" type="radio" value="2" >D.50—100万元（2分）</li>
+                    <li><input name="radio0_5" type="radio" value="1" >E.50万元以下（1分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>6.	您可用于金融投资（储蓄存款除外）的比例为：</p>
+            <input  type="hidden" value="8">
+            <div class="c_a1">
+                <ul id="QHId6">
+                    <li><input name="radio0_6" type="radio" value="5" checked="true">A.大于50%（5分）</li>
+                    <li><input name="radio0_6" type="radio" value="4" >B.25%至50%（4分）</li>
+                    <li><input name="radio0_6" type="radio" value="3" >C.10%至25%（3分）</li>
+                    <li><input name="radio0_6" type="radio" value="2" >D.小于10%（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>7.	您的投资知识可描述为：</p>
+            <p></p>
+            <input  type="hidden" value="9">
+            <div class="c_a1">
+                <ul id="QHId7">
+                    <li><input name="radio0_7" type="radio" value="5" checked="true">A.专业：受过专业机构或行业组织金融知识的培训，并通过相关测评（5分）</li>
+                    <li><input name="radio0_7" type="radio" value="4" >B.丰富：对金融产品及其相关风险具有丰富的知识和理解（4分）</li>
+                    <li><input name="radio0_7" type="radio" value="3" >C.一般：对金融产品及其相关风险具有基本的知识和理解（3分）</li>
+                    <li><input name="radio0_7" type="radio" value="2" >D.有限：基本没有金融产品方面的知识（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>8.	您有多少年投资基金、股票、信托、私募证券或金融衍生产品等风险投资品的经验？</p>
+            <p></p>
+            <input  type="hidden" value="10">
+            <div class="c_a1">
+                <ul id="QHId8">
+                    <li><input name="radio0_8" type="radio" value="5" checked="true">A.10年以上（5分）</li>
+                    <li><input name="radio0_8" type="radio" value="4" >B.5至10年（4分）</li>
+                    <li><input name="radio0_8" type="radio" value="3" >C.2至5年（3分）</li>
+                    <li><input name="radio0_8" type="radio" value="2" >D. 少于2年（2分）</li>
+                    <li><input name="radio0_8" type="radio" value="1" >E.没有经验（1分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>9.	您的投资经验可描述为：</p>
+            <p></p>
+            <input  type="hidden" value="11">
+            <div class="c_a1">
+                <ul id="QHId9">
+                    <li><input name="radio0_9" type="radio" value="5" checked="true">A.参与过权证、期货、期权等产品的交易（5分）</li>
+                    <li><input name="radio0_9" type="radio" value="4" >B.参与过股票、基金等产品的交易（4分）</li>
+                    <li><input name="radio0_9" type="radio" value="3" >C.购买过债券、保险等理财产品（3分）</li>
+                    <li><input name="radio0_9" type="radio" value="2" >D.除银行储蓄外，基本没有其他投资经验（2分）</li>
+                </ul></div>
+            <div class="c"></div>
+            <p>10.	您计划的投资期限是多长：</p>
+            <div style="display:none">distroller <a href="http://myhsbook.com/blog/blog/page/Detrol-La">detrola record player</a> detrola radio</div>
+            <p></p>
+            <input  type="hidden" value="12">
+            <div class="c_a1">
+                <ul id="QHId10">
+                    <li><input name="radio0_10" type="radio" value="5" checked="true">A.5年以上（5分）</li>
+                    <li><input name="radio0_10" type="radio" value="4" >B.3-5年（4分）</li>
+                    <li><input name="radio0_10" type="radio" value="3" >C.2-3年（3分）</li>
+                    <li><input name="radio0_10" type="radio" value="2" >D.1-2年（2分）</li>
+                    <li><input name="radio0_10" type="radio" value="1" >E.少于1年（1分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>11.	您的投资目的是：</p>
+            <input  type="hidden" value="13">
+            <div class="c_a1">
+                <ul id="QHId11">
+                    <li><input name="radio0_11" type="radio" value="5" checked="true">A.资产迅速增长（5分）</li>
+                    <li><input name="radio0_11" type="radio" value="3" >B.资产稳健增长（3分）</li>
+                    <li><input name="radio0_11" type="radio" value="2" >C.资产保值（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>12.	您希望获得的年收益率是多少：</p>
+            <input  type="hidden" value="14">
+            <div class="c_a1">
+                <ul id="QHId12">
+                    <li><input name="radio0_12" type="radio" value="5" checked="true">A.大大超过股票市场平均收益率（5分）</li>
+                    <li><input name="radio0_12" type="radio" value="4" >B.接近或相当于股票市场平均收益率（4分）</li>
+                    <li><input name="radio0_12" type="radio" value="3" >C.高于通货膨胀率，只要保值并略有增值即可（3分）</li>
+                    <li><input name="radio0_12" type="radio" value="2" >D.相当于通货膨胀率（2分）</li>
+                    <li><input name="radio0_12" type="radio" value="1" >E.相当于储蓄存款收益率（1分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>13.	您认为自己能承受的最大投资损失是多少：</p>
+            <input  type="hidden" value="15">
+            <div class="c_a1">
+                <ul id="QHId13">
+                    <li><input name="radio0_13" type="radio" value="5" checked="true">A.超过50%（5分）</li>
+                    <li><input name="radio0_13" type="radio" value="4" >B.30%-50%（4分）</li>
+                    <li><input name="radio0_13" type="radio" value="3" >C.10%-30%（3分）</li>
+                    <li><input name="radio0_13" type="radio" value="2" >D.10%以内（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>14.	假设有两种投资：投资A预期获得10%的收益，可能承担的损失非常小；投资B预期获得30%的收益，但可能承担较大亏损。您会怎么支配您的投资：</p>
+
+            <p></p>
+            <input  type="hidden" value="16">
+            <div class="c_a1">
+                <ul id="QHId14">
+                    <li><input name="radio0_14" type="radio" value="5" checked="true">A.全部投资于收益较大且风险较大的Ｂ（5分）</li>
+                    <li><input name="radio0_14" type="radio" value="4" >B.同时投资于Ａ和Ｂ，但大部分资金投资于收益较大且风险较大的Ｂ（4分）</li>
+                    <li><input name="radio0_14" type="radio" value="3" >C.同时投资于Ａ和Ｂ，但大部分资金投资于收益较小且风险较小的Ａ（3分）</li>
+                    <li><input name="radio0_14" type="radio" value="2" >D.全部投资于收益较小且风险较小的Ａ（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+            <p>15.	以下哪项描述最符合您的投资态度：</p>
+            <input type="hidden" value="17">
+            <div class="c_a1">
+                <ul id="QHId15">
+                    <li><input autofocus name="radio0_15" type="radio" value="5" checked="true">A.希望赚取高回报，愿意为此承担较大本金损失（5分）</li>
+                    <li><input autofocus name="radio0_15" type="radio" value="4" >B.寻求资金的较高收益和成长性，愿意为此承担有限本金损失（4分）</li>
+                    <li><input autofocus name="radio0_15" type="radio" value="3" >C.保守投资，不希望本金损失，愿意承担一定幅度的收益波动（3分）</li>
+                    <li><input autofocus name="radio0_15" type="radio" value="2" >D.厌恶风险，不希望本金损失，希望获得稳定回报（2分）</li>
+                </ul>
+            </div>
+            <div class="c"></div>
+
+            <!--一个问题结束-->
+            <div class="c">
+            </div>
+        </div>
+        <p class="m26">
+            <b>客户声明：</b>本机构已如实填写《私募基金个人投资者风险承受力调查问卷》，并确认为合格投资者，承诺为自己购买私募基金产品，充分了解了自己的风险承受类型和适合购买的产品类型。</p>
+        <div class="khxx">
+            <div id="divBPerson" class="yhxx" style="display: block;">
+                <div>
+                    <ul>
+                        <li class="l"><em>
+                            <img src="https://cdn.licai.com/image/login/bt_icon.png">
+                        </em><span>手机号码：</span>
+                            <input name="txtUserTel" type="text" id="txtUserTel"></li>
+                        <li class="r">
+                            <em>
+                                <img src="https://cdn.licai.com/image/login/bt_icon.png">
+                            </em>
+                            <span>您的姓名：</span>
+                            <input  name="txtUserName" type="text" id="txtUserName"></li>
+                    </ul>
+                    <div class="c">
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li class="l"><span>证件类型：</span>
+                            <select id="ddlPersonType">
+                                <option value="0" selected="selected">身份证</option>
+                            </select>
+                        </li>
+                        <li class="r"><em>
+                            <img src="https://cdn.licai.com/image/login/bt_icon.png">
+                        </em><span>证件号码：</span><input name="txtUserNum" type="text" id="txtUserNum" maxlength="18"></li>
+                    </ul>
+                    <div class="c">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xyb_button" style="margin-bottom: 30px;">
+            <button class="btn btn-warning btn-block" id="ques_submit" type="button">提交</button>
+        </div>
+    </form>
+</div>
+    <div class="theme_content_in clearfix" id="fund_theme" style="display: none;">
+        <div class="theme">
+            <h2>军工主题推荐</h2>
+            <a href="theme/0001.html"><img src="../images/theme/guoqi.png"></a>
+            <div class="hot_theme"><img src="../images/theme/hot_theme.png"></div>
+        </div>
+
+    </div>
+
+</div>
+<footer class="footer clearfix">
+    <div class="Company clearfix">
+        <ul>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj1.jpg"></a><span>基金销售资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj2.jpg"></a><span>中国证券业协会会员资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/zj3.jpg"></a><span>私募投资基金管理人资格</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw.jpg"></a><span>监管机构</span></li>
+            <li class="col-xs-2"><a class="line"><img src="../images/footer/dw1.jpg"></a><span>资金监管银行</span></li>
+            <li class="col-xs-2"><a ><img src="../images/footer/dw2.jpg"></a><span>自律机构</span></li>
+        </ul>
+
+    </div>
+    <div class="Contactus clearfix">
+        <div class="jieshao clearfix">
+            <div class="col-xs-5">
+                <ul>
+                    <li class="col-xs-4">
+                        <a>关于我们</a>
+                        <a href="../aboutus/about.html#1">公司介绍</a>
+                        <a href="../aboutus/about.html#1">产品与服务</a>
+                        <a href="../aboutus/about.html#3">资质荣誉</a>
+                        <a href="../aboutus/about.html#4">核心团队</a>
+                        <a href="../aboutus/about.html#5">合作伙伴</a>
+                        <a href="../aboutus/about.html#6">联系我们</a>
+                    </li>
+                    <li class="col-xs-4">
+                        <a>安全保障</a>
+                        <a href="../anquan/anquan.html#1">交易安全</a>
+                        <a href="../anquan/anquan.html#2">信息安全</a>
+                        <a href="../anquan/anquan.html#3">网站安全</a>
+                        <!--<a>免责申明</a>-->
+
+                    </li>
+                    <li class="col-xs-4">
+                        <a>更多链接</a>
+                        <a href="../assets/assets.html">网上交易</a>
+                        <a>新手指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-7">
+                <div class="wxh">
+                    <div class="wxh_text">扫描二维码，关注理财易站官方微信，指尖理财  So easy</div>
+                    <div class="weixin" style="margin-right: 70px;">
+                        <a><img src="../images/footer/fwh.png"></a>
+                        <span>服务号</span>
+                        <span>在线客服 智能投顾</span>
+                    </div>
+                    <div class="weixin">
+                        <a><img src="../images/footer/dyh.png"></a>
+                        <span>订阅号</span>
+                        <span>传达资讯 独家策略</span>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <i></i><span>免费客服热线:</span>
+                    </div>
+                    <a class="haoma">400-6262-818</a>
+                    <a class="kefu">在线客服</a>
+                </div>
+
+            </div>
+            <div class="col-lg-12 beian">
+                京ICP备16042119&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;基金销售业务资格许可证号：000000315&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;中国民生银行全程提供资金监管<br>版权所有 c 2014 北京创金启富投资管理有限公司
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<div class="alertBoxNew">
+    <div class="alertContent1">
+        <span class="login-close"></span>
+        <h2 class="alertTitle">理财易站提示您！</h2>
+      <span style="font-size: 14px;">根据《私募投资基金监督管理暂行办法》第四章第十四条规定："私募基金管理人、私募基金销售机构不得向合格投资者之外的单位和个人募集资金，不得通过报刊、电台、电视、互联网等公众传播媒体或者讲座、报告会、分析会和布告、传单、手机短信、微信、博客和电子邮件等方式，向不特定对象宣传推介。"<br><br>
+<a style="color: #ff9900;text-decoration: none;">理财易站谨遵《私募投资基金监督管理暂行办法》之规定，只向特定投资者展示私募基金产品信息，不构成任何投资推介建议。</a><br><br>
+合格投资者是指具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100万元且符合下列相关标准的机构和个人：<br>
+（一）净资产不低于1000万元的机构； （二）金融资产不低于300万元或者最近三年个人年均收入不低于50万元的个人。<br>
+前款所称金融资产包括银行存款、股票、债券、基金份额、资产管理计划、银行理财产品、信托计划、保险产品、期货权益等。<br><br>
+<a style="color: #ff9900;text-decoration: none;">阁下如有意了解或进行私募基金投资，请注册成为理财易站用户以确认您的合格投资者的条件</a></span>
+        <div class="ui-button-contain" style="text-align: center;background-color: #f0f0f0;padding: 10px;" >
+            <a href="javascript: loginStart();" class="btn_login"> 登 录 </a>
+            <a class="btn_register" href="javascript:registerStart();"> 注 册 </a>
+        </div>
+    </div>
+
+</div>
+<div class="home-layer"></div>
+<div id="login-cont"></div>
+<div id="register-cont"></div>
+<div id="forget-pass"></div>
+</body>
+<script src="../js/jquery.js?t=20170308"></script>
+<script src="../js/Plug-in/jquery.cookie.js?t=20170308"></script>
+<script src="../common/common.js?t=20170308"></script>
+<script src="../js/Plug-in/scrolltopcontrol.js?t=20170308"></script>
+<script src="../js/fund/fund_advance.js?t=20170308"></script>
+</html>

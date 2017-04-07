@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.custom.CjqfWebAppointRecordBean" table="cjqfweb_appoint_record"
+	dynamic-insert="true" dynamic-update="true" >
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  客户姓名  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  邮箱  -->
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<!--  电话  -->
+		<property name="tel" type="java.lang.String">
+			<column name="tel" />
+		</property>
+		<!--  基金代码  -->
+		<property name="windcode" type="java.lang.String">
+			<column name="windcode" />
+		</property>
+		<!--  内容  -->
+		<property name="content" type="java.lang.String">
+			<column name="content" />
+		</property>
+		<!--  状态  -->
+		<property name="status" type="java.lang.Integer">
+			<column name="status" />
+		</property>
+		<!--  创建人  -->
+		<property name="createperson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--  创建时间  -->
+		<property name="createtime" type="java.lang.String">
+			<column name="create_time" />
+		</property>
+		<!--  更新人  -->
+		<property name="updateperson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updatetime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+		<!-- 证件类型 -->
+		<property name="snType" type="int">
+				<column name="sn_type"></column>
+		</property>
+		<!-- 身份证号 -->
+		<property name="sn" type="java.lang.String">
+				<column name="sn"></column>
+		</property>
+		<!-- 金额 -->
+		<property name="money" type="java.lang.String">
+				<column name="money"></column>
+		</property>
+		<!-- 产品类型 -->
+		<property name="productType" type="int">
+				<column name="product_type"></column>
+		</property>
+		<!-- 用户id -->
+		<property name="user_id" type="java.lang.String">
+				<column name="user_id"></column>
+		</property>
+		<!-- 处理状态-->
+		<property name="deal_status" type="int">
+				<column name="deal_status"></column>
+		</property>
+	</class>
+</hibernate-mapping>

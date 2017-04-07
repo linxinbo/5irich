@@ -1,0 +1,13 @@
+html{ font-size:62.5%;}
+body,html{ margin:0 auto; padding:0px; font-family:'Microsoft Yahei','微软雅黑'; max-width:750px; background:#fff;}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal }
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+.gm span a,a:hover{ color:#fff}
+
+.banner{ position:relative;}
+.banner img{width:100%;display: block;height: auto;}

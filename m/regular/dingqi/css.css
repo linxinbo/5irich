@@ -1,0 +1,63 @@
+body,html{ margin:0 auto; padding:0px; font-size:62.5%; font-family:'Microsoft Yahei','微软雅黑'; max-width:750px; background:#efefef; padding-top:1%}
+input,i,b{font-family:'Microsoft Yahei','微软雅黑'; margin:0px; padding:0px; font-style:normal; font-weight:normal;}
+ul,li,p{ list-style:none; margin:0px; padding:0px;}
+img{ border:none; max-width:100%}
+a{ text-decoration:none;}
+.clear{ clear:both; height:0px; line-height:0px;}
+.fl{ float:left;}
+.fr{ float:right}
+
+
+.box{ width:92%; margin:auto; background:#fff; border-radius:5px; font-size:2.6rem; color:#389ad7; padding-top:2%; padding-bottom:2%; margin-top:3%}
+.box p{ float:left; margin-left:3%; width:57%;}
+.box span{ float:right; margin-right:0%; display:block; width:30%; text-align:right; margin-right:3%}
+.box input{float:left; width:65%; color:#389ad7; border:none; font-size:2.6rem; text-align:left}
+.title{ width:92%; margin:auto; font-size:2.6rem; color:#389ad7; padding-top:3%; }
+.title span{margin-left:3%;}
+.box i{ border:1px solid #ccc; border-radius:50%; width:3%; padding-top:1.5%; padding-bottom:1.5%; display:inline-block; margin-left:3%; margin-right:2%}
+.box .i{ background:#389ad7}
+.abtn{ display:block; text-align:center; width:92%; margin:auto; padding-top:2%; padding-bottom:2%; background:#fff; border-radius:5px; font-size:3.6rem; color:#389ad7; margin-top:3%}
+.ribtn{width:100%;font-size: 2.6rem; margin:auto;background-color: #389ad7;height: 36px;border-radius: 5px;color:#FFFFFF;border: 0;}
+.ribtn1{width:100%; margin:auto;
+            background-color: #FFFFFF;
+            height: 36px;
+            border-radius: 5px;
+            color:#389ad7;
+            border: 0;
+            font-size: 2.6rem;
+        }
+.ribtn2{      width: 31%;
+            background-color: #FFFFFF;
+            height: 36px;
+            border-radius: 5px;
+            color:#389ad7;
+            border: 0;
+            text-align: center;
+            display: inline-block;
+            line-height: 36px;
+            font-size: 2.6rem;
+        }
+.ribtn2_2{    width: 31%;
+            background-color: #389ad7;
+            height: 36px;
+            border-radius: 5px;
+            color:#FFFFFF;
+            border: 0;
+            text-align: center;
+            display: inline-block;
+            line-height: 36px;
+            font-size: 2.6rem;
+        }
+.ri_box{width:92%; margin:auto;padding-top:2%; padding-bottom:2%;};
+@media (min-width:640px) and (max-width:768px) { 
+	body,html{font-size:62.5%; }
+}
+@media (min-width:480px) and (max-width:640px) { 
+	body,html{ font-size:46%; }
+}
+@media (min-width:400px) and (max-width:480px) { 
+	body,html{ font-size:36%; }
+}
+@media (max-width:400px) { 
+	body,html{ font-size:30%; }
+}

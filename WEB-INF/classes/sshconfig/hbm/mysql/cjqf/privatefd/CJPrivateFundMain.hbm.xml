@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.cjqf.privated.CJPrivateFundMainBean" table="cj_private_fund_main">
+		<!-- 主键Id -->
+		<id name="id" type="java.lang.String">
+			<column name="id" />
+		</id>
+		<!--  基金代码  -->
+		<property name="fundcode" type="java.lang.String">
+			<column name="fund_code" />
+		</property>
+		<!--  Wind代码  -->
+		<property name="windcode" type="java.lang.String">
+			<column name="wind_code" />
+		</property>
+		<!--  基金简称  -->
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<!--  基金全称  -->
+		<property name="fullname" type="java.lang.String">
+			<column name="full_name" />
+		</property>
+		<!--  成立日期  -->
+		<property name="setupdate" type="java.lang.String">
+			<column name="setup_date" />
+		</property>
+		<!--  基金公司 -->
+		<property name="companyid" type="java.lang.String">
+			<column name="company_id" />
+		</property>
+		<!--  基金类型  -->
+		<property name="fundtype" type="int">
+			<column name="fund_type" />
+		</property>
+		<!--  托管银行  -->
+		<property name="custodianbank" type="int">
+			<column name="custodian_bank" />
+		</property>
+		<!--  投资起点  -->
+		<property name="minbuyamount" type="java.math.BigDecimal">
+			<column name="min_buy_amount" />
+		</property>
+		<!--  优选理由  -->
+		<property name="prioritydesc" type="java.lang.String">
+			<column name="priority_desc" />
+		</property>
+		<!--  创建人  -->
+		<property name="createperson" type="java.lang.String">
+			<column name="create_person" />
+		</property>
+		<!--  创建时间  -->
+		<property name="createtime" type="java.util.Date">
+			<column name="create_time" />
+		</property>
+		<!--   更新人  -->
+		<property name="updateperson" type="java.lang.String">
+			<column name="update_person" />
+		</property>
+		<!--  更新时间  -->
+		<property name="updatetime" type="java.util.Date">
+			<column name="update_time" />
+		</property>
+		</class>
+</hibernate-mapping>

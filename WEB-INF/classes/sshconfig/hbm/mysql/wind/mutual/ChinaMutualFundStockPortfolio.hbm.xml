@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMutualFundStockPortfolioBean" table="chinamutualfundstockportfolio">
+		<!-- 主键Id -->
+		<id name="objectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!-- 基金 Wind 代码 -->
+		<property name="finfoWindcode" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!-- 公告日期  -->
+		<property name="fprtEndDate" type="java.lang.String">
+			<column name="F_PRT_ENDDATE" />
+		</property>
+		<!-- 货币代码  -->
+		<property name="crncyCode" type="java.lang.String">
+			<column name="CRNCY_CODE" />
+		</property>
+		<!-- 持有股票 Wind 代码 -->
+		<property name="sinfoStockWindcode" type="java.lang.String">
+			<column name="S_INFO_STOCKWINDCODE" />
+		</property>
+		<!-- 持有股票市值(元)-->
+		<property name="fprtStkValue" type="java.math.BigDecimal">
+			<column name="F_PRT_STKVALUE" />
+		</property>
+		<!-- 持有股票数量（股）-->
+		<property name="fprtStkQuantity" type="java.math.BigDecimal">
+			<column name="F_PRT_STKQUANTITY" />
+		</property>
+		<!-- 持有股票市值占基金净值比例(%)-->
+		<property name="fprtStkValueTonav" type="java.math.BigDecimal">
+			<column name="F_PRT_STKVALUETONAV" />
+		</property>
+		<!-- 积极投资持有股票市值(元)-->
+		<property name="fprtPosstkValue" type="java.math.BigDecimal">
+			<column name="F_PRT_POSSTKVALUE" />
+		</property>
+		<!-- 积极投资持有股数（股）-->
+		<property name="fprtPosstkQuantity" type="java.math.BigDecimal">
+			<column name="F_PRT_POSSTKQUANTITY" />
+		</property>
+		<!-- 积极投资持有股数（股）-->
+		<property name="fprtPosstkTonav" type="java.math.BigDecimal">
+			<column name="F_PRT_POSSTKTONAV" />
+		</property>
+		<!-- 指数投资持有股票市值(元)-->
+		<property name="fprtPasstkeValue" type="java.math.BigDecimal">
+			<column name="F_PRT_PASSTKEVALUE" />
+		</property>
+		<!-- 指数投资持有股数（股）-->
+		<property name="fprtPasstkQuantity" type="java.math.BigDecimal">
+			<column name="F_PRT_PASSTKQUANTITY" />
+		</property>
+		<!-- 指数投资持有股票市值占净资产比例(%)-->
+		<property name="fprtPasstkTonav" type="java.math.BigDecimal">
+			<column name="F_PRT_PASSTKTONAV" />
+		</property>
+		<!-- 公告日期-->
+		<property name="annDate" type="java.lang.String">
+			<column name="ANN_DATE" />
+		</property>
+		</class>
+</hibernate-mapping>
+		

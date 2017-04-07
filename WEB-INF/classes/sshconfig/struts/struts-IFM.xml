@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="IFM" extends="wirich">
+	    <!--智能理财问题查询-->
+		<action name="IFMQuestionQueryAction" class="IFMQuestionQueryAction" method="OutJson">
+		</action>
+		 <!--智能理财分数-->
+		<action name="IFMScoreAction" class="IFMScoreAction" method="OutJson">
+		</action> 
+		 <!--智能理财方案-->
+		<action name="IFMSchemeAction" class="IFMSchemeAction" method="OutJson">
+		</action>
+	</package>
+</struts>

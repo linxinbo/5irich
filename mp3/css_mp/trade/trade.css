@@ -1,0 +1,145 @@
+.jy_header{
+	background-color: #ff9900;
+}
+.jy_fanhui {
+	color:#fff;
+	position: absolute; 
+    top: 50%;
+    left: 1em;
+    margin-top: -0.72em;
+}
+.jy_fanhui span{
+	font-size:1.44em;
+}
+.jy_title{
+	background-size: auto 17.2em;
+	overflow: hidden;
+}
+.jy__title_big{
+	padding: 1.0em 0;
+	text-align:center;
+	border-bottom:0;
+}
+.jy__title_big h1{
+	font-size: 3.28em;
+    color: white;
+    text-align:center;
+}
+.jy_title_sm ul li span{
+	color: #f2f9fe;
+    display: inline-block;
+	font-size: 1.40em;
+}
+.jy_right_line{
+	border-right: 1px solid #f0f0f0;
+}
+.jy_mian_menu ul li a .licaiclass.tuijian.jy_buy{
+	background: url(../../images_mp/trade/buy.png) no-repeat center;
+	background-size: 4.4em 4.4em;
+}
+.jy_mian_menu ul li a .licaiclass.zhineng.jy_redemption{
+    background: url(../../images_mp/trade/Redemption.png) no-repeat center;
+    background-size: 4.4em 4.4em;
+}
+.jy_mian_menu ul li a .licaiclass.dingqi.jy_fix{
+    background: url(../../images_mp/trade/fix.png) no-repeat center;
+    background-size: 4.4em 4.4em;
+}
+.l25{
+	width:25%
+}
+.liactive{
+	color: #4cacf2;
+	border-bottom:0.16em solid #4cacf2;
+}
+.liactive span{
+    color: #4cacf2;
+}
+.moni_content_th li .spanactive{
+	color: #4cacf2;
+}
+.l50{
+	width:50%;
+	border-right: 1px solid #cccccc;
+}
+.s{
+	width: 80%;
+    border: none;
+    color: #000;
+    height: 100%;
+    font-size: 0.96em;
+    text-align: left;
+    background-color: transparent;
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../../images_mp/trade/arrow.png") no-repeat scroll right center transparent;
+    background-size: 1.440em 0.8em;
+    padding-right: 1em;
+}
+.jy_riqi{
+	display: block;
+    height: 1.040em;
+    position: absolute;
+    top: 50%;
+    right: 0em;
+    margin-top: -0.502em;
+}
+.jy_mtop{
+	margin:0 auto 0.400em auto;
+}
+.jy_span_mtop{
+	margin:0.400em auto 0.400em auto;
+}
+.jy_table{
+	background: #fafafa;
+}
+.jy_table_content{
+	background: #fafafa;
+}
+.mian_menu ul.jy_ul{
+	padding: 1em 0;
+}
+
+.jy_title_sm{
+	padding: 0;
+}
+.jy_title_sm ul{
+	margin-top:1em;
+}
+.btn_home1 {
+    display: inline-block;
+    padding: 0.240em 1.5em;
+    margin-bottom: 0;
+    font-size: 1.120em;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.jy_btn_lanse {
+    color: #349ef2;
+    background-color: #ffffff;
+    border-color: #349ef2;
+}
+#trade_list{
+    margin-bottom: 1em;
+}
+.trade_sxf{
+    color: #349ef2;
+    font-size: 1.40em;
+}

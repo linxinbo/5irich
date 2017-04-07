@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.wind.mutual.ChinaMFPerformanceBean" table="chinamfperformance">
+		<!-- 主键Id -->
+		<id name="ObjectId" type="java.lang.String">
+			<column name="OBJECT_ID" />
+		</id>
+		<!--  Wind 代码 -->
+		<property name="sInfoWindcode" type="java.lang.String">
+			<column name="S_INFO_WINDCODE" />
+		</property>
+		<!--   交易日期 -->
+		<property name="tradeDt" type="java.lang.String">
+			<column name="TRADE_DT" />
+		</property>
+		<!--  收益率(本周以来) -->
+		<property name="fAvgreturnThisweek" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_THISWEEK" />
+		</property>
+		<!--  收益率(本月以来) -->
+		<property name="fAvgreturnThismonth" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_THISMONTH" />
+		</property>
+		<!--    收益率(本季以来) -->
+		<property name="fAvgreturnThisquarter" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_THISQUARTER" />
+		</property>
+		<!--  收益率(一周) -->
+		<property name="fAvgreturnWeek" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_WEEK" />
+		</property>
+		<!--  收益率(一个月)  -->
+		<property name="fAvgreturnMonth" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_MONTH" />
+		</property>
+		<!--  收益率(三个月)  -->
+		<property name="fAvgreturnGuarter" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_QUARTER" />
+		</property>
+		<!--  收益率(六个月)-->
+		<property name="fAvgreturnHalfyear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_HALFYEAR" />
+		</property>
+		<!-- 收益率(本年以来) -->
+		<property name="fAvgreturnThisyear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_THISYEAR" />
+		</property>
+		<!--  收益率(一年)	 -->
+		<property name="fAvgreturnYear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_YEAR" />
+		</property>
+		<!-- 收益率(两年) -->
+		<property name="fAvgreturnTwoyea" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_TWOYEA" />
+		</property>
+		<!--收益率(三年)  -->
+		<property name="fAvgreturnThreeyear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_THREEYEAR" />
+		</property>
+		<!-- 收益率(四年) -->
+		<property name="fAvgreturnFouryear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_FOURYEAR" />
+		</property>
+		<!--   收益率(五年) -->
+		<property name="fAvgreturnFiveyear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_FIVEYEAR" />
+		</property>
+		<!--  收益率(六年) -->
+		<property name="fAvgreturnSixyear" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_SIXYEAR" />
+		</property>
+		<!-- 收益率(成立以来) -->
+		<property name="fAvgreturnSincefound" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_SINCEFOUND" />
+		</property>
+		<!-- 年化收益率  -->
+		<property name="fAnnualyeild" type="java.math.BigDecimal">
+			<column name="F_ANNUALYEILD" />
+		</property>
+		<!--当天跟踪偏离度 -->
+		<property name="fTrackdevThisday" type="java.math.BigDecimal">
+			<column name="F_TRACKDEV_THISDAY" />
+		</property>
+		<!-- 今年以来同类基金收益率 -->
+		<property name="fSfreturnThisyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_THISYEAR" />
+		</property>
+		<!-- 今年以来同类排名 显示名次如:12 -->
+		<property name="fSfrankThisyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_THISYEAR" />
+		</property>
+		<!--  最近三月同类基金收益率 -->
+		<property name="fSfreturnRecentquarter" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTQUARTER" />
+		</property>
+		<!--  最近三月同类排名 -->
+		<property name="fSfrankRecentquarter" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTQUARTER" />
+		</property>
+		<!--  最近六月同类基金收益率-->
+		<property name="fSfreturnRecenthalfyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTHALFYEAR" />
+		</property>
+		<!--  最近六月同类排名  -->
+		<property name="fSfrankRecenthalfyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTHALFYEAR" />
+		</property>
+		<!-- 最近一年同类基金收益率 -->
+		<property name="fSfreturnRecentyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTYEAR" />
+		</property>
+		<!--最近一年同类排名  -->
+		<property name="fSfrankRecentyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTYEAR" />
+		</property>
+		<!-- 最近两年同类基金收益率 -->
+		<property name="fSfreturnRecenttwoyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTTWOYEAR" />
+		</property>
+		<!--  最近两年同类排名  -->
+		<property name="fSfrankRecenttwoyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTTWOYEAR" />
+		</property>
+		<!--最近三年同类基金收益率  -->
+		<property name="fSfreturnRecentthreeyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTTHREEYEAR" />
+		</property>
+		<!-- 最近三年同类排名 -->
+		<property name="fSfrankRecentthreeyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTTHREEYEAR" />
+		</property>
+		<!--  最近五年同类基金收益率	 -->
+		<property name="fSfreturnRecentfiveyear" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTFIVEYEAR" />
+		</property>
+		<!-- 最近五年同类排名-->
+		<property name="fSfrankRecentfiveyear" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTFIVEYEAR" />
+		</property>
+		<!-- 成立以来同类基金收益率 -->
+		<property name="fsfreturnRincefound" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_SINCEFOUND" />
+		</property>
+		<!-- 成立以来同类排名 -->
+		<property name="fSfrankSincefound" type="java.math.BigDecimal">
+			<column name="F_SFRANK_SINCEFOUND" />
+		</property>
+		<!-- 同类基金年化收益率 -->
+		<property name="fSfannualyeild" type="java.math.BigDecimal">
+			<column name="F_SFANNUALYEILD" />
+		</property>
+		<!-- 年化收益率同类排名  -->
+		<property name="fSfrankAnnualyeild" type="java.math.BigDecimal">
+			<column name="F_SFRANK_ANNUALYEILD" />
+		</property>
+		<!-- 标准差(六个月)  -->
+		<property name="fStdarddevHalfyear" type="java.math.BigDecimal">
+			<column name="F_STDARDDEV_HALFYEAR" />
+		</property>
+		<!--  标准差(一年) -->
+		<property name="fStdarddevYear" type="java.math.BigDecimal">
+			<column name="F_STDARDDEV_YEAR" />
+		</property>
+		<!--  标准差(三年)	F_STDARDDEV_TWOYEAR -->
+		<property name="fStdarddevThreeyear" type="java.math.BigDecimal">
+			<column name="F_STDARDDEV_THREEYEAR" />
+		</property>
+		<!--标准差(五年)  -->
+		<property name="fStdarddevFiveyear" type="java.math.BigDecimal">
+			<column name="F_STDARDDEV_FIVEYEAR" />
+		</property>
+		<!--标准差(成立以来) -->
+		<property name="fStdarddevSincefound" type="java.math.BigDecimal">
+			<column name="F_STDARDDEV_SINCEFOUND" />
+		</property>
+		<!--夏普比率(六个月)  -->
+		<property name="fSharpratioHalfyear" type="java.math.BigDecimal">
+			<column name="F_SHARPRATIO_HALFYEAR" />
+		</property>
+		<!--   夏普比率(一年) -->
+		<property name="fSharpratioYear" type="java.math.BigDecimal">
+			<column name="F_SHARPRATIO_YEAR" />
+		</property>
+		<!-- 夏普比率(两年)-->
+		<property name="fSharpratioTwoyear" type="java.math.BigDecimal">
+			<column name="F_SHARPRATIO_TWOYEAR" />
+		</property>
+		<!-- 夏普比率(三年) -->
+		<property name="fSharpratioThreeyear" type="java.math.BigDecimal">
+			<column name="F_SHARPRATIO_THREEYEAR" />
+		</property>
+		<!--  	最近一周同类基金收益率 -->
+		<property name="fSfreturnRecentweek" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTWEEK" />
+		</property>
+		<!-- 最近一周同类排名 -->
+		<property name="fSfrankRecentweek" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTWEEK" />
+		</property>
+		<!-- 最近一月同类基金收益率 -->
+		<property name="fSfreturnRecentmonth" type="java.math.BigDecimal">
+			<column name="F_SFRETURN_RECENTMONTH" />
+		</property>
+		<!-- 最近一月同类排名 -->
+		<property name="fSfrankRecentmonth" type="java.math.BigDecimal">
+			<column name="F_SFRANK_RECENTMONTH" />
+		</property>
+		<!-- 基金分类-->
+		<property name="fFundType" type="java.lang.String">
+			<column name="F_FUNDTYPE" />
+		</property>
+		<!--收益率(当天) -->
+		<property name="fAvgreturnDay" type="java.math.BigDecimal">
+			<column name="F_AVGRETURN_DAY" />
+		</property>
+		<!-- 今年以来同类排名 显示名次和统计数如：12/100 -->
+		<property name="fSfrankThisyeart" type="java.lang.String">
+			<column name="F_SFRANK_THISYEART" />
+		</property>
+		<!--最近三月同类排名-->
+		<property name="fSfrankRecentquartert" type="java.lang.String">
+			<column name="F_SFRANK_RECENTQUARTERT" />
+		</property>
+		<!--最近六月同类排名  -->
+		<property name="fSfrankRecenthalfyeart" type="java.lang.String">
+			<column name="F_SFRANK_RECENTHALFYEART" />
+		</property>
+		<!-- 最近一年同类排名 -->
+		<property name="fSfrankRecentyeart" type="java.lang.String">
+			<column name="F_SFRANK_RECENTYEART" />
+		</property>
+		<!-- 最近两年同类排名 -->
+		<property name="fSfrankRecenttwoyeart" type="java.lang.String">
+			<column name="F_SFRANK_RECENTTWOYEART" />
+		</property>
+		<!-- 最近三年同类排名 -->
+		<property name="fSfrankRecentthreeyeart" type="java.lang.String">
+			<column name="F_SFRANK_RECENTTHREEYEART" />
+		</property>
+		<!-- 最近五年同类排名 -->
+		<property name="fSfrankRecentfiveyeart" type="java.lang.String">
+			<column name="F_SFRANK_RECENTFIVEYEART" />
+		</property>
+		<!--成立以来同类排名 -->
+		<property name="fSfrankSincefoundt" type="java.lang.String">
+			<column name="F_SFRANK_SINCEFOUNDT" />
+		</property>
+		<!-- 年化收益率同类排名 -->
+		<property name="fSfrankAnnualyeildt" type="java.lang.String">
+			<column name="F_SFRANK_ANNUALYEILDT" />
+		</property>
+		<!--  最近一周同类排名-->
+		<property name="fSfrankRecentweekt" type="java.lang.String">
+			<column name="F_SFRANK_RECENTWEEKT" />
+		</property>
+		<!-- 最近一月同类排名-->
+		<property name="fSfrankRecentmontht" type="java.lang.String">
+			<column name="F_SFRANK_RECENTMONTHT" />
+		</property>
+	</class>
+</hibernate-mapping>

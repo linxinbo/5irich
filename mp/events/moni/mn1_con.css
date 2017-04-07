@@ -1,0 +1,41 @@
+.mn1_banner{position: relative;overflow: hidden;}
+.mn1_banner img{display: block;width: 100%;height: auto;}
+body { background: #ce020e;}
+.mn1_con {
+    width: 100%;
+    margin-top: -4em;
+    padding-top: 4.5em;
+}
+.mn1_head {
+    width: 100%;
+    font-size: 1.24em;
+    color: #fff;
+    text-align: center;
+    margin-top: .5em;
+}
+.mn1_con .mn1_cont {
+    margin-top: 1em;
+    width: 100%;
+    padding: 0 2em;
+
+}
+.mn1_content {
+    width: 100%;
+    font-size: 1.2em;
+    text-indent: 2em;
+    line-height: 2em;
+    color: #fff;
+    margin-top: 1em;
+    box-sizing: border-box;
+    padding: 0 1em;
+    margin-bottom: 2em;
+
+}
+.mn1_conB {
+    width: 100%;
+    font-size: 1.4em;
+    text-align: center;
+    background: #feca5d;
+    color: #ce020e;
+    line-height: 2.5em;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body,p,h2,h3,h4,h5{ padding:0; margin:0; font-family:"微软雅黑";text-align:justify;text-justify:inter-ideograph;color:#221815;}
+.guoqi_bannerimg{ background:url(../images/banner.jpg) no-repeat center; height:455px;width:100%;}
+.gq_bannerc{width:818px;margin:0 auto;overflow:hidden;padding-top:340px;}
+#gq1{padding-left:215px;}
+#gq2{padding-left:215px;}
+.gq_bannerc a{display:block;float:left;font-family:"微软雅黑";height:39px;padding-left:180px;line-height:39px;font-size:16px;font-weight:blod;color:#cc081e;text-align:right;}
+.guoqi_content{ width:100%; overflow:hidden; background:#d20a2e; padding-bottom:72px;}
+.guoqi_cn{ width:1024px; margin:0 auto; overflow:hidden;}
+.guoqi_content1{ margin-top:20px; background:#a80008; border-radius:10px; padding:27px 30px 25px 35px; font-size:20px; letter-spacing:-1px; line-height:30px; text-align:left; color:#fff; width:935px; margin:0 auto;}
+.guoqi_h2{ background:url(../images/guoqi_txt1.jpg) no-repeat center; height:57px; width:100%; margin-top:55px;}
+.guoqi_content2{  background:#a80008; border-radius:10px; padding:11px;}
+.guoqi_xq{ background:#f4d235; border-radius:10px; padding:30px; overflow:hidden; padding-top:5px;}
+.guoqi_xq h2{ color:#cc0827; font-size:26px; font-weight:blod; margin-top:25px;}
+.guoqi_h21{ background:url(../images/guoqi_txt2.jpg) no-repeat center; height:57px; width:100%; margin-top:55px;}
+
+.guoqi_xq p{ background:#fcede4; border-radius:10px; color:#595757; font-size:16px; text-indent:2em; padding:23px; line-height:26px; margin-top:21px;}
+.guoqi_xqdiv{ background:#fcede4; border-radius:10px; color:#595757; font-size:16px; padding:0px 0px 28px 146px;  margin-top:21px;}
+.guoqi_xqdiv h3{ font-size:16px; color:#595757;padding-top:30px;}
+.guoqi_xqdiv h1{ overflow:hidden;}
+.guoqi_xqdiv span{ display:block; float:left; margin-right:30px; background:#cc081e; color:#fff; letter-spacing:-1px; font-size:16px; margin-top:18px; padding:11px 10px; text-align:center;}
+.guoqi_content3{ width:300px; float:left; margin-right:21px;}
+.guoqi_content3 h2{ height:37px; line-height:37px; background:#fcede4; color:#a80008; font-size:18px; font-weight:normal; padding-left:15px; border-bottom:2px #efaf00 solid; border-right:2px #efaf00 solid; margin-bottom:3px;}
+.guoqi_cnn3div{ background:url(../images/guoqi_line.jpg) no-repeat bottom; padding-bottom:20px;}
+.guoqi_cnnp{background:#fcede4; padding:12px 15px; border-right:2px #efaf00 solid; font-size:15px; color:#595757; line-height:22px;}
+.guoqi_xqbottom{ margin-top:5px;}
+.guoqi_xqbottom a{ display:block;width:146px; height:43px; line-height:43px; color:#fff; font-size:20px; font-weight:bold; text-align:center;}
+.guoqi_btn1{ background:#cc002c; float:left; }
+.guoqi_btn2{ background:#cb9a1a; float:right;}

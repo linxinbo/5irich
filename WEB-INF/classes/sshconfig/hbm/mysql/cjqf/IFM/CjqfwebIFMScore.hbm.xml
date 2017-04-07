@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.wirich.bean.intelligentfinancialmanagement.CjqfwebIFMScoreBean" table="cjqfweb_intelligent_financial_management_score">
+		<!-- 主键Id -->
+		<id name="id" type="int">
+			<column name="id" />
+		</id>
+		<!--问题类型-->
+		<property name="questionType" type="java.lang.String">
+			<column name="questiontype" />
+		</property>
+		<!--上限-->
+		<property name="upperLimit" type="java.lang.String">
+			<column name="upper_limit" />
+		</property>
+		<!--下限-->
+		<property name="lowerLimit" type="java.lang.String">
+			<column name="lower_limit" />
+		</property>
+		<!--阀值-->
+		<property name="threshold" type="java.lang.String">
+			<column name="threshold" />
+		</property>
+		<!--评分-->
+		<property name="score" type="java.lang.Integer">
+			<column name="score" />
+		</property>
+		<!--数据更新时间-->
+		<property name="updateTime" type="java.lang.String">
+			<column name="update_time" />
+		</property>
+		</class>
+</hibernate-mapping>

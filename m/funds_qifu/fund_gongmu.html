@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>公募基金</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--根据屏幕全局显示-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!--允许全屏模式浏览-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!--指定的iphone中safari顶端的状态条的样式;隐藏状态栏-->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="基金">
+	<meta name="description" content="基金">
+	<!--指定的iphone中safari顶端的状态条的样式-->
+	<meta name="format-detection" content="email=no" />
+	<!--去除Android平台中对邮箱地址的识别-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- 隐藏地址栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="" />
+	<!-- 状态条风格 -->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/common_zjy.css">
+	<link rel="stylesheet" href="../css/common_qifu.css">
+	<link rel="stylesheet" href="../css/common_new.css">
+	<link rel="stylesheet" href="../css/home.css">
+	<link rel="stylesheet" href="../css/fund_gongmu.css">
+<!--	<link rel="stylesheet" href="../css/pullToRefresh.css">-->
+
+</head>
+
+<body>
+    <div class="header_c">
+		<div><i class="logo_c"></i></div>
+		<div>
+			<div class="login_div clearfix">
+				<a href="../sigin/sigin.html" class="sigin">注册</a>
+				<a href="../user_login.html" class="login">登录</a>
+			</div>
+			<div class="hello_div clearfix" style="display: none;">
+				<div class="out">退出</div><span>hi,</span></div>
+		</div>
+	</div>
+	<header class="header">
+		<!--<a class="back" href="../home.html"><span>返回</span><i></i></a>-->
+		<a class="back1" href="../home.html">＜返回</a>
+		<h1>公募基金</h1>
+		<a href="fund_search.html" class="icon_search"></a>
+	</header>
+	<div class="over_flow">
+		<ul class="gm_type" data_index="0">
+			<li id="gm_all" class="gm_sel"><span>全部基金</span></li>
+            <div id="gm_select">
+                <div>
+                    <select class="type1" id="type1" name="type1" style="text-align:center">
+                         <option value="0">按基金公司筛选</option>
+						<option value="6">华夏基金</option>
+                        <option value="1">富国基金</option>
+                        <option value="2">广发基金</option>
+						<option value="10">南方基金</option>
+                        <option value="3">博时基金</option>
+                        <option value="4">华商基金</option>
+						<option value="14">中欧基金</option>
+						<option value="18">信诚基金</option>
+						<option value="11">新华基金</option>
+						<option value="12">易方达基金</option>
+						<option value="5">华泰柏瑞基金</option>       
+						<option value="7">汇添富基金</option>
+                        <option value="8">景顺长城基金</option>
+                        <option value="9">摩根士丹利华鑫基金</option> 
+                        <option value="13">银华基金</option>    
+                        <option value="15">中邮创业基金</option>
+						<option value="16">工银瑞信基金</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="type2" id="type2" name="type2">
+                        <option value="0">按基金类型筛选</option>
+                        <option value="1">货币市场型</option>
+                        <option value="2">混合型</option>
+                        <option value="3">债券型</option>
+                        <option value="4">股票型</option>
+                        <option value="5">QDII</option>
+                        <option value="6">指数型</option>
+                        <option value="7">其他</option>
+                    </select>
+                </div>
+                <!--<div class="search_type"><span>查询</span></div>-->
+            </div>
+			<!--<li><span>货币市场型</span></li>
+			<li><span>混合型</span></li>
+			<li><span>债券型</span></li>
+			<li><span>股票型</span></li>
+			<li><span>QDII</span></li>
+			<li><span>指数型</span></li>
+			<li><span>其他</span></li>-->
+		</ul>
+	</div>
+<!--	<div id="wrapper">-->
+		<div class="gongmu_data">
+
+			<ul class="gm_list_data">
+				<!--<li class="gm_list">
+                <div class="gm_header">
+                    <div class="table_header"><span class="deal_code">53001</span><span class="deal_name">建信恒久价值股票</span><a class="go-buy"><span>购买</span></a></div>
+                </div>
+                <div class="table_data_list">
+                    <table class="table_data">
+                        <tr><td class="td_1">最新净值：</td><td class="td_2">1.2433</td><td class="td_3">日涨幅：</td><td class="td_4">0.1562%</td></tr>
+                        <tr><td class="td_1">累计三月：</td><td class="td_2">38.71%</td><td class="td_3">累计一年：</td><td class="td_4">42.97%</td></tr>
+                    </table>
+                    <div class="gm_detail"></div>
+                </div>
+            </li>-->
+
+
+			</ul>
+
+<!--		</div>-->
+	</div>
+				<div class="search_prompt"><span>暂无数据</span></div>
+		<div class="navbar">
+			<ul class="navbar-nav">
+				<li class="active">
+					<a href="../home.html">
+						<span class="icon-home"></span>
+						<span class="navbar-label">首页</span>
+					</a>
+				</li>
+
+				<li class="">
+					<a href="../trade/apply-find.html">
+						<span class="icon-fund"></span>
+						<span class="navbar-label">交易中心</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="../account-qifu/my_account.html">
+						<span class="icon-high"></span>
+						<span class="navbar-label">我的财富</span>
+					</a>
+				</li>
+				<li class="after_open">
+					<a href="../person/person_center.html">
+						<span class="icon-more"></span>
+						<span class="navbar-label">个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+</body>
+<script type="application/javascript" src="../js/jquery.min.js"></script>
+<!--<script type="application/javascript" src="../js/qifu/iscroll.js"></script>-->
+<!--<script type="application/javascript" src="../js/qifu/pullToRefresh.js"></script>-->
+<script type="application/javascript" src="../js/qifu/common_qifu.js"></script>
+<script type="application/javascript" src="../js/qifu/buy_funds.js"></script>
+<script type="application/javascript" src="../js/qifu/add_fund.js"></script>
+<!--<script type="application/javascript" src="../js/faq.js"></script>-->
+<script type="application/javascript" src="../js/qifu/fund_gongmu.js"></script>
+<script type="text/javascript" src="../js/qifu/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/qifu/home.js"></script>
+</html>

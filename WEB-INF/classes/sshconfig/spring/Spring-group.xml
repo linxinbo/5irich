@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd" >	
+       
+    <!-- 组合列表Action-->
+	<bean id="FundGroupMainAction" class="com.wirich.action.cjqf.group.FundGroupMainAction"
+		scope="prototype">
+		<property name="fundGroupService" ref="FundGroupMainServiceImpl"></property>
+	</bean>
+	
+	<!--组合列表service-->
+	<bean id="FundGroupMainServiceImpl" class="com.wirich.service.cjqf.group.impl.FundGroupMainServiceImpl">
+		<property name="fundGroupMainDao" ref="FundGroupMainDaoImpl"></property>
+		<property name="fundGroupNavDao" ref="FundGroupNavDaoImpl"></property>
+		<property name="fundGroupFundDao" ref="FundGroupFundDaoImpl"></property>
+		<property name="mutualFundDao" ref="MutualFundDaoimpl"></property>
+		<property name="aIndexeodpricesDao" ref="AIndexeodpricesDaoImpl"></property>
+	</bean>
+	
+	<!--组合列表Dao-->
+	<bean id="FundGroupMainDaoImpl" class="com.wirich.dao.cjqf.group.impl.FundGroupMainDaoImpl">
+	</bean>
+	<!--组合净值Dao-->
+	<bean id="FundGroupNavDaoImpl" class="com.wirich.dao.cjqf.group.impl.FundGroupNavDaoImpl">
+	</bean>
+	<!--组合对应基金Dao-->
+	<bean id="FundGroupFundDaoImpl" class="com.wirich.dao.cjqf.group.impl.FundGroupFundDaoImpl">
+	</bean>
+	<!--组合对应公墓基金Dao-->
+	<bean id="MutualFundDaoimpl" class="com.wirich.dao.cjqf.mutual.impl.MutualFundDaoimpl">
+	</bean>
+	<!--沪深300 Dao-->
+	<bean id="AIndexeodpricesDaoImpl" class="com.wirich.dao.wind.astock.impl.AIndexeodpricesDaoImpl">
+	</bean>
+</beans>

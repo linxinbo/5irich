@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="trading_api" extends="wirich">
+		<!--购买 前置 -->
+		<action name="buypre" class="TradingAction" method="buyPre">
+			
+		</action>
+		<!--购买  -->
+		<action name="buyPayment" class="TradingAction" method="buyPayment">
+		</action>
+		<action name="buyPaymentNew" class="TradingAction" method="buyPaymentNew">
+		</action>
+		<!--
+			支付 <action name="pay" class="TradingAction" method="pay">
+			 </action>
+		-->
+		<!--组合购买前置  -->
+		<action name="groupbuyPre" class="TradingAction" method="groupbuyPre">
+			
+		</action>
+		<!--组合购买  -->
+		<action name="groupbuy" class="TradingAction" method="groupBuy">
+		</action>
+		<!-- 组合一键购买 -->
+		<action name="groupfundbuyPre" class="GroupFundTradingAction" method="groupfundbuyPre">
+		</action>
+		<action name="buyGroupFundPayment" class="GroupFundTradingAction" method="buyGroupFundPayment">
+		</action>
+		<action name="queryAllCustno" class="GroupFundTradingAction" method="queryAllCustno">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<!--组合购买查询组合信息  -->
+		<action name="queryGroupFundInfo" class="GroupFundTradingAction" method="queryGroupFundInfo">
+		</action>
+		<!--撤单委托查询  -->
+		<action name="cancell" class="TradingAction" method="canCancellations">
+			
+		</action>
+		<!--撤单 -->
+		<action name="tradingcance" class="TradingAction" method="tradingCancellation">
+		</action>
+		<!--新的撤单 -->
+		<action name="newtradingcance" class="TradingAction" method="newTradingCancellation">	
+		</action>
+		<!--赎回单支查询 -->
+		<action name="singlepre" class="TradingAction" method="singleOptionPre">
+			
+		</action>
+		<!--赎回前置 -->
+		<action name="redemptionpre" class="TradingAction" method="redemptionPre">
+			
+		</action>
+		<!--赎回 -->
+		<action name="redemptions" class="TradingAction" method="redemptions">
+			
+		</action>
+		
+		<!--组合一键赎回 -->
+		<action name="groupRedemptions" class="GroupRedemptionAction" method="groupRedemptions">
+		</action>
+		
+		<!-- 组合一键撤单 -->
+		<action name="groupFundCancellation" class="GroupFundCancellationAction" method="groupFundCancellation"></action>
+		<!-- 查询手续费费用列表-->
+
+		<action name="chargefees" class="TradingAction" method="chargeFees">
+			
+		</action>
+		<!-- 查询认、申购费用-->
+		<action name="recsubscrip" class="TradingAction" method="recSubscriptionFees">
+			
+		</action>
+
+		<!-- 定投前置 -->
+		<action name="precastopenapi" class="TradingAction" method="precastSurelyOpen">
+		</action>
+
+		<!-- 定投 -->
+		<action name="castopenapi" class="TradingAction" method="castSurelyOpen">
+			
+		</action>
+
+		<!-- 定投查询 -->
+		<action name="castqueryapi" class="TradingAction" method="castSurelyDealQuery">
+			
+		</action>
+
+		<!-- 基金可转换查询  -->
+		<action name="querytransferapi" class="TradingAction" method="queryfundTransfer">
+			
+		</action>
+		<!-- 基金转换前置 -->
+		<action name="fundtransferapi" class="TradingAction" method="fundTransfer">
+			
+		</action>
+		<!-- 基金转换 -->
+		<action name="transferig" class="TradingAction" method="FundTransferIg">
+			
+		</action>
+		<!-- 定投终止  -->
+		<action name="dtermiapi" class="TradingAction" method="decideTerminate">
+		</action>
+
+
+		<!-- 定投终止  -->
+		<action name="payreceiveapi" class="TradingAction" method="payReceive">
+			
+		</action>
+		
+		<!-- 组合定投  -->
+		<action name="compositeapi" class="TradingAction" method="compositeCastSurelyOpen">
+		</action>
+		<!-- 同步用户历史交易确认数据  -->
+		<action name="historyConfirmData" class="GroupFundTradingAction" method="historyConfirmData">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+		<!-- 一键调仓 -->
+		<action name="TogetherTransferPositionsAction" class="TogetherTransferPositionsAction" method="fundTransfer">
+		</action>
+	</package>
+</struts>
+
+
+

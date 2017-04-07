@@ -1,0 +1,84 @@
+.fund_list{
+    /*margin-top: 10px;*/
+}
+.fund_list table{width: 100%;border-collapse:collapse;}
+.fund_list table thead tr{
+    background-color: #007eb8;
+}
+.fund_list table thead tr th{
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.fund_list table tbody tr{
+
+}
+.fund_list table tbody tr:hover{
+    background-color: #058ecc;
+}
+.fund_list table tbody tr td{
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    padding: 5px 0;
+    border: solid 1px #007eb8;
+}
+.fonthong{
+    color: #ff0000;
+}
+.fontlv{
+    color: #2db996;
+}
+.font12hui9{
+    color: #999999;
+    font-size: 12px;
+}
+.change_list{
+    line-height: 32px;
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+}
+.change_list span{
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+.change_list a{
+    float: left;
+    font-size: 14px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.float_c{
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+}
+.guanbi{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/btn_del@2x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+.change_list1{
+    line-height: 32px;
+    overflow: hidden;
+    text-align: center;
+}
+.change_list1 a{
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 10px;
+}
